@@ -1,0 +1,80 @@
+{
+  "scope": "Original fit config, original model checkpoint metadata and current statistics resource identity; no refit",
+  "model": {
+    "source": "/Users/lycidas/work/科研/projects/2026-09-10_human-mouse-time-aware-umap/data/results_integrated_species_scvi_v2/species_balanced_scvi_model/model.pt",
+    "bytes": 10624090,
+    "sha256": "c403ac745157e7dde81944c1369b8570c441469a7a5c42bc14669825727ca7d4",
+    "pickle_member_sha256": "89cec2e41910f08857e9cb96679a9d3618ad875b2a3dfbc26cd48e56362078cc",
+    "scvi_version": "1.3.3",
+    "version_key_opcode_position": 142126
+  },
+  "inputs": {
+    "human_metacells": 4332,
+    "mouse_metacells": 6772,
+    "total": 11104,
+    "input_ortholog_pairs": 16295,
+    "hvg": 4000,
+    "layer": "counts",
+    "counts": "integer summed metacell raw counts",
+    "batch_key": "species_key",
+    "batch_covariates": [
+      "species"
+    ],
+    "time_state_apa_covariates": false,
+    "equal_species_downsampling": false
+  },
+  "fit_configuration": {
+    "batch_key": "species_key",
+    "n_hvg": 4000,
+    "n_latent": 30,
+    "max_epochs": 160,
+    "batch_size": 512,
+    "early_stopping": true
+  },
+  "seed": 20260910,
+  "seed_evidence": "Original config and construction source; not independently logged in checkpoint",
+  "model_init_observed": {
+    "n_hidden": 128,
+    "n_latent": 30,
+    "n_layers": 1,
+    "dropout_rate": 0.1,
+    "dispersion": "gene",
+    "gene_likelihood": "nb",
+    "use_observed_lib_size": true,
+    "latent_distribution": "normal"
+  },
+  "checkpoint_observations": {
+    "trained": true,
+    "n_obs": 11104,
+    "n_vars": 4000,
+    "train_indices": 9994,
+    "validation_indices": 1110,
+    "test_indices": 0,
+    "history_epochs": 160
+  },
+  "current_moran_resources": {
+    "common_metacell_nodes.tsv.gz": {
+      "source": "/Users/lycidas/work/科研/projects/2026-09-10_human-mouse-time-aware-umap/data/results_integrated_species_scvi_v2/common_metacell_nodes.tsv.gz",
+      "bytes": 1896830,
+      "sha256": "0b967026d274bf27edf3c07e8c2014be129de37153149eeaa47c5c9be1b8cec2"
+    },
+    "species_balanced_scvi_latent.npy": {
+      "source": "/Users/lycidas/work/科研/projects/2026-09-10_human-mouse-time-aware-umap/data/results_integrated_species_scvi_v2/species_balanced_scvi_latent.npy",
+      "bytes": 1332608,
+      "sha256": "765d7baa565b75e3d906c2911711c8146496b86b7fe5bb9cf970f018b24ebfca"
+    },
+    "local_expression_kernel.npz": {
+      "source": "/Users/lycidas/work/科研/projects/2026-09-10_human-mouse-time-aware-umap/data/results_integrated_species_scvi_v2/local_expression_kernel.npz",
+      "bytes": 1282703,
+      "sha256": "a2be0066197bb99d74f373d583f86ed55e305fca64bb8b34b3a1914224e642de"
+    }
+  },
+  "distinction": "Joint raw-cell 30D display uses 551201 cells/2128 orthologs/100 epochs/2048 batch and is a different fit.",
+  "unrecovered": [
+    "GPU model",
+    "wall time",
+    "optimizer/LR",
+    "early-stopping patience",
+    "complete training runtime freeze"
+  ]
+}

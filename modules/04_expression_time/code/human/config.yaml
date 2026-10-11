@@ -1,0 +1,74 @@
+seed: 20260902
+project_root: /root/nfsdata/apadetect/analysis_projects/human_time_aware_integration_v1
+qc_root: /root/nfsdata/apadetect/analysis_projects/reprogramming_unified_rna_qc_v3.2_release
+clustering_root: /root/nfsdata/apadetect/analysis_projects/reprogramming_qc_v3_2_clustering_release_v1
+route_registry: /root/nfsdata/apadetect/analysis_projects/reprogramming_route_specific_clustering_v1/results_gse103221_osk_pilot/cell_registry/clustering_cell_registry.tsv.gz
+python: /root/nfsdata/apadetect/analysis_projects/mouse_time_aware_integration_pilot_v1/.g2g-venv/bin/python
+conda_library_path: /root/miniconda3/envs/saturn-alignment/lib
+output_root: results_v1
+expected_primary: 215114
+expected_sensitivity: 42878
+expected_technical: 79941
+expected_libraries: 59
+expected_studywide_states: 62
+reference_cells_per_stratum: 500
+reference_sampling: equal_library_quota_within_study_series_time_condition
+feature_join: exact_ensembl_gene_id_intersection
+studies:
+  GSE118258:
+    qc_run: gse118258_production
+    qc_manifest: GSE118258_production.tsv
+    clustering_release: results_qc_v3_2_studywide_v1/gse118258/scopes/studywide
+    expected_primary: 29000
+    expected_sensitivity: 2023
+    expected_technical: 3357
+    expected_libraries: 6
+    expected_states: 12
+  GSE150311:
+    qc_run: gse150311_production
+    qc_manifest: GSE150311_production.tsv
+    clustering_release: results_qc_v3_2_studywide_v1/gse150311/scopes/studywide
+    expected_primary: 12484
+    expected_sensitivity: 544
+    expected_technical: 2113
+    expected_libraries: 4
+    expected_states: 27
+  GSE178325:
+    qc_run: gse178325_regression
+    qc_manifest: GSE178325_regression.tsv
+    clustering_release: results_qc_v3_2_studywide_v1/gse178325/scopes/studywide
+    expected_primary: 140593
+    expected_sensitivity: 36559
+    expected_technical: 45574
+    expected_libraries: 32
+    expected_states: 18
+  GSE221739:
+    qc_run: gse221739_production
+    qc_manifest: GSE221739_production.tsv
+    clustering_release: results_qc_v3_2_gse221739_v1/gse221739/scopes/studywide
+    expected_primary: 33037
+    expected_sensitivity: 3752
+    expected_technical: 28897
+    expected_libraries: 17
+    expected_states: 5
+model:
+  n_hvg: 3000
+  hvg_flavor: seurat_v3
+  hvg_batch_key: study_id
+  batch_key: study_id
+  gene_likelihood: nb
+  n_latent: 20
+  max_epochs: 120
+  early_stopping: true
+  batch_size: 1024
+  n_neighbors: 30
+  time_used_in_model: false
+  original_clusters_used_in_model: false
+  sensitivity_used_to_fit: false
+  query_finetuning: false
+resources:
+  prepare_mem_mb: 64000
+  reference_mem_mb: 128000
+  model_mem_mb: 128000
+  total_mem_mb: 262144
+  cores: 32

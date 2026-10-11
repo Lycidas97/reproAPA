@@ -1,0 +1,12 @@
+{
+  "frozen_at_utc": "2026-10-10T16:38:01.949063+00:00",
+  "protocol_sha256": "4c00be0b6d1e84edb7ad68424935ff1a7594bc2dd3a8c10c7c2adabe1c32cb8f",
+  "foreground": 27,
+  "background": 751,
+  "setting": "supported50_p08",
+  "contrast": "P_M",
+  "seed": 2026101007,
+  "n_permutations": 100000,
+  "planned_family_size": 18,
+  "observed_new_motif_results_before_freeze": false
+}

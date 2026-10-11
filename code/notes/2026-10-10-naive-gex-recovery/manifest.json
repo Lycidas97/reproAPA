@@ -1,0 +1,130 @@
+{
+  "status": "complete",
+  "files": [
+    {
+      "path": "notes/2026-10-10-naive-gex-recovery/REPORT.zh.md",
+      "sha256": "a36d720b5b85dc3c60bbc71b59545ebfffcc56aefa4f42ac1fd703ced01a047a",
+      "size_bytes": 3268
+    },
+    {
+      "path": "notes/2026-10-10-naive-gex-recovery/all_gene_contrast_expression.tsv.gz",
+      "sha256": "314da87c31711b349dd551cd2a16c3e3b3d0ae00a6b841c505a4636e30056978",
+      "size_bytes": 7529211
+    },
+    {
+      "path": "notes/2026-10-10-naive-gex-recovery/all_gene_library_expression.tsv.gz",
+      "sha256": "648124936eefe8a7626020241a45240bb975ce39eae83288a5478a5c920855b5",
+      "size_bytes": 12059441
+    },
+    {
+      "path": "notes/2026-10-10-naive-gex-recovery/analyze.py",
+      "sha256": "40b733f2515b48edcb1b87a8563259bfa0412a998c0fc59d0781432cf6b64724",
+      "size_bytes": 11729
+    },
+    {
+      "path": "notes/2026-10-10-naive-gex-recovery/audit.json",
+      "sha256": "7cdbb9211b7891ebeb7b808016f147cadf03571872c7cda89bfadbdd44e7fba9",
+      "size_bytes": 5845
+    },
+    {
+      "path": "notes/2026-10-10-naive-gex-recovery/factor_contrast_expression.tsv",
+      "sha256": "65631902e05392ad0e55d80f6fc2e9b6e44814aa7579fd308cc016598a58f607",
+      "size_bytes": 16958
+    },
+    {
+      "path": "notes/2026-10-10-naive-gex-recovery/factor_gene_mapping.tsv",
+      "sha256": "a6e494eb62ff4946d4f383d8ffd3d2064393054557bf7dcfd82df2f8344d5bcc",
+      "size_bytes": 1183
+    },
+    {
+      "path": "notes/2026-10-10-naive-gex-recovery/factor_library_expression.tsv.gz",
+      "sha256": "535a25938f38327988268f0a9174d17ec582d4bf0484fa76e558d01d34707f39",
+      "size_bytes": 10245
+    },
+    {
+      "path": "notes/2026-10-10-naive-gex-recovery/factor_naive_summary.tsv",
+      "sha256": "ca03a093bb2f71b2f76d4b2c60cdfb233b959588080e3dd1493a050f72b59675",
+      "size_bytes": 2100
+    },
+    {
+      "path": "notes/2026-10-10-naive-gex-recovery/local_input_sha256.json",
+      "sha256": "938b8ccbc6fbaace64ccd3e55e74bbf24179958d708454f0d7a3841107a4c6d9",
+      "size_bytes": 1141
+    },
+    {
+      "path": "notes/2026-10-10-naive-gex-recovery/naive_gex_covariates.tsv.gz",
+      "sha256": "f963e6725f14a83d53b1ddbcd721936a2c4ddb98c8361c826c160fe6cfcdd5f2",
+      "size_bytes": 1962751
+    },
+    {
+      "path": "notes/2026-10-10-naive-gex-recovery/protocol.json",
+      "sha256": "be06259b928116d03cb41425363917ac9c9649138de981b3a87a71d81ba0da6e",
+      "size_bytes": 2895
+    },
+    {
+      "path": "notes/2026-10-10-naive-gex-recovery/qualified_inventory.tsv",
+      "sha256": "5a33698f8046619ee518e136ca293a61bb8b8321e9c0c27e562022629ececcac",
+      "size_bytes": 2113
+    },
+    {
+      "path": "notes/2026-10-10-naive-gex-recovery/raw/frozen_gex_GSE150311.tar.gz",
+      "sha256": "0e917c1c18724e70f853d3d822f06f86c2c50a7b670ac042c7827d55baa34a5e",
+      "size_bytes": 12100239
+    },
+    {
+      "path": "notes/2026-10-10-naive-gex-recovery/raw/genes.tsv.gz",
+      "sha256": "6ba087f51ab262d51f9657b28501399882b2616b9dd61ad127ae988fa19807ab",
+      "size_bytes": 242785
+    },
+    {
+      "path": "notes/2026-10-10-naive-gex-recovery/raw/metacell_by_gene_counts.npz",
+      "sha256": "4d530082a7d1a4345f7505d79cb8e2c8a39b91d9da61ef86452d6d936e9bfa5f",
+      "size_bytes": 11981268
+    },
+    {
+      "path": "notes/2026-10-10-naive-gex-recovery/raw/metacells.tsv.gz",
+      "sha256": "3aad5b5ab53d21bf95fc2e5619a8af809d033ac1b6ac641905616116e73909d0",
+      "size_bytes": 34714
+    },
+    {
+      "path": "notes/2026-10-10-naive-gex-recovery/remote_input_sha256.txt",
+      "sha256": "b6e7189e1689ac6aabd3ad203b3e502728881206a93f3a76969e6110dd19d66f",
+      "size_bytes": 556
+    },
+    {
+      "path": "notes/2026-10-10-naive-gex-recovery/run.log",
+      "sha256": "68f1166e397e4a57769178cc2253bcd6a5a4b929416f8c13ee17c6496506207e",
+      "size_bytes": 195
+    },
+    {
+      "path": "notes/2026-10-10-naive-gex-recovery/test.log",
+      "sha256": "311ba2309bea566f4f39579719d90a780df5687c366cc6a38283a864fc347b75",
+      "size_bytes": 555
+    },
+    {
+      "path": "notes/2026-10-10-naive-gex-recovery/test_analysis.py",
+      "sha256": "8cce291fc443b714f34a34ac8fa91b6a0c34f036101d09fbb216771f565874a1",
+      "size_bytes": 2463
+    },
+    {
+      "path": "notes/2026-10-10-naive-gex-recovery/validation.json",
+      "sha256": "a977f6f44c240603f8c8a66b29839d885177ff5fb352a62ad151947aadf25458",
+      "size_bytes": 2329
+    },
+    {
+      "path": "notes/2026-10-10-naive-gex-recovery/verification.tsv",
+      "sha256": "51038b14a53f0071ca6573d25e3514e99140aab6ec45c8fa294db66094b9463b",
+      "size_bytes": 1206
+    },
+    {
+      "path": "notes/2026-10-10-naive-gex-recovery/verify.log",
+      "sha256": "f0a0805ae33d134ded4294e74126ba740e9beb0d801b29c6e727946caa654d2f",
+      "size_bytes": 212
+    },
+    {
+      "path": "notes/2026-10-10-naive-gex-recovery/verify.py",
+      "sha256": "33b400646612f14446ba445dfd7897c097afeb58d177b9ca917a912a93228051",
+      "size_bytes": 4967
+    }
+  ]
+}

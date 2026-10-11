@@ -1,0 +1,6 @@
+name: reproapa-local-states
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12.14
+  - pip

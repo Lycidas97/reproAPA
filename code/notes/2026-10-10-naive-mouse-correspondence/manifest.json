@@ -1,0 +1,48 @@
+{
+  "status": "PASS",
+  "input_sha256": {
+    "notes/2026-10-10-naive-mouse-correspondence/protocol.json": "b46ff7834f7d798425eaca30822ffeebe01708f6e261ffa729ef9467560bf7db",
+    "notes/2026-10-06-dual-main-plot-data/polyapipe/main/tables/cross_overlap/ortholog_matched_features.tsv.gz": "7a8f1da1ad20f67dd956b91d954ecd68b60384a3181d7db0b1a5157e04258629",
+    "notes/2026-10-06-dual-main-plot-data/polyapipe/main/tables/naive_state/library_pair_effects.tsv.gz": "31f8e0ab81ca3e98ee0084cbc589224934f6bc79c03b4d7d03e633386181f484",
+    "notes/2026-10-06-dual-main-plot-data/polyapipe/main/tables/state_vectors/PAS_axes.primary.tsv.gz": "31eb9df0c0189103dc9ba1f1dea1aa7094aeb87a669a146891be7191f9d7b267",
+    "notes/2026-10-06-dual-main-plot-data/polyapipe/main/tables/tandem/tandem_utr_eligibility.tsv.gz": "3a4ae84958f0210dc7ba0ae2f203530dbd794701536f6d3f5d8e11d10fe0cd19",
+    "notes/2026-10-06-dual-main-plot-data/polyapipe/main/tables/recurrence_controls/recurrence_frozen_covariates.tsv.gz": "0564c0fc44fd284548fba57160ec035f3c64c7bd0d7f30df9a1455e128453aab",
+    "notes/2026-10-06-dual-main-plot-data/polyapipe/main/tables/recurrence/recurrence_members.tsv.gz": "e7d3d0bf40aec45e02324ee00c023ca20fa17bf028ec0a01198804738053e277",
+    "notes/2026-10-06-dual-main-plot-data/polyapipe/main/tables/matched_pms/matched_state_vectors.tsv.gz": "6fe36234d8d65a2bb144c9021190733150761b994bb4ddb4fae7db97c7aaab47",
+    "notes/2026-10-06-dual-main-plot-data/polyapipe/main/tables/naive_state/contrast_gene_effects.tsv.gz": "9d2fc6c92a2f5755d9ad2648278b48800a88827fda9af35ac694a1d63fde33e9"
+  },
+  "script_sha256": "b6c275f85b65c15f4de81b020e5c7c6d321e5043d5bd0e5c86bf5d97a5451d38",
+  "output_sha256": {
+    "overlap_results.tsv": "6f6d49e5f8ac33eb7f8da08aac733cf3112bbe62323370ce7cc50d4b5fb3b455",
+    "measurability_and_unmatched_reference.tsv": "90b8b3820d76b905525bd5f76ca0194621d5206c53be6feac516361e0e1949d3",
+    "ortholog_membership_and_covariates.tsv.gz": "57535fa527ccecd2fc93cdf91f468a05bf00dbd727c7db347c85ea3abc5cb609",
+    "stratum_margins.tsv.gz": "5ff2667a4fb2651fcac4c158a543f7c464c6543f931ad8c0cc80897609ba52c2",
+    "covariate_balance.tsv": "2f1a96deae9d1b81ded765e0b385ce1224bd70da38777b4482004a400ed03656",
+    "overlap_null_draws.npz": "59724bb4ac5fc4c17bb7f8b78b4bd3d1ea257237d85707ec38f01688a3616198"
+  },
+  "python_executable": "/Users/lycidas/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+  "python": "3.12.14 (main, Aug 25 2026, 13:50:33) [Clang 22.1.3 ]",
+  "numpy": "2.3.5",
+  "pandas": "2.2.3",
+  "human_pair_rows_with_exact_DWUI_reconstruction": 19276,
+  "pooled_contrast_replay": true,
+  "mouse_primary_roster_replay": true,
+  "mouse_207_dual_reference_replay": true,
+  "ortholog_universe": 16092,
+  "exact_permutation_margins_asserted": true,
+  "analytic_matched_expectation_MC_verified": true,
+  "limitation": "Human N GEX and absolute full-native PAS origin unavailable: human baseline is relative to supported PAS, proximal capacity is attainable movement on frozen supported axis. Mouse dual-target expression/coverage are original recurrence contributor proxies; libraries fixed, not replicate inference.",
+  "definition_source_sha256": {
+    "analysis_code/pas_rerun/downstream_naive.py": "a34594ab848d7a75f744631030ff3169af9f2107b4968e5c60a757c4d95206e0",
+    "analysis_code/pas_rerun/downstream_candidate_screen.py": "a8c6c5c2eb5867956d09b99652e6358ccaf25cb147d1e75d8002e1fe82d4a249",
+    "analysis_code/pas_rerun/downstream_cross.py": "a801cbb0da8da74a8ca134a96701f73ecc92ee06cd39ec5783ffe4d74780cc3e",
+    "analysis_code/pas_rerun/cross_overlap_expression_coverage.py": "eee99af3441c18488f51b4dd477d914c4d373bcfdbfb524ef3e43ac76aa377ad"
+  },
+  "derived_delivery_sha256": {
+    "REPORT.zh.md": "29aad5c837d2a6172ad2c69e1086f29f34cc36bff645842696d353f797cf07b2",
+    "primary_shared_orthologs.tsv": "f1a7a06271e88d02a45e645a150de12d8e3999b48abc60b32531ae0db6fe487e",
+    "primary_overlap_summary.tsv": "22e7a973928f66ab3b999365c8d2e8a8ed220240c9c12d41046691b7537aae39",
+    "test_analysis.py": "b82512d0980875c9cf2ef294129692468298159aa8cf2d88f4ec225aff574057",
+    "verify.py": "c6c4ec37def915bd48df1f2705ebfbfc11381ab487fc89ffa5d2e2c7288328ab"
+  }
+}

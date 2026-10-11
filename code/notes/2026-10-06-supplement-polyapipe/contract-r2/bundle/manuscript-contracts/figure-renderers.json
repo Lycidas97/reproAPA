@@ -1,0 +1,553 @@
+{
+  "schema": "pas-figure-registry/1",
+  "figures": [
+    {
+      "figure": "F1",
+      "script": "notes/2026-10-03-polyapipe-integrated-reference/narrative-reconstruction/main-figures-v5/figure1/build.py",
+      "sha256": "d78c0830ed933f4327b11f8367b1a90b806269185286e6ebef6d2fb326931ff3",
+      "panels": [
+        "F1A",
+        "F1B",
+        "F1C",
+        "F1D"
+      ],
+      "interface": "legacy_direct_tables",
+      "status": "requires_records_adapter",
+      "blocked_reason": "Existing publication builder still uses historical paths/values and has not implemented --records/--out."
+    },
+    {
+      "figure": "F2",
+      "script": "notes/2026-10-03-polyapipe-integrated-reference/narrative-reconstruction/main-figures-v5/figure2/build.py",
+      "sha256": "7f2884b24b1ab958e3003f1f514abb1ae60f07fba3e0ab04341a2b2c7c57645f",
+      "panels": [
+        "F2A",
+        "F2B",
+        "F2C",
+        "F2D",
+        "F2E",
+        "F2F"
+      ],
+      "interface": "legacy_direct_tables",
+      "status": "requires_records_adapter",
+      "blocked_reason": "Existing publication builder still uses historical paths/values and has not implemented --records/--out."
+    },
+    {
+      "figure": "F3",
+      "script": "notes/2026-10-04-main-figures-v5/figure3/build.py",
+      "sha256": "8aced1b2e08dc1b92a2ceb0a95624c986244c7811c947a05f33a2d6abbf3482a",
+      "panels": [
+        "F3A",
+        "F3B",
+        "F3C",
+        "F3D",
+        "F3E"
+      ],
+      "interface": "legacy_direct_tables",
+      "status": "requires_records_adapter",
+      "blocked_reason": "Existing publication builder still uses historical paths/values and has not implemented --records/--out."
+    },
+    {
+      "figure": "F4",
+      "script": "notes/2026-10-03-polyapipe-integrated-reference/narrative-reconstruction/main-figures-v5/figure4/build.py",
+      "sha256": "6dc65eb7e0e836c715900f2c7aefa97a152bb1210e83685f5f64bf7428ef211c",
+      "panels": [
+        "F4A",
+        "F4B",
+        "F4C",
+        "F4D",
+        "F4E",
+        "F4F"
+      ],
+      "interface": "legacy_direct_tables",
+      "status": "requires_records_adapter",
+      "blocked_reason": "Existing publication builder still uses historical paths/values and has not implemented --records/--out."
+    },
+    {
+      "figure": "F5",
+      "script": "notes/2026-10-03-polyapipe-integrated-reference/narrative-reconstruction/main-figures-v5/figure5/build.py",
+      "sha256": "b20f122914106f3a377215c2b00a1eea446a84aac96c4baa318e8a2986f4e8ec",
+      "panels": [
+        "F5A",
+        "F5B",
+        "F5C",
+        "F5D",
+        "F5E",
+        "F5F"
+      ],
+      "interface": "legacy_direct_tables",
+      "status": "requires_records_adapter",
+      "blocked_reason": "Existing publication builder still uses historical paths/values and has not implemented --records/--out."
+    },
+    {
+      "figure": "S1",
+      "design_figure": "D01",
+      "script": "notes/2026-10-06-supplement-polyapipe/figures/D_markers.py",
+      "sha256": "e815660aafe578daa969b530bf9a7bed47012de91a65d3b2c073a24793ee93b8",
+      "panels": [
+        "D01A",
+        "D01B",
+        "D01C",
+        "D01D"
+      ],
+      "interface": "result_records_supdraw",
+      "status": "candidate_rendered",
+      "added_in": "r2-20261006"
+    },
+    {
+      "figure": "S2",
+      "design_figure": "D02",
+      "script": "notes/2026-10-06-supplement-polyapipe/figures/D_markers.py",
+      "sha256": "e815660aafe578daa969b530bf9a7bed47012de91a65d3b2c073a24793ee93b8",
+      "panels": [
+        "D02A",
+        "D02B",
+        "D02C",
+        "D02D"
+      ],
+      "interface": "result_records_supdraw",
+      "status": "candidate_rendered",
+      "added_in": "r2-20261006"
+    },
+    {
+      "figure": "S3",
+      "design_figure": "D03",
+      "script": "notes/2026-10-06-supplement-polyapipe/figures/D03.py",
+      "sha256": "9bb0a5429296cc48e03d541eb6d455564242290130650b69c3d0df5bc3f2748f",
+      "panels": [
+        "D03A",
+        "D03B",
+        "D03C",
+        "D03D",
+        "D03E",
+        "D03F"
+      ],
+      "interface": "result_records_supdraw",
+      "status": "candidate_rendered",
+      "added_in": "r2-20261006"
+    },
+    {
+      "figure": "S4",
+      "design_figure": "G1",
+      "script": "notes/2026-10-06-supplement-polyapipe/figures/G_markers.py",
+      "sha256": "9f0c40fc36e128091814b8e77b711d811b34ebe461e238758d617976ae43ee08",
+      "panels": [
+        "G1A"
+      ],
+      "interface": "result_records_supdraw",
+      "status": "candidate_rendered",
+      "added_in": "r2-20261006"
+    },
+    {
+      "figure": "S5",
+      "design_figure": "G2",
+      "script": "notes/2026-10-06-supplement-polyapipe/figures/G_markers.py",
+      "sha256": "9f0c40fc36e128091814b8e77b711d811b34ebe461e238758d617976ae43ee08",
+      "panels": [
+        "G2A"
+      ],
+      "interface": "result_records_supdraw",
+      "status": "candidate_rendered",
+      "added_in": "r2-20261006"
+    },
+    {
+      "figure": "S6",
+      "design_figure": "G3",
+      "script": "notes/2026-10-06-supplement-polyapipe/figures/G3.py",
+      "sha256": "7280736194dbf124fcfc777ad7341397d697afcc62e462eaaa5efddc843b9e9b",
+      "panels": [
+        "G3A"
+      ],
+      "interface": "result_records_supdraw",
+      "status": "candidate_rendered",
+      "added_in": "r2-20261006"
+    },
+    {
+      "figure": "S7",
+      "design_figure": "D04",
+      "script": "notes/2026-10-06-supplement-polyapipe/figures/D04.py",
+      "sha256": "3cbbc6b7aed45173afa1b9848133c7eb0a4ac53ca9c8c865726085e78ca7f036",
+      "panels": [
+        "D04A",
+        "D04B",
+        "D04C",
+        "D04D"
+      ],
+      "interface": "result_records_supdraw",
+      "status": "candidate_rendered",
+      "added_in": "r2-20261006"
+    },
+    {
+      "figure": "S8",
+      "design_figure": "D05",
+      "script": "notes/2026-10-06-supplement-polyapipe/figures/D05.py",
+      "sha256": "87a32753ce9518d49d797a7308b240fe27595b6c4b2d1b399846e3b118378625",
+      "panels": [
+        "D05A",
+        "D05B",
+        "D05C",
+        "D05D",
+        "D05E",
+        "D05F"
+      ],
+      "interface": "result_records_supdraw",
+      "status": "candidate_rendered",
+      "added_in": "r2-20261006"
+    },
+    {
+      "figure": "S9",
+      "design_figure": "D06",
+      "script": "notes/2026-10-06-supplement-polyapipe/figures/D06.py",
+      "sha256": "ee19990d7625478a9204519ebd7ff389ef235a024bdc16f07716607fecf74ecd",
+      "panels": [
+        "D06A",
+        "D06B",
+        "D06C",
+        "D06D",
+        "D06E"
+      ],
+      "interface": "result_records_supdraw",
+      "status": "candidate_rendered",
+      "added_in": "r2-20261006"
+    },
+    {
+      "figure": "S10",
+      "design_figure": "D07",
+      "script": "notes/2026-10-06-supplement-polyapipe/figures/D07.py",
+      "sha256": "fe7852ad44cbd87927adb47b791904df0b827cf708059a88a24449204fc22419",
+      "panels": [
+        "D07A",
+        "D07B",
+        "D07C",
+        "D07D",
+        "D07E",
+        "D07F"
+      ],
+      "interface": "result_records_supdraw",
+      "status": "candidate_rendered",
+      "added_in": "r2-20261006"
+    },
+    {
+      "figure": "S11",
+      "design_figure": "D08",
+      "script": "notes/2026-10-06-supplement-polyapipe/figures/D08.py",
+      "sha256": "3c8aab2fd782b3815ecf3956f70decb52a324ed66e0b344453319be25f26d34c",
+      "panels": [
+        "D08A",
+        "D08B",
+        "D08C",
+        "D08D"
+      ],
+      "interface": "result_records_supdraw",
+      "status": "candidate_rendered",
+      "added_in": "r2-20261006"
+    },
+    {
+      "figure": "S12",
+      "design_figure": "D09",
+      "script": "notes/2026-10-06-supplement-polyapipe/figures/D09.py",
+      "sha256": "d3b5163d43f48652f1e5f96ae1fe086436fa29bc6d9cdfd66732a85e0415ea1d",
+      "panels": [
+        "D09A",
+        "D09B",
+        "D09C",
+        "D09D",
+        "D09E",
+        "D09F"
+      ],
+      "interface": "result_records_supdraw",
+      "status": "candidate_rendered",
+      "added_in": "r2-20261006"
+    },
+    {
+      "figure": "S13",
+      "design_figure": "D10",
+      "script": "notes/2026-10-06-supplement-polyapipe/figures/D10.py",
+      "sha256": "d06217aeca117baff7275da364e6a02ef16462e0531b206dfd778e813fcc2bbd",
+      "panels": [
+        "D10A",
+        "D10B",
+        "D10C",
+        "D10D",
+        "D10E"
+      ],
+      "interface": "result_records_supdraw",
+      "status": "candidate_rendered",
+      "added_in": "r2-20261006"
+    },
+    {
+      "figure": "S14",
+      "design_figure": "D11",
+      "script": "notes/2026-10-06-supplement-polyapipe/figures/D11.py",
+      "sha256": "274c42e429a7c282f94ce901aa0242c2d2a926a96764c371be7082ee20079159",
+      "panels": [
+        "D11A",
+        "D11B",
+        "D11C",
+        "D11D",
+        "D11E"
+      ],
+      "interface": "result_records_supdraw",
+      "status": "candidate_rendered",
+      "added_in": "r2-20261006"
+    },
+    {
+      "figure": "S15",
+      "design_figure": "D12",
+      "script": "notes/2026-10-06-supplement-polyapipe/figures/D12.py",
+      "sha256": "d2049706c10f05216635ae8821ce8112181bb398619fae478e73b917b9ad9484",
+      "panels": [
+        "D12A",
+        "D12B",
+        "D12C",
+        "D12D"
+      ],
+      "interface": "result_records_supdraw",
+      "status": "candidate_rendered",
+      "added_in": "r2-20261006"
+    },
+    {
+      "figure": "S16",
+      "design_figure": "D13",
+      "script": "notes/2026-10-06-supplement-polyapipe/figures/D13.py",
+      "sha256": "986bda05a8ced47945dfcc87c6d2c1481359554d65b5b672711f5d5a2744f702",
+      "panels": [
+        "D13A",
+        "D13B",
+        "D13C",
+        "D13D",
+        "D13E"
+      ],
+      "interface": "result_records_supdraw",
+      "status": "candidate_rendered",
+      "added_in": "r2-20261006"
+    },
+    {
+      "figure": "S17",
+      "design_figure": "D14",
+      "script": "notes/2026-10-06-supplement-polyapipe/figures/D14.py",
+      "sha256": "3a040dddbfc566b957f3a992b7ed1b64159c4fe11691028befa67826d3ab6e97",
+      "panels": [
+        "D14A",
+        "D14B",
+        "D14C",
+        "D14D",
+        "D14E"
+      ],
+      "interface": "result_records_supdraw",
+      "status": "candidate_rendered",
+      "added_in": "r2-20261006"
+    },
+    {
+      "figure": "S18",
+      "design_figure": "D15",
+      "script": "notes/2026-10-06-supplement-polyapipe/figures/D15.py",
+      "sha256": "a0737bdce2f4ea08a3ffdb73fafb7b51845bd29bca116872561dfa6faec8842f",
+      "panels": [
+        "D15A",
+        "D15B",
+        "D15C",
+        "D15D",
+        "D15E"
+      ],
+      "interface": "result_records_supdraw",
+      "status": "candidate_rendered",
+      "added_in": "r2-20261006"
+    },
+    {
+      "figure": "S19",
+      "design_figure": "D16",
+      "script": "notes/2026-10-06-supplement-polyapipe/figures/D16.py",
+      "sha256": "6d56b920ba7d7df0b3571253e2354930519e88d8d92b9a06181ad02dbc8cc828",
+      "panels": [
+        "D16A",
+        "D16B",
+        "D16C",
+        "D16D",
+        "D16E",
+        "D16F"
+      ],
+      "interface": "result_records_supdraw",
+      "status": "candidate_rendered",
+      "added_in": "r2-20261006"
+    },
+    {
+      "figure": "S20",
+      "design_figure": "D17",
+      "script": "notes/2026-10-06-supplement-polyapipe/figures/D17.py",
+      "sha256": "e65887c7825c9c528a2906c6492b3ce72f9e258fdfb51061eadb397ef2a2ead1",
+      "panels": [
+        "D17A",
+        "D17B"
+      ],
+      "interface": "result_records_supdraw",
+      "status": "candidate_rendered",
+      "added_in": "r2-20261006"
+    },
+    {
+      "figure": "S21",
+      "design_figure": "D18",
+      "script": "notes/2026-10-06-supplement-polyapipe/figures/D18.py",
+      "sha256": "b463119f53b9bb8df204cf19a9efa033cc6539844b4d4716fd4a371477d5cc5c",
+      "panels": [
+        "D18A",
+        "D18B",
+        "D18C",
+        "D18D",
+        "D18E",
+        "D18F",
+        "D18G",
+        "D18H"
+      ],
+      "interface": "result_records_supdraw",
+      "status": "candidate_rendered",
+      "added_in": "r2-20261006"
+    },
+    {
+      "figure": "S22",
+      "design_figure": "D19",
+      "script": "notes/2026-10-06-supplement-polyapipe/figures/D19.py",
+      "sha256": "29f79bf920b7b9423e308a35aae3c1fb92b2b1ce5cf5f06e0b2883bfb0e875d7",
+      "panels": [
+        "D19A",
+        "D19B",
+        "D19C",
+        "D19D",
+        "D19E"
+      ],
+      "interface": "result_records_supdraw",
+      "status": "candidate_rendered",
+      "added_in": "r2-20261006"
+    },
+    {
+      "figure": "S23",
+      "design_figure": "D20",
+      "script": "notes/2026-10-06-supplement-polyapipe/figures/D20.py",
+      "sha256": "cdedf97fdb0d0534960d4684ae3cad9efb164f5ef88c3974fffd42158a3588d9",
+      "panels": [
+        "D20A",
+        "D20B",
+        "D20C",
+        "D20D",
+        "D20E"
+      ],
+      "interface": "result_records_supdraw",
+      "status": "candidate_rendered",
+      "added_in": "r2-20261006"
+    },
+    {
+      "figure": "S24",
+      "design_figure": "D21",
+      "script": "notes/2026-10-06-supplement-polyapipe/figures/D21.py",
+      "sha256": "38288e084c951ccf88055fac05b6dce46c786bbede2b6824bf8372386199130c",
+      "panels": [
+        "D21A",
+        "D21B",
+        "D21C",
+        "D21D",
+        "D21E",
+        "D21F",
+        "D21G"
+      ],
+      "interface": "result_records_supdraw",
+      "status": "candidate_rendered",
+      "added_in": "r2-20261006"
+    },
+    {
+      "figure": "S25",
+      "design_figure": "D22",
+      "script": "notes/2026-10-06-supplement-polyapipe/figures/D22.py",
+      "sha256": "871fa5feef996def683bda3c600b2e68863ff25ebe3d07ff8a3b437bc514658d",
+      "panels": [
+        "D22A",
+        "D22B",
+        "D22C",
+        "D22D",
+        "D22E"
+      ],
+      "interface": "result_records_supdraw",
+      "status": "candidate_rendered",
+      "added_in": "r2-20261006"
+    },
+    {
+      "figure": "S26",
+      "design_figure": "D23",
+      "script": "notes/2026-10-06-supplement-polyapipe/figures/D23.py",
+      "sha256": "1f31cd129f3fb2ba3100d4f04f762e0c3cfbb3b21ff57a18bcec226228fdd84a",
+      "panels": [
+        "D23A",
+        "D23B",
+        "D23C",
+        "D23D",
+        "D23E"
+      ],
+      "interface": "result_records_supdraw",
+      "status": "candidate_rendered",
+      "added_in": "r2-20261006"
+    },
+    {
+      "figure": "S27",
+      "design_figure": "D24",
+      "script": "notes/2026-10-06-supplement-polyapipe/figures/D24.py",
+      "sha256": "0009f3e7dd620dcf38bf882fb6e9fb85d354e502fb69435816984ccbce33f3cf",
+      "panels": [
+        "D24A",
+        "D24B",
+        "D24C",
+        "D24D",
+        "D24E",
+        "D24F"
+      ],
+      "interface": "result_records_supdraw",
+      "status": "candidate_rendered",
+      "added_in": "r2-20261006"
+    },
+    {
+      "figure": "S28",
+      "design_figure": "D25",
+      "script": "notes/2026-10-06-supplement-polyapipe/figures/D25.py",
+      "sha256": "abd24d399a90da9df46686a6aa21b2aea88730bfa541ec707a1c59c145bfc3eb",
+      "panels": [
+        "D25A",
+        "D25B",
+        "D25C",
+        "D25D"
+      ],
+      "interface": "result_records_supdraw",
+      "status": "candidate_rendered",
+      "added_in": "r2-20261006"
+    },
+    {
+      "figure": "S29",
+      "design_figure": "D26",
+      "script": "notes/2026-10-06-supplement-polyapipe/figures/D26.py",
+      "sha256": "081d98d30698dabe46d576fe5a767f7db5ba2e0ef6e758e17f27542c58bd2662",
+      "panels": [
+        "D26A",
+        "D26B",
+        "D26C",
+        "D26D",
+        "D26E",
+        "D26F",
+        "D26G",
+        "D26H"
+      ],
+      "interface": "result_records_supdraw",
+      "status": "candidate_rendered",
+      "added_in": "r2-20261006"
+    },
+    {
+      "figure": "S30",
+      "design_figure": "D27",
+      "script": "notes/2026-10-06-supplement-polyapipe/figures/D27.py",
+      "sha256": "f29ca31af9642237ae9abdf8a54bb115bd379a56366829242a99926aab39f557",
+      "panels": [
+        "D27A",
+        "D27B",
+        "D27C"
+      ],
+      "interface": "result_records_supdraw",
+      "status": "candidate_rendered",
+      "added_in": "r2-20261006"
+    }
+  ]
+}

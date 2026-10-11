@@ -1,0 +1,13 @@
+{
+  "utc": "2026-10-08T16:13:31.329170+00:00",
+  "phase": "before_fixed_empty_schema_complete_rerun",
+  "root_explicit_authorization_received": true,
+  "scientific_constraints_changed": false,
+  "sha256": {
+    "/Users/lycidas/work/reproAPA/reviews/2026-10-08-plan-a-redesign/cycle/PROTOCOL.md": "94c83cd06af5016bd303a042dae9fdb214f3d6869cc0da33d8b5bc5e5895786a",
+    "/Users/lycidas/work/reproAPA/reviews/2026-10-08-plan-a-redesign/cycle/collect.py": "92ddeffc0f80003c348a89241af22106c081b97dd23249ee2cb7e22133597539",
+    "/Users/lycidas/work/reproAPA/reviews/2026-10-08-plan-a-redesign/cycle/run_cycle.py": "d01e69833b9ad08dd392cb6dae08d9754cb3db5091d6c9c52b1fe1747337be5a",
+    "/Users/lycidas/work/reproAPA/reviews/2026-10-08-plan-a-redesign/PROTOCOL.md": "948de02088f563425c95120b2749f881c28318692678b75da7cfbdc0597bce82",
+    "/Users/lycidas/work/reproAPA/reviews/2026-10-08-plan-a-redesign/CYCLE-FREEZE-ADDENDUM.md": "6c1b1e29122e0e554f56dec9acaac0badbb3b84f12590b7a847889cc1b140743"
+  }
+}

@@ -1,0 +1,189 @@
+version: '3.0'
+study_id: GSE178325
+species:
+- Homo sapiens
+membership_path: /root/nfsdata/apadetect/analysis_projects/reprogramming_unified_rna_qc_v3.2_release/runs/gse178325_regression/primary_membership.tsv.gz
+sensitivity_membership_path: /root/nfsdata/apadetect/analysis_projects/reprogramming_unified_rna_qc_v3.2_release/runs/gse178325_regression/sensitivity_membership.tsv.gz
+technical_membership_path: /root/nfsdata/apadetect/analysis_projects/reprogramming_unified_rna_qc_v3.2_release/runs/gse178325_regression/technical_membership.tsv.gz
+library_metadata_path: /root/nfsdata/apadetect/analysis_projects/reprogramming_unified_rna_qc_v3.2_release/manifests/GSE178325_regression.tsv
+membership_columns:
+  cell_id: global_cell_id
+  state_id: null
+  scope_id: null
+  library_id: library_id
+  barcode: barcode
+expression_mode: multi_source
+expression_already_log1p: false
+partition_selection_fields: []
+library_use: stratified_resampling_and_postfreeze_audit_only
+qc_contract:
+  method_contract_sha256: cdf1987a05dd818c1e4e21fe2751df02f98490570d2d522e7b12cbefb1f73134
+  production_acceptance_path: /root/nfsdata/apadetect/analysis_projects/reprogramming_unified_rna_qc_v3.2_release/runs/_production_acceptance/acceptance.json
+  independent_validation_path: /root/nfsdata/apadetect/analysis_projects/reprogramming_unified_rna_qc_v3.2_release/runs/gse178325_regression/independent_validation.tsv
+  tiers:
+    primary_pass:
+      n_cells: 140593
+      cell_set_sha256: 0916b9e7cb8c2c06c5ffffa02660649987b077f9eeaf4b9936763b3e9886e2c9
+    sensitivity_only:
+      n_cells: 36559
+      cell_set_sha256: bdfcd75fa80cf2ddacefc4b984b4374f0ad45fa5c526389fa56835179197dc0d
+    technical_exclude:
+      n_cells: 45574
+      cell_set_sha256: 4ed2a5e923e32d62ebd13fae2ffb48dd60ad893cccef8b824acca4545e139c8a
+scopes:
+  studywide:
+    role: primary
+    n_cells: 140593
+    source_membership_order_sha256: 0916b9e7cb8c2c06c5ffffa02660649987b077f9eeaf4b9936763b3e9886e2c9
+    cell_set_sha256: 0916b9e7cb8c2c06c5ffffa02660649987b077f9eeaf4b9936763b3e9886e2c9
+    sensitivity_n_cells: 36559
+    sensitivity_source_membership_order_sha256: bdfcd75fa80cf2ddacefc4b984b4374f0ad45fa5c526389fa56835179197dc0d
+    sensitivity_cell_set_sha256: bdfcd75fa80cf2ddacefc4b984b4374f0ad45fa5c526389fa56835179197dc0d
+    expression_sources:
+    - selector: library_id
+      value: gse178325_human_chemical_pluripotency_reprogramming_GSM5387808
+      mode: 10x_h5
+      path: /root/nfsdata/apadetect/data/reprogramming_differentiation_apa/analyses/raw_realignment_apa_2026-06-07/cellranger/gse178325_human_chemical_pluripotency_reprogramming/gse178325_human_chemical_pluripotency_reprogramming_GSM5387808/outs/filtered_feature_bc_matrix.h5
+    - selector: library_id
+      value: gse178325_human_chemical_pluripotency_reprogramming_GSM5387809
+      mode: 10x_h5
+      path: /root/nfsdata/apadetect/data/reprogramming_differentiation_apa/analyses/raw_realignment_apa_2026-06-07/cellranger/gse178325_human_chemical_pluripotency_reprogramming/gse178325_human_chemical_pluripotency_reprogramming_GSM5387809/outs/filtered_feature_bc_matrix.h5
+    - selector: library_id
+      value: gse178325_human_chemical_pluripotency_reprogramming_GSM5387810
+      mode: 10x_h5
+      path: /root/nfsdata/apadetect/data/reprogramming_differentiation_apa/analyses/raw_realignment_apa_2026-06-07/cellranger/gse178325_human_chemical_pluripotency_reprogramming/gse178325_human_chemical_pluripotency_reprogramming_GSM5387810/outs/filtered_feature_bc_matrix.h5
+    - selector: library_id
+      value: gse178325_human_chemical_pluripotency_reprogramming_GSM5387811
+      mode: 10x_h5
+      path: /root/nfsdata/apadetect/data/reprogramming_differentiation_apa/analyses/raw_realignment_apa_2026-06-07/cellranger/gse178325_human_chemical_pluripotency_reprogramming/gse178325_human_chemical_pluripotency_reprogramming_GSM5387811/outs/filtered_feature_bc_matrix.h5
+    - selector: library_id
+      value: gse178325_human_chemical_pluripotency_reprogramming_GSM5387812
+      mode: 10x_h5
+      path: /root/nfsdata/apadetect/data/reprogramming_differentiation_apa/analyses/raw_realignment_apa_2026-06-07/cellranger/gse178325_human_chemical_pluripotency_reprogramming/gse178325_human_chemical_pluripotency_reprogramming_GSM5387812/outs/filtered_feature_bc_matrix.h5
+    - selector: library_id
+      value: gse178325_human_chemical_pluripotency_reprogramming_GSM5387813
+      mode: 10x_h5
+      path: /root/nfsdata/apadetect/data/reprogramming_differentiation_apa/analyses/raw_realignment_apa_2026-06-07/cellranger/gse178325_human_chemical_pluripotency_reprogramming/gse178325_human_chemical_pluripotency_reprogramming_GSM5387813/outs/filtered_feature_bc_matrix.h5
+    - selector: library_id
+      value: gse178325_human_chemical_pluripotency_reprogramming_GSM5387814
+      mode: 10x_h5
+      path: /root/nfsdata/apadetect/data/reprogramming_differentiation_apa/analyses/raw_realignment_apa_2026-06-07/cellranger/gse178325_human_chemical_pluripotency_reprogramming/gse178325_human_chemical_pluripotency_reprogramming_GSM5387814/outs/filtered_feature_bc_matrix.h5
+    - selector: library_id
+      value: gse178325_human_chemical_pluripotency_reprogramming_GSM5387815
+      mode: 10x_h5
+      path: /root/nfsdata/apadetect/data/reprogramming_differentiation_apa/analyses/raw_realignment_apa_2026-06-07/cellranger/gse178325_human_chemical_pluripotency_reprogramming/gse178325_human_chemical_pluripotency_reprogramming_GSM5387815/outs/filtered_feature_bc_matrix.h5
+    - selector: library_id
+      value: gse178325_human_chemical_pluripotency_reprogramming_GSM5387816
+      mode: 10x_h5
+      path: /root/nfsdata/apadetect/data/reprogramming_differentiation_apa/analyses/raw_realignment_apa_2026-06-07/cellranger/gse178325_human_chemical_pluripotency_reprogramming/gse178325_human_chemical_pluripotency_reprogramming_GSM5387816/outs/filtered_feature_bc_matrix.h5
+    - selector: library_id
+      value: gse178325_human_chemical_pluripotency_reprogramming_GSM5534140
+      mode: 10x_h5
+      path: /root/nfsdata/apadetect/data/reprogramming_differentiation_apa/analyses/raw_realignment_apa_2026-06-07/cellranger/gse178325_human_chemical_pluripotency_reprogramming/gse178325_human_chemical_pluripotency_reprogramming_GSM5534140/outs/filtered_feature_bc_matrix.h5
+    - selector: library_id
+      value: gse178325_human_chemical_pluripotency_reprogramming_GSM5534141
+      mode: 10x_h5
+      path: /root/nfsdata/apadetect/data/reprogramming_differentiation_apa/analyses/raw_realignment_apa_2026-06-07/cellranger/gse178325_human_chemical_pluripotency_reprogramming/gse178325_human_chemical_pluripotency_reprogramming_GSM5534141/outs/filtered_feature_bc_matrix.h5
+    - selector: library_id
+      value: gse178325_human_chemical_pluripotency_reprogramming_GSM5534142
+      mode: 10x_h5
+      path: /root/nfsdata/apadetect/data/reprogramming_differentiation_apa/analyses/raw_realignment_apa_2026-06-07/cellranger/gse178325_human_chemical_pluripotency_reprogramming/gse178325_human_chemical_pluripotency_reprogramming_GSM5534142/outs/filtered_feature_bc_matrix.h5
+    - selector: library_id
+      value: gse178325_human_chemical_pluripotency_reprogramming_GSM5534143
+      mode: 10x_h5
+      path: /root/nfsdata/apadetect/data/reprogramming_differentiation_apa/analyses/raw_realignment_apa_2026-06-07/cellranger/gse178325_human_chemical_pluripotency_reprogramming/gse178325_human_chemical_pluripotency_reprogramming_GSM5534143/outs/filtered_feature_bc_matrix.h5
+    - selector: library_id
+      value: gse178325_human_chemical_pluripotency_reprogramming_GSM5534144
+      mode: 10x_h5
+      path: /root/nfsdata/apadetect/data/reprogramming_differentiation_apa/analyses/raw_realignment_apa_2026-06-07/cellranger/gse178325_human_chemical_pluripotency_reprogramming/gse178325_human_chemical_pluripotency_reprogramming_GSM5534144/outs/filtered_feature_bc_matrix.h5
+    - selector: library_id
+      value: gse178325_human_chemical_pluripotency_reprogramming_GSM5534145
+      mode: 10x_h5
+      path: /root/nfsdata/apadetect/data/reprogramming_differentiation_apa/analyses/raw_realignment_apa_2026-06-07/cellranger/gse178325_human_chemical_pluripotency_reprogramming/gse178325_human_chemical_pluripotency_reprogramming_GSM5534145/outs/filtered_feature_bc_matrix.h5
+    - selector: library_id
+      value: gse178325_human_chemical_pluripotency_reprogramming_GSM5534146
+      mode: 10x_h5
+      path: /root/nfsdata/apadetect/data/reprogramming_differentiation_apa/analyses/raw_realignment_apa_2026-06-07/cellranger/gse178325_human_chemical_pluripotency_reprogramming/gse178325_human_chemical_pluripotency_reprogramming_GSM5534146/outs/filtered_feature_bc_matrix.h5
+    - selector: library_id
+      value: gse178325_human_chemical_pluripotency_reprogramming_GSM5534147
+      mode: 10x_h5
+      path: /root/nfsdata/apadetect/data/reprogramming_differentiation_apa/analyses/raw_realignment_apa_2026-06-07/cellranger/gse178325_human_chemical_pluripotency_reprogramming/gse178325_human_chemical_pluripotency_reprogramming_GSM5534147/outs/filtered_feature_bc_matrix.h5
+    - selector: library_id
+      value: gse178325_human_chemical_pluripotency_reprogramming_GSM5534148
+      mode: 10x_h5
+      path: /root/nfsdata/apadetect/data/reprogramming_differentiation_apa/analyses/raw_realignment_apa_2026-06-07/cellranger/gse178325_human_chemical_pluripotency_reprogramming/gse178325_human_chemical_pluripotency_reprogramming_GSM5534148/outs/filtered_feature_bc_matrix.h5
+    - selector: library_id
+      value: gse178325_human_chemical_pluripotency_reprogramming_GSM5534149
+      mode: 10x_h5
+      path: /root/nfsdata/apadetect/data/reprogramming_differentiation_apa/analyses/raw_realignment_apa_2026-06-07/cellranger/gse178325_human_chemical_pluripotency_reprogramming/gse178325_human_chemical_pluripotency_reprogramming_GSM5534149/outs/filtered_feature_bc_matrix.h5
+    - selector: library_id
+      value: gse178325_human_chemical_pluripotency_reprogramming_GSM5534150
+      mode: 10x_h5
+      path: /root/nfsdata/apadetect/data/reprogramming_differentiation_apa/analyses/raw_realignment_apa_2026-06-07/cellranger/gse178325_human_chemical_pluripotency_reprogramming/gse178325_human_chemical_pluripotency_reprogramming_GSM5534150/outs/filtered_feature_bc_matrix.h5
+    - selector: library_id
+      value: gse178325_human_chemical_pluripotency_reprogramming_GSM5534151
+      mode: 10x_h5
+      path: /root/nfsdata/apadetect/data/reprogramming_differentiation_apa/analyses/raw_realignment_apa_2026-06-07/cellranger/gse178325_human_chemical_pluripotency_reprogramming/gse178325_human_chemical_pluripotency_reprogramming_GSM5534151/outs/filtered_feature_bc_matrix.h5
+    - selector: library_id
+      value: gse178325_human_chemical_pluripotency_reprogramming_GSM5534152
+      mode: 10x_h5
+      path: /root/nfsdata/apadetect/data/reprogramming_differentiation_apa/analyses/raw_realignment_apa_2026-06-07/cellranger/gse178325_human_chemical_pluripotency_reprogramming/gse178325_human_chemical_pluripotency_reprogramming_GSM5534152/outs/filtered_feature_bc_matrix.h5
+    - selector: library_id
+      value: gse178325_human_chemical_pluripotency_reprogramming_GSM5534153
+      mode: 10x_h5
+      path: /root/nfsdata/apadetect/data/reprogramming_differentiation_apa/analyses/raw_realignment_apa_2026-06-07/cellranger/gse178325_human_chemical_pluripotency_reprogramming/gse178325_human_chemical_pluripotency_reprogramming_GSM5534153/outs/filtered_feature_bc_matrix.h5
+    - selector: library_id
+      value: gse178325_human_chemical_pluripotency_reprogramming_GSM5534154
+      mode: 10x_h5
+      path: /root/nfsdata/apadetect/data/reprogramming_differentiation_apa/analyses/raw_realignment_apa_2026-06-07/cellranger/gse178325_human_chemical_pluripotency_reprogramming/gse178325_human_chemical_pluripotency_reprogramming_GSM5534154/outs/filtered_feature_bc_matrix.h5
+    - selector: library_id
+      value: gse178325_human_chemical_pluripotency_reprogramming_GSM5534155
+      mode: 10x_h5
+      path: /root/nfsdata/apadetect/data/reprogramming_differentiation_apa/analyses/raw_realignment_apa_2026-06-07/cellranger/gse178325_human_chemical_pluripotency_reprogramming/gse178325_human_chemical_pluripotency_reprogramming_GSM5534155/outs/filtered_feature_bc_matrix.h5
+    - selector: library_id
+      value: gse178325_human_chemical_pluripotency_reprogramming_GSM5534156
+      mode: 10x_h5
+      path: /root/nfsdata/apadetect/data/reprogramming_differentiation_apa/analyses/raw_realignment_apa_2026-06-07/cellranger/gse178325_human_chemical_pluripotency_reprogramming/gse178325_human_chemical_pluripotency_reprogramming_GSM5534156/outs/filtered_feature_bc_matrix.h5
+    - selector: library_id
+      value: gse178325_human_chemical_pluripotency_reprogramming_GSM5534157
+      mode: 10x_h5
+      path: /root/nfsdata/apadetect/data/reprogramming_differentiation_apa/analyses/raw_realignment_apa_2026-06-07/cellranger/gse178325_human_chemical_pluripotency_reprogramming/gse178325_human_chemical_pluripotency_reprogramming_GSM5534157/outs/filtered_feature_bc_matrix.h5
+    - selector: library_id
+      value: gse178325_human_chemical_pluripotency_reprogramming_GSM5534158
+      mode: 10x_h5
+      path: /root/nfsdata/apadetect/data/reprogramming_differentiation_apa/analyses/raw_realignment_apa_2026-06-07/cellranger/gse178325_human_chemical_pluripotency_reprogramming/gse178325_human_chemical_pluripotency_reprogramming_GSM5534158/outs/filtered_feature_bc_matrix.h5
+    - selector: library_id
+      value: gse178325_human_chemical_pluripotency_reprogramming_GSM5683317
+      mode: 10x_h5
+      path: /root/nfsdata/apadetect/data/reprogramming_differentiation_apa/analyses/raw_realignment_apa_2026-06-07/cellranger/gse178325_human_chemical_pluripotency_reprogramming/gse178325_human_chemical_pluripotency_reprogramming_GSM5683317/outs/filtered_feature_bc_matrix.h5
+    - selector: library_id
+      value: gse178325_human_chemical_pluripotency_reprogramming_GSM5683318
+      mode: 10x_h5
+      path: /root/nfsdata/apadetect/data/reprogramming_differentiation_apa/analyses/raw_realignment_apa_2026-06-07/cellranger/gse178325_human_chemical_pluripotency_reprogramming/gse178325_human_chemical_pluripotency_reprogramming_GSM5683318/outs/filtered_feature_bc_matrix.h5
+    - selector: library_id
+      value: gse178325_human_chemical_pluripotency_reprogramming_GSM5683319
+      mode: 10x_h5
+      path: /root/nfsdata/apadetect/data/reprogramming_differentiation_apa/analyses/raw_realignment_apa_2026-06-07/cellranger/gse178325_human_chemical_pluripotency_reprogramming/gse178325_human_chemical_pluripotency_reprogramming_GSM5683319/outs/filtered_feature_bc_matrix.h5
+    - selector: library_id
+      value: gse178325_human_chemical_pluripotency_reprogramming_GSM5683320
+      mode: 10x_h5
+      path: /root/nfsdata/apadetect/data/reprogramming_differentiation_apa/analyses/raw_realignment_apa_2026-06-07/cellranger/gse178325_human_chemical_pluripotency_reprogramming/gse178325_human_chemical_pluripotency_reprogramming_GSM5683320/outs/filtered_feature_bc_matrix.h5
+    pipeline:
+      hvg_n_top_genes: 3000
+      pca_n_components_fitted: 50
+      pca_n_components_used: 30
+      pca_seed: 20260825
+      neighbor_n_neighbors: 30
+      leiden_resolution: 0.6
+      leiden_seed: 20260825
+      filter_genes_min_cells: 10
+      normalization_method: normalize_total
+      normalization_target_sum: 10000.0
+      transform: log1p
+      hvg_flavor: scanpy_seurat
+      scale_max_value: 10
+      pca_solver: sklearn_randomized_iterated_power_4
+      neighbor_backend: pynndescent.NNDescent
+      neighbor_metric: euclidean
+      leiden_implementation: leidenalg.find_partition
+      leiden_iterations: -1

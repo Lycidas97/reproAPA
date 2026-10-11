@@ -1,0 +1,17 @@
+{
+  "captured_utc": "2026-10-10T04:17:07.438426+00:00",
+  "scope": "Current local S9 workbook reconstruction runtime; original source imports this external bundled package",
+  "bundle_version": "26.1007.11041",
+  "node": "v24.19.0",
+  "package": {
+    "name": "@oai/artifact-tool",
+    "version": "2.8.89",
+    "package_json_sha256": "69b9da8c815cbcd8f90ae9520ba589533b3f5adfa6244025282b3ef33520d49d",
+    "engines": {},
+    "source": "/Users/lycidas/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/@oai/artifact-tool/package.json"
+  },
+  "fonts_requested": [
+    "Arial"
+  ],
+  "package_public_download_verified": false
+}

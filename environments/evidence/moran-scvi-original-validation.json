@@ -1,0 +1,20 @@
+{
+  "status": "PASS",
+  "nodes": 11104,
+  "time_graph_components": 1,
+  "cross_species_temporal_edges": 0,
+  "displayed_study_trajectories": 7,
+  "displayed_trajectory_arrows": 86,
+  "mnn_pair_checks": 55,
+  "mnn_min_exact_recall": 1.0,
+  "cross_species_30nn_fraction": 0.05341918828049952,
+  "overview_figure_pixels": {
+    "width": 6375,
+    "height": 2200
+  },
+  "single_map_figure_pixels": {
+    "width": 4000,
+    "height": 2875
+  },
+  "interpretation": "Species integration is a display alignment; temporal OT and arrows remain study/species internal."
+}

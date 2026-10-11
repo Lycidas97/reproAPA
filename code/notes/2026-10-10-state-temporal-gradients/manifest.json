@@ -1,0 +1,30 @@
+{
+  "inputs": {
+    "notes/2026-10-06-dual-main-plot-data/polyapipe/main/tables/intermediate/library_state_values.tsv.gz": "14afa32e635f4395550b7aab93298d022ba86d7de411e4b79bb17a3c7918ec43",
+    "notes/2026-10-06-dual-main-plot-data/polyapipe/main/tables/intermediate/state_date_values.tsv.gz": "27e566f80b28b8380c746dc3c29905e986e61a22891be2e627706c67e7020a6f",
+    "notes/2026-10-06-dual-main-plot-data/polyapipe/main/tables/intermediate/paired_library_effects.tsv.gz": "53d916edaaf81a02bc2003d6e89651b97797a2022b75019454b1ebf18cbc74c4",
+    "notes/2026-10-06-dual-main-plot-data/polyapipe/main/tables/intermediate/state_library_inventory.tsv": "56b014db7602d6069d307dd19d49700b8d7c34ba0bdc4586dad890a2958f3dc8",
+    "notes/2026-10-06-dual-main-plot-data/polyapipe/main/tables/tandem/tandem_utr_eligibility.tsv.gz": "3a4ae84958f0210dc7ba0ae2f203530dbd794701536f6d3f5d8e11d10fe0cd19",
+    "notes/2026-10-06-dual-main-plot-data/polyapipe/main/tables/recurrence/recurrence_members.tsv.gz": "e7d3d0bf40aec45e02324ee00c023ca20fa17bf028ec0a01198804738053e277"
+  },
+  "protocol_sha256": "2568a7b2e9b3ebc422a6cc0e3d08552781cc85e4a1572d775a300a95dcad93c1",
+  "analysis_code_sha256": "59927cb94dcef9afc332b274156a969669f8b3478a8b2a24e8e14b6e6548070e",
+  "upstream_code_sha256": {
+    "analysis_code/pas_rerun/downstream_intermediate.py": "0ee8c4a2f4f8cb3ce9aa6f1b55611af3238a85cdc9b2105ed2619c9100442b16",
+    "analysis_code/pas_rerun/downstream_runtime.py": "08ad37a4501e9db33da613869376ce825fe4776191f8922ecccfd9bea7f8c0ab",
+    "analysis_code/pas_rerun/downstream_global.py": "bff2b6e9d3f0f69fcf9e5e0349c9659710bbd9b0f96a8a9c3ff0825ed3849237"
+  },
+  "verification": {
+    "primary_state_date_rows_reproduced": 673605,
+    "state_date_maximum_absolute_error": 4.440892098500626e-16,
+    "fixed_recurrence_members": "{('human', 'P_M', 'negative'): 144, ('human', 'P_M', 'positive'): 124, ('human', 'P_S', 'negative'): 144, ('human', 'P_S', 'positive'): 339, ('mouse', 'P_M', 'negative'): 372, ('mouse', 'P_M', 'positive'): 48, ('mouse', 'P_S', 'negative'): 511, ('mouse', 'P_S', 'positive'): 93}",
+    "curve_composition_and_library_coverage_fixed": true,
+    "PM_curves_same_gene_library_state_identity_verified": true,
+    "stage_complete_all_state_dates": {
+      "GSE118258": 1711,
+      "CIP": 1211,
+      "WOT": 374
+    },
+    "common_mouse_stage_genes": 328
+  }
+}

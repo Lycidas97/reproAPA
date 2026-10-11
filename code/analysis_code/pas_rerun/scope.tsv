@@ -1,0 +1,162 @@
+study	species	sample_id	library_id	geo_sample_title	called_cells_before_downstream_qc	expression_atlas_member	expression_atlas_cells	analysis_unit	membership_note
+GSE118258	human	GSM3323825	gse118258_human_pluripotency_reprogramming_GSM3323825	D0_10X	7334	True	6491	gse118258	included in expression atlas
+GSE118258	human	GSM3323826	gse118258_human_pluripotency_reprogramming_GSM3323826	D2_10X	5238	True	4431	gse118258	included in expression atlas
+GSE118258	human	GSM3323827	gse118258_human_pluripotency_reprogramming_GSM3323827	D8_10X	4057	True	3230	gse118258	included in expression atlas
+GSE118258	human	GSM3323828	gse118258_human_pluripotency_reprogramming_GSM3323828	D12_10X	7639	True	6364	gse118258	included in expression atlas
+GSE118258	human	GSM3323829	gse118258_human_pluripotency_reprogramming_GSM3323829	D16-_10X	7029	True	6018	gse118258	included in expression atlas
+GSE118258	human	GSM3323830	gse118258_human_pluripotency_reprogramming_GSM3323830	D16+_10X	3083	True	2466	gse118258	included in expression atlas
+GSE150311	human	GSM4546545	gse150311_human_pluripotency_reprogramming_GSM4546545	SC_RNA-seq_D0_D7	3256	True	2974	gse150311	included in expression atlas
+GSE150311	human	GSM4546546	gse150311_human_pluripotency_reprogramming_GSM4546546	SC_RNA-seq_Naive	3865	True	3050	gse150311	included in expression atlas
+GSE150311	human	GSM4546547	gse150311_human_pluripotency_reprogramming_GSM4546547	SC_RNA-seq_Primed	3780	True	3159	gse150311	included in expression atlas
+GSE150311	human	GSM4546548	gse150311_human_pluripotency_reprogramming_GSM4546548	SC_RNA-seq_RSet	4240	True	3301	gse150311	included in expression atlas
+GSE178325	human	GSM5387808	gse178325_human_chemical_pluripotency_reprogramming_GSM5387808	scRNA-Seq HEFs-0330	4278	True	3663	gse178325	included in expression atlas
+GSE178325	human	GSM5387809	gse178325_human_chemical_pluripotency_reprogramming_GSM5387809	scRNA-Seq hADSCs-0618	4414	True	3554	gse178325	included in expression atlas
+GSE178325	human	GSM5387810	gse178325_human_chemical_pluripotency_reprogramming_GSM5387810	StageI_Day8-0618	4761	True	3445	gse178325	included in expression atlas
+GSE178325	human	GSM5387811	gse178325_human_chemical_pluripotency_reprogramming_GSM5387811	StageII_Day20-0618	5926	True	4843	gse178325	included in expression atlas
+GSE178325	human	GSM5387812	gse178325_human_chemical_pluripotency_reprogramming_GSM5387812	StageIII_Day12-0618	7123	True	4052	gse178325	included in expression atlas
+GSE178325	human	GSM5387813	gse178325_human_chemical_pluripotency_reprogramming_GSM5387813	scRNA-Seq stageII-0330	4450	True	3653	gse178325	included in expression atlas
+GSE178325	human	GSM5387814	gse178325_human_chemical_pluripotency_reprogramming_GSM5387814	scRNA-Seq StageII-5azac-0330	3712	True	2851	gse178325	included in expression atlas
+GSE178325	human	GSM5387815	gse178325_human_chemical_pluripotency_reprogramming_GSM5387815	scRNA-Seq StageII-JNKIN8-0330	2915	True	1943	gse178325	included in expression atlas
+GSE178325	human	GSM5387816	gse178325_human_chemical_pluripotency_reprogramming_GSM5387816	scRNA-Seq StageII-Tranyl-0330	3818	True	3179	gse178325	included in expression atlas
+GSE178325	human	GSM5534140	gse178325_human_chemical_pluripotency_reprogramming_GSM5534140	hASFs-0605	5658	True	3261	gse178325	included in expression atlas
+GSE178325	human	GSM5534141	gse178325_human_chemical_pluripotency_reprogramming_GSM5534141	hADSCs-0809	6138	True	5230	gse178325	included in expression atlas
+GSE178325	human	GSM5534142	gse178325_human_chemical_pluripotency_reprogramming_GSM5534142	StageI-0605	4714	True	3119	gse178325	included in expression atlas
+GSE178325	human	GSM5534143	gse178325_human_chemical_pluripotency_reprogramming_GSM5534143	StageII-0605	6579	True	5180	gse178325	included in expression atlas
+GSE178325	human	GSM5534144	gse178325_human_chemical_pluripotency_reprogramming_GSM5534144	StageI_Day4-0618	4174	True	3464	gse178325	included in expression atlas
+GSE178325	human	GSM5534145	gse178325_human_chemical_pluripotency_reprogramming_GSM5534145	StageII_Day4-0618	5541	True	4390	gse178325	included in expression atlas
+GSE178325	human	GSM5534146	gse178325_human_chemical_pluripotency_reprogramming_GSM5534146	StageII_Day8-0618	2915	True	2382	gse178325	included in expression atlas
+GSE178325	human	GSM5534147	gse178325_human_chemical_pluripotency_reprogramming_GSM5534147	StageII_Day12-0618	4661	True	3634	gse178325	included in expression atlas
+GSE178325	human	GSM5534148	gse178325_human_chemical_pluripotency_reprogramming_GSM5534148	StageIII_Day4-0618	4426	True	3596	gse178325	included in expression atlas
+GSE178325	human	GSM5534149	gse178325_human_chemical_pluripotency_reprogramming_GSM5534149	StageIII_Day8-0618	3464	True	2738	gse178325	included in expression atlas
+GSE178325	human	GSM5534150	gse178325_human_chemical_pluripotency_reprogramming_GSM5534150	StageIV_Day1-0618	8070	True	5308	gse178325	included in expression atlas
+GSE178325	human	GSM5534151	gse178325_human_chemical_pluripotency_reprogramming_GSM5534151	StageIV_Day2-0618	11054	True	7609	gse178325	included in expression atlas
+GSE178325	human	GSM5534152	gse178325_human_chemical_pluripotency_reprogramming_GSM5534152	StageIV_Day4-0618	9679	True	5999	gse178325	included in expression atlas
+GSE178325	human	GSM5534153	gse178325_human_chemical_pluripotency_reprogramming_GSM5534153	StageIV_Day10-0618	3879	True	2581	gse178325	included in expression atlas
+GSE178325	human	GSM5534154	gse178325_human_chemical_pluripotency_reprogramming_GSM5534154	hCiPSCs-0618	19110	True	7218	gse178325	included in expression atlas
+GSE178325	human	GSM5534155	gse178325_human_chemical_pluripotency_reprogramming_GSM5534155	hCiPSCs-0809	5451	True	4027	gse178325	included in expression atlas
+GSE178325	human	GSM5534156	gse178325_human_chemical_pluripotency_reprogramming_GSM5534156	hCiPSCs-1117	19099	True	6316	gse178325	included in expression atlas
+GSE178325	human	GSM5534157	gse178325_human_chemical_pluripotency_reprogramming_GSM5534157	hCiPSCs-1230	20602	True	8739	gse178325	included in expression atlas
+GSE178325	human	GSM5534158	gse178325_human_chemical_pluripotency_reprogramming_GSM5534158	H1	17032	True	7666	gse178325	included in expression atlas
+GSE178325	human	GSM5683317	gse178325_human_chemical_pluripotency_reprogramming_GSM5683317	StageI_Day0-0618	5805	True	5248	gse178325	included in expression atlas
+GSE178325	human	GSM5683318	gse178325_human_chemical_pluripotency_reprogramming_GSM5683318	StageI_Day0.5-0618	4133	True	3782	gse178325	included in expression atlas
+GSE178325	human	GSM5683319	gse178325_human_chemical_pluripotency_reprogramming_GSM5683319	StageI_Day1-0618	4365	True	4011	gse178325	included in expression atlas
+GSE178325	human	GSM5683320	gse178325_human_chemical_pluripotency_reprogramming_GSM5683320	StageI_Day2-0618	4780	True	3912	gse178325	included in expression atlas
+GSE221739	human	GSM6894040	D11A_GSM6894040	D11, pool A	6083	True	3203	gse221739	included in expression atlas
+GSE221739	human	GSM6894042	D11B_rep2_GSM6894042	D11, pool B, replicate 2	6546	True	3379	gse221739	included in expression atlas
+GSE221739	human	GSM6894043	D13A_GSM6894043	D13, pool A	4284	True	1656	gse221739	included in expression atlas
+GSE221739	human	GSM6894044	D13B_GSM6894044	D13, pool B	10027	True	4607	gse221739	included in expression atlas
+GSE221739	human	GSM6894045	D15A_GSM6894045	D15, pool A	1534	True	642	gse221739	included in expression atlas
+GSE221739	human	GSM6894046	D15B_GSM6894046	D15, pool B	5862	True	2398	gse221739	included in expression atlas
+GSE221739	human	GSM6894027	D3A_GSM6894027	D3, pool A	4084	True	2130	gse221739	included in expression atlas
+GSE221739	human	GSM6894028	D3B_GSM6894028	D3, pool B	8018	True	4877	gse221739	included in expression atlas
+GSE221739	human	GSM6894029	D5A_rep1_GSM6894029	D5, pool A, replicate 1	2320	True	1477	gse221739	included in expression atlas
+GSE221739	human	GSM6894030	D5A_rep2_GSM6894030	D5, pool A, replicate 2	345	True	252	gse221739	included in expression atlas
+GSE221739	human	GSM6894032	D5B_rep2_GSM6894032	D5, pool B, replicate 2	872	True	609	gse221739	included in expression atlas
+GSE221739	human	GSM6894033	D7A_GSM6894033	D7, pool A	2780	True	1695	gse221739	included in expression atlas
+GSE221739	human	GSM6894034	D7B_rep1_GSM6894034	D7, pool B, replicate 1	1209	True	503	gse221739	included in expression atlas
+GSE221739	human	GSM6894035	D7B_rep2_GSM6894035	D7, pool B, replicate 2	6052	True	2588	gse221739	included in expression atlas
+GSE221739	human	GSM6894036	D9A_rep1_GSM6894036	D9, pool A, replicate 1	468	True	194	gse221739	included in expression atlas
+GSE221739	human	GSM6894037	D9A_rep2_GSM6894037	D9, pool A, replicate 2	3635	True	1933	gse221739	included in expression atlas
+GSE221739	human	GSM6894039	D9B_rep2_GSM6894039	D9, pool B, replicate 2	1567	True	894	gse221739	included in expression atlas
+GSE103221	mouse	GSM3619570	gse103221_pluripotency_reprogramming_core_GSM3619570	10x_cip_d0	4054	True	3919	gse103221_cip	included in expression atlas
+GSE103221	mouse	GSM3619571	gse103221_pluripotency_reprogramming_core_GSM3619571	10x_cip_d3	8565	True	7518	gse103221_cip	included in expression atlas
+GSE103221	mouse	GSM3619572	gse103221_pluripotency_reprogramming_core_GSM3619572	10x_cip_d6	8772	True	7653	gse103221_cip	included in expression atlas
+GSE103221	mouse	GSM3619573	gse103221_pluripotency_reprogramming_core_GSM3619573	10x_cip_d9	10850	True	9880	gse103221_cip	included in expression atlas
+GSE103221	mouse	GSM3619574	gse103221_pluripotency_reprogramming_core_GSM3619574	10x_cip_d12	6320	True	5707	gse103221_cip	included in expression atlas
+GSE103221	mouse	GSM3619575	gse103221_pluripotency_reprogramming_core_GSM3619575	10x_cip_d16	8222	True	7329	gse103221_cip	included in expression atlas
+GSE103221	mouse	GSM3619576	gse103221_pluripotency_reprogramming_core_GSM3619576	10x_cip_d18	10061	True	9178	gse103221_cip	included in expression atlas
+GSE103221	mouse	GSM3619577	gse103221_pluripotency_reprogramming_core_GSM3619577	10x_cip_d22	8148	True	7388	gse103221_cip	included in expression atlas
+GSE103221	mouse	GSM3619578	gse103221_pluripotency_reprogramming_core_GSM3619578	10x_cip_d26	10021	True	8952	gse103221_cip	included in expression atlas
+GSE103221	mouse	GSM3619579	gse103221_pluripotency_reprogramming_core_GSM3619579	10x_cip_d32	8064	True	7411	gse103221_cip	included in expression atlas
+GSE103221	mouse	GSM3619580	gse103221_pluripotency_reprogramming_core_GSM3619580	10x_cip_d36	5951	True	5409	gse103221_cip	included in expression atlas
+GSE103221	mouse	GSM3619581	gse103221_pluripotency_reprogramming_core_GSM3619581	10x_cip_d40	6957	True	6279	gse103221_cip	included in expression atlas
+GSE103221	mouse	GSM3629847	gse103221_pluripotency_reprogramming_core_GSM3629847	10x_osk_mef	4678	True	4426	gse103221_osk	included in expression atlas
+GSE103221	mouse	GSM3629849	gse103221_pluripotency_reprogramming_core_GSM3629849	10x_osk_d1	9072	True	8240	gse103221_osk	included in expression atlas
+GSE103221	mouse	GSM3629850	gse103221_pluripotency_reprogramming_core_GSM3629850	10x_osk_d0	7088	True	6359	gse103221_osk	included in expression atlas
+GSE103221	mouse	GSM3629851	gse103221_pluripotency_reprogramming_core_GSM3629851	10x_osk_d3	8427	True	7544	gse103221_osk	included in expression atlas
+GSE103221	mouse	GSM3629852	gse103221_pluripotency_reprogramming_core_GSM3629852	10x_osk_d5	8559	True	7726	gse103221_osk	included in expression atlas
+GSE103221	mouse	GSM3629853	gse103221_pluripotency_reprogramming_core_GSM3629853	10x_osk_d6	6762	True	6046	gse103221_osk	included in expression atlas
+GSE103221	mouse	GSM3629854	gse103221_pluripotency_reprogramming_core_GSM3629854	10x_osk_d7	6903	True	6117	gse103221_osk	included in expression atlas
+GSE103221	mouse	GSM3629855	gse103221_pluripotency_reprogramming_core_GSM3629855	10x_osk_d8	6962	True	6167	gse103221_osk	included in expression atlas
+GSE115943	mouse	GSM3195648	gse115943_pluripotency_reprogramming_core_GSM3195648	D0_Dox_C1	3587	True	3160	wot_common_to_2i	included in expression atlas
+GSE115943	mouse	GSM3195649	gse115943_pluripotency_reprogramming_core_GSM3195649	D0_Dox_C2	1174	True	987	wot_common_to_2i	included in expression atlas
+GSE115943	mouse	GSM3195650	gse115943_pluripotency_reprogramming_core_GSM3195650	D0.5_Dox_C1	1265	True	1080	wot_common_to_2i	included in expression atlas
+GSE115943	mouse	GSM3195651	gse115943_pluripotency_reprogramming_core_GSM3195651	D0.5_Dox_C2	2323	True	2010	wot_common_to_2i	included in expression atlas
+GSE115943	mouse	GSM3195652	gse115943_pluripotency_reprogramming_core_GSM3195652	D1_Dox_C1	1424	True	1228	wot_common_to_2i	included in expression atlas
+GSE115943	mouse	GSM3195653	gse115943_pluripotency_reprogramming_core_GSM3195653	D1_Dox_C2	2386	True	2114	wot_common_to_2i	included in expression atlas
+GSE115943	mouse	GSM3195654	gse115943_pluripotency_reprogramming_core_GSM3195654	D1.5_Dox_C1	1707	True	1494	wot_common_to_2i	included in expression atlas
+GSE115943	mouse	GSM3195655	gse115943_pluripotency_reprogramming_core_GSM3195655	D1.5_Dox_C2	409	True	259	wot_common_to_2i	included in expression atlas
+GSE115943	mouse	GSM3195656	gse115943_pluripotency_reprogramming_core_GSM3195656	D2_Dox_C1	4589	True	4063	wot_common_to_2i	included in expression atlas
+GSE115943	mouse	GSM3195657	gse115943_pluripotency_reprogramming_core_GSM3195657	D2_Dox_C2	5366	True	4294	wot_common_to_2i	included in expression atlas
+GSE115943	mouse	GSM3195658	gse115943_pluripotency_reprogramming_core_GSM3195658	D2.5_Dox_C1	3251	True	2896	wot_common_to_2i	included in expression atlas
+GSE115943	mouse	GSM3195659	gse115943_pluripotency_reprogramming_core_GSM3195659	D2.5_Dox_C2	3857	True	3373	wot_common_to_2i	included in expression atlas
+GSE115943	mouse	GSM3195660	gse115943_pluripotency_reprogramming_core_GSM3195660	D3_Dox_C1	3866	True	3213	wot_common_to_2i	included in expression atlas
+GSE115943	mouse	GSM3195661	gse115943_pluripotency_reprogramming_core_GSM3195661	D3_Dox_C2	3320	True	2727	wot_common_to_2i	included in expression atlas
+GSE115943	mouse	GSM3195662	gse115943_pluripotency_reprogramming_core_GSM3195662	D3.5_Dox_C1	4758	True	4147	wot_common_to_2i	included in expression atlas
+GSE115943	mouse	GSM3195663	gse115943_pluripotency_reprogramming_core_GSM3195663	D3.5_Dox_C2	3469	True	3009	wot_common_to_2i	included in expression atlas
+GSE115943	mouse	GSM3195664	gse115943_pluripotency_reprogramming_core_GSM3195664	D4_Dox_C1	4182	True	3604	wot_common_to_2i	included in expression atlas
+GSE115943	mouse	GSM3195665	gse115943_pluripotency_reprogramming_core_GSM3195665	D4_Dox_C2	4972	True	4406	wot_common_to_2i	included in expression atlas
+GSE115943	mouse	GSM3195666	gse115943_pluripotency_reprogramming_core_GSM3195666	D4.5_Dox_C1	3774	True	3219	wot_common_to_2i	included in expression atlas
+GSE115943	mouse	GSM3195667	gse115943_pluripotency_reprogramming_core_GSM3195667	D4.5_Dox_C2	3740	True	3280	wot_common_to_2i	included in expression atlas
+GSE115943	mouse	GSM3195668	gse115943_pluripotency_reprogramming_core_GSM3195668	D5_Dox_C1	4175	True	3590	wot_common_to_2i	included in expression atlas
+GSE115943	mouse	GSM3195669	gse115943_pluripotency_reprogramming_core_GSM3195669	D5_Dox_C2	3361	True	2909	wot_common_to_2i	included in expression atlas
+GSE115943	mouse	GSM3195670	gse115943_pluripotency_reprogramming_core_GSM3195670	D5.5_Dox_C1	3491	True	3054	wot_common_to_2i	included in expression atlas
+GSE115943	mouse	GSM3195671	gse115943_pluripotency_reprogramming_core_GSM3195671	D5.5_Dox_C2	3330	True	2900	wot_common_to_2i	included in expression atlas
+GSE115943	mouse	GSM3195672	gse115943_pluripotency_reprogramming_core_GSM3195672	D6_Dox_C1	5894	True	5263	wot_common_to_2i	included in expression atlas
+GSE115943	mouse	GSM3195673	gse115943_pluripotency_reprogramming_core_GSM3195673	D6_Dox_C2	3064	True	2655	wot_common_to_2i	included in expression atlas
+GSE115943	mouse	GSM3195674	gse115943_pluripotency_reprogramming_core_GSM3195674	D6.5_Dox_C1	588	True	473	wot_common_to_2i	included in expression atlas
+GSE115943	mouse	GSM3195675	gse115943_pluripotency_reprogramming_core_GSM3195675	D6.5_Dox_C2	2690	True	2397	wot_common_to_2i	included in expression atlas
+GSE115943	mouse	GSM3195676	gse115943_pluripotency_reprogramming_core_GSM3195676	D7_Dox_C1	3480	True	2999	wot_common_to_2i	included in expression atlas
+GSE115943	mouse	GSM3195677	gse115943_pluripotency_reprogramming_core_GSM3195677	D7_Dox_C2	3726	True	3115	wot_common_to_2i	included in expression atlas
+GSE115943	mouse	GSM3195678	gse115943_pluripotency_reprogramming_core_GSM3195678	D7.5_Dox_C1	2958	True	2434	wot_common_to_2i	included in expression atlas
+GSE115943	mouse	GSM3195679	gse115943_pluripotency_reprogramming_core_GSM3195679	D7.5_Dox_C2	2719	True	2258	wot_common_to_2i	included in expression atlas
+GSE115943	mouse	GSM3195680	gse115943_pluripotency_reprogramming_core_GSM3195680	D8_Dox_C1	1989	True	1714	wot_common_to_2i	included in expression atlas
+GSE115943	mouse	GSM3195681	gse115943_pluripotency_reprogramming_core_GSM3195681	D8_Dox_C2	2230	True	1890	wot_common_to_2i	included in expression atlas
+GSE115943	mouse	GSM3195682	gse115943_pluripotency_reprogramming_core_GSM3195682	D8.25_2i_C1	2002	True	1718	wot_common_to_2i	included in expression atlas
+GSE115943	mouse	GSM3195683	gse115943_pluripotency_reprogramming_core_GSM3195683	D8.25_2i_C2	2271	True	1946	wot_common_to_2i	included in expression atlas
+GSE115943	mouse	GSM3195686	gse115943_pluripotency_reprogramming_core_GSM3195686	D8.5_2i_C1	1427	True	1081	wot_common_to_2i	included in expression atlas
+GSE115943	mouse	GSM3195687	gse115943_pluripotency_reprogramming_core_GSM3195687	D8.5_2i_C2	1869	True	1539	wot_common_to_2i	included in expression atlas
+GSE115943	mouse	GSM3195690	gse115943_pluripotency_reprogramming_core_GSM3195690	D8.75_2i_C1	1875	True	1601	wot_common_to_2i	included in expression atlas
+GSE115943	mouse	GSM3195691	gse115943_pluripotency_reprogramming_core_GSM3195691	D8.75_2i_C2	1735	True	1518	wot_common_to_2i	included in expression atlas
+GSE115943	mouse	GSM3195694	gse115943_pluripotency_reprogramming_core_GSM3195694	D9_2i_C1	1329	True	1026	wot_common_to_2i	included in expression atlas
+GSE115943	mouse	GSM3195695	gse115943_pluripotency_reprogramming_core_GSM3195695	D9_2i_C2	1080	True	895	wot_common_to_2i	included in expression atlas
+GSE115943	mouse	GSM3195698	gse115943_pluripotency_reprogramming_core_GSM3195698	D9.5_2i_C1	1223	True	934	wot_common_to_2i	included in expression atlas
+GSE115943	mouse	GSM3195699	gse115943_pluripotency_reprogramming_core_GSM3195699	D9.5_2i_C2	761	True	567	wot_common_to_2i	included in expression atlas
+GSE115943	mouse	GSM3195702	gse115943_pluripotency_reprogramming_core_GSM3195702	D10_2i_C1	1150	True	963	wot_common_to_2i	included in expression atlas
+GSE115943	mouse	GSM3195703	gse115943_pluripotency_reprogramming_core_GSM3195703	D10_2i_C2	1022	True	857	wot_common_to_2i	included in expression atlas
+GSE115943	mouse	GSM3195706	gse115943_pluripotency_reprogramming_core_GSM3195706	D10.5_2i_C1	938	True	751	wot_common_to_2i	included in expression atlas
+GSE115943	mouse	GSM3195707	gse115943_pluripotency_reprogramming_core_GSM3195707	D10.5_2i_C2	833	True	657	wot_common_to_2i	included in expression atlas
+GSE115943	mouse	GSM3195710	gse115943_pluripotency_reprogramming_core_GSM3195710	D11_2i_C1	907	True	687	wot_common_to_2i	included in expression atlas
+GSE115943	mouse	GSM3195711	gse115943_pluripotency_reprogramming_core_GSM3195711	D11_2i_C2	735	True	587	wot_common_to_2i	included in expression atlas
+GSE115943	mouse	GSM3195714	gse115943_pluripotency_reprogramming_core_GSM3195714	D11.5_2i_C1	925	True	713	wot_common_to_2i	included in expression atlas
+GSE115943	mouse	GSM3195715	gse115943_pluripotency_reprogramming_core_GSM3195715	D11.5_2i_C2	811	True	631	wot_common_to_2i	included in expression atlas
+GSE115943	mouse	GSM3195718	gse115943_pluripotency_reprogramming_core_GSM3195718	D12_2i_C1	1052	True	841	wot_common_to_2i	included in expression atlas
+GSE115943	mouse	GSM3195719	gse115943_pluripotency_reprogramming_core_GSM3195719	D12_2i_C2	868	True	642	wot_common_to_2i	included in expression atlas
+GSE115943	mouse	GSM3195722	gse115943_pluripotency_reprogramming_core_GSM3195722	D12.5_2i_C1	907	True	657	wot_common_to_2i	included in expression atlas
+GSE115943	mouse	GSM3195723	gse115943_pluripotency_reprogramming_core_GSM3195723	D12.5_2i_C2	919	True	690	wot_common_to_2i	included in expression atlas
+GSE115943	mouse	GSM3195726	gse115943_pluripotency_reprogramming_core_GSM3195726	D13_2i_C1	945	True	656	wot_common_to_2i	included in expression atlas
+GSE115943	mouse	GSM3195727	gse115943_pluripotency_reprogramming_core_GSM3195727	D13_2i_C2	971	True	643	wot_common_to_2i	included in expression atlas
+GSE115943	mouse	GSM3195730	gse115943_pluripotency_reprogramming_core_GSM3195730	D13.5_2i_C1	1280	True	882	wot_common_to_2i	included in expression atlas
+GSE115943	mouse	GSM3195731	gse115943_pluripotency_reprogramming_core_GSM3195731	D13.5_2i_C2	967	True	634	wot_common_to_2i	included in expression atlas
+GSE115943	mouse	GSM3195734	gse115943_pluripotency_reprogramming_core_GSM3195734	D14_2i_C1	2227	True	1747	wot_common_to_2i	included in expression atlas
+GSE115943	mouse	GSM3195735	gse115943_pluripotency_reprogramming_core_GSM3195735	D14_2i_C2	2268	True	1735	wot_common_to_2i	included in expression atlas
+GSE115943	mouse	GSM3195738	gse115943_pluripotency_reprogramming_core_GSM3195738	D14.5_2i_C1	2751	True	1994	wot_common_to_2i	included in expression atlas
+GSE115943	mouse	GSM3195739	gse115943_pluripotency_reprogramming_core_GSM3195739	D14.5_2i_C2	2578	True	1937	wot_common_to_2i	included in expression atlas
+GSE115943	mouse	GSM3195742	gse115943_pluripotency_reprogramming_core_GSM3195742	D15_2i_C1	2758	True	2222	wot_common_to_2i	included in expression atlas
+GSE115943	mouse	GSM3195743	gse115943_pluripotency_reprogramming_core_GSM3195743	D15_2i_C2	2489	True	1987	wot_common_to_2i	included in expression atlas
+GSE115943	mouse	GSM3195746	gse115943_pluripotency_reprogramming_core_GSM3195746	D15.5_2i_C1	4521	True	3799	wot_common_to_2i	included in expression atlas
+GSE115943	mouse	GSM3195747	gse115943_pluripotency_reprogramming_core_GSM3195747	D15.5_2i_C2	3582	True	2986	wot_common_to_2i	included in expression atlas
+GSE115943	mouse	GSM3195750	gse115943_pluripotency_reprogramming_core_GSM3195750	D16_2i_C1	4271	True	3391	wot_common_to_2i	included in expression atlas
+GSE115943	mouse	GSM3195751	gse115943_pluripotency_reprogramming_core_GSM3195751	D16_2i_C2	3026	True	2555	wot_common_to_2i	included in expression atlas
+GSE115943	mouse	GSM3195754	gse115943_pluripotency_reprogramming_core_GSM3195754	D16.5_2i_C1	3568	True	2927	wot_common_to_2i	included in expression atlas
+GSE115943	mouse	GSM3195755	gse115943_pluripotency_reprogramming_core_GSM3195755	D16.5_2i_C2	4405	True	3684	wot_common_to_2i	included in expression atlas
+GSE115943	mouse	GSM3195758	gse115943_pluripotency_reprogramming_core_GSM3195758	D17_2i_C1	2662	True	2158	wot_common_to_2i	included in expression atlas
+GSE115943	mouse	GSM3195759	gse115943_pluripotency_reprogramming_core_GSM3195759	D17_2i_C2	2340	True	1897	wot_common_to_2i	included in expression atlas
+GSE115943	mouse	GSM3195762	gse115943_pluripotency_reprogramming_core_GSM3195762	D17.5_2i_C1	1829	True	1480	wot_common_to_2i	included in expression atlas
+GSE115943	mouse	GSM3195763	gse115943_pluripotency_reprogramming_core_GSM3195763	D17.5_2i_C2	2615	True	2129	wot_common_to_2i	included in expression atlas
+GSE115943	mouse	GSM3195766	gse115943_pluripotency_reprogramming_core_GSM3195766	D18_2i_C1	2272	True	1922	wot_common_to_2i	included in expression atlas
+GSE115943	mouse	GSM3195767	gse115943_pluripotency_reprogramming_core_GSM3195767	D18_2i_C2	1873	True	1551	wot_common_to_2i	included in expression atlas
+GSE171127	mouse	GSM5219399	gse171127_pluripotency_vs_trophoblast_bifurcation_GSM5219399	d12_S1 (scRNA-seq)	7992	True	5738	gse171127_d12_pooled	included in expression atlas
+GSE171127	mouse	GSM5219400	gse171127_pluripotency_vs_trophoblast_bifurcation_GSM5219400	d6_S1 (scRNA-seq)	9948	True	7262	gse171127_d6_pooled	included in expression atlas
+GSE171127	mouse	GSM6071749	gse171127_pluripotency_vs_trophoblast_bifurcation_GSM6071749	D3_GETM (scRNA-seq)	14406	True	11970	gse171127_d3_getm	included in expression atlas
+GSE171127	mouse	GSM6071750	gse171127_pluripotency_vs_trophoblast_bifurcation_GSM6071750	D3_OSKM (scRNA-seq)	16091	True	13238	gse171127_d3_oskm	included in expression atlas

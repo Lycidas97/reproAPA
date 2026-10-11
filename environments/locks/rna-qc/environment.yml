@@ -1,0 +1,14 @@
+name: unified-rna-qc-v3.2
+channels: [conda-forge, bioconda]
+dependencies:
+  - python=3.10.20
+  - snakemake=7.32.4
+  - pandas=2.3.3
+  - numpy=2.2.6
+  - scipy=1.15.3
+  - h5py=3.16.0
+  - pyarrow=23.0.1
+  - pyyaml=6.0.3
+  - jsonschema=4.26.0
+  - matplotlib=3.10.8
+  - scrublet=0.2.3

@@ -1,0 +1,42 @@
+version: '2.0'
+study_id: GSE171127
+membership_path: /root/nfsdata/multica/worktrees/apadetect/DOC-292-gse171127-route-bifurcation/analyses/FGA06R-gse171127-factorized-gex-annotation-v1.2/scope_membership.tsv.gz
+membership_columns:
+  cell_id: cell_id
+  state_id: state_id
+  scope_id: scope_id
+  library_id: library_id
+  barcode: null
+expression_mode: shared_h5ad
+expression_already_log1p: false
+partition_selection_fields: []
+library_use: stratified_resampling_and_postfreeze_audit_only
+gse171_execution_contract: frozen_count_object_order
+scopes:
+  studywide:
+    role: primary
+    n_cells: 38024
+    membership_scope_values: [all_library_audit]
+    source_membership_order_sha256: c1af4ad231ffa77a3b683fd517f8248597fab0e04b89a9a88f8bcd55f15d0f33
+    cell_set_sha256: 8020c8ec6789eb887f918cffc89898deba35ea62493dcbab9606d023227b7fa6
+    expression_path: /root/nfsdata/multica/worktrees/apadetect/DOC-292-gse171127-route-bifurcation/analyses/gse171127-unified-state-v2.1/frozen_objects/primary_counts.h5ad
+    frozen_execution_object: /root/nfsdata/multica/worktrees/apadetect/DOC-292-gse171127-route-bifurcation/analyses/gse171127-unified-state-v2.1/frozen_objects/all_library_audit_object.npz
+    pipeline:
+      hvg_n_top_genes: 3000
+      pca_n_components_fitted: 50
+      pca_n_components_used: 30
+      pca_seed: 20260816
+      neighbor_n_neighbors: 30
+      leiden_resolution: 0.6
+      leiden_seed: 20260816
+      filter_genes_min_cells: 10
+      normalization_method: normalize_total
+      normalization_target_sum: 10000.0
+      transform: log1p
+      hvg_flavor: scanpy_seurat
+      scale_max_value: 10
+      pca_solver: sklearn_randomized_iterated_power_4
+      neighbor_backend: pynndescent.NNDescent
+      neighbor_metric: euclidean
+      leiden_implementation: leidenalg.find_partition
+      leiden_iterations: -1

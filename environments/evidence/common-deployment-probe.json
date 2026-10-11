@@ -1,0 +1,1428 @@
+{
+  "status": "PASS",
+  "scope": "static resources and runtime only; no scientific run",
+  "environment_sha256": "e6f16a69e30bcc408201deac8a18b1eeeab1a3a5065fa0e58890fa7bb7fe3f19",
+  "python": "/root/miniconda3/envs/apasim_analysis/bin/python",
+  "python_version": "3.10.14 | packaged by conda-forge | (main, Mar 20 2024, 12:45:18) [GCC 12.3.0]",
+  "modules": {
+    "numpy": "1.26.4",
+    "pandas": "2.3.3",
+    "scipy": "1.15.3",
+    "sklearn": "1.4.2",
+    "pysam": "0.22.1",
+    "pyBigWig": "0.3.22",
+    "matplotlib": "3.10.8"
+  },
+  "node_modules": {
+    "complete_cross_sharing_range10": "imported",
+    "downstream_apa_gex": "imported",
+    "downstream_axis_extensions": "imported",
+    "downstream_bundle": "imported",
+    "downstream_candidate_screen": "imported",
+    "downstream_catalog_qc": "imported",
+    "downstream_cis": "imported",
+    "downstream_cohorts": "imported",
+    "downstream_continuous": "imported",
+    "downstream_coordinate_states": "imported",
+    "downstream_core": "imported",
+    "downstream_cross": "imported",
+    "downstream_direction": "imported",
+    "downstream_examples": "imported",
+    "downstream_external_pas": "imported",
+    "downstream_external_structure": "imported",
+    "downstream_functional": "imported",
+    "downstream_geometry": "imported",
+    "downstream_global": "imported",
+    "downstream_inference": "imported",
+    "downstream_intermediate": "imported",
+    "downstream_measurement": "imported",
+    "downstream_metacell": "imported",
+    "downstream_mirna": "imported",
+    "downstream_moran": "imported",
+    "downstream_motifs": "imported",
+    "downstream_naive": "imported",
+    "downstream_panel_statistics": "imported",
+    "downstream_profiles": "imported",
+    "downstream_rbp": "imported",
+    "downstream_recurrence": "imported",
+    "downstream_regulatory": "imported",
+    "downstream_same_pas": "imported",
+    "downstream_shape_ortholog": "imported",
+    "downstream_shared_projection": "imported",
+    "downstream_sites": "imported",
+    "downstream_trace": "imported",
+    "export_statistics_bundle": "imported",
+    "prepare_figure_scores": "imported",
+    "render_from_bundle": "imported"
+  },
+  "files": [
+    {
+      "group": "resources",
+      "name": "ortholog",
+      "path": "/root/nfsdata/apadetect/analysis_projects/reproapa_polyapipe_rerun_20261003_v1/statistics_package_v1/resources/ortholog_universe.tsv",
+      "expected": "9cae42683c5e41201f5bf800df28e0947106f4fbc68c0bfbbe197e51dd2c9858",
+      "actual": "9cae42683c5e41201f5bf800df28e0947106f4fbc68c0bfbbe197e51dd2c9858",
+      "match": true
+    },
+    {
+      "group": "resources",
+      "name": "go_obo",
+      "path": "/root/nfsdata/apadetect/analysis_projects/reproapa_polyapipe_rerun_20261003_v1/statistics_package_v1/resources/go-basic.obo",
+      "expected": "b08d45b268b8c24ccb2513dbbbc7d4df9f6521c099b413f79eb31e06e0fa3bcc",
+      "actual": "b08d45b268b8c24ccb2513dbbbc7d4df9f6521c099b413f79eb31e06e0fa3bcc",
+      "match": true
+    },
+    {
+      "group": "resources",
+      "name": "go_human",
+      "path": "/root/nfsdata/apadetect/analysis_projects/reproapa_polyapipe_rerun_20261003_v1/statistics_package_v1/resources/human_go_ids.tsv",
+      "expected": "59189ebbc818b262af12468ca812126494d2e75480d274a32b376f4ec7d822f3",
+      "actual": "59189ebbc818b262af12468ca812126494d2e75480d274a32b376f4ec7d822f3",
+      "match": true
+    },
+    {
+      "group": "resources",
+      "name": "go_mouse",
+      "path": "/root/nfsdata/apadetect/analysis_projects/reproapa_polyapipe_rerun_20261003_v1/statistics_package_v1/resources/mouse_go_ids.tsv",
+      "expected": "3b06ce9910b9abded35a4a87b923c5be478dc34af92d91470b8781229413ae94",
+      "actual": "3b06ce9910b9abded35a4a87b923c5be478dc34af92d91470b8781229413ae94",
+      "match": true
+    },
+    {
+      "group": "resources",
+      "name": "expression_cycle_inputs",
+      "path": "/root/nfsdata/apadetect/analysis_projects/reproapa_polyapipe_rerun_20261003_v1/statistics_package_v1/resources/expression_inputs.npz",
+      "expected": "dd47800f7b3867d1ddbff5cb012a25f790d34fff2b26fddd0d3f0b4679bc8d4b",
+      "actual": "dd47800f7b3867d1ddbff5cb012a25f790d34fff2b26fddd0d3f0b4679bc8d4b",
+      "match": true
+    },
+    {
+      "group": "resources",
+      "name": "frozen_metacell_states",
+      "path": "/root/nfsdata/apadetect/analysis_projects/reproapa_polyapipe_rerun_20261003_v1/statistics_package_v1/resources/metacell_states.tsv.gz",
+      "expected": "c145a5025813fd808e14c98868d70167824de8c1b85f80e2954557a2bab609bd",
+      "actual": "c145a5025813fd808e14c98868d70167824de8c1b85f80e2954557a2bab609bd",
+      "match": true
+    },
+    {
+      "group": "resources",
+      "name": "expression_graph_nodes",
+      "path": "/root/nfsdata/apadetect/analysis_projects/reproapa_polyapipe_rerun_20261003_v1/statistics_package_v1/resources/common_metacell_nodes.tsv.gz",
+      "expected": "0b967026d274bf27edf3c07e8c2014be129de37153149eeaa47c5c9be1b8cec2",
+      "actual": "0b967026d274bf27edf3c07e8c2014be129de37153149eeaa47c5c9be1b8cec2",
+      "match": true
+    },
+    {
+      "group": "resources",
+      "name": "expression_latent",
+      "path": "/root/nfsdata/apadetect/analysis_projects/reproapa_polyapipe_rerun_20261003_v1/statistics_package_v1/resources/species_balanced_scvi_latent.npy",
+      "expected": "765d7baa565b75e3d906c2911711c8146496b86b7fe5bb9cf970f018b24ebfca",
+      "actual": "765d7baa565b75e3d906c2911711c8146496b86b7fe5bb9cf970f018b24ebfca",
+      "match": true
+    },
+    {
+      "group": "resources",
+      "name": "expression_graph",
+      "path": "/root/nfsdata/apadetect/analysis_projects/reproapa_polyapipe_rerun_20261003_v1/statistics_package_v1/resources/local_expression_kernel.npz",
+      "expected": "a2be0066197bb99d74f373d583f86ed55e305fca64bb8b34b3a1914224e642de",
+      "actual": "a2be0066197bb99d74f373d583f86ed55e305fca64bb8b34b3a1914224e642de",
+      "match": true
+    },
+    {
+      "group": "resources",
+      "name": "kegg_human_gene_info",
+      "path": "/root/nfsdata/apadetect/analysis_projects/reproapa_polyapipe_rerun_20261003_v1/statistics_package_v1/resources/Homo_sapiens.gene_info.gz",
+      "expected": "4a333625190f594abc21fd7564c7a0ee991a0331c639c6d3b7bb814b944e75b7",
+      "actual": "4a333625190f594abc21fd7564c7a0ee991a0331c639c6d3b7bb814b944e75b7",
+      "match": true
+    },
+    {
+      "group": "resources",
+      "name": "kegg_hsa_ncbi_conv",
+      "path": "/root/nfsdata/apadetect/analysis_projects/reproapa_polyapipe_rerun_20261003_v1/statistics_package_v1/resources/hsa_ncbi_conv.tsv",
+      "expected": "228e9261c77bab9366ab50e598a676bd2798b2b0fc9dbfbd7863f077e5e7e4c7",
+      "actual": "228e9261c77bab9366ab50e598a676bd2798b2b0fc9dbfbd7863f077e5e7e4c7",
+      "match": true
+    },
+    {
+      "group": "resources",
+      "name": "kegg_hsa_gene_pathway",
+      "path": "/root/nfsdata/apadetect/analysis_projects/reproapa_polyapipe_rerun_20261003_v1/statistics_package_v1/resources/hsa_gene_pathway.tsv",
+      "expected": "24c118ffadbc00f1f594a76bae0c6ee4c339a11cfd0bab867c5356b3f1b673cb",
+      "actual": "24c118ffadbc00f1f594a76bae0c6ee4c339a11cfd0bab867c5356b3f1b673cb",
+      "match": true
+    },
+    {
+      "group": "resources",
+      "name": "kegg_hsa_pathways",
+      "path": "/root/nfsdata/apadetect/analysis_projects/reproapa_polyapipe_rerun_20261003_v1/statistics_package_v1/resources/hsa_pathways.tsv",
+      "expected": "345290b203a665fa7604f36ba51d78095a712c6c02820fb09fde82a5a90c0a3a",
+      "actual": "345290b203a665fa7604f36ba51d78095a712c6c02820fb09fde82a5a90c0a3a",
+      "match": true
+    },
+    {
+      "group": "resources",
+      "name": "kegg_mouse_gene_info",
+      "path": "/root/nfsdata/apadetect/analysis_projects/reproapa_polyapipe_rerun_20261003_v1/statistics_package_v1/resources/Mus_musculus.gene_info.gz",
+      "expected": "e82bfefaf13bdac02b18653a87fc64bb53d1aa608c25892c10adb1d1f3bd3b0b",
+      "actual": "e82bfefaf13bdac02b18653a87fc64bb53d1aa608c25892c10adb1d1f3bd3b0b",
+      "match": true
+    },
+    {
+      "group": "resources",
+      "name": "kegg_mmu_ncbi_conv",
+      "path": "/root/nfsdata/apadetect/analysis_projects/reproapa_polyapipe_rerun_20261003_v1/statistics_package_v1/resources/mmu_ncbi_conv.tsv",
+      "expected": "d5fb27ec16bbfea564cd56dfd831aab273a89a143ab4a4e4f358f021d5b96b1b",
+      "actual": "d5fb27ec16bbfea564cd56dfd831aab273a89a143ab4a4e4f358f021d5b96b1b",
+      "match": true
+    },
+    {
+      "group": "resources",
+      "name": "kegg_mmu_gene_pathway",
+      "path": "/root/nfsdata/apadetect/analysis_projects/reproapa_polyapipe_rerun_20261003_v1/statistics_package_v1/resources/mmu_gene_pathway.tsv",
+      "expected": "1fd6166546d05bac7a7eb371dbea1b462b1758b202a47e56a3d9e98f8b38f1c3",
+      "actual": "1fd6166546d05bac7a7eb371dbea1b462b1758b202a47e56a3d9e98f8b38f1c3",
+      "match": true
+    },
+    {
+      "group": "resources",
+      "name": "kegg_mmu_pathways",
+      "path": "/root/nfsdata/apadetect/analysis_projects/reproapa_polyapipe_rerun_20261003_v1/statistics_package_v1/resources/mmu_pathways.tsv",
+      "expected": "016cb5a5361600aba63a4e9a0538c0d458d4f8d21fed848922bbf0ace19a8f80",
+      "actual": "016cb5a5361600aba63a4e9a0538c0d458d4f8d21fed848922bbf0ace19a8f80",
+      "match": true
+    },
+    {
+      "group": "resources",
+      "name": "regulatory_bundles",
+      "path": "/root/nfsdata/apadetect/analysis_projects/reproapa_polyapipe_rerun_20261003_v1/statistics_package_v2/resources/regulatory_bundles__remote_resource_paths.json",
+      "expected": "b6334632e50d78ebed96d386c7bcbd602bfb29bf7ac476db992c30c1df246f57",
+      "actual": "b6334632e50d78ebed96d386c7bcbd602bfb29bf7ac476db992c30c1df246f57",
+      "match": true
+    },
+    {
+      "group": "resources",
+      "name": "mouse_terminal_utrs",
+      "path": "/root/nfsdata/apadetect/analysis_projects/reproapa_polyapipe_rerun_20261003_v1/statistics_package_v2/resources/mouse_terminal_utrs__all_reference_terminal_utr_candidates.tsv.gz",
+      "expected": "51a6d4b7117d307623abcca9d7b73bd381dbc55636d1fb774175ebf0e151c26b",
+      "actual": "51a6d4b7117d307623abcca9d7b73bd381dbc55636d1fb774175ebf0e151c26b",
+      "match": true
+    },
+    {
+      "group": "resources",
+      "name": "human_terminal_utrs",
+      "path": "/root/nfsdata/apadetect/analysis_projects/reproapa_polyapipe_rerun_20261003_v1/statistics_package_v2/resources/human_terminal_utrs__human_terminal_utrs.tsv.gz",
+      "expected": "7e68f58c3660d920c1d6c1c7e4771067e6ffbb7b3364f88ec6b2ec0bf8e85787",
+      "actual": "7e68f58c3660d920c1d6c1c7e4771067e6ffbb7b3364f88ec6b2ec0bf8e85787",
+      "match": true
+    },
+    {
+      "group": "resources",
+      "name": "mouse_catalog_utrs",
+      "path": "/root/nfsdata/apadetect/analysis_projects/reproapa_polyapipe_rerun_20261003_v1/statistics_package_v2/resources/mouse_catalog_utrs__mouse_catalog_utrs.tsv.gz",
+      "expected": "a8d2840a99a90724e8a1721a1cfd7b6f2e130fd5d5303bb929201d0994c86697",
+      "actual": "a8d2840a99a90724e8a1721a1cfd7b6f2e130fd5d5303bb929201d0994c86697",
+      "match": true
+    },
+    {
+      "group": "resources",
+      "name": "human_catalog_utrs",
+      "path": "/root/nfsdata/apadetect/analysis_projects/reproapa_polyapipe_rerun_20261003_v1/statistics_package_v2/resources/human_catalog_utrs__human_catalog_utrs.tsv.gz",
+      "expected": "ff7bd58fe52e080b44008e53209cb76b7ad67aa9a693e77eb04f1d4cf486e61d",
+      "actual": "ff7bd58fe52e080b44008e53209cb76b7ad67aa9a693e77eb04f1d4cf486e61d",
+      "match": true
+    },
+    {
+      "group": "resources",
+      "name": "mouse_utr_fasta",
+      "path": "/root/nfsdata/apadetect/analysis_projects/reproapa_polyapipe_rerun_20261003_v1/statistics_package_v2/resources/mouse_utr_fasta__mouse_sequences.fa.gz",
+      "expected": "880e4779e8a3248198d5d8e996a2936ef0e0c797df406e76a315786ebd197f61",
+      "actual": "880e4779e8a3248198d5d8e996a2936ef0e0c797df406e76a315786ebd197f61",
+      "match": true
+    },
+    {
+      "group": "resources",
+      "name": "human_utr_fasta",
+      "path": "/root/nfsdata/apadetect/analysis_projects/reproapa_polyapipe_rerun_20261003_v1/statistics_package_v2/resources/human_utr_fasta__human_sequences.fa.gz",
+      "expected": "f5c223e4ae24555619b1bda86d16ae5a7774cd148392bf5f9219fd3314fe6a57",
+      "actual": "f5c223e4ae24555619b1bda86d16ae5a7774cd148392bf5f9219fd3314fe6a57",
+      "match": true
+    },
+    {
+      "group": "resources",
+      "name": "mouse_mirna_annotations",
+      "path": "/root/nfsdata/apadetect/analysis_projects/reproapa_polyapipe_rerun_20261003_v1/statistics_package_v2/resources/mouse_mirna_annotations__mouse_mirna_annotations.tsv",
+      "expected": "95b8af445ed0741ee04ba73237cc7519bf412206636874935e12f152f5403df5",
+      "actual": "95b8af445ed0741ee04ba73237cc7519bf412206636874935e12f152f5403df5",
+      "match": true
+    },
+    {
+      "group": "resources",
+      "name": "human_mirna_annotations",
+      "path": "/root/nfsdata/apadetect/analysis_projects/reproapa_polyapipe_rerun_20261003_v1/statistics_package_v2/resources/human_mirna_annotations__human_mirna_annotations.tsv",
+      "expected": "dd6191a4cffc058418c15e527f1b14f0bbcc56d1a3008b11dda1dec349126359",
+      "actual": "dd6191a4cffc058418c15e527f1b14f0bbcc56d1a3008b11dda1dec349126359",
+      "match": true
+    },
+    {
+      "group": "resources",
+      "name": "mouse_motif_provenance",
+      "path": "/root/nfsdata/apadetect/analysis_projects/reproapa_polyapipe_rerun_20261003_v1/statistics_package_v2/resources/mouse_motif_provenance__mouse_reference_motif_provenance.tsv.gz",
+      "expected": "c2cbcca85be724d61acd920459285150da07325c13811e175e79a50b96a9303d",
+      "actual": "c2cbcca85be724d61acd920459285150da07325c13811e175e79a50b96a9303d",
+      "match": true
+    },
+    {
+      "group": "resources",
+      "name": "human_motif_provenance",
+      "path": "/root/nfsdata/apadetect/analysis_projects/reproapa_polyapipe_rerun_20261003_v1/statistics_package_v2/resources/human_motif_provenance__human_motif_provenance.json",
+      "expected": "67d5ae1b5a51781e4833e2be1245e8e9df333816391598d3d8dd88a649d56faf",
+      "actual": "67d5ae1b5a51781e4833e2be1245e8e9df333816391598d3d8dd88a649d56faf",
+      "match": true
+    },
+    {
+      "group": "resources",
+      "name": "human_direct_meme",
+      "path": "/root/nfsdata/apadetect/analysis_projects/reproapa_polyapipe_rerun_20261003_v1/statistics_package_v2/resources/human_direct_meme__human_direct_scannable.meme",
+      "expected": "9c84ac33d3628585b8bac0d60ad125f1f8b183d52e2878634a3499bda27958f0",
+      "actual": "9c84ac33d3628585b8bac0d60ad125f1f8b183d52e2878634a3499bda27958f0",
+      "match": true
+    },
+    {
+      "group": "resources",
+      "name": "mouse_transfer_meme",
+      "path": "/root/nfsdata/apadetect/analysis_projects/reproapa_polyapipe_rerun_20261003_v1/statistics_package_v2/resources/mouse_transfer_meme__transferred_scannable.meme",
+      "expected": "573f4dafd77d056e1a0f67d6ccedc2c163cb57d48a543e25508bff6de7614c87",
+      "actual": "573f4dafd77d056e1a0f67d6ccedc2c163cb57d48a543e25508bff6de7614c87",
+      "match": true
+    },
+    {
+      "group": "resources",
+      "name": "mouse_motif_background",
+      "path": "/root/nfsdata/apadetect/analysis_projects/reproapa_polyapipe_rerun_20261003_v1/statistics_package_v2/resources/mouse_motif_background__background.txt",
+      "expected": "125427bd4c10af37b37623afdf7f4d728e61455b70aa941ec3c5d5c548c02f2b",
+      "actual": "125427bd4c10af37b37623afdf7f4d728e61455b70aa941ec3c5d5c548c02f2b",
+      "match": true
+    },
+    {
+      "group": "resources",
+      "name": "human_motif_background",
+      "path": "/root/nfsdata/apadetect/analysis_projects/reproapa_polyapipe_rerun_20261003_v1/statistics_package_v2/resources/human_motif_background__human_background.txt",
+      "expected": "6ae52bfe5ff64f0ddc790ef4e370fc7aa92b2b57f2f4d7cff102b2c9bfc0ce26",
+      "actual": "6ae52bfe5ff64f0ddc790ef4e370fc7aa92b2b57f2f4d7cff102b2c9bfc0ce26",
+      "match": true
+    },
+    {
+      "group": "resources",
+      "name": "external_pas_source_records",
+      "path": "/root/nfsdata/apadetect/analysis_projects/reproapa_polyapipe_integrated_20261003_v2/runs/v2_primary/reference/representative_support_sources.tsv.gz",
+      "expected": "17ed805f9435660bc27eed1118d4becc84e52a672b3732c756caf54c6e0be9cb",
+      "actual": "17ed805f9435660bc27eed1118d4becc84e52a672b3732c756caf54c6e0be9cb",
+      "match": true
+    },
+    {
+      "group": "resources",
+      "name": "fimo",
+      "path": "/root/miniconda3/envs/apasim/bin/fimo",
+      "expected": "62465375cb0f7745a2946af86b0eb7f5e638fe880518b6dc099c9deae5675a77",
+      "actual": "62465375cb0f7745a2946af86b0eb7f5e638fe880518b6dc099c9deae5675a77",
+      "match": true
+    },
+    {
+      "group": "resources",
+      "name": "mouse_direct_meme",
+      "path": "/root/nfsdata/apadetect/analysis_projects/mouse_time_aware_integration_pilot_v1/regulatory_catalog_v1/mouse_direct.meme",
+      "expected": "34e938f8e22f31551935512dc37cc53ef973165faa3dc59cb2922dc5e9611bb6",
+      "actual": "34e938f8e22f31551935512dc37cc53ef973165faa3dc59cb2922dc5e9611bb6",
+      "match": true
+    },
+    {
+      "group": "resources",
+      "name": "native_libraries",
+      "path": "/root/nfsdata/apadetect/analysis_projects/reproapa_polyapipe_rerun_20261003_v1/statistics_package_v4r1/resources/native_libraries__input_libraries.tsv",
+      "expected": "11df990d23a0e19dc09af8fd522f4d7bd3fb3c2c3adf4b73576649effe249a37",
+      "actual": "11df990d23a0e19dc09af8fd522f4d7bd3fb3c2c3adf4b73576649effe249a37",
+      "match": true
+    },
+    {
+      "group": "resources",
+      "name": "legacy_endpoint_ledger",
+      "path": "/root/nfsdata/apadetect/analysis_projects/reproapa_polyapipe_rerun_20261003_v1/statistics_package_v4r1/resources/legacy_endpoint_ledger__ledger.json",
+      "expected": "ea4d2e88c425ccc5e98d49298eab126a1ad62317a66709e7db69c2c185445fbd",
+      "actual": "ea4d2e88c425ccc5e98d49298eab126a1ad62317a66709e7db69c2c185445fbd",
+      "match": true
+    },
+    {
+      "group": "resources",
+      "name": "human_ensembl_gtf",
+      "path": "/root/nfsdata/apadetect/analysis_projects/reproapa_polyapipe_rerun_20261003_v1/statistics_package_v4r1/resources/human_ensembl_gtf__Homo_sapiens.GRCh38.116.gtf.gz",
+      "expected": "ed992f0eac7197d9627bda618f8f831ba355c95bd5d0796af785387d462828b6",
+      "actual": "ed992f0eac7197d9627bda618f8f831ba355c95bd5d0796af785387d462828b6",
+      "match": true
+    },
+    {
+      "group": "resources",
+      "name": "mouse_ensembl_gtf",
+      "path": "/root/nfsdata/apadetect/analysis_projects/reproapa_polyapipe_rerun_20261003_v1/statistics_package_v4r1/resources/mouse_ensembl_gtf__Mus_musculus.GRCm39.116.gtf.gz",
+      "expected": "5c29fd9e3157cf40fdbbf76ab25bfe7f79aa61313e0b672664ddb0cb251c02e1",
+      "actual": "5c29fd9e3157cf40fdbbf76ab25bfe7f79aa61313e0b672664ddb0cb251c02e1",
+      "match": true
+    },
+    {
+      "group": "resources",
+      "name": "legacy_cross_members",
+      "path": "/root/nfsdata/apadetect/analysis_projects/reproapa_polyapipe_rerun_20261003_v1/statistics_package_v5/resources/legacy_cross_members__figure4_frozen_members.tsv",
+      "expected": "58461d5d6b6e6642aa1d94a4b4d71ec313061d776d663314d14627a6b1ebeca4",
+      "actual": "58461d5d6b6e6642aa1d94a4b4d71ec313061d776d663314d14627a6b1ebeca4",
+      "match": true
+    },
+    {
+      "group": "resources",
+      "name": "legacy_cross_support",
+      "path": "/root/nfsdata/apadetect/analysis_projects/reproapa_polyapipe_rerun_20261003_v1/statistics_package_v5/resources/legacy_cross_support__figure4_published_support.tsv",
+      "expected": "efe11e640d2153cd95faec79dcec769f97ef0ef856db3a318a10438fc4ff9336",
+      "actual": "efe11e640d2153cd95faec79dcec769f97ef0ef856db3a318a10438fc4ff9336",
+      "match": true
+    },
+    {
+      "group": "resources",
+      "name": "longread_gtf",
+      "path": "/root/nfsdata/apadetect/analysis_projects/reproapa_polyapipe_rerun_20261003_v1/statistics_package_v5/resources/longread_gtf__GSE282319_Repro_filter_tst.gtf.gz",
+      "expected": "18aac67616f5760796894abb651ea3662f3a0a64e2eebfd18a1d284f19fde09e",
+      "actual": "18aac67616f5760796894abb651ea3662f3a0a64e2eebfd18a1d284f19fde09e",
+      "match": true
+    },
+    {
+      "group": "resources",
+      "name": "longread_classification",
+      "path": "/root/nfsdata/apadetect/analysis_projects/reproapa_polyapipe_rerun_20261003_v1/statistics_package_v5/resources/longread_classification__GSE282319_Repro_unfiltered_tst_classification.txt.gz",
+      "expected": "0387feb88db7019ec1960cb5bbf191d5e5d320c6875639fc49d07c4a3027a47e",
+      "actual": "0387feb88db7019ec1960cb5bbf191d5e5d320c6875639fc49d07c4a3027a47e",
+      "match": true
+    },
+    {
+      "group": "resources",
+      "name": "longread_tpm",
+      "path": "/root/nfsdata/apadetect/analysis_projects/reproapa_polyapipe_rerun_20261003_v1/statistics_package_v5/resources/longread_tpm__GSE282319_Isoquant.transcript_name_id.tpm.txt.gz",
+      "expected": "68a29b6faaaf02941dc967871907e8c9c1c70335ca56c66cb823ccde3acde2fc",
+      "actual": "68a29b6faaaf02941dc967871907e8c9c1c70335ca56c66cb823ccde3acde2fc",
+      "match": true
+    },
+    {
+      "group": "resources",
+      "name": "longread_sample_inventory",
+      "path": "/root/nfsdata/apadetect/analysis_projects/reproapa_polyapipe_rerun_20261003_v1/statistics_package_v5/resources/longread_sample_inventory__sample_inventory_with_passage.tsv",
+      "expected": "a0fd42e0125b66d4158e2a0c83e8bcea297edb1efb6232fd83fa12de0aae64bf",
+      "actual": "a0fd42e0125b66d4158e2a0c83e8bcea297edb1efb6232fd83fa12de0aae64bf",
+      "match": true
+    },
+    {
+      "group": "resources",
+      "name": "longread_published_classification",
+      "path": "/root/nfsdata/apadetect/analysis_projects/reproapa_polyapipe_rerun_20261003_v1/statistics_package_v5/resources/longread_published_classification__filtered_supplement_classification.tsv",
+      "expected": "1a4e35adda832999358df048495c76ffbb0719f021a74893c7a6776a7bb479e3",
+      "actual": "1a4e35adda832999358df048495c76ffbb0719f021a74893c7a6776a7bb479e3",
+      "match": true
+    },
+    {
+      "group": "resources",
+      "name": "longread_raw_sample_metadata",
+      "path": "/root/nfsdata/apadetect/analysis_projects/reproapa_polyapipe_rerun_20261003_v1/statistics_package_v5/resources/longread_raw_sample_metadata__GSE282319_family.soft.gz",
+      "expected": "94339ebd5bc09ac1c1c9f689253be41b1043eeabd29efde0d2ed094fca4db3f3",
+      "actual": "94339ebd5bc09ac1c1c9f689253be41b1043eeabd29efde0d2ed094fca4db3f3",
+      "match": true
+    },
+    {
+      "group": "resources",
+      "name": "longread_raw_supplement1",
+      "path": "/root/nfsdata/apadetect/analysis_projects/reproapa_polyapipe_rerun_20261003_v1/statistics_package_v5/resources/longread_raw_supplement1__supplement-data1.xlsx",
+      "expected": "ca54589257db93708b4420c5a5be59b6cf2928790700215e8c722cd140beac86",
+      "actual": "ca54589257db93708b4420c5a5be59b6cf2928790700215e8c722cd140beac86",
+      "match": true
+    },
+    {
+      "group": "resources",
+      "name": "longread_raw_supplement2",
+      "path": "/root/nfsdata/apadetect/analysis_projects/reproapa_polyapipe_rerun_20261003_v1/statistics_package_v5/resources/longread_raw_supplement2__supplement-data2.xlsx",
+      "expected": "e314eb13b003247956cbc9956d7bcf51c0250f782d4a509acd467a67db2d9936",
+      "actual": "e314eb13b003247956cbc9956d7bcf51c0250f782d4a509acd467a67db2d9936",
+      "match": true
+    },
+    {
+      "group": "resources",
+      "name": "chain_mm39_mm10",
+      "path": "/root/nfsdata/apadetect/analysis_projects/reproapa_polyapipe_rerun_20261003_v1/statistics_package_v5/resources/chain_mm39_mm10__mm39ToMm10.over.chain.gz",
+      "expected": "da8e150bf79ddaa763f8a0c1784fdb20b50be0aa13207b4c74de6d06d5c7d793",
+      "actual": "da8e150bf79ddaa763f8a0c1784fdb20b50be0aa13207b4c74de6d06d5c7d793",
+      "match": true
+    },
+    {
+      "group": "resources",
+      "name": "chain_mm10_mm39",
+      "path": "/root/nfsdata/apadetect/analysis_projects/reproapa_polyapipe_rerun_20261003_v1/statistics_package_v5/resources/chain_mm10_mm39__mm10ToMm39.over.chain.gz",
+      "expected": "5e7589d8374e299706b5ef0ef06dbbc5818f3bd0aef72003f2d3b767225af9a1",
+      "actual": "5e7589d8374e299706b5ef0ef06dbbc5818f3bd0aef72003f2d3b767225af9a1",
+      "match": true
+    },
+    {
+      "group": "resources",
+      "name": "chain_mm9_mm10",
+      "path": "/root/nfsdata/apadetect/analysis_projects/reproapa_polyapipe_rerun_20261003_v1/statistics_package_v5/resources/chain_mm9_mm10__mm9ToMm10.over.chain.gz",
+      "expected": "3368aa2ad89cfdb2c4afa3ef7e8fda9eaa15a385ae92b0516a9f6d60f40aeafc",
+      "actual": "3368aa2ad89cfdb2c4afa3ef7e8fda9eaa15a385ae92b0516a9f6d60f40aeafc",
+      "match": true
+    },
+    {
+      "group": "resources",
+      "name": "chain_mm10_mm9",
+      "path": "/root/nfsdata/apadetect/analysis_projects/reproapa_polyapipe_rerun_20261003_v1/statistics_package_v5/resources/chain_mm10_mm9__mm10ToMm9.over.chain.gz",
+      "expected": "4c69dc674336e86ffdf16a47e1f924f41960f9ad05c54596662d1f6814bb62db",
+      "actual": "4c69dc674336e86ffdf16a47e1f924f41960f9ad05c54596662d1f6814bb62db",
+      "match": true
+    },
+    {
+      "group": "resources",
+      "name": "ago2_CLIPSeq_Ago2_Leung2011a_mm9_json",
+      "path": "/root/nfsdata/apadetect/analysis_projects/reproapa_polyapipe_rerun_20261003_v1/statistics_package_v5/resources/ago2_CLIPSeq_Ago2_Leung2011a_mm9_json__CLIPSeq_Ago2_Leung2011a_mm9.json",
+      "expected": "d525460f938695abad76c8d8c94e674c6c99d04e0a83bebda5ff6bd9ac23de6e",
+      "actual": "d525460f938695abad76c8d8c94e674c6c99d04e0a83bebda5ff6bd9ac23de6e",
+      "match": true
+    },
+    {
+      "group": "resources",
+      "name": "ago2_CLIPSeq_Ago2_Leung2011a_mm9_bed",
+      "path": "/root/nfsdata/apadetect/analysis_projects/reproapa_polyapipe_rerun_20261003_v1/statistics_package_v5/resources/ago2_CLIPSeq_Ago2_Leung2011a_mm9_bed__CLIPSeq_Ago2_Leung2011a_mm9.bed",
+      "expected": "ed29f68f2984f7fed863c3c5ba8282eab92884a9c9055cfc20f5723ec236cabd",
+      "actual": "ed29f68f2984f7fed863c3c5ba8282eab92884a9c9055cfc20f5723ec236cabd",
+      "match": true
+    },
+    {
+      "group": "resources",
+      "name": "ago2_CLIPSeq_Ago2_Leung2011b_mm9_json",
+      "path": "/root/nfsdata/apadetect/analysis_projects/reproapa_polyapipe_rerun_20261003_v1/statistics_package_v5/resources/ago2_CLIPSeq_Ago2_Leung2011b_mm9_json__CLIPSeq_Ago2_Leung2011b_mm9.json",
+      "expected": "d49b807ea8e4bf5a7ab496a451e5ec0eb5d7aee49579d6ac29e6805d5d2a146f",
+      "actual": "d49b807ea8e4bf5a7ab496a451e5ec0eb5d7aee49579d6ac29e6805d5d2a146f",
+      "match": true
+    },
+    {
+      "group": "resources",
+      "name": "ago2_CLIPSeq_Ago2_Leung2011b_mm9_bed",
+      "path": "/root/nfsdata/apadetect/analysis_projects/reproapa_polyapipe_rerun_20261003_v1/statistics_package_v5/resources/ago2_CLIPSeq_Ago2_Leung2011b_mm9_bed__CLIPSeq_Ago2_Leung2011b_mm9.bed",
+      "expected": "6a6c4aebef841815976a0e67e4e9b78f35233691f5b250ff35a72c2331d9f450",
+      "actual": "6a6c4aebef841815976a0e67e4e9b78f35233691f5b250ff35a72c2331d9f450",
+      "match": true
+    },
+    {
+      "group": "resources",
+      "name": "ago2_HITSCLIP_Ago2Leung2011a_mm9_json",
+      "path": "/root/nfsdata/apadetect/analysis_projects/reproapa_polyapipe_rerun_20261003_v1/statistics_package_v5/resources/ago2_HITSCLIP_Ago2Leung2011a_mm9_json__HITSCLIP_Ago2Leung2011a_mm9.json",
+      "expected": "87e0f994ffe6407d17561c4e5fec7151ce5c4d21ee8dcc0cd3bc02c422d82bdc",
+      "actual": "87e0f994ffe6407d17561c4e5fec7151ce5c4d21ee8dcc0cd3bc02c422d82bdc",
+      "match": true
+    },
+    {
+      "group": "resources",
+      "name": "ago2_HITSCLIP_Ago2Leung2011a_mm9_bed",
+      "path": "/root/nfsdata/apadetect/analysis_projects/reproapa_polyapipe_rerun_20261003_v1/statistics_package_v5/resources/ago2_HITSCLIP_Ago2Leung2011a_mm9_bed__HITSCLIP_Ago2Leung2011a_mm9.bed",
+      "expected": "8c128ea9a8b74732a9d369c03fc5e3759499a94b0fb37a3dc09938cef6078a9b",
+      "actual": "8c128ea9a8b74732a9d369c03fc5e3759499a94b0fb37a3dc09938cef6078a9b",
+      "match": true
+    },
+    {
+      "group": "resources",
+      "name": "ago2_HITSCLIP_Ago2Leung2011b_mm9_json",
+      "path": "/root/nfsdata/apadetect/analysis_projects/reproapa_polyapipe_rerun_20261003_v1/statistics_package_v5/resources/ago2_HITSCLIP_Ago2Leung2011b_mm9_json__HITSCLIP_Ago2Leung2011b_mm9.json",
+      "expected": "59442c3ed19555fa4fa45ee9ba1ee269a9fe739de367c36f51049724b78316a4",
+      "actual": "59442c3ed19555fa4fa45ee9ba1ee269a9fe739de367c36f51049724b78316a4",
+      "match": true
+    },
+    {
+      "group": "resources",
+      "name": "ago2_HITSCLIP_Ago2Leung2011b_mm9_bed",
+      "path": "/root/nfsdata/apadetect/analysis_projects/reproapa_polyapipe_rerun_20261003_v1/statistics_package_v5/resources/ago2_HITSCLIP_Ago2Leung2011b_mm9_bed__HITSCLIP_Ago2Leung2011b_mm9.bed",
+      "expected": "11989aa2ffa238c18a2d549f527a426d11e5fb13d670897cf6a526db8ad2a32d",
+      "actual": "11989aa2ffa238c18a2d549f527a426d11e5fb13d670897cf6a526db8ad2a32d",
+      "match": true
+    },
+    {
+      "group": "resources",
+      "name": "ago2_HITSCLIP_Ago2Leung2011c_mm9_json",
+      "path": "/root/nfsdata/apadetect/analysis_projects/reproapa_polyapipe_rerun_20261003_v1/statistics_package_v5/resources/ago2_HITSCLIP_Ago2Leung2011c_mm9_json__HITSCLIP_Ago2Leung2011c_mm9.json",
+      "expected": "5ecb79dabbff9bd6527abe84a050caefe056976e5f7965401e5fc2c2ee3e02f2",
+      "actual": "5ecb79dabbff9bd6527abe84a050caefe056976e5f7965401e5fc2c2ee3e02f2",
+      "match": true
+    },
+    {
+      "group": "resources",
+      "name": "ago2_HITSCLIP_Ago2Leung2011c_mm9_bed",
+      "path": "/root/nfsdata/apadetect/analysis_projects/reproapa_polyapipe_rerun_20261003_v1/statistics_package_v5/resources/ago2_HITSCLIP_Ago2Leung2011c_mm9_bed__HITSCLIP_Ago2Leung2011c_mm9.bed",
+      "expected": "c0d38dc9923b68e8ccd62f104ececb0e9622a73833ec847ab75f8e6c033290df",
+      "actual": "c0d38dc9923b68e8ccd62f104ececb0e9622a73833ec847ab75f8e6c033290df",
+      "match": true
+    },
+    {
+      "group": "resources",
+      "name": "human_genome",
+      "path": "/root/nfsdata/apadetect/data/genome/human/refdata-gex-GRCh38-2024-A/fasta/genome.fa",
+      "expected": "fb7421217e7058120cd60a5277445198e8deef2dff1edc46cd1e98b31fe64cbb",
+      "actual": "fb7421217e7058120cd60a5277445198e8deef2dff1edc46cd1e98b31fe64cbb",
+      "match": true
+    },
+    {
+      "group": "resources",
+      "name": "human_annotation_gtf",
+      "path": "/root/nfsdata/apadetect/data/genome/human/refdata-gex-GRCh38-2024-A/genes/genes.gtf.gz",
+      "expected": "f589e2e8f31221c715548a84b1db12797624ce9f40c371d1544e5116962d5139",
+      "actual": "f589e2e8f31221c715548a84b1db12797624ce9f40c371d1544e5116962d5139",
+      "match": true
+    },
+    {
+      "group": "resources",
+      "name": "mouse_genome",
+      "path": "/root/nfsdata/apadetect/data/genome/mouse/refdata-gex-GRCm39-2024-A/fasta/genome.fa",
+      "expected": "c8652e6c3f5b7ef85dc2e6c6cf8037d67063c6b52e563c8024a42d7b938b0832",
+      "actual": "c8652e6c3f5b7ef85dc2e6c6cf8037d67063c6b52e563c8024a42d7b938b0832",
+      "match": true
+    },
+    {
+      "group": "resources",
+      "name": "mouse_annotation_gtf",
+      "path": "/root/nfsdata/apadetect/data/genome/mouse/refdata-gex-GRCm39-2024-A/genes/genes.gtf.gz",
+      "expected": "dfc17ee4c85f3d7665f48fe758f9a1109c3cc4c38a4185943e9e9678fae45fe6",
+      "actual": "dfc17ee4c85f3d7665f48fe758f9a1109c3cc4c38a4185943e9e9678fae45fe6",
+      "match": true
+    },
+    {
+      "group": "resources",
+      "name": "external_pas_counts",
+      "path": "/root/nfsdata/apadetect/analysis_projects/reproapa_polyapipe_rerun_20261003_v1/statistics_package_v7/resources/external_pas_counts__GSE99922_readcounts-table.txt.gz",
+      "expected": "4370418f04b5a8cc6ce86145eba6d166fb66df74312854b5bd3b7707e7690ecc",
+      "actual": "4370418f04b5a8cc6ce86145eba6d166fb66df74312854b5bd3b7707e7690ecc",
+      "match": true
+    },
+    {
+      "group": "resources",
+      "name": "external_mouse_gene_info",
+      "path": "/root/nfsdata/apadetect/analysis_projects/reproapa_polyapipe_rerun_20261003_v1/statistics_package_v7/resources/external_mouse_gene_info__Mus_musculus.gene_info.gz",
+      "expected": "d87094a9400b1c4ef2d5d38c4d183ee74327d579a48e086d7febbc21c356a0b1",
+      "actual": "d87094a9400b1c4ef2d5d38c4d183ee74327d579a48e086d7febbc21c356a0b1",
+      "match": true
+    },
+    {
+      "group": "resources",
+      "name": "external_vector_protocol",
+      "path": "/root/nfsdata/apadetect/analysis_projects/reproapa_polyapipe_rerun_20261003_v1/statistics_package_v7/resources/external_vector_protocol__vector-protocol.json",
+      "expected": "bbd393c2fb86e037b7b282b0eeeb2e9e1587556a8129a4c3fc316dc1936d8b65",
+      "actual": "bbd393c2fb86e037b7b282b0eeeb2e9e1587556a8129a4c3fc316dc1936d8b65",
+      "match": true
+    },
+    {
+      "group": "resources",
+      "name": "external_legacy_candidates",
+      "path": "/root/nfsdata/apadetect/analysis_projects/reproapa_polyapipe_rerun_20261003_v1/statistics_package_v7/resources/external_legacy_candidates__frozen_candidates.tsv",
+      "expected": "6192d7f4a5a273d3c5ded7f2ad4075fecf0e2adca6a673f48f9af17b8cb1f006",
+      "actual": "6192d7f4a5a273d3c5ded7f2ad4075fecf0e2adca6a673f48f9af17b8cb1f006",
+      "match": true
+    },
+    {
+      "group": "resources",
+      "name": "external_sample_manifest",
+      "path": "/root/nfsdata/apadetect/analysis_projects/reproapa_polyapipe_rerun_20261003_v1/statistics_package_v7/resources/external_sample_manifest__sample_manifest.tsv",
+      "expected": "f2fd97923671a2f4b44a92a7fd4c8e493226c13fa9726040452c149ecc6a8d66",
+      "actual": "f2fd97923671a2f4b44a92a7fd4c8e493226c13fa9726040452c149ecc6a8d66",
+      "match": true
+    },
+    {
+      "group": "resources",
+      "name": "legacy_six_rule_scope",
+      "path": "/root/nfsdata/apadetect/analysis_projects/reproapa_polyapipe_rerun_20261003_v1/statistics_package_v7/resources/legacy_six_rule_scope__legacy-six-rule-scope.json",
+      "expected": "bdc4df5113212550f4a99302d3da4cb5ff639263e09df9bf6a339d2270a5da72",
+      "actual": "bdc4df5113212550f4a99302d3da4cb5ff639263e09df9bf6a339d2270a5da72",
+      "match": true
+    },
+    {
+      "group": "resources",
+      "name": "liftover",
+      "path": "/root/nfsdata/conda/envs/cleandata/bin/liftOver",
+      "expected": "6849022bded07b0169c965896a3641aa0570625bc82cdab8ae6bc3201f6979ec",
+      "actual": "6849022bded07b0169c965896a3641aa0570625bc82cdab8ae6bc3201f6979ec",
+      "match": true
+    },
+    {
+      "group": "resources",
+      "name": "cis_hg38_fasta",
+      "path": "/root/nfsdata/apabenchmark_final/data/raw_data/genome/hg38.fa",
+      "expected": "28644d6230212c9daabf27ec17fb2a0928757ba6cfe4037b663ac22bd9063ed2",
+      "actual": "28644d6230212c9daabf27ec17fb2a0928757ba6cfe4037b663ac22bd9063ed2",
+      "match": true
+    },
+    {
+      "group": "resources",
+      "name": "cis_mm10_fasta",
+      "path": "/root/nfsdata/apabenchmark_final/data/raw_data/genome/mm10.fa",
+      "expected": "9da8aa80b8ba97ad0250122891cd652c19e7032ab5f2bb26d9ee3917f3eba9c0",
+      "actual": "9da8aa80b8ba97ad0250122891cd652c19e7032ab5f2bb26d9ee3917f3eba9c0",
+      "match": true
+    },
+    {
+      "group": "resources",
+      "name": "cis_phastcons",
+      "path": "/root/nfsdata/apabenchmark/data/phastCons/mm10.60way.phastCons.bw",
+      "expected": "f148b5d39a01d2a32b1749954ba0051340a95d3a63e63ef290cf759735b756af",
+      "actual": "f148b5d39a01d2a32b1749954ba0051340a95d3a63e63ef290cf759735b756af",
+      "match": true
+    },
+    {
+      "group": "resources",
+      "name": "chain_hg38_mm39",
+      "path": "/root/nfsdata/apadetect/analysis_projects/reproapa_cis_architecture_v27/inputs/hg38ToMm39.over.chain.gz",
+      "expected": "b030041207d23d64ced46d5df329756c9fb3e4270fdbd098312d05aeb63f2f2c",
+      "actual": "b030041207d23d64ced46d5df329756c9fb3e4270fdbd098312d05aeb63f2f2c",
+      "match": true
+    },
+    {
+      "group": "resources",
+      "name": "chain_mm39_hg38",
+      "path": "/root/nfsdata/apadetect/analysis_projects/reproapa_cis_architecture_v27/inputs/mm39ToHg38.over.chain.gz",
+      "expected": "ff391d1768555c4416d47f6611fa8993be84e37e15936939b117f13f581ad383",
+      "actual": "ff391d1768555c4416d47f6611fa8993be84e37e15936939b117f13f581ad383",
+      "match": true
+    },
+    {
+      "group": "resources",
+      "name": "chain_hg38_mm10",
+      "path": "/root/nfsdata/apadetect/analysis_projects/reproapa_cis_architecture_v27/inputs/hg38ToMm10.over.chain.gz",
+      "expected": "5493fa0c90d5bf56ea64a2787ebafbc49f7fc33b682b6db17b6d3a4bcb939339",
+      "actual": "5493fa0c90d5bf56ea64a2787ebafbc49f7fc33b682b6db17b6d3a4bcb939339",
+      "match": true
+    },
+    {
+      "group": "resources",
+      "name": "chain_mm10_hg38",
+      "path": "/root/nfsdata/apadetect/analysis_projects/reproapa_cis_architecture_v27/inputs/mm10ToHg38.over.chain.gz",
+      "expected": "78368ce28c5ccb0006b34889d652f4148b3900ac6805cd515d23b00c9773940e",
+      "actual": "78368ce28c5ccb0006b34889d652f4148b3900ac6805cd515d23b00c9773940e",
+      "match": true
+    },
+    {
+      "group": "resources",
+      "name": "legacy_six_rule_files",
+      "path": "/root/nfsdata/apadetect/analysis_projects/reproapa_polyapipe_rerun_20261003_v1/statistics_package_v7/resources/legacy_six_rule_files.json",
+      "expected": "39b119ef7c2ef6fdd35817409eb941991286c5f9df2f210fd22b8a466352612d",
+      "actual": "39b119ef7c2ef6fdd35817409eb941991286c5f9df2f210fd22b8a466352612d",
+      "match": true
+    },
+    {
+      "group": "resources",
+      "name": "caller_original_manifest",
+      "path": "/root/nfsdata/apadetect/analysis_projects/reproapa_polyapipe_rerun_20261003_v1/statistics_package_v14/resources/caller_original_manifest__preparation.complete.json",
+      "expected": "268884009b15fb701a82eae21aeb7f797bf2bdb1db1a33d7cd3866e8dc65abf5",
+      "actual": "268884009b15fb701a82eae21aeb7f797bf2bdb1db1a33d7cd3866e8dc65abf5",
+      "match": true
+    },
+    {
+      "group": "resources",
+      "name": "caller_source_hashes",
+      "path": "/root/nfsdata/apadetect/analysis_projects/reproapa_polyapipe_rerun_20261003_v1/statistics_package_v14/resources/caller_source_hashes__verified_source_sha256.json",
+      "expected": "f0f11dd402571fd707e0fad857cb9ba37209047e063ee14c85247d76ee3db4e3",
+      "actual": "f0f11dd402571fd707e0fad857cb9ba37209047e063ee14c85247d76ee3db4e3",
+      "match": true
+    },
+    {
+      "group": "resources",
+      "name": "caller_frozen_pairs",
+      "path": "/root/nfsdata/apadetect/analysis_projects/reproapa_polyapipe_rerun_20261003_v1/statistics_package_v14/resources/caller_frozen_pairs__frozen_pair_effects.tsv.gz",
+      "expected": "b7b469f05bbb74fd9ec54b774694aca2684ff21602fa7fdb4574d1ef32849efa",
+      "actual": "b7b469f05bbb74fd9ec54b774694aca2684ff21602fa7fdb4574d1ef32849efa",
+      "match": true
+    },
+    {
+      "group": "resources",
+      "name": "caller_frozen_routes",
+      "path": "/root/nfsdata/apadetect/analysis_projects/reproapa_polyapipe_rerun_20261003_v1/statistics_package_v14/resources/caller_frozen_routes__frozen_route_effects.tsv.gz",
+      "expected": "4518bf8eca5cb6ceb599b317fab64df3be7057af712b01dd09abdec7a02c6f0e",
+      "actual": "4518bf8eca5cb6ceb599b317fab64df3be7057af712b01dd09abdec7a02c6f0e",
+      "match": true
+    },
+    {
+      "group": "resources",
+      "name": "caller_legacy_recurrence",
+      "path": "/root/nfsdata/apadetect/analysis_projects/reproapa_polyapipe_rerun_20261003_v1/statistics_package_v14/resources/caller_legacy_recurrence__study_event_covariates.tsv.gz",
+      "expected": "276bce203a67f42b000cc3476b968b8644164f80f181d5c2b8b3d3e97dd67542",
+      "actual": "276bce203a67f42b000cc3476b968b8644164f80f181d5c2b8b3d3e97dd67542",
+      "match": true
+    },
+    {
+      "group": "resources",
+      "name": "caller_legacy_members",
+      "path": "/root/nfsdata/apadetect/analysis_projects/reproapa_polyapipe_rerun_20261003_v1/statistics_package_v14/resources/caller_legacy_members__recurrence_members.tsv.gz",
+      "expected": "8e302c89b20a387484cc5bb4a13af168f81670ce33964867efb69fef04ea480e",
+      "actual": "8e302c89b20a387484cc5bb4a13af168f81670ce33964867efb69fef04ea480e",
+      "match": true
+    },
+    {
+      "group": "resources",
+      "name": "state_expression_support",
+      "path": "/root/nfsdata/apadetect/analysis_projects/reproapa_polyapipe_rerun_20261003_v1/statistics_package_v10/resources/metacell_expression_support.tsv.gz",
+      "expected": "d535046804ce30d77e4209b0225beca09fd72343d89a9f98c55ba66c605d2075",
+      "actual": "d535046804ce30d77e4209b0225beca09fd72343d89a9f98c55ba66c605d2075",
+      "match": true
+    },
+    {
+      "group": "resources",
+      "name": "legacy_ten_loci",
+      "path": "/root/nfsdata/apadetect/analysis_projects/reproapa_polyapipe_rerun_20261003_v1/statistics_package_v15/resources/legacy_ten_loci.tsv.gz",
+      "expected": "3c7c147f62a0886677a665e963756d2ff70eda9a00a1b4e28fa7e506fb04aff6",
+      "actual": "3c7c147f62a0886677a665e963756d2ff70eda9a00a1b4e28fa7e506fb04aff6",
+      "match": true
+    },
+    {
+      "group": "resources",
+      "name": "support_reference_audit",
+      "path": "/root/nfsdata/apadetect/analysis_projects/reproapa_polyapipe_integrated_20261003_v2/runs/v2_primary/reference_audit.json",
+      "expected": "978762c1e8651c24fb387874f8676abdf2c7a752425360b014111b34d96bf8d6",
+      "actual": "978762c1e8651c24fb387874f8676abdf2c7a752425360b014111b34d96bf8d6",
+      "match": true
+    },
+    {
+      "group": "resources",
+      "name": "measurement_resume",
+      "path": "/root/nfsdata/apadetect/analysis_projects/reproapa_polyapipe_integrated_20261003_v2/statistics_package_v6/v2_primary.measurement-resume.json",
+      "expected": "0cef85e686d71128748b658baec467847405749da597ad9c9171f67f03bf32a7",
+      "actual": "0cef85e686d71128748b658baec467847405749da597ad9c9171f67f03bf32a7",
+      "match": true
+    },
+    {
+      "group": "resources",
+      "name": "ago2_mm9_sequence_cache",
+      "path": "/root/nfsdata/apadetect/analysis_projects/reproapa_polyapipe_integrated_20261003_v2/ago2_sequence_cache/manifest.json",
+      "expected": "0b9b2fa1b0d769990eafa0b43100ab33631cbb7f54efbae1abea29ae0943cf60",
+      "actual": "0b9b2fa1b0d769990eafa0b43100ab33631cbb7f54efbae1abea29ae0943cf60",
+      "match": true
+    },
+    {
+      "group": "resources",
+      "name": "frozen_cell_embedding",
+      "path": "/root/nfsdata/apadetect/analysis_projects/reproapa_polyapipe_integrated_20261003_v2/shared_projection_package/resources/frozen_cell_embedding.tsv.gz",
+      "expected": "399fc4d84c5d4db38803b7f8da1c6b4114dfc2e5910725e4a97b22805ef44293",
+      "actual": "399fc4d84c5d4db38803b7f8da1c6b4114dfc2e5910725e4a97b22805ef44293",
+      "match": true
+    },
+    {
+      "group": "resources",
+      "name": "mirna_human_mirna_annotations.tsv",
+      "path": "/root/nfsdata/apadetect/analysis_projects/reproapa_apadetect_analysis_intake_20261005/pipeline_release_v7/notes/2026-10-05-apadetect-analysis-intake/completion-inputs/external/human_mirna_annotations.tsv",
+      "expected": "dd6191a4cffc058418c15e527f1b14f0bbcc56d1a3008b11dda1dec349126359",
+      "actual": "dd6191a4cffc058418c15e527f1b14f0bbcc56d1a3008b11dda1dec349126359",
+      "match": true
+    },
+    {
+      "group": "resources",
+      "name": "mirna_mouse_mirna_annotations.tsv",
+      "path": "/root/nfsdata/apadetect/analysis_projects/reproapa_apadetect_analysis_intake_20261005/pipeline_release_v7/notes/2026-10-05-apadetect-analysis-intake/completion-inputs/external/mouse_mirna_annotations.tsv",
+      "expected": "95b8af445ed0741ee04ba73237cc7519bf412206636874935e12f152f5403df5",
+      "actual": "95b8af445ed0741ee04ba73237cc7519bf412206636874935e12f152f5403df5",
+      "match": true
+    },
+    {
+      "group": "resources",
+      "name": "mirna_human_S2.xlsx",
+      "path": "/root/nfsdata/apadetect/analysis_projects/reproapa_apadetect_analysis_intake_20261005/pipeline_release_v7/notes/2026-10-05-apadetect-analysis-intake/completion-inputs/external/human_S2.xlsx",
+      "expected": "a92a3b8c35a4f40483415768d7f4b5cbfa2392b5807a225581dcf56fdbb0f262",
+      "actual": "a92a3b8c35a4f40483415768d7f4b5cbfa2392b5807a225581dcf56fdbb0f262",
+      "match": true
+    },
+    {
+      "group": "resources",
+      "name": "mirna_GSM307156.soft",
+      "path": "/root/nfsdata/apadetect/analysis_projects/reproapa_apadetect_analysis_intake_20261005/pipeline_release_v7/notes/2026-10-05-apadetect-analysis-intake/completion-inputs/external/GSM307156.soft",
+      "expected": "a02fb2f296cd6679f02e05f6c0f850f2cf494fd10662304345d43442ec990111",
+      "actual": "a02fb2f296cd6679f02e05f6c0f850f2cf494fd10662304345d43442ec990111",
+      "match": true
+    },
+    {
+      "group": "resources",
+      "name": "mirna_GSM307157.soft",
+      "path": "/root/nfsdata/apadetect/analysis_projects/reproapa_apadetect_analysis_intake_20261005/pipeline_release_v7/notes/2026-10-05-apadetect-analysis-intake/completion-inputs/external/GSM307157.soft",
+      "expected": "6fac013f9bd117b4b5df84951410b2bc6113c7c05c591229d1dc06b3a970fa58",
+      "actual": "6fac013f9bd117b4b5df84951410b2bc6113c7c05c591229d1dc06b3a970fa58",
+      "match": true
+    },
+    {
+      "group": "resources",
+      "name": "frozen_figure_display_expression.tsv.gz",
+      "path": "/root/nfsdata/apadetect/analysis_projects/reproapa_apadetect_analysis_intake_20261005/pipeline_release_v7/notes/2026-10-05-apadetect-analysis-intake/completion-inputs/frozen-figures/display_expression.tsv.gz",
+      "expected": "d06b896fdc661090274589eda8ebdf3eab99ea8124fde3f995cb8c09274488ed",
+      "actual": "d06b896fdc661090274589eda8ebdf3eab99ea8124fde3f995cb8c09274488ed",
+      "match": true
+    },
+    {
+      "group": "resources",
+      "name": "frozen_figure_state_libraries.tsv",
+      "path": "/root/nfsdata/apadetect/analysis_projects/reproapa_apadetect_analysis_intake_20261005/pipeline_release_v7/notes/2026-10-05-apadetect-analysis-intake/completion-inputs/frozen-figures/state_libraries.tsv",
+      "expected": "1ad5d0a2a9cbdad57f7c4dcd0b81c76007efb7de35e5ffbfe6ce6ea70ebbd91e",
+      "actual": "1ad5d0a2a9cbdad57f7c4dcd0b81c76007efb7de35e5ffbfe6ce6ea70ebbd91e",
+      "match": true
+    },
+    {
+      "group": "resources",
+      "name": "frozen_figure_states.tsv",
+      "path": "/root/nfsdata/apadetect/analysis_projects/reproapa_apadetect_analysis_intake_20261005/pipeline_release_v7/notes/2026-10-05-apadetect-analysis-intake/completion-inputs/frozen-figures/states.tsv",
+      "expected": "c34f1e61de460efaa9ba4ca2d494cc437b1a96fecc1d16dd6fb0fa757107716f",
+      "actual": "c34f1e61de460efaa9ba4ca2d494cc437b1a96fecc1d16dd6fb0fa757107716f",
+      "match": true
+    },
+    {
+      "group": "resources",
+      "name": "frozen_figure_display_cells.tsv.gz",
+      "path": "/root/nfsdata/apadetect/analysis_projects/reproapa_apadetect_analysis_intake_20261005/pipeline_release_v7/notes/2026-10-05-apadetect-analysis-intake/completion-inputs/frozen-figures/display_cells.tsv.gz",
+      "expected": "10dcd2b4d68a130f9f47eb558b837c80e9b8408ad3c0366bdcea93759b3a974b",
+      "actual": "10dcd2b4d68a130f9f47eb558b837c80e9b8408ad3c0366bdcea93759b3a974b",
+      "match": true
+    },
+    {
+      "group": "resources",
+      "name": "frozen_figure_S2B_neighbor_by_library.tsv",
+      "path": "/root/nfsdata/apadetect/analysis_projects/reproapa_apadetect_analysis_intake_20261005/pipeline_release_v7/notes/2026-10-05-apadetect-analysis-intake/completion-inputs/frozen-figures/S2B_neighbor_by_library.tsv",
+      "expected": "f9172b095ca74796153c0e5dd9149736ffb5c9c9ec7d61565d780c31ad612914",
+      "actual": "f9172b095ca74796153c0e5dd9149736ffb5c9c9ec7d61565d780c31ad612914",
+      "match": true
+    },
+    {
+      "group": "resources",
+      "name": "frozen_figure_marker_by_state_library.tsv.gz",
+      "path": "/root/nfsdata/apadetect/analysis_projects/reproapa_apadetect_analysis_intake_20261005/pipeline_release_v7/notes/2026-10-05-apadetect-analysis-intake/completion-inputs/frozen-figures/marker_by_state_library.tsv.gz",
+      "expected": "91e6278345dc6630434c68c75b261ad4e8219b659fe86ce1705e19f0a133267c",
+      "actual": "91e6278345dc6630434c68c75b261ad4e8219b659fe86ce1705e19f0a133267c",
+      "match": true
+    },
+    {
+      "group": "resources",
+      "name": "frozen_figure_S2A_state_geometry.tsv",
+      "path": "/root/nfsdata/apadetect/analysis_projects/reproapa_apadetect_analysis_intake_20261005/pipeline_release_v7/notes/2026-10-05-apadetect-analysis-intake/completion-inputs/frozen-figures/S2A_state_geometry.tsv",
+      "expected": "11c16390251f489804b1bc3cb3a6ae8468095d703eccaac02f2cd6e6dda3de41",
+      "actual": "11c16390251f489804b1bc3cb3a6ae8468095d703eccaac02f2cd6e6dda3de41",
+      "match": true
+    },
+    {
+      "group": "resources",
+      "name": "frozen_figure_S2C_route_expression.tsv",
+      "path": "/root/nfsdata/apadetect/analysis_projects/reproapa_apadetect_analysis_intake_20261005/pipeline_release_v7/notes/2026-10-05-apadetect-analysis-intake/completion-inputs/frozen-figures/S2C_route_expression.tsv",
+      "expected": "c3fe797abafdd7cfbec88d5ad4529f3aa31f68ea092f627993599efb2dc7cdbe",
+      "actual": "c3fe797abafdd7cfbec88d5ad4529f3aa31f68ea092f627993599efb2dc7cdbe",
+      "match": true
+    },
+    {
+      "group": "resources",
+      "name": "frozen_figure_route_support_counts.tsv",
+      "path": "/root/nfsdata/apadetect/analysis_projects/reproapa_apadetect_analysis_intake_20261005/pipeline_release_v7/notes/2026-10-05-apadetect-analysis-intake/completion-inputs/frozen-figures/route_support_counts.tsv",
+      "expected": "71e05cb578d5f4f90f1ad788aa08e4999def42437effa6983af77f8cf339fd38",
+      "actual": "71e05cb578d5f4f90f1ad788aa08e4999def42437effa6983af77f8cf339fd38",
+      "match": true
+    },
+    {
+      "group": "resources",
+      "name": "frozen_figure_marker_by_state.tsv",
+      "path": "/root/nfsdata/apadetect/analysis_projects/reproapa_apadetect_analysis_intake_20261005/pipeline_release_v7/notes/2026-10-05-apadetect-analysis-intake/completion-inputs/frozen-figures/marker_by_state.tsv",
+      "expected": "c18f7eb11866572ff964330c1e030dc37ccf84c991fea7bccc35c4778c8a8a6c",
+      "actual": "c18f7eb11866572ff964330c1e030dc37ccf84c991fea7bccc35c4778c8a8a6c",
+      "match": true
+    },
+    {
+      "group": "resources",
+      "name": "frozen_figure_annotation_changes.tsv",
+      "path": "/root/nfsdata/apadetect/analysis_projects/reproapa_apadetect_analysis_intake_20261005/pipeline_release_v7/notes/2026-10-05-apadetect-analysis-intake/completion-inputs/frozen-figures/annotation_changes.tsv",
+      "expected": "e85705d636ea614c0e22b77a589aa597b28ac88be7ce26a2642e20cd7dcac778",
+      "actual": "e85705d636ea614c0e22b77a589aa597b28ac88be7ce26a2642e20cd7dcac778",
+      "match": true
+    },
+    {
+      "group": "resources",
+      "name": "frozen_figure_display_program_scales.tsv",
+      "path": "/root/nfsdata/apadetect/analysis_projects/reproapa_apadetect_analysis_intake_20261005/pipeline_release_v7/notes/2026-10-05-apadetect-analysis-intake/completion-inputs/frozen-figures/display_program_scales.tsv",
+      "expected": "f8d5f068a43abc400e7e9a3f8632c388f08de5fb8c3e0418f2852e70b86eeaaf",
+      "actual": "f8d5f068a43abc400e7e9a3f8632c388f08de5fb8c3e0418f2852e70b86eeaaf",
+      "match": true
+    },
+    {
+      "group": "resources",
+      "name": "frozen_figure_S2B_neighbor_all_scales.tsv",
+      "path": "/root/nfsdata/apadetect/analysis_projects/reproapa_apadetect_analysis_intake_20261005/pipeline_release_v7/notes/2026-10-05-apadetect-analysis-intake/completion-inputs/frozen-figures/S2B_neighbor_all_scales.tsv",
+      "expected": "d186656096323b2abc02d0b0ae53278e3c9c5af0f0aedea75716d3cbff0841ca",
+      "actual": "d186656096323b2abc02d0b0ae53278e3c9c5af0f0aedea75716d3cbff0841ca",
+      "match": true
+    },
+    {
+      "group": "resources",
+      "name": "frozen_figure_S2C_model_consistency.tsv",
+      "path": "/root/nfsdata/apadetect/analysis_projects/reproapa_apadetect_analysis_intake_20261005/pipeline_release_v7/notes/2026-10-05-apadetect-analysis-intake/completion-inputs/frozen-figures/S2C_model_consistency.tsv",
+      "expected": "47b4eb2f0f439929440069a782117402bf11bb54c85a32810514f53fc90aab8e",
+      "actual": "47b4eb2f0f439929440069a782117402bf11bb54c85a32810514f53fc90aab8e",
+      "match": true
+    },
+    {
+      "group": "resources",
+      "name": "frozen_figure_program_by_state_library.tsv.gz",
+      "path": "/root/nfsdata/apadetect/analysis_projects/reproapa_apadetect_analysis_intake_20261005/pipeline_release_v7/notes/2026-10-05-apadetect-analysis-intake/completion-inputs/frozen-figures/program_by_state_library.tsv.gz",
+      "expected": "c1d75bec39ac1be953b0706456ff9f57d3c4ea268016f2bca0b0eb5211881db0",
+      "actual": "c1d75bec39ac1be953b0706456ff9f57d3c4ea268016f2bca0b0eb5211881db0",
+      "match": true
+    },
+    {
+      "group": "resources",
+      "name": "frozen_figure_actual_state_pair_edges.tsv.gz",
+      "path": "/root/nfsdata/apadetect/analysis_projects/reproapa_apadetect_analysis_intake_20261005/pipeline_release_v7/notes/2026-10-05-apadetect-analysis-intake/completion-inputs/frozen-figures/actual_state_pair_edges.tsv.gz",
+      "expected": "8a6efb325032ef944f21b63037ef3bdf92f4624e3231fcb3b42b7e2d5be3504f",
+      "actual": "8a6efb325032ef944f21b63037ef3bdf92f4624e3231fcb3b42b7e2d5be3504f",
+      "match": true
+    },
+    {
+      "group": "resources",
+      "name": "frozen_figure_S2C_coverage.tsv",
+      "path": "/root/nfsdata/apadetect/analysis_projects/reproapa_apadetect_analysis_intake_20261005/pipeline_release_v7/notes/2026-10-05-apadetect-analysis-intake/completion-inputs/frozen-figures/S2C_coverage.tsv",
+      "expected": "4afb35febe8ecaf8058109016164b1e5d601c05e4d9a730048f1470a5e9d87bc",
+      "actual": "4afb35febe8ecaf8058109016164b1e5d601c05e4d9a730048f1470a5e9d87bc",
+      "match": true
+    },
+    {
+      "group": "resources",
+      "name": "frozen_figure_marker_selection.json",
+      "path": "/root/nfsdata/apadetect/analysis_projects/reproapa_apadetect_analysis_intake_20261005/pipeline_release_v7/notes/2026-10-05-apadetect-analysis-intake/completion-inputs/frozen-figures/marker_selection.json",
+      "expected": "7c226d84d51efdeaafc4cc6d0713d34417ed3b29d400e1b501f579d2efd0c1bd",
+      "actual": "7c226d84d51efdeaafc4cc6d0713d34417ed3b29d400e1b501f579d2efd0c1bd",
+      "match": true
+    },
+    {
+      "group": "resources",
+      "name": "frozen_figure_palette.json",
+      "path": "/root/nfsdata/apadetect/analysis_projects/reproapa_apadetect_analysis_intake_20261005/pipeline_release_v7/notes/2026-10-05-apadetect-analysis-intake/completion-inputs/frozen-figures/palette.json",
+      "expected": "a338c54eba4c8550c401ccd5f3d7e59cc72655d0e1e0b97e04e79a34d306d433",
+      "actual": "a338c54eba4c8550c401ccd5f3d7e59cc72655d0e1e0b97e04e79a34d306d433",
+      "match": true
+    },
+    {
+      "group": "source_overrides",
+      "name": "notes/2026-09-30-multimetric-statistics/inference/analyze.py",
+      "path": "/root/nfsdata/apadetect/analysis_projects/reproapa_polyapipe_rerun_20261003_v1/statistics_package_v1/legacy/b13a3aa18f4d_analyze.py",
+      "expected": "b13a3aa18f4d62d13db70d7489f3bb249083ead4cc2f5962ef1e1667fea752a3",
+      "actual": "b13a3aa18f4d62d13db70d7489f3bb249083ead4cc2f5962ef1e1667fea752a3",
+      "match": true
+    },
+    {
+      "group": "source_overrides",
+      "name": "notes/2026-09-30-multimetric-statistics/metric_inference/analyze.py",
+      "path": "/root/nfsdata/apadetect/analysis_projects/reproapa_polyapipe_rerun_20261003_v1/statistics_package_v1/legacy/f44c5eb92097_analyze.py",
+      "expected": "f44c5eb920979c990ca5488a87cf9e5a331c01557e73ec54866b830dbee2885a",
+      "actual": "f44c5eb920979c990ca5488a87cf9e5a331c01557e73ec54866b830dbee2885a",
+      "match": true
+    },
+    {
+      "group": "source_overrides",
+      "name": "notes/2026-09-30-multimetric-statistics/pool_inference/analyze.py",
+      "path": "/root/nfsdata/apadetect/analysis_projects/reproapa_polyapipe_rerun_20261003_v1/statistics_package_v1/legacy/c79ba8edb0d3_analyze.py",
+      "expected": "c79ba8edb0d3426a05d9f53db1d83a5a93559134791c7d1b8e76ee42a9fda4c6",
+      "actual": "c79ba8edb0d3426a05d9f53db1d83a5a93559134791c7d1b8e76ee42a9fda4c6",
+      "match": true
+    },
+    {
+      "group": "source_overrides",
+      "name": "notes/2026-09-30-multimetric-statistics/pair_count_tests/analyze.py",
+      "path": "/root/nfsdata/apadetect/analysis_projects/reproapa_polyapipe_rerun_20261003_v1/statistics_package_v1/legacy/1df9921bc82b_analyze.py",
+      "expected": "1df9921bc82b936dcac2fa17f81f3ca4873a0f5d3fe16fe75fb8b7c42a3e5569",
+      "actual": "1df9921bc82b936dcac2fa17f81f3ca4873a0f5d3fe16fe75fb8b7c42a3e5569",
+      "match": true
+    },
+    {
+      "group": "source_overrides",
+      "name": "notes/2026-09-30-multimetric-statistics/nulls/analyze.py",
+      "path": "/root/nfsdata/apadetect/analysis_projects/reproapa_polyapipe_rerun_20261003_v1/statistics_package_v1/legacy/ef2f68822521_analyze.py",
+      "expected": "ef2f68822521b3334af521d33b04ca3e309cd37f9cbd56f214182c3aea772b3f",
+      "actual": "ef2f68822521b3334af521d33b04ca3e309cd37f9cbd56f214182c3aea772b3f",
+      "match": true
+    },
+    {
+      "group": "source_overrides",
+      "name": "notes/2026-10-02-null-model-controls/common.py",
+      "path": "/root/nfsdata/apadetect/analysis_projects/reproapa_polyapipe_rerun_20261003_v1/statistics_package_v1/legacy/b6d6902d47b6_common.py",
+      "expected": "b6d6902d47b6b22a287a78fca11e5f008d3029a0aeb452ebe4ee517dbc1f1e52",
+      "actual": "b6d6902d47b6b22a287a78fca11e5f008d3029a0aeb452ebe4ee517dbc1f1e52",
+      "match": true
+    },
+    {
+      "group": "source_overrides",
+      "name": "notes/2026-10-02-null-model-controls/recurrence.py",
+      "path": "/root/nfsdata/apadetect/analysis_projects/reproapa_polyapipe_rerun_20261003_v1/statistics_package_v1/legacy/d859ec5a95b7_recurrence.py",
+      "expected": "d859ec5a95b74bb01275d910dcd242af52b66882bcd0b892af885ded3054418b",
+      "actual": "d859ec5a95b74bb01275d910dcd242af52b66882bcd0b892af885ded3054418b",
+      "match": true
+    },
+    {
+      "group": "source_overrides",
+      "name": "notes/2026-10-02-null-model-controls/functional.py",
+      "path": "/root/nfsdata/apadetect/analysis_projects/reproapa_polyapipe_rerun_20261003_v1/statistics_package_v1/legacy/4afd8151b80a_functional.py",
+      "expected": "4afd8151b80aa8a14e82c42d8c7876a4928ed605767cd3e9678f8b46c76dd2a8",
+      "actual": "4afd8151b80aa8a14e82c42d8c7876a4928ed605767cd3e9678f8b46c76dd2a8",
+      "match": true
+    },
+    {
+      "group": "source_overrides",
+      "name": "notes/2026-10-02-reviewer-followup/trajectory_noise.py",
+      "path": "/root/nfsdata/apadetect/analysis_projects/reproapa_polyapipe_rerun_20261003_v1/statistics_package_v1/legacy/bd006a908d84_trajectory_noise.py",
+      "expected": "bd006a908d844d5c505f71be75612757f77aa8c682b5efcf99e23eeb7a1d4a9c",
+      "actual": "bd006a908d844d5c505f71be75612757f77aa8c682b5efcf99e23eeb7a1d4a9c",
+      "match": true
+    },
+    {
+      "group": "source_overrides",
+      "name": "notes/2026-10-02-reviewer-followup/apa_followup.py",
+      "path": "/root/nfsdata/apadetect/analysis_projects/reproapa_polyapipe_rerun_20261003_v1/statistics_package_v1/legacy/8d6e49314ad9_apa_followup.py",
+      "expected": "8d6e49314ad91e0aef24a30edc977f49070240ee6f5a8e0f8c7b768ad1106efc",
+      "actual": "8d6e49314ad91e0aef24a30edc977f49070240ee6f5a8e0f8c7b768ad1106efc",
+      "match": true
+    },
+    {
+      "group": "source_overrides",
+      "name": "notes/2026-10-02-reviewer-followup/same_state.py",
+      "path": "/root/nfsdata/apadetect/analysis_projects/reproapa_polyapipe_rerun_20261003_v1/statistics_package_v1/legacy/27731f0e047f_same_state.py",
+      "expected": "27731f0e047f38c77e548c2760b3af9b3cb47497e066961c72be8ed18c663679",
+      "actual": "27731f0e047f38c77e548c2760b3af9b3cb47497e066961c72be8ed18c663679",
+      "match": true
+    },
+    {
+      "group": "source_overrides",
+      "name": "notes/2026-09-14-integration-reliability/evaluate_reaggregated_apa_effects.py",
+      "path": "/root/nfsdata/apadetect/analysis_projects/reproapa_polyapipe_rerun_20261003_v1/statistics_package_v1/legacy/9a9d52c566da_evaluate_reaggregated_apa_effects.py",
+      "expected": "9a9d52c566da18ed55d11ffca602f8b9fa1d1f68bb1175ba6a522db513388683",
+      "actual": "9a9d52c566da18ed55d11ffca602f8b9fa1d1f68bb1175ba6a522db513388683",
+      "match": true
+    },
+    {
+      "group": "source_overrides",
+      "name": "github/reproapa-analysis/revisions/20260930/external/2026-09-26_reproapa-go-analysis/scripts/run_go.py",
+      "path": "/root/nfsdata/apadetect/analysis_projects/reproapa_polyapipe_rerun_20261003_v1/statistics_package_v1/legacy/951b077b417e_run_go.py",
+      "expected": "951b077b417e6d726358cfd84ce5540d648653b38f15f9705f4112fd16d8b599",
+      "actual": "951b077b417e6d726358cfd84ce5540d648653b38f15f9705f4112fd16d8b599",
+      "match": true
+    },
+    {
+      "group": "source_overrides",
+      "name": "github/reproapa-analysis/revisions/20260930/external/2026-09-26_reproapa-go-analysis/scripts/run_go_nested.py",
+      "path": "/root/nfsdata/apadetect/analysis_projects/reproapa_polyapipe_rerun_20261003_v1/statistics_package_v1/legacy/f6270321e7f0_run_go_nested.py",
+      "expected": "f6270321e7f04e65ed9003355c3cad322102f1f03d852624baa4ae8e90720629",
+      "actual": "f6270321e7f04e65ed9003355c3cad322102f1f03d852624baa4ae8e90720629",
+      "match": true
+    },
+    {
+      "group": "source_overrides",
+      "name": "github/reproapa-analysis/revisions/20260930/external/2026-09-26_reproapa-go-analysis/scripts/run_kegg_nested.py",
+      "path": "/root/nfsdata/apadetect/analysis_projects/reproapa_polyapipe_rerun_20261003_v1/statistics_package_v1/legacy/18494c29c106_run_kegg_nested.py",
+      "expected": "18494c29c10675e7efe374e0205aba237a8a551f35ac667870b283096e268109",
+      "actual": "18494c29c10675e7efe374e0205aba237a8a551f35ac667870b283096e268109",
+      "match": true
+    },
+    {
+      "group": "source_overrides",
+      "name": "../科研/projects/2026-09-02_mouse-time-aware-integration-pilot/scripts/test_figure2_apa_manifold_coherence.py",
+      "path": "/root/nfsdata/apadetect/analysis_projects/reproapa_polyapipe_rerun_20261003_v1/statistics_package_v1/legacy/35399472c193_test_figure2_apa_manifold_coherence.py",
+      "expected": "35399472c193c8d7dda6ef1d3c3e614e7b63d849698556ba688beddc72e16c1b",
+      "actual": "35399472c193c8d7dda6ef1d3c3e614e7b63d849698556ba688beddc72e16c1b",
+      "match": true
+    },
+    {
+      "group": "source_overrides",
+      "name": "../科研/projects/2026-09-02_mouse-time-aware-integration-pilot/scripts/robustness_figure2_apa_knn.py",
+      "path": "/root/nfsdata/apadetect/analysis_projects/reproapa_polyapipe_rerun_20261003_v1/statistics_package_v1/legacy/c876d4ca26d0_robustness_figure2_apa_knn.py",
+      "expected": "c876d4ca26d03341e6b7081bd794269c59b435a6e673223b8e95e98743774b1b",
+      "actual": "c876d4ca26d03341e6b7081bd794269c59b435a6e673223b8e95e98743774b1b",
+      "match": true
+    },
+    {
+      "group": "source_overrides",
+      "name": "notes/2026-10-01-mpro-biology/legacy_structure_consensus.py",
+      "path": "/root/nfsdata/apadetect/analysis_projects/reproapa_polyapipe_rerun_20261003_v1/statistics_package_v2/legacy/2797bc6dfd1b_legacy_structure_consensus.py",
+      "expected": "2797bc6dfd1beb54f0bf9eca6ef3cd35e3c0cb8621938c681e1aeb9dada81495",
+      "actual": "2797bc6dfd1beb54f0bf9eca6ef3cd35e3c0cb8621938c681e1aeb9dada81495",
+      "match": true
+    },
+    {
+      "group": "source_overrides",
+      "name": "notes/2026-10-01-mpro-biology/legacy_prepare_pilot.py",
+      "path": "/root/nfsdata/apadetect/analysis_projects/reproapa_polyapipe_rerun_20261003_v1/statistics_package_v2/legacy/0f53245c8bc8_legacy_prepare_pilot.py",
+      "expected": "0f53245c8bc83bd5bc34d5c7bb1acccc6b7cf1938945b632f0edc6df35a18480",
+      "actual": "0f53245c8bc83bd5bc34d5c7bb1acccc6b7cf1938945b632f0edc6df35a18480",
+      "match": true
+    },
+    {
+      "group": "source_overrides",
+      "name": "notes/2026-09-29-core-sensitivity/figure5_paired_pm.py",
+      "path": "/root/nfsdata/apadetect/analysis_projects/reproapa_polyapipe_rerun_20261003_v1/statistics_package_v2/legacy/ef8758c1304d_figure5_paired_pm.py",
+      "expected": "ef8758c1304de8556b53a2e07843af781a7b852893d787bfe655b9287191a6bf",
+      "actual": "ef8758c1304de8556b53a2e07843af781a7b852893d787bfe655b9287191a6bf",
+      "match": true
+    },
+    {
+      "group": "source_overrides",
+      "name": "notes/2026-09-29-core-sensitivity/figure4_matched_overlap.py",
+      "path": "/root/nfsdata/apadetect/analysis_projects/reproapa_polyapipe_rerun_20261003_v1/statistics_package_v2/legacy/71ee37992753_figure4_matched_overlap.py",
+      "expected": "71ee379927530fe42deef80c7aa6f84ee597a2fd1c5daff05a74fe63fded4545",
+      "actual": "71ee379927530fe42deef80c7aa6f84ee597a2fd1c5daff05a74fe63fded4545",
+      "match": true
+    },
+    {
+      "group": "source_overrides",
+      "name": "notes/2026-10-02-null-model-controls/cross_species.py",
+      "path": "/root/nfsdata/apadetect/analysis_projects/reproapa_polyapipe_rerun_20261003_v1/statistics_package_v2/legacy/f7a9cd5b7796_cross_species.py",
+      "expected": "f7a9cd5b77968a6f32425125e2b77d866b110cdf73d81281911a12facbf71965",
+      "actual": "f7a9cd5b77968a6f32425125e2b77d866b110cdf73d81281911a12facbf71965",
+      "match": true
+    },
+    {
+      "group": "source_overrides",
+      "name": "notes/2026-10-02-null-model-controls/motif.py",
+      "path": "/root/nfsdata/apadetect/analysis_projects/reproapa_polyapipe_rerun_20261003_v1/statistics_package_v2/legacy/de6b3e8540e1_motif.py",
+      "expected": "de6b3e8540e1d69ce982a7b0689b2007a9c97d3edf239970c471c4c6cd120dc3",
+      "actual": "de6b3e8540e1d69ce982a7b0689b2007a9c97d3edf239970c471c4c6cd120dc3",
+      "match": true
+    },
+    {
+      "group": "source_overrides",
+      "name": "notes/2026-10-02-reviewer-followup/motif_background.py",
+      "path": "/root/nfsdata/apadetect/analysis_projects/reproapa_polyapipe_rerun_20261003_v1/statistics_package_v2/legacy/afce60026585_motif_background.py",
+      "expected": "afce60026585445187025dd25ab413cc87cc233f741e930d10aa80c4a4e28767",
+      "actual": "afce60026585445187025dd25ab413cc87cc233f741e930d10aa80c4a4e28767",
+      "match": true
+    },
+    {
+      "group": "source_overrides",
+      "name": "notes/2026-10-02-null-result-diagnostics/motif_sensitivity.py",
+      "path": "/root/nfsdata/apadetect/analysis_projects/reproapa_polyapipe_rerun_20261003_v1/statistics_package_v2/legacy/a1b6836589c3_motif_sensitivity.py",
+      "expected": "a1b6836589c36fd724ff6ccbfdbd75521c61fc023f4220ad1844fa5ee01815cb",
+      "actual": "a1b6836589c36fd724ff6ccbfdbd75521c61fc023f4220ad1844fa5ee01815cb",
+      "match": true
+    },
+    {
+      "group": "source_overrides",
+      "name": "notes/2026-10-02-rbp-expression/analyze.py",
+      "path": "/root/nfsdata/apadetect/analysis_projects/reproapa_polyapipe_rerun_20261003_v1/statistics_package_v2/legacy/8b742dee93d9_analyze.py",
+      "expected": "8b742dee93d917d09d219447303862cf51ba3008f4fe81ac7295f04b5f501e69",
+      "actual": "8b742dee93d917d09d219447303862cf51ba3008f4fe81ac7295f04b5f501e69",
+      "match": true
+    },
+    {
+      "group": "source_overrides",
+      "name": "notes/2026-10-01-figure5-union-update/resources/mouse_time_aware_integration_pilot_v1/regulatory_catalog_v1/scripts/build_catalog.py",
+      "path": "/root/nfsdata/apadetect/analysis_projects/reproapa_polyapipe_rerun_20261003_v1/statistics_package_v2/legacy/51ccfa28894d_build_catalog.py",
+      "expected": "51ccfa28894d68f1524e0ffa42a07c4f9a20d6e16f9484a2f605bd320d46297b",
+      "actual": "51ccfa28894d68f1524e0ffa42a07c4f9a20d6e16f9484a2f605bd320d46297b",
+      "match": true
+    },
+    {
+      "group": "source_overrides",
+      "name": "analysis_code/release_2026-09-24/sources/F5/annotation-pas-global-v1/migrate.py",
+      "path": "/root/nfsdata/apadetect/analysis_projects/reproapa_polyapipe_rerun_20261003_v1/statistics_package_v2/legacy/4e76ad99588a_migrate.py",
+      "expected": "4e76ad99588a4608c5b454fb6da89ab198d34c6e0fd4bee3ed826f3822c36705",
+      "actual": "4e76ad99588a4608c5b454fb6da89ab198d34c6e0fd4bee3ed826f3822c36705",
+      "match": true
+    },
+    {
+      "group": "source_overrides",
+      "name": "analysis_code/release_2026-09-24/sources/F5/site-recurrence-v1/figure5-publication-v14r4/prepare_annotated_tracks.py",
+      "path": "/root/nfsdata/apadetect/analysis_projects/reproapa_polyapipe_rerun_20261003_v1/statistics_package_v2/legacy/76078e05a551_prepare_annotated_tracks.py",
+      "expected": "76078e05a5513330d57a4cee38317a39f4392ad740d303c8843c43b61e4e5956",
+      "actual": "76078e05a5513330d57a4cee38317a39f4392ad740d303c8843c43b61e4e5956",
+      "match": true
+    },
+    {
+      "group": "source_overrides",
+      "name": "analysis_code/release_2026-09-24/sources/F5/full-cohort-v2/sources/execution-scripts/core.py",
+      "path": "/root/nfsdata/apadetect/analysis_projects/reproapa_polyapipe_rerun_20261003_v1/statistics_package_v2/legacy/b9f133a18692_core.py",
+      "expected": "b9f133a186925f85c909129d783ad8d03f3c53db4a1809c3b7b6d3fd8139cd8c",
+      "actual": "b9f133a186925f85c909129d783ad8d03f3c53db4a1809c3b7b6d3fd8139cd8c",
+      "match": true
+    },
+    {
+      "group": "source_overrides",
+      "name": "analysis_code/release_2026-09-24/sources/F5/site-recurrence-v1/analyze.py",
+      "path": "/root/nfsdata/apadetect/analysis_projects/reproapa_polyapipe_rerun_20261003_v1/statistics_package_v2/legacy/5905c503fd22_analyze.py",
+      "expected": "5905c503fd22000c593194dd4f5f1d14f2a285e49d83ae10ed182dff35789a90",
+      "actual": "5905c503fd22000c593194dd4f5f1d14f2a285e49d83ae10ed182dff35789a90",
+      "match": true
+    },
+    {
+      "group": "source_overrides",
+      "name": "analysis_code/release_2026-09-24/sources/F5/site-recurrence-v1/consistency.py",
+      "path": "/root/nfsdata/apadetect/analysis_projects/reproapa_polyapipe_rerun_20261003_v1/statistics_package_v2/legacy/92be7ba5440d_consistency.py",
+      "expected": "92be7ba5440dd156ca120f199b30d59fc1f54497cfcdf2ec3d0fd27eb48b9bbe",
+      "actual": "92be7ba5440dd156ca120f199b30d59fc1f54497cfcdf2ec3d0fd27eb48b9bbe",
+      "match": true
+    },
+    {
+      "group": "source_overrides",
+      "name": "github/reproapa-analysis/modules/09_cross_species/code/figure4/recurrence_predicts_cross_species_v26.py",
+      "path": "/root/nfsdata/apadetect/analysis_projects/reproapa_polyapipe_rerun_20261003_v1/statistics_package_v3/legacy/9a0ca9c1bc42_recurrence_predicts_cross_species_v26.py",
+      "expected": "9a0ca9c1bc427a74469a7ce4094c0a65090d95d07453dc8297927e120d9ffa1a",
+      "actual": "9a0ca9c1bc427a74469a7ce4094c0a65090d95d07453dc8297927e120d9ffa1a",
+      "match": true
+    },
+    {
+      "group": "source_overrides",
+      "name": "github/reproapa-analysis/modules/09_cross_species/code/figure4/audit_figure4c_reused_controls_v53.py",
+      "path": "/root/nfsdata/apadetect/analysis_projects/reproapa_polyapipe_rerun_20261003_v1/statistics_package_v3/legacy/23999b56cd0d_audit_figure4c_reused_controls_v53.py",
+      "expected": "23999b56cd0d5dccc2ca4a02c6cbab366d07683a9a8c8ea952206e37666f9402",
+      "actual": "23999b56cd0d5dccc2ca4a02c6cbab366d07683a9a8c8ea952206e37666f9402",
+      "match": true
+    },
+    {
+      "group": "source_overrides",
+      "name": "github/reproapa-analysis/modules/08_recurrence/code/apa_gex_state/analyze.py",
+      "path": "/root/nfsdata/apadetect/analysis_projects/reproapa_polyapipe_rerun_20261003_v1/statistics_package_v3/legacy/317d1ef62659_analyze.py",
+      "expected": "317d1ef6265967c64133284e000a8dc946f3aa97fa266b516c0e343bba6b7435",
+      "actual": "317d1ef6265967c64133284e000a8dc946f3aa97fa266b516c0e343bba6b7435",
+      "match": true
+    },
+    {
+      "group": "source_overrides",
+      "name": "notes/2026-09-26-endpoint-counting/common.py",
+      "path": "/root/nfsdata/apadetect/analysis_projects/reproapa_polyapipe_rerun_20261003_v1/statistics_package_v4r1/legacy/212b96210a74_common.py",
+      "expected": "212b96210a741e874bcad92636fea5c30864e068db9a0dec76af1724b60eb9a0",
+      "actual": "212b96210a741e874bcad92636fea5c30864e068db9a0dec76af1724b60eb9a0",
+      "match": true
+    },
+    {
+      "group": "source_overrides",
+      "name": "notes/2026-09-26-global-direction-audit/analyze.py",
+      "path": "/root/nfsdata/apadetect/analysis_projects/reproapa_polyapipe_rerun_20261003_v1/statistics_package_v4r1/legacy/f2634a9ed88c_analyze.py",
+      "expected": "f2634a9ed88c34a83c56fe33d5b287e95d4f03936c81074ba3bf1338e5d35cb3",
+      "actual": "f2634a9ed88c34a83c56fe33d5b287e95d4f03936c81074ba3bf1338e5d35cb3",
+      "match": true
+    },
+    {
+      "group": "source_overrides",
+      "name": "notes/2026-09-26-global-direction-audit/tandem_utr.py",
+      "path": "/root/nfsdata/apadetect/analysis_projects/reproapa_polyapipe_rerun_20261003_v1/statistics_package_v4r1/legacy/99aacda7990f_tandem_utr.py",
+      "expected": "99aacda7990fc63411302e8ae8e7fb1f046279df2986d9834aa9fe72eb4e2204",
+      "actual": "99aacda7990fc63411302e8ae8e7fb1f046279df2986d9834aa9fe72eb4e2204",
+      "match": true
+    },
+    {
+      "group": "source_overrides",
+      "name": "notes/2026-10-02-GSE282319-long-read/analyze.py",
+      "path": "/root/nfsdata/apadetect/analysis_projects/reproapa_polyapipe_rerun_20261003_v1/statistics_package_v5/legacy/292c0bad79e0_analyze.py",
+      "expected": "292c0bad79e0e028fef4225e0646335ca160f601cdb4c0c3ad0498937caab80a",
+      "actual": "292c0bad79e0e028fef4225e0646335ca160f601cdb4c0c3ad0498937caab80a",
+      "match": true
+    },
+    {
+      "group": "source_overrides",
+      "name": "notes/2026-10-02-rad23b-ago2-gse25310/check_overlap.py",
+      "path": "/root/nfsdata/apadetect/analysis_projects/reproapa_polyapipe_rerun_20261003_v1/statistics_package_v5/legacy/bf62bf5db5cf_check_overlap.py",
+      "expected": "bf62bf5db5cf46b7329aa01a4abd7bb0b246304027bac77e752d86a82c5848cf",
+      "actual": "bf62bf5db5cf46b7329aa01a4abd7bb0b246304027bac77e752d86a82c5848cf",
+      "match": true
+    },
+    {
+      "group": "source_overrides",
+      "name": "notes/2026-09-29-core-sensitivity/figure5_coordinate_audit.py",
+      "path": "/root/nfsdata/apadetect/analysis_projects/reproapa_polyapipe_rerun_20261003_v1/statistics_package_v6/legacy/d1ab4301928f_figure5_coordinate_audit.py",
+      "expected": "d1ab4301928f7f8ee2face94fe649166ef93db27819765cd812720edbd785f34",
+      "actual": "d1ab4301928f7f8ee2face94fe649166ef93db27819765cd812720edbd785f34",
+      "match": true
+    },
+    {
+      "group": "source_overrides",
+      "name": "analysis_code/release_2026-09-24/sources/F5/site-recurrence-v1/supplement-compressed-v1/prepare.py",
+      "path": "/root/nfsdata/apadetect/analysis_projects/reproapa_polyapipe_rerun_20261003_v1/statistics_package_v6/legacy/3251f5ccffca_prepare.py",
+      "expected": "3251f5ccffca424da930cc0e1934d90f6ab4e26938f85f467da64690331dc0f7",
+      "actual": "3251f5ccffca424da930cc0e1934d90f6ab4e26938f85f467da64690331dc0f7",
+      "match": true
+    },
+    {
+      "group": "source_overrides",
+      "name": "notes/2026-10-02-gse99922-pilot/expanded_measurements.py",
+      "path": "/root/nfsdata/apadetect/analysis_projects/reproapa_polyapipe_rerun_20261003_v1/statistics_package_v7/legacy/dc6e02ddea5a_expanded_measurements.py",
+      "expected": "dc6e02ddea5a079444ac6deef003827edcae9fe585ffa4517dd6d4c5e5511094",
+      "actual": "dc6e02ddea5a079444ac6deef003827edcae9fe585ffa4517dd6d4c5e5511094",
+      "match": true
+    },
+    {
+      "group": "source_overrides",
+      "name": "notes/2026-10-02-gse99922-pilot/matched_analysis.py",
+      "path": "/root/nfsdata/apadetect/analysis_projects/reproapa_polyapipe_rerun_20261003_v1/statistics_package_v7/legacy/7989684d9dc7_matched_analysis.py",
+      "expected": "7989684d9dc713286c3a49c8b0146e9212c82e5aca2d942ff42b748440f4f2f7",
+      "actual": "7989684d9dc713286c3a49c8b0146e9212c82e5aca2d942ff42b748440f4f2f7",
+      "match": true
+    },
+    {
+      "group": "source_overrides",
+      "name": "notes/2026-10-02-gse99922-pilot/vector_analysis.py",
+      "path": "/root/nfsdata/apadetect/analysis_projects/reproapa_polyapipe_rerun_20261003_v1/statistics_package_v7/legacy/bfd0b85d72ea_vector_analysis.py",
+      "expected": "bfd0b85d72ea2757127ba7d6f2ca65e2c779f4407312906de7b0d968919c1036",
+      "actual": "bfd0b85d72ea2757127ba7d6f2ca65e2c779f4407312906de7b0d968919c1036",
+      "match": true
+    },
+    {
+      "group": "source_overrides",
+      "name": "github/reproapa-analysis/modules/09_cross_species/code/cis_supplement/scripts/recompute_models.py",
+      "path": "/root/nfsdata/apadetect/analysis_projects/reproapa_polyapipe_rerun_20261003_v1/statistics_package_v7/legacy/22d0f6ee0c44_recompute_models.py",
+      "expected": "22d0f6ee0c448dc0b7c985e628736626575a7b26ec224ad1b7af2aaf274f043e",
+      "actual": "22d0f6ee0c448dc0b7c985e628736626575a7b26ec224ad1b7af2aaf274f043e",
+      "match": true
+    },
+    {
+      "group": "source_overrides",
+      "name": "github/reproapa-analysis/modules/07_apa_dynamics/code/figure2/analyze_figure2_dynamic_architecture_v1.py",
+      "path": "/root/nfsdata/apadetect/analysis_projects/reproapa_polyapipe_rerun_20261003_v1/statistics_package_v8/legacy/9eea8ed88ebe_analyze_figure2_dynamic_architecture_v1.py",
+      "expected": "9eea8ed88ebe908abfbcf806ac6c1eba54fe6ee45035771fc7152ab1bcc404a9",
+      "actual": "9eea8ed88ebe908abfbcf806ac6c1eba54fe6ee45035771fc7152ab1bcc404a9",
+      "match": true
+    },
+    {
+      "group": "source_overrides",
+      "name": "github/reproapa-analysis/modules/07_apa_dynamics/code/figure2/analyze_figure2_cde_dynamics_v1.py",
+      "path": "/root/nfsdata/apadetect/analysis_projects/reproapa_polyapipe_rerun_20261003_v1/statistics_package_v8/legacy/9742b6962271_analyze_figure2_cde_dynamics_v1.py",
+      "expected": "9742b69622714b029dc312263e7031aff95d1640c8133e1367bf8f1837baa38d",
+      "actual": "9742b69622714b029dc312263e7031aff95d1640c8133e1367bf8f1837baa38d",
+      "match": true
+    },
+    {
+      "group": "source_overrides",
+      "name": "notes/2026-10-02-scape-polyapipe-comparison/scripts/atlas_effect_math.py",
+      "path": "/root/nfsdata/apadetect/analysis_projects/reproapa_polyapipe_rerun_20261003_v1/statistics_package_v14/legacy/da10e2fb8de3_atlas_effect_math.py",
+      "expected": "da10e2fb8de38d3f4687e33e4135eb28e43e0a2e2ba8035200a667d46517a569",
+      "actual": "da10e2fb8de38d3f4687e33e4135eb28e43e0a2e2ba8035200a667d46517a569",
+      "match": true
+    },
+    {
+      "group": "source_overrides",
+      "name": "notes/2026-10-02-scape-polyapipe-comparison/scripts/atlas_effect_engine.py",
+      "path": "/root/nfsdata/apadetect/analysis_projects/reproapa_polyapipe_rerun_20261003_v1/statistics_package_v14/legacy/8e2ceae94293_atlas_effect_engine.py",
+      "expected": "8e2ceae94293b1034b3323796afdd75b3c400faf3b36b9ead22830166837f08c",
+      "actual": "8e2ceae94293b1034b3323796afdd75b3c400faf3b36b9ead22830166837f08c",
+      "match": true
+    },
+    {
+      "group": "source_overrides",
+      "name": "analysis_code/recurrence_correction_2026-09-25/sources/MOUSE/analysis/figure3-recurrence-common-reference-2026-09-25/analyze.py",
+      "path": "/root/nfsdata/apadetect/analysis_projects/reproapa_polyapipe_rerun_20261003_v1/statistics_package_v10/legacy/24b127996b4a_process.py",
+      "expected": "24b127996b4aca81068a2cbcbe1e0b2f3e997e86f3f663eca142ae354d50dc9e",
+      "actual": "24b127996b4aca81068a2cbcbe1e0b2f3e997e86f3f663eca142ae354d50dc9e",
+      "match": true
+    },
+    {
+      "group": "source_overrides",
+      "name": "__direction_math__",
+      "path": "/root/nfsdata/apadetect/analysis_projects/reproapa_apadetect_analysis_intake_20261005/pipeline_release_v7/notes/2026-10-05-apadetect-analysis-intake/completion-inputs/D_direction_math.py",
+      "expected": "55c8bf6b2af04aaf54293cfa410de0f6590a42aee0902cf12d6766d43a7b9938",
+      "actual": "55c8bf6b2af04aaf54293cfa410de0f6590a42aee0902cf12d6766d43a7b9938",
+      "match": true
+    },
+    {
+      "group": "source_overrides",
+      "name": "__mirna_math__",
+      "path": "/root/nfsdata/apadetect/analysis_projects/reproapa_apadetect_analysis_intake_20261005/pipeline_release_v7/notes/2026-10-05-apadetect-analysis-intake/completion-inputs/E_mirna_math.py",
+      "expected": "c1eb844fce4186454ddf1cdacd9e3875cea95efe999874c8eb3b16805bca21f7",
+      "actual": "c1eb844fce4186454ddf1cdacd9e3875cea95efe999874c8eb3b16805bca21f7",
+      "match": true
+    }
+  ]
+}

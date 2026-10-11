@@ -1,0 +1,150 @@
+{
+  "date": "2026-10-11",
+  "manuscript_title": "Recurrent Gene-Level Responses beneath Divergent Alternative Polyadenylation in Human and Mouse Reprogramming",
+  "edition": "prepared for submission",
+  "scope": {
+    "main_figures": 4,
+    "supplementary_figures": 21,
+    "supplementary_tables": 10,
+    "workbook_data_sheets": 57,
+    "workbook_total_sheets": 59
+  },
+  "primary_caller": "polyApipe",
+  "reference": "integrated_v2_primary",
+  "manuscript_source_directory": "main/",
+  "manuscript_hashes": "provenance/manuscript-source-hashes.tsv",
+  "outputs": "docs/manuscript-map.tsv",
+  "source_data": "provenance/source-data-release.json",
+  "logic": {
+    "version": 14,
+    "status": "confirmed",
+    "workspace_path": "reviews/2026-10-10-divergence-writing/spec/logic.json",
+    "sha256": "6b32ac9251208c3e0ef36975354138514f4b367c23d959d97a589e53429bcebd"
+  },
+  "workbook": {
+    "path": "table/Supplementary_Tables_S1-S10.xlsx",
+    "sha256": "68265e99547bfd6710e4151510a177df62ca9a6c05589d2a95ec5146db1ac681",
+    "sheets": [
+      "Contents",
+      "S1a",
+      "S1b",
+      "S1c",
+      "S1d",
+      "S1e",
+      "S1f",
+      "S1g",
+      "S1h",
+      "S2a",
+      "S2b",
+      "S2c",
+      "S2d",
+      "S2e",
+      "S2f",
+      "S3a",
+      "S3b",
+      "S3c",
+      "S3d",
+      "S3e",
+      "S3f",
+      "S3g",
+      "S3h",
+      "S4a",
+      "S4b",
+      "S4c",
+      "S4d",
+      "S4e",
+      "S4f",
+      "S4g",
+      "S4h",
+      "S4i",
+      "S5a",
+      "S5b",
+      "S5c",
+      "S5d",
+      "S5e",
+      "S5f",
+      "S5g",
+      "S6a",
+      "S6b",
+      "S6c",
+      "S6d",
+      "S7a",
+      "S7b",
+      "S7c",
+      "S7d",
+      "S7e",
+      "S7f",
+      "S7g",
+      "S8a",
+      "S8b",
+      "S8c",
+      "S8d",
+      "S9a",
+      "S9b",
+      "S10a",
+      "S10b",
+      "Sources"
+    ],
+    "blocks": 200,
+    "source_base": "notes/2026-10-10-table-s9f/Supplementary_Tables_S1-S9.xlsx",
+    "source_base_sha256": "ee1f537d985df66e55b4bad113e4ec8524f75ada2bcba2f01c35f330c4490e1d"
+  },
+  "recorded_checks": {
+    "main_figures": {
+      "fig_unchanged": true,
+      "kept_cde": {
+        "source": 528,
+        "candidate": 528,
+        "missing": 0,
+        "extra": 0,
+        "examples": []
+      },
+      "top_row_letters": [
+        "a",
+        "b"
+      ],
+      "a_rows_ok": "8/8",
+      "b_points_ok": "48/48",
+      "b_significant_points": {
+        "P_M proximal proximal": 8,
+        "P_S distal distal": 4
+      },
+      "c_ok": "17/17",
+      "e_ok": "13/13",
+      "set_copies": {
+        "Figure.1.pdf": true,
+        "Figure.2.pdf": true,
+        "Figure.4.pdf": true,
+        "Figure.3.pdf": true
+      },
+      "checks": {
+        "outside": 0,
+        "text_overlaps": 0,
+        "letter_zone": 0,
+        "colour_unnamed": 0,
+        "line_aspect_bad": 0
+      },
+      "recorded_scope": "Base assembly before the final caption, panel-order and colour revision; final file identities are in the output map."
+    },
+    "workbook": {
+      "checks": {
+        "sheets": 59,
+        "old_sheets_rows_identical": 324942,
+        "excel_tables": 199,
+        "conditional_formats": 25,
+        "new_cells_equal_to_source": 117325,
+        "appended_cells_equal_to_source": 8571,
+        "blocks": 200
+      },
+      "problems": []
+    }
+  },
+  "snapshot_utc": "2026-10-12T04:20:48.728632+00:00",
+  "pas_unit_suite_files": 35,
+  "scientific_numeric_code_modified": false,
+  "full_scientific_analysis_rerun": false,
+  "public_deposition": true,
+  "data_version": "v11b",
+  "license": "MIT",
+  "public_repository": "https://github.com/Lycidas97/reproAPA"
+}

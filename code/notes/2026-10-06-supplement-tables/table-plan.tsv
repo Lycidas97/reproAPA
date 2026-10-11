@@ -1,0 +1,44 @@
+table	table_title	sheet	sheet_title	v15_table	evidence_id	status	cited_by	supp_figures	supp_figures_v15	sheet_files	sheet_rows	source_data_files	note
+S1	Datasets, libraries and expression states	S1a	Expression states, marker evidence, partition stability and sampling	S8	E01a	revise	R1P1	S1-S3	S1-S6	5	2193	11	Adds the G1-G3 marker/partition-stability tables (new Figures S4-S6); frozen GEX, no PAS values.
+S1	Datasets, libraries and expression states	S1b	Datasets	S1	-	reuse	Methods			1	7	0	frozen GEX inventory; unchanged
+S1	Datasets, libraries and expression states	S1c	Sequencing libraries	S2	-	reuse	Methods			1	210	0	frozen GEX inventory; unchanged
+S1	Datasets, libraries and expression states	S1d	Expression-atlas libraries	S3	-	reuse	Methods			1	210	0	frozen GEX inventory; unchanged
+S1	Datasets, libraries and expression states	S1e	Local expression partitions	S4	-	reuse	Methods			1	11	0	frozen GEX inventory; unchanged
+S1	Datasets, libraries and expression states	S1f	Local-state annotations	S5	-	reuse	Methods			1	111	0	frozen GEX inventory; unchanged
+S1	Datasets, libraries and expression states	S1g	Integration orthologs	S6	-	reuse	Methods			1	2128	0	frozen GEX inventory; unchanged
+S1	Datasets, libraries and expression states	S1h	Mouse annotation programs	S7	-	reuse	Methods			1	193	0	frozen GEX inventory; unchanged
+S2	PAS measurement and route-level PAS position	S2a	PAS catalog and reference support	S9	E02a	revise	R1P2; Methods PAS identification; Methods robustness	S4	S7	5	772	15	Carries 64.0-91.0% of primary PASs / 93.4-97.2% of UMIs within 50 nt. Caller-migration and call-availability audits cited by Methods are not in the current bundle.
+S2	PAS measurement and route-level PAS position	S2b	Route means across 16 settings	S10	E03a	update	R1P3	S5a,b	S8a,b	3	228	4	Primary values, 16-setting ranges and distal excess of Figure 1d.
+S2	PAS measurement and route-level PAS position	S2c	Tandem-3′ UTR restriction	S11	E03b	update	R1P3	S5c	S8c	1	160	1	Carries +0.027/+0.005/+0.015 vs -0.025/-0.054 (primary setting).
+S2	PAS measurement and route-level PAS position	S2d	Design and 1,306-ortholog background	S12	E01b	update	R1P4	S3c	S3c	1	356371	0	Species x induction-class design; ortholog background behind the Figure 1d ticks.
+S2	PAS measurement and route-level PAS position	S2e	Observed-state references	S13	E03c	update	R1P5	S5d-f	S8d-f	2	360	2	R/E/P/M minus observed S per route (Figure 1d upper).
+S3	State-resolved APA profile classes	S3a	Resolution and candidate membership	S14	E04a	update	R2P1	S6a	S9a	4	3421	5	Full lists of the 902 human and 796 mouse candidates with class (C1 progressive proximal, C2 reversal, C3 distal).
+S3	State-resolved APA profile classes	S3b	Route hold-out	S15	E04b	update	R2P2	S6d,e	S9d,e	3	2506	3	
+S3	State-resolved APA profile classes	S3c	Ortholog class correspondence	S16	E05a	update	R2P3	S7a,b	S10a,b	3	177	1	
+S3	State-resolved APA profile classes	S3d	Functional tests of the classes	S17	E17a+E17c	merge	R2P3	S9a-c,g	S17	2	46984	0	Merges v15 S17 (class ORA) and v15 S42 (route-specific APA-amplitude ranked tests); both are panels of the new Figure S17.
+S3	State-resolved APA profile classes	S3e	Stage contributions and path geometry	S18+S19	E05c+E05b	update	R2P4; R2P5	S6c; S7c-e	S10c,e; S9c; S10c,d	2	3928	8	Observed D/L and T only; no noise calibration.
+S3	State-resolved APA profile classes	S3f	Moran structure and APA-GEX profile agreement	S20	E06a	update	R2P6	S8	S11	2	345	4	
+S4	Within-species recurrence and its context	S4a	Design, series and estimators	S21	E07a	update	R3P1; Methods data collection, quantification, statistics	S3c; S10a-f	S12; S3c	1	58	1	Cohort/estimator definition table cited by Methods.
+S4	Within-species recurrence and its context	S4b	Recurrent genes and conditional nulls	S22	E07b	update	R3P2	S10a,e,f	S12a,e,f	5	16760	1	Complete member lists: human/mouse P-S 483/604, P-M 268/420; 37 human P-M genes in all three studies.
+S4	Within-species recurrence and its context	S4c	Direction composition and intermediate states	S23	E07c+D13	revise	R3P3	S10b; S11	S12b; S16	4	25159	2	Adds the new intermediate-state analysis (41/293, 134/530, 233/527; reversals 15/29/5).
+S4	Within-species recurrence and its context	S4d	Measurement controls, wells and external PAS-seq	S24	E08a	update	R3P4; Methods robustness	S10c,d,g-i	S12c,d; S13	8	14795	6	Well family 5 x 614 (370 q<.05; 134/143 recurrent).
+S4	Within-species recurrence and its context	S4e	Dual-reference candidates	S25	E09a	update	R3P5	S12a-e; S14f,g	S14; S21f,g	3	25007	5	Mouse 420 -> 395 -> 222; human 268 -> 250 -> 128; Pdlim7.
+S4	Within-species recurrence and its context	S4f	APA-GEX response identity and direction	S26	E10a	update	R3P6	S12f-i	S15	2	239646	2	Eight-test family; identity and direction now supported in both species.
+S4	Within-species recurrence and its context	S4g	Nested functional backgrounds	S27	E17b	update	R3P7	S9d-f,h	S18	3	83473	4	
+S5	Cross-species comparisons and cis-feature models	S5a	Sharing tests and correction families	S29	E11b	update	R4P1; Methods orthologue mapping	S13b-f	S19b-f	5	4304	4	Renumbered from v15 S29 so that tables follow first citation (R4P1 before R4P2).
+S5	Cross-species comparisons and cis-feature models	S5b	Shared proximal candidates	S28	E11a	update	R4P2; SM; SR	S13a	S19a; S20	9	639	1	Renumbered from v15 S28. 23 P-S and 20 P-M candidates; three nulls. 2026-10-07: adds the expression/APA-coverage-tercile extensions of the Quintile and Range nulls (old vs new tests, label mobility, missingness, tercile edges, calibration/power, balance).
+S5	Cross-species comparisons and cis-feature models	S5c	Correspondence on homologous PASs and reference differences	S30+S31	E12a+E12b	update	R4P3; R4P4	S14a-e	S21a,b,e; S21c,d	4	2009	5	v2 primary only (v3 removed).
+S5	Cross-species comparisons and cis-feature models	S5d	PDLIM7/Pdlim7 structure	S32	E12c	update	R4P5	S12e; S14f,g	S21f,g; S14e	2	1994	4	
+S5	Cross-species comparisons and cis-feature models	S5e	Cis features and increment tests	S33	E13a	update	R4P6	S15	S22; S23	3	992	5	Four primary tests in both prediction directions (min q = 0.069) + 32-setting family.
+S6	Interval inclusion and predicted-site retention	S6a	Union pool and interval models	S34	E14a	update	R5P1; Methods data collection, quantification, statistics	S16a	S24a	3	21793	2	Cohort/estimator definition table cited by Methods.
+S6	Interval inclusion and predicted-site retention	S6b	Interval agreement	S35	E14b	update	R5P2	S16c,d	S24c,d	3	1900	1	Descriptive only.
+S6	Interval inclusion and predicted-site retention	S6c	Weighted predicted-site retention	S36	E14c	update	R5P3	S16e,f	S24e,f	2	2406	2	Loss/gain counts incl. the 107 exact-zero mouse RBP records.
+S6	Interval inclusion and predicted-site retention	S6d	Site density and external miRNA seed groups	S37	E18a+D24	revise	R5P3; Methods site retention	S17a,b; S18a-f	S26; S27	5	610	10	Absorbs the external miRNA seed-group analysis (Figure S27, source of the Figure 5f PSC-miRNA row).
+S6	Interval inclusion and predicted-site retention	S6e	Candidate-RBP expression	S38	E18b	revise	R5P3	S18g,h	S28	3	3900	1	Adds the 27-RBP filter behind Figure 5f (25 kept; Celf3, Rbm24 removed).
+S6	Interval inclusion and predicted-site retention	S6f	Exact-site partial retention	S39	E15a	update	R5P4	S17c-f	S25	3	7197	11	976/704 mouse and 235/231 human relationships; Eif4ebp2 (Figure 5e), Snx30 and SH3PXD2A examples.
+S6	Interval inclusion and predicted-site retention	S6g	RBP motif provenance			new	Methods; SM			1	468	0	2026-10-07 (review A7): CisBP-RNA build 2.00 matrices in three layers (human direct 259/145, mouse direct 7/6, human-to-mouse transfer 202/111); audit_file reduced to file name.
+S7	Low-net-shift genes and interval examples	S7a	The 51 low-net-shift genes	S40	E14d	revise	R5P5	S16b; S19	S24b; S30	5	475	1	"v15 title ""All 64 ..."" is obsolete: 51 -> 8 -> 4."
+S7	Low-net-shift genes and interval examples	S7b	Trip12	S41	E16a	revise	R5P6; Methods site retention	S20	S29	6	43630	8	Replaces the v15 Rad23b content.
+S7	Low-net-shift genes and interval examples	S7c	Riok3 in both PAS workflows			new	R5P6; Methods robustness	S21		4	151	0	Figure 5f example (2026-10-07): native effects, terminal-family decomposition and paired inclusion of the shared 889-nt interval with polyApipe and APADETECT p50.
+S8	Main analyses repeated with alternative PAS calling	S8a	Alternative PAS calling	S42	ALT	new	Methods alternative PAS calling; Discussion	S21	S31	17	3759	0	New; replaces the uncited v15 S42 (merged into S17). Gene-level percentages removed from the Discussion belong here.
+S8	Main analyses repeated with alternative PAS calling	S8b	Strict interval pairs under alternative PAS calls			new	R5P7; Discussion; SR; SM	S21		2	1746	0	2026-10-07: each polyApipe strict recurrent interval pair located in the APADETECT p50 coordinate regions (region containing the 3'-most base) and classed reproduced / below threshold / direction conflict / not measurable.

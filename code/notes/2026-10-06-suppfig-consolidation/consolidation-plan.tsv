@@ -1,0 +1,32 @@
+current	work_id	height_mm	proposed	keep_panels	move_to_tables	reason_moved	main_text_dependency
+S1	D01	170	A	c	a;b	a duplicates S4 marker dot plots; b sampling support -> Table S1a	R1 cites S1-S6 as a range only
+S4	G1	137	A	a-d	-	-	R1 cites S1-S6 as a range only
+S2	D02	168	B	c	a;b	a duplicates S5 marker dot plots; b sampling support -> Table S1a	R1 cites S1-S6 as a range only
+S5	G2	112	B	a-d	-	-	R1 cites S1-S6 as a range only
+S6	G3	94	B	b-d	a	a is a one-line result (all 11 baseline partitions reproduced exactly); per-state J/F already in S4/S5	R1 cites S1-S6 as a range only
+S3	D03	164	C	a-f	-	-	R1P (S3 cited alone)
+S7	D04	124	D	A-D	-	-	R1
+S8	D05	172	E	a-f	-	-	R1 (three citations)
+S9	D06	133	F	A-E	-	not merged: S9c and S9d are cited by Methods/Robustness (fixed-class null, candidate reselection, route omission)	R2; Methods Robustness
+S10	D07	136	G	A-E	-	not merged (S9+S10 would exceed 190 mm once S9c/S9d are kept)	R2
+S11	D08	136	H	a-d	-	-	R2
+S17	D14	82	I	a;b;c;e	d	complete corrected-q distributions; minimum q is already stated in b	R2
+S18	D15	148	I	a;b;c;e	d	conditional-null label mobility is a technical diagnostic; e (power) must stay: it qualifies the negative G2 result	R3
+S12	D09	112	J	a-f	-	-	R3; Methods Robustness (S12 and S13)
+S13	D10	95	J	a;b;c	d;e	d downsampling/source-variance and e minimum attainable p are design-resolution diagnostics	R3; Methods Robustness (S12 and S13)
+S14	D11	87	K	a-e	-	-	R3
+S15	D12	93	K	a-d	-	-	R3
+S16	D13	137	L	a-e	-	-	R3P3 (intermediate-state sentence)
+S19	D16	143	M	a-f	-	-	R4
+S20	D17	108	(table only)	-	a;b	the 23 + 20 shared-candidate inventory is the same content as Table S5b	R4 cites "Supplementary Figures S19 and S20" -> change to "Supplementary Figure S19; Table S5b"
+S21	D18	136	N	a-g	-	-	R4 (five citations)
+S22	D19	137	O	a;b;d;e	c	weighted feature distributions are descriptive, no test	R4 (cited together with S23)
+S23	D20	175	O	a-d	e	repeat-mean gains over 32 settings; the 32-setting test with q is b	R4 (cited together with S22)
+S24	D21	154	P	a-f	-	not merged: e carries the R5 counts (155/174, 241/246, 48/60, 107 exact-zero RBP records)	R5 (four citations)
+S25	D22	122	Q	a-d	-	-	R5P4
+S28	D25	144	Q	a;b	c;d	cross-study RBP expression change of all candidate RBPs is context, no claim in text	R5 (S28 cited once); b defines the Figure 5f third rug row
+S26	D23	107	R	a;b	c;d;(e)	c/d GC and matching-outcome are design diagnostics; e (nine backgrounds) is BORDERLINE, see README	R5 sentence "matched for length, GC content and position"
+S27	D24	105	R	a-f	-	-	R5; a defines the Figure 5f "PSC miRNA" row
+S29	D26	167	S	a-h	-	-	R5P6
+S30	D27	114	T	a-c	-	not merged: a and c carry R5 statements (36 vs 15 measurable; 7 of 8 with local shift, Fxr1 none)	R5 (cited with S24)
+S31	A01	190	U	a-f	-	-	Methods alternative PAS calling; Discussion

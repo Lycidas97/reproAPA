@@ -1,0 +1,88 @@
+{
+  "captured_utc": "2026-10-10T04:14:34.242110+00:00",
+  "scope": "Current local packaging/cis runtime; not certification of prior inference",
+  "inventory": {
+    "python": "3.12.14",
+    "platform": "macOS-26.3-arm64-arm-64bit",
+    "machine": "arm64",
+    "executable": "/Users/lycidas/work/\u79d1\u7814/projects/2026-09-22_reproapa-cis-supplement/.venv/bin/python",
+    "packages": [
+      {
+        "name": "cloudpickle",
+        "version": "3.1.2"
+      },
+      {
+        "name": "contourpy",
+        "version": "1.4.0"
+      },
+      {
+        "name": "cycler",
+        "version": "0.12.1"
+      },
+      {
+        "name": "fonttools",
+        "version": "4.65.0"
+      },
+      {
+        "name": "joblib",
+        "version": "1.6.0"
+      },
+      {
+        "name": "kiwisolver",
+        "version": "1.5.1"
+      },
+      {
+        "name": "matplotlib",
+        "version": "3.11.2"
+      },
+      {
+        "name": "narwhals",
+        "version": "2.26.0"
+      },
+      {
+        "name": "numpy",
+        "version": "2.5.3"
+      },
+      {
+        "name": "packaging",
+        "version": "26.3"
+      },
+      {
+        "name": "pandas",
+        "version": "3.0.6"
+      },
+      {
+        "name": "pillow",
+        "version": "12.3.0"
+      },
+      {
+        "name": "pymupdf",
+        "version": "1.28.2"
+      },
+      {
+        "name": "pyparsing",
+        "version": "3.3.3"
+      },
+      {
+        "name": "python-dateutil",
+        "version": "2.9.0.post0"
+      },
+      {
+        "name": "scikit-learn",
+        "version": "1.9.1"
+      },
+      {
+        "name": "scipy",
+        "version": "1.18.1"
+      },
+      {
+        "name": "six",
+        "version": "1.17.0"
+      },
+      {
+        "name": "threadpoolctl",
+        "version": "3.7.0"
+      }
+    ]
+  }
+}

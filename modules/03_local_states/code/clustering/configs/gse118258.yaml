@@ -1,0 +1,39 @@
+version: '2.0'
+study_id: GSE118258
+membership_path: /root/nfsdata/multica/worktrees/apadetect/DOC-290-gse118258-data-rescue/analyses/FGA07-gse118258-factorized-gex-annotation-v1/frozen_local_state_membership.tsv.gz
+membership_columns:
+  cell_id: global_cell_id
+  state_id: neutral_state
+  scope_id: null
+  library_id: null
+  barcode: null
+expression_mode: shared_h5ad
+expression_already_log1p: false
+partition_selection_fields: []
+library_use: stratified_resampling_and_postfreeze_audit_only
+scopes:
+  studywide:
+    role: primary
+    n_cells: 28969
+    source_membership_order_sha256: e3290e956d7f8abc81f5c07981fe302bdafc399b5cab28dadb1775ee47111afe
+    cell_set_sha256: 40c734ede67bb4ce5a309ce31c639cd4d312a5149bdd1ac58f5c41b3bfba471a
+    expression_path: /root/nfsdata/multica/worktrees/apadetect/DOC-290-gse118258-data-rescue/analyses/gse118258-unified-state-v2.1/candidate_gse118258_state_v2.1.h5ad
+    pipeline:
+      hvg_n_top_genes: 3000
+      pca_n_components_fitted: 50
+      pca_n_components_used: 30
+      pca_seed: 20260816
+      neighbor_n_neighbors: 30
+      leiden_resolution: 0.6
+      leiden_seed: 20260816
+      filter_genes_min_cells: 10
+      normalization_method: normalize_total
+      normalization_target_sum: 10000.0
+      transform: log1p
+      hvg_flavor: scanpy_seurat
+      scale_max_value: 10
+      pca_solver: sklearn_randomized_iterated_power_4
+      neighbor_backend: pynndescent.NNDescent
+      neighbor_metric: euclidean
+      leiden_implementation: leidenalg.find_partition
+      leiden_iterations: -1

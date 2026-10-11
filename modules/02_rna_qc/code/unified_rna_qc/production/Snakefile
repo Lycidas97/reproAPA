@@ -1,0 +1,194 @@
+"""Six-study production DAG for unified RNA QC v3.2."""
+
+from pathlib import Path
+import csv
+import sys
+
+import yaml
+from snakemake.utils import validate
+
+
+ROOT = Path(workflow.basedir).resolve().parent
+sys.path.insert(0, str(ROOT / "scripts"))
+from path_contract import managed_run_dir
+
+
+def resolved(value):
+    path = Path(value)
+    return path.resolve() if path.is_absolute() else (ROOT / path).resolve()
+
+
+with (ROOT / "production/studies.tsv").open(newline="", encoding="utf-8") as handle:
+    STUDIES = list(csv.DictReader(handle, delimiter="\t"))
+
+RUN_MODE = str(config.get("run_mode", "resume"))
+CONFIGS = {}
+CONFIG_PATHS = {}
+MANIFEST_PATHS = {}
+RUNS = {}
+LIBRARIES = {}
+RECORDS = {}
+
+for study in STUDIES:
+    scope = study["scope"]
+    run_key = study["output_dir"]
+    config_path = resolved(study["config_path"])
+    with config_path.open(encoding="utf-8") as handle:
+        task = yaml.safe_load(handle)
+    validate(task, str(ROOT / "config.schema.yaml"))
+    manifest_path = resolved(task["library_manifest"])
+    with manifest_path.open(newline="", encoding="utf-8") as handle:
+        records = list(csv.DictReader(handle, delimiter="\t"))
+    if len(records) != int(study["expected_libraries"]):
+        raise ValueError(f"Registry/manifest library count mismatch for {scope}")
+    if int(task["expected_called_cell_count"]) != int(study["expected_called_cells"]):
+        raise ValueError(f"Registry/config cell count mismatch for {scope}")
+    run = managed_run_dir(ROOT, task["output_root"], task["output_dir"], RUN_MODE)
+    if run.name != study["output_dir"]:
+        raise ValueError(f"Registry/config output mismatch for {scope}")
+    CONFIGS[run_key] = task
+    CONFIG_PATHS[run_key] = config_path
+    MANIFEST_PATHS[run_key] = manifest_path
+    RUNS[run_key] = run
+    LIBRARIES[run_key] = [row["library_id"] for row in records]
+    for row in records:
+        RECORDS[(run_key, row["library_id"])] = row
+
+SCOPES = [row["output_dir"] for row in STUDIES]
+PYTHON = next(iter(CONFIGS.values()))["python"]
+if {task["python"] for task in CONFIGS.values()} != {PYTHON}:
+    raise ValueError("All production studies must use the same locked Python runtime")
+
+
+rule all:
+    input:
+        str(ROOT / "runs/_production_preflight/preflight.ok"),
+        [str(RUNS[scope] / "independent_validation.tsv") for scope in SCOPES],
+        [str(RUNS[scope] / "figures/qc_contact_sheets/contact_sheet_index.tsv") for scope in SCOPES],
+
+
+rule preflight:
+    input:
+        registry=str(ROOT / "production/studies.tsv"),
+        configs=[str(CONFIG_PATHS[scope]) for scope in SCOPES],
+        manifests=[str(MANIFEST_PATHS[scope]) for scope in SCOPES],
+        metadata=[str(resolved(CONFIGS[scope][key])) for scope in SCOPES for key in ("metadata_registry", "metadata_contract")],
+        script=str(ROOT / "scripts/preflight_production.py"),
+        common=str(ROOT / "scripts/common.py"),
+    output:
+        report=str(ROOT / "runs/_production_preflight/preflight.tsv"),
+        marker=str(ROOT / "runs/_production_preflight/preflight.ok"),
+    log:
+        stdout=str(ROOT / "runs/_production_preflight/preflight.stdout.log"),
+        stderr=str(ROOT / "runs/_production_preflight/preflight.stderr.log"),
+    shell:
+        "{PYTHON} {input.script:q} --root {ROOT:q} --registry {input.registry:q} "
+        "--report {output.report:q} --marker {output.marker:q} > {log.stdout:q} 2> {log.stderr:q}"
+
+
+rule library_qc:
+    input:
+        preflight=ancient(str(ROOT / "runs/_production_preflight/preflight.ok")),
+        raw=lambda wc: str(resolved(RECORDS[(wc.scope, wc.library)]["input_path"])),
+        basic=lambda wc: str(resolved(RECORDS[(wc.scope, wc.library)]["prior_basic_qc_path"])),
+        diagnostic=lambda wc: str(resolved(RECORDS[(wc.scope, wc.library)]["prior_diagnostic_path"])),
+        config=lambda wc: str(CONFIG_PATHS[wc.scope]),
+        manifest=lambda wc: str(MANIFEST_PATHS[wc.scope]),
+        script=str(ROOT / "scripts/process_library.py"),
+        common=str(ROOT / "scripts/common.py"),
+    output:
+        metrics=str(ROOT / "runs/{scope}/per_library/{library}/rna_cell_qc_metrics.parquet"),
+        pre=str(ROOT / "runs/{scope}/per_library/{library}/pre_doublet_qc_decisions.parquet"),
+        diagnostic=str(ROOT / "runs/{scope}/per_library/{library}/doublet_diagnostics.parquet"),
+        final=str(ROOT / "runs/{scope}/per_library/{library}/cell_qc_decisions.parquet"),
+        thresholds=str(ROOT / "runs/{scope}/per_library/{library}/rna_qc_thresholds.tsv"),
+        sample=str(ROOT / "runs/{scope}/per_library/{library}/sample_qc_decision.tsv"),
+        seeds=str(ROOT / "runs/{scope}/per_library/{library}/seed_stability.tsv"),
+        inventory=str(ROOT / "runs/{scope}/per_library/{library}/input_inventory.tsv"),
+        resources=str(ROOT / "runs/{scope}/per_library/{library}/resource_usage.tsv"),
+        figure=str(ROOT / "runs/{scope}/per_library/{library}/qc_diagnostic.png"),
+        status=str(ROOT / "runs/{scope}/per_library/{library}/status.json"),
+    log:
+        stdout=str(ROOT / "runs/{scope}/logs/{library}.stdout.log"),
+        stderr=str(ROOT / "runs/{scope}/logs/{library}.stderr.log"),
+    wildcard_constraints:
+        scope="|".join(row["output_dir"] for row in STUDIES),
+    threads: 1
+    resources:
+        mem_mb=12000
+    params:
+        run=lambda wc: str(RUNS[wc.scope]),
+    shell:
+        "{PYTHON} {input.script:q} --root {ROOT:q} --config {input.config:q} "
+        "--library-id {wildcards.library:q} --output-dir {params.run:q}/per_library/{wildcards.library} "
+        "> {log.stdout:q} 2> {log.stderr:q}"
+
+
+def per_library(scope, name):
+    return [str(RUNS[scope] / "per_library" / library / name) for library in LIBRARIES[scope]]
+
+
+rule aggregate:
+    input:
+        statuses=lambda wc: per_library(wc.scope, "status.json"),
+        metrics=lambda wc: per_library(wc.scope, "rna_cell_qc_metrics.parquet"),
+        decisions=lambda wc: per_library(wc.scope, "cell_qc_decisions.parquet"),
+        diagnostics=lambda wc: per_library(wc.scope, "doublet_diagnostics.parquet"),
+        config=lambda wc: str(CONFIG_PATHS[wc.scope]),
+        manifest=lambda wc: str(MANIFEST_PATHS[wc.scope]),
+        script=str(ROOT / "scripts/aggregate.py"),
+        common=str(ROOT / "scripts/common.py"),
+    output:
+        complete=str(ROOT / "runs/{scope}/run_complete.ok"),
+        final=str(ROOT / "runs/{scope}/cell_qc_decisions.parquet"),
+        report=str(ROOT / "runs/{scope}/run_report.md"),
+        summary=str(ROOT / "runs/{scope}/run_summary.json"),
+        tier_counts=str(ROOT / "runs/{scope}/tier_counts_and_hashes.tsv"),
+        primary=str(ROOT / "runs/{scope}/primary_membership.tsv.gz"),
+        sensitivity=str(ROOT / "runs/{scope}/sensitivity_membership.tsv.gz"),
+        technical=str(ROOT / "runs/{scope}/technical_membership.tsv.gz"),
+        samples=str(ROOT / "runs/{scope}/sample_qc_decisions.tsv"),
+        diagnostics=str(ROOT / "runs/{scope}/diagnostic_summary.tsv"),
+        validation=str(ROOT / "runs/{scope}/validation_summary.tsv"),
+    log:
+        stdout=str(ROOT / "runs/{scope}/logs/aggregate.stdout.log"),
+        stderr=str(ROOT / "runs/{scope}/logs/aggregate.stderr.log"),
+    params:
+        run=lambda wc: str(RUNS[wc.scope]),
+    shell:
+        "{PYTHON} {input.script:q} --root {ROOT:q} --config {input.config:q} --run-dir {params.run:q} "
+        "> {log.stdout:q} 2> {log.stderr:q}"
+
+
+rule independent_validate:
+    input:
+        complete=str(ROOT / "runs/{scope}/run_complete.ok"),
+        final=str(ROOT / "runs/{scope}/cell_qc_decisions.parquet"),
+        samples=str(ROOT / "runs/{scope}/sample_qc_decisions.tsv"),
+        config=lambda wc: str(CONFIG_PATHS[wc.scope]),
+        manifest=lambda wc: str(MANIFEST_PATHS[wc.scope]),
+        script=str(ROOT / "scripts/validate_run.py"),
+    output:
+        validation=str(ROOT / "runs/{scope}/independent_validation.tsv"),
+    log:
+        stdout=str(ROOT / "runs/{scope}/logs/independent_validate.stdout.log"),
+        stderr=str(ROOT / "runs/{scope}/logs/independent_validate.stderr.log"),
+    params:
+        run=lambda wc: str(RUNS[wc.scope]),
+    shell:
+        "{PYTHON} {input.script:q} --root {ROOT:q} --config {input.config:q} --run-dir {params.run:q} "
+        "> {log.stdout:q} 2> {log.stderr:q}"
+
+
+rule qc_contact_sheets:
+    input:
+        validation=str(ROOT / "runs/{scope}/independent_validation.tsv"),
+        figures=lambda wc: per_library(wc.scope, "qc_diagnostic.png"),
+        script=str(ROOT / "scripts/build_qc_contact_sheets.py"),
+    output:
+        index=str(ROOT / "runs/{scope}/figures/qc_contact_sheets/contact_sheet_index.tsv"),
+    params:
+        run=lambda wc: str(RUNS[wc.scope]),
+        output=lambda wc: str(RUNS[wc.scope] / "figures/qc_contact_sheets"),
+    shell:
+        "{PYTHON} {input.script:q} --run-dir {params.run:q} --output-dir {params.output:q} --index {output.index:q}"

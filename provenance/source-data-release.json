@@ -1,0 +1,50 @@
+{
+  "status": "PASS",
+  "date": "2026-10-11",
+  "archive": "Supplementary-Source-Data-20261011-v11b.zip",
+  "bytes": 118121116,
+  "sha256": "db4af50e306febcb49406d4997eb00ee60dd0edb105bc37e5331aad96b640fc3",
+  "members": 193,
+  "source_members": 189,
+  "source_uncompressed_bytes": 120458976,
+  "member_crc_and_sha256_verified": true,
+  "coverage": {
+    "main_figures": 4,
+    "supplementary_figures": 21,
+    "tables": 10,
+    "data_sheets": 57,
+    "total_sheets": 59,
+    "blocks": 200,
+    "new_table_source_links": 28,
+    "appended_S5d_block_sources": 3,
+    "required_input_sources": 0
+  },
+  "companion": {
+    "path": "table/Supplementary-Source-Data-20261009.zip",
+    "bytes": 648295481,
+    "sha256": "423233f3c5237e7e50f56f2436f033e3b931784cae738f1c28f308079b84f203",
+    "members": 597
+  },
+  "additional_companions": [
+    {
+      "path": "table/Supplementary_Source_Code_v11b.zip",
+      "bytes": 16685898,
+      "sha256": "8ea68a1fd5cbf8b7928d4a1cfda1129b1245dc755ea5922d2f284e500707fa91",
+      "members": 1137
+    },
+    {
+      "path": "table/Supplementary_Source_Code_S9.zip",
+      "bytes": 898294414,
+      "sha256": "23f6b161203899e03815227bfd8fba2f6ae25e07f059a64a8de1df0243944957",
+      "members": 167
+    }
+  ],
+  "full_scientific_analysis_rerun": false,
+  "figure_rendering_performed": false,
+  "figure_provenance_limits": [
+    "Scientific analyses and model fitting were not rerun during packaging.",
+    "Raw reads, full training matrices and scientific runtime resources remain external.",
+    "Historical rendering receipts preserve the identities of their original runs."
+  ],
+  "input_archives": "provenance/source-data-dependencies.json"
+}

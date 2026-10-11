@@ -1,0 +1,10 @@
+{
+  "notes/2026-10-06-dual-main-plot-data/polyapipe/main/tables/recurrence_controls/recurrence_frozen_covariates.tsv.gz": "0564c0fc44fd284548fba57160ec035f3c64c7bd0d7f30df9a1455e128453aab",
+  "notes/2026-10-06-dual-main-plot-data/polyapipe/main/tables/tandem/tandem_utr_eligibility.tsv.gz": "3a4ae84958f0210dc7ba0ae2f203530dbd794701536f6d3f5d8e11d10fe0cd19",
+  "notes/2026-10-06-dual-main-plot-data/polyapipe/main/tables/tandem/annotation_terminal_utrs.tsv.gz": "7886656125975db443f53c9fdf918201fb0cab28cc8c9d04997dd40b7b952bb0",
+  "notes/2026-10-06-dual-main-plot-data/polyapipe/main/tables/cis/detected_to_annotation.tsv.gz": "974d15c324a819db7e14f29fe5c7e199c424b29d4828b39cef1a84f8060d72c1",
+  "notes/2026-10-06-dual-main-plot-data/polyapipe/main/tables/cross_overlap/ortholog_matched_features.tsv.gz": "7a8f1da1ad20f67dd956b91d954ecd68b60384a3181d7db0b1a5157e04258629",
+  "notes/2026-10-06-dual-main-plot-data/provenance/polyapipe-pipeline.config.json": "1546a8fcf7350f594d9455607a029a5edc77e7ee5766bf497fd3fc7a90f52b62",
+  "notes/2026-10-10-cfim-sequence-signature/PROTOCOL.zh.md": "6e2a6c6a2cb72a0453e1669899408126dae3d186de361168d1b22695f0845d6f",
+  "notes/2026-10-10-cfim-sequence-signature/protocol.json": "e7769ecbe5b89ae93f8c6e2cb11dfadec9ef155ac615c3f88d89d4ef59d33be0"
+}

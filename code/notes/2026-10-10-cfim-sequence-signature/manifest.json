@@ -1,0 +1,197 @@
+{
+  "status": "complete",
+  "scope": "frozen internal CFIm sequence susceptibility; exploratory; no external knockdown; no manuscript edits",
+  "protocol_sha256": "6e2a6c6a2cb72a0453e1669899408126dae3d186de361168d1b22695f0845d6f",
+  "tests": {
+    "passed": 7,
+    "skipped": 0
+  },
+  "verification": {
+    "status": "PASS",
+    "checks": 10042,
+    "sequence_windows": 3690,
+    "motif_gene_fields": 16605,
+    "primary_mean_expectation_checks": 8,
+    "conditional_tests": 216,
+    "interactions": 6,
+    "independent_frozen_UTR_sequence_checks": 1163,
+    "independent_frozen_UTR_sequence_uncovered_windows": 67,
+    "remote_reference_hashes_verified": 2,
+    "input_hashes_verified": 15,
+    "human_paired_primary_proximal_identity_fully_fixed": true,
+    "skipped_checks": 0
+  },
+  "interpretation": "No primary multiplicity-adjusted support; human paired proximal identities fixed in primary strata. Sequence structure is not CFIm activity.",
+  "artifacts": [
+    {
+      "path": "notes/2026-10-10-cfim-sequence-signature/PROTOCOL.zh.md",
+      "sha256": "6e2a6c6a2cb72a0453e1669899408126dae3d186de361168d1b22695f0845d6f",
+      "bytes": 7189
+    },
+    {
+      "path": "notes/2026-10-10-cfim-sequence-signature/QUALIFICATION.zh.md",
+      "sha256": "2e626ec2f7b4d34b489dd6c242feadff3e148e6547d28af7d3bbc4a11d771e3d",
+      "bytes": 764
+    },
+    {
+      "path": "notes/2026-10-10-cfim-sequence-signature/README.md",
+      "sha256": "06256d0fe2fd16ba678701ef956f6a72fe921f4c9062b925a168e843e9f6ff52",
+      "bytes": 948
+    },
+    {
+      "path": "notes/2026-10-10-cfim-sequence-signature/REPORT.zh.md",
+      "sha256": "c08f483a8e8bea9fdd1c35eb8545faea5bcb4f942e469a87f0bdccb2df1eac2a",
+      "bytes": 8068
+    },
+    {
+      "path": "notes/2026-10-10-cfim-sequence-signature/analysis_audit.json",
+      "sha256": "4908abae1c7d15ec0eb0c71c23d4155a51e4d0e7387d3def84c853650e81c0c4",
+      "bytes": 2449
+    },
+    {
+      "path": "notes/2026-10-10-cfim-sequence-signature/analyze.py",
+      "sha256": "d932c75b5df8210831a1ed2a4722a4fa8a83f4459b161893726d9f817a288d62",
+      "bytes": 15713
+    },
+    {
+      "path": "notes/2026-10-10-cfim-sequence-signature/background_before_sequence.tsv.gz",
+      "sha256": "0d7bfcb61568ac7a1a1222544f41566d001aea30fb68330a2591bfe04a2ec8ca",
+      "bytes": 393170
+    },
+    {
+      "path": "notes/2026-10-10-cfim-sequence-signature/background_inventory.tsv.gz",
+      "sha256": "23e0f81a1fc573bcfdc7cf08086c368caab3e1ab011f4d676a2d520269290ec6",
+      "bytes": 394768
+    },
+    {
+      "path": "notes/2026-10-10-cfim-sequence-signature/collect_sequences.py",
+      "sha256": "7fb4c2cc46df5fd13a73a698a11d2126d50568ae2a420027eec3a3cac59226ca",
+      "bytes": 2493
+    },
+    {
+      "path": "notes/2026-10-10-cfim-sequence-signature/covariate_group_summary.tsv",
+      "sha256": "788010515400d0595c7a8042765ac07efcb3ec627787e638cd5e0142453413aa",
+      "bytes": 11689
+    },
+    {
+      "path": "notes/2026-10-10-cfim-sequence-signature/extract.log",
+      "sha256": "df78588d17106076bf2100bfdda2cfa45085cffec861b8ad3d1489523f1c6965",
+      "bytes": 552
+    },
+    {
+      "path": "notes/2026-10-10-cfim-sequence-signature/extract_remote.py",
+      "sha256": "2e06e047ef029190f570913654a740890c33b47999a09eb7e48914fc97cc310c",
+      "bytes": 1964
+    },
+    {
+      "path": "notes/2026-10-10-cfim-sequence-signature/finalize.py",
+      "sha256": "d5ea46c8cd23167b7e6781cce67eead8b7916b38a35d0af4c6405f0e9114223b",
+      "bytes": 1628
+    },
+    {
+      "path": "notes/2026-10-10-cfim-sequence-signature/gene_features_and_labels.tsv.gz",
+      "sha256": "b04f71e89eaef73d8b833662e099594b0b3d8ec221ab41e733bc16b6dc5e0565",
+      "bytes": 80801
+    },
+    {
+      "path": "notes/2026-10-10-cfim-sequence-signature/independent_sequence_crosscheck.tsv",
+      "sha256": "80250585b641a051fbc99db67b50fe8d7416728c36dc658b6d7c8316db79c66c",
+      "bytes": 94827
+    },
+    {
+      "path": "notes/2026-10-10-cfim-sequence-signature/input_hashes.json",
+      "sha256": "d54acecfb4dfb8ed7aef292dfea08041030e6c838eaf35f69fade54e5142991c",
+      "bytes": 1285
+    },
+    {
+      "path": "notes/2026-10-10-cfim-sequence-signature/motif_group_summary.tsv",
+      "sha256": "5bdf54515750447fd78a150cc1e6291f7d3ea900214e56b84a1d73027e954d63",
+      "bytes": 23424
+    },
+    {
+      "path": "notes/2026-10-10-cfim-sequence-signature/motif_windows.tsv.gz",
+      "sha256": "c0f75ff2f5f2a674d51ee1375014c88cf4f00e44f855e160d37198e4995fd240",
+      "bytes": 87728
+    },
+    {
+      "path": "notes/2026-10-10-cfim-sequence-signature/paired_ortholog_background.tsv",
+      "sha256": "b373ad7c273d5a4d7f01432f8e3e20c17a95dec09c16aae9ca56df3b9e207675",
+      "bytes": 3588
+    },
+    {
+      "path": "notes/2026-10-10-cfim-sequence-signature/paired_structure_interaction.tsv",
+      "sha256": "76acbce14dd289b8f0fe76c3cb9ac6934d5df94d8ae98ab6065def14f5edd3e9",
+      "bytes": 2196
+    },
+    {
+      "path": "notes/2026-10-10-cfim-sequence-signature/permutation_draws.npz",
+      "sha256": "f3cc40552751167660a546da31921ff356aa9dd64192063f49210da4cb42fd26",
+      "bytes": 12501981
+    },
+    {
+      "path": "notes/2026-10-10-cfim-sequence-signature/prepare_inputs.py",
+      "sha256": "d422764b17ed3950fd22dd9dbf3cc3d1caccc88c5b218678ca034b807d9f0951",
+      "bytes": 5848
+    },
+    {
+      "path": "notes/2026-10-10-cfim-sequence-signature/protocol.json",
+      "sha256": "e7769ecbe5b89ae93f8c6e2cb11dfadec9ef155ac615c3f88d89d4ef59d33be0",
+      "bytes": 508
+    },
+    {
+      "path": "notes/2026-10-10-cfim-sequence-signature/run.log",
+      "sha256": "b7e6cadc0d209b18ec01978bdfff4955a36651998abebe8cc526ead91ca063aa",
+      "bytes": 1695
+    },
+    {
+      "path": "notes/2026-10-10-cfim-sequence-signature/sequence_queries.tsv",
+      "sha256": "cafc0ee085ec950eae31de7b53a9e9b312cb72190b3f6a72d1889005290e3880",
+      "bytes": 82107
+    },
+    {
+      "path": "notes/2026-10-10-cfim-sequence-signature/sequence_signature_tests.tsv",
+      "sha256": "588370d51c6e57ed14795b2aa820a68fd08dee43627bf885e9a597167d785660",
+      "bytes": 80134
+    },
+    {
+      "path": "notes/2026-10-10-cfim-sequence-signature/stratum_gene_members.tsv.gz",
+      "sha256": "28919fa6d9ac3900e9ff2bf027e32d22bdc6d1802af53a08f74204a4ff8dba5c",
+      "bytes": 278264
+    },
+    {
+      "path": "notes/2026-10-10-cfim-sequence-signature/stratum_margins.tsv.gz",
+      "sha256": "34225093c81d97155e9c9cdf958f9ec9c3b90b39a9c920fea071de5ac5af67e0",
+      "bytes": 4376
+    },
+    {
+      "path": "notes/2026-10-10-cfim-sequence-signature/test_analysis.py",
+      "sha256": "3e2632fc843b44e0be8af1761af5d95fc2f0341327f1a4125d53f2b996b7049a",
+      "bytes": 4206
+    },
+    {
+      "path": "notes/2026-10-10-cfim-sequence-signature/tests.log",
+      "sha256": "ba611c6496006c8385e5efeae763de90008891ef260f3a28351d725592ec3a0f",
+      "bytes": 1046
+    },
+    {
+      "path": "notes/2026-10-10-cfim-sequence-signature/upstream100_sequences.tsv",
+      "sha256": "19bcb9b0ad9d851c9413cc1e6efd4ab5cc92bb9c99b842a04d8334f8f6c58ead",
+      "bytes": 299208
+    },
+    {
+      "path": "notes/2026-10-10-cfim-sequence-signature/verification.json",
+      "sha256": "b5167a582c2d84005a7cdc7d9a41ff14f66d1186df30d74977fdd6b9d74c3afb",
+      "bytes": 455
+    },
+    {
+      "path": "notes/2026-10-10-cfim-sequence-signature/verification.log",
+      "sha256": "b5167a582c2d84005a7cdc7d9a41ff14f66d1186df30d74977fdd6b9d74c3afb",
+      "bytes": 455
+    },
+    {
+      "path": "notes/2026-10-10-cfim-sequence-signature/verify.py",
+      "sha256": "8d2437aa179f6e5c7dbe1a28c3c23e1e44f471642f772f0c1471580b8fcda599",
+      "bytes": 7790
+    }
+  ]
+}

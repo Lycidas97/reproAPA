@@ -1,0 +1,36 @@
+{
+  "raw_cell_result": "/root/nfsdata/apadetect/analysis_projects/human_mouse_time_aware_umap_v1/results_raw_cell_species_integrated_v3_faiss2",
+  "human_coarse_state_map": "/root/nfsdata/apadetect/analysis_projects/human_time_aware_integration_v1/data/state-flow-v1/local_to_coarse_state.tsv",
+  "mouse_original_state_crosswalk": "/root/nfsdata/apadetect/analysis_projects/mouse_time_aware_integration_pilot_v1/results_apa_metacell_study_local_v1/inputs/metacell_coarse_annotations.tsv",
+  "mouse_temporal_display_edges": "/root/nfsdata/apadetect/analysis_projects/mouse_time_aware_integration_pilot_v1/results_full_single_cell_time_umap_v1/trajectory_display/display_temporal_arrows.tsv",
+  "output_subdirectory": "state_and_trajectory_display_v13",
+  "seed": 20260910,
+  "combined_panel": {"width_mm": 170, "height_mm": 105},
+  "trajectory_routes": [
+    {"route": "GSE118258", "species": "human", "dataset": "GSE118258", "label": "Human · GSE118258", "color": "#6F2C91"},
+    {"route": "GSE221739", "species": "human", "dataset": "GSE221739", "label": "Human · GSE221739", "color": "#30363D"},
+    {"route": "gse178325_0605", "species": "human", "dataset": "GSE178325", "label": "Human · GSE178325 / 0605", "color": "#A66B00"},
+    {"route": "gse178325_0618", "species": "human", "dataset": "GSE178325", "label": "Human · GSE178325 / 0618", "color": "#A22753"},
+    {"route": "gse103221_osk", "species": "mouse", "dataset": "GSE103221", "label": "Mouse · GSE103221 / OSK", "color": "#255FBC"},
+    {"route": "gse103221_cip", "species": "mouse", "dataset": "GSE103221", "label": "Mouse · GSE103221 / CIP", "color": "#CC4C02"},
+    {"route": "wot_common_to_2i", "species": "mouse", "dataset": "GSE115943", "label": "Mouse · GSE115943 / 2i", "color": "#146B4A"}
+  ],
+  "expected_mouse_original_state_counts": {"S": 7, "R": 6, "E": 6, "T": 3, "M": 8, "K": 1, "B": 3, "N": 3, "I": 1, "U": 8, "Y": 3},
+  "expected_human_original_state_counts": {"S": 15, "R": 6, "E": 5, "P": 14, "M": 9, "K": 2, "X": 1, "N": 6, "U": 4},
+  "state_groups": [
+    {"id": "shared_s", "display_label": "S / S", "legend_label": "S / S  Source-like / fibroblast", "state_label_cn": "成纤维来源／来源样", "relationship": "共享来源家族", "color": "#E69F00", "mouse_codes": ["S"], "human_codes": ["S"]},
+    {"id": "shared_r", "display_label": "R / R", "legend_label": "R / R  Source exit / remodeling", "state_label_cn": "来源退出与重塑", "relationship": "宽过程窗口对应", "color": "#0072B2", "mouse_codes": ["R"], "human_codes": ["R"]},
+    {"id": "shared_e", "display_label": "E / E", "legend_label": "E / E  Epithelial / mixed transition", "state_label_cn": "上皮相关／混合过渡", "relationship": "宽过程窗口对应", "color": "#009E73", "mouse_codes": ["E"], "human_codes": ["E"]},
+    {"id": "shared_tp", "display_label": "T / P", "legend_label": "T / P  Pluripotency acquisition", "state_label_cn": "多能性程序获得", "relationship": "共享目标程序家族", "color": "#CC79A7", "mouse_codes": ["T"], "human_codes": ["P"]},
+    {"id": "shared_m", "display_label": "M / M", "legend_label": "M / M  Mesenchymal / ECM retention", "state_label_cn": "间质／ECM 保留", "relationship": "共享间质／ECM 家族", "color": "#8C6D31", "mouse_codes": ["M"], "human_codes": ["M"]},
+    {"id": "shared_k", "display_label": "K / K", "legend_label": "K / K  Keratin-related candidate", "state_label_cn": "角质相关候选", "relationship": "候选程序层面对应", "color": "#D55E00", "mouse_codes": ["K"], "human_codes": ["K"]},
+    {"id": "mouse_b", "display_label": "mB", "legend_label": "mB  Trophoblast-like (mouse)", "state_label_cn": "滋养层样程序", "relationship": "未建立人类独立对应", "color": "#7B61A8", "mouse_codes": ["B"], "human_codes": []},
+    {"id": "mouse_n", "display_label": "mN", "legend_label": "mN  Neural / neurokeratin (mouse)", "state_label_cn": "神经相关／神经角质混合", "relationship": "未建立人类独立对应", "color": "#4C5A9E", "mouse_codes": ["N"], "human_codes": []},
+    {"id": "mouse_i", "display_label": "mI", "legend_label": "mI  IFN-high transition (mouse)", "state_label_cn": "IFN 高过渡态", "relationship": "人类相关程序包含于其他群，未单列", "color": "#17BECF", "mouse_codes": ["I"], "human_codes": []},
+    {"id": "mouse_u", "display_label": "mU", "legend_label": "mU  Unresolved / cycle-dominant (mouse)", "state_label_cn": "小鼠未明确／周期主导集合", "relationship": "独立保留，不与人 U 配对", "color": "#9AA0A6", "mouse_codes": ["U"], "human_codes": []},
+    {"id": "mouse_y", "display_label": "mY", "legend_label": "mY  Myeloid-local (mouse)", "state_label_cn": "小鼠髓系局部集合", "relationship": "未建立人类独立对应", "color": "#E15759", "mouse_codes": ["Y"], "human_codes": []},
+    {"id": "human_x", "display_label": "hX", "legend_label": "hX  Endoderm-secretory (human)", "state_label_cn": "内胚层相关分泌程序", "relationship": "未建立小鼠独立对应", "color": "#A65628", "mouse_codes": [], "human_codes": ["X"]},
+    {"id": "human_n", "display_label": "hN", "legend_label": "hN  Naive-related candidate (human)", "state_label_cn": "naive 相关候选", "relationship": "未建立小鼠独立亚型对应", "color": "#BCBD22", "mouse_codes": [], "human_codes": ["N"]},
+    {"id": "human_u", "display_label": "hU", "legend_label": "hU  Mixed / unresolved (human)", "state_label_cn": "人类混合／未明确集合", "relationship": "独立保留，不与鼠 U 配对", "color": "#4B5563", "mouse_codes": [], "human_codes": ["U"]}
+  ]
+}

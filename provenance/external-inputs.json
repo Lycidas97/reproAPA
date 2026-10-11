@@ -1,0 +1,138 @@
+{
+  "files": [
+    {
+      "role": "plot_bundle_metadata",
+      "path": "notes/2026-10-06-dual-main-plot-data/polyapipe/main/bundle-complete.json",
+      "bytes": 685,
+      "sha256": "2f75edf8411a501ae6821544db6396aecff91b3c51ea559802f1c3f0b87cf5e8"
+    },
+    {
+      "role": "plot_bundle_metadata",
+      "path": "notes/2026-10-06-dual-main-plot-data/polyapipe/main/plot-contract.json",
+      "bytes": 2041217,
+      "sha256": "2158dc17885d2395b3b30f8ff037b9db8b512bbb9042ae3eff9d59ead4dce772"
+    },
+    {
+      "role": "plot_bundle_metadata",
+      "path": "notes/2026-10-06-dual-main-plot-data/polyapipe/main/table-manifest.json",
+      "bytes": 612929,
+      "sha256": "593678733bcbd299b139c71e50ebf2195435f6a8b15b59d3c54344d431401c4e"
+    },
+    {
+      "role": "plot_bundle_metadata",
+      "path": "notes/2026-10-06-dual-main-plot-data/polyapipe/main/result-records.json",
+      "bytes": 565289,
+      "sha256": "7f2ade6f0695b2038fe70421ea3421221ce2ffdc2b4f8416d0e91f9825d0cbf9"
+    },
+    {
+      "role": "plot_bundle_metadata",
+      "path": "notes/2026-10-06-supplement-polyapipe/contract-r2/bundle/bundle-complete.json",
+      "bytes": 994,
+      "sha256": "f121248fde374b2123fdf43118fd1d0521c58a0d77bbc693151d72607fd2f3d6"
+    },
+    {
+      "role": "plot_bundle_metadata",
+      "path": "notes/2026-10-06-supplement-polyapipe/contract-r2/bundle/plot-contract.json",
+      "bytes": 2212999,
+      "sha256": "d6f636ab6aa7aea96f27fcc3a1444659ceb3b9ed22c24f6f760aabb25939c1a2"
+    },
+    {
+      "role": "plot_bundle_metadata",
+      "path": "notes/2026-10-06-supplement-polyapipe/contract-r2/bundle/table-manifest.json",
+      "bytes": 644427,
+      "sha256": "cd02c3142fb3b286bfb310fd247a24c688e6d9dde37e3b4e2098de06506ff648"
+    },
+    {
+      "role": "plot_bundle_metadata",
+      "path": "notes/2026-10-06-supplement-polyapipe/contract-r2/bundle/result-records.json",
+      "bytes": 749317,
+      "sha256": "3d96d591a5f34896e08241ca9762fb8cd3101883637e9fcdc0bbc6d0ef481a52"
+    },
+    {
+      "role": "locked_master_canvas",
+      "path": "notes/2026-10-03-polyapipe-integrated-reference/narrative-reconstruction/main-figures-v5/masters/Figure.1.pdf",
+      "bytes": 4722902,
+      "sha256": "ad248e74a0b3d782e6b4a03d44136bdb2f4f37283563d375d300664a25f99f63"
+    },
+    {
+      "role": "locked_master_canvas",
+      "path": "notes/2026-10-03-polyapipe-integrated-reference/narrative-reconstruction/main-figures-v5/masters/Figure.2.pdf",
+      "bytes": 1673112,
+      "sha256": "9fd2854a37baeb71c5d141cda8fa2f8e3568361b3dbce9f91f6d0fa256db9a70"
+    },
+    {
+      "role": "locked_master_canvas",
+      "path": "notes/2026-10-03-polyapipe-integrated-reference/narrative-reconstruction/main-figures-v5/masters/Figure.3.pdf",
+      "bytes": 704669,
+      "sha256": "0c51339a2a124cfddda4c7aea6c1f666bedcc0ad23d058c01ab7d373ed5d5010"
+    },
+    {
+      "role": "locked_master_canvas",
+      "path": "notes/2026-10-03-polyapipe-integrated-reference/narrative-reconstruction/main-figures-v5/masters/Figure.4.pdf",
+      "bytes": 303672,
+      "sha256": "6ba591b8e8210808d06520d1da7c3af0c4f19b6d5e0eac3c0a85855c0ba33386"
+    },
+    {
+      "role": "locked_master_canvas",
+      "path": "notes/2026-10-03-polyapipe-integrated-reference/narrative-reconstruction/main-figures-v5/masters/Figure.5.pdf",
+      "bytes": 574868,
+      "sha256": "f0f97c136dc4bffaaac9dc25a19402ac1d4878a93149021050445c6e989cf128"
+    },
+    {
+      "role": "locked_master_canvas",
+      "path": "revision-backups/before-polyapipe-candidate-20261003-075521-0700/Fig/Figure.3.pdf",
+      "bytes": 704669,
+      "sha256": "0c51339a2a124cfddda4c7aea6c1f666bedcc0ad23d058c01ab7d373ed5d5010"
+    },
+    {
+      "role": "current narrative draft candidate",
+      "path": "notes/2026-10-08-narrative-figures/out/Figure.3.pdf",
+      "bytes": 393396,
+      "sha256": "03cc92dfe36223ea7952ad26e67415bca5f2a13cfc6854bbba600fec648d18db"
+    },
+    {
+      "role": "current narrative draft candidate",
+      "path": "notes/2026-10-08-narrative-figures/out/Figure.4.pdf",
+      "bytes": 147573,
+      "sha256": "5697ba26fd74a7ffe00e259d1883ab989b46a77903f070dc283a8ded8e569824"
+    },
+    {
+      "role": "current narrative draft candidate",
+      "path": "notes/2026-10-08-narrative-figures/out/Figure.5.pdf",
+      "bytes": 96514,
+      "sha256": "c78f976f6aec7213c236a528394ead25d716a24117a5bb04bb1d47387414f854"
+    },
+    {
+      "role": "current narrative draft candidate",
+      "path": "notes/2026-10-08-narrative-figures/out/SuppFig.S13.pdf",
+      "bytes": 216366,
+      "sha256": "41fe3b06ddd92d281b22298239b258fdae6b124d3a9c480606b20adcf4273c16"
+    },
+    {
+      "role": "current narrative figure provenance",
+      "path": "notes/2026-10-08-narrative-figures/out/receipt.json",
+      "bytes": 12847,
+      "sha256": "ec73b3646f87143264b3aa1843e53ca554c4ad2e65a91b5886c4b93e47adae7e"
+    },
+    {
+      "role": "current narrative figure provenance",
+      "path": "notes/2026-10-08-narrative-figures/out/CROSSREF-MAP.md",
+      "bytes": 2858,
+      "sha256": "f4fb9c0e94121832fe2d9f760870935f41ad585cc9327cf3d2189580b0d45db2"
+    },
+    {
+      "role": "current narrative figure provenance",
+      "path": "notes/2026-10-08-narrative-figures/out/captions.tex",
+      "bytes": 6031,
+      "sha256": "eccb6b4b1c60f48a3a9e441618a6a7116fbe67c6a1bb53743ea55ab8989e7ef7"
+    },
+    {
+      "role": "current workbook",
+      "path": "table/Supplementary_Tables_S1-S9.xlsx",
+      "bytes": 42758441,
+      "sha256": "7f61f52fcb167d06847d83896b3d102a4460f7a981d90c5fd6da609f54e761cb"
+    }
+  ],
+  "large_scientific_inputs_rehashed": false,
+  "registry": "Source-data selection, model identity, deployment configuration and original input receipts separately record scientific inputs."
+}

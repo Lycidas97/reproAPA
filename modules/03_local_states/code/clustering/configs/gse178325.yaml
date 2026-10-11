@@ -1,0 +1,46 @@
+version: '2.0'
+study_id: GSE178325_GSE188461
+membership_path: /root/nfsdata/apadetect/data/reprogramming_differentiation_apa/analyses/reproapa_canonical_gex_seven_study_materialization_v1_0_2_305eae2_2026-08-10/canonical/GSE178325_GSE188461/scope_membership.tsv.gz
+membership_columns:
+  cell_id: cell_id
+  state_id: state_id
+  scope_id: scope_id
+  library_id: null
+  barcode: null
+expression_mode: multi_source
+expression_already_log1p: false
+partition_selection_fields: []
+library_use: stratified_resampling_and_postfreeze_audit_only
+scopes:
+  studywide:
+    role: primary
+    n_cells: 8431
+    membership_scope_values: [GSE178325_GSM5387811_capture, GSE178325_GSM5534148_capture]
+    source_membership_order_sha256: 94a053ba8522b231115a34ee3ca74f4e6b2fb3bd0220acf5f5d0ef5c137deb17
+    cell_set_sha256: 1c75417843767ac66e2118c3259e9ea29d094a3ffde5f11272f515a078cc4cd1
+    expression_sources:
+      - value: GSE178325_GSM5387811_capture
+        mode: 10x_h5
+        path: /root/nfsdata/apadetect/data/reprogramming_differentiation_apa/analyses/raw_realignment_apa_2026-06-07/cellranger/gse178325_human_chemical_pluripotency_reprogramming/gse178325_human_chemical_pluripotency_reprogramming_GSM5387811/outs/filtered_feature_bc_matrix.h5
+      - value: GSE178325_GSM5534148_capture
+        mode: 10x_h5
+        path: /root/nfsdata/apadetect/data/reprogramming_differentiation_apa/analyses/raw_realignment_apa_2026-06-07/cellranger/gse178325_human_chemical_pluripotency_reprogramming/gse178325_human_chemical_pluripotency_reprogramming_GSM5534148/outs/filtered_feature_bc_matrix.h5
+    pipeline:
+      hvg_n_top_genes: 3000
+      pca_n_components_fitted: 50
+      pca_n_components_used: 30
+      pca_seed: 20260816
+      neighbor_n_neighbors: 30
+      leiden_resolution: 0.6
+      leiden_seed: 20260816
+      filter_genes_min_cells: 10
+      normalization_method: normalize_total
+      normalization_target_sum: 10000.0
+      transform: log1p
+      hvg_flavor: scanpy_seurat
+      scale_max_value: 10
+      pca_solver: sklearn_randomized_iterated_power_4
+      neighbor_backend: pynndescent.NNDescent
+      neighbor_metric: euclidean
+      leiden_implementation: leidenalg.find_partition
+      leiden_iterations: -1

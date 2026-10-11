@@ -1,0 +1,44 @@
+{
+  "seed": 20260910,
+  "expected": {
+    "human_metacells": 4332,
+    "mouse_metacells": 6772,
+    "human_cells": 215114,
+    "mouse_cells": 336087
+  },
+  "orthologs": "sources/local/ensembl-116-human-mouse-one-to-one-orthologs.tsv",
+  "mouse_state_map": "sources/local/mouse-local-to-coarse-state-v3.tsv",
+  "human_palette": "sources/local/human-coarse-state-palette-v1.json",
+  "human": {
+    "metacell_gex": "/root/nfsdata/apadetect/analysis_projects/human_time_aware_integration_v1/results_metacell_v1/release/human_metacell_all_gene_counts.h5ad",
+    "cell_to_metacell": "/root/nfsdata/apadetect/analysis_projects/human_time_aware_integration_v1/results_metacell_v1/release/cell_to_metacell.tsv.gz",
+    "time_h5ad": "/root/nfsdata/apadetect/analysis_projects/human_time_aware_integration_v1/results_temporal_v1/layout/human_time_constrained.h5ad",
+    "time_kernel": "/root/nfsdata/apadetect/analysis_projects/human_time_aware_integration_v1/results_temporal_v1/layout/temporal_kernel.npz",
+    "forward_time_kernel": "/root/nfsdata/apadetect/analysis_projects/human_time_aware_integration_v1/results_temporal_v1/layout/forward_temporal_kernel.npz"
+  },
+  "mouse": {
+    "metacell_registry": "/root/nfsdata/apadetect/analysis_projects/mouse_time_aware_integration_pilot_v1/results_mouse_metacell_full_v1/registry/metacell_nodes.tsv.gz",
+    "metacell_gex_root": "/root/nfsdata/apadetect/analysis_projects/mouse_time_aware_integration_pilot_v1/results_mouse_metacell_gex_completion_v1",
+    "cell_coordinates": "/root/nfsdata/apadetect/analysis_projects/mouse_time_aware_integration_pilot_v1/results_full_single_cell_time_umap_v1/coordinates.tsv.gz",
+    "cell_to_metacell_root": "/root/nfsdata/apadetect/analysis_projects/mouse_time_aware_integration_pilot_v1/results_mouse_metacell_full_v1/library",
+    "time_kernel": "/root/nfsdata/apadetect/analysis_projects/mouse_time_aware_integration_pilot_v1/results_full_single_cell_time_umap_v1/sampled_bidirectional_time_kernel.npz"
+  },
+  "scvi": {
+    "batch_key": "species_key",
+    "n_hvg": 4000,
+    "n_latent": 30,
+    "max_epochs": 160,
+    "batch_size": 512,
+    "early_stopping": true
+  },
+  "graph": {
+    "local_neighbors": 20,
+    "cross_neighbors": 20,
+    "cross_radius_gate": 2.5,
+    "time_weights": [0.30, 0.40, 0.30],
+    "control_weights": [0.70, 0.00, 0.30],
+    "umap_epochs": 700,
+    "min_dist": 0.35,
+    "spread": 1.10
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "status": "PASS",
+  "protocol_sha256": "31b7d6a25b9e5f8b17cbdf61d35e7fcb68ba6a368566d5b888bb911acf7a3f62",
+  "primary_annotation": "human",
+  "primary_null": "joint_measurement_PAS_capacity",
+  "matched_family": 56,
+  "per_annotation_model_family": 14,
+  "primary_threshold": 0.02,
+  "strict_threshold": 0.05,
+  "strict_threshold_tests": false,
+  "input_sha256": {
+    "/Users/lycidas/work/reproAPA/notes/2026-10-10-threshold-enrichment/PROTOCOL.zh.md": "31b7d6a25b9e5f8b17cbdf61d35e7fcb68ba6a368566d5b888bb911acf7a3f62",
+    "/Users/lycidas/work/reproAPA/notes/2026-10-10-recurrence-utr-ortholog/measured_ortholog_members.tsv.gz": "a010bb8cb05e9fa126d568b9b3a656e8eb3ccae8784fdec8b4aa1b29a895a7c0",
+    "/Users/lycidas/work/reproAPA/notes/2026-10-10-recurrence-utr-ortholog/ortholog_assay_features.tsv.gz": "1a96a60ecdf12ca98698f8f0b7df2242f70f92ae77a16c91daccc327d7dd8907",
+    "/Users/lycidas/work/reproAPA/notes/2026-10-10-recurrence-utr-ortholog/ortholog_3x3.tsv": "06a4d5ece2b1d63714dbb43fd61761bc692e3e1ca8abb524910e7aac604a5097",
+    "/Users/lycidas/work/科研/projects/2026-09-26_reproapa-go-analysis/sources/manifest.json": "0156ad814353fa0aaf0f082d1abb832e66bae1f7e8d36d8c1b7f460e88a913ce",
+    "/Users/lycidas/work/科研/projects/2026-09-26_reproapa-go-analysis/sources/go-basic.obo": "b08d45b268b8c24ccb2513dbbbc7d4df9f6521c099b413f79eb31e06e0fa3bcc",
+    "/Users/lycidas/work/科研/projects/2026-09-26_reproapa-go-analysis/sources/human_go_ids.tsv": "59189ebbc818b262af12468ca812126494d2e75480d274a32b376f4ec7d822f3",
+    "/Users/lycidas/work/科研/projects/2026-09-26_reproapa-go-analysis/sources/mouse_go_ids.tsv": "3b06ce9910b9abded35a4a87b923c5be478dc34af92d91470b8781229413ae94"
+  },
+  "independent_QA": {
+    "path": "/Users/lycidas/work/reproAPA/notes/2026-10-10-threshold-enrichment-review/rna_validation.json",
+    "sha256": "9f8ff14eda66bbeae6429e5241e9968cec0aea0b2634e59da0b9fdca7b341be9",
+    "status": "PASS",
+    "all_distributions": 84,
+    "matched_tests": 56,
+    "membership_rows": 33698,
+    "GO_evidence_rows": 5422,
+    "power_rows": 672,
+    "MDE_rows": 168
+  },
+  "tests": {
+    "run": 6,
+    "passed": 6,
+    "skipped": 0,
+    "log_sha256": "32278b65c0a57e7103741221139032efdfdb6b4bc1b491dfe37309b392a737d3"
+  },
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "pandas": "2.2.3"
+  },
+  "output_sha256": {
+    "conditional_power.tsv": "9c2c150f474708a52470eca5d5bfd05c09d851dcf5e5d4fab4179834ab10a5d4",
+    "enrichment.tsv": "8c310f4959f57f7df855e5063229243a5608bef3868ab900b606b2bf15ea0b8e",
+    "minimum_detectable_effect.tsv": "88578cb1a3339bf40ebd1887917a9b6af07cf4bedad7159e8745982bd66ccce5",
+    "ortholog_roster.tsv.gz": "6ea30f514cb51c348c80b7d141f91270917a13527a1cd8150891a4ba22633da7",
+    "run.log": "28aeb0aeb2f52b2597389c5b59caeed27a6b12f82b3cb828eeb9d47b7a66fd51",
+    "category_membership.tsv.gz": "86cabbce11dc335eb198c9fe5cf91c80f2335e20ce46afe883b036b3556990fa",
+    "category_definitions.tsv": "1e99bcbca4212bc2c551727daf31dd1589fbdcd1bd24fe0d26d4a37c710af21f",
+    "annotation_evidence.tsv.gz": "fd70973e8bac00d74fa042f1757c6f6b20bd529138c088c0604f4ae6c95e124f",
+    "exact_null.py": "d0a0e91b3e8126e6937a6c7ef5f2bcafa0c632652c3ab3f6096c3718217ed4e8",
+    "annotation_coverage.tsv": "0447e613af252acc59421c61f55c90b815fe489e4310b4c5919110bde0441e87",
+    "threshold_descriptive_counts.tsv": "8b2cb04adf622c2da93aef6e6a4a1600e32d96cc6b2859cd4270cfe45390c853",
+    "stratum_margins.tsv.gz": "a954673d398c7fefbebd18ae3e5c07c58ab765ae89c5612c791131a5f540724a",
+    "test_exact_null.py": "890df8954c55d8b2b6b80d0ba418bc851864fa4730f27ef13be009187c3bffeb",
+    "target_members.tsv": "7feceeb925fa3055c388ed5d0d111f359019917e3eb6ec8de4adcaaa4fec7ab7",
+    "analysis_validation.json": "34395acdcf8c1d079b27d0099f961e977f92e7a84e550e61973e449f38c37ecd",
+    "REPORT.zh.md": "43e06c7786951256a79a841b1ebc434574ad7c8317279ac1250a12b9891f0539",
+    "tests.log": "32278b65c0a57e7103741221139032efdfdb6b4bc1b491dfe37309b392a737d3",
+    "exact_null_distributions.tsv.gz": "88b9bf898573ba99092ee9f03eaf461320f182199d3d6d81da5e412344d54656",
+    "analyze.py": "dcf411270c6921930cb72a8a33e9b973aad9ef379581b9407020e3f5cf122014"
+  }
+}

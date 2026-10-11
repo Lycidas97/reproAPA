@@ -1,0 +1,79 @@
+{
+  "status": "FROZEN_BEFORE_TARGET_ANNOTATION_AND_GENE_SITE_GROUP_RESULTS",
+  "date": "2026-10-10",
+  "frozen_utc": "2026-10-10T15:05:32.498395+00:00",
+  "protocol_sha256": "3884344b47e085974979f6f8efa364dd92c8b403593b8bccbb739f479cd65e3c",
+  "hypothesis_status": "Post hoc after inspecting names; this freeze is not preregistration",
+  "principal_sets": {
+    "same_contrast_all_four": 48,
+    "naive_mouse_PM_unique": 79
+  },
+  "sensitivity_sets": {
+    "user_list_first_three": 45,
+    "naive_dual_subset": 46
+  },
+  "functional_primary_family": {
+    "tests": 6,
+    "threshold": 0.02,
+    "model": "coarse",
+    "annotation": "human",
+    "categories": [
+      "GO:0003723",
+      "GO:0006397",
+      "GO:0006417"
+    ]
+  },
+  "functional_full_grid_tests": 144,
+  "functional_sensitivity_family_tests": 138,
+  "sequence_family": {
+    "status": "exploratory_conditional_on_fixed_window_metadata_available",
+    "tests": 8,
+    "threshold": 0.02,
+    "sets": [
+      "main",
+      "hN"
+    ],
+    "tolerances_nt": [
+      25,
+      50
+    ],
+    "models": [
+      "coarse",
+      "fine"
+    ]
+  },
+  "causal_or_evolutionary_selection_inference": false,
+  "manuscript_edits_authorized_this_phase": false,
+  "inputs_sha256": {
+    "notes/2026-10-10-recurrence-utr-ortholog/measured_ortholog_members.tsv.gz": "a010bb8cb05e9fa126d568b9b3a656e8eb3ccae8784fdec8b4aa1b29a895a7c0",
+    "notes/2026-10-10-recurrence-utr-ortholog/ortholog_assay_features.tsv.gz": "1a96a60ecdf12ca98698f8f0b7df2242f70f92ae77a16c91daccc327d7dd8907",
+    "notes/2026-10-10-naive-mouse-correspondence/ortholog_membership_and_covariates.tsv.gz": "57535fa527ccecd2fc93cdf91f468a05bf00dbd727c7db347c85ea3abc5cb609",
+    "notes/2026-10-10-naive-mouse-correspondence/primary_shared_orthologs.tsv": "f1a7a06271e88d02a45e645a150de12d8e3999b48abc60b32531ae0db6fe487e",
+    "notes/2026-10-10-proximal-module-specificity/joint_membership_and_covariates.tsv.gz": "74a07f58094b6bd5b033d60488a3b65fcc3bb71576b690f00fb7626b428c76e1",
+    "notes/2026-10-03-polyapipe-rerun/statistics_package_v1/resources/go-basic.obo": "b08d45b268b8c24ccb2513dbbbc7d4df9f6521c099b413f79eb31e06e0fa3bcc",
+    "notes/2026-10-03-polyapipe-rerun/statistics_package_v1/resources/human_go_ids.tsv": "59189ebbc818b262af12468ca812126494d2e75480d274a32b376f4ec7d822f3",
+    "notes/2026-10-03-polyapipe-rerun/statistics_package_v1/resources/mouse_go_ids.tsv": "3b06ce9910b9abded35a4a87b923c5be478dc34af92d91470b8781229413ae94",
+    "notes/2026-10-06-dual-main-plot-data/polyapipe/main/tables/recurrence_controls/recurrence_frozen_covariates.tsv.gz": "0564c0fc44fd284548fba57160ec035f3c64c7bd0d7f30df9a1455e128453aab",
+    "notes/2026-10-06-dual-main-plot-data/polyapipe/main/tables/cis/annotation_catalog.tsv.gz": "e8edad4b6905684a5ff1cb02b74a3bcd9473fb29c360d0f1166fa5be13ed125f",
+    "notes/2026-10-06-dual-main-plot-data/polyapipe/main/tables/cis/detected_to_annotation.tsv.gz": "974d15c324a819db7e14f29fe5c7e199c424b29d4828b39cef1a84f8060d72c1",
+    "notes/2026-10-06-dual-main-plot-data/polyapipe/main/tables/cis/reciprocal_one_to_one.tsv.gz": "b1b4335c600190a41b087b160fa44ef56c46575deee267d76be77e8743b653b8",
+    "notes/2026-10-06-dual-main-plot-data/polyapipe/main/tables/cis/reciprocal_PAS_candidates.tsv.gz": "38e4d6e2de3292dc9fb769e264f01e7f325159fb37042ab312d78dc3b04ab492",
+    "notes/2026-10-06-dual-main-plot-data/polyapipe/main/tables/cis/annotated_state_usage.tsv.gz": "b6ef3a0373188de98edb58889e60d1b021582720926e4a30e9a11c204f5f11a9",
+    "notes/2026-10-06-dual-main-plot-data/polyapipe/main/tables/cis/driver_sites.tsv.gz": "01785a3fdc8644b3be037250ea4a60e911c2544dd0d5f03d0c7f324e2ad651e9",
+    "notes/2026-10-06-dual-main-plot-data/polyapipe/main/tables/cis/site_sequence_features.tsv.gz": "79fc06213e7cf0c4e86454a3fab544fed2c657a65a3cbdbcdd7e9f7af9b759d1",
+    "notes/2026-10-06-dual-main-plot-data/polyapipe/main/tables/cis/gene_architecture.tsv.gz": "c254bfd80821a306ff4a35c74e510c94407949f762c2100dabd7ad8bee829e1d",
+    "notes/2026-10-06-dual-main-plot-data/polyapipe/main/tables/tandem/tandem_utr_eligibility.tsv.gz": "3a4ae84958f0210dc7ba0ae2f203530dbd794701536f6d3f5d8e11d10fe0cd19",
+    "notes/2026-10-06-dual-main-plot-data/polyapipe/main/tables/tandem/annotation_terminal_utrs.tsv.gz": "7886656125975db443f53c9fdf918201fb0cab28cc8c9d04997dd40b7b952bb0",
+    "notes/2026-10-06-dual-main-plot-data/polyapipe/main/tables/same_pas/v2_primary_annotated_usage.tsv.gz": "c05d04f4db03e30cdfe17560c918307ab8f5ad06b7e9cc206ca8fa449c456ba0",
+    "notes/2026-10-06-dual-main-plot-data/polyapipe/main/tables/same_pas/v2_primary_matched_physical_sites.tsv.gz": "a4f98587eb028f67cce89f34f0cc7c30fe977262e6101a94f9460eb4b6abfc49",
+    "notes/2026-10-06-dual-main-plot-data/polyapipe/main/tables/same_pas/PEM_library_usage.tsv": "0a596f4d87256e6fa94a2f9a7bcb8fcd36aba8738314fdc4c737ea62096f2303",
+    "notes/2026-10-06-dual-main-plot-data/polyapipe/main/tables/matched_pms/matched_state_vectors.tsv.gz": "6fe36234d8d65a2bb144c9021190733150761b994bb4ddb4fae7db97c7aaab47",
+    "notes/2026-10-06-dual-main-plot-data/polyapipe/main/tables/endpoints/qualified_pairs.tsv.gz": "190851c79f58b900b477e152524cb842bf19ad845e7e6b55730d5ee9d4946cd0",
+    "notes/2026-10-06-dual-main-plot-data/polyapipe/main/tables/external_mirna/human_physical_seed_sites.tsv.gz": "01a4978c8d8d6f78c9265c3baed91103be0ee08efea4488675c8cf0e2ef66987",
+    "notes/2026-10-06-dual-main-plot-data/polyapipe/main/tables/external_mirna/mouse_physical_seed_sites.tsv.gz": "cfec356f856fd9310c934d69c68c2d6e7e7cbef22eec94c5fe4cd11d64620f4e",
+    "notes/2026-10-06-dual-main-plot-data/polyapipe/main/tables/coordinate_states/pas_coordinate_mapping.tsv.gz": "1012916302a841e04e4bbc1eceac392b0b2e5061c1900b77add844ec62eeb51b",
+    "notes/2026-10-06-dual-main-plot-data/polyapipe/main/tables/intervals/all_coordinate_regions.tsv.gz": "e43ca84141a0485e492215d006ac6ff036a69e5e937796cff4aec164ae3256ae",
+    "notes/2026-10-06-dual-main-plot-data/polyapipe/main/tables/original_pool_sites/recurrent_sites.tsv.gz": "edd17620d4855b6041311cf1ed1267a7ac70b7f6070332334f51861e47a05d0f",
+    "reviews/2026-10-10-divergence-writing/spec/logic.json": "820405fb58682f606bd38d06fc41c6be49148a1dee5a549eed5bb859e37936d4"
+  }
+}

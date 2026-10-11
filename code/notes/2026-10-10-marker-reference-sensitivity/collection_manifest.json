@@ -1,0 +1,7 @@
+{
+  "scope": "all native MC; fixed marker union; all primary PAS counts; no APA effects",
+  "config_sha256": "1546a8fcf7350f594d9455607a029a5edc77e7ee5766bf497fd3fc7a90f52b62",
+  "extract_script_sha256": "6cac6fe90a4e7a8c9c00297d37be595ed432fdb07d7e1b94929ce8b417fb622e",
+  "collector_sha256": "b28b0a879fca840cdf215f7138dd81291c2170048ebcb7ca659ee4ccb678bfa0",
+  "inputs_sha256": "6652eb94bc70ad1e361992d2991a4e24df9c7d0fe83e694db155ce156bbaccb6"
+}

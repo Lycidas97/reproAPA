@@ -1,0 +1,28 @@
+figure	panel	slot	title	action	old_numbers_or_example_identity	candidate_target	caption_source
+1	A	冻结表达图谱、状态与路线	冻结表达图谱、状态与路线	reuse_frozen_GEX	not_an_acceptance_condition	candidate/panel-data/F1A.tsv	current main/ split sources; not old v5 constants
+1	B	冻结表达状态关系	冻结表达状态关系	reuse_frozen_GEX	not_an_acceptance_condition	candidate/panel-data/F1B.tsv	current main/ split sources; not old v5 constants
+1	C	全基因中心化 DWUI 在冻结嵌入上的投影	全基因中心化 DWUI 在冻结嵌入上的投影	recompute_then_render	not_an_acceptance_condition	candidate/panel-data/F1C.tsv	current main/ split sources; not old v5 constants
+1	D	各路线相对 S 的均值与测量设置范围	各路线相对 S 的均值与测量设置范围	recompute_then_render	not_an_acceptance_condition	candidate/panel-data/F1D.tsv	current main/ split sources; not old v5 constants
+2	A	三类轨迹均值及 gene×route/state 热图	三类轨迹均值及 gene×route/state 热图	recompute_then_render	not_an_acceptance_condition	candidate/panel-data/F2A.tsv	current main/ split sources; not old v5 constants
+2	B	L/D/T 几何示意与 transient 生存曲线	L/D/T 几何示意与 transient 生存曲线	recompute_then_render	not_an_acceptance_condition	candidate/panel-data/F2B.tsv	current main/ split sources; not old v5 constants
+2	C	阶段有符号变化、平均贡献及每路线 D/L	阶段有符号变化、平均贡献及每路线 D/L	recompute_then_render	not_an_acceptance_condition	candidate/panel-data/F2C.tsv	current main/ split sources; not old v5 constants
+2	D	分群 DWUI 投影与 Moran 支持	分群 DWUI 投影与 Moran 支持	recompute_then_render	not_an_acceptance_condition	candidate/panel-data/F2D.tsv	current main/ split sources; not old v5 constants
+2	E	留路线 centroid r、assignment agreement 与 ARI	留路线 centroid r、assignment agreement 与 ARI	recompute_then_render	not_an_acceptance_condition	candidate/panel-data/F2E.tsv	current main/ split sources; not old v5 constants
+2	F	物种内类比例及入选 ortholog 3×3 对应	物种内类比例及入选 ortholog 3×3 对应	recompute_then_render	not_an_acceptance_condition	candidate/panel-data/F2F.tsv	current main/ split sources; not old v5 constants
+3	A	各比较复现量、方向构成与零分布	各比较复现量、方向构成与零分布	recompute_then_render	not_an_acceptance_condition	candidate/panel-data/F3A.tsv	current main/ split sources; not old v5 constants
+3	B	测量控制、同状态拆分及两种 well 分母	测量控制、同状态拆分及两种 well 分母	recompute_then_render	not_an_acceptance_condition	candidate/panel-data/F3B.tsv	current main/ split sources; not old v5 constants
+3	C	共同贡献者下 P–S/P–M 双参考候选	共同贡献者下 P–S/P–M 双参考候选	recompute_then_render	not_an_acceptance_condition	candidate/panel-data/F3C.tsv	current main/ split sources; not old v5 constants
+3	D	双参考示例的匹配状态、triplet 点与累计 PAS 曲线	双参考示例的匹配状态、triplet 点与累计 PAS 曲线	recompute_then_render	not_an_acceptance_condition	candidate/panel-data/F3D.tsv	current main/ split sources; not old v5 constants
+3	E	APA 与 GEX 响应身份、固定 responder 方向	APA 与 GEX 响应身份、固定 responder 方向	recompute_then_render	not_an_acceptance_condition	candidate/panel-data/F3E.tsv	current main/ split sources; not old v5 constants
+4	A	跨物种离散共享：DWUI/RWUI	跨物种离散共享：DWUI/RWUI	recompute_then_render	not_an_acceptance_condition	candidate/panel-data/F4A.tsv	current main/ split sources; not old v5 constants
+4	B	跨物种连续 R–S/E–S/P–S 效应相关	跨物种连续 R–S/E–S/P–S 效应相关	recompute_then_render	not_an_acceptance_condition	candidate/panel-data/F4B.tsv	current main/ split sources; not old v5 constants
+4	C	共享 proximal 候选与三种命名 null	共享 proximal 候选与三种命名 null	recompute_then_render	not_an_acceptance_condition	candidate/panel-data/F4C.tsv	current main/ split sources; not old v5 constants
+4	D	same-PAS rank forest、配对差及六组八分箱趋势	same-PAS rank forest、配对差及六组八分箱趋势	recompute_then_render	not_an_acceptance_condition	candidate/panel-data/F4D.tsv	current main/ split sources; not old v5 constants
+4	E	跨物种同源 PAS 示例与各参考状态	跨物种同源 PAS 示例与各参考状态	recompute_then_render	not_an_acceptance_condition	candidate/panel-data/F4E.tsv	current main/ split sources; not old v5 constants
+4	F	cis 特征相对含 recurrence 的 M1 的预测增益	cis 特征相对含 recurrence 的 M1 的预测增益	recompute_then_render	not_an_acceptance_condition	candidate/panel-data/F4F.tsv	current main/ split sources; not old v5 constants
+5	A	选定 interval 的观察一致率与效应相关	选定 interval 的观察一致率与效应相关	recompute_then_render	not_an_acceptance_condition	candidate/panel-data/F5A.tsv	current main/ split sources; not old v5 constants
+5	B	加权预测位点变化的计数与逐基因分布	加权预测位点变化的计数与逐基因分布	recompute_then_render	not_an_acceptance_condition	candidate/panel-data/F5B.tsv	current main/ split sources; not old v5 constants
+5	C	低位移候选筛选框及全候选 MPRO–DWUI 散点	低位移候选筛选框及全候选 MPRO–DWUI 散点	recompute_then_render	not_an_acceptance_condition	candidate/panel-data/F5C.tsv	current main/ split sources; not old v5 constants
+5	D	exact-site 部分保留比例及 relationship 数	exact-site 部分保留比例及 relationship 数	recompute_then_render	not_an_acceptance_condition	candidate/panel-data/F5D.tsv	current main/ split sources; not old v5 constants
+5	E	exact-site 改变/保留示例及 inclusion/PAS 曲线	exact-site 改变/保留示例及 inclusion/PAS 曲线	recompute_then_render	not_an_acceptance_condition	candidate/panel-data/F5E.tsv	current main/ split sources; not old v5 constants
+5	F	低净位移示例的 terminal-family 用量与 interval inclusion	低净位移示例的 terminal-family 用量与 interval inclusion	recompute_then_render	not_an_acceptance_condition	candidate/panel-data/F5F.tsv	current main/ split sources; not old v5 constants

@@ -1,0 +1,31 @@
+table	content	action	current_location	analyses	delivery
+S1	研究清单	reuse	table/S1-datasets.tsv		new per-sheet TSV and updated full workbook/source-data; inline LaTeX where applicable
+S2	文库清单	reuse	table/S2-sequencing-libraries.tsv		new per-sheet TSV and updated full workbook/source-data; inline LaTeX where applicable
+S3	表达atlas成员	reuse	table/S3-expression-atlas-libraries.tsv		new per-sheet TSV and updated full workbook/source-data; inline LaTeX where applicable
+S4	local partitions	reuse	table/S4-local-partitions.tsv		new per-sheet TSV and updated full workbook/source-data; inline LaTeX where applicable
+S5	状态注释	reuse	table/S5-local-state-annotations.tsv		new per-sheet TSV and updated full workbook/source-data; inline LaTeX where applicable
+S6	integration orthologs	reuse	table/S6-integration-orthologs.tsv		new per-sheet TSV and updated full workbook/source-data; inline LaTeX where applicable
+S7	mouse annotation programs	reuse	table/S7-mouse-annotation-programs.tsv		new per-sheet TSV and updated full workbook/source-data; inline LaTeX where applicable
+S8	跨物种统计S8a–e	rebuild	table/S8-S9-cross-species-apa.xlsx	cross_continuous;cross_overlap	new per-sheet TSV and updated full workbook/source-data; inline LaTeX where applicable
+S9	新选中ortholog全状态效应	rebuild	table/S8-S9-cross-species-apa.xlsx	cross_trace	new per-sheet TSV and updated full workbook/source-data; inline LaTeX where applicable
+S10	DWUI-only region方向/幅度	rebuild	table/S10-S15-recognition-sites.xlsx	original_pool_sites	new per-sheet TSV and updated full workbook/source-data; inline LaTeX where applicable
+S11	DWUI-only gene-equal方向	rebuild	table/S10-S15-recognition-sites.xlsx	original_pool_sites	new per-sheet TSV and updated full workbook/source-data; inline LaTeX where applicable
+S12	DWUI-only partial retention	rebuild	table/S10-S15-recognition-sites.xlsx	original_pool_sites	new per-sheet TSV and updated full workbook/source-data; inline LaTeX where applicable
+S13	DWUI-only exact-site方向分母	rebuild	table/S10-S15-recognition-sites.xlsx	original_pool_sites	new per-sheet TSV and updated full workbook/source-data; inline LaTeX where applicable
+S14	Liu E-state coverage	rebuild	table/S10-S15-recognition-sites.xlsx	original_pool_sites;coordinate_states	new per-sheet TSV and updated full workbook/source-data; inline LaTeX where applicable
+S15	原设计例子/成员排除/first-crossing	rebuild	table/S10-S15-recognition-sites.xlsx	coordinate_states	new per-sheet TSV and updated full workbook/source-data; inline LaTeX where applicable
+S16	study-pair sharing	rebuild	supplement/supplementary-tables/main.tex#tab:opposite-background-sharing	cross_sharing	new per-sheet TSV and updated full workbook/source-data; inline LaTeX where applicable
+S17	定义/估计量/队列	update_rules_and_counts	supplement/supplementary-tables/main.tex#tab:analysis-definitions	endpoints;metrics	new per-sheet TSV and updated full workbook/source-data; inline LaTeX where applicable
+S18	共识/匹配overlap/paired/坐标	rebuild	supplement/supplementary-tables/main.tex#tab:core-sensitivity-summary	consensus;cross_overlap;coordinate_states	new per-sheet TSV and updated full workbook/source-data; inline LaTeX where applicable
+S19	Figure5 union统计	rebuild	table/Table.S19.figure5-union	site_statistics	new per-sheet TSV and updated full workbook/source-data; inline LaTeX where applicable
+S20	共同PMS指标	rebuild	supplement/supplementary-tables/main.tex#tab:matched-state-metrics	matched_pms	new per-sheet TSV and updated full workbook/source-data; inline LaTeX where applicable
+S21	DWUI/MPRO候选与well支持	rebuild	supplement/supplementary-tables/main.tex#tab:metric-candidate-differences	matched_pms;well_inference	new per-sheet TSV and updated full workbook/source-data; inline LaTeX where applicable
+S22	测量/匹配敏感性	rebuild	supplement/supplementary-tables/main.tex#tab:measurement-controls	measurement	new per-sheet TSV and updated full workbook/source-data; inline LaTeX where applicable
+S23	序列背景/外部PAS-seq	rebuild	supplement/supplementary-tables/main.tex#tab:sequence-background-external	motif_background;external_pas	new per-sheet TSV and updated full workbook/source-data; inline LaTeX where applicable
+S24	精确GO/KEGG	rebuild	supplement/supplementary-tables/main.tex#tab:exact-functional	functional	new per-sheet TSV and updated full workbook/source-data; inline LaTeX where applicable
+S25	嵌套共享零模型	rebuild	supplement/supplementary-tables/main.tex#tab:null-controls	cross_controls	new per-sheet TSV and updated full workbook/source-data; inline LaTeX where applicable
+S26	RBP表达及target support	rebuild	supplement/supplementary-tables/main.tex#tab:rbp-expression	rbp_expression	new per-sheet TSV and updated full workbook/source-data; inline LaTeX where applicable
+S27	long-read终末结构	requery_current_features	supplement/supplementary-tables/main.tex#tab:external-long-read	longread	new per-sheet TSV and updated full workbook/source-data; inline LaTeX where applicable
+S28	Rad23b AGO2 overlap	requery_current_features	supplement/supplementary-tables/main.tex#tab:rad23b-ago2	ago2	new per-sheet TSV and updated full workbook/source-data; inline LaTeX where applicable
+S29	压缩补图全部数值记录	rebuild	table/Supplementary-Source-Data-20261002-supplement-revision	all	new per-sheet TSV and updated full workbook/source-data; inline LaTeX where applicable
+S30	caller比较（预留）	must_complete_or_block	supplement/supplementary-tables/main.tex#tab:pas-caller-comparison	caller_comparison	new per-sheet TSV and updated full workbook/source-data; inline LaTeX where applicable

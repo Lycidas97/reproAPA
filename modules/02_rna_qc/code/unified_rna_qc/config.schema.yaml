@@ -1,0 +1,117 @@
+$schema: "https://json-schema.org/draft/2020-12/schema"
+type: object
+additionalProperties: false
+required:
+  - workflow_version
+  - python
+  - study_id
+  - species
+  - report_label
+  - library_manifest
+  - metadata_registry
+  - metadata_contract
+  - output_root
+  - output_dir
+  - output_mode
+  - expected_library_count
+  - expected_called_cell_count
+  - library_id_pattern
+  - global_cell_id_template
+  - adapters
+  - basic_qc
+  - sample_gates
+  - scrublet
+  - evidence_sha256
+  - evidence_required_text
+properties:
+  workflow_version: {type: string, minLength: 1}
+  python: {type: string, minLength: 1}
+  study_id: {type: string, pattern: "^[A-Za-z0-9_.-]+$"}
+  species: {type: string, minLength: 1}
+  report_label: {type: string, minLength: 1}
+  library_manifest: {type: string, minLength: 1}
+  metadata_registry: {type: string, minLength: 1}
+  metadata_contract: {type: string, minLength: 1}
+  output_root: {type: string, minLength: 1, pattern: "^(?!/)(?!.*(?:^|/)\\.\\.(?:/|$)).+$"}
+  output_dir: {type: string, minLength: 1, pattern: "^(?!/)(?!.*(?:^|/)\\.\\.(?:/|$)).+$"}
+  output_mode: {enum: [fresh, resume]}
+  expected_library_count: {type: integer, minimum: 1}
+  expected_called_cell_count: {type: integer, minimum: 1}
+  library_id_pattern: {type: string, minLength: 1}
+  global_cell_id_template:
+    type: string
+    pattern: "\\{study_id\\}.*\\{library_id\\}.*\\{barcode\\}"
+  regression_baseline: {type: string}
+  adapters:
+    type: object
+    additionalProperties: false
+    required: [raw_input, basic_qc_evidence, diagnostic_evidence]
+    properties:
+      raw_input:
+        type: array
+        minItems: 1
+        uniqueItems: true
+        items: {enum: [cellranger_filtered_h5, cellranger_filtered_mtx]}
+      basic_qc_evidence:
+        type: array
+        minItems: 1
+        uniqueItems: true
+        items: {enum: [validated_prior_run, policy_document_recompute]}
+      diagnostic_evidence:
+        type: array
+        minItems: 1
+        uniqueItems: true
+        items: {enum: [validated_prior_run, scrublet_policy_recompute]}
+  basic_qc:
+    type: object
+    additionalProperties: false
+    required: [strict, candidate, retention_sensitivity]
+    properties:
+      strict: {$ref: "#/$defs/qc_branch"}
+      candidate: {$ref: "#/$defs/qc_branch"}
+      retention_sensitivity: {$ref: "#/$defs/qc_branch"}
+  sample_gates:
+    type: object
+    additionalProperties: false
+    required: [primary_min_candidate_basic_qc, sensitivity_min_candidate_basic_qc]
+    properties:
+      primary_min_candidate_basic_qc: {type: integer, minimum: 1}
+      sensitivity_min_candidate_basic_qc: {type: integer, minimum: 1}
+  scrublet:
+    type: object
+    additionalProperties: false
+    required: [expected_doublet_rate, sim_doublet_ratio, synthetic_doublet_umi_subsampling, min_counts, min_cells, min_gene_variability_pctl, n_prin_comps, primary_seed, diagnostic_seeds, action]
+    properties:
+      expected_doublet_rate: {type: number, exclusiveMinimum: 0, exclusiveMaximum: 1}
+      sim_doublet_ratio: {type: number, exclusiveMinimum: 0}
+      synthetic_doublet_umi_subsampling: {type: number, exclusiveMinimum: 0, maximum: 1}
+      min_counts: {type: integer, minimum: 1}
+      min_cells: {type: integer, minimum: 1}
+      min_gene_variability_pctl: {type: number, minimum: 0, maximum: 100}
+      n_prin_comps: {type: integer, minimum: 1}
+      primary_seed: {type: integer}
+      diagnostic_seeds:
+        type: array
+        minItems: 1
+        uniqueItems: true
+        items: {type: integer}
+      action: {const: diagnostic_only}
+  evidence_sha256:
+    type: object
+    additionalProperties: {type: string, pattern: "^[0-9a-f]{64}$"}
+  evidence_required_text:
+    type: array
+    minItems: 1
+    uniqueItems: true
+    items: {type: string}
+$defs:
+  qc_branch:
+    type: object
+    additionalProperties: false
+    required: [hard_min_umi, hard_min_genes, mad_n, mito_cap_pct, complexity_min]
+    properties:
+      hard_min_umi: {type: number, minimum: 0}
+      hard_min_genes: {type: number, minimum: 0}
+      mad_n: {type: number, minimum: 0}
+      mito_cap_pct: {type: number, minimum: 0, maximum: 100}
+      complexity_min: {type: number, minimum: 0, maximum: 1}

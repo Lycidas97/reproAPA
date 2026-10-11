@@ -1,0 +1,2318 @@
+{
+  "schema": "reproapa-source-data/1",
+  "date": "2026-10-11",
+  "scope": "Promoted logic-v14 production: four main figures, 21 supplementary figures and Tables S1-S10 (v11b). Final supplementary captions and S1/S2 state-ID assets. Main Figures 1-4 after the caption review, and the MIT license. Reviewer-report text revision of 11 October. Citation-source repair (miRBase release 22.1, GSE99922 control MEF).",
+  "files": [
+    {
+      "path": "Fig/Figure.1.pdf",
+      "archive_path": "project/Fig/Figure.1.pdf",
+      "bytes": 4720091,
+      "sha256": "5afa10e6b3875a60c133e484e533eec24d1c3c597c8ce4b52f6cf4c98eda4303",
+      "roles": [
+        "production_figure"
+      ],
+      "owners": [
+        "v14 production"
+      ]
+    },
+    {
+      "path": "Fig/Figure.2.pdf",
+      "archive_path": "project/Fig/Figure.2.pdf",
+      "bytes": 193039,
+      "sha256": "680e596e9f4ac5f4c91b90763c86042b317fa0ae621699a64c504fb42c6f5fef",
+      "roles": [
+        "production_figure"
+      ],
+      "owners": [
+        "v14 production"
+      ]
+    },
+    {
+      "path": "Fig/Figure.3.pdf",
+      "archive_path": "project/Fig/Figure.3.pdf",
+      "bytes": 105161,
+      "sha256": "478548280a6d0bb6310bf033c8c75df8a426b0a966408adcf0f5e785ba4a6603",
+      "roles": [
+        "production_figure"
+      ],
+      "owners": [
+        "v14 production"
+      ]
+    },
+    {
+      "path": "Fig/Figure.4.pdf",
+      "archive_path": "project/Fig/Figure.4.pdf",
+      "bytes": 147834,
+      "sha256": "358ba26016830df844670453ed951dae46cecd81b131025d57d3b84a9254c050",
+      "roles": [
+        "production_figure"
+      ],
+      "owners": [
+        "v14 production"
+      ]
+    },
+    {
+      "path": "Fig/README.md",
+      "archive_path": "project/Fig/README.md",
+      "roles": [
+        "figure_provenance_guide"
+      ],
+      "owners": [
+        "supplement caption revision"
+      ],
+      "bytes": 4375,
+      "sha256": "512ea932a5f0d9d1549b34bab41ac9d6b64c75baaff3117412610ad397b19653"
+    },
+    {
+      "path": "Fig/SuppFig.S1.pdf",
+      "archive_path": "project/Fig/SuppFig.S1.pdf",
+      "bytes": 203583,
+      "sha256": "fe89ff70d337554aa6627387c4f8a3096922e1b40ce9014cd6d377ec1e1c3de5",
+      "roles": [
+        "production_figure"
+      ],
+      "owners": [
+        "v14 production"
+      ]
+    },
+    {
+      "path": "Fig/SuppFig.S10.pdf",
+      "archive_path": "project/Fig/SuppFig.S10.pdf",
+      "bytes": 25313,
+      "sha256": "3695697ed68e25669afdd403770173cc509bcdeeb69b9ae838358a052f396afc",
+      "roles": [
+        "production_figure"
+      ],
+      "owners": [
+        "v14 production"
+      ]
+    },
+    {
+      "path": "Fig/SuppFig.S11.pdf",
+      "archive_path": "project/Fig/SuppFig.S11.pdf",
+      "bytes": 36281,
+      "sha256": "6ee388a5e38e16204aeae5186c96b9388edcc17210fe6744198606270d03200c",
+      "roles": [
+        "production_figure"
+      ],
+      "owners": [
+        "v14 production"
+      ]
+    },
+    {
+      "path": "Fig/SuppFig.S12.pdf",
+      "archive_path": "project/Fig/SuppFig.S12.pdf",
+      "bytes": 19049,
+      "sha256": "9acfb1eba70e591050295c626b37ab1f1cc50ec59c74a3f5c9ca5cd5d7457a80",
+      "roles": [
+        "production_figure"
+      ],
+      "owners": [
+        "v14 production"
+      ]
+    },
+    {
+      "path": "Fig/SuppFig.S13.pdf",
+      "archive_path": "project/Fig/SuppFig.S13.pdf",
+      "bytes": 52176,
+      "sha256": "a62b86590d4d4b23387378bd6a0ccda914f82a5dcaeb20c2a311c2c22ca3d0be",
+      "roles": [
+        "production_figure"
+      ],
+      "owners": [
+        "v14 production"
+      ]
+    },
+    {
+      "path": "Fig/SuppFig.S14.pdf",
+      "archive_path": "project/Fig/SuppFig.S14.pdf",
+      "bytes": 36739,
+      "sha256": "6cacfb0914160b239bad784a0504c4c2966ab686c5a154872cecabb67378ca53",
+      "roles": [
+        "production_figure"
+      ],
+      "owners": [
+        "v14 production"
+      ]
+    },
+    {
+      "path": "Fig/SuppFig.S15.pdf",
+      "archive_path": "project/Fig/SuppFig.S15.pdf",
+      "bytes": 32371,
+      "sha256": "cbe9a46fbd229e3be9a810e04443d3f49e78f756178885fd7aba3b03c05c3641",
+      "roles": [
+        "production_figure"
+      ],
+      "owners": [
+        "v14 production"
+      ]
+    },
+    {
+      "path": "Fig/SuppFig.S16.pdf",
+      "archive_path": "project/Fig/SuppFig.S16.pdf",
+      "bytes": 40266,
+      "sha256": "f20e7c11ec430fe5d883613e15a58d6376c880778e200ba359dfc10331ead994",
+      "roles": [
+        "production_figure"
+      ],
+      "owners": [
+        "v14 production"
+      ]
+    },
+    {
+      "path": "Fig/SuppFig.S17.pdf",
+      "archive_path": "project/Fig/SuppFig.S17.pdf",
+      "bytes": 46814,
+      "sha256": "a16c1c6b889f7702c823a6c785398d3a9e2fd6ab48f2ce27a7c194f371ea710f",
+      "roles": [
+        "production_figure"
+      ],
+      "owners": [
+        "v14 production"
+      ]
+    },
+    {
+      "path": "Fig/SuppFig.S18.pdf",
+      "archive_path": "project/Fig/SuppFig.S18.pdf",
+      "bytes": 26969,
+      "sha256": "4a850046bca5c7579fe75153d44259ae3da36719f794f43248251b010ce1bc24",
+      "roles": [
+        "production_figure"
+      ],
+      "owners": [
+        "v14 production"
+      ]
+    },
+    {
+      "path": "Fig/SuppFig.S19.pdf",
+      "archive_path": "project/Fig/SuppFig.S19.pdf",
+      "bytes": 43659,
+      "sha256": "56038273798b8ca08c1e8830229965e091224a29da475780c9139b79da97e2ad",
+      "roles": [
+        "production_figure"
+      ],
+      "owners": [
+        "v14 production"
+      ]
+    },
+    {
+      "path": "Fig/SuppFig.S2.pdf",
+      "archive_path": "project/Fig/SuppFig.S2.pdf",
+      "bytes": 203449,
+      "sha256": "c6124ce5b355b1eeaa292d804ce3f928f17707a3a9bf2ee871158feea0aafb2e",
+      "roles": [
+        "production_figure"
+      ],
+      "owners": [
+        "v14 production"
+      ]
+    },
+    {
+      "path": "Fig/SuppFig.S20.pdf",
+      "archive_path": "project/Fig/SuppFig.S20.pdf",
+      "bytes": 264020,
+      "sha256": "8cd360a66daf4f4574ec6aec1be7982288cc045e2035c3332d3c6bd727f8db82",
+      "roles": [
+        "production_figure"
+      ],
+      "owners": [
+        "v14 production"
+      ]
+    },
+    {
+      "path": "Fig/SuppFig.S21.pdf",
+      "archive_path": "project/Fig/SuppFig.S21.pdf",
+      "bytes": 46755,
+      "sha256": "cd97f9a73498cc7952c5da1eb019133722d2e22d996b32a6b857d765f2db0cdd",
+      "roles": [
+        "production_figure"
+      ],
+      "owners": [
+        "v14 production"
+      ]
+    },
+    {
+      "path": "Fig/SuppFig.S3.pdf",
+      "archive_path": "project/Fig/SuppFig.S3.pdf",
+      "bytes": 868187,
+      "sha256": "651d3f28fb18c4289d118e4f092092e2e9b19e2630f0e4ec6836258acafff2bf",
+      "roles": [
+        "production_figure"
+      ],
+      "owners": [
+        "v14 production"
+      ]
+    },
+    {
+      "path": "Fig/SuppFig.S4.pdf",
+      "archive_path": "project/Fig/SuppFig.S4.pdf",
+      "bytes": 59706,
+      "sha256": "98479218f4c9eff397449fb36da361f90aacde5913c7a234d248ae3b169121bd",
+      "roles": [
+        "production_figure"
+      ],
+      "owners": [
+        "v14 production"
+      ]
+    },
+    {
+      "path": "Fig/SuppFig.S5.pdf",
+      "archive_path": "project/Fig/SuppFig.S5.pdf",
+      "bytes": 27156,
+      "sha256": "2bc01e634cfbbb7b059c5aefec91a27049f103e510760493d0858d7850bad076",
+      "roles": [
+        "production_figure"
+      ],
+      "owners": [
+        "v14 production"
+      ]
+    },
+    {
+      "path": "Fig/SuppFig.S6.pdf",
+      "archive_path": "project/Fig/SuppFig.S6.pdf",
+      "bytes": 37800,
+      "sha256": "d1c373998a31a0484d8abf51d91a32c1bcd8c28dea3558249e22313ada35c2b9",
+      "roles": [
+        "production_figure"
+      ],
+      "owners": [
+        "v14 production"
+      ]
+    },
+    {
+      "path": "Fig/SuppFig.S7.pdf",
+      "archive_path": "project/Fig/SuppFig.S7.pdf",
+      "bytes": 145541,
+      "sha256": "2e770d8101f69af7d5edd874ed6b1b64cd68cef15b777c4f938b7160588e257c",
+      "roles": [
+        "production_figure"
+      ],
+      "owners": [
+        "v14 production"
+      ]
+    },
+    {
+      "path": "Fig/SuppFig.S8.pdf",
+      "archive_path": "project/Fig/SuppFig.S8.pdf",
+      "bytes": 51797,
+      "sha256": "035c71d4f823c6bbd10e7a3a7239353ad82a4acf8ebe924ce10b4f1f4a6e40eb",
+      "roles": [
+        "production_figure"
+      ],
+      "owners": [
+        "v14 production"
+      ]
+    },
+    {
+      "path": "Fig/SuppFig.S9.pdf",
+      "archive_path": "project/Fig/SuppFig.S9.pdf",
+      "bytes": 197119,
+      "sha256": "b2ada25e34f6e44fe7e081eb20394979075c6b708312de54e1aa788541c73cc2",
+      "roles": [
+        "production_figure"
+      ],
+      "owners": [
+        "v14 production"
+      ]
+    },
+    {
+      "path": "Fig/figure-manifest.tsv",
+      "archive_path": "project/Fig/figure-manifest.tsv",
+      "bytes": 3672,
+      "sha256": "23e96bad1f57cda3b35f10f86b487e46b7d72c2317b08b03c202902a114fd582",
+      "roles": [
+        "production_output_or_provenance"
+      ],
+      "owners": [
+        "v14 production"
+      ]
+    },
+    {
+      "path": "LICENSE",
+      "archive_path": "project/LICENSE",
+      "roles": [
+        "license"
+      ],
+      "owners": [
+        "main-figure caption revision"
+      ],
+      "bytes": 1692,
+      "sha256": "16515bc435b30c4b619fa6c4107231ce7e8f4ade7322dd4672a11161f46eb2a6"
+    },
+    {
+      "path": "main/.texsplit.json",
+      "archive_path": "project/main/.texsplit.json",
+      "bytes": 4859,
+      "sha256": "75721d40b854b4e1794e1203d2b8d20131847f83ab412b2e22117a1f5c4794ae",
+      "roles": [
+        "production_manifest"
+      ],
+      "owners": [
+        "v14 production"
+      ]
+    },
+    {
+      "path": "main/backbone/back-matter.tex",
+      "archive_path": "project/main/backbone/back-matter.tex",
+      "bytes": 6583,
+      "sha256": "b162f7c6fe8f98e29502229fb8f8d182e354d05e5a1235711e44b11711441065",
+      "roles": [
+        "production_manuscript"
+      ],
+      "owners": [
+        "v14 production"
+      ]
+    },
+    {
+      "path": "main/backbone/front-matter.tex",
+      "archive_path": "project/main/backbone/front-matter.tex",
+      "bytes": 4382,
+      "sha256": "3912cd91748fd8bb6431efc02ec95749e3f059c32da81d6e0740fd6acbc36e2c",
+      "roles": [
+        "production_manuscript"
+      ],
+      "owners": [
+        "v14 production"
+      ]
+    },
+    {
+      "path": "main/conclusions/main.tex",
+      "archive_path": "project/main/conclusions/main.tex",
+      "bytes": 765,
+      "sha256": "677d2a6621209fc07379c745f279712736fa6fff13c41931b204df8669139f13",
+      "roles": [
+        "production_manuscript"
+      ],
+      "owners": [
+        "v14 production"
+      ]
+    },
+    {
+      "path": "main/discussion/main.tex",
+      "archive_path": "project/main/discussion/main.tex",
+      "bytes": 10931,
+      "sha256": "4328b948d3091ce818583cc8bea74cd858b8384bd448ab799c73364c7e314107",
+      "roles": [
+        "production_manuscript"
+      ],
+      "owners": [
+        "v14 production"
+      ]
+    },
+    {
+      "path": "main/introduction/main.tex",
+      "archive_path": "project/main/introduction/main.tex",
+      "bytes": 3168,
+      "sha256": "d95637a9090dfc76ac28eadec0909bfd4db4ac49b2e7c4ad0c56008a6ce0c566",
+      "roles": [
+        "production_manuscript"
+      ],
+      "owners": [
+        "v14 production"
+      ]
+    },
+    {
+      "path": "main/methods/apa-quantification-and-state-comparisons.tex",
+      "archive_path": "project/main/methods/apa-quantification-and-state-comparisons.tex",
+      "bytes": 2718,
+      "sha256": "5372124e4875d88cbd587fbd94edfa632c394db0743a078739778f7d9cc51f33",
+      "roles": [
+        "production_manuscript"
+      ],
+      "owners": [
+        "v14 production"
+      ]
+    },
+    {
+      "path": "main/methods/cell-cycle-cpa-factor-and-candidate-mechanism-analyses.tex",
+      "archive_path": "project/main/methods/cell-cycle-cpa-factor-and-candidate-mechanism-analyses.tex",
+      "bytes": 2311,
+      "sha256": "ffcdd4838f61e0438d1323c95713f96a397b28a92b31f3e810466319401294a9",
+      "roles": [
+        "production_manuscript"
+      ],
+      "owners": [
+        "v14 production"
+      ]
+    },
+    {
+      "path": "main/methods/data-collection-and-study-selection.tex",
+      "archive_path": "project/main/methods/data-collection-and-study-selection.tex",
+      "bytes": 4171,
+      "sha256": "9772858f7fcfb4620eb7f8f6147347bad349405fb4799160a1b2859e5112c273",
+      "roles": [
+        "production_manuscript"
+      ],
+      "owners": [
+        "v14 production"
+      ]
+    },
+    {
+      "path": "main/methods/main.tex",
+      "archive_path": "project/main/methods/main.tex",
+      "bytes": 51,
+      "sha256": "b56bf11b9dd8d704499c0fd225d484e4b3c885ea6412668ef655bd0db9586ad0",
+      "roles": [
+        "production_manuscript"
+      ],
+      "owners": [
+        "v14 production"
+      ]
+    },
+    {
+      "path": "main/methods/mirna-and-rbp-site-retention-analysis.tex",
+      "archive_path": "project/main/methods/mirna-and-rbp-site-retention-analysis.tex",
+      "bytes": 1961,
+      "sha256": "99152ef060b9a171d01624499acc8033405a4c7b85fd5670b90dc0a844d3fe13",
+      "roles": [
+        "production_manuscript"
+      ],
+      "owners": [
+        "v14 production"
+      ]
+    },
+    {
+      "path": "main/methods/orthologue-mapping-and-exploratory-cross-species-comparisons.tex",
+      "archive_path": "project/main/methods/orthologue-mapping-and-exploratory-cross-species-comparisons.tex",
+      "bytes": 4014,
+      "sha256": "97883b246bf52c6675a34c39bb361e36e415c61c029ae75e4a96c9478a124174",
+      "roles": [
+        "production_manuscript"
+      ],
+      "owners": [
+        "v14 production"
+      ]
+    },
+    {
+      "path": "main/methods/pas-identification-filtering-and-annotation.tex",
+      "archive_path": "project/main/methods/pas-identification-filtering-and-annotation.tex",
+      "bytes": 1108,
+      "sha256": "c553f5dba3b231886d0823ec481db93fbb6af86d7b3a25783d87f0be30678b2e",
+      "roles": [
+        "production_manuscript"
+      ],
+      "owners": [
+        "v14 production"
+      ]
+    },
+    {
+      "path": "main/methods/read-processing-and-alignment.tex",
+      "archive_path": "project/main/methods/read-processing-and-alignment.tex",
+      "bytes": 1426,
+      "sha256": "c8109987a79500163c7ab4182c685e8d93e009e4f6e25f4dcadca0fbb36cd600",
+      "roles": [
+        "production_manuscript"
+      ],
+      "owners": [
+        "v14 production"
+      ]
+    },
+    {
+      "path": "main/methods/robustness-and-sensitivity-analyses.tex",
+      "archive_path": "project/main/methods/robustness-and-sensitivity-analyses.tex",
+      "bytes": 1367,
+      "sha256": "9435700bce2e6ad943d32840233c2cb4be1b923c9a66ca3e3b21a9c936d24e4f",
+      "roles": [
+        "production_manuscript"
+      ],
+      "owners": [
+        "v14 production"
+      ]
+    },
+    {
+      "path": "main/methods/statistical-conventions-and-reproducibility.tex",
+      "archive_path": "project/main/methods/statistical-conventions-and-reproducibility.tex",
+      "bytes": 1429,
+      "sha256": "397d4ad5075d30a6917ec9f5ab1db08e2f337c77089396af0301c29e7ab0ffb6",
+      "roles": [
+        "production_manuscript"
+      ],
+      "owners": [
+        "v14 production"
+      ]
+    },
+    {
+      "path": "main/methods/within-species-cross-study-recurrence.tex",
+      "archive_path": "project/main/methods/within-species-cross-study-recurrence.tex",
+      "bytes": 1815,
+      "sha256": "fb00f7757783f034e5fdfb3fecbda7612a02a46f7811e76269e18e4e3f5efee1",
+      "roles": [
+        "production_manuscript"
+      ],
+      "owners": [
+        "v14 production"
+      ]
+    },
+    {
+      "path": "main/results/a-proximal-response-is-shared-between-species.tex",
+      "archive_path": "project/main/results/a-proximal-response-is-shared-between-species.tex",
+      "bytes": 7930,
+      "sha256": "9c0525202fde95f2ded5628315c51d42992617a87b1d5512cbc68c599c129fbf",
+      "roles": [
+        "production_manuscript"
+      ],
+      "owners": [
+        "v14 production"
+      ]
+    },
+    {
+      "path": "main/results/gene-level-responses-in-both-directions-recur-within-each-species.tex",
+      "archive_path": "project/main/results/gene-level-responses-in-both-directions-recur-within-each-species.tex",
+      "bytes": 7976,
+      "sha256": "86995d2d5bce248e8fce54a90c654848880e48f6cb51fc898c0b91f3a04eef30",
+      "roles": [
+        "production_manuscript"
+      ],
+      "owners": [
+        "v14 production"
+      ]
+    },
+    {
+      "path": "main/results/local-3-utr-remodeling-escapes-gene-level-summaries-and-changes-predicted-regulatory-content.tex",
+      "archive_path": "project/main/results/local-3-utr-remodeling-escapes-gene-level-summaries-and-changes-predicted-regulatory-content.tex",
+      "bytes": 7915,
+      "sha256": "cb94ee7bc0243e1fe75479feb0e7d6267d8f38764b51fd67812a1faeb0985e5a",
+      "roles": [
+        "production_manuscript"
+      ],
+      "owners": [
+        "v14 production"
+      ]
+    },
+    {
+      "path": "main/results/main.tex",
+      "archive_path": "project/main/results/main.tex",
+      "bytes": 37,
+      "sha256": "def791cd945a3c54c3c17de4a4316fda2f6e9e44ed13b2a3b2addde817906106",
+      "roles": [
+        "production_manuscript"
+      ],
+      "owners": [
+        "v14 production"
+      ]
+    },
+    {
+      "path": "main/results/the-divergence-lies-mainly-in-the-breadth-of-the-proximal-response.tex",
+      "archive_path": "project/main/results/the-divergence-lies-mainly-in-the-breadth-of-the-proximal-response.tex",
+      "bytes": 1661,
+      "sha256": "4e58510ffff65f898a81dca05519b036854626ceedb470caab3a6eb06337730d",
+      "roles": [
+        "production_manuscript"
+      ],
+      "owners": [
+        "v14 production"
+      ]
+    },
+    {
+      "path": "main/results/the-global-apa-direction-diverges-between-human-and-mouse-routes.tex",
+      "archive_path": "project/main/results/the-global-apa-direction-diverges-between-human-and-mouse-routes.tex",
+      "bytes": 5422,
+      "sha256": "48c6e021c92962011e4cfc936f035258a1643b107a6e7d965a250690475c96ce",
+      "roles": [
+        "production_manuscript"
+      ],
+      "owners": [
+        "v14 production"
+      ]
+    },
+    {
+      "path": "notes/2026-10-06-supplement-polyapipe/contract-r2/bundle/tables/global/background_gene_membership.tsv.gz",
+      "archive_path": "project/notes/2026-10-06-supplement-polyapipe/contract-r2/bundle/tables/global/background_gene_membership.tsv.gz",
+      "bytes": 1252800,
+      "sha256": "b3ce3a2ff8e2d82d2c31d3e51914d4045d82671e8e4027bd18780874116e3ecd",
+      "roles": [
+        "reused_renderer_input"
+      ],
+      "owners": [
+        "v14 production"
+      ]
+    },
+    {
+      "path": "notes/2026-10-06-supplement-polyapipe/contract-r2/bundle/tables/global/global_direction_summary.tsv",
+      "archive_path": "project/notes/2026-10-06-supplement-polyapipe/contract-r2/bundle/tables/global/global_direction_summary.tsv",
+      "bytes": 53333,
+      "sha256": "f6f4d4e8c0a46b07f03a43276b45a5aaf80b10d347015f95cc03002b20f1b05d",
+      "roles": [
+        "reused_renderer_input"
+      ],
+      "owners": [
+        "v14 production"
+      ]
+    },
+    {
+      "path": "notes/2026-10-06-supplement-polyapipe/contract-r2/bundle/tables/global/qualified_date_effects.tsv.gz",
+      "archive_path": "project/notes/2026-10-06-supplement-polyapipe/contract-r2/bundle/tables/global/qualified_date_effects.tsv.gz",
+      "bytes": 3355028,
+      "sha256": "d80d83f229e868f3c9d5f027032bc16679793c071021dd72c799b3d3b304b544",
+      "roles": [
+        "revision_source_or_render_record"
+      ],
+      "owners": [
+        "v14 production"
+      ]
+    },
+    {
+      "path": "notes/2026-10-06-supplement-polyapipe/contract-r2/bundle/tables/motif_controls/background_ladder.tsv",
+      "archive_path": "project/notes/2026-10-06-supplement-polyapipe/contract-r2/bundle/tables/motif_controls/background_ladder.tsv",
+      "bytes": 8764,
+      "sha256": "4ed7a79c39bee4f32c9a8f0ef95754d8e69c35440f465c9d01628b24b2591311",
+      "roles": [
+        "S5d_source"
+      ],
+      "owners": [
+        "v14 production"
+      ]
+    },
+    {
+      "path": "notes/2026-10-06-supplement-polyapipe/contract-r2/bundle/tables/motif_controls/grid_summary.tsv",
+      "archive_path": "project/notes/2026-10-06-supplement-polyapipe/contract-r2/bundle/tables/motif_controls/grid_summary.tsv",
+      "bytes": 53670,
+      "sha256": "46d9bc00e7ee9d8bb0fc2de90cea98f7f3641101a27618b9aa7d5b531803331a",
+      "roles": [
+        "S5d_source"
+      ],
+      "owners": [
+        "v14 production"
+      ]
+    },
+    {
+      "path": "notes/2026-10-06-supplement-polyapipe/contract-r2/bundle/tables/motif_controls/motif_power.tsv",
+      "archive_path": "project/notes/2026-10-06-supplement-polyapipe/contract-r2/bundle/tables/motif_controls/motif_power.tsv",
+      "bytes": 15616,
+      "sha256": "f9400cb1cf1ff710b35191675347de0f7549ad4ef84b68d1bd613b77b8b0535f",
+      "roles": [
+        "S5d_source"
+      ],
+      "owners": [
+        "v14 production"
+      ]
+    },
+    {
+      "path": "notes/2026-10-10-cfim-sequence-signature/sequence_signature_tests.tsv",
+      "archive_path": "project/notes/2026-10-10-cfim-sequence-signature/sequence_signature_tests.tsv",
+      "bytes": 80134,
+      "sha256": "588370d51c6e57ed14795b2aa820a68fd08dee43627bf885e9a597167d785660",
+      "roles": [
+        "revision_source_or_render_record"
+      ],
+      "owners": [
+        "v14 production"
+      ]
+    },
+    {
+      "path": "notes/2026-10-10-conserved-response/function/category_results.tsv",
+      "archive_path": "project/notes/2026-10-10-conserved-response/function/category_results.tsv",
+      "bytes": 42717,
+      "sha256": "fd741645b82ec7b8a8b49343ff744cd2f3253b051901b63300c02fe054c3012f",
+      "roles": [
+        "revision_source_or_render_record"
+      ],
+      "owners": [
+        "v14 production"
+      ]
+    },
+    {
+      "path": "notes/2026-10-10-conserved-response/sites/event_attrition.tsv",
+      "archive_path": "project/notes/2026-10-10-conserved-response/sites/event_attrition.tsv",
+      "bytes": 29751,
+      "sha256": "2d753e87f349702db183dd706856dc852bcff6682f5c31ecdb1a1cf6b5adcfeb",
+      "roles": [
+        "revision_source_or_render_record"
+      ],
+      "owners": [
+        "v14 production"
+      ]
+    },
+    {
+      "path": "notes/2026-10-10-conserved-response/sites/reciprocal_predicted_seed_pairs.tsv",
+      "archive_path": "project/notes/2026-10-10-conserved-response/sites/reciprocal_predicted_seed_pairs.tsv",
+      "bytes": 13299,
+      "sha256": "7f00209329bb757812f5c4eccbc50b55a5d088197e071efa931eb138febc3f31",
+      "roles": [
+        "revision_source_or_render_record"
+      ],
+      "owners": [
+        "v14 production"
+      ]
+    },
+    {
+      "path": "notes/2026-10-10-conserved-response/sites/strict_case_interval_inclusion.tsv",
+      "archive_path": "project/notes/2026-10-10-conserved-response/sites/strict_case_interval_inclusion.tsv",
+      "bytes": 10184,
+      "sha256": "74bdc07be5b380ae38249a2c43010b8239cf8b7d922e6b304071c8d47db07dd9",
+      "roles": [
+        "revision_source_or_render_record"
+      ],
+      "owners": [
+        "v14 production"
+      ]
+    },
+    {
+      "path": "notes/2026-10-10-conserved-response/sites/strict_case_intervals.tsv",
+      "archive_path": "project/notes/2026-10-10-conserved-response/sites/strict_case_intervals.tsv",
+      "bytes": 9779,
+      "sha256": "43471011a27ea956ea9cb10826f1a7d431f15b9dee150d52573c1ee7c0f9908e",
+      "roles": [
+        "revision_source_or_render_record"
+      ],
+      "owners": [
+        "v14 production"
+      ]
+    },
+    {
+      "path": "notes/2026-10-10-cpa-factor-expression/expression_contrasts.tsv",
+      "archive_path": "project/notes/2026-10-10-cpa-factor-expression/expression_contrasts.tsv",
+      "bytes": 325937,
+      "sha256": "f0721fe494ffcc228e9de13db99b690fb553f29a9b48df47b8c31e759e3780fb",
+      "roles": [
+        "revision_source_or_render_record"
+      ],
+      "owners": [
+        "v14 production"
+      ]
+    },
+    {
+      "path": "notes/2026-10-10-cycle-source-attribution/sm-core/SM_route_summary.tsv",
+      "archive_path": "project/notes/2026-10-10-cycle-source-attribution/sm-core/SM_route_summary.tsv",
+      "bytes": 31201,
+      "sha256": "1baf4c40d545b1a8d46d4ea4c4fe14708d82ef5a99ea7e3ebef919dec6e0a06c",
+      "roles": [
+        "revision_source_or_render_record"
+      ],
+      "owners": [
+        "v14 production"
+      ]
+    },
+    {
+      "path": "notes/2026-10-10-cycle-source-attribution/wot-dose/core_formal_statistics_replay.tsv",
+      "archive_path": "project/notes/2026-10-10-cycle-source-attribution/wot-dose/core_formal_statistics_replay.tsv",
+      "bytes": 402,
+      "sha256": "65526391ca53053d6134cbaef11a3a6f8a4a6e04e746e9cbc83cfcd8c7cbe2b1",
+      "roles": [
+        "revision_source_or_render_record"
+      ],
+      "owners": [
+        "v14 production"
+      ]
+    },
+    {
+      "path": "notes/2026-10-10-cycle-source-attribution/wot-dose/fixed_panel_descriptive_statistics.tsv",
+      "archive_path": "project/notes/2026-10-10-cycle-source-attribution/wot-dose/fixed_panel_descriptive_statistics.tsv",
+      "bytes": 7199,
+      "sha256": "c377c4069b87ec2dba23db98563c6a8e7a8eb2b28d443571ba024da719fc9e1d",
+      "roles": [
+        "revision_source_or_render_record"
+      ],
+      "owners": [
+        "v14 production"
+      ]
+    },
+    {
+      "path": "notes/2026-10-10-directional-recurrence/direction_composition.tsv",
+      "archive_path": "project/notes/2026-10-10-directional-recurrence/direction_composition.tsv",
+      "bytes": 1987,
+      "sha256": "c7a7f973bd9431a93f6009449164fd59df7bfdb09ee4d74747ab46f6750452f7",
+      "roles": [
+        "revision_source_or_render_record"
+      ],
+      "owners": [
+        "v14 production"
+      ]
+    },
+    {
+      "path": "notes/2026-10-10-directional-recurrence/directional_recurrence.tsv",
+      "archive_path": "project/notes/2026-10-10-directional-recurrence/directional_recurrence.tsv",
+      "bytes": 4267,
+      "sha256": "40ca1a5207bec5749b3102fdad8c3cfcff35f22d43c5e07593ff750b645652ab",
+      "roles": [
+        "revision_source_or_render_record"
+      ],
+      "owners": [
+        "v14 production"
+      ]
+    },
+    {
+      "path": "notes/2026-10-10-divergence-main-figures/out-v11/Figure.1.pdf",
+      "archive_path": "project/notes/2026-10-10-divergence-main-figures/out-v11/Figure.1.pdf",
+      "bytes": 4722612,
+      "sha256": "a647b1dd2b206de7728f222bd9e64cc24da265de426eaa45814d80e56e0cf4d1",
+      "roles": [
+        "revision_source_or_render_record"
+      ],
+      "owners": [
+        "v14 production"
+      ]
+    },
+    {
+      "path": "notes/2026-10-10-divergence-main-figures/out-v11/Figure.2.pdf",
+      "archive_path": "project/notes/2026-10-10-divergence-main-figures/out-v11/Figure.2.pdf",
+      "bytes": 180151,
+      "sha256": "e5bd17e472d253ec444f1b469f201730cb9542e178de669b8b6a81f5b268d98f",
+      "roles": [
+        "revision_source_or_render_record"
+      ],
+      "owners": [
+        "v14 production"
+      ]
+    },
+    {
+      "path": "notes/2026-10-10-divergence-main-figures/out-v11/Figure.3.pdf",
+      "archive_path": "project/notes/2026-10-10-divergence-main-figures/out-v11/Figure.3.pdf",
+      "bytes": 101738,
+      "sha256": "9dc0088c3603808f6001e9218b23dfe6eb83a1aea89f90f003bc12b355d516a0",
+      "roles": [
+        "revision_source_or_render_record"
+      ],
+      "owners": [
+        "v14 production"
+      ]
+    },
+    {
+      "path": "notes/2026-10-10-divergence-main-figures/out-v11/Figure.4.pdf",
+      "archive_path": "project/notes/2026-10-10-divergence-main-figures/out-v11/Figure.4.pdf",
+      "bytes": 147573,
+      "sha256": "5697ba26fd74a7ffe00e259d1883ab989b46a77903f070dc283a8ded8e569824",
+      "roles": [
+        "revision_source_or_render_record"
+      ],
+      "owners": [
+        "v14 production"
+      ]
+    },
+    {
+      "path": "notes/2026-10-10-divergence-main-figures/out-v11/receipt.json",
+      "archive_path": "project/notes/2026-10-10-divergence-main-figures/out-v11/receipt.json",
+      "bytes": 20866,
+      "sha256": "c396cb13b0bf65020d0cdcd2cf8ff49e0c3c200abd4b564d5ac2f8159842fa96",
+      "roles": [
+        "revision_source_or_render_record"
+      ],
+      "owners": [
+        "v14 production"
+      ]
+    },
+    {
+      "path": "notes/2026-10-10-divergence-main-figures/out-v11/verify.json",
+      "archive_path": "project/notes/2026-10-10-divergence-main-figures/out-v11/verify.json",
+      "bytes": 573,
+      "sha256": "848eba8845768ad966aa76ff49b6045e99b8452e50568c56544cbf35560e7f2b",
+      "roles": [
+        "revision_source_or_render_record"
+      ],
+      "owners": [
+        "v14 production"
+      ]
+    },
+    {
+      "path": "notes/2026-10-10-divergence-main-figures/out/receipt.json",
+      "archive_path": "project/notes/2026-10-10-divergence-main-figures/out/receipt.json",
+      "bytes": 16211,
+      "sha256": "6e75e0eeac896ebe1ddce1ba0877a4034214068ea41f615a67bcf265d99b6ffa",
+      "roles": [
+        "revision_source_or_render_record"
+      ],
+      "owners": [
+        "v14 production"
+      ]
+    },
+    {
+      "path": "notes/2026-10-10-marker-ortholog-sharing/analysis/directional_tests.tsv",
+      "archive_path": "project/notes/2026-10-10-marker-ortholog-sharing/analysis/directional_tests.tsv",
+      "bytes": 174168,
+      "sha256": "2613f481611810942709a2b5936b6ba274da74216610dcadfa27c162930e7506",
+      "roles": [
+        "revision_source_or_render_record"
+      ],
+      "owners": [
+        "v14 production"
+      ]
+    },
+    {
+      "path": "notes/2026-10-10-marker-ortholog-sharing/analysis/original_core27_flow.tsv",
+      "archive_path": "project/notes/2026-10-10-marker-ortholog-sharing/analysis/original_core27_flow.tsv",
+      "bytes": 113999,
+      "sha256": "63b29ffd1e2288d37d64306b40bf2b46e4507f064b8983fac4d754b5a1289996",
+      "roles": [
+        "revision_source_or_render_record"
+      ],
+      "owners": [
+        "v14 production"
+      ]
+    },
+    {
+      "path": "notes/2026-10-10-marker-ortholog-sharing/analysis/shared_proximal_primary_members.tsv",
+      "archive_path": "project/notes/2026-10-10-marker-ortholog-sharing/analysis/shared_proximal_primary_members.tsv",
+      "bytes": 12196,
+      "sha256": "faf607c5cb140510366e5b6cdb0d1f443f26fd2a2d715ee86ef40b9835e4823e",
+      "roles": [
+        "revision_source_or_render_record"
+      ],
+      "owners": [
+        "v14 production"
+      ]
+    },
+    {
+      "path": "notes/2026-10-10-marker-reference-sensitivity/classification_confusion.tsv",
+      "archive_path": "project/notes/2026-10-10-marker-reference-sensitivity/classification_confusion.tsv",
+      "bytes": 372843,
+      "sha256": "19b35fd68c6421ccb73f452b3f770b936f8604e82d2cb42a0abd7dfeb5d315f9",
+      "roles": [
+        "S10a_source"
+      ],
+      "owners": [
+        "v14 production"
+      ]
+    },
+    {
+      "path": "notes/2026-10-10-marker-reference-sensitivity/gradient_route_summary.tsv",
+      "archive_path": "project/notes/2026-10-10-marker-reference-sensitivity/gradient_route_summary.tsv",
+      "bytes": 6989,
+      "sha256": "eaa64749280865770b3b2439e7454d8dfa2a36f063b54e720a5a4495a37f7a44",
+      "roles": [
+        "S10a_source"
+      ],
+      "owners": [
+        "v14 production"
+      ]
+    },
+    {
+      "path": "notes/2026-10-10-marker-reference-sensitivity/unique_support_bridge_route_summary.tsv",
+      "archive_path": "project/notes/2026-10-10-marker-reference-sensitivity/unique_support_bridge_route_summary.tsv",
+      "bytes": 57253,
+      "sha256": "42645a9895d12326e97c736575092a96ccd8a3a74818b8491141c16b3931c23d",
+      "roles": [
+        "S10a_source"
+      ],
+      "owners": [
+        "v14 production"
+      ]
+    },
+    {
+      "path": "notes/2026-10-10-marker-reference-sensitivity/unique_support_route_summary.tsv",
+      "archive_path": "project/notes/2026-10-10-marker-reference-sensitivity/unique_support_route_summary.tsv",
+      "bytes": 109841,
+      "sha256": "ee00d528848aee5fcb68be757124854c52bd56ff395f7a4f45017f9444dccdea",
+      "roles": [
+        "S10a_source"
+      ],
+      "owners": [
+        "v14 production"
+      ]
+    },
+    {
+      "path": "notes/2026-10-10-ortholog-threshold-scan/ortholog_3x3_threshold_scan.tsv",
+      "archive_path": "project/notes/2026-10-10-ortholog-threshold-scan/ortholog_3x3_threshold_scan.tsv",
+      "bytes": 102236,
+      "sha256": "dfde8d23ddc1afe69340705defbb5fafbc84216c8d7847ff0c410539f20d80b0",
+      "roles": [
+        "revision_source_or_render_record"
+      ],
+      "owners": [
+        "v14 production"
+      ]
+    },
+    {
+      "path": "notes/2026-10-10-proliferation-apa/paired_library_score_differences.tsv",
+      "archive_path": "project/notes/2026-10-10-proliferation-apa/paired_library_score_differences.tsv",
+      "bytes": 37004,
+      "sha256": "c3454f04ba3eb423b190ce4637359f99c4ae496d986a5eb05938e99fc61ef170",
+      "roles": [
+        "revision_source_or_render_record"
+      ],
+      "owners": [
+        "v14 production"
+      ]
+    },
+    {
+      "path": "notes/2026-10-10-proliferation-apa/route_associations.tsv",
+      "archive_path": "project/notes/2026-10-10-proliferation-apa/route_associations.tsv",
+      "bytes": 120169,
+      "sha256": "614616bcb0c16cb85580098432f529b5bbb71fbc3f76b05da0a1c875ec9cb466",
+      "roles": [
+        "revision_source_or_render_record"
+      ],
+      "owners": [
+        "v14 production"
+      ]
+    },
+    {
+      "path": "notes/2026-10-10-proliferation-apa/state_score_contrasts.tsv",
+      "archive_path": "project/notes/2026-10-10-proliferation-apa/state_score_contrasts.tsv",
+      "bytes": 35405,
+      "sha256": "e8581ca4cf9b41aba632cc6a0baf0a7c5de15d7875633aaa6c8b5d6cb5cd3ffe",
+      "roles": [
+        "revision_source_or_render_record"
+      ],
+      "owners": [
+        "v14 production"
+      ]
+    },
+    {
+      "path": "notes/2026-10-10-proximal-module-specificity/direct_specificity_results.tsv",
+      "archive_path": "project/notes/2026-10-10-proximal-module-specificity/direct_specificity_results.tsv",
+      "bytes": 43689,
+      "sha256": "d1d70d223b881c6c2b9c8aff5736628e704e15f7f2a0c95bbb3bc903bf8e4f45",
+      "roles": [
+        "revision_source_or_render_record"
+      ],
+      "owners": [
+        "v14 production"
+      ]
+    },
+    {
+      "path": "notes/2026-10-10-recurrence-utr-ortholog/ortholog_3x3.tsv",
+      "archive_path": "project/notes/2026-10-10-recurrence-utr-ortholog/ortholog_3x3.tsv",
+      "bytes": 16359,
+      "sha256": "06a4d5ece2b1d63714dbb43fd61761bc692e3e1ca8abb524910e7aac604a5097",
+      "roles": [
+        "revision_source_or_render_record"
+      ],
+      "owners": [
+        "v14 production"
+      ]
+    },
+    {
+      "path": "notes/2026-10-10-recurrence-utr-ortholog/tandem_directional_recurrence.tsv",
+      "archive_path": "project/notes/2026-10-10-recurrence-utr-ortholog/tandem_directional_recurrence.tsv",
+      "bytes": 3968,
+      "sha256": "1f9deb3ed552705adf309729ed9c807f793a81a11dc37e26d85fac48a6f25aaf",
+      "roles": [
+        "revision_source_or_render_record"
+      ],
+      "owners": [
+        "v14 production"
+      ]
+    },
+    {
+      "path": "notes/2026-10-10-recurrence-utr-ortholog/tandem_recurrent_length.tsv",
+      "archive_path": "project/notes/2026-10-10-recurrence-utr-ortholog/tandem_recurrent_length.tsv",
+      "bytes": 8381,
+      "sha256": "b34322e2f739edfa206d6316a71bba3ac06ac8e3f3ca383434150476ea44e1ff",
+      "roles": [
+        "revision_source_or_render_record"
+      ],
+      "owners": [
+        "v14 production"
+      ]
+    },
+    {
+      "path": "notes/2026-10-10-shared-proximal-mechanisms/mechanism_summary.tsv",
+      "archive_path": "project/notes/2026-10-10-shared-proximal-mechanisms/mechanism_summary.tsv",
+      "bytes": 4923,
+      "sha256": "a2353b21d07fbbe7be16273ee25bc151a71ba5fe9d9132eeba294f05c630546d",
+      "roles": [
+        "revision_source_or_render_record"
+      ],
+      "owners": [
+        "v14 production"
+      ]
+    },
+    {
+      "path": "notes/2026-10-10-supplement-v11/captions/new-figures.tex",
+      "archive_path": "project/notes/2026-10-10-supplement-v11/captions/new-figures.tex",
+      "bytes": 12441,
+      "sha256": "17cf09c7607b2a8960f3c73b654d4908f55f425ac2a59df1c71a8b5619a49a78",
+      "roles": [
+        "revision_source_or_render_record"
+      ],
+      "owners": [
+        "v14 production"
+      ]
+    },
+    {
+      "path": "notes/2026-10-10-supplement-v11/legends/supplementary-figures.v11.tex",
+      "archive_path": "project/notes/2026-10-10-supplement-v11/legends/supplementary-figures.v11.tex",
+      "bytes": 53654,
+      "sha256": "4731477d3f128e49d62ac3810229e78f82f3cf4f63d86ca3ae65bfc092c8ae26",
+      "roles": [
+        "revision_source_or_render_record"
+      ],
+      "owners": [
+        "v14 production"
+      ]
+    },
+    {
+      "path": "notes/2026-10-10-supplement-v11/out/SuppFig.S10.receipt.json",
+      "archive_path": "project/notes/2026-10-10-supplement-v11/out/SuppFig.S10.receipt.json",
+      "bytes": 3920,
+      "sha256": "c049ce0a5e5ddb5081bb04085fbf473834643e0f5e3e687d6ab8a1325171a660",
+      "roles": [
+        "revision_source_or_render_record"
+      ],
+      "owners": [
+        "v14 production"
+      ]
+    },
+    {
+      "path": "notes/2026-10-10-supplement-v11/out/SuppFig.S10.values.json",
+      "archive_path": "project/notes/2026-10-10-supplement-v11/out/SuppFig.S10.values.json",
+      "bytes": 6569,
+      "sha256": "470e8fc4aab06e76a2d9aec17d83838ebd1d965300be3d7c9dd6fafa824bafd8",
+      "roles": [
+        "revision_source_or_render_record"
+      ],
+      "owners": [
+        "v14 production"
+      ]
+    },
+    {
+      "path": "notes/2026-10-10-supplement-v11/out/SuppFig.S12.receipt.json",
+      "archive_path": "project/notes/2026-10-10-supplement-v11/out/SuppFig.S12.receipt.json",
+      "bytes": 2387,
+      "sha256": "33bf879c873afe3f67143a3f121c7fe304aca96766238d27092ea5df22ea3966",
+      "roles": [
+        "revision_source_or_render_record"
+      ],
+      "owners": [
+        "v14 production"
+      ]
+    },
+    {
+      "path": "notes/2026-10-10-supplement-v11/out/SuppFig.S12.values.json",
+      "archive_path": "project/notes/2026-10-10-supplement-v11/out/SuppFig.S12.values.json",
+      "bytes": 8615,
+      "sha256": "6c4fa22b11f2da2b66c1063c8e0b686e0f56bac600af36112cc6568aa66da0cd",
+      "roles": [
+        "revision_source_or_render_record"
+      ],
+      "owners": [
+        "v14 production"
+      ]
+    },
+    {
+      "path": "notes/2026-10-10-supplement-v11/out/SuppFig.S18.receipt.json",
+      "archive_path": "project/notes/2026-10-10-supplement-v11/out/SuppFig.S18.receipt.json",
+      "bytes": 3636,
+      "sha256": "388544fbeaf248311c7af6bae4a309a582ccab4ced35acede6750932c4c39ff5",
+      "roles": [
+        "revision_source_or_render_record"
+      ],
+      "owners": [
+        "v14 production"
+      ]
+    },
+    {
+      "path": "notes/2026-10-10-supplement-v11/out/SuppFig.S18.values.json",
+      "archive_path": "project/notes/2026-10-10-supplement-v11/out/SuppFig.S18.values.json",
+      "bytes": 10787,
+      "sha256": "78c399499b18d7df02dec7ef67740163cdf84363535c62118c7563c20a7caf07",
+      "roles": [
+        "revision_source_or_render_record"
+      ],
+      "owners": [
+        "v14 production"
+      ]
+    },
+    {
+      "path": "notes/2026-10-10-supplement-v11/out/SuppFig.S19.receipt.json",
+      "archive_path": "project/notes/2026-10-10-supplement-v11/out/SuppFig.S19.receipt.json",
+      "bytes": 3845,
+      "sha256": "b8c23e5b8e2b2c9a7c177d3db2fe7146a2e5efaed46b63e0d7c6805e0c843218",
+      "roles": [
+        "revision_source_or_render_record"
+      ],
+      "owners": [
+        "v14 production"
+      ]
+    },
+    {
+      "path": "notes/2026-10-10-supplement-v11/out/SuppFig.S19.values.json",
+      "archive_path": "project/notes/2026-10-10-supplement-v11/out/SuppFig.S19.values.json",
+      "bytes": 4947,
+      "sha256": "e06c508c2ac08404c1d560f372012b4075e1d783d6cac498cc5b54c569d8c2a5",
+      "roles": [
+        "revision_source_or_render_record"
+      ],
+      "owners": [
+        "v14 production"
+      ]
+    },
+    {
+      "path": "notes/2026-10-10-supplement-v11/out/SuppFig.S20.receipt.json",
+      "archive_path": "project/notes/2026-10-10-supplement-v11/out/SuppFig.S20.receipt.json",
+      "bytes": 781,
+      "sha256": "2d917e61969cceea1fbb22ae8c322bab61fe5973181611b1519c340713460898",
+      "roles": [
+        "revision_source_or_render_record"
+      ],
+      "owners": [
+        "v14 production"
+      ]
+    },
+    {
+      "path": "notes/2026-10-10-supplement-v11/out/Supplementary_Tables_S1-S10.v11.build.json",
+      "archive_path": "project/notes/2026-10-10-supplement-v11/out/Supplementary_Tables_S1-S10.v11.build.json",
+      "bytes": 35224,
+      "sha256": "015c83e62eb2677aa3979a8eed25c461118f0206a5b1e03c91d138894fc19d01",
+      "roles": [
+        "revision_source_or_render_record",
+        "production_output_or_provenance"
+      ],
+      "owners": [
+        "v14 production"
+      ]
+    },
+    {
+      "path": "notes/2026-10-10-supplement-v11/out/Supplementary_Tables_S1-S10.v11.verify.json",
+      "archive_path": "project/notes/2026-10-10-supplement-v11/out/Supplementary_Tables_S1-S10.v11.verify.json",
+      "bytes": 240,
+      "sha256": "43fa862cb1654f1bc2c46c46de61218f3395eec82a4c894149c2222a1b9cc9b1",
+      "roles": [
+        "revision_source_or_render_record",
+        "production_output_or_provenance"
+      ],
+      "owners": [
+        "v14 production"
+      ]
+    },
+    {
+      "path": "notes/2026-10-10-supplement-v11/out/Supplementary_Tables_S1-S10.v11.xlsx",
+      "archive_path": "project/notes/2026-10-10-supplement-v11/out/Supplementary_Tables_S1-S10.v11.xlsx",
+      "bytes": 26953472,
+      "sha256": "68265e99547bfd6710e4151510a177df62ca9a6c05589d2a95ec5146db1ac681",
+      "roles": [
+        "revision_source_or_render_record"
+      ],
+      "owners": [
+        "v14 production"
+      ]
+    },
+    {
+      "path": "notes/2026-10-10-supplement-v11/set/SuppFig.S1.pdf",
+      "archive_path": "project/notes/2026-10-10-supplement-v11/set/SuppFig.S1.pdf",
+      "bytes": 199438,
+      "sha256": "3112c9cbbc039ce56613e1b045a6f45ffd368f2f30fc3c2bb55460423d8d5c6f",
+      "roles": [
+        "revision_source_or_render_record"
+      ],
+      "owners": [
+        "v14 production"
+      ]
+    },
+    {
+      "path": "notes/2026-10-10-supplement-v11/set/SuppFig.S10.pdf",
+      "archive_path": "project/notes/2026-10-10-supplement-v11/set/SuppFig.S10.pdf",
+      "bytes": 25313,
+      "sha256": "3695697ed68e25669afdd403770173cc509bcdeeb69b9ae838358a052f396afc",
+      "roles": [
+        "revision_source_or_render_record"
+      ],
+      "owners": [
+        "v14 production"
+      ]
+    },
+    {
+      "path": "notes/2026-10-10-supplement-v11/set/SuppFig.S11.pdf",
+      "archive_path": "project/notes/2026-10-10-supplement-v11/set/SuppFig.S11.pdf",
+      "bytes": 36281,
+      "sha256": "6ee388a5e38e16204aeae5186c96b9388edcc17210fe6744198606270d03200c",
+      "roles": [
+        "revision_source_or_render_record"
+      ],
+      "owners": [
+        "v14 production"
+      ]
+    },
+    {
+      "path": "notes/2026-10-10-supplement-v11/set/SuppFig.S12.pdf",
+      "archive_path": "project/notes/2026-10-10-supplement-v11/set/SuppFig.S12.pdf",
+      "bytes": 19049,
+      "sha256": "9acfb1eba70e591050295c626b37ab1f1cc50ec59c74a3f5c9ca5cd5d7457a80",
+      "roles": [
+        "revision_source_or_render_record"
+      ],
+      "owners": [
+        "v14 production"
+      ]
+    },
+    {
+      "path": "notes/2026-10-10-supplement-v11/set/SuppFig.S13.pdf",
+      "archive_path": "project/notes/2026-10-10-supplement-v11/set/SuppFig.S13.pdf",
+      "bytes": 52176,
+      "sha256": "a62b86590d4d4b23387378bd6a0ccda914f82a5dcaeb20c2a311c2c22ca3d0be",
+      "roles": [
+        "revision_source_or_render_record"
+      ],
+      "owners": [
+        "v14 production"
+      ]
+    },
+    {
+      "path": "notes/2026-10-10-supplement-v11/set/SuppFig.S14.pdf",
+      "archive_path": "project/notes/2026-10-10-supplement-v11/set/SuppFig.S14.pdf",
+      "bytes": 36739,
+      "sha256": "6cacfb0914160b239bad784a0504c4c2966ab686c5a154872cecabb67378ca53",
+      "roles": [
+        "revision_source_or_render_record"
+      ],
+      "owners": [
+        "v14 production"
+      ]
+    },
+    {
+      "path": "notes/2026-10-10-supplement-v11/set/SuppFig.S15.pdf",
+      "archive_path": "project/notes/2026-10-10-supplement-v11/set/SuppFig.S15.pdf",
+      "bytes": 32371,
+      "sha256": "cbe9a46fbd229e3be9a810e04443d3f49e78f756178885fd7aba3b03c05c3641",
+      "roles": [
+        "revision_source_or_render_record"
+      ],
+      "owners": [
+        "v14 production"
+      ]
+    },
+    {
+      "path": "notes/2026-10-10-supplement-v11/set/SuppFig.S16.pdf",
+      "archive_path": "project/notes/2026-10-10-supplement-v11/set/SuppFig.S16.pdf",
+      "bytes": 40266,
+      "sha256": "f20e7c11ec430fe5d883613e15a58d6376c880778e200ba359dfc10331ead994",
+      "roles": [
+        "revision_source_or_render_record"
+      ],
+      "owners": [
+        "v14 production"
+      ]
+    },
+    {
+      "path": "notes/2026-10-10-supplement-v11/set/SuppFig.S17.pdf",
+      "archive_path": "project/notes/2026-10-10-supplement-v11/set/SuppFig.S17.pdf",
+      "bytes": 46814,
+      "sha256": "a16c1c6b889f7702c823a6c785398d3a9e2fd6ab48f2ce27a7c194f371ea710f",
+      "roles": [
+        "revision_source_or_render_record"
+      ],
+      "owners": [
+        "v14 production"
+      ]
+    },
+    {
+      "path": "notes/2026-10-10-supplement-v11/set/SuppFig.S18.pdf",
+      "archive_path": "project/notes/2026-10-10-supplement-v11/set/SuppFig.S18.pdf",
+      "bytes": 26969,
+      "sha256": "4a850046bca5c7579fe75153d44259ae3da36719f794f43248251b010ce1bc24",
+      "roles": [
+        "revision_source_or_render_record"
+      ],
+      "owners": [
+        "v14 production"
+      ]
+    },
+    {
+      "path": "notes/2026-10-10-supplement-v11/set/SuppFig.S19.pdf",
+      "archive_path": "project/notes/2026-10-10-supplement-v11/set/SuppFig.S19.pdf",
+      "bytes": 43659,
+      "sha256": "56038273798b8ca08c1e8830229965e091224a29da475780c9139b79da97e2ad",
+      "roles": [
+        "revision_source_or_render_record"
+      ],
+      "owners": [
+        "v14 production"
+      ]
+    },
+    {
+      "path": "notes/2026-10-10-supplement-v11/set/SuppFig.S2.pdf",
+      "archive_path": "project/notes/2026-10-10-supplement-v11/set/SuppFig.S2.pdf",
+      "bytes": 198197,
+      "sha256": "0c02a8b1ec0fb3a3c8e8954fec35be8ad426d8c296a18e77471b64b58b8d1133",
+      "roles": [
+        "revision_source_or_render_record"
+      ],
+      "owners": [
+        "v14 production"
+      ]
+    },
+    {
+      "path": "notes/2026-10-10-supplement-v11/set/SuppFig.S20.pdf",
+      "archive_path": "project/notes/2026-10-10-supplement-v11/set/SuppFig.S20.pdf",
+      "bytes": 264020,
+      "sha256": "8cd360a66daf4f4574ec6aec1be7982288cc045e2035c3332d3c6bd727f8db82",
+      "roles": [
+        "revision_source_or_render_record"
+      ],
+      "owners": [
+        "v14 production"
+      ]
+    },
+    {
+      "path": "notes/2026-10-10-supplement-v11/set/SuppFig.S21.pdf",
+      "archive_path": "project/notes/2026-10-10-supplement-v11/set/SuppFig.S21.pdf",
+      "bytes": 46755,
+      "sha256": "cd97f9a73498cc7952c5da1eb019133722d2e22d996b32a6b857d765f2db0cdd",
+      "roles": [
+        "revision_source_or_render_record"
+      ],
+      "owners": [
+        "v14 production"
+      ]
+    },
+    {
+      "path": "notes/2026-10-10-supplement-v11/set/SuppFig.S3.pdf",
+      "archive_path": "project/notes/2026-10-10-supplement-v11/set/SuppFig.S3.pdf",
+      "bytes": 868187,
+      "sha256": "651d3f28fb18c4289d118e4f092092e2e9b19e2630f0e4ec6836258acafff2bf",
+      "roles": [
+        "revision_source_or_render_record"
+      ],
+      "owners": [
+        "v14 production"
+      ]
+    },
+    {
+      "path": "notes/2026-10-10-supplement-v11/set/SuppFig.S4.pdf",
+      "archive_path": "project/notes/2026-10-10-supplement-v11/set/SuppFig.S4.pdf",
+      "bytes": 59706,
+      "sha256": "98479218f4c9eff397449fb36da361f90aacde5913c7a234d248ae3b169121bd",
+      "roles": [
+        "revision_source_or_render_record"
+      ],
+      "owners": [
+        "v14 production"
+      ]
+    },
+    {
+      "path": "notes/2026-10-10-supplement-v11/set/SuppFig.S5.pdf",
+      "archive_path": "project/notes/2026-10-10-supplement-v11/set/SuppFig.S5.pdf",
+      "bytes": 27156,
+      "sha256": "2bc01e634cfbbb7b059c5aefec91a27049f103e510760493d0858d7850bad076",
+      "roles": [
+        "revision_source_or_render_record"
+      ],
+      "owners": [
+        "v14 production"
+      ]
+    },
+    {
+      "path": "notes/2026-10-10-supplement-v11/set/SuppFig.S6.pdf",
+      "archive_path": "project/notes/2026-10-10-supplement-v11/set/SuppFig.S6.pdf",
+      "bytes": 37800,
+      "sha256": "d1c373998a31a0484d8abf51d91a32c1bcd8c28dea3558249e22313ada35c2b9",
+      "roles": [
+        "revision_source_or_render_record"
+      ],
+      "owners": [
+        "v14 production"
+      ]
+    },
+    {
+      "path": "notes/2026-10-10-supplement-v11/set/SuppFig.S7.pdf",
+      "archive_path": "project/notes/2026-10-10-supplement-v11/set/SuppFig.S7.pdf",
+      "bytes": 145541,
+      "sha256": "2e770d8101f69af7d5edd874ed6b1b64cd68cef15b777c4f938b7160588e257c",
+      "roles": [
+        "revision_source_or_render_record"
+      ],
+      "owners": [
+        "v14 production"
+      ]
+    },
+    {
+      "path": "notes/2026-10-10-supplement-v11/set/SuppFig.S8.pdf",
+      "archive_path": "project/notes/2026-10-10-supplement-v11/set/SuppFig.S8.pdf",
+      "bytes": 51797,
+      "sha256": "035c71d4f823c6bbd10e7a3a7239353ad82a4acf8ebe924ce10b4f1f4a6e40eb",
+      "roles": [
+        "revision_source_or_render_record"
+      ],
+      "owners": [
+        "v14 production"
+      ]
+    },
+    {
+      "path": "notes/2026-10-10-supplement-v11/set/SuppFig.S9.pdf",
+      "archive_path": "project/notes/2026-10-10-supplement-v11/set/SuppFig.S9.pdf",
+      "bytes": 197119,
+      "sha256": "b2ada25e34f6e44fe7e081eb20394979075c6b708312de54e1aa788541c73cc2",
+      "roles": [
+        "revision_source_or_render_record"
+      ],
+      "owners": [
+        "v14 production"
+      ]
+    },
+    {
+      "path": "notes/2026-10-10-supplement-v11/set/manifest.tsv",
+      "archive_path": "project/notes/2026-10-10-supplement-v11/set/manifest.tsv",
+      "bytes": 3998,
+      "sha256": "7807cffdf21766c044d306ae0a39223aa6acd65b76df2f21793f81be0ee102ab",
+      "roles": [
+        "revision_source_or_render_record"
+      ],
+      "owners": [
+        "v14 production"
+      ]
+    },
+    {
+      "path": "notes/2026-10-10-supplement-v11/tables/derived/route_mean_composition.tsv",
+      "archive_path": "project/notes/2026-10-10-supplement-v11/tables/derived/route_mean_composition.tsv",
+      "bytes": 3500,
+      "sha256": "a1bb7a42b16a1df0fbe36bd9d80c681c8fec438b8bf27d3ac51755fc56e54f57",
+      "roles": [
+        "revision_source_or_render_record"
+      ],
+      "owners": [
+        "v14 production"
+      ]
+    },
+    {
+      "path": "notes/2026-10-10-supplement-v11/tables/supplementary-tables.v11.tex",
+      "archive_path": "project/notes/2026-10-10-supplement-v11/tables/supplementary-tables.v11.tex",
+      "bytes": 7619,
+      "sha256": "a8422c0cbe19d2ff264f65f8fcc1f2926fac37d191f53dde83ddc4ad1ddace10",
+      "roles": [
+        "revision_source_or_render_record"
+      ],
+      "owners": [
+        "v14 production"
+      ]
+    },
+    {
+      "path": "notes/2026-10-10-table-s9f/Supplementary_Tables_S1-S9.xlsx",
+      "archive_path": "project/notes/2026-10-10-table-s9f/Supplementary_Tables_S1-S9.xlsx",
+      "bytes": 43018094,
+      "sha256": "ee1f537d985df66e55b4bad113e4ec8524f75ada2bcba2f01c35f330c4490e1d",
+      "roles": [
+        "revision_source_or_render_record"
+      ],
+      "owners": [
+        "v14 production"
+      ]
+    },
+    {
+      "path": "notes/2026-10-10-utr-event-stratification/classification/shared_proximal_core_all_thresholds.tsv",
+      "archive_path": "project/notes/2026-10-10-utr-event-stratification/classification/shared_proximal_core_all_thresholds.tsv",
+      "bytes": 106095,
+      "sha256": "0db04a25b7ba94cfae3a2382ba82a2484a0495ec10dbd2ca47668c1b6e50a6f7",
+      "roles": [
+        "revision_source_or_render_record"
+      ],
+      "owners": [
+        "v14 production"
+      ]
+    },
+    {
+      "path": "notes/2026-10-10-utr-event-stratification/classification/species_class_matrix.tsv",
+      "archive_path": "project/notes/2026-10-10-utr-event-stratification/classification/species_class_matrix.tsv",
+      "bytes": 643,
+      "sha256": "ebcdce7430d3be1c63dbdde7f2d34318bab4a407e75159130f173c8028202032",
+      "roles": [
+        "revision_source_or_render_record"
+      ],
+      "owners": [
+        "v14 production"
+      ]
+    },
+    {
+      "path": "notes/2026-10-10-utr-event-stratification/overlap/directional_tests.tsv",
+      "archive_path": "project/notes/2026-10-10-utr-event-stratification/overlap/directional_tests.tsv",
+      "bytes": 44327,
+      "sha256": "e13932f0647275fa91925becffc772ed81739e52d9f44e2447271c91572f1468",
+      "roles": [
+        "revision_source_or_render_record"
+      ],
+      "owners": [
+        "v14 production"
+      ]
+    },
+    {
+      "path": "notes/2026-10-10-utr-event-stratification/overlap/primary_proximal_overlap.tsv",
+      "archive_path": "project/notes/2026-10-10-utr-event-stratification/overlap/primary_proximal_overlap.tsv",
+      "bytes": 14092,
+      "sha256": "83b5e0e4edcf7d70f5bff802763fdfcd590e318e651ae7ab3de36339f60a92f3",
+      "roles": [
+        "revision_source_or_render_record"
+      ],
+      "owners": [
+        "v14 production"
+      ]
+    },
+    {
+      "path": "notes/2026-10-11-caption-figure-fixes/README.zh.md",
+      "archive_path": "project/notes/2026-10-11-caption-figure-fixes/README.zh.md",
+      "roles": [
+        "figure_revision_record"
+      ],
+      "owners": [
+        "main-figure caption revision"
+      ],
+      "bytes": 6413,
+      "sha256": "d16786aa23147e89ced5f74eb6f379c34b528051de6e6bfa5dc28e39128630d0"
+    },
+    {
+      "path": "notes/2026-10-11-caption-figure-fixes/out/apply_text_v2.log.json",
+      "archive_path": "project/notes/2026-10-11-caption-figure-fixes/out/apply_text_v2.log.json",
+      "roles": [
+        "caption_revision_receipt"
+      ],
+      "owners": [
+        "main-figure caption revision"
+      ],
+      "bytes": 26582,
+      "sha256": "5c008b5e3124686699daa40f27a1816ba3ca211419cd225abcbc439e680bb88b"
+    },
+    {
+      "path": "notes/2026-10-11-caption-figure-fixes/out/receipt.fig1.json",
+      "archive_path": "project/notes/2026-10-11-caption-figure-fixes/out/receipt.fig1.json",
+      "roles": [
+        "figure_revision_receipt"
+      ],
+      "owners": [
+        "main-figure caption revision"
+      ],
+      "bytes": 885,
+      "sha256": "c788ecb598a0e182bd6fc77cada72ac4e8253f52135fa4e374b5a8b8d7072065"
+    },
+    {
+      "path": "notes/2026-10-11-caption-figure-fixes/out/receipt.fig2.json",
+      "archive_path": "project/notes/2026-10-11-caption-figure-fixes/out/receipt.fig2.json",
+      "roles": [
+        "figure_revision_receipt"
+      ],
+      "owners": [
+        "main-figure caption revision"
+      ],
+      "bytes": 2914,
+      "sha256": "63e20f92f9c4c9db9f8da55c612695d392669d82aa14803b2a6a9ff844c6f0a7"
+    },
+    {
+      "path": "notes/2026-10-11-caption-figure-fixes/out/receipt.fig3.json",
+      "archive_path": "project/notes/2026-10-11-caption-figure-fixes/out/receipt.fig3.json",
+      "roles": [
+        "figure_revision_receipt"
+      ],
+      "owners": [
+        "main-figure caption revision"
+      ],
+      "bytes": 911,
+      "sha256": "a93106f35768476f04a80898425d8f3e6bc40b64c8eaaf2f8b48e7d3aaa6cfa0"
+    },
+    {
+      "path": "notes/2026-10-11-caption-figure-fixes/out/receipt.fig4.json",
+      "archive_path": "project/notes/2026-10-11-caption-figure-fixes/out/receipt.fig4.json",
+      "roles": [
+        "figure_revision_receipt"
+      ],
+      "owners": [
+        "main-figure caption revision"
+      ],
+      "bytes": 1068,
+      "sha256": "1784464498068b5a0a16d7e169ef56275266c3380196429eab4ecdf8489bf27d"
+    },
+    {
+      "path": "notes/2026-10-11-citation-source-repair/evidence/mirbase-frozen-input-records.json",
+      "archive_path": "project/notes/2026-10-11-citation-source-repair/evidence/mirbase-frozen-input-records.json",
+      "roles": [
+        "citation_source_evidence"
+      ],
+      "owners": [
+        "citation-source repair"
+      ],
+      "bytes": 1367,
+      "sha256": "294315a5cba5cf603315699076c58cfab4e613a852f899e1959fadb6a5d087c4"
+    },
+    {
+      "path": "notes/2026-10-11-supplement-caption-revision/README.md",
+      "archive_path": "project/notes/2026-10-11-supplement-caption-revision/README.md",
+      "roles": [
+        "caption_revision_record"
+      ],
+      "owners": [
+        "supplement caption revision"
+      ],
+      "bytes": 2296,
+      "sha256": "e4d6ccf95a8f4b88763855b486841b7ceb0c9b0612925a7353a7e19fe6d058ca"
+    },
+    {
+      "path": "notes/2026-10-11-supplement-caption-revision/rendered/A/SuppFig.S1.pdf",
+      "archive_path": "project/notes/2026-10-11-supplement-caption-revision/rendered/A/SuppFig.S1.pdf",
+      "roles": [
+        "current_S1_S2_rendering_record"
+      ],
+      "owners": [
+        "supplement caption revision"
+      ],
+      "bytes": 203583,
+      "sha256": "fe89ff70d337554aa6627387c4f8a3096922e1b40ce9014cd6d377ec1e1c3de5"
+    },
+    {
+      "path": "notes/2026-10-11-supplement-caption-revision/rendered/A/SuppFig.S1.receipt.json",
+      "archive_path": "project/notes/2026-10-11-supplement-caption-revision/rendered/A/SuppFig.S1.receipt.json",
+      "roles": [
+        "current_S1_S2_rendering_record"
+      ],
+      "owners": [
+        "supplement caption revision"
+      ],
+      "bytes": 8324,
+      "sha256": "78149b333648cb12c1b78f0456b6c5d43c64e43c439c728e5a2466cc4af820ae"
+    },
+    {
+      "path": "notes/2026-10-11-supplement-caption-revision/rendered/A/SuppFig.S1.values.json",
+      "archive_path": "project/notes/2026-10-11-supplement-caption-revision/rendered/A/SuppFig.S1.values.json",
+      "roles": [
+        "current_S1_S2_rendering_record"
+      ],
+      "owners": [
+        "supplement caption revision"
+      ],
+      "bytes": 54436,
+      "sha256": "ed4a0bb43fccf54852e60f58645e5971418077669b1571ae638bbe1496b6559a"
+    },
+    {
+      "path": "notes/2026-10-11-supplement-caption-revision/rendered/B/SuppFig.S2.pdf",
+      "archive_path": "project/notes/2026-10-11-supplement-caption-revision/rendered/B/SuppFig.S2.pdf",
+      "roles": [
+        "current_S1_S2_rendering_record"
+      ],
+      "owners": [
+        "supplement caption revision"
+      ],
+      "bytes": 203449,
+      "sha256": "c6124ce5b355b1eeaa292d804ce3f928f17707a3a9bf2ee871158feea0aafb2e"
+    },
+    {
+      "path": "notes/2026-10-11-supplement-caption-revision/rendered/B/SuppFig.S2.receipt.json",
+      "archive_path": "project/notes/2026-10-11-supplement-caption-revision/rendered/B/SuppFig.S2.receipt.json",
+      "roles": [
+        "current_S1_S2_rendering_record"
+      ],
+      "owners": [
+        "supplement caption revision"
+      ],
+      "bytes": 11702,
+      "sha256": "c906ffe9f07e91b546ac14d532593153b4bd2463b02437827f5d6794411cd8d9"
+    },
+    {
+      "path": "notes/2026-10-11-supplement-caption-revision/rendered/B/SuppFig.S2.values.json",
+      "archive_path": "project/notes/2026-10-11-supplement-caption-revision/rendered/B/SuppFig.S2.values.json",
+      "roles": [
+        "current_S1_S2_rendering_record"
+      ],
+      "owners": [
+        "supplement caption revision"
+      ],
+      "bytes": 52966,
+      "sha256": "9b5222060f6aafc1ef94bc1ed069dc327216305df4df39a070d5fd5d15bc5986"
+    },
+    {
+      "path": "notes/2026-10-11-supplement-caption-revision/work/figure-qa.json",
+      "archive_path": "project/notes/2026-10-11-supplement-caption-revision/work/figure-qa.json",
+      "roles": [
+        "figure_revision_verification"
+      ],
+      "owners": [
+        "supplement caption revision"
+      ],
+      "bytes": 195,
+      "sha256": "0f9351dd17f756a2f1d8250a8884f817c145c53f50236aafc3627cf6518d383f"
+    },
+    {
+      "path": "notes/2026-10-11-supplement-caption-revision/work/state-column-map.tsv",
+      "archive_path": "project/notes/2026-10-11-supplement-caption-revision/work/state-column-map.tsv",
+      "roles": [
+        "native_state_column_mapping"
+      ],
+      "owners": [
+        "supplement caption revision"
+      ],
+      "bytes": 7495,
+      "sha256": "6b3616d29890b5125416d63a1cc8b6a7724b83d615ee7d483e4b211c690d2788"
+    },
+    {
+      "path": "references.bib",
+      "archive_path": "project/references.bib",
+      "bytes": 42845,
+      "sha256": "eb464bcf6d8b58d5a01ba3791317bfc1537daae43a15464335511221f0546371",
+      "roles": [
+        "production_output_or_provenance"
+      ],
+      "owners": [
+        "v14 production"
+      ]
+    },
+    {
+      "path": "reviews/2026-10-10-divergence-writing/spec/evidence.json",
+      "archive_path": "project/reviews/2026-10-10-divergence-writing/spec/evidence.json",
+      "bytes": 37317,
+      "sha256": "7df8ce5966ce79b7debe5db0005bf40ccad008a45b48e67c93e277b219b3fd60",
+      "roles": [
+        "production_output_or_provenance"
+      ],
+      "owners": [
+        "v14 production"
+      ]
+    },
+    {
+      "path": "reviews/2026-10-10-divergence-writing/spec/logic.json",
+      "archive_path": "project/reviews/2026-10-10-divergence-writing/spec/logic.json",
+      "bytes": 52838,
+      "sha256": "6b32ac9251208c3e0ef36975354138514f4b367c23d959d97a589e53429bcebd",
+      "roles": [
+        "production_output_or_provenance"
+      ],
+      "owners": [
+        "v14 production"
+      ]
+    },
+    {
+      "path": "reviews/2026-10-11-full-review-current/recheck-citation-sources/REPORT.md",
+      "archive_path": "project/reviews/2026-10-11-full-review-current/recheck-citation-sources/REPORT.md",
+      "roles": [
+        "citation_recheck_record"
+      ],
+      "owners": [
+        "citation-source repair"
+      ],
+      "bytes": 5014,
+      "sha256": "cde5e692e5344e26e2fcb417befc846dac4ae44968227a69ae3fa3d14643898b"
+    },
+    {
+      "path": "reviews/2026-10-11-reviewer-revision/REPORT.md",
+      "archive_path": "project/reviews/2026-10-11-reviewer-revision/REPORT.md",
+      "roles": [
+        "reviewer_revision_record"
+      ],
+      "owners": [
+        "reviewer revision"
+      ],
+      "bytes": 4521,
+      "sha256": "644328b0825a4552bf6b4dbde008db250e9448ca95c514a6be69fbf8fec01057"
+    },
+    {
+      "path": "reviews/2026-10-11-reviewer-revision/edits.json",
+      "archive_path": "project/reviews/2026-10-11-reviewer-revision/edits.json",
+      "roles": [
+        "text_revision_record"
+      ],
+      "owners": [
+        "reviewer revision"
+      ],
+      "bytes": 16417,
+      "sha256": "efc54ab3e540c84a5b72d6093c49e5fab0b1330fefc1d88c106712c7adf935dc"
+    },
+    {
+      "path": "reviews/2026-10-11-reviewer-revision/edits.py",
+      "archive_path": "project/reviews/2026-10-11-reviewer-revision/edits.py",
+      "roles": [
+        "text_revision_script"
+      ],
+      "owners": [
+        "reviewer revision"
+      ],
+      "bytes": 16043,
+      "sha256": "bcaa2d338efecb29e66c79f794ef428c1a542e8a885e43f8a854ff2b4f4fce0a"
+    },
+    {
+      "path": "reviews/2026-10-11-reviewer-revision/edits2.json",
+      "archive_path": "project/reviews/2026-10-11-reviewer-revision/edits2.json",
+      "roles": [
+        "text_revision_record"
+      ],
+      "owners": [
+        "reviewer revision"
+      ],
+      "bytes": 4069,
+      "sha256": "b90e835bb560877c82a6802b54a9e43b15cf42ed10ccf60cff549c2669ea2b1d"
+    },
+    {
+      "path": "reviews/2026-10-11-reviewer-revision/edits2.py",
+      "archive_path": "project/reviews/2026-10-11-reviewer-revision/edits2.py",
+      "roles": [
+        "text_revision_script"
+      ],
+      "owners": [
+        "reviewer revision"
+      ],
+      "bytes": 4379,
+      "sha256": "eb1c399fb39a3805abe02b98e9b69578f48d328909bfc5bdff1aaf31e74c7113"
+    },
+    {
+      "path": "supplement/.texsplit.json",
+      "archive_path": "project/supplement/.texsplit.json",
+      "bytes": 5052,
+      "sha256": "db22bce7f6864bbec65ef5a5be98c27a640886cf9659d5bce8860643daafdd4d",
+      "roles": [
+        "production_manifest"
+      ],
+      "owners": [
+        "v14 production"
+      ]
+    },
+    {
+      "path": "supplement/backbone/back-matter.tex",
+      "archive_path": "project/supplement/backbone/back-matter.tex",
+      "bytes": 197,
+      "sha256": "70f8c2015c99a529a50be43457faa4e8e11a51760cf637bd76415cfe46a8144f",
+      "roles": [
+        "production_manuscript"
+      ],
+      "owners": [
+        "v14 production"
+      ]
+    },
+    {
+      "path": "supplement/backbone/front-matter.tex",
+      "archive_path": "project/supplement/backbone/front-matter.tex",
+      "bytes": 1141,
+      "sha256": "262c487f33698db17e193fd32a1914d6d3f65b6e4fe65517bde8ef29bdcc0974",
+      "roles": [
+        "production_manuscript"
+      ],
+      "owners": [
+        "v14 production"
+      ]
+    },
+    {
+      "path": "supplement/supplementary-figures/main.tex",
+      "archive_path": "project/supplement/supplementary-figures/main.tex",
+      "bytes": 66593,
+      "sha256": "fc0cafc6ca8edc3876234dc8a341b147cf86685832d5d62c41b94b087d833dba",
+      "roles": [
+        "revision_source_or_render_record",
+        "production_manuscript"
+      ],
+      "owners": [
+        "v14 production"
+      ]
+    },
+    {
+      "path": "supplement/supplementary-methods/alternative-pas-calling-workflow.tex",
+      "archive_path": "project/supplement/supplementary-methods/alternative-pas-calling-workflow.tex",
+      "bytes": 5292,
+      "sha256": "a26289b10eb7753e87a81faed6d2b57bc32aee8c4e0144d0e39d56791aa140c1",
+      "roles": [
+        "production_manuscript"
+      ],
+      "owners": [
+        "v14 production"
+      ]
+    },
+    {
+      "path": "supplement/supplementary-methods/candidate-intervals-and-predicted-sites.tex",
+      "archive_path": "project/supplement/supplementary-methods/candidate-intervals-and-predicted-sites.tex",
+      "bytes": 20738,
+      "sha256": "494384ee1044e6fb4f8312b96896e97d388da5bec1875495cc12f53261204e76",
+      "roles": [
+        "production_manuscript"
+      ],
+      "owners": [
+        "v14 production"
+      ]
+    },
+    {
+      "path": "supplement/supplementary-methods/cross-species-comparisons.tex",
+      "archive_path": "project/supplement/supplementary-methods/cross-species-comparisons.tex",
+      "bytes": 22806,
+      "sha256": "dcacb01d68831369cfde392280847735301b8eee2ca94e50a938f8cc42c8337f",
+      "roles": [
+        "production_manuscript"
+      ],
+      "owners": [
+        "v14 production"
+      ]
+    },
+    {
+      "path": "supplement/supplementary-methods/data-reads-and-cell-processing.tex",
+      "archive_path": "project/supplement/supplementary-methods/data-reads-and-cell-processing.tex",
+      "bytes": 8350,
+      "sha256": "2d4396f9c1bdd1811327f8709547bc7c0fe0e9b424fdea733330655b6020b140",
+      "roles": [
+        "production_manuscript"
+      ],
+      "owners": [
+        "v14 production"
+      ]
+    },
+    {
+      "path": "supplement/supplementary-methods/display-conventions-and-reproducibility.tex",
+      "archive_path": "project/supplement/supplementary-methods/display-conventions-and-reproducibility.tex",
+      "bytes": 4549,
+      "sha256": "feb2580885e88083e4aeaa53fffb68d8c54710c7d7fe64fb1de5323f3d9d0347",
+      "roles": [
+        "production_manuscript"
+      ],
+      "owners": [
+        "v14 production"
+      ]
+    },
+    {
+      "path": "supplement/supplementary-methods/dwui-metacells-and-state-comparisons.tex",
+      "archive_path": "project/supplement/supplementary-methods/dwui-metacells-and-state-comparisons.tex",
+      "bytes": 8551,
+      "sha256": "e2a5a98fe7d1e43b31bceacd18d0c2232ce2f6f5bbafa14330c005d47965d430",
+      "roles": [
+        "production_manuscript"
+      ],
+      "owners": [
+        "v14 production"
+      ]
+    },
+    {
+      "path": "supplement/supplementary-methods/expression-state-framework.tex",
+      "archive_path": "project/supplement/supplementary-methods/expression-state-framework.tex",
+      "bytes": 10064,
+      "sha256": "a22a5aac7a5e39dae04df831e702301555a47d4fa17f2f6eb5f565e5bd558910",
+      "roles": [
+        "production_manuscript"
+      ],
+      "owners": [
+        "v14 production"
+      ]
+    },
+    {
+      "path": "supplement/supplementary-methods/main.tex",
+      "archive_path": "project/supplement/supplementary-methods/main.tex",
+      "bytes": 56,
+      "sha256": "7f1d72a3ca65d4b2e2e7c553df9d265c936b9406694fb862d27bf2b3e131b393",
+      "roles": [
+        "production_manuscript"
+      ],
+      "owners": [
+        "v14 production"
+      ]
+    },
+    {
+      "path": "supplement/supplementary-methods/pas-catalog-and-integrated-reference.tex",
+      "archive_path": "project/supplement/supplementary-methods/pas-catalog-and-integrated-reference.tex",
+      "bytes": 8456,
+      "sha256": "b76741910ef9b4bc4081c183c9906b87d68bed9ce875624894b0b61e803feee9",
+      "roles": [
+        "production_manuscript"
+      ],
+      "owners": [
+        "v14 production"
+      ]
+    },
+    {
+      "path": "supplement/supplementary-methods/state-resolved-profiles.tex",
+      "archive_path": "project/supplement/supplementary-methods/state-resolved-profiles.tex",
+      "bytes": 4404,
+      "sha256": "fa22914ea40e33f1d31717ef5c1f6fcd1cd3b58601f13c2b9a3e32621d73aa0d",
+      "roles": [
+        "production_manuscript"
+      ],
+      "owners": [
+        "v14 production"
+      ]
+    },
+    {
+      "path": "supplement/supplementary-methods/within-species-recurrence.tex",
+      "archive_path": "project/supplement/supplementary-methods/within-species-recurrence.tex",
+      "bytes": 23069,
+      "sha256": "0666bbfba0b5c562e1fdd33de7fc215ee3b0212f014f70256e6c0209134baff7",
+      "roles": [
+        "production_manuscript"
+      ],
+      "owners": [
+        "v14 production"
+      ]
+    },
+    {
+      "path": "supplement/supplementary-results/alternative-pas-calling.tex",
+      "archive_path": "project/supplement/supplementary-results/alternative-pas-calling.tex",
+      "bytes": 6189,
+      "sha256": "cd0bdd90990cdea12dcccabe520f9bba3990e24f388689df850c03ece424d511",
+      "roles": [
+        "production_manuscript"
+      ],
+      "owners": [
+        "v14 production"
+      ]
+    },
+    {
+      "path": "supplement/supplementary-results/candidate-explanations-of-the-shared-proximal-response.tex",
+      "archive_path": "project/supplement/supplementary-results/candidate-explanations-of-the-shared-proximal-response.tex",
+      "bytes": 7546,
+      "sha256": "e7a6ca3875e3255f28317ec9c73405d3e346ac1e3e5bc87a4f0507b268d0afc9",
+      "roles": [
+        "production_manuscript"
+      ],
+      "owners": [
+        "v14 production"
+      ]
+    },
+    {
+      "path": "supplement/supplementary-results/composition-of-the-global-direction.tex",
+      "archive_path": "project/supplement/supplementary-results/composition-of-the-global-direction.tex",
+      "bytes": 2074,
+      "sha256": "a7c5f3ad4d99e3287c79f88f12ed88ee6ad67a370196e789272b29373ab82879",
+      "roles": [
+        "production_manuscript"
+      ],
+      "owners": [
+        "v14 production"
+      ]
+    },
+    {
+      "path": "supplement/supplementary-results/cross-species-comparisons.tex",
+      "archive_path": "project/supplement/supplementary-results/cross-species-comparisons.tex",
+      "bytes": 11914,
+      "sha256": "a6134187d3ac5c3dfa82cc4f54c47023d51dff93c9e3c4246ba3579b76086455",
+      "roles": [
+        "production_manuscript"
+      ],
+      "owners": [
+        "v14 production"
+      ]
+    },
+    {
+      "path": "supplement/supplementary-results/expression-states-pas-measurement-and-the-global-apa-direction.tex",
+      "archive_path": "project/supplement/supplementary-results/expression-states-pas-measurement-and-the-global-apa-direction.tex",
+      "bytes": 5435,
+      "sha256": "9a34477294fd3d66f8be0a6216b7c8decca4e5425bcead90358d64639d12c9c5",
+      "roles": [
+        "production_manuscript"
+      ],
+      "owners": [
+        "v14 production"
+      ]
+    },
+    {
+      "path": "supplement/supplementary-results/interval-inclusion-and-predicted-sites.tex",
+      "archive_path": "project/supplement/supplementary-results/interval-inclusion-and-predicted-sites.tex",
+      "bytes": 13272,
+      "sha256": "b3cb3c27032a00427cc14a6303035b0461fec55537cc50385866a46c4496beb2",
+      "roles": [
+        "production_manuscript"
+      ],
+      "owners": [
+        "v14 production"
+      ]
+    },
+    {
+      "path": "supplement/supplementary-results/main.tex",
+      "archive_path": "project/supplement/supplementary-results/main.tex",
+      "bytes": 56,
+      "sha256": "87d8535b3cbd51f189a1c450cc254ab75cca6e2a87f48adfc5ccb0667487670a",
+      "roles": [
+        "production_manuscript"
+      ],
+      "owners": [
+        "v14 production"
+      ]
+    },
+    {
+      "path": "supplement/supplementary-results/state-resolved-profiles.tex",
+      "archive_path": "project/supplement/supplementary-results/state-resolved-profiles.tex",
+      "bytes": 2520,
+      "sha256": "3a767663067566cee32316f5f127bbd98ebaff697acdc06890d1d400ffaa0796",
+      "roles": [
+        "production_manuscript"
+      ],
+      "owners": [
+        "v14 production"
+      ]
+    },
+    {
+      "path": "supplement/supplementary-results/within-species-recurrence.tex",
+      "archive_path": "project/supplement/supplementary-results/within-species-recurrence.tex",
+      "bytes": 8809,
+      "sha256": "ab2402e5638e523c1ae69d609a0450fa4fc5e8baaa82f2182a495616b75b8a5c",
+      "roles": [
+        "production_manuscript"
+      ],
+      "owners": [
+        "v14 production"
+      ]
+    },
+    {
+      "path": "supplement/supplementary-tables/main.tex",
+      "archive_path": "project/supplement/supplementary-tables/main.tex",
+      "bytes": 7619,
+      "sha256": "a8422c0cbe19d2ff264f65f8fcc1f2926fac37d191f53dde83ddc4ad1ddace10",
+      "roles": [
+        "revision_source_or_render_record",
+        "production_manuscript"
+      ],
+      "owners": [
+        "v14 production"
+      ]
+    },
+    {
+      "path": "table/README.md",
+      "archive_path": "project/table/README.md",
+      "roles": [
+        "current_source_archive_guide"
+      ],
+      "owners": [
+        "supplement caption revision"
+      ],
+      "bytes": 1590,
+      "sha256": "f1ba2a4962f970ecb2c8f056ae3a6e93460943851c5cefa08268fb32eb0c02d1"
+    },
+    {
+      "path": "table/Supplementary_Source_Code_v11b.manifest.tsv",
+      "archive_path": "project/table/Supplementary_Source_Code_v11b.manifest.tsv",
+      "bytes": 295880,
+      "sha256": "13d1cf7aa37000c0d439b833882827bf20c2070baba47abe154472cfa7248360",
+      "roles": [
+        "production_output_or_provenance"
+      ],
+      "owners": [
+        "v14 production"
+      ]
+    },
+    {
+      "path": "table/Supplementary_Source_Code_v11b.verification.json",
+      "archive_path": "project/table/Supplementary_Source_Code_v11b.verification.json",
+      "bytes": 1185,
+      "sha256": "3777d161e363fc73a874b9ebf8f709f6562b34b4097b22c74abb567a2d0917db",
+      "roles": [
+        "production_output_or_provenance"
+      ],
+      "owners": [
+        "v14 production"
+      ]
+    },
+    {
+      "path": "table/Supplementary_Tables_S1-S10.xlsx",
+      "archive_path": "project/table/Supplementary_Tables_S1-S10.xlsx",
+      "bytes": 26953472,
+      "sha256": "68265e99547bfd6710e4151510a177df62ca9a6c05589d2a95ec5146db1ac681",
+      "roles": [
+        "production_output_or_provenance"
+      ],
+      "owners": [
+        "v14 production"
+      ]
+    }
+  ],
+  "companion": {
+    "path": "table/Supplementary-Source-Data-20261009.zip",
+    "bytes": 648295481,
+    "sha256": "423233f3c5237e7e50f56f2436f033e3b931784cae738f1c28f308079b84f203",
+    "members": 597
+  },
+  "additional_companions": [
+    {
+      "path": "table/Supplementary_Source_Code_v11b.zip",
+      "bytes": 16685898,
+      "sha256": "8ea68a1fd5cbf8b7928d4a1cfda1129b1245dc755ea5922d2f284e500707fa91",
+      "members": 1137
+    },
+    {
+      "path": "table/Supplementary_Source_Code_S9.zip",
+      "bytes": 898294414,
+      "sha256": "23f6b161203899e03815227bfd8fba2f6ae25e07f059a64a8de1df0243944957",
+      "members": 167
+    }
+  ],
+  "coverage_counts": {
+    "main_figures": 4,
+    "supplementary_figures": 21,
+    "tables": 10,
+    "data_sheets": 57,
+    "total_sheets": 59,
+    "blocks": 200,
+    "new_table_source_links": 28,
+    "appended_S5d_block_sources": 3,
+    "required_input_sources": 0
+  },
+  "figure_provenance_limits": [
+    "Scientific analyses and model fitting were not rerun during packaging.",
+    "Raw reads, full training matrices and scientific runtime resources remain external.",
+    "Historical rendering receipts preserve the identities of their original runs."
+  ],
+  "archive_readme": "# Source data for the 11 October 2026 production revision (v11b)\n\nThis archive records the promoted v14 manuscript, four main figures, 21\nsupplementary figures and Tables S1-S10 (57 data sheets, 200 blocks).\nSOURCE-MANIFEST.tsv pins every file; restore project/ into the workspace.\nThe Sources worksheet records each block's input, filter and SHA-256 identity.\n\nThe unchanged 9 October source-data archive supplies retained historical inputs\nand is required. COMPANION.json binds that identity. The additional_companions\nin SOURCE-SELECTION.json bind Supplementary_Source_Code_v11b.zip and the original\nSupplementary_Source_Code_S9.zip. Supply these archives together for reuse.\n\nCandidate rendering receipts are retained as historical records. Production\nfile identities are given separately by Fig/figure-manifest.tsv. No scientific\nanalyses or historical figure rendering were rerun while packaging. Raw reads,\nfull training matrices and scientific runtime resources remain external.\n\nThis v11b snapshot supersedes v11a. Table S5d gains blocks S5d.6-S5d.8: the\n12-setting matching grid, the random-priority same-gene and cross-gene\nbackgrounds, and the detection power of the matched-window test. Their three\nsource tables are archived here and are unchanged from the 9 October archive.\nThe related-figure letters of Tables S2f and S3h follow the relettered Figure 2.\nSince v11a, the manuscript sources also carry the 11 October sentence-level\nrevisions, the revised main-figure captions and the updated archive names, and\nFigures 1-4 carry the 11 October in-place label, lettering and color edits\nrecorded in Fig/figure-manifest.tsv. S1/S2 subsequently gained native state column IDs, with all numerical\nvalues preserved. The other 19 supplementary figure assets are unchanged.\n\nThe final caption revision is recorded in\nnotes/2026-10-11-supplement-caption-revision/README.md. It defines state\ncodes, statistics and evidence tiers, and restores the sensitivity\npointer to Table S5d.6/S5d.7. The already verified 200-block workbook\nis unchanged by this revision. New S1/S2 rendering receipts and values\nare under that revision directory. Older candidate receipts retain\ntheir original identity; Fig/figure-manifest.tsv pins production assets.\nPackaging follows this rendering and does not rerun scientific analyses.\n\nFigures 1-4 were revised in place after the main-figure caption review\n(Figure 2 rows reordered to follow first citation, Figure 3 d/e swapped,\nFigure 4 recoloured, label fixes). Values are unchanged. Edit receipts and\nthe record are in notes/2026-10-11-caption-figure-fixes/, and\nFig/figure-manifest.tsv pins the production assets.\n\nLicense: the authors' code, configurations, processed source data and\ndocumentation in this archive are released under the MIT License (LICENSE).\nThird-party components keep their own terms (docs/third-party.md).\n\nThe reviewer-report revision of 11 October changed manuscript text only:\nclaim scope, the null-model definition (Supplementary Methods S1.8.5),\ncaptions and terminology. It is recorded in\nreviews/2026-10-11-reviewer-revision/REPORT.md.\nFigures, workbook and code archive are unchanged.\n\nA citation-source repair on 11-12 October kept miRBase release 22.1, as\npinned by the frozen input records, and relabeled the two GSE99922 MEF\nlibraries as control, following their GEO records. It is recorded in\nreviews/2026-10-11-full-review-current/recheck-citation-sources/REPORT.md.\n",
+  "input_archives": "provenance/source-data-dependencies.json",
+  "required_input_sources": []
+}

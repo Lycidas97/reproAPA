@@ -1,0 +1,52 @@
+{
+  "_about": "Example-gene slots of the main figures. mode=pin keeps the gene the current manuscript names (it must still be eligible in the new bundle, otherwise the receipt reports example_ineligible and nothing old is drawn); mode=rank takes rank 1 of the statistics-side eligible list. Switching a slot to rank can change the gene shown, its caption and the Results text.",
+  "dual_reference_mouse": {
+    "mode": "pin",
+    "gene_id": "ENSMUSG00000021493",
+    "gene_symbol": "Pdlim7",
+    "panels": [
+      "F3C",
+      "F3D"
+    ],
+    "rank_rule": "candidate_screen/example_selection role=dual_reference species=mouse rank 1 (3D); dual_reference_candidates by descending minimum_abs_effect (3C)"
+  },
+  "dual_reference_human": {
+    "mode": "pin",
+    "gene_id": "ENSG00000196923",
+    "gene_symbol": "PDLIM7",
+    "panels": [
+      "F3C"
+    ],
+    "rank_rule": "dual_reference_candidates (human) by descending minimum_abs_effect"
+  },
+  "homolog_example": {
+    "mode": "pin",
+    "gene_id": "ENSG00000196923",
+    "gene_symbol": "PDLIM7",
+    "mouse_gene_id": "ENSMUSG00000021493",
+    "panels": [
+      "F4E"
+    ],
+    "rank_rule": "follows dual_reference_mouse: the human ortholog pair with qualified P-S and P-M homologous sites"
+  },
+  "partial_retention_mouse": {
+    "mode": "pin",
+    "gene_id": "ENSMUSG00000020091",
+    "gene_symbol": "Eif4ebp2",
+    "factor": "GGCAGTG",
+    "contrast": "SP",
+    "panels": [
+      "F5E"
+    ],
+    "rank_rule": "candidate_screen/example_selection role=partial_retention species=mouse rank 1; first factor with a recurrent strict changed and a retained site",
+    "label": "GGCAGTG, miR-34/449 seed"
+  },
+  "low_shift": {
+    "mode": "rank",
+    "panels": [
+      "F5C",
+      "F5F"
+    ],
+    "rank_rule": "candidate_screen/example_selection role=low_shift_interval, restricted to the final low_shift_attrition stage (both |ΔDWUI| < .01); lowest rank"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "raw_cell_result": "/root/nfsdata/apadetect/analysis_projects/human_mouse_time_aware_umap_v1/results_raw_cell_species_integrated_v3_faiss2",
+  "mouse_all_flows": "/root/nfsdata/apadetect/analysis_projects/mouse_time_aware_integration_pilot_v1/results_full_single_cell_time_umap_v1/trajectory_display/all_state_temporal_flows.tsv.gz",
+  "mouse_coupling_root": "/root/nfsdata/apadetect/analysis_projects/mouse_time_aware_integration_pilot_v1/results_full_single_cell_temporal_ot_v1",
+  "output_subdirectory": "rooted_raw_cell_ot_v2",
+  "mouse_routes": ["gse103221_osk", "gse103221_cip", "wot_common_to_2i"],
+  "minimum_joint_mass": 0.005,
+  "minimum_target_fraction": 0.1,
+  "minimum_source_cells": 50,
+  "minimum_terminal_cells": 50,
+  "minimum_terminal_cell_fraction": 0.01,
+  "source_state_group": "shared_s"
+}

@@ -1,0 +1,18 @@
+{
+  "utc": "2026-10-08T16:24:43.077117+00:00",
+  "status": "complete",
+  "formal_positions": 26,
+  "finite_p": 0,
+  "accepted_contexts": 0,
+  "input_hashes_unchanged": 23,
+  "new_models_after_freeze": false,
+  "validation_failures_disclosed": true,
+  "manifest_sha256": "8fbeb05f85849f4459f7994f3f8a3423833496c2f30284ed996c74a1791bc810",
+  "report_sha256": "4a4371a8863af061e365995445da2dcd501d11f92d582128223ad2df01d1781c",
+  "final_execution_code_sha256": "d01e69833b9ad08dd392cb6dae08d9754cb3db5091d6c9c52b1fe1747337be5a",
+  "documentation_link_update": {
+    "absolute_local_links": 12,
+    "all_targets_exist": true,
+    "scientific_outputs_changed": false
+  }
+}

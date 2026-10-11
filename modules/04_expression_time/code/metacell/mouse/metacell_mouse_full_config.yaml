@@ -1,0 +1,11 @@
+seed: 20260905
+python: /root/nfsdata/apadetect/analysis_projects/mouse_time_aware_integration_pilot_v1/.seacells-main-venv/bin/python
+conda_library_path: /root/miniconda3/envs/saturn-alignment/lib
+project_root: /root/nfsdata/apadetect/analysis_projects/mouse_time_aware_integration_pilot_v1
+library_manifest: /root/nfsdata/apadetect/analysis_projects/mouse_time_aware_integration_pilot_v1/results_full_mouse_projection_v1/full_library_manifest.tsv
+projection_root: /root/nfsdata/apadetect/analysis_projects/mouse_time_aware_integration_pilot_v1/results_full_mouse_projection_v1
+cell_annotation: /root/nfsdata/apadetect/analysis_projects/mouse_time_aware_integration_pilot_v1/results_full_state_annotation_v1/cell_state_annotation.tsv.gz
+output_root: results_mouse_metacell_full_v1
+target_cells_per_metacell: 50
+reused_metacells:
+  GSM3195672: results_metacell_pilot_gsm3195672_v1/target_50

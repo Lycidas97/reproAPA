@@ -1,0 +1,6 @@
+name: reproapa-plan-a
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12.12
+  - pip

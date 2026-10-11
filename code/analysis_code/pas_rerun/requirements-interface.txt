@@ -1,0 +1,5 @@
+# Interface/aggregation test environment only; NOT the full scientific runtime.
+# Tested with CPython 3.14. The historical analyses need separate pinned runtimes,
+# including pandas 2.2.3 for reproducing the existing exact-functional strata.
+numpy==2.5.3
+scipy==1.18.1

@@ -1,0 +1,81 @@
+{
+  "status": "PASS",
+  "all_authorized_scan_work_complete": true,
+  "input_sha256": {
+    "notes/2026-10-10-ortholog-threshold-scan/protocol.json": "4d808df30920b6d06c8bd1e42736745f0e48cb33424d6b5db6ae183b0d6ccb5f",
+    "notes/2026-10-10-recurrence-utr-ortholog/protocol.json": "5247a3417a0758b6d5f242e0d7f3a0ad8ec532d7c48091637ed8670bbd6eadea",
+    "notes/2026-10-10-recurrence-utr-ortholog/analyze.py": "ebf177baaea0bd2a00d0fab54afb7e7c42e2153cd5fb67eef28bf6e6d1a29af3",
+    "notes/2026-10-10-recurrence-utr-ortholog/ortholog_3x3.tsv": "06a4d5ece2b1d63714dbb43fd61761bc692e3e1ca8abb524910e7aac604a5097",
+    "notes/2026-10-10-recurrence-utr-ortholog/measured_ortholog_members.tsv.gz": "a010bb8cb05e9fa126d568b9b3a656e8eb3ccae8784fdec8b4aa1b29a895a7c0",
+    "notes/2026-10-10-recurrence-utr-ortholog/ortholog_assay_features.tsv.gz": "1a96a60ecdf12ca98698f8f0b7df2242f70f92ae77a16c91daccc327d7dd8907",
+    "notes/2026-10-10-recurrence-utr-ortholog/null_draws.npz": "d32371a148c485a901b68d52f25d805ab42a1dff082e8f1c7eff87fe761b3ce9",
+    "notes/2026-10-06-dual-main-plot-data/polyapipe/main/tables/recurrence_controls/recurrence_frozen_covariates.tsv.gz": "0564c0fc44fd284548fba57160ec035f3c64c7bd0d7f30df9a1455e128453aab",
+    "notes/2026-10-06-dual-main-plot-data/polyapipe/main/tables/cross_overlap/ortholog_matched_features.tsv.gz": "7a8f1da1ad20f67dd956b91d954ecd68b60384a3181d7db0b1a5157e04258629",
+    "notes/2026-10-10-directional-recurrence/analyze.py": "bf054c1760d32fec1f606d11a281e31f67b532ca8cb8b370512c8bfe792d1580",
+    "notes/2026-10-02-null-model-controls/recurrence.py": "d859ec5a95b74bb01275d910dcd242af52b66882bcd0b892af885ded3054418b",
+    "notes/2026-10-02-null-model-controls/common.py": "b6d6902d47b6b22a287a78fca11e5f008d3029a0aeb452ebe4ee517dbc1f1e52",
+    "analysis_code/pas_rerun/downstream_runtime.py": "08ad37a4501e9db33da613869376ce825fe4776191f8922ecccfd9bea7f8c0ab",
+    "notes/2026-10-10-threshold-enrichment/PROTOCOL.zh.md": "31b7d6a25b9e5f8b17cbdf61d35e7fcb68ba6a368566d5b888bb911acf7a3f62"
+  },
+  "output_sha256": {
+    "REPORT.zh.md": "008e4f50f11086603804c345ba431f6532bb399b176c1bd434ba708e9467b32b",
+    "Threshold-scan-2x.png": "7d145ea6ab68c41b2bcfc14e58c726771d106bb27400b580042b8e0e66f7b2f3",
+    "Threshold-scan-bbox.html": "c0b071c874d7a773d0a1196e6e8340cf22a33b56f90dfd4bf76254f55f615fcc",
+    "Threshold-scan-panel-boxes.png": "8325ef1c3a1ded0476e199428de41d04b8f0e56e23c4a980def5b3dea6c8a67a",
+    "Threshold-scan-pdf-render.png": "22d7fb5cf05460d57cf68626e5bb605d2211c65285705de40d1772f1f36016c4",
+    "Threshold-scan.pdf": "888486a2383b7b63580eecd268e7a8a5d6f3dcd8256c5ce4b5319f3ec924af59",
+    "Threshold-scan.png": "9a7db0681691a08f83f25be42da1782a446c0acd38ae78dbce2d330e483d3f02",
+    "analysis_manifest.json": "8dc73d4fae7a3aefe80d98d6c60d5a68267534fd7b800b4c19ad771c59b85532",
+    "analysis_validation.json": "cad6690ba90ceac4aecf939a1c889cc4d9073f649559d37d91dfb2513d2927a4",
+    "analyze.py": "500c462e0fa09bd49612050e6f8d522d41f3d38d0be36b8cca35fd633ad75825",
+    "anchor_10000_replay.tsv": "7cb7f5c4cca26d956faad556cb097d75f42177c141964424bf29098b56498403",
+    "directional_tests.tsv": "c2c87e934bd8ea2f2289bf829e92ec46a64ce0749b3b26fc588fd50100aa78cc",
+    "figure-brief.json": "19deba8fdd315587d0c2a7c174680df4cec21d726269cefe3a3354b4a1f635c0",
+    "figure-verification.json": "cd52ed0870b0a70e872b7231e85d96894d0eb24b24dfa7ad09036ca8ec2923c3",
+    "figure_QA.json": "7213f3e1de77a73e8ea8b87b21d4ff9cea92e6e4391c7a3b3aa34c618e0692de",
+    "fixed_ortholog_background.tsv": "86a96df53db15e0a5269919a21a0d9923da9f0b97bf48d757def0c6001c82b68",
+    "initial_argument_failure.log": "fdfb7de0204c9b05786347b665cc4936236d7bb9c2b8d02c1a5b94d0f0e28d11",
+    "measured_ortholog_members.tsv.gz": "f56b297fbe52fa5a41c516042313027ccb260e81b5409d84f6669c208fdc10a2",
+    "mobility_summary.tsv": "9fe1ae0de200de0ebedecfaa1d23f194e489f9d3c0b684fef2e15f978b88e77e",
+    "nested_membership_validation.tsv": "701bb91fad4f81e20273fbb1427ce4bcce81f31f4c172a001fd6c4acc1c814f6",
+    "null_draws.npz": "0be4c050f044b195709f60a37563ac15776bfd97aef086598149026fc4972a01",
+    "ortholog_3x3_threshold_scan.tsv": "dfde8d23ddc1afe69340705defbb5fafbc84216c8d7847ff0c410539f20d80b0",
+    "ortholog_assay_features.tsv.gz": "61c168d769412562c242796fa8a462c6e49ffdfc2c9950353a511438b8d6b630",
+    "ortholog_stratum_diagnostics.tsv.gz": "d7422e4b4fb166c803cd9fdb74b2b9295807af1411dab13fe3110d0d0ca91cf8",
+    "pdffonts.log": "8b48c81476be656f2871d314f47a7cbdc38a7c162021bf4623de05a78394fb73",
+    "protocol.json": "4d808df30920b6d06c8bd1e42736745f0e48cb33424d6b5db6ae183b0d6ccb5f",
+    "render.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "render.py": "906453b5eb94cd8dd93f7acd344f961ad98333f912a215c3f3ec88a4547c7e23",
+    "run.log": "0248e1b20d640b23ea9a82da8f593966a6252d050ebfb5352cac046913ba8fff",
+    "study_events.tsv.gz": "a5fb2abbf9a0b18ffae9bda1d67581c8599ece4f45ecaf198e8b457664732048",
+    "test_analysis.py": "8068e307610d01d8eddf5730ac864e0db3bcd6d82bb4a19f767f39076ab7c7b3",
+    "tests.log": "dac3c1a184eef1e7b9dc5a3290685f0deae920a8dbea75cb6781cb693462a0f2"
+  },
+  "analysis_manifest_sha256": "8dc73d4fae7a3aefe80d98d6c60d5a68267534fd7b800b4c19ad771c59b85532",
+  "independent_QA_sha256": {
+    "notes/2026-10-10-threshold-enrichment-review/scan_validation.json": "fe0af9c4dfcc59383b54ed2e8218d00f3e6b62d3cda6254349fe8cebb36463d5",
+    "notes/2026-10-10-threshold-enrichment-review/scan_precision_validation.json": "62aa31228135a0ce083f1c1a60ba1e7e77a56bcae5502096bde0c49f66b8a34e",
+    "notes/2026-10-10-threshold-enrichment-review/prepare_validation.json": "9536aeeef3bf790007ee35c61f1c985cf814694b6ae8791846fcb73f42ddf776",
+    "notes/2026-10-10-threshold-enrichment-review/verify.py": "2428fe7a8e759ba19a520a71952e614341f980a6570c911d47d885c07821ca00"
+  },
+  "report_source_sha256": {
+    "notes/2026-10-07-cross-overlap-null-a1/results/polyapipe/original-nulls/overlap_threshold_layer_sensitivity.tsv": "5c71b9eab3e4d572f4b578f97e897a37eac9b06847520232342969e791332aa6"
+  },
+  "intent_tests": {
+    "run": 11,
+    "passed": 11,
+    "skipped": 0
+  },
+  "independent_review": {
+    "raw_labels_features_expectations": "PASS",
+    "independent_first_10000_replay_each_context": "PASS",
+    "full_100000_arrays_p_q8_q72_q144": "PASS",
+    "324_row_seed_quantile_Wilson_precision": "PASS",
+    "report": "PASS"
+  },
+  "figure_QA": "PASS",
+  "qpdf_run": false,
+  "manuscript_edited": false,
+  "statistics_rerun_after_QA": false,
+  "remaining_required_work": []
+}

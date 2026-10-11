@@ -1,0 +1,36 @@
+seed: 20260902
+python: /root/nfsdata/apadetect/analysis_projects/mouse_time_aware_integration_pilot_v1/.g2g-venv/bin/python
+conda_library_path: /root/miniconda3/envs/saturn-alignment/lib
+data_root: /root/nfsdata/apadetect/data/reprogramming_differentiation_apa/analyses/raw_realignment_apa_2026-06-07
+wot_scope: /root/nfsdata/apadetect/analysis_projects/reprogramming_qc_v3_2_clustering_release_v1/results_qc_v3_2_studywide_v1/wot/scopes/studywide
+wot_route_membership: /root/nfsdata/multica/worktrees/apadetect/DOC-54-wot-readiness/analyses/FGA01-wot-factorized-gex-annotation-v1/frozen_local_state_membership.tsv.gz
+route_registry: /root/nfsdata/apadetect/analysis_projects/reprogramming_route_specific_clustering_v1/results_gse103221_osk_pilot/cell_registry/clustering_cell_registry.tsv.gz
+reference_h5ad: results_cells500_source_complete_v2/mouse_scvi_pilot.h5ad
+reference_model: results_cells500_source_complete_v2/scvi_model
+reference_pseudotime: results_cells500_source_complete_route_pseudotime_v2/route_pseudotime.tsv.gz
+route_state_root: /root/nfsdata/apadetect/analysis_projects/reprogramming_route_state_postanalysis_v1/results
+contract_bundle: /root/nfsdata/multica/worktrees/apadetect/ANN05-gse103221-r8/projects/reproapa_six_study_annotation_workflow/contract/accepted_contract_v2.1.0.tar.gz
+contract_sha256: 78e6697f90ffec39aeb7c76994c6c599906b44aee45c1de949074fbb6e1edf2a
+output_root: results_full_mouse_projection_v1
+expected_cells: 336087
+expected_libraries: 102
+expected_reference_cells: 31500
+pilot_library_key: GSM3195649
+latent_neighbors: 30
+aucell_n_up: 1685
+aucell_min_n: 5
+programs:
+  - fibroblast_ecm_retention
+  - met_epithelialization
+  - pluripotency_acquisition
+  - mouse_ips_naive
+  - mouse_ips_naive_target_bundle
+  - cell_cycle_s
+  - cell_cycle_g2m
+  - ifn_response
+  - stress_ap1
+  - senescence_sasp
+  - apoptosis
+  - neural_off_target
+  - stromal_off_target
+  - trophoblast_off_target

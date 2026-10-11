@@ -1,0 +1,4338 @@
+{
+  "schema_version": 1,
+  "preserve_expression_framework": true,
+  "pas_release_id": null,
+  "caller": null,
+  "quantification": {
+    "version": null,
+    "command": null,
+    "deduplication_unit": null
+  },
+  "cut_coordinate_system": "0-based-interbase",
+  "studies": [
+    {
+      "study_id": "GSE103221",
+      "assembly": "GRCm39",
+      "features": {
+        "path": null,
+        "sha256": null
+      }
+    },
+    {
+      "study_id": "GSE115943",
+      "assembly": "GRCm39",
+      "features": {
+        "path": null,
+        "sha256": null
+      }
+    },
+    {
+      "study_id": "GSE118258",
+      "assembly": "GRCh38",
+      "features": {
+        "path": null,
+        "sha256": null
+      }
+    },
+    {
+      "study_id": "GSE150311",
+      "assembly": "GRCh38",
+      "features": {
+        "path": null,
+        "sha256": null
+      }
+    },
+    {
+      "study_id": "GSE171127",
+      "assembly": "GRCm39",
+      "features": {
+        "path": null,
+        "sha256": null
+      }
+    },
+    {
+      "study_id": "GSE178325",
+      "assembly": "GRCh38",
+      "features": {
+        "path": null,
+        "sha256": null
+      }
+    },
+    {
+      "study_id": "GSE221739",
+      "assembly": "GRCh38",
+      "features": {
+        "path": null,
+        "sha256": null
+      }
+    }
+  ],
+  "libraries": [
+    {
+      "library_id": "gse118258_human_pluripotency_reprogramming_GSM3323825",
+      "study_id": "GSE118258",
+      "library_key": "GSE118258::gse118258_D0",
+      "orientation": "pas_by_cell",
+      "counts": {
+        "path": null,
+        "sha256": null
+      },
+      "cells": {
+        "path": null,
+        "sha256": null
+      },
+      "feature_status": {
+        "path": null,
+        "sha256": null
+      },
+      "membership": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-09_human-time-aware-integration/data/results_metacell_pas_v2/libraries/GSE118258::gse118258_D0/cell_to_pas_and_metacell.tsv.gz",
+        "sha256": "ed264baf68edb1bcfaecfd262ee24cc5541e4e16a712038a728b08228bc65bc8"
+      },
+      "metacells": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-09_human-time-aware-integration/data/results_metacell_pas_v2/libraries/GSE118258::gse118258_D0/metacell_metadata.tsv.gz",
+        "sha256": "ce38ca7a29cf6ddb929a5e8c4e162cc6979b6897c31b8d90ca34414756b8e50e"
+      }
+    },
+    {
+      "library_id": "gse118258_human_pluripotency_reprogramming_GSM3323826",
+      "study_id": "GSE118258",
+      "library_key": "GSE118258::gse118258_D2",
+      "orientation": "pas_by_cell",
+      "counts": {
+        "path": null,
+        "sha256": null
+      },
+      "cells": {
+        "path": null,
+        "sha256": null
+      },
+      "feature_status": {
+        "path": null,
+        "sha256": null
+      },
+      "membership": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-09_human-time-aware-integration/data/results_metacell_pas_v2/libraries/GSE118258::gse118258_D2/cell_to_pas_and_metacell.tsv.gz",
+        "sha256": "d4a2cf1fb2c8970cfe6d70fdde6145e953d42ffb7ee578dd5cf28004e7c2424e"
+      },
+      "metacells": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-09_human-time-aware-integration/data/results_metacell_pas_v2/libraries/GSE118258::gse118258_D2/metacell_metadata.tsv.gz",
+        "sha256": "e39a8b82d3fc04d3bb4eef6b37b11f0a31f45eb2c0023a25acc02aef3750ae2c"
+      }
+    },
+    {
+      "library_id": "gse118258_human_pluripotency_reprogramming_GSM3323827",
+      "study_id": "GSE118258",
+      "library_key": "GSE118258::gse118258_D8",
+      "orientation": "pas_by_cell",
+      "counts": {
+        "path": null,
+        "sha256": null
+      },
+      "cells": {
+        "path": null,
+        "sha256": null
+      },
+      "feature_status": {
+        "path": null,
+        "sha256": null
+      },
+      "membership": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-09_human-time-aware-integration/data/results_metacell_pas_v2/libraries/GSE118258::gse118258_D8/cell_to_pas_and_metacell.tsv.gz",
+        "sha256": "b20dea9d6bb2d7410568e116962d7acf6c21a3832c10afa0fb23c1b207b40734"
+      },
+      "metacells": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-09_human-time-aware-integration/data/results_metacell_pas_v2/libraries/GSE118258::gse118258_D8/metacell_metadata.tsv.gz",
+        "sha256": "7a0d2b7eaec7805ae5b33d7587059888071b9371374961eea236ec8acbfe48f9"
+      }
+    },
+    {
+      "library_id": "gse118258_human_pluripotency_reprogramming_GSM3323828",
+      "study_id": "GSE118258",
+      "library_key": "GSE118258::gse118258_D12",
+      "orientation": "pas_by_cell",
+      "counts": {
+        "path": null,
+        "sha256": null
+      },
+      "cells": {
+        "path": null,
+        "sha256": null
+      },
+      "feature_status": {
+        "path": null,
+        "sha256": null
+      },
+      "membership": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-09_human-time-aware-integration/data/results_metacell_pas_v2/libraries/GSE118258::gse118258_D12/cell_to_pas_and_metacell.tsv.gz",
+        "sha256": "702454c81ff57a0f5c0157434c7712b6f8d9a9edfb484036a2ad74d6173c96e1"
+      },
+      "metacells": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-09_human-time-aware-integration/data/results_metacell_pas_v2/libraries/GSE118258::gse118258_D12/metacell_metadata.tsv.gz",
+        "sha256": "a4b4fb7fca58ee14cacd51d6b91ce722e1090e8bd2e5c60adea5200874867a78"
+      }
+    },
+    {
+      "library_id": "gse118258_human_pluripotency_reprogramming_GSM3323829",
+      "study_id": "GSE118258",
+      "library_key": "GSE118258::gse118258_D16_negative",
+      "orientation": "pas_by_cell",
+      "counts": {
+        "path": null,
+        "sha256": null
+      },
+      "cells": {
+        "path": null,
+        "sha256": null
+      },
+      "feature_status": {
+        "path": null,
+        "sha256": null
+      },
+      "membership": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-09_human-time-aware-integration/data/results_metacell_pas_v2/libraries/GSE118258::gse118258_D16_negative/cell_to_pas_and_metacell.tsv.gz",
+        "sha256": "de4265feb9aa3487189e84bb3f9ba0c827e191497012b0dd4c578c604b8aa195"
+      },
+      "metacells": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-09_human-time-aware-integration/data/results_metacell_pas_v2/libraries/GSE118258::gse118258_D16_negative/metacell_metadata.tsv.gz",
+        "sha256": "415d036c797b5e37d932a5f40b3371393fbd896ce7b28c3e5eedd8190869db40"
+      }
+    },
+    {
+      "library_id": "gse118258_human_pluripotency_reprogramming_GSM3323830",
+      "study_id": "GSE118258",
+      "library_key": "GSE118258::gse118258_D16_positive",
+      "orientation": "pas_by_cell",
+      "counts": {
+        "path": null,
+        "sha256": null
+      },
+      "cells": {
+        "path": null,
+        "sha256": null
+      },
+      "feature_status": {
+        "path": null,
+        "sha256": null
+      },
+      "membership": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-09_human-time-aware-integration/data/results_metacell_pas_v2/libraries/GSE118258::gse118258_D16_positive/cell_to_pas_and_metacell.tsv.gz",
+        "sha256": "c2c54dc5be3d79bde314d0b1d05876d6892a9456275311c7ae092a9ee6a9dab3"
+      },
+      "metacells": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-09_human-time-aware-integration/data/results_metacell_pas_v2/libraries/GSE118258::gse118258_D16_positive/metacell_metadata.tsv.gz",
+        "sha256": "c165a0fa593a79dcffa4114d4911e876d15ea9d07eb9b002ec05e13871dd417d"
+      }
+    },
+    {
+      "library_id": "gse150311_human_pluripotency_reprogramming_GSM4546545",
+      "study_id": "GSE150311",
+      "library_key": "GSE150311::gse150311_human_pluripotency_reprogramming_GSM4546545",
+      "orientation": "pas_by_cell",
+      "counts": {
+        "path": null,
+        "sha256": null
+      },
+      "cells": {
+        "path": null,
+        "sha256": null
+      },
+      "feature_status": {
+        "path": null,
+        "sha256": null
+      },
+      "membership": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-09_human-time-aware-integration/data/results_metacell_pas_v2/libraries/GSE150311::gse150311_human_pluripotency_reprogramming_GSM4546545/cell_to_pas_and_metacell.tsv.gz",
+        "sha256": "04fbc9498f876673fc1fc2f717ea2e1513a44ca4d4728ba4f8fb38d626c195d2"
+      },
+      "metacells": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-09_human-time-aware-integration/data/results_metacell_pas_v2/libraries/GSE150311::gse150311_human_pluripotency_reprogramming_GSM4546545/metacell_metadata.tsv.gz",
+        "sha256": "f34cfe13b90763613dbc06b30edc67123a8c3cc6f5e07596906988f7ba850e6f"
+      }
+    },
+    {
+      "library_id": "gse150311_human_pluripotency_reprogramming_GSM4546546",
+      "study_id": "GSE150311",
+      "library_key": "GSE150311::gse150311_human_pluripotency_reprogramming_GSM4546546",
+      "orientation": "pas_by_cell",
+      "counts": {
+        "path": null,
+        "sha256": null
+      },
+      "cells": {
+        "path": null,
+        "sha256": null
+      },
+      "feature_status": {
+        "path": null,
+        "sha256": null
+      },
+      "membership": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-09_human-time-aware-integration/data/results_metacell_pas_v2/libraries/GSE150311::gse150311_human_pluripotency_reprogramming_GSM4546546/cell_to_pas_and_metacell.tsv.gz",
+        "sha256": "57b5c8436a2d90414a93e97e5ec7c895edd0c98ff90418eeeaf4016af101a2c1"
+      },
+      "metacells": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-09_human-time-aware-integration/data/results_metacell_pas_v2/libraries/GSE150311::gse150311_human_pluripotency_reprogramming_GSM4546546/metacell_metadata.tsv.gz",
+        "sha256": "73d6a79464af7e4b2d3a7078b20a7aafdecab34815401c37b18ba8892bb20c01"
+      }
+    },
+    {
+      "library_id": "gse150311_human_pluripotency_reprogramming_GSM4546547",
+      "study_id": "GSE150311",
+      "library_key": "GSE150311::gse150311_human_pluripotency_reprogramming_GSM4546547",
+      "orientation": "pas_by_cell",
+      "counts": {
+        "path": null,
+        "sha256": null
+      },
+      "cells": {
+        "path": null,
+        "sha256": null
+      },
+      "feature_status": {
+        "path": null,
+        "sha256": null
+      },
+      "membership": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-09_human-time-aware-integration/data/results_metacell_pas_v2/libraries/GSE150311::gse150311_human_pluripotency_reprogramming_GSM4546547/cell_to_pas_and_metacell.tsv.gz",
+        "sha256": "f7ee2f428a559973891f5eafd1c3f64aa13a7f32064a4c0dba42f41f47d299d8"
+      },
+      "metacells": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-09_human-time-aware-integration/data/results_metacell_pas_v2/libraries/GSE150311::gse150311_human_pluripotency_reprogramming_GSM4546547/metacell_metadata.tsv.gz",
+        "sha256": "7c1cc5b4e67fcf6acf4b7d0185389aa2862c101dd8d46f6800c6f4f642b41931"
+      }
+    },
+    {
+      "library_id": "gse150311_human_pluripotency_reprogramming_GSM4546548",
+      "study_id": "GSE150311",
+      "library_key": "GSE150311::gse150311_human_pluripotency_reprogramming_GSM4546548",
+      "orientation": "pas_by_cell",
+      "counts": {
+        "path": null,
+        "sha256": null
+      },
+      "cells": {
+        "path": null,
+        "sha256": null
+      },
+      "feature_status": {
+        "path": null,
+        "sha256": null
+      },
+      "membership": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-09_human-time-aware-integration/data/results_metacell_pas_v2/libraries/GSE150311::gse150311_human_pluripotency_reprogramming_GSM4546548/cell_to_pas_and_metacell.tsv.gz",
+        "sha256": "fa77bb9c9f371338bde832ef3d42ef985f1bd55d6ffc8c7c40c5004822d512a0"
+      },
+      "metacells": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-09_human-time-aware-integration/data/results_metacell_pas_v2/libraries/GSE150311::gse150311_human_pluripotency_reprogramming_GSM4546548/metacell_metadata.tsv.gz",
+        "sha256": "3156d5b761879b39669bb2f5a3cce52ecec8867377ebb14081a231b1bef95d50"
+      }
+    },
+    {
+      "library_id": "gse178325_human_chemical_pluripotency_reprogramming_GSM5387808",
+      "study_id": "GSE178325",
+      "library_key": "GSE178325::gse178325_human_chemical_pluripotency_reprogramming_GSM5387808",
+      "orientation": "pas_by_cell",
+      "counts": {
+        "path": null,
+        "sha256": null
+      },
+      "cells": {
+        "path": null,
+        "sha256": null
+      },
+      "feature_status": {
+        "path": null,
+        "sha256": null
+      },
+      "membership": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-09_human-time-aware-integration/data/results_metacell_pas_v2/libraries/GSE178325::gse178325_human_chemical_pluripotency_reprogramming_GSM5387808/cell_to_pas_and_metacell.tsv.gz",
+        "sha256": "7ae342751230f68690fe8361b45d1b76ef02ed9cea56fb4c09e5b7257d590d23"
+      },
+      "metacells": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-09_human-time-aware-integration/data/results_metacell_pas_v2/libraries/GSE178325::gse178325_human_chemical_pluripotency_reprogramming_GSM5387808/metacell_metadata.tsv.gz",
+        "sha256": "f0b0d8ff7b402dd5002d119edd8c10e157dacc5c1db14914c2f0ed31933c3674"
+      }
+    },
+    {
+      "library_id": "gse178325_human_chemical_pluripotency_reprogramming_GSM5387809",
+      "study_id": "GSE178325",
+      "library_key": "GSE178325::gse178325_human_chemical_pluripotency_reprogramming_GSM5387809",
+      "orientation": "pas_by_cell",
+      "counts": {
+        "path": null,
+        "sha256": null
+      },
+      "cells": {
+        "path": null,
+        "sha256": null
+      },
+      "feature_status": {
+        "path": null,
+        "sha256": null
+      },
+      "membership": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-09_human-time-aware-integration/data/results_metacell_pas_v2/libraries/GSE178325::gse178325_human_chemical_pluripotency_reprogramming_GSM5387809/cell_to_pas_and_metacell.tsv.gz",
+        "sha256": "901615bb185b90e85bd2224335a1d03cd93863a49c3c0c8128b32867fdc44e62"
+      },
+      "metacells": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-09_human-time-aware-integration/data/results_metacell_pas_v2/libraries/GSE178325::gse178325_human_chemical_pluripotency_reprogramming_GSM5387809/metacell_metadata.tsv.gz",
+        "sha256": "2ac77e37e00d4f5acd05ed46fed35d64b3c0592085a23a67a527160a104973e8"
+      }
+    },
+    {
+      "library_id": "gse178325_human_chemical_pluripotency_reprogramming_GSM5387810",
+      "study_id": "GSE178325",
+      "library_key": "GSE178325::gse178325_human_chemical_pluripotency_reprogramming_GSM5387810",
+      "orientation": "pas_by_cell",
+      "counts": {
+        "path": null,
+        "sha256": null
+      },
+      "cells": {
+        "path": null,
+        "sha256": null
+      },
+      "feature_status": {
+        "path": null,
+        "sha256": null
+      },
+      "membership": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-09_human-time-aware-integration/data/results_metacell_pas_v2/libraries/GSE178325::gse178325_human_chemical_pluripotency_reprogramming_GSM5387810/cell_to_pas_and_metacell.tsv.gz",
+        "sha256": "4ccb9a184b09ff01f49d91dbf7453db047b272d4277e0df5f7f79876983f6c77"
+      },
+      "metacells": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-09_human-time-aware-integration/data/results_metacell_pas_v2/libraries/GSE178325::gse178325_human_chemical_pluripotency_reprogramming_GSM5387810/metacell_metadata.tsv.gz",
+        "sha256": "db3dc075a15647df846fb4a6895b0481dc0bf9c05d977b9476ee18c956b31227"
+      }
+    },
+    {
+      "library_id": "gse178325_human_chemical_pluripotency_reprogramming_GSM5387811",
+      "study_id": "GSE178325",
+      "library_key": "GSE178325::gse178325_human_chemical_pluripotency_reprogramming_GSM5387811",
+      "orientation": "pas_by_cell",
+      "counts": {
+        "path": null,
+        "sha256": null
+      },
+      "cells": {
+        "path": null,
+        "sha256": null
+      },
+      "feature_status": {
+        "path": null,
+        "sha256": null
+      },
+      "membership": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-09_human-time-aware-integration/data/results_metacell_pas_v2/libraries/GSE178325::gse178325_human_chemical_pluripotency_reprogramming_GSM5387811/cell_to_pas_and_metacell.tsv.gz",
+        "sha256": "bdd312b36138c90965f0425d1f2220bacb82764f79ab84b41aed2a2ef93441e1"
+      },
+      "metacells": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-09_human-time-aware-integration/data/results_metacell_pas_v2/libraries/GSE178325::gse178325_human_chemical_pluripotency_reprogramming_GSM5387811/metacell_metadata.tsv.gz",
+        "sha256": "9998feaee280d6730b4f17e74cb011a55de90266518fb8dc984efce32bf76059"
+      }
+    },
+    {
+      "library_id": "gse178325_human_chemical_pluripotency_reprogramming_GSM5387812",
+      "study_id": "GSE178325",
+      "library_key": "GSE178325::gse178325_human_chemical_pluripotency_reprogramming_GSM5387812",
+      "orientation": "pas_by_cell",
+      "counts": {
+        "path": null,
+        "sha256": null
+      },
+      "cells": {
+        "path": null,
+        "sha256": null
+      },
+      "feature_status": {
+        "path": null,
+        "sha256": null
+      },
+      "membership": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-09_human-time-aware-integration/data/results_metacell_pas_v2/libraries/GSE178325::gse178325_human_chemical_pluripotency_reprogramming_GSM5387812/cell_to_pas_and_metacell.tsv.gz",
+        "sha256": "b86a0de0c090481f8ce02d8a25062bb45c51759db3c458d40e13eb56b2af2da7"
+      },
+      "metacells": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-09_human-time-aware-integration/data/results_metacell_pas_v2/libraries/GSE178325::gse178325_human_chemical_pluripotency_reprogramming_GSM5387812/metacell_metadata.tsv.gz",
+        "sha256": "6726c0d9f5652f4e9b1c4ac7a1650349f6e5eedc3c15a5fb5beaa42516b096e6"
+      }
+    },
+    {
+      "library_id": "gse178325_human_chemical_pluripotency_reprogramming_GSM5387813",
+      "study_id": "GSE178325",
+      "library_key": "GSE178325::gse178325_human_chemical_pluripotency_reprogramming_GSM5387813",
+      "orientation": "pas_by_cell",
+      "counts": {
+        "path": null,
+        "sha256": null
+      },
+      "cells": {
+        "path": null,
+        "sha256": null
+      },
+      "feature_status": {
+        "path": null,
+        "sha256": null
+      },
+      "membership": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-09_human-time-aware-integration/data/results_metacell_pas_v2/libraries/GSE178325::gse178325_human_chemical_pluripotency_reprogramming_GSM5387813/cell_to_pas_and_metacell.tsv.gz",
+        "sha256": "28f8f9a8792c3f19c092691297b7b1d9e36046bc6f2dbd50837b50bab172ea24"
+      },
+      "metacells": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-09_human-time-aware-integration/data/results_metacell_pas_v2/libraries/GSE178325::gse178325_human_chemical_pluripotency_reprogramming_GSM5387813/metacell_metadata.tsv.gz",
+        "sha256": "03b873feb7cc128aacaf90c1fe768781cc67745a23405be5690d219d5b17cd12"
+      }
+    },
+    {
+      "library_id": "gse178325_human_chemical_pluripotency_reprogramming_GSM5387814",
+      "study_id": "GSE178325",
+      "library_key": "GSE178325::gse178325_human_chemical_pluripotency_reprogramming_GSM5387814",
+      "orientation": "pas_by_cell",
+      "counts": {
+        "path": null,
+        "sha256": null
+      },
+      "cells": {
+        "path": null,
+        "sha256": null
+      },
+      "feature_status": {
+        "path": null,
+        "sha256": null
+      },
+      "membership": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-09_human-time-aware-integration/data/results_metacell_pas_v2/libraries/GSE178325::gse178325_human_chemical_pluripotency_reprogramming_GSM5387814/cell_to_pas_and_metacell.tsv.gz",
+        "sha256": "d3ef98f414e1fe7d93850720ec66a301b644bf570659ecd4f7610840b4012407"
+      },
+      "metacells": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-09_human-time-aware-integration/data/results_metacell_pas_v2/libraries/GSE178325::gse178325_human_chemical_pluripotency_reprogramming_GSM5387814/metacell_metadata.tsv.gz",
+        "sha256": "3961546fac562bf31200bdbbdc4c1ea1cc6887cf3391f6c4e0eb6f5b16d81769"
+      }
+    },
+    {
+      "library_id": "gse178325_human_chemical_pluripotency_reprogramming_GSM5387815",
+      "study_id": "GSE178325",
+      "library_key": "GSE178325::gse178325_human_chemical_pluripotency_reprogramming_GSM5387815",
+      "orientation": "pas_by_cell",
+      "counts": {
+        "path": null,
+        "sha256": null
+      },
+      "cells": {
+        "path": null,
+        "sha256": null
+      },
+      "feature_status": {
+        "path": null,
+        "sha256": null
+      },
+      "membership": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-09_human-time-aware-integration/data/results_metacell_pas_v2/libraries/GSE178325::gse178325_human_chemical_pluripotency_reprogramming_GSM5387815/cell_to_pas_and_metacell.tsv.gz",
+        "sha256": "b9eae015fa1ba8bf3e0db5506413bb30ecb1ce2a4c239a6b7e6bb6c697569955"
+      },
+      "metacells": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-09_human-time-aware-integration/data/results_metacell_pas_v2/libraries/GSE178325::gse178325_human_chemical_pluripotency_reprogramming_GSM5387815/metacell_metadata.tsv.gz",
+        "sha256": "84b16493e40c53bcec92f146e782df42ab66ad386ff635ababd7482c52db72ea"
+      }
+    },
+    {
+      "library_id": "gse178325_human_chemical_pluripotency_reprogramming_GSM5387816",
+      "study_id": "GSE178325",
+      "library_key": "GSE178325::gse178325_human_chemical_pluripotency_reprogramming_GSM5387816",
+      "orientation": "pas_by_cell",
+      "counts": {
+        "path": null,
+        "sha256": null
+      },
+      "cells": {
+        "path": null,
+        "sha256": null
+      },
+      "feature_status": {
+        "path": null,
+        "sha256": null
+      },
+      "membership": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-09_human-time-aware-integration/data/results_metacell_pas_v2/libraries/GSE178325::gse178325_human_chemical_pluripotency_reprogramming_GSM5387816/cell_to_pas_and_metacell.tsv.gz",
+        "sha256": "e81ceabd3aeb8cc12564f12b15680508053e0a450dd00170645bc92af70fd0c7"
+      },
+      "metacells": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-09_human-time-aware-integration/data/results_metacell_pas_v2/libraries/GSE178325::gse178325_human_chemical_pluripotency_reprogramming_GSM5387816/metacell_metadata.tsv.gz",
+        "sha256": "a3feeede19c59e16806df9be1fc489b604c157fe55b01e9b095614f933b4c5f1"
+      }
+    },
+    {
+      "library_id": "gse178325_human_chemical_pluripotency_reprogramming_GSM5534140",
+      "study_id": "GSE178325",
+      "library_key": "GSE178325::gse178325_human_chemical_pluripotency_reprogramming_GSM5534140",
+      "orientation": "pas_by_cell",
+      "counts": {
+        "path": null,
+        "sha256": null
+      },
+      "cells": {
+        "path": null,
+        "sha256": null
+      },
+      "feature_status": {
+        "path": null,
+        "sha256": null
+      },
+      "membership": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-09_human-time-aware-integration/data/results_metacell_pas_v2/libraries/GSE178325::gse178325_human_chemical_pluripotency_reprogramming_GSM5534140/cell_to_pas_and_metacell.tsv.gz",
+        "sha256": "4d3b8247379b4623f36c550541980650901d8383585c951a14156457b2ccab74"
+      },
+      "metacells": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-09_human-time-aware-integration/data/results_metacell_pas_v2/libraries/GSE178325::gse178325_human_chemical_pluripotency_reprogramming_GSM5534140/metacell_metadata.tsv.gz",
+        "sha256": "0401b7fc99c8494a1f4a62938746f4ca6c8b489ee0521376f41374ee95e5b00f"
+      }
+    },
+    {
+      "library_id": "gse178325_human_chemical_pluripotency_reprogramming_GSM5534141",
+      "study_id": "GSE178325",
+      "library_key": "GSE178325::gse178325_human_chemical_pluripotency_reprogramming_GSM5534141",
+      "orientation": "pas_by_cell",
+      "counts": {
+        "path": null,
+        "sha256": null
+      },
+      "cells": {
+        "path": null,
+        "sha256": null
+      },
+      "feature_status": {
+        "path": null,
+        "sha256": null
+      },
+      "membership": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-09_human-time-aware-integration/data/results_metacell_pas_v2/libraries/GSE178325::gse178325_human_chemical_pluripotency_reprogramming_GSM5534141/cell_to_pas_and_metacell.tsv.gz",
+        "sha256": "989f07f88856646fb919a42fcf24f166b5f7db7fa27ace321f36a5f42aeb1ed3"
+      },
+      "metacells": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-09_human-time-aware-integration/data/results_metacell_pas_v2/libraries/GSE178325::gse178325_human_chemical_pluripotency_reprogramming_GSM5534141/metacell_metadata.tsv.gz",
+        "sha256": "50c554e488f0fbab3841536d6d2fbcc9b5601cae496949f8ab1c1ea76f5ac7c3"
+      }
+    },
+    {
+      "library_id": "gse178325_human_chemical_pluripotency_reprogramming_GSM5534142",
+      "study_id": "GSE178325",
+      "library_key": "GSE178325::gse178325_human_chemical_pluripotency_reprogramming_GSM5534142",
+      "orientation": "pas_by_cell",
+      "counts": {
+        "path": null,
+        "sha256": null
+      },
+      "cells": {
+        "path": null,
+        "sha256": null
+      },
+      "feature_status": {
+        "path": null,
+        "sha256": null
+      },
+      "membership": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-09_human-time-aware-integration/data/results_metacell_pas_v2/libraries/GSE178325::gse178325_human_chemical_pluripotency_reprogramming_GSM5534142/cell_to_pas_and_metacell.tsv.gz",
+        "sha256": "d86b419f2fd16891b246f56d5ac4e585ae8be301d26b60261cca0f854e4cef74"
+      },
+      "metacells": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-09_human-time-aware-integration/data/results_metacell_pas_v2/libraries/GSE178325::gse178325_human_chemical_pluripotency_reprogramming_GSM5534142/metacell_metadata.tsv.gz",
+        "sha256": "5e6beb1f22b3c67f4d5b3a4e59ac0fe72de6455bf8b45eefb999d073ad406f6b"
+      }
+    },
+    {
+      "library_id": "gse178325_human_chemical_pluripotency_reprogramming_GSM5534143",
+      "study_id": "GSE178325",
+      "library_key": "GSE178325::gse178325_human_chemical_pluripotency_reprogramming_GSM5534143",
+      "orientation": "pas_by_cell",
+      "counts": {
+        "path": null,
+        "sha256": null
+      },
+      "cells": {
+        "path": null,
+        "sha256": null
+      },
+      "feature_status": {
+        "path": null,
+        "sha256": null
+      },
+      "membership": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-09_human-time-aware-integration/data/results_metacell_pas_v2/libraries/GSE178325::gse178325_human_chemical_pluripotency_reprogramming_GSM5534143/cell_to_pas_and_metacell.tsv.gz",
+        "sha256": "116b118675b43943907786368148d29aa84bec55fe418e02a20061bf30d1442e"
+      },
+      "metacells": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-09_human-time-aware-integration/data/results_metacell_pas_v2/libraries/GSE178325::gse178325_human_chemical_pluripotency_reprogramming_GSM5534143/metacell_metadata.tsv.gz",
+        "sha256": "e21579a2cb7f3a818c01e6175fdbced255326f249ea3dd7d4edd2569a54451f4"
+      }
+    },
+    {
+      "library_id": "gse178325_human_chemical_pluripotency_reprogramming_GSM5534144",
+      "study_id": "GSE178325",
+      "library_key": "GSE178325::gse178325_human_chemical_pluripotency_reprogramming_GSM5534144",
+      "orientation": "pas_by_cell",
+      "counts": {
+        "path": null,
+        "sha256": null
+      },
+      "cells": {
+        "path": null,
+        "sha256": null
+      },
+      "feature_status": {
+        "path": null,
+        "sha256": null
+      },
+      "membership": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-09_human-time-aware-integration/data/results_metacell_pas_v2/libraries/GSE178325::gse178325_human_chemical_pluripotency_reprogramming_GSM5534144/cell_to_pas_and_metacell.tsv.gz",
+        "sha256": "2ca9b0cd18e1600f3cdc68f09b49cdd50069e752ae78239115d73642d1a6ea44"
+      },
+      "metacells": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-09_human-time-aware-integration/data/results_metacell_pas_v2/libraries/GSE178325::gse178325_human_chemical_pluripotency_reprogramming_GSM5534144/metacell_metadata.tsv.gz",
+        "sha256": "74162ebfa584d6f2bc2f6c80e4a45873b3dd0e3981ff605caec9cb3392fbe0fc"
+      }
+    },
+    {
+      "library_id": "gse178325_human_chemical_pluripotency_reprogramming_GSM5534145",
+      "study_id": "GSE178325",
+      "library_key": "GSE178325::gse178325_human_chemical_pluripotency_reprogramming_GSM5534145",
+      "orientation": "pas_by_cell",
+      "counts": {
+        "path": null,
+        "sha256": null
+      },
+      "cells": {
+        "path": null,
+        "sha256": null
+      },
+      "feature_status": {
+        "path": null,
+        "sha256": null
+      },
+      "membership": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-09_human-time-aware-integration/data/results_metacell_pas_v2/libraries/GSE178325::gse178325_human_chemical_pluripotency_reprogramming_GSM5534145/cell_to_pas_and_metacell.tsv.gz",
+        "sha256": "bdd4feb9b69f1f36a6fb8ccb24e8ef7c1e25c073b8b81fafefab8139c0430535"
+      },
+      "metacells": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-09_human-time-aware-integration/data/results_metacell_pas_v2/libraries/GSE178325::gse178325_human_chemical_pluripotency_reprogramming_GSM5534145/metacell_metadata.tsv.gz",
+        "sha256": "b56ad9a850c80948703006103299717c0ad7db2f3d7792edfbe1a288ac8a03ff"
+      }
+    },
+    {
+      "library_id": "gse178325_human_chemical_pluripotency_reprogramming_GSM5534146",
+      "study_id": "GSE178325",
+      "library_key": "GSE178325::gse178325_human_chemical_pluripotency_reprogramming_GSM5534146",
+      "orientation": "pas_by_cell",
+      "counts": {
+        "path": null,
+        "sha256": null
+      },
+      "cells": {
+        "path": null,
+        "sha256": null
+      },
+      "feature_status": {
+        "path": null,
+        "sha256": null
+      },
+      "membership": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-09_human-time-aware-integration/data/results_metacell_pas_v2/libraries/GSE178325::gse178325_human_chemical_pluripotency_reprogramming_GSM5534146/cell_to_pas_and_metacell.tsv.gz",
+        "sha256": "fc382752cceb7a490359e5b859b7ab69e66693705910afd691494b3a1545bde5"
+      },
+      "metacells": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-09_human-time-aware-integration/data/results_metacell_pas_v2/libraries/GSE178325::gse178325_human_chemical_pluripotency_reprogramming_GSM5534146/metacell_metadata.tsv.gz",
+        "sha256": "3c2372e478986b5fdcdb58b2fa056e5b4a8cef71647bcff64d09e82faf191e82"
+      }
+    },
+    {
+      "library_id": "gse178325_human_chemical_pluripotency_reprogramming_GSM5534147",
+      "study_id": "GSE178325",
+      "library_key": "GSE178325::gse178325_human_chemical_pluripotency_reprogramming_GSM5534147",
+      "orientation": "pas_by_cell",
+      "counts": {
+        "path": null,
+        "sha256": null
+      },
+      "cells": {
+        "path": null,
+        "sha256": null
+      },
+      "feature_status": {
+        "path": null,
+        "sha256": null
+      },
+      "membership": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-09_human-time-aware-integration/data/results_metacell_pas_v2/libraries/GSE178325::gse178325_human_chemical_pluripotency_reprogramming_GSM5534147/cell_to_pas_and_metacell.tsv.gz",
+        "sha256": "f7d7b8f98defa1119dcc39fda06ddba699cd9fde55763aef448ff5d0ce512b66"
+      },
+      "metacells": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-09_human-time-aware-integration/data/results_metacell_pas_v2/libraries/GSE178325::gse178325_human_chemical_pluripotency_reprogramming_GSM5534147/metacell_metadata.tsv.gz",
+        "sha256": "55072710751179e0bb7c1dc217f131e370cbc9aa8259078aafae844c73ccf6a9"
+      }
+    },
+    {
+      "library_id": "gse178325_human_chemical_pluripotency_reprogramming_GSM5534148",
+      "study_id": "GSE178325",
+      "library_key": "GSE178325::gse178325_human_chemical_pluripotency_reprogramming_GSM5534148",
+      "orientation": "pas_by_cell",
+      "counts": {
+        "path": null,
+        "sha256": null
+      },
+      "cells": {
+        "path": null,
+        "sha256": null
+      },
+      "feature_status": {
+        "path": null,
+        "sha256": null
+      },
+      "membership": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-09_human-time-aware-integration/data/results_metacell_pas_v2/libraries/GSE178325::gse178325_human_chemical_pluripotency_reprogramming_GSM5534148/cell_to_pas_and_metacell.tsv.gz",
+        "sha256": "1fa2e2467bffd45b7690a4ccde1bb9a954703320d4fdb6b1e846360caac70685"
+      },
+      "metacells": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-09_human-time-aware-integration/data/results_metacell_pas_v2/libraries/GSE178325::gse178325_human_chemical_pluripotency_reprogramming_GSM5534148/metacell_metadata.tsv.gz",
+        "sha256": "1782aede0db7bdeca69e14ef3ddb2cc61248f02557a772f835ee446354b5220c"
+      }
+    },
+    {
+      "library_id": "gse178325_human_chemical_pluripotency_reprogramming_GSM5534149",
+      "study_id": "GSE178325",
+      "library_key": "GSE178325::gse178325_human_chemical_pluripotency_reprogramming_GSM5534149",
+      "orientation": "pas_by_cell",
+      "counts": {
+        "path": null,
+        "sha256": null
+      },
+      "cells": {
+        "path": null,
+        "sha256": null
+      },
+      "feature_status": {
+        "path": null,
+        "sha256": null
+      },
+      "membership": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-09_human-time-aware-integration/data/results_metacell_pas_v2/libraries/GSE178325::gse178325_human_chemical_pluripotency_reprogramming_GSM5534149/cell_to_pas_and_metacell.tsv.gz",
+        "sha256": "1a5ce94de528cd8717298857553d5cc86a083a6ef75e21e0c2b4e4587400ab03"
+      },
+      "metacells": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-09_human-time-aware-integration/data/results_metacell_pas_v2/libraries/GSE178325::gse178325_human_chemical_pluripotency_reprogramming_GSM5534149/metacell_metadata.tsv.gz",
+        "sha256": "01aa5bf0af356e775f2c8c35b04d3f7c31d6ca66f0aa1db82870ad12f010b784"
+      }
+    },
+    {
+      "library_id": "gse178325_human_chemical_pluripotency_reprogramming_GSM5534150",
+      "study_id": "GSE178325",
+      "library_key": "GSE178325::gse178325_human_chemical_pluripotency_reprogramming_GSM5534150",
+      "orientation": "pas_by_cell",
+      "counts": {
+        "path": null,
+        "sha256": null
+      },
+      "cells": {
+        "path": null,
+        "sha256": null
+      },
+      "feature_status": {
+        "path": null,
+        "sha256": null
+      },
+      "membership": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-09_human-time-aware-integration/data/results_metacell_pas_v2/libraries/GSE178325::gse178325_human_chemical_pluripotency_reprogramming_GSM5534150/cell_to_pas_and_metacell.tsv.gz",
+        "sha256": "db9452c6b9832ef7d164701b224dbb0f099cc0b26bc73343b4a3e8399c92fda1"
+      },
+      "metacells": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-09_human-time-aware-integration/data/results_metacell_pas_v2/libraries/GSE178325::gse178325_human_chemical_pluripotency_reprogramming_GSM5534150/metacell_metadata.tsv.gz",
+        "sha256": "e7a1d05f59f0a7984043f405c01f3b3f8bb1055d761d96e7f5c0fa26ab18a881"
+      }
+    },
+    {
+      "library_id": "gse178325_human_chemical_pluripotency_reprogramming_GSM5534151",
+      "study_id": "GSE178325",
+      "library_key": "GSE178325::gse178325_human_chemical_pluripotency_reprogramming_GSM5534151",
+      "orientation": "pas_by_cell",
+      "counts": {
+        "path": null,
+        "sha256": null
+      },
+      "cells": {
+        "path": null,
+        "sha256": null
+      },
+      "feature_status": {
+        "path": null,
+        "sha256": null
+      },
+      "membership": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-09_human-time-aware-integration/data/results_metacell_pas_v2/libraries/GSE178325::gse178325_human_chemical_pluripotency_reprogramming_GSM5534151/cell_to_pas_and_metacell.tsv.gz",
+        "sha256": "c986969f922be6372b535fe7dad24af10975b3d08c987ed698aa43b7ac571a96"
+      },
+      "metacells": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-09_human-time-aware-integration/data/results_metacell_pas_v2/libraries/GSE178325::gse178325_human_chemical_pluripotency_reprogramming_GSM5534151/metacell_metadata.tsv.gz",
+        "sha256": "e0deefad1af26f19c13058bb7ad7a99a5423c34fe830da8d942ac842dfc2ba27"
+      }
+    },
+    {
+      "library_id": "gse178325_human_chemical_pluripotency_reprogramming_GSM5534152",
+      "study_id": "GSE178325",
+      "library_key": "GSE178325::gse178325_human_chemical_pluripotency_reprogramming_GSM5534152",
+      "orientation": "pas_by_cell",
+      "counts": {
+        "path": null,
+        "sha256": null
+      },
+      "cells": {
+        "path": null,
+        "sha256": null
+      },
+      "feature_status": {
+        "path": null,
+        "sha256": null
+      },
+      "membership": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-09_human-time-aware-integration/data/results_metacell_pas_v2/libraries/GSE178325::gse178325_human_chemical_pluripotency_reprogramming_GSM5534152/cell_to_pas_and_metacell.tsv.gz",
+        "sha256": "01e8e4e85dc6e680223990be1d5247a19c9b53f756eec66432328b8bdc6c3663"
+      },
+      "metacells": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-09_human-time-aware-integration/data/results_metacell_pas_v2/libraries/GSE178325::gse178325_human_chemical_pluripotency_reprogramming_GSM5534152/metacell_metadata.tsv.gz",
+        "sha256": "909647978bafb7c3acbb8c69f4905758594d48c95a929b440807f3aecd99f60c"
+      }
+    },
+    {
+      "library_id": "gse178325_human_chemical_pluripotency_reprogramming_GSM5534153",
+      "study_id": "GSE178325",
+      "library_key": "GSE178325::gse178325_human_chemical_pluripotency_reprogramming_GSM5534153",
+      "orientation": "pas_by_cell",
+      "counts": {
+        "path": null,
+        "sha256": null
+      },
+      "cells": {
+        "path": null,
+        "sha256": null
+      },
+      "feature_status": {
+        "path": null,
+        "sha256": null
+      },
+      "membership": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-09_human-time-aware-integration/data/results_metacell_pas_v2/libraries/GSE178325::gse178325_human_chemical_pluripotency_reprogramming_GSM5534153/cell_to_pas_and_metacell.tsv.gz",
+        "sha256": "4f1cb656e5d817aaadacc5edf6a0f74da8e11680d21910f2d8e9cb15b5cfa7be"
+      },
+      "metacells": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-09_human-time-aware-integration/data/results_metacell_pas_v2/libraries/GSE178325::gse178325_human_chemical_pluripotency_reprogramming_GSM5534153/metacell_metadata.tsv.gz",
+        "sha256": "72983ce517bf25aef8cca88156dcc1ec5a3cae3ca61f05d593c8057d24ff3f33"
+      }
+    },
+    {
+      "library_id": "gse178325_human_chemical_pluripotency_reprogramming_GSM5534154",
+      "study_id": "GSE178325",
+      "library_key": "GSE178325::gse178325_human_chemical_pluripotency_reprogramming_GSM5534154",
+      "orientation": "pas_by_cell",
+      "counts": {
+        "path": null,
+        "sha256": null
+      },
+      "cells": {
+        "path": null,
+        "sha256": null
+      },
+      "feature_status": {
+        "path": null,
+        "sha256": null
+      },
+      "membership": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-09_human-time-aware-integration/data/results_metacell_pas_v2/libraries/GSE178325::gse178325_human_chemical_pluripotency_reprogramming_GSM5534154/cell_to_pas_and_metacell.tsv.gz",
+        "sha256": "22dde87ab4ecb73d41c2c0274f88b59887be189103e89ba350e6d2f0e0cb390f"
+      },
+      "metacells": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-09_human-time-aware-integration/data/results_metacell_pas_v2/libraries/GSE178325::gse178325_human_chemical_pluripotency_reprogramming_GSM5534154/metacell_metadata.tsv.gz",
+        "sha256": "7f59baa2027cce8a8c63d10db8fed4e6d432d9451b7b62d4a6fdddc5433eda35"
+      }
+    },
+    {
+      "library_id": "gse178325_human_chemical_pluripotency_reprogramming_GSM5534155",
+      "study_id": "GSE178325",
+      "library_key": "GSE178325::gse178325_human_chemical_pluripotency_reprogramming_GSM5534155",
+      "orientation": "pas_by_cell",
+      "counts": {
+        "path": null,
+        "sha256": null
+      },
+      "cells": {
+        "path": null,
+        "sha256": null
+      },
+      "feature_status": {
+        "path": null,
+        "sha256": null
+      },
+      "membership": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-09_human-time-aware-integration/data/results_metacell_pas_v2/libraries/GSE178325::gse178325_human_chemical_pluripotency_reprogramming_GSM5534155/cell_to_pas_and_metacell.tsv.gz",
+        "sha256": "c25d0e4db70d570da8e3f11c25621793109200519305b9f33906baa95a125cc7"
+      },
+      "metacells": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-09_human-time-aware-integration/data/results_metacell_pas_v2/libraries/GSE178325::gse178325_human_chemical_pluripotency_reprogramming_GSM5534155/metacell_metadata.tsv.gz",
+        "sha256": "79a76603e50aec326abbbcff9211ccb8a97c50d315215b9771415fbe4e469e36"
+      }
+    },
+    {
+      "library_id": "gse178325_human_chemical_pluripotency_reprogramming_GSM5534156",
+      "study_id": "GSE178325",
+      "library_key": "GSE178325::gse178325_human_chemical_pluripotency_reprogramming_GSM5534156",
+      "orientation": "pas_by_cell",
+      "counts": {
+        "path": null,
+        "sha256": null
+      },
+      "cells": {
+        "path": null,
+        "sha256": null
+      },
+      "feature_status": {
+        "path": null,
+        "sha256": null
+      },
+      "membership": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-09_human-time-aware-integration/data/results_metacell_pas_v2/libraries/GSE178325::gse178325_human_chemical_pluripotency_reprogramming_GSM5534156/cell_to_pas_and_metacell.tsv.gz",
+        "sha256": "8fa84b0f611e1f9da74dd7c2f26e02e5dcd9110d76b38bba78b4d476c83f54ea"
+      },
+      "metacells": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-09_human-time-aware-integration/data/results_metacell_pas_v2/libraries/GSE178325::gse178325_human_chemical_pluripotency_reprogramming_GSM5534156/metacell_metadata.tsv.gz",
+        "sha256": "da92d47dfc32e005132a2e081392dd175d2e3fcf17b1d7575d4b27ecb85f78bc"
+      }
+    },
+    {
+      "library_id": "gse178325_human_chemical_pluripotency_reprogramming_GSM5534157",
+      "study_id": "GSE178325",
+      "library_key": "GSE178325::gse178325_human_chemical_pluripotency_reprogramming_GSM5534157",
+      "orientation": "pas_by_cell",
+      "counts": {
+        "path": null,
+        "sha256": null
+      },
+      "cells": {
+        "path": null,
+        "sha256": null
+      },
+      "feature_status": {
+        "path": null,
+        "sha256": null
+      },
+      "membership": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-09_human-time-aware-integration/data/results_metacell_pas_v2/libraries/GSE178325::gse178325_human_chemical_pluripotency_reprogramming_GSM5534157/cell_to_pas_and_metacell.tsv.gz",
+        "sha256": "4e0ea26a4beb0518b0bcf800ffd735709c533195609956314dc4c274e01fbb61"
+      },
+      "metacells": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-09_human-time-aware-integration/data/results_metacell_pas_v2/libraries/GSE178325::gse178325_human_chemical_pluripotency_reprogramming_GSM5534157/metacell_metadata.tsv.gz",
+        "sha256": "20876dea5b5484ed6010718a0b9c8cf325800e4d7247037eb4c79522c03e5d78"
+      }
+    },
+    {
+      "library_id": "gse178325_human_chemical_pluripotency_reprogramming_GSM5534158",
+      "study_id": "GSE178325",
+      "library_key": "GSE178325::gse178325_human_chemical_pluripotency_reprogramming_GSM5534158",
+      "orientation": "pas_by_cell",
+      "counts": {
+        "path": null,
+        "sha256": null
+      },
+      "cells": {
+        "path": null,
+        "sha256": null
+      },
+      "feature_status": {
+        "path": null,
+        "sha256": null
+      },
+      "membership": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-09_human-time-aware-integration/data/results_metacell_pas_v2/libraries/GSE178325::gse178325_human_chemical_pluripotency_reprogramming_GSM5534158/cell_to_pas_and_metacell.tsv.gz",
+        "sha256": "9f98a13bf96918a31577f33bf6fdb313ac8365f8660932ee54f87532df902acb"
+      },
+      "metacells": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-09_human-time-aware-integration/data/results_metacell_pas_v2/libraries/GSE178325::gse178325_human_chemical_pluripotency_reprogramming_GSM5534158/metacell_metadata.tsv.gz",
+        "sha256": "6363ed04f85d37ded7f9db2c98b8c91760227f111526df7e011af2821d1b0262"
+      }
+    },
+    {
+      "library_id": "gse178325_human_chemical_pluripotency_reprogramming_GSM5683317",
+      "study_id": "GSE178325",
+      "library_key": "GSE178325::gse178325_human_chemical_pluripotency_reprogramming_GSM5683317",
+      "orientation": "pas_by_cell",
+      "counts": {
+        "path": null,
+        "sha256": null
+      },
+      "cells": {
+        "path": null,
+        "sha256": null
+      },
+      "feature_status": {
+        "path": null,
+        "sha256": null
+      },
+      "membership": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-09_human-time-aware-integration/data/results_metacell_pas_v2/libraries/GSE178325::gse178325_human_chemical_pluripotency_reprogramming_GSM5683317/cell_to_pas_and_metacell.tsv.gz",
+        "sha256": "13d0224cf84b32cef76c9b222720d0d44b8db83e1cb1e7230dc25913f59b1ba6"
+      },
+      "metacells": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-09_human-time-aware-integration/data/results_metacell_pas_v2/libraries/GSE178325::gse178325_human_chemical_pluripotency_reprogramming_GSM5683317/metacell_metadata.tsv.gz",
+        "sha256": "873cf578e34364baee64c58800da69c308c75f3e68a46891e802ed25e185cfd7"
+      }
+    },
+    {
+      "library_id": "gse178325_human_chemical_pluripotency_reprogramming_GSM5683318",
+      "study_id": "GSE178325",
+      "library_key": "GSE178325::gse178325_human_chemical_pluripotency_reprogramming_GSM5683318",
+      "orientation": "pas_by_cell",
+      "counts": {
+        "path": null,
+        "sha256": null
+      },
+      "cells": {
+        "path": null,
+        "sha256": null
+      },
+      "feature_status": {
+        "path": null,
+        "sha256": null
+      },
+      "membership": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-09_human-time-aware-integration/data/results_metacell_pas_v2/libraries/GSE178325::gse178325_human_chemical_pluripotency_reprogramming_GSM5683318/cell_to_pas_and_metacell.tsv.gz",
+        "sha256": "bdd3e6ad3d33970dc7f40e1343dea5da11ca598a627f04299b65bb609800b874"
+      },
+      "metacells": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-09_human-time-aware-integration/data/results_metacell_pas_v2/libraries/GSE178325::gse178325_human_chemical_pluripotency_reprogramming_GSM5683318/metacell_metadata.tsv.gz",
+        "sha256": "723b48a9208c4536e19ab142ef533f0bffe6218f8f8d4343a958ab656938164b"
+      }
+    },
+    {
+      "library_id": "gse178325_human_chemical_pluripotency_reprogramming_GSM5683319",
+      "study_id": "GSE178325",
+      "library_key": "GSE178325::gse178325_human_chemical_pluripotency_reprogramming_GSM5683319",
+      "orientation": "pas_by_cell",
+      "counts": {
+        "path": null,
+        "sha256": null
+      },
+      "cells": {
+        "path": null,
+        "sha256": null
+      },
+      "feature_status": {
+        "path": null,
+        "sha256": null
+      },
+      "membership": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-09_human-time-aware-integration/data/results_metacell_pas_v2/libraries/GSE178325::gse178325_human_chemical_pluripotency_reprogramming_GSM5683319/cell_to_pas_and_metacell.tsv.gz",
+        "sha256": "63660bd2142db408275127ebd070da89bc9957f15e54773c88ace476e2e40b86"
+      },
+      "metacells": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-09_human-time-aware-integration/data/results_metacell_pas_v2/libraries/GSE178325::gse178325_human_chemical_pluripotency_reprogramming_GSM5683319/metacell_metadata.tsv.gz",
+        "sha256": "f545ccf9cfa0f15880535146a9c5b481a7a007fef73bca21faad046ef92ef6d1"
+      }
+    },
+    {
+      "library_id": "gse178325_human_chemical_pluripotency_reprogramming_GSM5683320",
+      "study_id": "GSE178325",
+      "library_key": "GSE178325::gse178325_human_chemical_pluripotency_reprogramming_GSM5683320",
+      "orientation": "pas_by_cell",
+      "counts": {
+        "path": null,
+        "sha256": null
+      },
+      "cells": {
+        "path": null,
+        "sha256": null
+      },
+      "feature_status": {
+        "path": null,
+        "sha256": null
+      },
+      "membership": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-09_human-time-aware-integration/data/results_metacell_pas_v2/libraries/GSE178325::gse178325_human_chemical_pluripotency_reprogramming_GSM5683320/cell_to_pas_and_metacell.tsv.gz",
+        "sha256": "206b1f3421bc6721cf1dabe77ae1b74afad4bf5d52ffb512cc8b8c5dd59f5179"
+      },
+      "metacells": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-09_human-time-aware-integration/data/results_metacell_pas_v2/libraries/GSE178325::gse178325_human_chemical_pluripotency_reprogramming_GSM5683320/metacell_metadata.tsv.gz",
+        "sha256": "6791d8cd9cf5810b98e1a270e4309e0a50d86dabc8bfce3935abad41bf02032e"
+      }
+    },
+    {
+      "library_id": "D11A_GSM6894040",
+      "study_id": "GSE221739",
+      "library_key": "GSE221739::D11A_GSM6894040",
+      "orientation": "pas_by_cell",
+      "counts": {
+        "path": null,
+        "sha256": null
+      },
+      "cells": {
+        "path": null,
+        "sha256": null
+      },
+      "feature_status": {
+        "path": null,
+        "sha256": null
+      },
+      "membership": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-09_human-time-aware-integration/data/results_metacell_pas_v2/libraries/GSE221739::D11A_GSM6894040/cell_to_pas_and_metacell.tsv.gz",
+        "sha256": "ed7e4f4a0c6c2c7a8fee14fc8141125f51dba2f0d33bd2452140e60aaa060338"
+      },
+      "metacells": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-09_human-time-aware-integration/data/results_metacell_pas_v2/libraries/GSE221739::D11A_GSM6894040/metacell_metadata.tsv.gz",
+        "sha256": "f47bd9d9241b489e0429280f53693c7769acd70c889dee76389074d09d0f7748"
+      }
+    },
+    {
+      "library_id": "D11B_rep2_GSM6894042",
+      "study_id": "GSE221739",
+      "library_key": "GSE221739::D11B_rep2_GSM6894042",
+      "orientation": "pas_by_cell",
+      "counts": {
+        "path": null,
+        "sha256": null
+      },
+      "cells": {
+        "path": null,
+        "sha256": null
+      },
+      "feature_status": {
+        "path": null,
+        "sha256": null
+      },
+      "membership": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-09_human-time-aware-integration/data/results_metacell_pas_v2/libraries/GSE221739::D11B_rep2_GSM6894042/cell_to_pas_and_metacell.tsv.gz",
+        "sha256": "45133506d4245271d2cdeefc52252bd4a2932ffb6bc7b6bf46cf436f229c44be"
+      },
+      "metacells": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-09_human-time-aware-integration/data/results_metacell_pas_v2/libraries/GSE221739::D11B_rep2_GSM6894042/metacell_metadata.tsv.gz",
+        "sha256": "872d095c6213ba5f0d164063e464293cb028f8c0f3221b0e4d9cf0139bd8012e"
+      }
+    },
+    {
+      "library_id": "D13A_GSM6894043",
+      "study_id": "GSE221739",
+      "library_key": "GSE221739::D13A_GSM6894043",
+      "orientation": "pas_by_cell",
+      "counts": {
+        "path": null,
+        "sha256": null
+      },
+      "cells": {
+        "path": null,
+        "sha256": null
+      },
+      "feature_status": {
+        "path": null,
+        "sha256": null
+      },
+      "membership": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-09_human-time-aware-integration/data/results_metacell_pas_v2/libraries/GSE221739::D13A_GSM6894043/cell_to_pas_and_metacell.tsv.gz",
+        "sha256": "d2043acc14dc8790509def5c4657852e44b697f5b9db33a048133d4cb46ce3e0"
+      },
+      "metacells": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-09_human-time-aware-integration/data/results_metacell_pas_v2/libraries/GSE221739::D13A_GSM6894043/metacell_metadata.tsv.gz",
+        "sha256": "199cbd670f750a9f0849b50364669475808a59db36aa2e5854a601f7a7a3aa6c"
+      }
+    },
+    {
+      "library_id": "D13B_GSM6894044",
+      "study_id": "GSE221739",
+      "library_key": "GSE221739::D13B_GSM6894044",
+      "orientation": "pas_by_cell",
+      "counts": {
+        "path": null,
+        "sha256": null
+      },
+      "cells": {
+        "path": null,
+        "sha256": null
+      },
+      "feature_status": {
+        "path": null,
+        "sha256": null
+      },
+      "membership": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-09_human-time-aware-integration/data/results_metacell_pas_v2/libraries/GSE221739::D13B_GSM6894044/cell_to_pas_and_metacell.tsv.gz",
+        "sha256": "6ef172cdadf486b0542853f8ea534d634140491c9a2db742beb9e5d1ff9a8836"
+      },
+      "metacells": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-09_human-time-aware-integration/data/results_metacell_pas_v2/libraries/GSE221739::D13B_GSM6894044/metacell_metadata.tsv.gz",
+        "sha256": "4dd3d2ec283e2d705d8004253fa3019b9ceb427d66e79b76682241cb9060921b"
+      }
+    },
+    {
+      "library_id": "D15A_GSM6894045",
+      "study_id": "GSE221739",
+      "library_key": "GSE221739::D15A_GSM6894045",
+      "orientation": "pas_by_cell",
+      "counts": {
+        "path": null,
+        "sha256": null
+      },
+      "cells": {
+        "path": null,
+        "sha256": null
+      },
+      "feature_status": {
+        "path": null,
+        "sha256": null
+      },
+      "membership": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-09_human-time-aware-integration/data/results_metacell_pas_v2/libraries/GSE221739::D15A_GSM6894045/cell_to_pas_and_metacell.tsv.gz",
+        "sha256": "a3aa2f06855770665420acb39a67237fea382c9bb958ce4cc17719c10fe81f1d"
+      },
+      "metacells": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-09_human-time-aware-integration/data/results_metacell_pas_v2/libraries/GSE221739::D15A_GSM6894045/metacell_metadata.tsv.gz",
+        "sha256": "f619f641cc7ef4e5a4c33505488111ee60ea7d66e52b1f1431bbd0bb937815e0"
+      }
+    },
+    {
+      "library_id": "D15B_GSM6894046",
+      "study_id": "GSE221739",
+      "library_key": "GSE221739::D15B_GSM6894046",
+      "orientation": "pas_by_cell",
+      "counts": {
+        "path": null,
+        "sha256": null
+      },
+      "cells": {
+        "path": null,
+        "sha256": null
+      },
+      "feature_status": {
+        "path": null,
+        "sha256": null
+      },
+      "membership": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-09_human-time-aware-integration/data/results_metacell_pas_v2/libraries/GSE221739::D15B_GSM6894046/cell_to_pas_and_metacell.tsv.gz",
+        "sha256": "eabb353677188678be2def81e5edbd47a7317de9c53140761a3bd44c888890a8"
+      },
+      "metacells": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-09_human-time-aware-integration/data/results_metacell_pas_v2/libraries/GSE221739::D15B_GSM6894046/metacell_metadata.tsv.gz",
+        "sha256": "4bfd464017ed955243af9c3028220f1bbb5cea88b33b5157df1486a5702a9bf2"
+      }
+    },
+    {
+      "library_id": "D3A_GSM6894027",
+      "study_id": "GSE221739",
+      "library_key": "GSE221739::D3A_GSM6894027",
+      "orientation": "pas_by_cell",
+      "counts": {
+        "path": null,
+        "sha256": null
+      },
+      "cells": {
+        "path": null,
+        "sha256": null
+      },
+      "feature_status": {
+        "path": null,
+        "sha256": null
+      },
+      "membership": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-09_human-time-aware-integration/data/results_metacell_pas_v2/libraries/GSE221739::D3A_GSM6894027/cell_to_pas_and_metacell.tsv.gz",
+        "sha256": "f931f7fca6eb1e8caaac0b091e0e6a936e83c25509073885240507ca1420d5dc"
+      },
+      "metacells": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-09_human-time-aware-integration/data/results_metacell_pas_v2/libraries/GSE221739::D3A_GSM6894027/metacell_metadata.tsv.gz",
+        "sha256": "07f4e5ecb0725982188a9045fb058037bb2a1a70b81180f5a594cf11ba094c30"
+      }
+    },
+    {
+      "library_id": "D3B_GSM6894028",
+      "study_id": "GSE221739",
+      "library_key": "GSE221739::D3B_GSM6894028",
+      "orientation": "pas_by_cell",
+      "counts": {
+        "path": null,
+        "sha256": null
+      },
+      "cells": {
+        "path": null,
+        "sha256": null
+      },
+      "feature_status": {
+        "path": null,
+        "sha256": null
+      },
+      "membership": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-09_human-time-aware-integration/data/results_metacell_pas_v2/libraries/GSE221739::D3B_GSM6894028/cell_to_pas_and_metacell.tsv.gz",
+        "sha256": "21bfe4f8289cfca67c39ca050df9cb440160b391d523989f566db762a165a922"
+      },
+      "metacells": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-09_human-time-aware-integration/data/results_metacell_pas_v2/libraries/GSE221739::D3B_GSM6894028/metacell_metadata.tsv.gz",
+        "sha256": "25454738dbd189e9d34cf1e0ed9fbcf470fd087df729a72da3d877db43dbaec3"
+      }
+    },
+    {
+      "library_id": "D5A_rep1_GSM6894029",
+      "study_id": "GSE221739",
+      "library_key": "GSE221739::D5A_rep1_GSM6894029",
+      "orientation": "pas_by_cell",
+      "counts": {
+        "path": null,
+        "sha256": null
+      },
+      "cells": {
+        "path": null,
+        "sha256": null
+      },
+      "feature_status": {
+        "path": null,
+        "sha256": null
+      },
+      "membership": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-09_human-time-aware-integration/data/results_metacell_pas_v2/libraries/GSE221739::D5A_rep1_GSM6894029/cell_to_pas_and_metacell.tsv.gz",
+        "sha256": "caff51c14c2483ea69b3d35ea943f7b826543fa0c526feb229b917f0670cf958"
+      },
+      "metacells": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-09_human-time-aware-integration/data/results_metacell_pas_v2/libraries/GSE221739::D5A_rep1_GSM6894029/metacell_metadata.tsv.gz",
+        "sha256": "a924cd1f9238ba61772280fe57a4fceae9dfc88591f946947f1a50154a930605"
+      }
+    },
+    {
+      "library_id": "D5A_rep2_GSM6894030",
+      "study_id": "GSE221739",
+      "library_key": "GSE221739::D5A_rep2_GSM6894030",
+      "orientation": "pas_by_cell",
+      "counts": {
+        "path": null,
+        "sha256": null
+      },
+      "cells": {
+        "path": null,
+        "sha256": null
+      },
+      "feature_status": {
+        "path": null,
+        "sha256": null
+      },
+      "membership": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-09_human-time-aware-integration/data/results_metacell_pas_v2/libraries/GSE221739::D5A_rep2_GSM6894030/cell_to_pas_and_metacell.tsv.gz",
+        "sha256": "6ba656e06edda55aad80134f002ed8473477e6474fa8f8970cabc02ad61630de"
+      },
+      "metacells": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-09_human-time-aware-integration/data/results_metacell_pas_v2/libraries/GSE221739::D5A_rep2_GSM6894030/metacell_metadata.tsv.gz",
+        "sha256": "d817439cb7cea0b7df103bc5d3f040667026df326054e93a93d032fba6ea2613"
+      }
+    },
+    {
+      "library_id": "D5B_rep2_GSM6894032",
+      "study_id": "GSE221739",
+      "library_key": "GSE221739::D5B_rep2_GSM6894032",
+      "orientation": "pas_by_cell",
+      "counts": {
+        "path": null,
+        "sha256": null
+      },
+      "cells": {
+        "path": null,
+        "sha256": null
+      },
+      "feature_status": {
+        "path": null,
+        "sha256": null
+      },
+      "membership": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-09_human-time-aware-integration/data/results_metacell_pas_v2/libraries/GSE221739::D5B_rep2_GSM6894032/cell_to_pas_and_metacell.tsv.gz",
+        "sha256": "cf78f3040133edad9f0e40869cf84d54f209a5a67ef14899e574868077597f8f"
+      },
+      "metacells": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-09_human-time-aware-integration/data/results_metacell_pas_v2/libraries/GSE221739::D5B_rep2_GSM6894032/metacell_metadata.tsv.gz",
+        "sha256": "1d9439b4dd451f9d148153ffa7069ec7a5de22a4d4cdaf5be9c4012395e0a230"
+      }
+    },
+    {
+      "library_id": "D7A_GSM6894033",
+      "study_id": "GSE221739",
+      "library_key": "GSE221739::D7A_GSM6894033",
+      "orientation": "pas_by_cell",
+      "counts": {
+        "path": null,
+        "sha256": null
+      },
+      "cells": {
+        "path": null,
+        "sha256": null
+      },
+      "feature_status": {
+        "path": null,
+        "sha256": null
+      },
+      "membership": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-09_human-time-aware-integration/data/results_metacell_pas_v2/libraries/GSE221739::D7A_GSM6894033/cell_to_pas_and_metacell.tsv.gz",
+        "sha256": "56bc6e759f24b56f59aeca9329dccefb7479ad3051743389b244346bcba31f59"
+      },
+      "metacells": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-09_human-time-aware-integration/data/results_metacell_pas_v2/libraries/GSE221739::D7A_GSM6894033/metacell_metadata.tsv.gz",
+        "sha256": "a9cd57d867d76c19b9e5335669727d80a89d9190cb94b8bd2c4f4169327dff62"
+      }
+    },
+    {
+      "library_id": "D7B_rep1_GSM6894034",
+      "study_id": "GSE221739",
+      "library_key": "GSE221739::D7B_rep1_GSM6894034",
+      "orientation": "pas_by_cell",
+      "counts": {
+        "path": null,
+        "sha256": null
+      },
+      "cells": {
+        "path": null,
+        "sha256": null
+      },
+      "feature_status": {
+        "path": null,
+        "sha256": null
+      },
+      "membership": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-09_human-time-aware-integration/data/results_metacell_pas_v2/libraries/GSE221739::D7B_rep1_GSM6894034/cell_to_pas_and_metacell.tsv.gz",
+        "sha256": "61a4aa5f7309b9e626aa8a6fd49087bceedbeca35416ee53a375344df7325898"
+      },
+      "metacells": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-09_human-time-aware-integration/data/results_metacell_pas_v2/libraries/GSE221739::D7B_rep1_GSM6894034/metacell_metadata.tsv.gz",
+        "sha256": "09dd1bb900feb25e4d52fc013e36dcebcbd030fc807eb0152005550d41d605b7"
+      }
+    },
+    {
+      "library_id": "D7B_rep2_GSM6894035",
+      "study_id": "GSE221739",
+      "library_key": "GSE221739::D7B_rep2_GSM6894035",
+      "orientation": "pas_by_cell",
+      "counts": {
+        "path": null,
+        "sha256": null
+      },
+      "cells": {
+        "path": null,
+        "sha256": null
+      },
+      "feature_status": {
+        "path": null,
+        "sha256": null
+      },
+      "membership": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-09_human-time-aware-integration/data/results_metacell_pas_v2/libraries/GSE221739::D7B_rep2_GSM6894035/cell_to_pas_and_metacell.tsv.gz",
+        "sha256": "32bf7fd8c8645c46ab76061c99ef416738399cb4064361a6c1d9a21b419f55a3"
+      },
+      "metacells": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-09_human-time-aware-integration/data/results_metacell_pas_v2/libraries/GSE221739::D7B_rep2_GSM6894035/metacell_metadata.tsv.gz",
+        "sha256": "6eaa932a87f93aca7b59e7756474696e9d65331a15d0fae1fa62d98ce58a8da2"
+      }
+    },
+    {
+      "library_id": "D9A_rep1_GSM6894036",
+      "study_id": "GSE221739",
+      "library_key": "GSE221739::D9A_rep1_GSM6894036",
+      "orientation": "pas_by_cell",
+      "counts": {
+        "path": null,
+        "sha256": null
+      },
+      "cells": {
+        "path": null,
+        "sha256": null
+      },
+      "feature_status": {
+        "path": null,
+        "sha256": null
+      },
+      "membership": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-09_human-time-aware-integration/data/results_metacell_pas_v2/libraries/GSE221739::D9A_rep1_GSM6894036/cell_to_pas_and_metacell.tsv.gz",
+        "sha256": "024c18f1afe0bc45625c818e1f3321d256bb2c2814ec095c27bcd4ffbb5904ac"
+      },
+      "metacells": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-09_human-time-aware-integration/data/results_metacell_pas_v2/libraries/GSE221739::D9A_rep1_GSM6894036/metacell_metadata.tsv.gz",
+        "sha256": "a7985d4204fd865ee7eac71ef178003a74cb74484a0ca69eed2c1322f76e545e"
+      }
+    },
+    {
+      "library_id": "D9A_rep2_GSM6894037",
+      "study_id": "GSE221739",
+      "library_key": "GSE221739::D9A_rep2_GSM6894037",
+      "orientation": "pas_by_cell",
+      "counts": {
+        "path": null,
+        "sha256": null
+      },
+      "cells": {
+        "path": null,
+        "sha256": null
+      },
+      "feature_status": {
+        "path": null,
+        "sha256": null
+      },
+      "membership": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-09_human-time-aware-integration/data/results_metacell_pas_v2/libraries/GSE221739::D9A_rep2_GSM6894037/cell_to_pas_and_metacell.tsv.gz",
+        "sha256": "ca76957a75dd8ef415e8f2b86386df1638697b500b589d69237d901c1fce3b10"
+      },
+      "metacells": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-09_human-time-aware-integration/data/results_metacell_pas_v2/libraries/GSE221739::D9A_rep2_GSM6894037/metacell_metadata.tsv.gz",
+        "sha256": "4eb320cc6084c379f5b85885ed289fddcc502fab05a39f53e7de34b1c3d1bed5"
+      }
+    },
+    {
+      "library_id": "D9B_rep2_GSM6894039",
+      "study_id": "GSE221739",
+      "library_key": "GSE221739::D9B_rep2_GSM6894039",
+      "orientation": "pas_by_cell",
+      "counts": {
+        "path": null,
+        "sha256": null
+      },
+      "cells": {
+        "path": null,
+        "sha256": null
+      },
+      "feature_status": {
+        "path": null,
+        "sha256": null
+      },
+      "membership": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-09_human-time-aware-integration/data/results_metacell_pas_v2/libraries/GSE221739::D9B_rep2_GSM6894039/cell_to_pas_and_metacell.tsv.gz",
+        "sha256": "f949376426f77d26c8fd51be4b11ff50d4e5719108a3bab6f5a0cee48b1fee20"
+      },
+      "metacells": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-09_human-time-aware-integration/data/results_metacell_pas_v2/libraries/GSE221739::D9B_rep2_GSM6894039/metacell_metadata.tsv.gz",
+        "sha256": "3dc512686a272861a1c69376411bfc10be419cd7603d63f514a9bbb084b0e592"
+      }
+    },
+    {
+      "library_id": "gse103221_pluripotency_reprogramming_core_GSM3619570",
+      "study_id": "GSE103221",
+      "library_key": "GSM3619570",
+      "orientation": "pas_by_cell",
+      "counts": {
+        "path": null,
+        "sha256": null
+      },
+      "cells": {
+        "path": null,
+        "sha256": null
+      },
+      "feature_status": {
+        "path": null,
+        "sha256": null
+      },
+      "membership": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-02_mouse-time-aware-integration-pilot/data/metacell-pas-v7-v1/libraries/GSM3619570/cell_to_pas_and_metacell.tsv.gz",
+        "sha256": "755925b11503175dbdad2399e4647560024abd6fd857ef369402fc48c2bf63cd"
+      },
+      "metacells": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-02_mouse-time-aware-integration-pilot/data/metacell-pas-v7-v1/libraries/GSM3619570/metacell_metadata.tsv.gz",
+        "sha256": "7918ffcb5669c21fa6021896c6003ddca8af9459e75536221fb2561ca6669702"
+      }
+    },
+    {
+      "library_id": "gse103221_pluripotency_reprogramming_core_GSM3619571",
+      "study_id": "GSE103221",
+      "library_key": "GSM3619571",
+      "orientation": "pas_by_cell",
+      "counts": {
+        "path": null,
+        "sha256": null
+      },
+      "cells": {
+        "path": null,
+        "sha256": null
+      },
+      "feature_status": {
+        "path": null,
+        "sha256": null
+      },
+      "membership": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-02_mouse-time-aware-integration-pilot/data/metacell-pas-v7-v1/libraries/GSM3619571/cell_to_pas_and_metacell.tsv.gz",
+        "sha256": "f7176e9e2c94ce8f31488a15fd456b1770887b0a080b28501e4511a03e208b25"
+      },
+      "metacells": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-02_mouse-time-aware-integration-pilot/data/metacell-pas-v7-v1/libraries/GSM3619571/metacell_metadata.tsv.gz",
+        "sha256": "b883cd4edc4173fcf45d641c19f3cf88a31669a4d98683696a1b8367694d1e06"
+      }
+    },
+    {
+      "library_id": "gse103221_pluripotency_reprogramming_core_GSM3619572",
+      "study_id": "GSE103221",
+      "library_key": "GSM3619572",
+      "orientation": "pas_by_cell",
+      "counts": {
+        "path": null,
+        "sha256": null
+      },
+      "cells": {
+        "path": null,
+        "sha256": null
+      },
+      "feature_status": {
+        "path": null,
+        "sha256": null
+      },
+      "membership": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-02_mouse-time-aware-integration-pilot/data/metacell-pas-v7-v1/libraries/GSM3619572/cell_to_pas_and_metacell.tsv.gz",
+        "sha256": "2f983df44bfd50bbab8f30f83e226cc46649cfbb90e02e1c2c23ce75430088ba"
+      },
+      "metacells": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-02_mouse-time-aware-integration-pilot/data/metacell-pas-v7-v1/libraries/GSM3619572/metacell_metadata.tsv.gz",
+        "sha256": "5e09e9fa850b96d29bd1088a7ddd7e7d020f4188fbc58023822827f8b5ad0a3a"
+      }
+    },
+    {
+      "library_id": "gse103221_pluripotency_reprogramming_core_GSM3619573",
+      "study_id": "GSE103221",
+      "library_key": "GSM3619573",
+      "orientation": "pas_by_cell",
+      "counts": {
+        "path": null,
+        "sha256": null
+      },
+      "cells": {
+        "path": null,
+        "sha256": null
+      },
+      "feature_status": {
+        "path": null,
+        "sha256": null
+      },
+      "membership": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-02_mouse-time-aware-integration-pilot/data/metacell-pas-v7-v1/libraries/GSM3619573/cell_to_pas_and_metacell.tsv.gz",
+        "sha256": "e494166fb2dd1dd420361c188f8b7652b80989df57b9f69411bdba50fdab9f3c"
+      },
+      "metacells": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-02_mouse-time-aware-integration-pilot/data/metacell-pas-v7-v1/libraries/GSM3619573/metacell_metadata.tsv.gz",
+        "sha256": "421ab3dd61e9199f6cc9162205fcf8214f9893672e44837ed2efd6991f3bb3c2"
+      }
+    },
+    {
+      "library_id": "gse103221_pluripotency_reprogramming_core_GSM3619574",
+      "study_id": "GSE103221",
+      "library_key": "GSM3619574",
+      "orientation": "pas_by_cell",
+      "counts": {
+        "path": null,
+        "sha256": null
+      },
+      "cells": {
+        "path": null,
+        "sha256": null
+      },
+      "feature_status": {
+        "path": null,
+        "sha256": null
+      },
+      "membership": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-02_mouse-time-aware-integration-pilot/data/metacell-pas-v7-v1/libraries/GSM3619574/cell_to_pas_and_metacell.tsv.gz",
+        "sha256": "155e4e4bc4f9819e6591259cd9bfd058da0fcc5bf4bfc9ac7cc82d553f9e0c98"
+      },
+      "metacells": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-02_mouse-time-aware-integration-pilot/data/metacell-pas-v7-v1/libraries/GSM3619574/metacell_metadata.tsv.gz",
+        "sha256": "3e27712c7c9101ddc25774614a310cbeb5e58ecb331e723d2ee3bc6803cc4864"
+      }
+    },
+    {
+      "library_id": "gse103221_pluripotency_reprogramming_core_GSM3619575",
+      "study_id": "GSE103221",
+      "library_key": "GSM3619575",
+      "orientation": "pas_by_cell",
+      "counts": {
+        "path": null,
+        "sha256": null
+      },
+      "cells": {
+        "path": null,
+        "sha256": null
+      },
+      "feature_status": {
+        "path": null,
+        "sha256": null
+      },
+      "membership": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-02_mouse-time-aware-integration-pilot/data/metacell-pas-v7-v1/libraries/GSM3619575/cell_to_pas_and_metacell.tsv.gz",
+        "sha256": "ac6e00f4e6631ca4c989f1dbed63d49103177296413e8f20ef3fe89b3b940002"
+      },
+      "metacells": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-02_mouse-time-aware-integration-pilot/data/metacell-pas-v7-v1/libraries/GSM3619575/metacell_metadata.tsv.gz",
+        "sha256": "e08756349b478ec60aa04935d313eb3f3c3fb32335a13a2787c3c48d94fa38d2"
+      }
+    },
+    {
+      "library_id": "gse103221_pluripotency_reprogramming_core_GSM3619576",
+      "study_id": "GSE103221",
+      "library_key": "GSM3619576",
+      "orientation": "pas_by_cell",
+      "counts": {
+        "path": null,
+        "sha256": null
+      },
+      "cells": {
+        "path": null,
+        "sha256": null
+      },
+      "feature_status": {
+        "path": null,
+        "sha256": null
+      },
+      "membership": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-02_mouse-time-aware-integration-pilot/data/metacell-pas-v7-v1/libraries/GSM3619576/cell_to_pas_and_metacell.tsv.gz",
+        "sha256": "115fdd54e2528c4c15820280feb628426d64b802989daae2149519da77c8ce5c"
+      },
+      "metacells": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-02_mouse-time-aware-integration-pilot/data/metacell-pas-v7-v1/libraries/GSM3619576/metacell_metadata.tsv.gz",
+        "sha256": "d6ae4da2ae083c161db02ae98a3de1ad7aa6e1dd5ae941ab60a73a16f6abdbd3"
+      }
+    },
+    {
+      "library_id": "gse103221_pluripotency_reprogramming_core_GSM3619577",
+      "study_id": "GSE103221",
+      "library_key": "GSM3619577",
+      "orientation": "pas_by_cell",
+      "counts": {
+        "path": null,
+        "sha256": null
+      },
+      "cells": {
+        "path": null,
+        "sha256": null
+      },
+      "feature_status": {
+        "path": null,
+        "sha256": null
+      },
+      "membership": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-02_mouse-time-aware-integration-pilot/data/metacell-pas-v7-v1/libraries/GSM3619577/cell_to_pas_and_metacell.tsv.gz",
+        "sha256": "7efac8a40c1077605fe844f39b595b896fd14a548e72e3ef6da4e4132c74aed4"
+      },
+      "metacells": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-02_mouse-time-aware-integration-pilot/data/metacell-pas-v7-v1/libraries/GSM3619577/metacell_metadata.tsv.gz",
+        "sha256": "4fd49829bcb7aff5fbb4ce80bb8b3297bbbf8c8110a6e586d2522e67ac19fec7"
+      }
+    },
+    {
+      "library_id": "gse103221_pluripotency_reprogramming_core_GSM3619578",
+      "study_id": "GSE103221",
+      "library_key": "GSM3619578",
+      "orientation": "pas_by_cell",
+      "counts": {
+        "path": null,
+        "sha256": null
+      },
+      "cells": {
+        "path": null,
+        "sha256": null
+      },
+      "feature_status": {
+        "path": null,
+        "sha256": null
+      },
+      "membership": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-02_mouse-time-aware-integration-pilot/data/metacell-pas-v7-v1/libraries/GSM3619578/cell_to_pas_and_metacell.tsv.gz",
+        "sha256": "0f7c6f282b6c64effd546fdb9b1090a696b1a992b9da9fdbbf779592915da0cb"
+      },
+      "metacells": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-02_mouse-time-aware-integration-pilot/data/metacell-pas-v7-v1/libraries/GSM3619578/metacell_metadata.tsv.gz",
+        "sha256": "29200c3a6d5388527367db888b54e9dee0b146c7c277c0a999b1cd244a40f3c2"
+      }
+    },
+    {
+      "library_id": "gse103221_pluripotency_reprogramming_core_GSM3619579",
+      "study_id": "GSE103221",
+      "library_key": "GSM3619579",
+      "orientation": "pas_by_cell",
+      "counts": {
+        "path": null,
+        "sha256": null
+      },
+      "cells": {
+        "path": null,
+        "sha256": null
+      },
+      "feature_status": {
+        "path": null,
+        "sha256": null
+      },
+      "membership": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-02_mouse-time-aware-integration-pilot/data/metacell-pas-v7-v1/libraries/GSM3619579/cell_to_pas_and_metacell.tsv.gz",
+        "sha256": "7758b866a5ffdda8f4005c4c0301048d72ab3224cef8172a85b4da4163916454"
+      },
+      "metacells": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-02_mouse-time-aware-integration-pilot/data/metacell-pas-v7-v1/libraries/GSM3619579/metacell_metadata.tsv.gz",
+        "sha256": "90df6f38c97f5887d18c4566340d7cf9b40296467ac7e4acd5b8e019a5a184a9"
+      }
+    },
+    {
+      "library_id": "gse103221_pluripotency_reprogramming_core_GSM3619580",
+      "study_id": "GSE103221",
+      "library_key": "GSM3619580",
+      "orientation": "pas_by_cell",
+      "counts": {
+        "path": null,
+        "sha256": null
+      },
+      "cells": {
+        "path": null,
+        "sha256": null
+      },
+      "feature_status": {
+        "path": null,
+        "sha256": null
+      },
+      "membership": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-02_mouse-time-aware-integration-pilot/data/metacell-pas-v7-v1/libraries/GSM3619580/cell_to_pas_and_metacell.tsv.gz",
+        "sha256": "9d0d13c2421025265551c982dd7c38963220ca9ec8dd45fb0791b7102252c2b0"
+      },
+      "metacells": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-02_mouse-time-aware-integration-pilot/data/metacell-pas-v7-v1/libraries/GSM3619580/metacell_metadata.tsv.gz",
+        "sha256": "1b03fbc5cff1e917ed83be8bedf38cc2c95ad870b01e5eb903b56201040c2861"
+      }
+    },
+    {
+      "library_id": "gse103221_pluripotency_reprogramming_core_GSM3619581",
+      "study_id": "GSE103221",
+      "library_key": "GSM3619581",
+      "orientation": "pas_by_cell",
+      "counts": {
+        "path": null,
+        "sha256": null
+      },
+      "cells": {
+        "path": null,
+        "sha256": null
+      },
+      "feature_status": {
+        "path": null,
+        "sha256": null
+      },
+      "membership": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-02_mouse-time-aware-integration-pilot/data/metacell-pas-v7-v1/libraries/GSM3619581/cell_to_pas_and_metacell.tsv.gz",
+        "sha256": "935177170b8c9e326893cdee119fa261651107293db39106cd4d7c49d782ba92"
+      },
+      "metacells": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-02_mouse-time-aware-integration-pilot/data/metacell-pas-v7-v1/libraries/GSM3619581/metacell_metadata.tsv.gz",
+        "sha256": "4145a95dfdce31659e6a65b6add1cdd9eef29dc1261fafeb4d7162cdb01d81dd"
+      }
+    },
+    {
+      "library_id": "gse103221_pluripotency_reprogramming_core_GSM3629847",
+      "study_id": "GSE103221",
+      "library_key": "GSM3629847",
+      "orientation": "pas_by_cell",
+      "counts": {
+        "path": null,
+        "sha256": null
+      },
+      "cells": {
+        "path": null,
+        "sha256": null
+      },
+      "feature_status": {
+        "path": null,
+        "sha256": null
+      },
+      "membership": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-02_mouse-time-aware-integration-pilot/data/metacell-pas-v7-v1/libraries/GSM3629847/cell_to_pas_and_metacell.tsv.gz",
+        "sha256": "b6c51a4bd56e800b131f65aa71480c6cc134da2e83195d28bbf981d53edb185d"
+      },
+      "metacells": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-02_mouse-time-aware-integration-pilot/data/metacell-pas-v7-v1/libraries/GSM3629847/metacell_metadata.tsv.gz",
+        "sha256": "cc1d832151ed06d43ac0356d275994d5ab8dd8f31c75e5300b0458c96a83367b"
+      }
+    },
+    {
+      "library_id": "gse103221_pluripotency_reprogramming_core_GSM3629849",
+      "study_id": "GSE103221",
+      "library_key": "GSM3629849",
+      "orientation": "pas_by_cell",
+      "counts": {
+        "path": null,
+        "sha256": null
+      },
+      "cells": {
+        "path": null,
+        "sha256": null
+      },
+      "feature_status": {
+        "path": null,
+        "sha256": null
+      },
+      "membership": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-02_mouse-time-aware-integration-pilot/data/metacell-pas-v7-v1/libraries/GSM3629849/cell_to_pas_and_metacell.tsv.gz",
+        "sha256": "d5ed9022e57b529494570b9fb84db8b5555b7d0537ddee139794be9b32fea9e4"
+      },
+      "metacells": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-02_mouse-time-aware-integration-pilot/data/metacell-pas-v7-v1/libraries/GSM3629849/metacell_metadata.tsv.gz",
+        "sha256": "321a91e96516d519f0504da1c5306eb41496aa6ed5354607cfa69de319f97825"
+      }
+    },
+    {
+      "library_id": "gse103221_pluripotency_reprogramming_core_GSM3629850",
+      "study_id": "GSE103221",
+      "library_key": "GSM3629850",
+      "orientation": "pas_by_cell",
+      "counts": {
+        "path": null,
+        "sha256": null
+      },
+      "cells": {
+        "path": null,
+        "sha256": null
+      },
+      "feature_status": {
+        "path": null,
+        "sha256": null
+      },
+      "membership": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-02_mouse-time-aware-integration-pilot/data/metacell-pas-v7-v1/libraries/GSM3629850/cell_to_pas_and_metacell.tsv.gz",
+        "sha256": "a4b21dd3f4165f2d780d45215f12c80a2f4623bd061dbe7b96adc0f11ecf14ea"
+      },
+      "metacells": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-02_mouse-time-aware-integration-pilot/data/metacell-pas-v7-v1/libraries/GSM3629850/metacell_metadata.tsv.gz",
+        "sha256": "87e15814b2126a29055bae1c7f07eff598ca6353dd78b52f5db6087620e2621b"
+      }
+    },
+    {
+      "library_id": "gse103221_pluripotency_reprogramming_core_GSM3629851",
+      "study_id": "GSE103221",
+      "library_key": "GSM3629851",
+      "orientation": "pas_by_cell",
+      "counts": {
+        "path": null,
+        "sha256": null
+      },
+      "cells": {
+        "path": null,
+        "sha256": null
+      },
+      "feature_status": {
+        "path": null,
+        "sha256": null
+      },
+      "membership": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-02_mouse-time-aware-integration-pilot/data/metacell-pas-v7-v1/libraries/GSM3629851/cell_to_pas_and_metacell.tsv.gz",
+        "sha256": "db3714859926dacb9c2cc37cf476288ec818eb02e562a40899ec5d4d12e3d80a"
+      },
+      "metacells": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-02_mouse-time-aware-integration-pilot/data/metacell-pas-v7-v1/libraries/GSM3629851/metacell_metadata.tsv.gz",
+        "sha256": "0e5b2b12c5fb4cd500be4f3a968528d4564bdc288fbb9d287cc62d61c93a39cf"
+      }
+    },
+    {
+      "library_id": "gse103221_pluripotency_reprogramming_core_GSM3629852",
+      "study_id": "GSE103221",
+      "library_key": "GSM3629852",
+      "orientation": "pas_by_cell",
+      "counts": {
+        "path": null,
+        "sha256": null
+      },
+      "cells": {
+        "path": null,
+        "sha256": null
+      },
+      "feature_status": {
+        "path": null,
+        "sha256": null
+      },
+      "membership": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-02_mouse-time-aware-integration-pilot/data/metacell-pas-v7-v1/libraries/GSM3629852/cell_to_pas_and_metacell.tsv.gz",
+        "sha256": "45be2aa4fde10921cff0cca69ff0ef8454fa0b41341f8100d7f44b2c95cb130a"
+      },
+      "metacells": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-02_mouse-time-aware-integration-pilot/data/metacell-pas-v7-v1/libraries/GSM3629852/metacell_metadata.tsv.gz",
+        "sha256": "74ae429552d1c34df69fc819163bd114f1fd5e63663dc36a951ead96e55cb154"
+      }
+    },
+    {
+      "library_id": "gse103221_pluripotency_reprogramming_core_GSM3629853",
+      "study_id": "GSE103221",
+      "library_key": "GSM3629853",
+      "orientation": "pas_by_cell",
+      "counts": {
+        "path": null,
+        "sha256": null
+      },
+      "cells": {
+        "path": null,
+        "sha256": null
+      },
+      "feature_status": {
+        "path": null,
+        "sha256": null
+      },
+      "membership": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-02_mouse-time-aware-integration-pilot/data/metacell-pas-v7-v1/libraries/GSM3629853/cell_to_pas_and_metacell.tsv.gz",
+        "sha256": "8dbc315d5c077d60c4101ba6184af634c9b34aa4c079dec6b9a7c6aacfb24844"
+      },
+      "metacells": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-02_mouse-time-aware-integration-pilot/data/metacell-pas-v7-v1/libraries/GSM3629853/metacell_metadata.tsv.gz",
+        "sha256": "dfa90049df6578c2a790ca2067371c710565dfd5c83a2aee52dca46cf2033131"
+      }
+    },
+    {
+      "library_id": "gse103221_pluripotency_reprogramming_core_GSM3629854",
+      "study_id": "GSE103221",
+      "library_key": "GSM3629854",
+      "orientation": "pas_by_cell",
+      "counts": {
+        "path": null,
+        "sha256": null
+      },
+      "cells": {
+        "path": null,
+        "sha256": null
+      },
+      "feature_status": {
+        "path": null,
+        "sha256": null
+      },
+      "membership": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-02_mouse-time-aware-integration-pilot/data/metacell-pas-v7-v1/libraries/GSM3629854/cell_to_pas_and_metacell.tsv.gz",
+        "sha256": "482b58d1e71bd161c079a334ac03ead761fbc305a91b298ad8eab5d9def16d83"
+      },
+      "metacells": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-02_mouse-time-aware-integration-pilot/data/metacell-pas-v7-v1/libraries/GSM3629854/metacell_metadata.tsv.gz",
+        "sha256": "b3115e263d5c88de1d31c53c7988de9ee7bcd570d38b17c2340341aa8467308a"
+      }
+    },
+    {
+      "library_id": "gse103221_pluripotency_reprogramming_core_GSM3629855",
+      "study_id": "GSE103221",
+      "library_key": "GSM3629855",
+      "orientation": "pas_by_cell",
+      "counts": {
+        "path": null,
+        "sha256": null
+      },
+      "cells": {
+        "path": null,
+        "sha256": null
+      },
+      "feature_status": {
+        "path": null,
+        "sha256": null
+      },
+      "membership": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-02_mouse-time-aware-integration-pilot/data/metacell-pas-v7-v1/libraries/GSM3629855/cell_to_pas_and_metacell.tsv.gz",
+        "sha256": "bb209c051524aa100ab54a9dc2023fb19c34b8844b23c910bf7d5521ea64ea4f"
+      },
+      "metacells": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-02_mouse-time-aware-integration-pilot/data/metacell-pas-v7-v1/libraries/GSM3629855/metacell_metadata.tsv.gz",
+        "sha256": "1873fb5b66dbeb1b759e800e4e2543b366c3d465b863b45f7557ea0e07d1bcc7"
+      }
+    },
+    {
+      "library_id": "gse115943_pluripotency_reprogramming_core_GSM3195648",
+      "study_id": "GSE115943",
+      "library_key": "GSM3195648",
+      "orientation": "pas_by_cell",
+      "counts": {
+        "path": null,
+        "sha256": null
+      },
+      "cells": {
+        "path": null,
+        "sha256": null
+      },
+      "feature_status": {
+        "path": null,
+        "sha256": null
+      },
+      "membership": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-02_mouse-time-aware-integration-pilot/data/metacell-pas-v7-v1/libraries/GSM3195648/cell_to_pas_and_metacell.tsv.gz",
+        "sha256": "8f509baa1a26234757f6154e68e9c9718c08a25e6bb631f5c6b1506d541616a9"
+      },
+      "metacells": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-02_mouse-time-aware-integration-pilot/data/metacell-pas-v7-v1/libraries/GSM3195648/metacell_metadata.tsv.gz",
+        "sha256": "7446d4dbba8409332532a478fd6079a66751dbe8762cc9b3e3c8253a4053e3c8"
+      }
+    },
+    {
+      "library_id": "gse115943_pluripotency_reprogramming_core_GSM3195649",
+      "study_id": "GSE115943",
+      "library_key": "GSM3195649",
+      "orientation": "pas_by_cell",
+      "counts": {
+        "path": null,
+        "sha256": null
+      },
+      "cells": {
+        "path": null,
+        "sha256": null
+      },
+      "feature_status": {
+        "path": null,
+        "sha256": null
+      },
+      "membership": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-02_mouse-time-aware-integration-pilot/data/metacell-pas-v7-v1/libraries/GSM3195649/cell_to_pas_and_metacell.tsv.gz",
+        "sha256": "1cdcb0f16923aafbe0a0dc40ce5e7bdd737913ca9afccea4d96b0c60382e95b9"
+      },
+      "metacells": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-02_mouse-time-aware-integration-pilot/data/metacell-pas-v7-v1/libraries/GSM3195649/metacell_metadata.tsv.gz",
+        "sha256": "da8be514c2cacf2f763ac2328e765edfd2eb2ee88c2b41bc6a0837544701987e"
+      }
+    },
+    {
+      "library_id": "gse115943_pluripotency_reprogramming_core_GSM3195650",
+      "study_id": "GSE115943",
+      "library_key": "GSM3195650",
+      "orientation": "pas_by_cell",
+      "counts": {
+        "path": null,
+        "sha256": null
+      },
+      "cells": {
+        "path": null,
+        "sha256": null
+      },
+      "feature_status": {
+        "path": null,
+        "sha256": null
+      },
+      "membership": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-02_mouse-time-aware-integration-pilot/data/metacell-pas-v7-v1/libraries/GSM3195650/cell_to_pas_and_metacell.tsv.gz",
+        "sha256": "26dd4c2b4d3cf59e7b6c432feb10f70598c1ad7da45559ce62ed5ac13bd92904"
+      },
+      "metacells": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-02_mouse-time-aware-integration-pilot/data/metacell-pas-v7-v1/libraries/GSM3195650/metacell_metadata.tsv.gz",
+        "sha256": "00662eb5080ca4be8a1895d95084753c8bdec94f877f43c7bf2b9ed1c760332d"
+      }
+    },
+    {
+      "library_id": "gse115943_pluripotency_reprogramming_core_GSM3195651",
+      "study_id": "GSE115943",
+      "library_key": "GSM3195651",
+      "orientation": "pas_by_cell",
+      "counts": {
+        "path": null,
+        "sha256": null
+      },
+      "cells": {
+        "path": null,
+        "sha256": null
+      },
+      "feature_status": {
+        "path": null,
+        "sha256": null
+      },
+      "membership": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-02_mouse-time-aware-integration-pilot/data/metacell-pas-v7-v1/libraries/GSM3195651/cell_to_pas_and_metacell.tsv.gz",
+        "sha256": "7ffdd68f0d8a254d93e776c0286d94aace15325bfd096891308ff5df8a0aa5bf"
+      },
+      "metacells": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-02_mouse-time-aware-integration-pilot/data/metacell-pas-v7-v1/libraries/GSM3195651/metacell_metadata.tsv.gz",
+        "sha256": "2dbd87ba691250bc491f680d4d86b03662d9a142606464258850e530f1d4dd44"
+      }
+    },
+    {
+      "library_id": "gse115943_pluripotency_reprogramming_core_GSM3195652",
+      "study_id": "GSE115943",
+      "library_key": "GSM3195652",
+      "orientation": "pas_by_cell",
+      "counts": {
+        "path": null,
+        "sha256": null
+      },
+      "cells": {
+        "path": null,
+        "sha256": null
+      },
+      "feature_status": {
+        "path": null,
+        "sha256": null
+      },
+      "membership": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-02_mouse-time-aware-integration-pilot/data/metacell-pas-v7-v1/libraries/GSM3195652/cell_to_pas_and_metacell.tsv.gz",
+        "sha256": "abdbc65e3730a47801169550c3481d0100e1c07c93ac951ee3f8f9bc56ce3e42"
+      },
+      "metacells": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-02_mouse-time-aware-integration-pilot/data/metacell-pas-v7-v1/libraries/GSM3195652/metacell_metadata.tsv.gz",
+        "sha256": "1282c3627f3c8abc572d27d014260906adba510e1d1437fac98a39f3c931c9f0"
+      }
+    },
+    {
+      "library_id": "gse115943_pluripotency_reprogramming_core_GSM3195653",
+      "study_id": "GSE115943",
+      "library_key": "GSM3195653",
+      "orientation": "pas_by_cell",
+      "counts": {
+        "path": null,
+        "sha256": null
+      },
+      "cells": {
+        "path": null,
+        "sha256": null
+      },
+      "feature_status": {
+        "path": null,
+        "sha256": null
+      },
+      "membership": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-02_mouse-time-aware-integration-pilot/data/metacell-pas-v7-v1/libraries/GSM3195653/cell_to_pas_and_metacell.tsv.gz",
+        "sha256": "dd410b96136d96e9b8e607946a1ee9529b93d1bce2ea0ab65e76c2f49d9ca248"
+      },
+      "metacells": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-02_mouse-time-aware-integration-pilot/data/metacell-pas-v7-v1/libraries/GSM3195653/metacell_metadata.tsv.gz",
+        "sha256": "6a149180db9b552ada30ab2cdada5bc1879a7b5d541ad44a9a6000148b61cf4c"
+      }
+    },
+    {
+      "library_id": "gse115943_pluripotency_reprogramming_core_GSM3195654",
+      "study_id": "GSE115943",
+      "library_key": "GSM3195654",
+      "orientation": "pas_by_cell",
+      "counts": {
+        "path": null,
+        "sha256": null
+      },
+      "cells": {
+        "path": null,
+        "sha256": null
+      },
+      "feature_status": {
+        "path": null,
+        "sha256": null
+      },
+      "membership": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-02_mouse-time-aware-integration-pilot/data/metacell-pas-v7-v1/libraries/GSM3195654/cell_to_pas_and_metacell.tsv.gz",
+        "sha256": "aae69494f5ab52f57fca4e37110cf8cbfb436caa55de9e940d30337f1a36f044"
+      },
+      "metacells": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-02_mouse-time-aware-integration-pilot/data/metacell-pas-v7-v1/libraries/GSM3195654/metacell_metadata.tsv.gz",
+        "sha256": "fb60c88ae3dfd7b0240c8089462361e22b66e4d5131e7f9f8dba1941bd787595"
+      }
+    },
+    {
+      "library_id": "gse115943_pluripotency_reprogramming_core_GSM3195655",
+      "study_id": "GSE115943",
+      "library_key": "GSM3195655",
+      "orientation": "pas_by_cell",
+      "counts": {
+        "path": null,
+        "sha256": null
+      },
+      "cells": {
+        "path": null,
+        "sha256": null
+      },
+      "feature_status": {
+        "path": null,
+        "sha256": null
+      },
+      "membership": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-02_mouse-time-aware-integration-pilot/data/metacell-pas-v7-v1/libraries/GSM3195655/cell_to_pas_and_metacell.tsv.gz",
+        "sha256": "92b0c9e78bc79dc5a66af4b5aeaf72cd0357e4cf1a9b7b7a7fa1c4b2ab70fd9b"
+      },
+      "metacells": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-02_mouse-time-aware-integration-pilot/data/metacell-pas-v7-v1/libraries/GSM3195655/metacell_metadata.tsv.gz",
+        "sha256": "f8945875df1a92e126210ba20eb1741d0b51f5a20fd89b1bf9f3221552f30fae"
+      }
+    },
+    {
+      "library_id": "gse115943_pluripotency_reprogramming_core_GSM3195656",
+      "study_id": "GSE115943",
+      "library_key": "GSM3195656",
+      "orientation": "pas_by_cell",
+      "counts": {
+        "path": null,
+        "sha256": null
+      },
+      "cells": {
+        "path": null,
+        "sha256": null
+      },
+      "feature_status": {
+        "path": null,
+        "sha256": null
+      },
+      "membership": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-02_mouse-time-aware-integration-pilot/data/metacell-pas-v7-v1/libraries/GSM3195656/cell_to_pas_and_metacell.tsv.gz",
+        "sha256": "49611640c4b145851e6500f7df6c79605e663465a9eb6853ca030128baa6066a"
+      },
+      "metacells": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-02_mouse-time-aware-integration-pilot/data/metacell-pas-v7-v1/libraries/GSM3195656/metacell_metadata.tsv.gz",
+        "sha256": "0a1acc5648ee5b8d5b113d433f8631e99a97f2fd75651dce7e0c8437db14a6ed"
+      }
+    },
+    {
+      "library_id": "gse115943_pluripotency_reprogramming_core_GSM3195657",
+      "study_id": "GSE115943",
+      "library_key": "GSM3195657",
+      "orientation": "pas_by_cell",
+      "counts": {
+        "path": null,
+        "sha256": null
+      },
+      "cells": {
+        "path": null,
+        "sha256": null
+      },
+      "feature_status": {
+        "path": null,
+        "sha256": null
+      },
+      "membership": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-02_mouse-time-aware-integration-pilot/data/metacell-pas-v7-v1/libraries/GSM3195657/cell_to_pas_and_metacell.tsv.gz",
+        "sha256": "e948dbb3f213ecbbad834337666dbb8853801a60708f5eecfb26d05a005a643e"
+      },
+      "metacells": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-02_mouse-time-aware-integration-pilot/data/metacell-pas-v7-v1/libraries/GSM3195657/metacell_metadata.tsv.gz",
+        "sha256": "a5720975ac3efd53f25c330a6231ad41346f7ff2216fcfef760ff8a48aad8724"
+      }
+    },
+    {
+      "library_id": "gse115943_pluripotency_reprogramming_core_GSM3195658",
+      "study_id": "GSE115943",
+      "library_key": "GSM3195658",
+      "orientation": "pas_by_cell",
+      "counts": {
+        "path": null,
+        "sha256": null
+      },
+      "cells": {
+        "path": null,
+        "sha256": null
+      },
+      "feature_status": {
+        "path": null,
+        "sha256": null
+      },
+      "membership": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-02_mouse-time-aware-integration-pilot/data/metacell-pas-v7-v1/libraries/GSM3195658/cell_to_pas_and_metacell.tsv.gz",
+        "sha256": "fb41131a2188ef3d6379bc39b6f623d96214fdaaf614be0fc4eaac4316e3d2ad"
+      },
+      "metacells": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-02_mouse-time-aware-integration-pilot/data/metacell-pas-v7-v1/libraries/GSM3195658/metacell_metadata.tsv.gz",
+        "sha256": "8563ef11a59a4d6de5b3fb1df2c0a1b2df37825b26f584c5a180a0c3573cd6bd"
+      }
+    },
+    {
+      "library_id": "gse115943_pluripotency_reprogramming_core_GSM3195659",
+      "study_id": "GSE115943",
+      "library_key": "GSM3195659",
+      "orientation": "pas_by_cell",
+      "counts": {
+        "path": null,
+        "sha256": null
+      },
+      "cells": {
+        "path": null,
+        "sha256": null
+      },
+      "feature_status": {
+        "path": null,
+        "sha256": null
+      },
+      "membership": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-02_mouse-time-aware-integration-pilot/data/metacell-pas-v7-v1/libraries/GSM3195659/cell_to_pas_and_metacell.tsv.gz",
+        "sha256": "58704a56575b940a8129e4a3370f38f2472dd5ca171525a2ea6098f25818ea59"
+      },
+      "metacells": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-02_mouse-time-aware-integration-pilot/data/metacell-pas-v7-v1/libraries/GSM3195659/metacell_metadata.tsv.gz",
+        "sha256": "2c0aa96a73e452a4a14c94623cd54e79921f791cc854a0ce7cb72bac106f70a5"
+      }
+    },
+    {
+      "library_id": "gse115943_pluripotency_reprogramming_core_GSM3195660",
+      "study_id": "GSE115943",
+      "library_key": "GSM3195660",
+      "orientation": "pas_by_cell",
+      "counts": {
+        "path": null,
+        "sha256": null
+      },
+      "cells": {
+        "path": null,
+        "sha256": null
+      },
+      "feature_status": {
+        "path": null,
+        "sha256": null
+      },
+      "membership": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-02_mouse-time-aware-integration-pilot/data/metacell-pas-v7-v1/libraries/GSM3195660/cell_to_pas_and_metacell.tsv.gz",
+        "sha256": "9875fd2e979599158bf529770e83b215cdfb45a1252338901b74dd2826fdb442"
+      },
+      "metacells": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-02_mouse-time-aware-integration-pilot/data/metacell-pas-v7-v1/libraries/GSM3195660/metacell_metadata.tsv.gz",
+        "sha256": "548280589a1a5c89e4d551987f1cb038e02946a01088a327658e96f0522f4233"
+      }
+    },
+    {
+      "library_id": "gse115943_pluripotency_reprogramming_core_GSM3195661",
+      "study_id": "GSE115943",
+      "library_key": "GSM3195661",
+      "orientation": "pas_by_cell",
+      "counts": {
+        "path": null,
+        "sha256": null
+      },
+      "cells": {
+        "path": null,
+        "sha256": null
+      },
+      "feature_status": {
+        "path": null,
+        "sha256": null
+      },
+      "membership": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-02_mouse-time-aware-integration-pilot/data/metacell-pas-v7-v1/libraries/GSM3195661/cell_to_pas_and_metacell.tsv.gz",
+        "sha256": "6ba10c503cea0cd06065b8fc57eb5a42cc058c94e516930e289d9e396fdee116"
+      },
+      "metacells": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-02_mouse-time-aware-integration-pilot/data/metacell-pas-v7-v1/libraries/GSM3195661/metacell_metadata.tsv.gz",
+        "sha256": "cf8f82d2d4371ace3f72d0f989ecf3aaa27175761c8a741cacad58b65be34fc4"
+      }
+    },
+    {
+      "library_id": "gse115943_pluripotency_reprogramming_core_GSM3195662",
+      "study_id": "GSE115943",
+      "library_key": "GSM3195662",
+      "orientation": "pas_by_cell",
+      "counts": {
+        "path": null,
+        "sha256": null
+      },
+      "cells": {
+        "path": null,
+        "sha256": null
+      },
+      "feature_status": {
+        "path": null,
+        "sha256": null
+      },
+      "membership": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-02_mouse-time-aware-integration-pilot/data/metacell-pas-v7-v1/libraries/GSM3195662/cell_to_pas_and_metacell.tsv.gz",
+        "sha256": "8690e7464343de04bca4d83b3969260e2062aad8e08a38a51979292acddc16a5"
+      },
+      "metacells": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-02_mouse-time-aware-integration-pilot/data/metacell-pas-v7-v1/libraries/GSM3195662/metacell_metadata.tsv.gz",
+        "sha256": "e6271d14664cd5e35b2ee3c6baa0a7966428796768d2df071035937bec5df9e8"
+      }
+    },
+    {
+      "library_id": "gse115943_pluripotency_reprogramming_core_GSM3195663",
+      "study_id": "GSE115943",
+      "library_key": "GSM3195663",
+      "orientation": "pas_by_cell",
+      "counts": {
+        "path": null,
+        "sha256": null
+      },
+      "cells": {
+        "path": null,
+        "sha256": null
+      },
+      "feature_status": {
+        "path": null,
+        "sha256": null
+      },
+      "membership": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-02_mouse-time-aware-integration-pilot/data/metacell-pas-v7-v1/libraries/GSM3195663/cell_to_pas_and_metacell.tsv.gz",
+        "sha256": "1d6f891b535ff9b80c292b2c01b154602052f3b5476eeb39001b75735325b2c1"
+      },
+      "metacells": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-02_mouse-time-aware-integration-pilot/data/metacell-pas-v7-v1/libraries/GSM3195663/metacell_metadata.tsv.gz",
+        "sha256": "b1a0f6f3bbc29c7641d81df5b4dd34ce2203795cfd9fa793c842ec739a024cf7"
+      }
+    },
+    {
+      "library_id": "gse115943_pluripotency_reprogramming_core_GSM3195664",
+      "study_id": "GSE115943",
+      "library_key": "GSM3195664",
+      "orientation": "pas_by_cell",
+      "counts": {
+        "path": null,
+        "sha256": null
+      },
+      "cells": {
+        "path": null,
+        "sha256": null
+      },
+      "feature_status": {
+        "path": null,
+        "sha256": null
+      },
+      "membership": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-02_mouse-time-aware-integration-pilot/data/metacell-pas-v7-v1/libraries/GSM3195664/cell_to_pas_and_metacell.tsv.gz",
+        "sha256": "785170daf92adca717ffff37d65e7082c87dcf9bd5ee12f1b7301e96e3bf72a8"
+      },
+      "metacells": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-02_mouse-time-aware-integration-pilot/data/metacell-pas-v7-v1/libraries/GSM3195664/metacell_metadata.tsv.gz",
+        "sha256": "4d9cfca4835f159a0cbfdab91359d34fe3816229ac61b31c52d91009744dc30d"
+      }
+    },
+    {
+      "library_id": "gse115943_pluripotency_reprogramming_core_GSM3195665",
+      "study_id": "GSE115943",
+      "library_key": "GSM3195665",
+      "orientation": "pas_by_cell",
+      "counts": {
+        "path": null,
+        "sha256": null
+      },
+      "cells": {
+        "path": null,
+        "sha256": null
+      },
+      "feature_status": {
+        "path": null,
+        "sha256": null
+      },
+      "membership": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-02_mouse-time-aware-integration-pilot/data/metacell-pas-v7-v1/libraries/GSM3195665/cell_to_pas_and_metacell.tsv.gz",
+        "sha256": "255f52667eb33bdcd501298cec4b3aeb3351c2874220d95d54e39fe93e6b34aa"
+      },
+      "metacells": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-02_mouse-time-aware-integration-pilot/data/metacell-pas-v7-v1/libraries/GSM3195665/metacell_metadata.tsv.gz",
+        "sha256": "4c161b815203d30fa5be5b9ddcc7841452fa206cc770e195d3c26cca932bd1c8"
+      }
+    },
+    {
+      "library_id": "gse115943_pluripotency_reprogramming_core_GSM3195666",
+      "study_id": "GSE115943",
+      "library_key": "GSM3195666",
+      "orientation": "pas_by_cell",
+      "counts": {
+        "path": null,
+        "sha256": null
+      },
+      "cells": {
+        "path": null,
+        "sha256": null
+      },
+      "feature_status": {
+        "path": null,
+        "sha256": null
+      },
+      "membership": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-02_mouse-time-aware-integration-pilot/data/metacell-pas-v7-v1/libraries/GSM3195666/cell_to_pas_and_metacell.tsv.gz",
+        "sha256": "9b56526f8c9531073cbd6b7b3106300b43501a3d1f0f046972ed5a870baa777e"
+      },
+      "metacells": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-02_mouse-time-aware-integration-pilot/data/metacell-pas-v7-v1/libraries/GSM3195666/metacell_metadata.tsv.gz",
+        "sha256": "1043abf8cd60ffbb3b96ce83e95421a1fe94cd006a3f4f181c5d52b7c0313eb8"
+      }
+    },
+    {
+      "library_id": "gse115943_pluripotency_reprogramming_core_GSM3195667",
+      "study_id": "GSE115943",
+      "library_key": "GSM3195667",
+      "orientation": "pas_by_cell",
+      "counts": {
+        "path": null,
+        "sha256": null
+      },
+      "cells": {
+        "path": null,
+        "sha256": null
+      },
+      "feature_status": {
+        "path": null,
+        "sha256": null
+      },
+      "membership": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-02_mouse-time-aware-integration-pilot/data/metacell-pas-v7-v1/libraries/GSM3195667/cell_to_pas_and_metacell.tsv.gz",
+        "sha256": "3d91e3bda83d72e18926ad9f40ad9e54bdf8c9c25577fe0e5886c1d4265b5a3a"
+      },
+      "metacells": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-02_mouse-time-aware-integration-pilot/data/metacell-pas-v7-v1/libraries/GSM3195667/metacell_metadata.tsv.gz",
+        "sha256": "fca5d7fcc749c32c03ecbfc88351327a37c12ed6fd70109336399f3ee291736b"
+      }
+    },
+    {
+      "library_id": "gse115943_pluripotency_reprogramming_core_GSM3195668",
+      "study_id": "GSE115943",
+      "library_key": "GSM3195668",
+      "orientation": "pas_by_cell",
+      "counts": {
+        "path": null,
+        "sha256": null
+      },
+      "cells": {
+        "path": null,
+        "sha256": null
+      },
+      "feature_status": {
+        "path": null,
+        "sha256": null
+      },
+      "membership": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-02_mouse-time-aware-integration-pilot/data/metacell-pas-v7-v1/libraries/GSM3195668/cell_to_pas_and_metacell.tsv.gz",
+        "sha256": "5cbdc022cc52c372a64a2b9c7a8d0914d44606e5621c361ef36f4c5de824249f"
+      },
+      "metacells": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-02_mouse-time-aware-integration-pilot/data/metacell-pas-v7-v1/libraries/GSM3195668/metacell_metadata.tsv.gz",
+        "sha256": "b6f3b4c4c027b570a02574b1ed90ac20aa2a78bb528f03138690677b13191554"
+      }
+    },
+    {
+      "library_id": "gse115943_pluripotency_reprogramming_core_GSM3195669",
+      "study_id": "GSE115943",
+      "library_key": "GSM3195669",
+      "orientation": "pas_by_cell",
+      "counts": {
+        "path": null,
+        "sha256": null
+      },
+      "cells": {
+        "path": null,
+        "sha256": null
+      },
+      "feature_status": {
+        "path": null,
+        "sha256": null
+      },
+      "membership": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-02_mouse-time-aware-integration-pilot/data/metacell-pas-v7-v1/libraries/GSM3195669/cell_to_pas_and_metacell.tsv.gz",
+        "sha256": "76b2062cdf73a0bd9b48594e177e92fbfbfcd0cbca3c279d8500c71335e60a48"
+      },
+      "metacells": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-02_mouse-time-aware-integration-pilot/data/metacell-pas-v7-v1/libraries/GSM3195669/metacell_metadata.tsv.gz",
+        "sha256": "6c7ac70bf7b1e968d3c1b1d6265139053216f81aa11e0f9474fcda3ea1a95d8e"
+      }
+    },
+    {
+      "library_id": "gse115943_pluripotency_reprogramming_core_GSM3195670",
+      "study_id": "GSE115943",
+      "library_key": "GSM3195670",
+      "orientation": "pas_by_cell",
+      "counts": {
+        "path": null,
+        "sha256": null
+      },
+      "cells": {
+        "path": null,
+        "sha256": null
+      },
+      "feature_status": {
+        "path": null,
+        "sha256": null
+      },
+      "membership": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-02_mouse-time-aware-integration-pilot/data/metacell-pas-v7-v1/libraries/GSM3195670/cell_to_pas_and_metacell.tsv.gz",
+        "sha256": "013a1de67e3f102994e111de8e17994ee16df1f8ed7b72a829be8ae6f5a845ba"
+      },
+      "metacells": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-02_mouse-time-aware-integration-pilot/data/metacell-pas-v7-v1/libraries/GSM3195670/metacell_metadata.tsv.gz",
+        "sha256": "8bca94335aebec7b721fa7e2ad3cc9124a838e7aaa1ea42a8a65e3f0e096592e"
+      }
+    },
+    {
+      "library_id": "gse115943_pluripotency_reprogramming_core_GSM3195671",
+      "study_id": "GSE115943",
+      "library_key": "GSM3195671",
+      "orientation": "pas_by_cell",
+      "counts": {
+        "path": null,
+        "sha256": null
+      },
+      "cells": {
+        "path": null,
+        "sha256": null
+      },
+      "feature_status": {
+        "path": null,
+        "sha256": null
+      },
+      "membership": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-02_mouse-time-aware-integration-pilot/data/metacell-pas-v7-v1/libraries/GSM3195671/cell_to_pas_and_metacell.tsv.gz",
+        "sha256": "0561505cfa6f79435b418c74cce068052124198461c6f86713aaa8cc5039a5d7"
+      },
+      "metacells": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-02_mouse-time-aware-integration-pilot/data/metacell-pas-v7-v1/libraries/GSM3195671/metacell_metadata.tsv.gz",
+        "sha256": "63af35aeff0603497a0b1879fee29fb91d6c9f03b98e8219fe0a10a1926363e0"
+      }
+    },
+    {
+      "library_id": "gse115943_pluripotency_reprogramming_core_GSM3195672",
+      "study_id": "GSE115943",
+      "library_key": "GSM3195672",
+      "orientation": "pas_by_cell",
+      "counts": {
+        "path": null,
+        "sha256": null
+      },
+      "cells": {
+        "path": null,
+        "sha256": null
+      },
+      "feature_status": {
+        "path": null,
+        "sha256": null
+      },
+      "membership": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-02_mouse-time-aware-integration-pilot/data/metacell-pas-v7-v1/libraries/GSM3195672/cell_to_pas_and_metacell.tsv.gz",
+        "sha256": "f0ba4736586736d780ceb6be72f916c13244c17156ef68608d53f4d1594817eb"
+      },
+      "metacells": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-02_mouse-time-aware-integration-pilot/data/metacell-pas-v7-v1/libraries/GSM3195672/metacell_metadata.tsv.gz",
+        "sha256": "0e1ac884ce0c3490d85d7500b54a650cd1f3399d8a4188e03b91713e5ccf4b06"
+      }
+    },
+    {
+      "library_id": "gse115943_pluripotency_reprogramming_core_GSM3195673",
+      "study_id": "GSE115943",
+      "library_key": "GSM3195673",
+      "orientation": "pas_by_cell",
+      "counts": {
+        "path": null,
+        "sha256": null
+      },
+      "cells": {
+        "path": null,
+        "sha256": null
+      },
+      "feature_status": {
+        "path": null,
+        "sha256": null
+      },
+      "membership": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-02_mouse-time-aware-integration-pilot/data/metacell-pas-v7-v1/libraries/GSM3195673/cell_to_pas_and_metacell.tsv.gz",
+        "sha256": "d92a9be88e82d2c808533124d5bfade75f5e5259cd95fee4e943b182a0be0681"
+      },
+      "metacells": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-02_mouse-time-aware-integration-pilot/data/metacell-pas-v7-v1/libraries/GSM3195673/metacell_metadata.tsv.gz",
+        "sha256": "82028c51783957ed3da571b2fe83bae47284861acdc619d744e82311da34eacf"
+      }
+    },
+    {
+      "library_id": "gse115943_pluripotency_reprogramming_core_GSM3195674",
+      "study_id": "GSE115943",
+      "library_key": "GSM3195674",
+      "orientation": "pas_by_cell",
+      "counts": {
+        "path": null,
+        "sha256": null
+      },
+      "cells": {
+        "path": null,
+        "sha256": null
+      },
+      "feature_status": {
+        "path": null,
+        "sha256": null
+      },
+      "membership": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-02_mouse-time-aware-integration-pilot/data/metacell-pas-v7-v1/libraries/GSM3195674/cell_to_pas_and_metacell.tsv.gz",
+        "sha256": "cc7f96c05f71d446b5cae71a6c76bf0902cef90447da88879e80fce3834c9fac"
+      },
+      "metacells": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-02_mouse-time-aware-integration-pilot/data/metacell-pas-v7-v1/libraries/GSM3195674/metacell_metadata.tsv.gz",
+        "sha256": "f6be01fdfb0167f0230f604e84d9d411ae6358d30be0a0fede13ab99a3208bfe"
+      }
+    },
+    {
+      "library_id": "gse115943_pluripotency_reprogramming_core_GSM3195675",
+      "study_id": "GSE115943",
+      "library_key": "GSM3195675",
+      "orientation": "pas_by_cell",
+      "counts": {
+        "path": null,
+        "sha256": null
+      },
+      "cells": {
+        "path": null,
+        "sha256": null
+      },
+      "feature_status": {
+        "path": null,
+        "sha256": null
+      },
+      "membership": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-02_mouse-time-aware-integration-pilot/data/metacell-pas-v7-v1/libraries/GSM3195675/cell_to_pas_and_metacell.tsv.gz",
+        "sha256": "1875c0ead895dc8799ba89de774facd074d8223c57eaffc8543e3b6c99b84ecc"
+      },
+      "metacells": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-02_mouse-time-aware-integration-pilot/data/metacell-pas-v7-v1/libraries/GSM3195675/metacell_metadata.tsv.gz",
+        "sha256": "80611c7ae639b5971cb8caab4f0345d990d6fc9191a0abf3cc7a41fab40fe034"
+      }
+    },
+    {
+      "library_id": "gse115943_pluripotency_reprogramming_core_GSM3195676",
+      "study_id": "GSE115943",
+      "library_key": "GSM3195676",
+      "orientation": "pas_by_cell",
+      "counts": {
+        "path": null,
+        "sha256": null
+      },
+      "cells": {
+        "path": null,
+        "sha256": null
+      },
+      "feature_status": {
+        "path": null,
+        "sha256": null
+      },
+      "membership": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-02_mouse-time-aware-integration-pilot/data/metacell-pas-v7-v1/libraries/GSM3195676/cell_to_pas_and_metacell.tsv.gz",
+        "sha256": "311aadd3f4a699129ac78ecd7d9a1c0605193f6a6d4f57a64d8db6a2ceeed8d7"
+      },
+      "metacells": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-02_mouse-time-aware-integration-pilot/data/metacell-pas-v7-v1/libraries/GSM3195676/metacell_metadata.tsv.gz",
+        "sha256": "0053aec538a082bce953fb280885c90f57ea83e92b3de2ed5203671c299cd010"
+      }
+    },
+    {
+      "library_id": "gse115943_pluripotency_reprogramming_core_GSM3195677",
+      "study_id": "GSE115943",
+      "library_key": "GSM3195677",
+      "orientation": "pas_by_cell",
+      "counts": {
+        "path": null,
+        "sha256": null
+      },
+      "cells": {
+        "path": null,
+        "sha256": null
+      },
+      "feature_status": {
+        "path": null,
+        "sha256": null
+      },
+      "membership": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-02_mouse-time-aware-integration-pilot/data/metacell-pas-v7-v1/libraries/GSM3195677/cell_to_pas_and_metacell.tsv.gz",
+        "sha256": "881352934a0cfbacb413b9347d36088d8070fa041b07519f38ad7fa85579904c"
+      },
+      "metacells": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-02_mouse-time-aware-integration-pilot/data/metacell-pas-v7-v1/libraries/GSM3195677/metacell_metadata.tsv.gz",
+        "sha256": "9a6aa9562f3e18b4f989353de9003b759319c51f039d7f4f4c5cea8aa5f641b7"
+      }
+    },
+    {
+      "library_id": "gse115943_pluripotency_reprogramming_core_GSM3195678",
+      "study_id": "GSE115943",
+      "library_key": "GSM3195678",
+      "orientation": "pas_by_cell",
+      "counts": {
+        "path": null,
+        "sha256": null
+      },
+      "cells": {
+        "path": null,
+        "sha256": null
+      },
+      "feature_status": {
+        "path": null,
+        "sha256": null
+      },
+      "membership": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-02_mouse-time-aware-integration-pilot/data/metacell-pas-v7-v1/libraries/GSM3195678/cell_to_pas_and_metacell.tsv.gz",
+        "sha256": "f763d35b21934ca99be31f6d7dbb13344f181f47464460198029d776a97b1c34"
+      },
+      "metacells": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-02_mouse-time-aware-integration-pilot/data/metacell-pas-v7-v1/libraries/GSM3195678/metacell_metadata.tsv.gz",
+        "sha256": "48f1eecb8509b31e468bcc13945827c11ac450671c54799fd51fb79559b3847a"
+      }
+    },
+    {
+      "library_id": "gse115943_pluripotency_reprogramming_core_GSM3195679",
+      "study_id": "GSE115943",
+      "library_key": "GSM3195679",
+      "orientation": "pas_by_cell",
+      "counts": {
+        "path": null,
+        "sha256": null
+      },
+      "cells": {
+        "path": null,
+        "sha256": null
+      },
+      "feature_status": {
+        "path": null,
+        "sha256": null
+      },
+      "membership": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-02_mouse-time-aware-integration-pilot/data/metacell-pas-v7-v1/libraries/GSM3195679/cell_to_pas_and_metacell.tsv.gz",
+        "sha256": "8ec3a88d4fc57f5cce5712fb7b1fc10048c545061bbb5db0daac77ccb97d5566"
+      },
+      "metacells": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-02_mouse-time-aware-integration-pilot/data/metacell-pas-v7-v1/libraries/GSM3195679/metacell_metadata.tsv.gz",
+        "sha256": "848b80e467ad33a2a9f7eae14b44ccfab30b800986fcec8b202fbd9e495a9e1e"
+      }
+    },
+    {
+      "library_id": "gse115943_pluripotency_reprogramming_core_GSM3195680",
+      "study_id": "GSE115943",
+      "library_key": "GSM3195680",
+      "orientation": "pas_by_cell",
+      "counts": {
+        "path": null,
+        "sha256": null
+      },
+      "cells": {
+        "path": null,
+        "sha256": null
+      },
+      "feature_status": {
+        "path": null,
+        "sha256": null
+      },
+      "membership": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-02_mouse-time-aware-integration-pilot/data/metacell-pas-v7-v1/libraries/GSM3195680/cell_to_pas_and_metacell.tsv.gz",
+        "sha256": "939ecbbfa156b5396355cc2ba2f76e550634b810886cfd58dab7d4e2fc0e460c"
+      },
+      "metacells": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-02_mouse-time-aware-integration-pilot/data/metacell-pas-v7-v1/libraries/GSM3195680/metacell_metadata.tsv.gz",
+        "sha256": "afe0acaafe1c105ee41aa24c0c6a90b364eea5357dbc8e210f258f292ae7dc48"
+      }
+    },
+    {
+      "library_id": "gse115943_pluripotency_reprogramming_core_GSM3195681",
+      "study_id": "GSE115943",
+      "library_key": "GSM3195681",
+      "orientation": "pas_by_cell",
+      "counts": {
+        "path": null,
+        "sha256": null
+      },
+      "cells": {
+        "path": null,
+        "sha256": null
+      },
+      "feature_status": {
+        "path": null,
+        "sha256": null
+      },
+      "membership": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-02_mouse-time-aware-integration-pilot/data/metacell-pas-v7-v1/libraries/GSM3195681/cell_to_pas_and_metacell.tsv.gz",
+        "sha256": "c6e7066ab74511207ee92bae69a15b25354d593104729b74e25088687873c511"
+      },
+      "metacells": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-02_mouse-time-aware-integration-pilot/data/metacell-pas-v7-v1/libraries/GSM3195681/metacell_metadata.tsv.gz",
+        "sha256": "b227cc98213becd342fbd9eb777319f1a69869fccf43bf4bc80d91ecd3bc60ad"
+      }
+    },
+    {
+      "library_id": "gse115943_pluripotency_reprogramming_core_GSM3195682",
+      "study_id": "GSE115943",
+      "library_key": "GSM3195682",
+      "orientation": "pas_by_cell",
+      "counts": {
+        "path": null,
+        "sha256": null
+      },
+      "cells": {
+        "path": null,
+        "sha256": null
+      },
+      "feature_status": {
+        "path": null,
+        "sha256": null
+      },
+      "membership": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-02_mouse-time-aware-integration-pilot/data/metacell-pas-v7-v1/libraries/GSM3195682/cell_to_pas_and_metacell.tsv.gz",
+        "sha256": "240b837ca900d17046d48abb40776367e96a6d6ed7ebefc45ddbf695429a2bac"
+      },
+      "metacells": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-02_mouse-time-aware-integration-pilot/data/metacell-pas-v7-v1/libraries/GSM3195682/metacell_metadata.tsv.gz",
+        "sha256": "501af331f3f16ef70b936836510d20827891a2505a024a7a23ff3386a0477106"
+      }
+    },
+    {
+      "library_id": "gse115943_pluripotency_reprogramming_core_GSM3195683",
+      "study_id": "GSE115943",
+      "library_key": "GSM3195683",
+      "orientation": "pas_by_cell",
+      "counts": {
+        "path": null,
+        "sha256": null
+      },
+      "cells": {
+        "path": null,
+        "sha256": null
+      },
+      "feature_status": {
+        "path": null,
+        "sha256": null
+      },
+      "membership": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-02_mouse-time-aware-integration-pilot/data/metacell-pas-v7-v1/libraries/GSM3195683/cell_to_pas_and_metacell.tsv.gz",
+        "sha256": "a6f2c6facd203f174e7c9f8f87851ee0f709061537bd9d396bf55b5abf1e029a"
+      },
+      "metacells": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-02_mouse-time-aware-integration-pilot/data/metacell-pas-v7-v1/libraries/GSM3195683/metacell_metadata.tsv.gz",
+        "sha256": "d9337b8372f642e0f013d39f4e31eac7a5291f0db7da5be0469c417a18849f2e"
+      }
+    },
+    {
+      "library_id": "gse115943_pluripotency_reprogramming_core_GSM3195686",
+      "study_id": "GSE115943",
+      "library_key": "GSM3195686",
+      "orientation": "pas_by_cell",
+      "counts": {
+        "path": null,
+        "sha256": null
+      },
+      "cells": {
+        "path": null,
+        "sha256": null
+      },
+      "feature_status": {
+        "path": null,
+        "sha256": null
+      },
+      "membership": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-02_mouse-time-aware-integration-pilot/data/metacell-pas-v7-v1/libraries/GSM3195686/cell_to_pas_and_metacell.tsv.gz",
+        "sha256": "2fd3dbf84afc3fd2386e4ea88ae61831e854a49bcb4c31d6a895e0e4f1f0b440"
+      },
+      "metacells": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-02_mouse-time-aware-integration-pilot/data/metacell-pas-v7-v1/libraries/GSM3195686/metacell_metadata.tsv.gz",
+        "sha256": "b32591f8d5890960be789cc6a14766c5b256946d6227bc3d22a6dc2eb855ea3a"
+      }
+    },
+    {
+      "library_id": "gse115943_pluripotency_reprogramming_core_GSM3195687",
+      "study_id": "GSE115943",
+      "library_key": "GSM3195687",
+      "orientation": "pas_by_cell",
+      "counts": {
+        "path": null,
+        "sha256": null
+      },
+      "cells": {
+        "path": null,
+        "sha256": null
+      },
+      "feature_status": {
+        "path": null,
+        "sha256": null
+      },
+      "membership": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-02_mouse-time-aware-integration-pilot/data/metacell-pas-v7-v1/libraries/GSM3195687/cell_to_pas_and_metacell.tsv.gz",
+        "sha256": "05e43f355c702cef6b27737f27518f7020ca75962b79a92e1a0c800620814b2f"
+      },
+      "metacells": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-02_mouse-time-aware-integration-pilot/data/metacell-pas-v7-v1/libraries/GSM3195687/metacell_metadata.tsv.gz",
+        "sha256": "2688a075e8683869bbbdfcbf62a20512944ccbcbb07dab059437c532608478b7"
+      }
+    },
+    {
+      "library_id": "gse115943_pluripotency_reprogramming_core_GSM3195690",
+      "study_id": "GSE115943",
+      "library_key": "GSM3195690",
+      "orientation": "pas_by_cell",
+      "counts": {
+        "path": null,
+        "sha256": null
+      },
+      "cells": {
+        "path": null,
+        "sha256": null
+      },
+      "feature_status": {
+        "path": null,
+        "sha256": null
+      },
+      "membership": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-02_mouse-time-aware-integration-pilot/data/metacell-pas-v7-v1/libraries/GSM3195690/cell_to_pas_and_metacell.tsv.gz",
+        "sha256": "cd678a5e11a34cc574435b430425436f5fec82851e532fbeaac26cb7fd84eaf8"
+      },
+      "metacells": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-02_mouse-time-aware-integration-pilot/data/metacell-pas-v7-v1/libraries/GSM3195690/metacell_metadata.tsv.gz",
+        "sha256": "a4499eebc0591e4654e2c71e27b2ae2338b9f0f74363a1c175aee401a63ff8dd"
+      }
+    },
+    {
+      "library_id": "gse115943_pluripotency_reprogramming_core_GSM3195691",
+      "study_id": "GSE115943",
+      "library_key": "GSM3195691",
+      "orientation": "pas_by_cell",
+      "counts": {
+        "path": null,
+        "sha256": null
+      },
+      "cells": {
+        "path": null,
+        "sha256": null
+      },
+      "feature_status": {
+        "path": null,
+        "sha256": null
+      },
+      "membership": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-02_mouse-time-aware-integration-pilot/data/metacell-pas-v7-v1/libraries/GSM3195691/cell_to_pas_and_metacell.tsv.gz",
+        "sha256": "3c0023a18e928f33d9d22dc1095c83a63b024a27de58b248da12d2f7576b65ea"
+      },
+      "metacells": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-02_mouse-time-aware-integration-pilot/data/metacell-pas-v7-v1/libraries/GSM3195691/metacell_metadata.tsv.gz",
+        "sha256": "33d21247b99d2078c3867328fc984ebb27bc74b5db8dab0540a6438def30327d"
+      }
+    },
+    {
+      "library_id": "gse115943_pluripotency_reprogramming_core_GSM3195694",
+      "study_id": "GSE115943",
+      "library_key": "GSM3195694",
+      "orientation": "pas_by_cell",
+      "counts": {
+        "path": null,
+        "sha256": null
+      },
+      "cells": {
+        "path": null,
+        "sha256": null
+      },
+      "feature_status": {
+        "path": null,
+        "sha256": null
+      },
+      "membership": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-02_mouse-time-aware-integration-pilot/data/metacell-pas-v7-v1/libraries/GSM3195694/cell_to_pas_and_metacell.tsv.gz",
+        "sha256": "45717416a239332f2e90edb61680dda5fed77df7f3dad56156d9c8d6de3d08ac"
+      },
+      "metacells": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-02_mouse-time-aware-integration-pilot/data/metacell-pas-v7-v1/libraries/GSM3195694/metacell_metadata.tsv.gz",
+        "sha256": "a355a4a32af81352e34749923781bf6de2759d8868019279ef356f408f01bb94"
+      }
+    },
+    {
+      "library_id": "gse115943_pluripotency_reprogramming_core_GSM3195695",
+      "study_id": "GSE115943",
+      "library_key": "GSM3195695",
+      "orientation": "pas_by_cell",
+      "counts": {
+        "path": null,
+        "sha256": null
+      },
+      "cells": {
+        "path": null,
+        "sha256": null
+      },
+      "feature_status": {
+        "path": null,
+        "sha256": null
+      },
+      "membership": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-02_mouse-time-aware-integration-pilot/data/metacell-pas-v7-v1/libraries/GSM3195695/cell_to_pas_and_metacell.tsv.gz",
+        "sha256": "4cf41f50d3ac42fa2176c3d87b2118eff7a44b4509e31ec4720fad9c535baa04"
+      },
+      "metacells": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-02_mouse-time-aware-integration-pilot/data/metacell-pas-v7-v1/libraries/GSM3195695/metacell_metadata.tsv.gz",
+        "sha256": "488dfc8c9c04d7455fc3341a796e8a265846bbdf8178c06887a7a34c3b9650e1"
+      }
+    },
+    {
+      "library_id": "gse115943_pluripotency_reprogramming_core_GSM3195698",
+      "study_id": "GSE115943",
+      "library_key": "GSM3195698",
+      "orientation": "pas_by_cell",
+      "counts": {
+        "path": null,
+        "sha256": null
+      },
+      "cells": {
+        "path": null,
+        "sha256": null
+      },
+      "feature_status": {
+        "path": null,
+        "sha256": null
+      },
+      "membership": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-02_mouse-time-aware-integration-pilot/data/metacell-pas-v7-v1/libraries/GSM3195698/cell_to_pas_and_metacell.tsv.gz",
+        "sha256": "df5e876f7eadc46d09e49953f6dead5f49e1ab18ec617136de78113c8df11943"
+      },
+      "metacells": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-02_mouse-time-aware-integration-pilot/data/metacell-pas-v7-v1/libraries/GSM3195698/metacell_metadata.tsv.gz",
+        "sha256": "dc21f385d60f4b0a39ca6daea7a853dc18f7c5aada11acca0146ec480379f6bd"
+      }
+    },
+    {
+      "library_id": "gse115943_pluripotency_reprogramming_core_GSM3195699",
+      "study_id": "GSE115943",
+      "library_key": "GSM3195699",
+      "orientation": "pas_by_cell",
+      "counts": {
+        "path": null,
+        "sha256": null
+      },
+      "cells": {
+        "path": null,
+        "sha256": null
+      },
+      "feature_status": {
+        "path": null,
+        "sha256": null
+      },
+      "membership": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-02_mouse-time-aware-integration-pilot/data/metacell-pas-v7-v1/libraries/GSM3195699/cell_to_pas_and_metacell.tsv.gz",
+        "sha256": "5e57b19cd34e652d65fbe9d14d7abce8f17126cf75b2138c2e76d08a57ffa4cd"
+      },
+      "metacells": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-02_mouse-time-aware-integration-pilot/data/metacell-pas-v7-v1/libraries/GSM3195699/metacell_metadata.tsv.gz",
+        "sha256": "e168c82d947b83db36efa318a4a82da0eea47fa8bda355c4b9793a320f498b7a"
+      }
+    },
+    {
+      "library_id": "gse115943_pluripotency_reprogramming_core_GSM3195702",
+      "study_id": "GSE115943",
+      "library_key": "GSM3195702",
+      "orientation": "pas_by_cell",
+      "counts": {
+        "path": null,
+        "sha256": null
+      },
+      "cells": {
+        "path": null,
+        "sha256": null
+      },
+      "feature_status": {
+        "path": null,
+        "sha256": null
+      },
+      "membership": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-02_mouse-time-aware-integration-pilot/data/metacell-pas-v7-v1/libraries/GSM3195702/cell_to_pas_and_metacell.tsv.gz",
+        "sha256": "3727d7258f24968bc7fde85c9a19ae129ba3ed626b93bcde614a9b883f8bbcaa"
+      },
+      "metacells": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-02_mouse-time-aware-integration-pilot/data/metacell-pas-v7-v1/libraries/GSM3195702/metacell_metadata.tsv.gz",
+        "sha256": "57c5c2da52ee9a7f7bba08901d0745fb5447bf4b36386b58717ce623b38b5b09"
+      }
+    },
+    {
+      "library_id": "gse115943_pluripotency_reprogramming_core_GSM3195703",
+      "study_id": "GSE115943",
+      "library_key": "GSM3195703",
+      "orientation": "pas_by_cell",
+      "counts": {
+        "path": null,
+        "sha256": null
+      },
+      "cells": {
+        "path": null,
+        "sha256": null
+      },
+      "feature_status": {
+        "path": null,
+        "sha256": null
+      },
+      "membership": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-02_mouse-time-aware-integration-pilot/data/metacell-pas-v7-v1/libraries/GSM3195703/cell_to_pas_and_metacell.tsv.gz",
+        "sha256": "fdfa1eff4c1fcbb0fedf4f338c0d440888cafd0a89412a3d8466a7251198465b"
+      },
+      "metacells": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-02_mouse-time-aware-integration-pilot/data/metacell-pas-v7-v1/libraries/GSM3195703/metacell_metadata.tsv.gz",
+        "sha256": "5b476dc9abcec49544fd02fb007c1260561cacf88184c7391f66bfb028eaa5a5"
+      }
+    },
+    {
+      "library_id": "gse115943_pluripotency_reprogramming_core_GSM3195706",
+      "study_id": "GSE115943",
+      "library_key": "GSM3195706",
+      "orientation": "pas_by_cell",
+      "counts": {
+        "path": null,
+        "sha256": null
+      },
+      "cells": {
+        "path": null,
+        "sha256": null
+      },
+      "feature_status": {
+        "path": null,
+        "sha256": null
+      },
+      "membership": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-02_mouse-time-aware-integration-pilot/data/metacell-pas-v7-v1/libraries/GSM3195706/cell_to_pas_and_metacell.tsv.gz",
+        "sha256": "e1b00a074ec7c8b5e10e125db1f629b7925d62ff36264bb996a58005e28f8efd"
+      },
+      "metacells": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-02_mouse-time-aware-integration-pilot/data/metacell-pas-v7-v1/libraries/GSM3195706/metacell_metadata.tsv.gz",
+        "sha256": "d25f1ea7558b7c108f11d855947829c312299de9e3f741b878092079ca8cadd0"
+      }
+    },
+    {
+      "library_id": "gse115943_pluripotency_reprogramming_core_GSM3195707",
+      "study_id": "GSE115943",
+      "library_key": "GSM3195707",
+      "orientation": "pas_by_cell",
+      "counts": {
+        "path": null,
+        "sha256": null
+      },
+      "cells": {
+        "path": null,
+        "sha256": null
+      },
+      "feature_status": {
+        "path": null,
+        "sha256": null
+      },
+      "membership": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-02_mouse-time-aware-integration-pilot/data/metacell-pas-v7-v1/libraries/GSM3195707/cell_to_pas_and_metacell.tsv.gz",
+        "sha256": "eff34df1f1089d959b5faff9b396fd104af72ca631997e2d62990d7d13b237ac"
+      },
+      "metacells": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-02_mouse-time-aware-integration-pilot/data/metacell-pas-v7-v1/libraries/GSM3195707/metacell_metadata.tsv.gz",
+        "sha256": "166996ed06ecf3fa5e78a8edbec8e5dd23610aa1b98b43d64349680979927650"
+      }
+    },
+    {
+      "library_id": "gse115943_pluripotency_reprogramming_core_GSM3195710",
+      "study_id": "GSE115943",
+      "library_key": "GSM3195710",
+      "orientation": "pas_by_cell",
+      "counts": {
+        "path": null,
+        "sha256": null
+      },
+      "cells": {
+        "path": null,
+        "sha256": null
+      },
+      "feature_status": {
+        "path": null,
+        "sha256": null
+      },
+      "membership": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-02_mouse-time-aware-integration-pilot/data/metacell-pas-v7-v1/libraries/GSM3195710/cell_to_pas_and_metacell.tsv.gz",
+        "sha256": "6217b07c0989848b880460c5ee85bb129225b8ec530bda65533a77891d3fad3f"
+      },
+      "metacells": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-02_mouse-time-aware-integration-pilot/data/metacell-pas-v7-v1/libraries/GSM3195710/metacell_metadata.tsv.gz",
+        "sha256": "090873c38d08d5062112171a0fb78363638faa200b95e248c1d7b9e1b0880951"
+      }
+    },
+    {
+      "library_id": "gse115943_pluripotency_reprogramming_core_GSM3195711",
+      "study_id": "GSE115943",
+      "library_key": "GSM3195711",
+      "orientation": "pas_by_cell",
+      "counts": {
+        "path": null,
+        "sha256": null
+      },
+      "cells": {
+        "path": null,
+        "sha256": null
+      },
+      "feature_status": {
+        "path": null,
+        "sha256": null
+      },
+      "membership": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-02_mouse-time-aware-integration-pilot/data/metacell-pas-v7-v1/libraries/GSM3195711/cell_to_pas_and_metacell.tsv.gz",
+        "sha256": "8e5d47424c1f6d638aca72af5a18697272b42838c9b555c52f3984d2dd308ed2"
+      },
+      "metacells": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-02_mouse-time-aware-integration-pilot/data/metacell-pas-v7-v1/libraries/GSM3195711/metacell_metadata.tsv.gz",
+        "sha256": "c44efe8dae2e8aa81a265825976dda7c929fa2ab1a3d70cdb710ce990394fb8d"
+      }
+    },
+    {
+      "library_id": "gse115943_pluripotency_reprogramming_core_GSM3195714",
+      "study_id": "GSE115943",
+      "library_key": "GSM3195714",
+      "orientation": "pas_by_cell",
+      "counts": {
+        "path": null,
+        "sha256": null
+      },
+      "cells": {
+        "path": null,
+        "sha256": null
+      },
+      "feature_status": {
+        "path": null,
+        "sha256": null
+      },
+      "membership": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-02_mouse-time-aware-integration-pilot/data/metacell-pas-v7-v1/libraries/GSM3195714/cell_to_pas_and_metacell.tsv.gz",
+        "sha256": "d135216e4b26995cd1e3e640fef6a6b513483106d09b57d9c1867e56b2ac53a9"
+      },
+      "metacells": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-02_mouse-time-aware-integration-pilot/data/metacell-pas-v7-v1/libraries/GSM3195714/metacell_metadata.tsv.gz",
+        "sha256": "be4ab729de2ea69c6a12630e4fd69d0a3020fd86c9180f036a08ae697b85f715"
+      }
+    },
+    {
+      "library_id": "gse115943_pluripotency_reprogramming_core_GSM3195715",
+      "study_id": "GSE115943",
+      "library_key": "GSM3195715",
+      "orientation": "pas_by_cell",
+      "counts": {
+        "path": null,
+        "sha256": null
+      },
+      "cells": {
+        "path": null,
+        "sha256": null
+      },
+      "feature_status": {
+        "path": null,
+        "sha256": null
+      },
+      "membership": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-02_mouse-time-aware-integration-pilot/data/metacell-pas-v7-v1/libraries/GSM3195715/cell_to_pas_and_metacell.tsv.gz",
+        "sha256": "94a5de24fefe23d71d5354422869f8b7f6bb35a23ce9c393aa8776cca00ed00d"
+      },
+      "metacells": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-02_mouse-time-aware-integration-pilot/data/metacell-pas-v7-v1/libraries/GSM3195715/metacell_metadata.tsv.gz",
+        "sha256": "b6b5792ccb31ed23c63dd4418f9ee8d228c2e59149c832f899393802dbaddac7"
+      }
+    },
+    {
+      "library_id": "gse115943_pluripotency_reprogramming_core_GSM3195718",
+      "study_id": "GSE115943",
+      "library_key": "GSM3195718",
+      "orientation": "pas_by_cell",
+      "counts": {
+        "path": null,
+        "sha256": null
+      },
+      "cells": {
+        "path": null,
+        "sha256": null
+      },
+      "feature_status": {
+        "path": null,
+        "sha256": null
+      },
+      "membership": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-02_mouse-time-aware-integration-pilot/data/metacell-pas-v7-v1/libraries/GSM3195718/cell_to_pas_and_metacell.tsv.gz",
+        "sha256": "47de77d6766eb6a0b714741ab825751697643a197b32c46f70bc0c1a93318387"
+      },
+      "metacells": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-02_mouse-time-aware-integration-pilot/data/metacell-pas-v7-v1/libraries/GSM3195718/metacell_metadata.tsv.gz",
+        "sha256": "7000dc9f9f8895b5c3ac61793d59b7d30073ce4782c4dad9f02d5f40d6db3460"
+      }
+    },
+    {
+      "library_id": "gse115943_pluripotency_reprogramming_core_GSM3195719",
+      "study_id": "GSE115943",
+      "library_key": "GSM3195719",
+      "orientation": "pas_by_cell",
+      "counts": {
+        "path": null,
+        "sha256": null
+      },
+      "cells": {
+        "path": null,
+        "sha256": null
+      },
+      "feature_status": {
+        "path": null,
+        "sha256": null
+      },
+      "membership": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-02_mouse-time-aware-integration-pilot/data/metacell-pas-v7-v1/libraries/GSM3195719/cell_to_pas_and_metacell.tsv.gz",
+        "sha256": "71f2ced624380ae29e18308e6b6bf3179d58159e095057dca64cf2ecb8c20618"
+      },
+      "metacells": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-02_mouse-time-aware-integration-pilot/data/metacell-pas-v7-v1/libraries/GSM3195719/metacell_metadata.tsv.gz",
+        "sha256": "d2d244e55b7c90ef8b0af1932410d7e314943c799a736d3bed661b5a83a3ec5a"
+      }
+    },
+    {
+      "library_id": "gse115943_pluripotency_reprogramming_core_GSM3195722",
+      "study_id": "GSE115943",
+      "library_key": "GSM3195722",
+      "orientation": "pas_by_cell",
+      "counts": {
+        "path": null,
+        "sha256": null
+      },
+      "cells": {
+        "path": null,
+        "sha256": null
+      },
+      "feature_status": {
+        "path": null,
+        "sha256": null
+      },
+      "membership": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-02_mouse-time-aware-integration-pilot/data/metacell-pas-v7-v1/libraries/GSM3195722/cell_to_pas_and_metacell.tsv.gz",
+        "sha256": "c43f6ec368e054230fa9b42c4b682d487789490df53af78c0120951bf328eeab"
+      },
+      "metacells": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-02_mouse-time-aware-integration-pilot/data/metacell-pas-v7-v1/libraries/GSM3195722/metacell_metadata.tsv.gz",
+        "sha256": "f3b77e7340f5d0f655cf61bc271d23f6d603736fe58b03f0a4f660b903fb1789"
+      }
+    },
+    {
+      "library_id": "gse115943_pluripotency_reprogramming_core_GSM3195723",
+      "study_id": "GSE115943",
+      "library_key": "GSM3195723",
+      "orientation": "pas_by_cell",
+      "counts": {
+        "path": null,
+        "sha256": null
+      },
+      "cells": {
+        "path": null,
+        "sha256": null
+      },
+      "feature_status": {
+        "path": null,
+        "sha256": null
+      },
+      "membership": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-02_mouse-time-aware-integration-pilot/data/metacell-pas-v7-v1/libraries/GSM3195723/cell_to_pas_and_metacell.tsv.gz",
+        "sha256": "09d151b0958c1c2ad1f42b83c9455277298a6aec4389c4a40dad0e0ce45cc0bb"
+      },
+      "metacells": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-02_mouse-time-aware-integration-pilot/data/metacell-pas-v7-v1/libraries/GSM3195723/metacell_metadata.tsv.gz",
+        "sha256": "b320c6d27650f0709d4d8eadcfa7a59eac3862d00c850158e3fd8ed4d057f2b2"
+      }
+    },
+    {
+      "library_id": "gse115943_pluripotency_reprogramming_core_GSM3195726",
+      "study_id": "GSE115943",
+      "library_key": "GSM3195726",
+      "orientation": "pas_by_cell",
+      "counts": {
+        "path": null,
+        "sha256": null
+      },
+      "cells": {
+        "path": null,
+        "sha256": null
+      },
+      "feature_status": {
+        "path": null,
+        "sha256": null
+      },
+      "membership": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-02_mouse-time-aware-integration-pilot/data/metacell-pas-v7-v1/libraries/GSM3195726/cell_to_pas_and_metacell.tsv.gz",
+        "sha256": "642be1dbc9b9ad9795090c6edd6f74fe11fc02cbd0d271e4bbcf1a4389e067b3"
+      },
+      "metacells": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-02_mouse-time-aware-integration-pilot/data/metacell-pas-v7-v1/libraries/GSM3195726/metacell_metadata.tsv.gz",
+        "sha256": "d3976d61ab269bdfee7f89287759c9d65257fe6bc4b85eaf630b5819939b1772"
+      }
+    },
+    {
+      "library_id": "gse115943_pluripotency_reprogramming_core_GSM3195727",
+      "study_id": "GSE115943",
+      "library_key": "GSM3195727",
+      "orientation": "pas_by_cell",
+      "counts": {
+        "path": null,
+        "sha256": null
+      },
+      "cells": {
+        "path": null,
+        "sha256": null
+      },
+      "feature_status": {
+        "path": null,
+        "sha256": null
+      },
+      "membership": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-02_mouse-time-aware-integration-pilot/data/metacell-pas-v7-v1/libraries/GSM3195727/cell_to_pas_and_metacell.tsv.gz",
+        "sha256": "4eb245fa3efc3bea7e462acccdb9e8f9453a66067eb355d8f9d90ad4d1532dd2"
+      },
+      "metacells": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-02_mouse-time-aware-integration-pilot/data/metacell-pas-v7-v1/libraries/GSM3195727/metacell_metadata.tsv.gz",
+        "sha256": "ddc3bb507109f1e18be9e3b9c1c698c8d6dd9886a6bced779f308072b6671f82"
+      }
+    },
+    {
+      "library_id": "gse115943_pluripotency_reprogramming_core_GSM3195730",
+      "study_id": "GSE115943",
+      "library_key": "GSM3195730",
+      "orientation": "pas_by_cell",
+      "counts": {
+        "path": null,
+        "sha256": null
+      },
+      "cells": {
+        "path": null,
+        "sha256": null
+      },
+      "feature_status": {
+        "path": null,
+        "sha256": null
+      },
+      "membership": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-02_mouse-time-aware-integration-pilot/data/metacell-pas-v7-v1/libraries/GSM3195730/cell_to_pas_and_metacell.tsv.gz",
+        "sha256": "ce648a94dd42ebd3837be2e57e0d50610f33188e29301710194c84f3a7cc8850"
+      },
+      "metacells": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-02_mouse-time-aware-integration-pilot/data/metacell-pas-v7-v1/libraries/GSM3195730/metacell_metadata.tsv.gz",
+        "sha256": "938cc4b5e6a7a1e9725919143cafe43c1b301a32cb712c1fc05541ceb0e468b8"
+      }
+    },
+    {
+      "library_id": "gse115943_pluripotency_reprogramming_core_GSM3195731",
+      "study_id": "GSE115943",
+      "library_key": "GSM3195731",
+      "orientation": "pas_by_cell",
+      "counts": {
+        "path": null,
+        "sha256": null
+      },
+      "cells": {
+        "path": null,
+        "sha256": null
+      },
+      "feature_status": {
+        "path": null,
+        "sha256": null
+      },
+      "membership": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-02_mouse-time-aware-integration-pilot/data/metacell-pas-v7-v1/libraries/GSM3195731/cell_to_pas_and_metacell.tsv.gz",
+        "sha256": "05cfb43ad8c04f35b09569139c6a812a28db30000f2112e3e751991fc6869e6d"
+      },
+      "metacells": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-02_mouse-time-aware-integration-pilot/data/metacell-pas-v7-v1/libraries/GSM3195731/metacell_metadata.tsv.gz",
+        "sha256": "57d73ab0d6c96c661dc2c32c3859f468df9b7f73389825b309698277ae51b254"
+      }
+    },
+    {
+      "library_id": "gse115943_pluripotency_reprogramming_core_GSM3195734",
+      "study_id": "GSE115943",
+      "library_key": "GSM3195734",
+      "orientation": "pas_by_cell",
+      "counts": {
+        "path": null,
+        "sha256": null
+      },
+      "cells": {
+        "path": null,
+        "sha256": null
+      },
+      "feature_status": {
+        "path": null,
+        "sha256": null
+      },
+      "membership": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-02_mouse-time-aware-integration-pilot/data/metacell-pas-v7-v1/libraries/GSM3195734/cell_to_pas_and_metacell.tsv.gz",
+        "sha256": "cc507bdc4cef397a434d2dc7794d0cd1149afc5dff758876d801fe9b0b3aa8ca"
+      },
+      "metacells": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-02_mouse-time-aware-integration-pilot/data/metacell-pas-v7-v1/libraries/GSM3195734/metacell_metadata.tsv.gz",
+        "sha256": "5203ae71dd54aa0824851dc3053a1d588a3a7443243b19e5cf153c5c5e5d500c"
+      }
+    },
+    {
+      "library_id": "gse115943_pluripotency_reprogramming_core_GSM3195735",
+      "study_id": "GSE115943",
+      "library_key": "GSM3195735",
+      "orientation": "pas_by_cell",
+      "counts": {
+        "path": null,
+        "sha256": null
+      },
+      "cells": {
+        "path": null,
+        "sha256": null
+      },
+      "feature_status": {
+        "path": null,
+        "sha256": null
+      },
+      "membership": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-02_mouse-time-aware-integration-pilot/data/metacell-pas-v7-v1/libraries/GSM3195735/cell_to_pas_and_metacell.tsv.gz",
+        "sha256": "5649064c996091b17e57e1c48bb1ec7e27a6e55504cc7ac2b22cf7a7f7a5e6b1"
+      },
+      "metacells": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-02_mouse-time-aware-integration-pilot/data/metacell-pas-v7-v1/libraries/GSM3195735/metacell_metadata.tsv.gz",
+        "sha256": "16b2829b5f5b2ce4ed980b0b08b32ad0e30a843c4f14b04575162314158226ab"
+      }
+    },
+    {
+      "library_id": "gse115943_pluripotency_reprogramming_core_GSM3195738",
+      "study_id": "GSE115943",
+      "library_key": "GSM3195738",
+      "orientation": "pas_by_cell",
+      "counts": {
+        "path": null,
+        "sha256": null
+      },
+      "cells": {
+        "path": null,
+        "sha256": null
+      },
+      "feature_status": {
+        "path": null,
+        "sha256": null
+      },
+      "membership": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-02_mouse-time-aware-integration-pilot/data/metacell-pas-v7-v1/libraries/GSM3195738/cell_to_pas_and_metacell.tsv.gz",
+        "sha256": "3626c60b8b85cd842d2520303970f54c4621287bad089a338991ca602ce89fd0"
+      },
+      "metacells": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-02_mouse-time-aware-integration-pilot/data/metacell-pas-v7-v1/libraries/GSM3195738/metacell_metadata.tsv.gz",
+        "sha256": "4727a71ce928822274760ffb646b9e26711fb7a932a80c47161e6b6310661402"
+      }
+    },
+    {
+      "library_id": "gse115943_pluripotency_reprogramming_core_GSM3195739",
+      "study_id": "GSE115943",
+      "library_key": "GSM3195739",
+      "orientation": "pas_by_cell",
+      "counts": {
+        "path": null,
+        "sha256": null
+      },
+      "cells": {
+        "path": null,
+        "sha256": null
+      },
+      "feature_status": {
+        "path": null,
+        "sha256": null
+      },
+      "membership": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-02_mouse-time-aware-integration-pilot/data/metacell-pas-v7-v1/libraries/GSM3195739/cell_to_pas_and_metacell.tsv.gz",
+        "sha256": "9d834ac5aaf05f164c3b95668292e5960db6d2ab9787760d51d39cdc794ccd21"
+      },
+      "metacells": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-02_mouse-time-aware-integration-pilot/data/metacell-pas-v7-v1/libraries/GSM3195739/metacell_metadata.tsv.gz",
+        "sha256": "4a8facaeecc605dadca949a2ff93f3f4bb61c575cc93fb09fe324d6462d7ce50"
+      }
+    },
+    {
+      "library_id": "gse115943_pluripotency_reprogramming_core_GSM3195742",
+      "study_id": "GSE115943",
+      "library_key": "GSM3195742",
+      "orientation": "pas_by_cell",
+      "counts": {
+        "path": null,
+        "sha256": null
+      },
+      "cells": {
+        "path": null,
+        "sha256": null
+      },
+      "feature_status": {
+        "path": null,
+        "sha256": null
+      },
+      "membership": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-02_mouse-time-aware-integration-pilot/data/metacell-pas-v7-v1/libraries/GSM3195742/cell_to_pas_and_metacell.tsv.gz",
+        "sha256": "18fcfb2a2ddd597cc3ebdee00afb2ecc669f14a35b7a0428407a2f0fbeffabe8"
+      },
+      "metacells": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-02_mouse-time-aware-integration-pilot/data/metacell-pas-v7-v1/libraries/GSM3195742/metacell_metadata.tsv.gz",
+        "sha256": "ba10d39465a8a79cdcfe85a8947a911b0abde5f788af178408f7299052e90dc3"
+      }
+    },
+    {
+      "library_id": "gse115943_pluripotency_reprogramming_core_GSM3195743",
+      "study_id": "GSE115943",
+      "library_key": "GSM3195743",
+      "orientation": "pas_by_cell",
+      "counts": {
+        "path": null,
+        "sha256": null
+      },
+      "cells": {
+        "path": null,
+        "sha256": null
+      },
+      "feature_status": {
+        "path": null,
+        "sha256": null
+      },
+      "membership": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-02_mouse-time-aware-integration-pilot/data/metacell-pas-v7-v1/libraries/GSM3195743/cell_to_pas_and_metacell.tsv.gz",
+        "sha256": "e322b797ec1ff440e888ccc26fcdabf3861357b9e9eb29456734f70ebcf8ff97"
+      },
+      "metacells": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-02_mouse-time-aware-integration-pilot/data/metacell-pas-v7-v1/libraries/GSM3195743/metacell_metadata.tsv.gz",
+        "sha256": "6930f8200ca4813a6761f1a87a2ac0d57d25fc9bb0a61b68bbb28022fbec04d5"
+      }
+    },
+    {
+      "library_id": "gse115943_pluripotency_reprogramming_core_GSM3195746",
+      "study_id": "GSE115943",
+      "library_key": "GSM3195746",
+      "orientation": "pas_by_cell",
+      "counts": {
+        "path": null,
+        "sha256": null
+      },
+      "cells": {
+        "path": null,
+        "sha256": null
+      },
+      "feature_status": {
+        "path": null,
+        "sha256": null
+      },
+      "membership": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-02_mouse-time-aware-integration-pilot/data/metacell-pas-v7-v1/libraries/GSM3195746/cell_to_pas_and_metacell.tsv.gz",
+        "sha256": "61a7df177ca2748f9f22a58aa30164116dfb46e784b88ee0f15cb21194f534c9"
+      },
+      "metacells": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-02_mouse-time-aware-integration-pilot/data/metacell-pas-v7-v1/libraries/GSM3195746/metacell_metadata.tsv.gz",
+        "sha256": "97776557f52dc9eebb0448410ed747cf01d73561ff7184bf8df791d988edbbf4"
+      }
+    },
+    {
+      "library_id": "gse115943_pluripotency_reprogramming_core_GSM3195747",
+      "study_id": "GSE115943",
+      "library_key": "GSM3195747",
+      "orientation": "pas_by_cell",
+      "counts": {
+        "path": null,
+        "sha256": null
+      },
+      "cells": {
+        "path": null,
+        "sha256": null
+      },
+      "feature_status": {
+        "path": null,
+        "sha256": null
+      },
+      "membership": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-02_mouse-time-aware-integration-pilot/data/metacell-pas-v7-v1/libraries/GSM3195747/cell_to_pas_and_metacell.tsv.gz",
+        "sha256": "d94368b8daa2984939374100e0537e094b216e4d80ecbbb71967271c9cb466fa"
+      },
+      "metacells": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-02_mouse-time-aware-integration-pilot/data/metacell-pas-v7-v1/libraries/GSM3195747/metacell_metadata.tsv.gz",
+        "sha256": "5b6296d62dcac020f553845e34c8fa319b78d51d6efc25466076121c8ccf5355"
+      }
+    },
+    {
+      "library_id": "gse115943_pluripotency_reprogramming_core_GSM3195750",
+      "study_id": "GSE115943",
+      "library_key": "GSM3195750",
+      "orientation": "pas_by_cell",
+      "counts": {
+        "path": null,
+        "sha256": null
+      },
+      "cells": {
+        "path": null,
+        "sha256": null
+      },
+      "feature_status": {
+        "path": null,
+        "sha256": null
+      },
+      "membership": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-02_mouse-time-aware-integration-pilot/data/metacell-pas-v7-v1/libraries/GSM3195750/cell_to_pas_and_metacell.tsv.gz",
+        "sha256": "8ce9bc025eda01a350e90bf2d5e05bb084342910b98ef0156aa14a885275fe0b"
+      },
+      "metacells": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-02_mouse-time-aware-integration-pilot/data/metacell-pas-v7-v1/libraries/GSM3195750/metacell_metadata.tsv.gz",
+        "sha256": "581e3c87b1774461322d2e8c9f8652b672a6ff0cf08a92fb14836420ee4f97c7"
+      }
+    },
+    {
+      "library_id": "gse115943_pluripotency_reprogramming_core_GSM3195751",
+      "study_id": "GSE115943",
+      "library_key": "GSM3195751",
+      "orientation": "pas_by_cell",
+      "counts": {
+        "path": null,
+        "sha256": null
+      },
+      "cells": {
+        "path": null,
+        "sha256": null
+      },
+      "feature_status": {
+        "path": null,
+        "sha256": null
+      },
+      "membership": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-02_mouse-time-aware-integration-pilot/data/metacell-pas-v7-v1/libraries/GSM3195751/cell_to_pas_and_metacell.tsv.gz",
+        "sha256": "6273015e5796ac1b59c5aa654a249ee1a95ff83f06aaeb6cd5814091177aecb1"
+      },
+      "metacells": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-02_mouse-time-aware-integration-pilot/data/metacell-pas-v7-v1/libraries/GSM3195751/metacell_metadata.tsv.gz",
+        "sha256": "39b8fd2facc7974b76f6c0e34f512d60e126c7bcd14f873103b65e14fb926726"
+      }
+    },
+    {
+      "library_id": "gse115943_pluripotency_reprogramming_core_GSM3195754",
+      "study_id": "GSE115943",
+      "library_key": "GSM3195754",
+      "orientation": "pas_by_cell",
+      "counts": {
+        "path": null,
+        "sha256": null
+      },
+      "cells": {
+        "path": null,
+        "sha256": null
+      },
+      "feature_status": {
+        "path": null,
+        "sha256": null
+      },
+      "membership": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-02_mouse-time-aware-integration-pilot/data/metacell-pas-v7-v1/libraries/GSM3195754/cell_to_pas_and_metacell.tsv.gz",
+        "sha256": "1fa8be2063fd0be47143f3e1bd08ec3630de1359fe9aa387d584613045b13f65"
+      },
+      "metacells": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-02_mouse-time-aware-integration-pilot/data/metacell-pas-v7-v1/libraries/GSM3195754/metacell_metadata.tsv.gz",
+        "sha256": "452ae88b8bab3c6068d0de5c2c7215576803a70592fa0048bf97369de6811040"
+      }
+    },
+    {
+      "library_id": "gse115943_pluripotency_reprogramming_core_GSM3195755",
+      "study_id": "GSE115943",
+      "library_key": "GSM3195755",
+      "orientation": "pas_by_cell",
+      "counts": {
+        "path": null,
+        "sha256": null
+      },
+      "cells": {
+        "path": null,
+        "sha256": null
+      },
+      "feature_status": {
+        "path": null,
+        "sha256": null
+      },
+      "membership": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-02_mouse-time-aware-integration-pilot/data/metacell-pas-v7-v1/libraries/GSM3195755/cell_to_pas_and_metacell.tsv.gz",
+        "sha256": "007ad3e44bf2be6b001074134ac71eb88f17babf28221c21405f43f579e992a0"
+      },
+      "metacells": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-02_mouse-time-aware-integration-pilot/data/metacell-pas-v7-v1/libraries/GSM3195755/metacell_metadata.tsv.gz",
+        "sha256": "1f6aa0a4c8dd8727e056795d2a9ced7ed7a5252a11cc17fae4157a3bed385a78"
+      }
+    },
+    {
+      "library_id": "gse115943_pluripotency_reprogramming_core_GSM3195758",
+      "study_id": "GSE115943",
+      "library_key": "GSM3195758",
+      "orientation": "pas_by_cell",
+      "counts": {
+        "path": null,
+        "sha256": null
+      },
+      "cells": {
+        "path": null,
+        "sha256": null
+      },
+      "feature_status": {
+        "path": null,
+        "sha256": null
+      },
+      "membership": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-02_mouse-time-aware-integration-pilot/data/metacell-pas-v7-v1/libraries/GSM3195758/cell_to_pas_and_metacell.tsv.gz",
+        "sha256": "c3eb2c4c86a9034f5be88004fc3025d15270277fb7d986fb0925a1b622534ddc"
+      },
+      "metacells": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-02_mouse-time-aware-integration-pilot/data/metacell-pas-v7-v1/libraries/GSM3195758/metacell_metadata.tsv.gz",
+        "sha256": "7d82c99bef2816d4b774e655a40b224be9718194c5060bb6006bd54e3054ed00"
+      }
+    },
+    {
+      "library_id": "gse115943_pluripotency_reprogramming_core_GSM3195759",
+      "study_id": "GSE115943",
+      "library_key": "GSM3195759",
+      "orientation": "pas_by_cell",
+      "counts": {
+        "path": null,
+        "sha256": null
+      },
+      "cells": {
+        "path": null,
+        "sha256": null
+      },
+      "feature_status": {
+        "path": null,
+        "sha256": null
+      },
+      "membership": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-02_mouse-time-aware-integration-pilot/data/metacell-pas-v7-v1/libraries/GSM3195759/cell_to_pas_and_metacell.tsv.gz",
+        "sha256": "3c08115e18b4e5c81ef92bd25d3a39e45b6b852bf47456e6097dc0d9d44ee5a4"
+      },
+      "metacells": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-02_mouse-time-aware-integration-pilot/data/metacell-pas-v7-v1/libraries/GSM3195759/metacell_metadata.tsv.gz",
+        "sha256": "68feb33608aa88a79108722b5ad63076713af96d6fbf35ff1bd79c34335a41cf"
+      }
+    },
+    {
+      "library_id": "gse115943_pluripotency_reprogramming_core_GSM3195762",
+      "study_id": "GSE115943",
+      "library_key": "GSM3195762",
+      "orientation": "pas_by_cell",
+      "counts": {
+        "path": null,
+        "sha256": null
+      },
+      "cells": {
+        "path": null,
+        "sha256": null
+      },
+      "feature_status": {
+        "path": null,
+        "sha256": null
+      },
+      "membership": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-02_mouse-time-aware-integration-pilot/data/metacell-pas-v7-v1/libraries/GSM3195762/cell_to_pas_and_metacell.tsv.gz",
+        "sha256": "fdea3a398390d8f3724d56e3823602618866174525a6ca458880bfba7f9455fe"
+      },
+      "metacells": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-02_mouse-time-aware-integration-pilot/data/metacell-pas-v7-v1/libraries/GSM3195762/metacell_metadata.tsv.gz",
+        "sha256": "cf9ab04f71b55e639c400147a019413a3eb25caa33439af459514a92b2e20805"
+      }
+    },
+    {
+      "library_id": "gse115943_pluripotency_reprogramming_core_GSM3195763",
+      "study_id": "GSE115943",
+      "library_key": "GSM3195763",
+      "orientation": "pas_by_cell",
+      "counts": {
+        "path": null,
+        "sha256": null
+      },
+      "cells": {
+        "path": null,
+        "sha256": null
+      },
+      "feature_status": {
+        "path": null,
+        "sha256": null
+      },
+      "membership": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-02_mouse-time-aware-integration-pilot/data/metacell-pas-v7-v1/libraries/GSM3195763/cell_to_pas_and_metacell.tsv.gz",
+        "sha256": "a5fff148ddbc5739c60c17059322fb58315aee6fa7af26860e7ffab7c575f898"
+      },
+      "metacells": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-02_mouse-time-aware-integration-pilot/data/metacell-pas-v7-v1/libraries/GSM3195763/metacell_metadata.tsv.gz",
+        "sha256": "448f434858c6a9986b538aa8390b5ce4e6fa949e7737ca2c40e1f739800d17d4"
+      }
+    },
+    {
+      "library_id": "gse115943_pluripotency_reprogramming_core_GSM3195766",
+      "study_id": "GSE115943",
+      "library_key": "GSM3195766",
+      "orientation": "pas_by_cell",
+      "counts": {
+        "path": null,
+        "sha256": null
+      },
+      "cells": {
+        "path": null,
+        "sha256": null
+      },
+      "feature_status": {
+        "path": null,
+        "sha256": null
+      },
+      "membership": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-02_mouse-time-aware-integration-pilot/data/metacell-pas-v7-v1/libraries/GSM3195766/cell_to_pas_and_metacell.tsv.gz",
+        "sha256": "e76d5639bb354a6372394ed3a593719eab1ac1c90220a842f83898762639276b"
+      },
+      "metacells": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-02_mouse-time-aware-integration-pilot/data/metacell-pas-v7-v1/libraries/GSM3195766/metacell_metadata.tsv.gz",
+        "sha256": "a693dc5786f01d2a3cd8f6ff7814191c9e0b7505a2db215452d9148d319d74bd"
+      }
+    },
+    {
+      "library_id": "gse115943_pluripotency_reprogramming_core_GSM3195767",
+      "study_id": "GSE115943",
+      "library_key": "GSM3195767",
+      "orientation": "pas_by_cell",
+      "counts": {
+        "path": null,
+        "sha256": null
+      },
+      "cells": {
+        "path": null,
+        "sha256": null
+      },
+      "feature_status": {
+        "path": null,
+        "sha256": null
+      },
+      "membership": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-02_mouse-time-aware-integration-pilot/data/metacell-pas-v7-v1/libraries/GSM3195767/cell_to_pas_and_metacell.tsv.gz",
+        "sha256": "04def125cb2614a1ebe56e2eed704caae901c835b66db75f34ea20661bc73804"
+      },
+      "metacells": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-02_mouse-time-aware-integration-pilot/data/metacell-pas-v7-v1/libraries/GSM3195767/metacell_metadata.tsv.gz",
+        "sha256": "7aa17c287f9a34210e02f99e248560ab3a902e10156e5609c9e77c20ea04fce9"
+      }
+    },
+    {
+      "library_id": "gse171127_pluripotency_vs_trophoblast_bifurcation_GSM5219399",
+      "study_id": "GSE171127",
+      "library_key": "GSM5219399",
+      "orientation": "pas_by_cell",
+      "counts": {
+        "path": null,
+        "sha256": null
+      },
+      "cells": {
+        "path": null,
+        "sha256": null
+      },
+      "feature_status": {
+        "path": null,
+        "sha256": null
+      },
+      "membership": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-02_mouse-time-aware-integration-pilot/data/metacell-pas-v7-v1/libraries/GSM5219399/cell_to_pas_and_metacell.tsv.gz",
+        "sha256": "d12d9d92ed4ac30258c86f8a4d074f38b1f593c06bc6f8b0ab7423b5770b6c37"
+      },
+      "metacells": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-02_mouse-time-aware-integration-pilot/data/metacell-pas-v7-v1/libraries/GSM5219399/metacell_metadata.tsv.gz",
+        "sha256": "1a5c86d370844b3f6112e14392c67e056a906cfb5ea4f4e201261d0d1e407aa5"
+      }
+    },
+    {
+      "library_id": "gse171127_pluripotency_vs_trophoblast_bifurcation_GSM5219400",
+      "study_id": "GSE171127",
+      "library_key": "GSM5219400",
+      "orientation": "pas_by_cell",
+      "counts": {
+        "path": null,
+        "sha256": null
+      },
+      "cells": {
+        "path": null,
+        "sha256": null
+      },
+      "feature_status": {
+        "path": null,
+        "sha256": null
+      },
+      "membership": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-02_mouse-time-aware-integration-pilot/data/metacell-pas-v7-v1/libraries/GSM5219400/cell_to_pas_and_metacell.tsv.gz",
+        "sha256": "7b8dc2c6d0c27533f0abbfc453eee0886e1d17901ad33754409a6c43d5aaafc1"
+      },
+      "metacells": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-02_mouse-time-aware-integration-pilot/data/metacell-pas-v7-v1/libraries/GSM5219400/metacell_metadata.tsv.gz",
+        "sha256": "2f3a37549a05171bc3ac020ae93f342e139385729ff50536257af52981a150a0"
+      }
+    },
+    {
+      "library_id": "gse171127_pluripotency_vs_trophoblast_bifurcation_GSM6071749",
+      "study_id": "GSE171127",
+      "library_key": "GSM6071749",
+      "orientation": "pas_by_cell",
+      "counts": {
+        "path": null,
+        "sha256": null
+      },
+      "cells": {
+        "path": null,
+        "sha256": null
+      },
+      "feature_status": {
+        "path": null,
+        "sha256": null
+      },
+      "membership": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-02_mouse-time-aware-integration-pilot/data/metacell-pas-v7-v1/libraries/GSM6071749/cell_to_pas_and_metacell.tsv.gz",
+        "sha256": "a72e6261dfbece43d860ff22102b79d2f6b03a71257f58bdf566527f5af331b3"
+      },
+      "metacells": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-02_mouse-time-aware-integration-pilot/data/metacell-pas-v7-v1/libraries/GSM6071749/metacell_metadata.tsv.gz",
+        "sha256": "74c9d8510b5ff800671b8658d1b646fd2066adb98f7078c452a55cfcc48b7aa3"
+      }
+    },
+    {
+      "library_id": "gse171127_pluripotency_vs_trophoblast_bifurcation_GSM6071750",
+      "study_id": "GSE171127",
+      "library_key": "GSM6071750",
+      "orientation": "pas_by_cell",
+      "counts": {
+        "path": null,
+        "sha256": null
+      },
+      "cells": {
+        "path": null,
+        "sha256": null
+      },
+      "feature_status": {
+        "path": null,
+        "sha256": null
+      },
+      "membership": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-02_mouse-time-aware-integration-pilot/data/metacell-pas-v7-v1/libraries/GSM6071750/cell_to_pas_and_metacell.tsv.gz",
+        "sha256": "74f1281a8823360ecff76bd9cd1f105caac571a51230eb62924075fabae5e040"
+      },
+      "metacells": {
+        "path": "/Users/lycidas/work/科研/projects/2026-09-02_mouse-time-aware-integration-pilot/data/metacell-pas-v7-v1/libraries/GSM6071750/metacell_metadata.tsv.gz",
+        "sha256": "b21fdaab3507b7047f5243983d5676b8658eff0fa5b875a23b2a0d3d28627f1d"
+      }
+    }
+  ],
+  "resources": {
+    "gex": [
+      {
+        "path": null,
+        "sha256": null
+      }
+    ],
+    "state_annotations": [
+      {
+        "path": null,
+        "sha256": null
+      }
+    ],
+    "embeddings": [
+      {
+        "path": null,
+        "sha256": null
+      }
+    ],
+    "library_design": [
+      {
+        "path": "/Users/lycidas/work/reproAPA/table/S2-sequencing-libraries.tsv",
+        "sha256": "3a00c1f8b7dd4581a090972bf88057c7bc06b7a5bf2d88b895434ab3e9413f14"
+      }
+    ],
+    "contrast_design": [
+      {
+        "path": null,
+        "sha256": null
+      }
+    ],
+    "genome_fasta": [
+      {
+        "path": null,
+        "sha256": null
+      }
+    ],
+    "gene_annotation": [
+      {
+        "path": null,
+        "sha256": null
+      }
+    ],
+    "external_pas": [
+      {
+        "path": null,
+        "sha256": null
+      }
+    ],
+    "orthologs": [
+      {
+        "path": null,
+        "sha256": null
+      }
+    ],
+    "sequence_resources": [
+      {
+        "path": null,
+        "sha256": null
+      }
+    ],
+    "recount_inputs": [
+      {
+        "path": null,
+        "sha256": null
+      }
+    ],
+    "external_validation": [
+      {
+        "path": null,
+        "sha256": null
+      }
+    ],
+    "legacy_rosters": [
+      {
+        "path": null,
+        "sha256": null
+      }
+    ]
+  }
+}

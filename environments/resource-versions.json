@@ -1,0 +1,40 @@
+{
+  "date": "2026-10-09",
+  "resources": [
+    {
+      "resource": "MirGeneDB",
+      "declared_version": "3.0",
+      "version_evidence": "environments/mirna-resource-registry.tsv",
+      "species": "human",
+      "current_analysis_input": "notes/2026-10-05-apadetect-analysis-intake/completion-inputs/external/human_mirna_annotations.tsv",
+      "bytes": 102371,
+      "sha256": "dd6191a4cffc058418c15e527f1b14f0bbcc56d1a3008b11dda1dec349126359",
+      "historical_raw_download_freeze": "not recovered from this input; curation is captured by original registry and producer provenance"
+    },
+    {
+      "resource": "MirGeneDB",
+      "declared_version": "3.0",
+      "version_evidence": "environments/mirna-resource-registry.tsv",
+      "species": "mouse",
+      "current_analysis_input": "notes/2026-10-05-apadetect-analysis-intake/completion-inputs/external/mouse_mirna_annotations.tsv",
+      "bytes": 107676,
+      "sha256": "95b8af445ed0741ee04ba73237cc7519bf412206636874935e12f152f5403df5",
+      "historical_raw_download_freeze": "not recovered from this input; curation is captured by original registry and producer provenance"
+    },
+    {
+      "resource": "CisBP-RNA",
+      "build": "2.00",
+      "source": "notes/2026-10-07-motif-provenance-a7/verification.json",
+      "sha256": "f591f6ea6b49b85177aa7f51e4072417a39a5e63a8f18b20d0a5d2abac7463bf",
+      "scope": "direct human, direct mouse, transferred human-to-mouse motif provenance; no activity inference"
+    },
+    {
+      "resource": "UniProtKB",
+      "citation_year": 2025,
+      "citation_doi": "10.1093/nar/gkae1010",
+      "fresh_check_release": "2026_03",
+      "fresh_check_evidence": "environments/evidence/uniprot-entry-check.json",
+      "historical_entry_release": "not recovered; citation year is not an API release identifier"
+    }
+  ]
+}

@@ -1,0 +1,206 @@
+{
+  "notes/2026-09-30-multimetric-statistics/inference/analyze.py": {
+    "path": "code/notes/2026-09-30-multimetric-statistics/inference/analyze.py",
+    "sha256": "b13a3aa18f4d62d13db70d7489f3bb249083ead4cc2f5962ef1e1667fea752a3"
+  },
+  "notes/2026-09-30-multimetric-statistics/metric_inference/analyze.py": {
+    "path": "code/notes/2026-09-30-multimetric-statistics/metric_inference/analyze.py",
+    "sha256": "f44c5eb920979c990ca5488a87cf9e5a331c01557e73ec54866b830dbee2885a"
+  },
+  "notes/2026-09-30-multimetric-statistics/pool_inference/analyze.py": {
+    "path": "code/notes/2026-09-30-multimetric-statistics/pool_inference/analyze.py",
+    "sha256": "c79ba8edb0d3426a05d9f53db1d83a5a93559134791c7d1b8e76ee42a9fda4c6"
+  },
+  "notes/2026-09-30-multimetric-statistics/pair_count_tests/analyze.py": {
+    "path": "code/notes/2026-09-30-multimetric-statistics/pair_count_tests/analyze.py",
+    "sha256": "1df9921bc82b936dcac2fa17f81f3ca4873a0f5d3fe16fe75fb8b7c42a3e5569"
+  },
+  "notes/2026-09-30-multimetric-statistics/nulls/analyze.py": {
+    "path": "code/notes/2026-09-30-multimetric-statistics/nulls/analyze.py",
+    "sha256": "ef2f68822521b3334af521d33b04ca3e309cd37f9cbd56f214182c3aea772b3f"
+  },
+  "notes/2026-10-02-null-model-controls/common.py": {
+    "path": "code/notes/2026-10-02-null-model-controls/common.py",
+    "sha256": "b6d6902d47b6b22a287a78fca11e5f008d3029a0aeb452ebe4ee517dbc1f1e52"
+  },
+  "notes/2026-10-02-null-model-controls/recurrence.py": {
+    "path": "code/notes/2026-10-02-null-model-controls/recurrence.py",
+    "sha256": "d859ec5a95b74bb01275d910dcd242af52b66882bcd0b892af885ded3054418b"
+  },
+  "notes/2026-10-02-null-model-controls/functional.py": {
+    "path": "code/notes/2026-10-02-null-model-controls/functional.py",
+    "sha256": "4afd8151b80aa8a14e82c42d8c7876a4928ed605767cd3e9678f8b46c76dd2a8"
+  },
+  "notes/2026-10-02-reviewer-followup/trajectory_noise.py": {
+    "path": "code/notes/2026-10-02-reviewer-followup/trajectory_noise.py",
+    "sha256": "bd006a908d844d5c505f71be75612757f77aa8c682b5efcf99e23eeb7a1d4a9c"
+  },
+  "notes/2026-10-02-reviewer-followup/apa_followup.py": {
+    "path": "code/notes/2026-10-02-reviewer-followup/apa_followup.py",
+    "sha256": "8d6e49314ad91e0aef24a30edc977f49070240ee6f5a8e0f8c7b768ad1106efc"
+  },
+  "notes/2026-10-02-reviewer-followup/same_state.py": {
+    "path": "code/notes/2026-10-02-reviewer-followup/same_state.py",
+    "sha256": "27731f0e047f38c77e548c2760b3af9b3cb47497e066961c72be8ed18c663679"
+  },
+  "notes/2026-09-14-integration-reliability/evaluate_reaggregated_apa_effects.py": {
+    "path": "code/notes/2026-09-14-integration-reliability/evaluate_reaggregated_apa_effects.py",
+    "sha256": "9a9d52c566da18ed55d11ffca602f8b9fa1d1f68bb1175ba6a522db513388683"
+  },
+  "github/reproapa-analysis/revisions/20260930/external/2026-09-26_reproapa-go-analysis/scripts/run_go.py": {
+    "path": "code/github/reproapa-analysis/revisions/20260930/external/2026-09-26_reproapa-go-analysis/scripts/run_go.py",
+    "sha256": "951b077b417e6d726358cfd84ce5540d648653b38f15f9705f4112fd16d8b599"
+  },
+  "github/reproapa-analysis/revisions/20260930/external/2026-09-26_reproapa-go-analysis/scripts/run_go_nested.py": {
+    "path": "code/github/reproapa-analysis/revisions/20260930/external/2026-09-26_reproapa-go-analysis/scripts/run_go_nested.py",
+    "sha256": "f6270321e7f04e65ed9003355c3cad322102f1f03d852624baa4ae8e90720629"
+  },
+  "github/reproapa-analysis/revisions/20260930/external/2026-09-26_reproapa-go-analysis/scripts/run_kegg_nested.py": {
+    "path": "code/github/reproapa-analysis/revisions/20260930/external/2026-09-26_reproapa-go-analysis/scripts/run_kegg_nested.py",
+    "sha256": "18494c29c10675e7efe374e0205aba237a8a551f35ac667870b283096e268109"
+  },
+  "../\u79d1\u7814/projects/2026-09-02_mouse-time-aware-integration-pilot/scripts/test_figure2_apa_manifold_coherence.py": {
+    "path": "code/external/\u79d1\u7814/projects/2026-09-02_mouse-time-aware-integration-pilot/scripts/test_figure2_apa_manifold_coherence.py",
+    "sha256": "35399472c193c8d7dda6ef1d3c3e614e7b63d849698556ba688beddc72e16c1b"
+  },
+  "../\u79d1\u7814/projects/2026-09-02_mouse-time-aware-integration-pilot/scripts/robustness_figure2_apa_knn.py": {
+    "path": "code/external/\u79d1\u7814/projects/2026-09-02_mouse-time-aware-integration-pilot/scripts/robustness_figure2_apa_knn.py",
+    "sha256": "c876d4ca26d03341e6b7081bd794269c59b435a6e673223b8e95e98743774b1b"
+  },
+  "notes/2026-10-01-mpro-biology/legacy_structure_consensus.py": {
+    "path": "code/notes/2026-10-01-mpro-biology/legacy_structure_consensus.py",
+    "sha256": "2797bc6dfd1beb54f0bf9eca6ef3cd35e3c0cb8621938c681e1aeb9dada81495"
+  },
+  "notes/2026-10-01-mpro-biology/legacy_prepare_pilot.py": {
+    "path": "code/notes/2026-10-01-mpro-biology/legacy_prepare_pilot.py",
+    "sha256": "0f53245c8bc83bd5bc34d5c7bb1acccc6b7cf1938945b632f0edc6df35a18480"
+  },
+  "notes/2026-09-29-core-sensitivity/figure5_paired_pm.py": {
+    "path": "code/notes/2026-09-29-core-sensitivity/figure5_paired_pm.py",
+    "sha256": "ef8758c1304de8556b53a2e07843af781a7b852893d787bfe655b9287191a6bf"
+  },
+  "notes/2026-09-29-core-sensitivity/figure4_matched_overlap.py": {
+    "path": "code/notes/2026-09-29-core-sensitivity/figure4_matched_overlap.py",
+    "sha256": "e5a8f7348ecf76e196a077655b7d3342feabc341cc5e3caaa796bc1b2b4d90db"
+  },
+  "notes/2026-10-02-null-model-controls/cross_species.py": {
+    "path": "code/notes/2026-10-02-null-model-controls/cross_species.py",
+    "sha256": "f7a9cd5b77968a6f32425125e2b77d866b110cdf73d81281911a12facbf71965"
+  },
+  "notes/2026-10-02-null-model-controls/motif.py": {
+    "path": "code/notes/2026-10-02-null-model-controls/motif.py",
+    "sha256": "de6b3e8540e1d69ce982a7b0689b2007a9c97d3edf239970c471c4c6cd120dc3"
+  },
+  "notes/2026-10-02-reviewer-followup/motif_background.py": {
+    "path": "code/notes/2026-10-02-reviewer-followup/motif_background.py",
+    "sha256": "afce60026585445187025dd25ab413cc87cc233f741e930d10aa80c4a4e28767"
+  },
+  "notes/2026-10-02-null-result-diagnostics/motif_sensitivity.py": {
+    "path": "code/notes/2026-10-02-null-result-diagnostics/motif_sensitivity.py",
+    "sha256": "a1b6836589c36fd724ff6ccbfdbd75521c61fc023f4220ad1844fa5ee01815cb"
+  },
+  "notes/2026-10-02-rbp-expression/analyze.py": {
+    "path": "code/notes/2026-10-02-rbp-expression/analyze.py",
+    "sha256": "8b742dee93d917d09d219447303862cf51ba3008f4fe81ac7295f04b5f501e69"
+  },
+  "notes/2026-10-01-figure5-union-update/resources/mouse_time_aware_integration_pilot_v1/regulatory_catalog_v1/scripts/build_catalog.py": {
+    "path": "code/notes/2026-10-01-figure5-union-update/resources/mouse_time_aware_integration_pilot_v1/regulatory_catalog_v1/scripts/build_catalog.py",
+    "sha256": "51ccfa28894d68f1524e0ffa42a07c4f9a20d6e16f9484a2f605bd320d46297b"
+  },
+  "analysis_code/release_2026-09-24/sources/F5/annotation-pas-global-v1/migrate.py": {
+    "path": "code/analysis_code/release_2026-09-24/sources/F5/annotation-pas-global-v1/migrate.py",
+    "sha256": "4e76ad99588a4608c5b454fb6da89ab198d34c6e0fd4bee3ed826f3822c36705"
+  },
+  "analysis_code/release_2026-09-24/sources/F5/site-recurrence-v1/figure5-publication-v14r4/prepare_annotated_tracks.py": {
+    "path": "code/analysis_code/release_2026-09-24/sources/F5/site-recurrence-v1/figure5-publication-v14r4/prepare_annotated_tracks.py",
+    "sha256": "76078e05a5513330d57a4cee38317a39f4392ad740d303c8843c43b61e4e5956"
+  },
+  "analysis_code/release_2026-09-24/sources/F5/full-cohort-v2/sources/execution-scripts/core.py": {
+    "path": "code/analysis_code/release_2026-09-24/sources/F5/full-cohort-v2/sources/execution-scripts/core.py",
+    "sha256": "b9f133a186925f85c909129d783ad8d03f3c53db4a1809c3b7b6d3fd8139cd8c"
+  },
+  "analysis_code/release_2026-09-24/sources/F5/site-recurrence-v1/analyze.py": {
+    "path": "code/analysis_code/release_2026-09-24/sources/F5/site-recurrence-v1/analyze.py",
+    "sha256": "5905c503fd22000c593194dd4f5f1d14f2a285e49d83ae10ed182dff35789a90"
+  },
+  "analysis_code/release_2026-09-24/sources/F5/site-recurrence-v1/consistency.py": {
+    "path": "code/analysis_code/release_2026-09-24/sources/F5/site-recurrence-v1/consistency.py",
+    "sha256": "92be7ba5440dd156ca120f199b30d59fc1f54497cfcdf2ec3d0fd27eb48b9bbe"
+  },
+  "github/reproapa-analysis/modules/09_cross_species/code/figure4/recurrence_predicts_cross_species_v26.py": {
+    "path": "code/github/reproapa-analysis/modules/09_cross_species/code/figure4/recurrence_predicts_cross_species_v26.py",
+    "sha256": "9a0ca9c1bc427a74469a7ce4094c0a65090d95d07453dc8297927e120d9ffa1a"
+  },
+  "github/reproapa-analysis/modules/09_cross_species/code/figure4/audit_figure4c_reused_controls_v53.py": {
+    "path": "code/github/reproapa-analysis/modules/09_cross_species/code/figure4/audit_figure4c_reused_controls_v53.py",
+    "sha256": "23999b56cd0d5dccc2ca4a02c6cbab366d07683a9a8c8ea952206e37666f9402"
+  },
+  "github/reproapa-analysis/modules/08_recurrence/code/apa_gex_state/analyze.py": {
+    "path": "code/github/reproapa-analysis/modules/08_recurrence/code/apa_gex_state/analyze.py",
+    "sha256": "317d1ef6265967c64133284e000a8dc946f3aa97fa266b516c0e343bba6b7435"
+  },
+  "notes/2026-09-26-endpoint-counting/common.py": {
+    "path": "code/notes/2026-09-26-endpoint-counting/common.py",
+    "sha256": "212b96210a741e874bcad92636fea5c30864e068db9a0dec76af1724b60eb9a0"
+  },
+  "notes/2026-09-26-global-direction-audit/analyze.py": {
+    "path": "code/notes/2026-09-26-global-direction-audit/analyze.py",
+    "sha256": "f2634a9ed88c34a83c56fe33d5b287e95d4f03936c81074ba3bf1338e5d35cb3"
+  },
+  "notes/2026-09-26-global-direction-audit/tandem_utr.py": {
+    "path": "code/notes/2026-09-26-global-direction-audit/tandem_utr.py",
+    "sha256": "99aacda7990fc63411302e8ae8e7fb1f046279df2986d9834aa9fe72eb4e2204"
+  },
+  "notes/2026-10-02-GSE282319-long-read/analyze.py": {
+    "path": "code/notes/2026-10-02-GSE282319-long-read/analyze.py",
+    "sha256": "292c0bad79e0e028fef4225e0646335ca160f601cdb4c0c3ad0498937caab80a"
+  },
+  "notes/2026-10-02-rad23b-ago2-gse25310/check_overlap.py": {
+    "path": "code/notes/2026-10-02-rad23b-ago2-gse25310/check_overlap.py",
+    "sha256": "bf62bf5db5cf46b7329aa01a4abd7bb0b246304027bac77e752d86a82c5848cf"
+  },
+  "notes/2026-09-29-core-sensitivity/figure5_coordinate_audit.py": {
+    "path": "code/notes/2026-09-29-core-sensitivity/figure5_coordinate_audit.py",
+    "sha256": "d1ab4301928f7f8ee2face94fe649166ef93db27819765cd812720edbd785f34"
+  },
+  "analysis_code/release_2026-09-24/sources/F5/site-recurrence-v1/supplement-compressed-v1/prepare.py": {
+    "path": "code/analysis_code/release_2026-09-24/sources/F5/site-recurrence-v1/supplement-compressed-v1/prepare.py",
+    "sha256": "3251f5ccffca424da930cc0e1934d90f6ab4e26938f85f467da64690331dc0f7"
+  },
+  "notes/2026-10-02-gse99922-pilot/expanded_measurements.py": {
+    "path": "code/notes/2026-10-02-gse99922-pilot/expanded_measurements.py",
+    "sha256": "dc6e02ddea5a079444ac6deef003827edcae9fe585ffa4517dd6d4c5e5511094"
+  },
+  "notes/2026-10-02-gse99922-pilot/matched_analysis.py": {
+    "path": "code/notes/2026-10-02-gse99922-pilot/matched_analysis.py",
+    "sha256": "7989684d9dc713286c3a49c8b0146e9212c82e5aca2d942ff42b748440f4f2f7"
+  },
+  "notes/2026-10-02-gse99922-pilot/vector_analysis.py": {
+    "path": "code/notes/2026-10-02-gse99922-pilot/vector_analysis.py",
+    "sha256": "bfd0b85d72ea2757127ba7d6f2ca65e2c779f4407312906de7b0d968919c1036"
+  },
+  "github/reproapa-analysis/modules/09_cross_species/code/cis_supplement/scripts/recompute_models.py": {
+    "path": "code/github/reproapa-analysis/modules/09_cross_species/code/cis_supplement/scripts/recompute_models.py",
+    "sha256": "22d0f6ee0c448dc0b7c985e628736626575a7b26ec224ad1b7af2aaf274f043e"
+  },
+  "github/reproapa-analysis/modules/07_apa_dynamics/code/figure2/analyze_figure2_dynamic_architecture_v1.py": {
+    "path": "code/github/reproapa-analysis/modules/07_apa_dynamics/code/figure2/analyze_figure2_dynamic_architecture_v1.py",
+    "sha256": "9eea8ed88ebe908abfbcf806ac6c1eba54fe6ee45035771fc7152ab1bcc404a9"
+  },
+  "github/reproapa-analysis/modules/07_apa_dynamics/code/figure2/analyze_figure2_cde_dynamics_v1.py": {
+    "path": "code/github/reproapa-analysis/modules/07_apa_dynamics/code/figure2/analyze_figure2_cde_dynamics_v1.py",
+    "sha256": "9742b69622714b029dc312263e7031aff95d1640c8133e1367bf8f1837baa38d"
+  },
+  "notes/2026-10-02-scape-polyapipe-comparison/scripts/atlas_effect_math.py": {
+    "path": "code/notes/2026-10-02-scape-polyapipe-comparison/scripts/atlas_effect_math.py",
+    "sha256": "da10e2fb8de38d3f4687e33e4135eb28e43e0a2e2ba8035200a667d46517a569"
+  },
+  "notes/2026-10-02-scape-polyapipe-comparison/scripts/atlas_effect_engine.py": {
+    "path": "code/notes/2026-10-02-scape-polyapipe-comparison/scripts/atlas_effect_engine.py",
+    "sha256": "8e2ceae94293b1034b3323796afdd75b3c400faf3b36b9ead22830166837f08c"
+  },
+  "analysis_code/recurrence_correction_2026-09-25/sources/MOUSE/analysis/figure3-recurrence-common-reference-2026-09-25/analyze.py": {
+    "path": "code/analysis_code/recurrence_correction_2026-09-25/sources/MOUSE/analysis/figure3-recurrence-common-reference-2026-09-25/analyze.py",
+    "sha256": "24b127996b4aca81068a2cbcbe1e0b2f3e997e86f3f663eca142ae354d50dc9e"
+  }
+}

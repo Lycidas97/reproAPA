@@ -1,0 +1,145 @@
+version: '3.0'
+study_id: GSE103221
+species:
+- Mus musculus
+membership_path: /root/nfsdata/apadetect/analysis_projects/reprogramming_unified_rna_qc_v3.2_release/runs/gse103221_production/primary_membership.tsv.gz
+sensitivity_membership_path: /root/nfsdata/apadetect/analysis_projects/reprogramming_unified_rna_qc_v3.2_release/runs/gse103221_production/sensitivity_membership.tsv.gz
+technical_membership_path: /root/nfsdata/apadetect/analysis_projects/reprogramming_unified_rna_qc_v3.2_release/runs/gse103221_production/technical_membership.tsv.gz
+library_metadata_path: /root/nfsdata/apadetect/analysis_projects/reprogramming_unified_rna_qc_v3.2_release/manifests/GSE103221_production.tsv
+membership_columns:
+  cell_id: global_cell_id
+  state_id: null
+  scope_id: null
+  library_id: library_id
+  barcode: barcode
+expression_mode: multi_source
+expression_already_log1p: false
+partition_selection_fields: []
+library_use: stratified_resampling_and_postfreeze_audit_only
+qc_contract:
+  method_contract_sha256: cdf1987a05dd818c1e4e21fe2751df02f98490570d2d522e7b12cbefb1f73134
+  production_acceptance_path: /root/nfsdata/apadetect/analysis_projects/reprogramming_unified_rna_qc_v3.2_release/runs/_production_acceptance/acceptance.json
+  independent_validation_path: /root/nfsdata/apadetect/analysis_projects/reprogramming_unified_rna_qc_v3.2_release/runs/gse103221_production/independent_validation.tsv
+  tiers:
+    primary_pass:
+      n_cells: 145072
+      cell_set_sha256: a05fdc0fcd0298d2b0d098eeefe4800cd8236b350ea1d2046df5b5c1d6881407
+    sensitivity_only:
+      n_cells: 10188
+      cell_set_sha256: e679bc6f7d06a75871300e27397412d2594ca4f3aefcb37531b1a0200eb579a6
+    technical_exclude:
+      n_cells: 5793
+      cell_set_sha256: fee5151895ba0867cdafe8f4836498140bdabfd16d8c1c14abc5f4e5657e4dba
+scopes:
+  studywide:
+    role: primary
+    n_cells: 145072
+    source_membership_order_sha256: a05fdc0fcd0298d2b0d098eeefe4800cd8236b350ea1d2046df5b5c1d6881407
+    cell_set_sha256: a05fdc0fcd0298d2b0d098eeefe4800cd8236b350ea1d2046df5b5c1d6881407
+    sensitivity_n_cells: 10188
+    sensitivity_source_membership_order_sha256: e679bc6f7d06a75871300e27397412d2594ca4f3aefcb37531b1a0200eb579a6
+    sensitivity_cell_set_sha256: e679bc6f7d06a75871300e27397412d2594ca4f3aefcb37531b1a0200eb579a6
+    expression_sources:
+    - selector: library_id
+      value: gse103221_pluripotency_reprogramming_core_GSM3619570
+      mode: 10x_h5
+      path: /root/nfsdata/apadetect/data/reprogramming_differentiation_apa/analyses/raw_realignment_apa_2026-06-07/cellranger/gse103221_pluripotency_reprogramming_core/gse103221_pluripotency_reprogramming_core_GSM3619570/outs/filtered_feature_bc_matrix.h5
+    - selector: library_id
+      value: gse103221_pluripotency_reprogramming_core_GSM3619571
+      mode: 10x_h5
+      path: /root/nfsdata/apadetect/data/reprogramming_differentiation_apa/analyses/raw_realignment_apa_2026-06-07/cellranger/gse103221_pluripotency_reprogramming_core/gse103221_pluripotency_reprogramming_core_GSM3619571/outs/filtered_feature_bc_matrix.h5
+    - selector: library_id
+      value: gse103221_pluripotency_reprogramming_core_GSM3619572
+      mode: 10x_h5
+      path: /root/nfsdata/apadetect/data/reprogramming_differentiation_apa/analyses/raw_realignment_apa_2026-06-07/cellranger/gse103221_pluripotency_reprogramming_core/gse103221_pluripotency_reprogramming_core_GSM3619572/outs/filtered_feature_bc_matrix.h5
+    - selector: library_id
+      value: gse103221_pluripotency_reprogramming_core_GSM3619573
+      mode: 10x_h5
+      path: /root/nfsdata/apadetect/data/reprogramming_differentiation_apa/analyses/raw_realignment_apa_2026-06-07/cellranger/gse103221_pluripotency_reprogramming_core/gse103221_pluripotency_reprogramming_core_GSM3619573/outs/filtered_feature_bc_matrix.h5
+    - selector: library_id
+      value: gse103221_pluripotency_reprogramming_core_GSM3619574
+      mode: 10x_h5
+      path: /root/nfsdata/apadetect/data/reprogramming_differentiation_apa/analyses/raw_realignment_apa_2026-06-07/cellranger/gse103221_pluripotency_reprogramming_core/gse103221_pluripotency_reprogramming_core_GSM3619574/outs/filtered_feature_bc_matrix.h5
+    - selector: library_id
+      value: gse103221_pluripotency_reprogramming_core_GSM3619575
+      mode: 10x_h5
+      path: /root/nfsdata/apadetect/data/reprogramming_differentiation_apa/analyses/raw_realignment_apa_2026-06-07/cellranger/gse103221_pluripotency_reprogramming_core/gse103221_pluripotency_reprogramming_core_GSM3619575/outs/filtered_feature_bc_matrix.h5
+    - selector: library_id
+      value: gse103221_pluripotency_reprogramming_core_GSM3619576
+      mode: 10x_h5
+      path: /root/nfsdata/apadetect/data/reprogramming_differentiation_apa/analyses/raw_realignment_apa_2026-06-07/cellranger/gse103221_pluripotency_reprogramming_core/gse103221_pluripotency_reprogramming_core_GSM3619576/outs/filtered_feature_bc_matrix.h5
+    - selector: library_id
+      value: gse103221_pluripotency_reprogramming_core_GSM3619577
+      mode: 10x_h5
+      path: /root/nfsdata/apadetect/data/reprogramming_differentiation_apa/analyses/raw_realignment_apa_2026-06-07/cellranger/gse103221_pluripotency_reprogramming_core/gse103221_pluripotency_reprogramming_core_GSM3619577/outs/filtered_feature_bc_matrix.h5
+    - selector: library_id
+      value: gse103221_pluripotency_reprogramming_core_GSM3619578
+      mode: 10x_h5
+      path: /root/nfsdata/apadetect/data/reprogramming_differentiation_apa/analyses/raw_realignment_apa_2026-06-07/cellranger/gse103221_pluripotency_reprogramming_core/gse103221_pluripotency_reprogramming_core_GSM3619578/outs/filtered_feature_bc_matrix.h5
+    - selector: library_id
+      value: gse103221_pluripotency_reprogramming_core_GSM3619579
+      mode: 10x_h5
+      path: /root/nfsdata/apadetect/data/reprogramming_differentiation_apa/analyses/raw_realignment_apa_2026-06-07/cellranger/gse103221_pluripotency_reprogramming_core/gse103221_pluripotency_reprogramming_core_GSM3619579/outs/filtered_feature_bc_matrix.h5
+    - selector: library_id
+      value: gse103221_pluripotency_reprogramming_core_GSM3619580
+      mode: 10x_h5
+      path: /root/nfsdata/apadetect/data/reprogramming_differentiation_apa/analyses/raw_realignment_apa_2026-06-07/cellranger/gse103221_pluripotency_reprogramming_core/gse103221_pluripotency_reprogramming_core_GSM3619580/outs/filtered_feature_bc_matrix.h5
+    - selector: library_id
+      value: gse103221_pluripotency_reprogramming_core_GSM3619581
+      mode: 10x_h5
+      path: /root/nfsdata/apadetect/data/reprogramming_differentiation_apa/analyses/raw_realignment_apa_2026-06-07/cellranger/gse103221_pluripotency_reprogramming_core/gse103221_pluripotency_reprogramming_core_GSM3619581/outs/filtered_feature_bc_matrix.h5
+    - selector: library_id
+      value: gse103221_pluripotency_reprogramming_core_GSM3629847
+      mode: 10x_h5
+      path: /root/nfsdata/apadetect/data/reprogramming_differentiation_apa/analyses/raw_realignment_apa_2026-06-07/cellranger/gse103221_pluripotency_reprogramming_core/gse103221_pluripotency_reprogramming_core_GSM3629847/outs/filtered_feature_bc_matrix.h5
+    - selector: library_id
+      value: gse103221_pluripotency_reprogramming_core_GSM3629848
+      mode: 10x_h5
+      path: /root/nfsdata/apadetect/data/reprogramming_differentiation_apa/analyses/raw_realignment_apa_2026-06-07/cellranger/gse103221_pluripotency_reprogramming_core/gse103221_pluripotency_reprogramming_core_GSM3629848/outs/filtered_feature_bc_matrix.h5
+    - selector: library_id
+      value: gse103221_pluripotency_reprogramming_core_GSM3629849
+      mode: 10x_h5
+      path: /root/nfsdata/apadetect/data/reprogramming_differentiation_apa/analyses/raw_realignment_apa_2026-06-07/cellranger/gse103221_pluripotency_reprogramming_core/gse103221_pluripotency_reprogramming_core_GSM3629849/outs/filtered_feature_bc_matrix.h5
+    - selector: library_id
+      value: gse103221_pluripotency_reprogramming_core_GSM3629850
+      mode: 10x_h5
+      path: /root/nfsdata/apadetect/data/reprogramming_differentiation_apa/analyses/raw_realignment_apa_2026-06-07/cellranger/gse103221_pluripotency_reprogramming_core/gse103221_pluripotency_reprogramming_core_GSM3629850/outs/filtered_feature_bc_matrix.h5
+    - selector: library_id
+      value: gse103221_pluripotency_reprogramming_core_GSM3629851
+      mode: 10x_h5
+      path: /root/nfsdata/apadetect/data/reprogramming_differentiation_apa/analyses/raw_realignment_apa_2026-06-07/cellranger/gse103221_pluripotency_reprogramming_core/gse103221_pluripotency_reprogramming_core_GSM3629851/outs/filtered_feature_bc_matrix.h5
+    - selector: library_id
+      value: gse103221_pluripotency_reprogramming_core_GSM3629852
+      mode: 10x_h5
+      path: /root/nfsdata/apadetect/data/reprogramming_differentiation_apa/analyses/raw_realignment_apa_2026-06-07/cellranger/gse103221_pluripotency_reprogramming_core/gse103221_pluripotency_reprogramming_core_GSM3629852/outs/filtered_feature_bc_matrix.h5
+    - selector: library_id
+      value: gse103221_pluripotency_reprogramming_core_GSM3629853
+      mode: 10x_h5
+      path: /root/nfsdata/apadetect/data/reprogramming_differentiation_apa/analyses/raw_realignment_apa_2026-06-07/cellranger/gse103221_pluripotency_reprogramming_core/gse103221_pluripotency_reprogramming_core_GSM3629853/outs/filtered_feature_bc_matrix.h5
+    - selector: library_id
+      value: gse103221_pluripotency_reprogramming_core_GSM3629854
+      mode: 10x_h5
+      path: /root/nfsdata/apadetect/data/reprogramming_differentiation_apa/analyses/raw_realignment_apa_2026-06-07/cellranger/gse103221_pluripotency_reprogramming_core/gse103221_pluripotency_reprogramming_core_GSM3629854/outs/filtered_feature_bc_matrix.h5
+    - selector: library_id
+      value: gse103221_pluripotency_reprogramming_core_GSM3629855
+      mode: 10x_h5
+      path: /root/nfsdata/apadetect/data/reprogramming_differentiation_apa/analyses/raw_realignment_apa_2026-06-07/cellranger/gse103221_pluripotency_reprogramming_core/gse103221_pluripotency_reprogramming_core_GSM3629855/outs/filtered_feature_bc_matrix.h5
+    pipeline:
+      hvg_n_top_genes: 3000
+      pca_n_components_fitted: 50
+      pca_n_components_used: 30
+      pca_seed: 20260825
+      neighbor_n_neighbors: 30
+      leiden_resolution: 0.6
+      leiden_seed: 20260825
+      filter_genes_min_cells: 10
+      normalization_method: normalize_total
+      normalization_target_sum: 10000.0
+      transform: log1p
+      hvg_flavor: scanpy_seurat
+      scale_max_value: 10
+      pca_solver: sklearn_randomized_iterated_power_4
+      neighbor_backend: pynndescent.NNDescent
+      neighbor_metric: euclidean
+      leiden_implementation: leidenalg.find_partition
+      leiden_iterations: -1

@@ -1,0 +1,139 @@
+figure	new_panel	old_logical_blocks	components	shared_y	shared_y_basis	evidence	claims	production_figure	action	old_panel_data_is_new_result
+D01	D01A	D01A	"[{""logical_panel"": ""D01A"", ""component"": 0, ""family"": ""matrix""}]"	False		E01	R1.1	S1	reuse_GEX_only	false
+D01	D01B	D01A	"[{""logical_panel"": ""D01A"", ""component"": 1, ""family"": ""bar""}]"	False		E01	R1.1	S1	reuse_GEX_only	false
+D01	D01C	D01B	"[{""logical_panel"": ""D01B"", ""component"": 0, ""family"": ""distribution""}]"	False		E01	R1.1	S1	reuse_GEX_only	false
+D01	D01D	D01B	"[{""logical_panel"": ""D01B"", ""component"": 1, ""family"": ""scatter""}]"	False		E01	R1.1	S1	reuse_GEX_only	false
+D02	D02A	D02A	"[{""logical_panel"": ""D02A"", ""component"": 0, ""family"": ""matrix""}]"	False		E01	R1.1	S2	reuse_GEX_only	false
+D02	D02B	D02A	"[{""logical_panel"": ""D02A"", ""component"": 1, ""family"": ""bar""}]"	False		E01	R1.1	S2	reuse_GEX_only	false
+D02	D02C	D02B	"[{""logical_panel"": ""D02B"", ""component"": 0, ""family"": ""distribution""}]"	False		E01	R1.1	S2	reuse_GEX_only	false
+D02	D02D	D02B	"[{""logical_panel"": ""D02B"", ""component"": 1, ""family"": ""scatter""}]"	False		E01	R1.1	S2	reuse_GEX_only	false
+D03	D03A	D03A	"[{""logical_panel"": ""D03A"", ""component"": 0, ""family"": ""embedding""}]"	False		E01	R1.1	S3	reuse_GEX_only	false
+D03	D03B	D03A	"[{""logical_panel"": ""D03A"", ""component"": 0, ""family"": ""embedding""}]"	False		E01	R1.1	S3	reuse_GEX_only	false
+D03	D03C	D03C	"[{""logical_panel"": ""D03C"", ""component"": 1, ""family"": ""table""}]"	False		E01	R1.1;R1.5	S3	reuse_GEX_only	false
+D03	D03D	D03B	"[{""logical_panel"": ""D03B"", ""component"": 0, ""family"": ""matrix""}]"	False		E01	R1.1	S3	reuse_GEX_only	false
+D03	D03E	D03B	"[{""logical_panel"": ""D03B"", ""component"": 1, ""family"": ""distribution""}]"	False		E01	R1.1	S3	reuse_GEX_only	false
+D03	D03F	D03C	"[{""logical_panel"": ""D03C"", ""component"": 0, ""family"": ""point_interval""}]"	False		E01	R1.1;R1.5	S3	reuse_GEX_only	false
+D04	D04A	D04A	"[{""logical_panel"": ""D04A"", ""component"": 0, ""family"": ""bar""}, {""logical_panel"": ""D04A"", ""component"": 1, ""family"": ""point_interval""}]"	True	Seven studies in identical order	E02	R1.2	S4	recompute_then_render	false
+D04	D04B	D04B	"[{""logical_panel"": ""D04B"", ""component"": 0, ""family"": ""line""}]"	False		E02	R1.2	S4	recompute_then_render	false
+D04	D04C	D04B	"[{""logical_panel"": ""D04B"", ""component"": 0, ""family"": ""line""}]"	False		E02	R1.2	S4	recompute_then_render	false
+D04	D04D	D04C	"[{""logical_panel"": ""D04C"", ""component"": 0, ""family"": ""point_interval""}, {""logical_panel"": ""D04C"", ""component"": 1, ""family"": ""bar""}]"	True	Seven studies; Guan series profiles summed, Jaber unavailable	E02	R1.2	S4	recompute_then_render	false
+D05	D05A	D05A	"[{""logical_panel"": ""D05A"", ""component"": 0, ""family"": ""point_interval""}, {""logical_panel"": ""D05A"", ""component"": 1, ""family"": ""bar""}]"	True	Five source-qualified routes	E03	R1.3;R1.4;R1.5	S5	recompute_then_render	false
+D05	D05B	D05B	"[{""logical_panel"": ""D05B"", ""component"": 0, ""family"": ""distribution""}, {""logical_panel"": ""D05B"", ""component"": 1, ""family"": ""point_interval""}]"	True	The same five routes; distributions and source-choice ranges	E03	R1.3;R1.5;R1.6	S5	recompute_then_render	false
+D05	D05C	D05D	"[{""logical_panel"": ""D05D"", ""component"": 0, ""family"": ""bar""}]"	False		E03		S5	recompute_then_render	false
+D05	D05D	D05C	"[{""logical_panel"": ""D05C"", ""component"": 0, ""family"": ""line""}]"	False		E03	R1.6	S5	recompute_v2_same_library_effect_distribution; remove_cross_version_matching_and_v3_line	false
+D05	D05E	D05C	"[{""logical_panel"": ""D05C"", ""component"": 1, ""family"": ""structure""}]"	False		E03	R1.6	S5	recompute_then_render	false
+D05	D05F	D05E	"[{""logical_panel"": ""D05E"", ""component"": 0, ""family"": ""matrix""}, {""logical_panel"": ""D05E"", ""component"": 1, ""family"": ""matrix""}]"	True	Identical observed-S route rows; n printed per state and background	E03		S5	recompute_then_render	false
+D06	D06A	D06A	"[{""logical_panel"": ""D06A"", ""component"": 0, ""family"": ""line""}]"	False		E04	R2.1;R2.2	S6	recompute_then_render	false
+D06	D06B	D06A	"[{""logical_panel"": ""D06A"", ""component"": 1, ""family"": ""distribution""}]"	False		E04	R2.1;R2.2	S6	recompute_then_render	false
+D06	D06C	D06B	"[{""logical_panel"": ""D06B"", ""component"": 1, ""family"": ""point_interval""}]"	False		E04	R2.2	S6	recompute_then_render	false
+D06	D06D	D06B	"[{""logical_panel"": ""D06B"", ""component"": 0, ""family"": ""structure""}]"	False		E04	R2.2	S6	recompute_then_render	false
+D06	D06E	D06C	"[{""logical_panel"": ""D06C"", ""component"": 0, ""family"": ""line""}, {""logical_panel"": ""D06C"", ""component"": 1, ""family"": ""point_interval""}, {""logical_panel"": ""D06C"", ""component"": 1, ""family"": ""bar""}]"	True	Nine held-out route × class rows	E04	R2.2	S6	recompute_then_render	false
+D07	D07A	D07A	"[{""logical_panel"": ""D07A"", ""component"": 0, ""family"": ""structure""}]"	False		E05	R2.3;R2.4	S7	recompute_then_render	false
+D07	D07B	D07A	"[{""logical_panel"": ""D07A"", ""component"": 1, ""family"": ""distribution""}]"	False		E05	R2.3;R2.4	S7	recompute_then_render	false
+D07	D07C	D07A	"[{""logical_panel"": ""D07A"", ""component"": 2, ""family"": ""bar""}]"	False		E05	R2.3;R2.4	S7	recompute_then_render	false
+D07	D07D	D07B	"[{""logical_panel"": ""D07B"", ""component"": 0, ""family"": ""matrix""}, {""logical_panel"": ""D07B"", ""component"": 1, ""family"": ""bar""}, {""logical_panel"": ""D07B"", ""component"": 2, ""family"": ""distribution""}]"	True	Nine identical route × class rows; direction, stage contribution and per-gene D/L	E05	R2.5;R2.6	S7	recompute_then_render	false
+D07	D07E	D07C	"[{""logical_panel"": ""D07C"", ""component"": 0, ""family"": ""line""}]"	False		E05	R2.5;R2.6	S7	recompute_then_render	false
+D07	D07F	D07C	"[{""logical_panel"": ""D07C"", ""component"": 1, ""family"": ""point_interval""}]"	False		E05	R2.5;R2.6	S7	recompute_then_render	false
+D08	D08A	D08A	"[{""logical_panel"": ""D08A"", ""component"": 0, ""family"": ""point_interval""}, {""logical_panel"": ""D08A"", ""component"": 1, ""family"": ""bar""}]"	True	Twenty-one study × class rows	E06	R2.7	S8	recompute_then_render	false
+D08	D08B	D08B	"[{""logical_panel"": ""D08B"", ""component"": 0, ""family"": ""line""}]"	False		E06	R2.7	S8	recompute_then_render	false
+D08	D08C	D08C	"[{""logical_panel"": ""D08C"", ""component"": 0, ""family"": ""distribution""}, {""logical_panel"": ""D08C"", ""component"": 1, ""family"": ""point_interval""}]"	True	Nine route × class rows	E05;E06	R2.5;R2.7	S8	recompute_then_render	false
+D08	D08D	D08B	"[{""logical_panel"": ""D08B"", ""component"": 1, ""family"": ""scatter""}]"	False		E06	R2.7	S8	recompute_then_render	false
+D09	D09A	D09A	"[{""logical_panel"": ""D09A"", ""component"": 0, ""family"": ""point_interval""}]"	False		E07;E08	R3.1;R3.2;R3.4;R3.6	S9	recompute_then_render	false
+D09	D09B	D09A	"[{""logical_panel"": ""D09A"", ""component"": 1, ""family"": ""bar""}]"	False		E07;E08	R3.1;R3.2;R3.4;R3.6	S9	recompute_then_render	false
+D09	D09C	D09A	"[{""logical_panel"": ""D09A"", ""component"": 2, ""family"": ""distribution""}]"	False		E07;E08	R3.1;R3.2;R3.4;R3.6	S9	recompute_then_render	false
+D09	D09D	D09B	"[{""logical_panel"": ""D09B"", ""component"": 0, ""family"": ""bar""}]"	False		E07;E08	R3.1;R3.3;R3.5	S9	recompute_then_render	false
+D09	D09E	D09B	"[{""logical_panel"": ""D09B"", ""component"": 1, ""family"": ""point_interval""}]"	False		E07;E08	R3.1;R3.3;R3.5	S9	recompute_then_render	false
+D09	D09F	D09B	"[{""logical_panel"": ""D09B"", ""component"": 2, ""family"": ""line""}]"	False		E07;E08	R3.1;R3.3;R3.5	S9	recompute_then_render	false
+D10	D10A	D10A	"[{""logical_panel"": ""D10A"", ""component"": 0, ""family"": ""scatter""}]"	False		E08	R3.7	S10	recompute_then_render	false
+D10	D10B	D10A	"[{""logical_panel"": ""D10A"", ""component"": 1, ""family"": ""bar""}]"	False		E08	R3.7	S10	recompute_then_render	false
+D10	D10C	D10C	"[{""logical_panel"": ""D10C"", ""component"": 1, ""family"": ""point_interval""}]"	False		E08	R3.7	S10	recompute_then_render	false
+D10	D10D	D10B	"[{""logical_panel"": ""D10B"", ""component"": 0, ""family"": ""distribution""}, {""logical_panel"": ""D10B"", ""component"": 0, ""family"": ""distribution""}]"	True	Cumulative fraction	E08	R3.7	S10	recompute_then_render	false
+D10	D10E	D10B	"[{""logical_panel"": ""D10B"", ""component"": 1, ""family"": ""line""}]"	False		E08	R3.7	S10	recompute_then_render	false
+D11	D11A	D11A	"[{""logical_panel"": ""D11A"", ""component"": 0, ""family"": ""line""}]"	False		E07;E09	R3.1;R3.8	S11	recompute_then_render	false
+D11	D11B	D11A	"[{""logical_panel"": ""D11A"", ""component"": 1, ""family"": ""bar""}]"	False		E07;E09	R3.1;R3.8	S11	recompute_then_render	false
+D11	D11C	D11C	"[{""logical_panel"": ""D11C"", ""component"": 1, ""family"": ""point_interval""}]"	False		E09	R3.9	S11	recompute_then_render	false
+D11	D11D	D11B	"[{""logical_panel"": ""D11B"", ""component"": 0, ""family"": ""scatter""}, {""logical_panel"": ""D11B"", ""component"": 0, ""family"": ""scatter""}]"	True	Matched P–M ΔDWUI	E09	R3.8	S11	recompute_then_render	false
+D11	D11E	D11C	"[{""logical_panel"": ""D11C"", ""component"": 0, ""family"": ""genomic""}, {""logical_panel"": ""D11C"", ""component"": 0, ""family"": ""genomic""}]"	True	Cumulative PAS usage	E09	R3.9	S11	recompute_then_render	false
+D12	D12A	D12A	"[{""logical_panel"": ""D12A"", ""component"": 0, ""family"": ""point_interval""}]"	False		E10	R3.10	S12	recompute_then_render	false
+D12	D12B	D12B	"[{""logical_panel"": ""D12B"", ""component"": 0, ""family"": ""bar""}, {""logical_panel"": ""D12B"", ""component"": 1, ""family"": ""bar""}]"	True	Species × threshold, four rows; distinct printed denominators	E10	R3.10	S12	recompute_then_render	false
+D12	D12C	D12C	"[{""logical_panel"": ""D12C"", ""component"": 0, ""family"": ""genomic""}, {""logical_panel"": ""D12C"", ""component"": 0, ""family"": ""genomic""}]"	True	Cumulative PAS usage	E10	R3.10	S12	recompute_then_render	false
+D12	D12D	D12C	"[{""logical_panel"": ""D12C"", ""component"": 1, ""family"": ""point_interval""}]"	False		E10	R3.10	S12	recompute_then_render	false
+D13	D13A	D13A	"[{""logical_panel"": ""D13A"", ""component"": 0, ""family"": ""structure""}]"	False		E09	R3.8	S13	recompute_then_render	false
+D13	D13B	D13A	"[{""logical_panel"": ""D13A"", ""component"": 1, ""family"": ""bar""}]"	False		E09	R3.8	S13	recompute_then_render	false
+D13	D13C	D13B	"[{""logical_panel"": ""D13B"", ""component"": 1, ""family"": ""bar""}]"	False		E09	R3.8	S13	recompute_then_render	false
+D13	D13D	D13B	"[{""logical_panel"": ""D13B"", ""component"": 0, ""family"": ""scatter""}, {""logical_panel"": ""D13B"", ""component"": 0, ""family"": ""scatter""}]"	True	Aligned intermediate ΔDWUI in each named target study; species retain separate cohorts	E09	R3.8	S13	recompute_then_render	false
+D13	D13E	D13C	"[{""logical_panel"": ""D13C"", ""component"": 0, ""family"": ""line""}, {""logical_panel"": ""D13C"", ""component"": 1, ""family"": ""point_interval""}]"	True	Seven qualification settings in identical order	E09	R3.8	S13	recompute_then_render	false
+D14	D14A	D14A	"[{""logical_panel"": ""D14A"", ""component"": 1, ""family"": ""bar""}]"	False		E17	R2.3;R3.10	S14	recompute_then_render	false
+D14	D14B	D14B	"[{""logical_panel"": ""D14B"", ""component"": 1, ""family"": ""point_interval""}]"	False		E17	R2.3;R3.10	S14	recompute_then_render	false
+D14	D14C	D14C	"[{""logical_panel"": ""D14C"", ""component"": 1, ""family"": ""bar""}]"	False		E17	R2.3;R3.10	S14	recompute_then_render	false
+D14	D14D	D14B	"[{""logical_panel"": ""D14B"", ""component"": 0, ""family"": ""distribution""}, {""logical_panel"": ""D14B"", ""component"": 0, ""family"": ""distribution""}]"	True	Cumulative fraction	E17	R2.3;R3.10	S14	recompute_then_render	false
+D14	D14E	D14C	"[{""logical_panel"": ""D14C"", ""component"": 0, ""family"": ""scatter""}]"	False		E17	R2.3;R3.10	S14	recompute_then_render	false
+D15	D15A	D15A	"[{""logical_panel"": ""D15A"", ""component"": 0, ""family"": ""bar""}]"	False		E17	R2.3;R3.10	S15	recompute_then_render	false
+D15	D15B	D15A	"[{""logical_panel"": ""D15A"", ""component"": 1, ""family"": ""bar""}]"	False		E17	R2.3;R3.10	S15	recompute_then_render	false
+D15	D15C	D15B	"[{""logical_panel"": ""D15B"", ""component"": 0, ""family"": ""point_interval""}, {""logical_panel"": ""D15B"", ""component"": 1, ""family"": ""point_interval""}]"	True	All fourteen term × context positions, identical row spacing	E17	R2.3;R3.10	S15	recompute_then_render	false
+D15	D15D	D15C	"[{""logical_panel"": ""D15C"", ""component"": 0, ""family"": ""distribution""}]"	False		E17	R2.3;R3.10	S15	recompute_then_render	false
+D15	D15E	D15C	"[{""logical_panel"": ""D15C"", ""component"": 1, ""family"": ""line""}]"	False		E17	R2.3;R3.10	S15	recompute_then_render	false
+D16	D16A	D16A	"[{""logical_panel"": ""D16A"", ""component"": 0, ""family"": ""point_interval""}]"	False		E11	R4.1;R4.3	S16	recompute_then_render	false
+D16	D16B	D16A	"[{""logical_panel"": ""D16A"", ""component"": 1, ""family"": ""bar""}]"	False		E11	R4.1;R4.3	S16	recompute_then_render	false
+D16	D16C	D16C	"[{""logical_panel"": ""D16C"", ""component"": 0, ""family"": ""distribution""}]"	False		E11	R4.1;R4.2;R4.3	S16	recompute_then_render	false
+D16	D16D	D16B	"[{""logical_panel"": ""D16B"", ""component"": 0, ""family"": ""scatter""}]"	False		E11	R4.2	S16	recompute_then_render	false
+D16	D16E	D16B	"[{""logical_panel"": ""D16B"", ""component"": 1, ""family"": ""point_interval""}]"	False		E11	R4.2	S16	recompute_then_render	false
+D16	D16F	D16C	"[{""logical_panel"": ""D16C"", ""component"": 1, ""family"": ""line""}]"	False		E11	R4.1;R4.2;R4.3	S16	recompute_then_render	false
+D17	D17A	D17A	"[{""logical_panel"": ""D17A"", ""component"": 0, ""family"": ""matrix""}, {""logical_panel"": ""D17A"", ""component"": 1, ""family"": ""bar""}]"	True	All26 shared P–S ortholog genes	E11	R4.1	S17	recompute_then_render	false
+D17	D17B	D17B	"[{""logical_panel"": ""D17B"", ""component"": 0, ""family"": ""matrix""}, {""logical_panel"": ""D17B"", ""component"": 1, ""family"": ""point_interval""}]"	True	All11 shared P–M ortholog genes	E11	R4.1	S17	recompute_then_render	false
+D18	D18A	D18A	"[{""logical_panel"": ""D18A"", ""component"": 1, ""family"": ""bar""}]"	False		E12	R4.4;R4.7	S18	recompute_then_render_v2_only; remove_v3_points_columns_and_legend	false
+D18	D18B	D18B	"[{""logical_panel"": ""D18B"", ""component"": 1, ""family"": ""point_interval""}]"	False		E12	R4.4;R4.5	S18	recompute_then_render_v2_only; remove_v3_points_columns_and_legend	false
+D18	D18C	D18C	"[{""logical_panel"": ""D18C"", ""component"": 1, ""family"": ""table""}]"	False		E12	R4.4;R4.5;R4.6;R4.7	S18	recompute_then_render_v2_only; remove_v3_points_columns_and_legend	false
+D18	D18D	D18B	"[{""logical_panel"": ""D18B"", ""component"": 0, ""family"": ""scatter""}, {""logical_panel"": ""D18B"", ""component"": 0, ""family"": ""scatter""}]"	True	Mouse matched-rank Δ	E12	R4.4;R4.5	S18	recompute_then_render_v2_only; remove_v3_points_columns_and_legend	false
+D18	D18E	D18D	"[{""logical_panel"": ""D18D"", ""component"": 0, ""family"": ""line""}]"	False		E12	R4.4;R4.5;R4.8	S18	recompute_then_render_v2_only; remove_v3_points_columns_and_legend	false
+D18	D18F	D18C	"[{""logical_panel"": ""D18C"", ""component"": 0, ""family"": ""point_interval""}]"	False		E12	R4.4;R4.5;R4.6;R4.7	S18	recompute_then_render_v2_only; remove_v3_points_columns_and_legend	false
+D18	D18G	D18D	"[{""logical_panel"": ""D18D"", ""component"": 1, ""family"": ""genomic""}, {""logical_panel"": ""D18D"", ""component"": 1, ""family"": ""genomic""}]"	True	PAS usage	E12	R4.4;R4.5;R4.8	S18	recompute_then_render_v2_only; remove_v3_points_columns_and_legend	false
+D18	D18H	D18E	"[{""logical_panel"": ""D18E"", ""component"": 0, ""family"": ""structure""}, {""logical_panel"": ""D18E"", ""component"": 1, ""family"": ""structure""}]"	True	Two annotation-predicted protein-length rows in each species	E09;E12		S18	recompute_then_render_v2_only; remove_v3_points_columns_and_legend	false
+D19	D19A	D19A	"[{""logical_panel"": ""D19A"", ""component"": 0, ""family"": ""structure""}]"	False		E13	R4.10;R4.9	S19	recompute_then_render	false
+D19	D19B	D19B	"[{""logical_panel"": ""D19B"", ""component"": 0, ""family"": ""distribution""}, {""logical_panel"": ""D19B"", ""component"": 0, ""family"": ""distribution""}]"	True	Matched object rows	E13	R4.10;R4.9	S19	recompute_then_render	false
+D19	D19C	D19A	"[{""logical_panel"": ""D19A"", ""component"": 1, ""family"": ""bar""}]"	False		E13	R4.10;R4.9	S19	recompute_then_render	false
+D19	D19D	D19C	"[{""logical_panel"": ""D19C"", ""component"": 0, ""family"": ""point_interval""}]"	False		E13	R4.10;R4.9	S19	recompute_then_render	false
+D19	D19E	D19C	"[{""logical_panel"": ""D19C"", ""component"": 1, ""family"": ""point_interval""}]"	False		E13	R4.10;R4.9	S19	recompute_then_render	false
+D20	D20A	D20B	"[{""logical_panel"": ""D20B"", ""component"": 0, ""family"": ""point_interval""}, {""logical_panel"": ""D20B"", ""component"": 0, ""family"": ""point_interval""}]"	True	Matched object rows	E13	R4.10;R4.9	S20	recompute_then_render	false
+D20	D20B	D20A	"[{""logical_panel"": ""D20A"", ""component"": 1, ""family"": ""bar""}]"	False		E13	R4.10;R4.9	S20	recompute_then_render	false
+D20	D20C	D20B	"[{""logical_panel"": ""D20B"", ""component"": 1, ""family"": ""scatter""}]"	False		E13	R4.10;R4.9	S20	recompute_then_render	false
+D20	D20D	D20C	"[{""logical_panel"": ""D20C"", ""component"": 0, ""family"": ""line""}]"	False		E13	R4.10;R4.9	S20	recompute_then_render	false
+D20	D20E	D20C	"[{""logical_panel"": ""D20C"", ""component"": 0, ""family"": ""line""}]"	False		E13	R4.10;R4.9	S20	recompute_then_render	false
+D21	D21A	D21A	"[{""logical_panel"": ""D21A"", ""component"": 0, ""family"": ""point_interval""}, {""logical_panel"": ""D21A"", ""component"": 1, ""family"": ""point_interval""}]"	True	Four species × contrast cohorts; separate gene and interval denominators	E14	R5.1	S21	recompute_then_render	false
+D21	D21B	D21D	"[{""logical_panel"": ""D21D"", ""component"": 1, ""family"": ""structure""}]"	False		E14	R5.3;R5.6	S21	recompute_then_render	false
+D21	D21C	D21B	"[{""logical_panel"": ""D21B"", ""component"": 0, ""family"": ""scatter""}]"	False		E14	R5.2	S21	recompute_then_render	false
+D21	D21D	D21B	"[{""logical_panel"": ""D21B"", ""component"": 0, ""family"": ""scatter""}]"	False		E14	R5.2	S21	recompute_then_render	false
+D21	D21E	D21B	"[{""logical_panel"": ""D21B"", ""component"": 1, ""family"": ""bar""}]"	False		E14	R5.2	S21	recompute_then_render	false
+D21	D21F	D21C	"[{""logical_panel"": ""D21C"", ""component"": 0, ""family"": ""distribution""}, {""logical_panel"": ""D21C"", ""component"": 1, ""family"": ""bar""}]"	True	Species × contrast × site category, eight rows	E14;E18	R5.3	S21	recompute_then_render	false
+D21	D21G	D21D	"[{""logical_panel"": ""D21D"", ""component"": 0, ""family"": ""distribution""}]"	False		E14	R5.3;R5.6	S21	recompute_then_render	false
+D22	D22A	D22A	"[{""logical_panel"": ""D22A"", ""component"": 0, ""family"": ""bar""}]"	False		E15	R5.4	S22	recompute_then_render	false
+D22	D22B	D22A	"[{""logical_panel"": ""D22A"", ""component"": 1, ""family"": ""point_interval""}]"	False		E15	R5.4	S22	recompute_then_render	false
+D22	D22C	D22C	"[{""logical_panel"": ""D22C"", ""component"": 1, ""family"": ""genomic""}]"	False		E15	R5.5	S22	recompute_then_render	false
+D22	D22D	D22B	"[{""logical_panel"": ""D22B"", ""component"": 0, ""family"": ""genomic""}]"	False		E15	R5.5	S22	recompute_then_render	false
+D22	D22E	D22C	"[{""logical_panel"": ""D22C"", ""component"": 0, ""family"": ""line""}, {""logical_panel"": ""D22C"", ""component"": 0, ""family"": ""line""}]"	True	"Predicted-site
+inclusion"	E15	R5.5	S22	recompute_then_render	false
+D23	D23A	D23A	"[{""logical_panel"": ""D23A"", ""component"": 0, ""family"": ""distribution""}, {""logical_panel"": ""D23A"", ""component"": 1, ""family"": ""point_interval""}]"	True	Eight matched species × contrast × motif-category cohorts	E18	R5.3;R5.8	S23	recompute_then_render	false
+D23	D23B	D23C	"[{""logical_panel"": ""D23C"", ""component"": 1, ""family"": ""line""}]"	False		E18	R5.3;R5.8	S23	recompute_then_render	false
+D23	D23C	D23B	"[{""logical_panel"": ""D23B"", ""component"": 0, ""family"": ""scatter""}]"	False		E18	R5.3;R5.8	S23	recompute_then_render	false
+D23	D23D	D23B	"[{""logical_panel"": ""D23B"", ""component"": 1, ""family"": ""bar""}]"	False		E18	R5.3;R5.8	S23	recompute_then_render	false
+D23	D23E	D23C	"[{""logical_panel"": ""D23C"", ""component"": 0, ""family"": ""point_interval""}]"	False		E18	R5.3;R5.8	S23	recompute_then_render	false
+D24	D24A	D24A	"[{""logical_panel"": ""D24A"", ""component"": 0, ""family"": ""scatter""}]"	False		E18	R5.3;R5.8	S24	recompute_then_render	false
+D24	D24B	D24A	"[{""logical_panel"": ""D24A"", ""component"": 1, ""family"": ""bar""}]"	False		E18	R5.3;R5.8	S24	recompute_then_render	false
+D24	D24C	D24B	"[{""logical_panel"": ""D24B"", ""component"": 0, ""family"": ""distribution""}]"	False		E18	R5.3;R5.8	S24	recompute_then_render	false
+D24	D24D	D24B	"[{""logical_panel"": ""D24B"", ""component"": 1, ""family"": ""point_interval""}]"	False		E18	R5.3;R5.8	S24	recompute_then_render	false
+D24	D24E	D24C	"[{""logical_panel"": ""D24C"", ""component"": 0, ""family"": ""point_interval""}]"	False		E18	R5.3;R5.8	S24	recompute_then_render	false
+D24	D24F	D24C	"[{""logical_panel"": ""D24C"", ""component"": 1, ""family"": ""scatter""}]"	False		E18	R5.3;R5.8	S24	recompute_then_render	false
+D25	D25A	D25A	"[{""logical_panel"": ""D25A"", ""component"": 0, ""family"": ""line""}, {""logical_panel"": ""D25A"", ""component"": 0, ""family"": ""line""}]"	True	log2(CPM + 1)	E18	R5.3;R5.8	S25	recompute_then_render	false
+D25	D25B	D25A	"[{""logical_panel"": ""D25A"", ""component"": 1, ""family"": ""bar""}]"	False		E18	R5.3;R5.8	S25	recompute_then_render	false
+D25	D25C	D25B	"[{""logical_panel"": ""D25B"", ""component"": 0, ""family"": ""scatter""}, {""logical_panel"": ""D25B"", ""component"": 1, ""family"": ""distribution""}]"	True	Liu expression-effect axis, same factor observations	E18	R5.3;R5.8	S25	recompute_then_render	false
+D25	D25D	D25C	"[{""logical_panel"": ""D25C"", ""component"": 0, ""family"": ""scatter""}, {""logical_panel"": ""D25C"", ""component"": 1, ""family"": ""distribution""}]"	True	WOT expression-effect axis, same factor observations	E18	R5.3;R5.8	S25	recompute_then_render	false
+D26	D26A	D26A	"[{""logical_panel"": ""D26A"", ""component"": 0, ""family"": ""line""}, {""logical_panel"": ""D26A"", ""component"": 0, ""family"": ""line""}]"	True	Interval inclusion (%)	E16	R5.7	S26	recompute_then_render	false
+D26	D26B	D26A	"[{""logical_panel"": ""D26A"", ""component"": 1, ""family"": ""point_interval""}]"	False		E16	R5.7	S26	recompute_then_render	false
+D26	D26C	D26B	"[{""logical_panel"": ""D26B"", ""component"": 1, ""family"": ""point_interval""}]"	False		E16	R5.8	S26	recompute_then_render	false
+D26	D26D	D26B	"[{""logical_panel"": ""D26B"", ""component"": 0, ""family"": ""genomic""}]"	False		E16	R5.8	S26	recompute_then_render	false
+D26	D26E	D26C	"[{""logical_panel"": ""D26C"", ""component"": 0, ""family"": ""genomic""}]"	False		E16;E18	R5.8	S26	recompute_then_render	false
+D26	D26F	D26D	"[{""logical_panel"": ""D26D"", ""component"": 0, ""family"": ""scatter""}, {""logical_panel"": ""D26D"", ""component"": 1, ""family"": ""scatter""}]"	True	The same native P/M PAS usage fractions, whole gene and terminal-family zoom	E16		S26	recompute_then_render	false
+D26	D26G	D26E	"[{""logical_panel"": ""D26E"", ""component"": 0, ""family"": ""bar""}]"	False		E16		S26	recompute_then_render	false
+D27	D27A	D27A	"[{""logical_panel"": ""D27A"", ""component"": 0, ""family"": ""scatter""}]"	False		E14		S27	recompute_then_render	false
+D27	D27B	D27B	"[{""logical_panel"": ""D27B"", ""component"": 0, ""family"": ""scatter""}]"	False		E14		S27	recompute_then_render	false
+D27	D27C	D27C	"[{""logical_panel"": ""D27C"", ""component"": 0, ""family"": ""point_interval""}, {""logical_panel"": ""D27C"", ""component"": 1, ""family"": ""bar""}]"	True	Five strict genes; upper Guo2019–CIP and lower Schiebinger2019–2i in every row	E14		S27	recompute_then_render	false

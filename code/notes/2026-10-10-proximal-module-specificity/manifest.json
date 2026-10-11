@@ -1,0 +1,43 @@
+{
+  "status": "PASS",
+  "input_sha256": {
+    "notes/2026-10-10-proximal-module-specificity/protocol.json": "7bbabdd51a1d97c3f61605e544498a8732681af61f72c824eaaa43af7f323601",
+    "notes/2026-10-10-naive-mouse-correspondence/analyze.py": "b6c275f85b65c15f4de81b020e5c7c6d321e5043d5bd0e5c86bf5d97a5451d38",
+    "notes/2026-10-10-proximal-module-specificity/analyze.py": "e82ee7e58041c451ecbcc1bac249065cf0a43b2e3ac580e3e2af605d1f65cfc7",
+    "notes/2026-10-06-dual-main-plot-data/polyapipe/main/tables/cross_overlap/ortholog_matched_features.tsv.gz": "7a8f1da1ad20f67dd956b91d954ecd68b60384a3181d7db0b1a5157e04258629",
+    "notes/2026-10-06-dual-main-plot-data/polyapipe/main/tables/naive_state/library_pair_effects.tsv.gz": "31f8e0ab81ca3e98ee0084cbc589224934f6bc79c03b4d7d03e633386181f484",
+    "notes/2026-10-06-dual-main-plot-data/polyapipe/main/tables/state_vectors/PAS_axes.primary.tsv.gz": "31eb9df0c0189103dc9ba1f1dea1aa7094aeb87a669a146891be7191f9d7b267",
+    "notes/2026-10-06-dual-main-plot-data/polyapipe/main/tables/tandem/tandem_utr_eligibility.tsv.gz": "3a4ae84958f0210dc7ba0ae2f203530dbd794701536f6d3f5d8e11d10fe0cd19",
+    "notes/2026-10-06-dual-main-plot-data/polyapipe/main/tables/intermediate/library_state_values.tsv.gz": "14afa32e635f4395550b7aab93298d022ba86d7de411e4b79bb17a3c7918ec43",
+    "notes/2026-10-06-dual-main-plot-data/polyapipe/main/tables/intermediate/paired_library_effects.tsv.gz": "53d916edaaf81a02bc2003d6e89651b97797a2022b75019454b1ebf18cbc74c4",
+    "notes/2026-10-06-dual-main-plot-data/polyapipe/main/tables/recurrence_controls/recurrence_frozen_covariates.tsv.gz": "0564c0fc44fd284548fba57160ec035f3c64c7bd0d7f30df9a1455e128453aab",
+    "notes/2026-10-06-dual-main-plot-data/polyapipe/main/tables/recurrence/recurrence_members.tsv.gz": "e7d3d0bf40aec45e02324ee00c023ca20fa17bf028ec0a01198804738053e277",
+    "notes/2026-10-06-dual-main-plot-data/polyapipe/main/tables/matched_pms/matched_state_vectors.tsv.gz": "6fe36234d8d65a2bb144c9021190733150761b994bb4ddb4fae7db97c7aaab47",
+    "notes/2026-10-10-naive-gex-recovery/all_gene_library_expression.tsv.gz": "648124936eefe8a7626020241a45240bb975ce39eae83288a5478a5c920855b5"
+  },
+  "output_sha256": {
+    "overlap_results.tsv": "caac433e302d795de51ba848bf4e1dccd6bb2105b1f9c797a05603f0f9e64549",
+    "direct_specificity_results.tsv": "d1d70d223b881c6c2b9c8aff5736628e704e15f7f2a0c95bbb3bc903bf8e4f45",
+    "measurability_inventory.tsv": "af285451fb4fecf65d4b3d7e9987b3c04999448bbb289c42ce3f6bbf6dab3964",
+    "joint_membership_and_covariates.tsv.gz": "74a07f58094b6bd5b033d60488a3b65fcc3bb71576b690f00fb7626b428c76e1",
+    "joint_pattern_stratum_margins.tsv.gz": "002be9722cbefc26d4bbfdfa14600f579642cfb12787e74ea4651c5e407ff28d",
+    "joint_null_draws.npz": "10ccd54a264688f5d47b9961bc0cff6edb0d1d9f4f191b347910181081e35e0a"
+  },
+  "python_executable": "/Users/lycidas/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+  "python": "3.12.14 (main, Aug 25 2026, 13:50:33) [Clang 22.1.3 ]",
+  "numpy": "2.3.5",
+  "pandas": "2.2.3",
+  "human_pair_exact_reconstruction_rows": 19276,
+  "human_control_exact_reconstruction": true,
+  "fixed_naive2575_662prox422dist": true,
+  "mouse_rosters_verified": true,
+  "joint_label_patterns_preserved": true,
+  "finite_p": true,
+  "models": [
+    "coarse_joint_assay",
+    "fine_joint_assay_mouse_expression",
+    "coarse_joint_assay_human_expression",
+    "fine_joint_assay_mouse_expression_human_expression"
+  ],
+  "human_GEX_sensitivity_available": true
+}

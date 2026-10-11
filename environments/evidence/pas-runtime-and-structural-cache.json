@@ -1,0 +1,297 @@
+{
+  "scope": "Only file hashes, primitive cache configuration, GTF version headers; no config bodies, intervals, source code or expression data exported",
+  "annotation_entry": {
+    "path": "/root/nfsdata/apadetect/analysis_projects/reproapa_polyapipe_common_statistics_20261005/run-series-v2-primary/runs/polyapipe_common/code/polyapipe_annotate.py",
+    "sha256": "11796e9e7452e2f6bbb3d09b83c0b1968c6d5617449a0df76584dd9e839628c7"
+  },
+  "receipts": {
+    "annotation_inputs_bedtools.json": {
+      "exists": true,
+      "sha256": "cb223268aac85e3a6057fa555bee40e01863dc6b99315618cb4019a5dee8203a",
+      "cache_file_identities": []
+    },
+    "annotation.complete.json": {
+      "exists": true,
+      "sha256": "8fbab1c8d091a265bc58294ad1d7e5dd87968e8ee43b58b62f0ef292a8e259a7"
+    },
+    "annotation_assembly_inputs.json": {
+      "exists": true,
+      "sha256": "f8b4e92638ac8a9cc979f9cc46e24b50ec2e0e2a3dfe1741de8f90dcd5ce14fe"
+    },
+    "intake-complete.json": {
+      "exists": true,
+      "sha256": "da1c062a2d99fd02e2d289f4b36274d9de55121f0e3499116593d429bd3dcb70"
+    }
+  },
+  "structural_caches": {
+    "mouse": {
+      "path": "/root/nfsdata/apadetect/data/reprogramming_differentiation_apa/analyses/apadetect_reproapa_study_atlas_v5_structural_priority_6aabc22_2026-08-14/reference_cache/reference_intervals_0d8f4d3b9c5a16bd599f.pickle",
+      "sha256": "0da3f4c425757861e4085c0e41cb836ac4990e41b29752c17084da5818c044c6",
+      "metadata": {
+        "payload": {
+          "schema": 3,
+          "gtf": {
+            "path": "/root/nfsdata/apadetect/data/genome/mouse/refdata-gex-GRCm39-2024-A/genes/genes.gtf",
+            "size": 972568170,
+            "mtime_ns": 1709927739000000000
+          },
+          "chromosome_map": {
+            "path": "/root/nfsdata/apadetect/data/reprogramming_differentiation_apa/analyses/apadetect_pas_annotation_v2_305eae2_2026-07-31/gse103221_pluripotency_reprogramming_core/gse103221_pluripotency_reprogramming_core_GSM3619571/annotations/chromosome_map.tsv",
+            "size": 1137,
+            "mtime_ns": 1785495250924532250
+          },
+          "transcript_end_zones_bp": [
+            250,
+            1000,
+            2000
+          ],
+          "gene_downstream_bp": 2000
+        },
+        "gtf_row_count": 1518711
+      },
+      "gtf": {
+        "path": "/root/nfsdata/apadetect/data/genome/mouse/refdata-gex-GRCm39-2024-A/genes/genes.gtf",
+        "sha256": "68ad058a636f9c53af3182545ca5d4f7eeda8df5c2818294410db9d47a4e5a25",
+        "header": [
+          "##description: evidence-based annotation of the mouse genome (GRCm39), version M33 (Ensembl 110)",
+          "##provider: GENCODE",
+          "##contact: gencode-help@ebi.ac.uk",
+          "##format: gtf",
+          "##date: 2023-03-07"
+        ]
+      }
+    },
+    "human": {
+      "path": "/root/nfsdata/apadetect/data/reprogramming_differentiation_apa/analyses/apadetect_reproapa_study_atlas_v5_structural_priority_6aabc22_2026-08-14/reference_cache/reference_intervals_a8e01ce68c1efa471385.pickle",
+      "sha256": "20d717dbd63999408cc3fc669fe68545584d30cc209cd7dbf1ac9ed4d29ef6ef",
+      "metadata": {
+        "payload": {
+          "schema": 3,
+          "gtf": {
+            "path": "/root/nfsdata/apadetect/data/reprogramming_differentiation_apa/references/pas_annotation_v1_067fe6f/GRCh38_2024_A/genes.gtf",
+            "size": 1688090034,
+            "mtime_ns": 1784387424941994924
+          },
+          "chromosome_map": {
+            "path": "/root/nfsdata/apadetect/data/reprogramming_differentiation_apa/analyses/apadetect_pas_annotation_v2_305eae2_2026-07-31/gse150311_human_pluripotency_reprogramming/gse150311_human_pluripotency_reprogramming_GSM4546545/annotations/chromosome_map.tsv",
+            "size": 1256,
+            "mtime_ns": 1785464709331804464
+          },
+          "transcript_end_zones_bp": [
+            250,
+            1000,
+            2000
+          ],
+          "gene_downstream_bp": 2000
+        },
+        "gtf_row_count": 2728543
+      },
+      "gtf": {
+        "path": "/root/nfsdata/apadetect/data/reprogramming_differentiation_apa/references/pas_annotation_v1_067fe6f/GRCh38_2024_A/genes.gtf",
+        "sha256": "a1201e3b0955c92ea789b278e3e6fb967f604da2f6d841d597519168e16c3fc5",
+        "header": [
+          "##description: evidence-based annotation of the human genome (GRCh38), version 44 (Ensembl 110)",
+          "##provider: GENCODE",
+          "##contact: gencode-help@ebi.ac.uk",
+          "##format: gtf",
+          "##date: 2023-03-01"
+        ]
+      }
+    }
+  },
+  "installed_annotation": {
+    "path": "/root/nfsdata/apadetect_releases/0.4.1/venv/lib/python3.10/site-packages/postprocessing/core/annotation.py",
+    "sha256": "868c8cc8f6fac250605bc40d5150b8bc6bdb46635a3ec9b025440f9df654c223",
+    "function_ast_sha256": {
+      "annotate_pas_structural": "7adf3bd6e07a40eac82e1e42e6f0b6500faaf2390aa1f2764b24ba3a5f7fef7e",
+      "validate_annotation_config": "a46b1a6e7c512ec008c235b9615b4892808e01d04910a7aea73db06c5fbf641d",
+      "_file_signature": "c55248198a552a07e964e378a1a683784d7702c9f4497ab0ba99178ae634b977",
+      "_reference_cache_payload": "1c62c33fd93af822df8cd34a59f69e91ca1992123b50be43e7420d454e548fe4",
+      "_load_reference_intervals": "64ccb26cc973bf9a5aac2bbba8dbc3f1c2b52a4758db169685e36bac0996e0dc",
+      "finalize_pas_annotation": "e7f6d1d8945f9890a6a03691d3f4b702c3d5f04e1992bc2d016183d1c1586b58",
+      "read_pas_bed": "fc250f28651acb99546a048489c0f4ad4b1d9e6723fe2b0c6e8ce83b49de1d27",
+      "normalize_pas_features": "158604485daff522606c89aa20eaf0d95632c76d5d3844092a38c308211764b6",
+      "generate_annotation_candidates": "c1b7cae6ab0c1f7f982f122065219c8157a3ef40a0a0f804c5fc3ef68968f351",
+      "generate_annotation_candidates_legacy": "27d6ed19e12bd87e590a5b6c466c6c5639cc4ec5e81517367bfd59c854d2c446",
+      "annotate_neighbor_gene_conflicts": "f5b693f18e37eb273dc5aa6aae52e20a85afb2bb612b951c785dc6a010d1053b",
+      "_group_join": "d44f62411e38029b327d8aed6a4fb6342e48b804507c8356d49cc03c354a1ac4",
+      "choose_primary_assignments": "8a2710ba61fe33efbed1ddc7755c65518f395d23b425ebe717c85cb3e475b372",
+      "choose_primary_assignments_legacy": "f96142fe9deb6100483e895f977bee84b371bc99923564d0905bc9b0f7d996fc",
+      "_eligible_same_strand_tes_candidates": "12c9a951f26798f380109e1b0df59b3874f9738244c4c2b6e6c138a408501020",
+      "_valid_canonical_terminal_candidates": "d8fd3772c54f50b781de1d54bbf9c5ab29c79970645b9bfc5462b5fad29d55a8",
+      "_valid_same_strand_core_tes_candidates": "896ab51fbbead0b9fa8a6ea90f8202c3b11846ed6b3161f7cedb8d4bdf3ddbc2",
+      "_select_tes_tier": "350e659da37ed515751bffb1420ec19395fa225be28fe64db449228817125f24",
+      "_same_strand_feature_family_candidates": "a707c6c538168b2f75b6f7128eff92e6811a1a35a00bcfcf24e60fcce28687ce",
+      "_gene_biotype_rank": "9ea84651e2688d984071ed71a0f67bb3305502c20ef991ea0bdfe0b245ea913e",
+      "_model_3p_distance": "0bebdf08acf00ade5591f7a05a0504e55de6a1882e7373a4f2fe651e452b3079",
+      "_select_structural_tier": "dd89a221594c043cda9f5080d677763aa6f1788e207c907f249b38232bb197b7",
+      "_structural_selection_views": "0f49c45b2065ca657031212ac207e4ad2f7e835d60042bdf6eb61ab9ec776d66",
+      "_has_other_gene_exonic_conflict": "abd028d76403543ed9b9cc4591ae065c14f55323d05863d36fbd53bc9baa17d1",
+      "_neighbor_assignment_provenance": "5ade6351b70116c6dbb740932ef78b914358f2b1148ace3c9b6472876876f6eb",
+      "_sorted_join": "1c110d725b71fa8ebc338286a25332bb0163a106179d900263521439cedbafc8",
+      "build_confidence_tiers": "88093136e6b430ad9c05a16710e5420b6155aac9fb38ece157f04f18b7c6f6e8",
+      "build_gene_pas_map": "1f07475e2cca066bf43d60e9255ea212fd672978328eb338f4db353a6647d8f9",
+      "build_gene_testability": "9a01a30c817ba1293101c0bf701e9cc7d501582d668e557f4b266e81bb6962af",
+      "_apply_chrom_mapping_to_gtf": "1a835017e791a768a365feaea0f8a207bb346038d55432ec0e94cdcf65852fe7",
+      "_cut_site": "41fc41c7c6a4b8d65c1b1c4803c614d24fb353ea354062485c40f152c3bd7597",
+      "_overlapping_rows": "883b82d46f18edfdf25dbdcbfce963b6e55d1f2ce958c68c1b73bb4289a7e636",
+      "_build_interval_index": "bb75405f7f1befa3bc155c3f0432b78b161014c77f5b3b93c375b421ddebc6b8",
+      "_query_interval_index": "dd97977f9d630a67960e086d1f5f86be31f6dcab22cf6ab6eec95a0e0580a37a",
+      "_candidate_row": "beada3ec71e465d3482fc7b7e45089b7a82b2001a99c95371d0778e9c3a64f81",
+      "_unassigned_candidate": "5dade18d3bc32cd3054096ad12878eaa5d2456762738900ee74e96a7b2501cd0",
+      "_stable_candidate_id": "09639722a631cc3b96f8f1337b8882ca1f507e23a6bec48b1179ae23a28ce4f0",
+      "_distance_to_interval_point": "fb4cd526e752e36d9115bd875477dd61fe02f23060f45453018d5f61155da917",
+      "_signed_distance_to_interval_point": "78befb5fcf25ec94b04024a4699b80379408befa3b0f91ae8f2a94e58a1df11b",
+      "_downstream_distance_to_interval_point": "d7b08ed3c8ceb5cdd0f49fd126d0f6fe05f71f319ee8d804240bb80b7459bc54",
+      "_assignment_status": "642ab39e2205431cb2adaa9f4cd316380e8e716b113e47f05c07650f6371e0b3",
+      "_terminal_exon_cds_overlap_without_utr": "f065d69910ee858c61b32f2550ffaad4d3ffc6a133b11e7335453e8f2a99453b",
+      "_has_transcript_conflict": "f666a89520ff0a37e8af6397662aad66d8c02d3b6b6801cb4b7ffcacf34185a3",
+      "_transcript_context_class": "f23f7bdf66a81a20ff6ed9dd851d62132d233c37bda56b4aecb4f3943eb91950",
+      "_transcript_region_family": "5cb92f651cdfa5253f8af612fa6d3ab95ce688d1e0a589452f3eb8d9aef80d04",
+      "_attach_sequence_qc": "4d0f0249b7cf8652043a42035bed5269613b33168c0d889002e4917b786fbc0d",
+      "_attach_external_support": "a6c9ce56db6c745394ddb2104bccbf418fd5e1ed32c939c9c3d555a4563ab0a4",
+      "_attach_external_to_candidates": "8ec519e13acd77d1da75e0a2beb2455bebeca4f99f4fe8361ba0e3779884463b",
+      "_string_column": "f7dca6bbc3512cad7bc7cc93046e32c58733a2c245a26ac29fdfa6b58d462931",
+      "_map_quantification_feature_ids": "c14660a516d01c7035e57dc38873cb9153c99acae3d16605d40147ba87ce8a0f",
+      "_run_manifest": "13b39f4365a86ab85cb8f04fbb163401f55e3b5511434890137315b1adaf8545",
+      "_write_reference_intervals": "98d3815b2a0e4a299018b0bef35d418d7bebce1fa017aaff851f242079786c9d",
+      "_write_outputs": "433cff6404db164363205485329919ea5748768100050640164e22aeb7c5c0a6"
+    }
+  },
+  "annotation_comparison": {
+    "method": "ast.dump excluding added type_params field; local Python 3.12 matches legacy dump list behavior; remote system AST hashes",
+    "identical_functions": [
+      "_file_signature",
+      "finalize_pas_annotation",
+      "read_pas_bed",
+      "normalize_pas_features",
+      "annotate_neighbor_gene_conflicts",
+      "_group_join",
+      "_eligible_same_strand_tes_candidates",
+      "_valid_canonical_terminal_candidates",
+      "_valid_same_strand_core_tes_candidates",
+      "_select_tes_tier",
+      "_same_strand_feature_family_candidates",
+      "_gene_biotype_rank",
+      "_model_3p_distance",
+      "_select_structural_tier",
+      "_structural_selection_views",
+      "_has_other_gene_exonic_conflict",
+      "_neighbor_assignment_provenance",
+      "_sorted_join",
+      "build_confidence_tiers",
+      "build_gene_pas_map",
+      "build_gene_testability",
+      "_apply_chrom_mapping_to_gtf",
+      "_cut_site",
+      "_overlapping_rows",
+      "_build_interval_index",
+      "_query_interval_index",
+      "_candidate_row",
+      "_unassigned_candidate",
+      "_stable_candidate_id",
+      "_distance_to_interval_point",
+      "_signed_distance_to_interval_point",
+      "_downstream_distance_to_interval_point",
+      "_assignment_status",
+      "_terminal_exon_cds_overlap_without_utr",
+      "_has_transcript_conflict",
+      "_transcript_context_class",
+      "_transcript_region_family",
+      "_attach_sequence_qc",
+      "_attach_external_support",
+      "_attach_external_to_candidates",
+      "_string_column",
+      "_map_quantification_feature_ids",
+      "_write_reference_intervals"
+    ],
+    "changed_functions": [
+      "annotate_pas_structural",
+      "validate_annotation_config",
+      "_load_reference_intervals",
+      "generate_annotation_candidates",
+      "choose_primary_assignments",
+      "_run_manifest",
+      "_write_outputs"
+    ],
+    "added_functions": [
+      "_reference_cache_payload",
+      "generate_annotation_candidates_legacy",
+      "choose_primary_assignments_legacy"
+    ],
+    "legacy_annotation_sha256": "3e19278cb018644add4707da57380f69fbe0867c8f3977431182b78498180615"
+  },
+  "dispatch_evidence": {
+    "scope": "Three dispatcher/cache-payload function excerpts only; normalized legacy selector hashes; annotation lock cache identity fields only",
+    "python": "3.10.12 (main, Jan 26 2026, 14:55:28) [GCC 11.4.0]",
+    "function_excerpts": {
+      "_reference_cache_payload": "def _reference_cache_payload(gtf_path, chrom_map_path, transcript_end_zones_bp, gene_downstream_bp):\n    return {\n        \"schema\": 3,\n        \"gtf\": _file_signature(gtf_path),\n        \"chromosome_map\": _file_signature(chrom_map_path),\n        \"transcript_end_zones_bp\": [int(value) for value in transcript_end_zones_bp],\n        \"gene_downstream_bp\": int(gene_downstream_bp),\n    }",
+      "generate_annotation_candidates": "def generate_annotation_candidates(pas_map, intervals, cut_site_window_bp=25, bedtools=\"bedtools\"):\n    from .annotation_bedtools import BedtoolsCandidateIndex\n    import sys\n\n    with BedtoolsCandidateIndex(sys.modules[__name__], intervals, bedtools) as index:\n        return index.generate(pas_map, cut_site_window_bp)",
+      "choose_primary_assignments": "def choose_primary_assignments(pas_map: pd.DataFrame, candidates: pd.DataFrame) -> pd.DataFrame:\n    from .assignment_batch import choose_primary_assignments_batch\n    import sys\n\n    return choose_primary_assignments_batch(sys.modules[__name__], pas_map, candidates)"
+    },
+    "renamed_legacy_function_ast_sha256": {
+      "generate_annotation_candidates_legacy": "2a76fee513a46fa7ab1ec9669cc2c24142b6cfa86f046be73b6979b5438786de",
+      "choose_primary_assignments_legacy": "0bfa93b81e5798fdc2c73cd866d2f2bed5eb70488ff71b169b87a8c0f632566a"
+    },
+    "cache_lock_fields": [
+      {
+        "key": "/root/nfsdata/apadetect/data/reprogramming_differentiation_apa/analyses/apadetect_reproapa_study_atlas_v5_structural_priority_6aabc22_2026-08-14/reference_cache/reference_intervals_0d8f4d3b9c5a16bd599f.pickle",
+        "sha256": "0da3f4c425757861e4085c0e41cb836ac4990e41b29752c17084da5818c044c6"
+      },
+      {
+        "key": "/root/nfsdata/apadetect/data/reprogramming_differentiation_apa/analyses/apadetect_reproapa_study_atlas_v5_structural_priority_6aabc22_2026-08-14/reference_cache/reference_intervals_a8e01ce68c1efa471385.pickle",
+        "sha256": "20d717dbd63999408cc3fc669fe68545584d30cc209cd7dbf1ac9ed4d29ef6ef"
+      }
+    ]
+  },
+  "current_config_source": {
+    "path": "notes/2026-10-05-dual-main-concordance/inputs/polyapipe_common/pipeline.config.json",
+    "sha256": "1546a8fcf7350f594d9455607a029a5edc77e7ee5766bf497fd3fc7a90f52b62"
+  },
+  "cache_lock_hashes_match": true,
+  "receipt_and_controller_hashes_match_current_config": true,
+  "full_installed_source_exported": false,
+  "policy_constants_and_gtf_signatures": {
+    "scope": "Seven annotation policy primitive literals only and two GTF stat signature comparisons; no module execution or data export",
+    "constants": {
+      "REGION_TABLES": [
+        "utr3",
+        "terminal_exon",
+        "tez_250bp",
+        "tez_1kb",
+        "tez_2kb",
+        "terminal_intron",
+        "internal_intron",
+        "internal_exon",
+        "cds",
+        "gene_downstream_2kb"
+      ],
+      "CANONICAL_TERMINAL_REGION_CLASSES": [
+        "annotated_3utr_pas",
+        "terminal_exon_pas"
+      ],
+      "INTRON_REGION_CLASSES": [
+        "internal_intron_pas",
+        "terminal_intron_pas"
+      ],
+      "EXONIC_CONFLICT_REGION_CLASSES": [
+        "coding_exon_pas",
+        "internal_exon_pas"
+      ],
+      "TES_REGION_CLASS": "transcript_end_zone_pas",
+      "TES_POLICY_MIN_DISTANCE_BP": 250,
+      "TES_POLICY_MAX_DISTANCE_BP": 2000
+    },
+    "gtf_signature_comparison": {
+      "human": {
+        "size_matches_payload": true,
+        "mtime_ns_matches_payload": true
+      },
+      "mouse": {
+        "size_matches_payload": true,
+        "mtime_ns_matches_payload": true
+      }
+    }
+  },
+  "legacy_policy_constants_identical": true
+}

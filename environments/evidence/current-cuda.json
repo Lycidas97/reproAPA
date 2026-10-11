@@ -1,0 +1,13 @@
+{
+  "captured_utc": "2026-10-10T04:22:49.348466+00:00",
+  "scope": "Current scVI-capable runtime only; no training or scientific computation",
+  "executable": "/root/miniconda3/envs/scanpy/bin/python",
+  "returncode": 0,
+  "metadata": {
+    "torch": "2.8.0",
+    "cuda_build": null,
+    "cudnn": null,
+    "cuda_available": false
+  },
+  "diagnostic": ""
+}

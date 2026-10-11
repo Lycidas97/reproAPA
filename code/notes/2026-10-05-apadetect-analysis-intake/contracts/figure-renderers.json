@@ -1,0 +1,142 @@
+{
+  "schema": "pas-figure-registry/1",
+  "figures": [
+    {
+      "figure": "F1",
+      "script": "notes/2026-10-05-main-figure-records-adapter/figure1/build.py",
+      "sha256": "69a9e6eca6fc6f521c93128849c20df5990c0b30df187ad8bfc9f655e510baeb",
+      "panels": [
+        "F1A",
+        "F1B",
+        "F1C",
+        "F1D"
+      ],
+      "interface": "pas-panel-result-records/1",
+      "status": "ready",
+      "legacy_script": "notes/2026-10-03-polyapipe-integrated-reference/narrative-reconstruction/main-figures-v5/figure1/build.py",
+      "legacy_sha256": "d78c0830ed933f4327b11f8367b1a90b806269185286e6ebef6d2fb326931ff3",
+      "scope": "candidate render from one result bundle; locked master layout; publication review pending; never writes Fig/",
+      "shared_tools": "notes/2026-10-05-main-figure-records-adapter/tools-local",
+      "selection": "notes/2026-10-05-main-figure-records-adapter/display-selection.json",
+      "shared_tools_sha256": {
+        "audit.py": "c63a7be42646bd1510ba4a705436b737f679d2ac5a723b7041a85bee7c7ba89b",
+        "dedupe.py": "ff45255b86020d18e602e24e5ee8e0fb63002241c884e2f4132a1bbde8edc4cb",
+        "figrec.py": "767faf4395d4fb8f5cd1f76338941d20c6496a8fdee9fe3310d70b8cdd54c95f",
+        "pdfclean.py": "fd06bd33515cd582f3b8b41fe71aea6089c322d74d6e6b2534fcb0de245dc29b",
+        "retile.py": "bb558f338691f2cdac13cb6d085a368a66bb62ad73bbb882d4111451768fcc83",
+        "v5draw.py": "1dc5d3eb3f4257dab7f97da3c7b55c20fb126f916386e96fafd5085438e28ce7"
+      }
+    },
+    {
+      "figure": "F2",
+      "script": "notes/2026-10-05-main-figure-records-adapter/figure2/build.py",
+      "sha256": "85439c7f4f158aac3cd9ba16edd813e4b61d7ff254a431b2cc3cd68b44198f1a",
+      "panels": [
+        "F2A",
+        "F2B",
+        "F2C",
+        "F2D",
+        "F2E",
+        "F2F"
+      ],
+      "interface": "pas-panel-result-records/1",
+      "status": "ready",
+      "legacy_script": "notes/2026-10-03-polyapipe-integrated-reference/narrative-reconstruction/main-figures-v5/figure2/build.py",
+      "legacy_sha256": "7f2884b24b1ab958e3003f1f514abb1ae60f07fba3e0ab04341a2b2c7c57645f",
+      "scope": "candidate render from one result bundle; locked master layout; publication review pending; never writes Fig/",
+      "shared_tools": "notes/2026-10-05-main-figure-records-adapter/tools-local",
+      "selection": "notes/2026-10-05-main-figure-records-adapter/display-selection.json",
+      "shared_tools_sha256": {
+        "audit.py": "c63a7be42646bd1510ba4a705436b737f679d2ac5a723b7041a85bee7c7ba89b",
+        "dedupe.py": "ff45255b86020d18e602e24e5ee8e0fb63002241c884e2f4132a1bbde8edc4cb",
+        "figrec.py": "767faf4395d4fb8f5cd1f76338941d20c6496a8fdee9fe3310d70b8cdd54c95f",
+        "pdfclean.py": "fd06bd33515cd582f3b8b41fe71aea6089c322d74d6e6b2534fcb0de245dc29b",
+        "retile.py": "bb558f338691f2cdac13cb6d085a368a66bb62ad73bbb882d4111451768fcc83",
+        "v5draw.py": "1dc5d3eb3f4257dab7f97da3c7b55c20fb126f916386e96fafd5085438e28ce7"
+      }
+    },
+    {
+      "figure": "F3",
+      "script": "notes/2026-10-05-main-figure-records-adapter/figure3/build.py",
+      "sha256": "fb7648c76117d7b9993fe42a42d003531dad211d2b31216b2ed548f7d23de5c7",
+      "panels": [
+        "F3A",
+        "F3B",
+        "F3C",
+        "F3D",
+        "F3E"
+      ],
+      "interface": "pas-panel-result-records/1",
+      "status": "ready",
+      "legacy_script": "notes/2026-10-04-main-figures-v5/figure3/build.py",
+      "legacy_sha256": "8aced1b2e08dc1b92a2ceb0a95624c986244c7811c947a05f33a2d6abbf3482a",
+      "scope": "candidate render from one result bundle; locked master layout; publication review pending; never writes Fig/",
+      "shared_tools": "notes/2026-10-05-main-figure-records-adapter/tools-local",
+      "selection": "notes/2026-10-05-main-figure-records-adapter/display-selection.json",
+      "shared_tools_sha256": {
+        "audit.py": "c63a7be42646bd1510ba4a705436b737f679d2ac5a723b7041a85bee7c7ba89b",
+        "dedupe.py": "ff45255b86020d18e602e24e5ee8e0fb63002241c884e2f4132a1bbde8edc4cb",
+        "figrec.py": "767faf4395d4fb8f5cd1f76338941d20c6496a8fdee9fe3310d70b8cdd54c95f",
+        "pdfclean.py": "fd06bd33515cd582f3b8b41fe71aea6089c322d74d6e6b2534fcb0de245dc29b",
+        "retile.py": "bb558f338691f2cdac13cb6d085a368a66bb62ad73bbb882d4111451768fcc83",
+        "v5draw.py": "1dc5d3eb3f4257dab7f97da3c7b55c20fb126f916386e96fafd5085438e28ce7"
+      }
+    },
+    {
+      "figure": "F4",
+      "script": "notes/2026-10-05-main-figure-records-adapter/figure4/build.py",
+      "sha256": "6f06c0870b88d7c5153fef215cf8115e991f6b675c70f8e6f5926e9f43466889",
+      "panels": [
+        "F4A",
+        "F4B",
+        "F4C",
+        "F4D",
+        "F4E",
+        "F4F"
+      ],
+      "interface": "pas-panel-result-records/1",
+      "status": "ready",
+      "legacy_script": "notes/2026-10-03-polyapipe-integrated-reference/narrative-reconstruction/main-figures-v5/figure4/build.py",
+      "legacy_sha256": "6dc65eb7e0e836c715900f2c7aefa97a152bb1210e83685f5f64bf7428ef211c",
+      "scope": "candidate render from one result bundle; locked master layout; publication review pending; never writes Fig/",
+      "shared_tools": "notes/2026-10-05-main-figure-records-adapter/tools-local",
+      "selection": "notes/2026-10-05-main-figure-records-adapter/display-selection.json",
+      "shared_tools_sha256": {
+        "audit.py": "c63a7be42646bd1510ba4a705436b737f679d2ac5a723b7041a85bee7c7ba89b",
+        "dedupe.py": "ff45255b86020d18e602e24e5ee8e0fb63002241c884e2f4132a1bbde8edc4cb",
+        "figrec.py": "767faf4395d4fb8f5cd1f76338941d20c6496a8fdee9fe3310d70b8cdd54c95f",
+        "pdfclean.py": "fd06bd33515cd582f3b8b41fe71aea6089c322d74d6e6b2534fcb0de245dc29b",
+        "retile.py": "bb558f338691f2cdac13cb6d085a368a66bb62ad73bbb882d4111451768fcc83",
+        "v5draw.py": "1dc5d3eb3f4257dab7f97da3c7b55c20fb126f916386e96fafd5085438e28ce7"
+      }
+    },
+    {
+      "figure": "F5",
+      "script": "notes/2026-10-05-main-figure-records-adapter/figure5/build.py",
+      "sha256": "e7c35b983c6490b6b1b591b5965c964eab2b8bd93ec782c5bafb6ac62c3eb060",
+      "panels": [
+        "F5A",
+        "F5B",
+        "F5C",
+        "F5D",
+        "F5E",
+        "F5F"
+      ],
+      "interface": "pas-panel-result-records/1",
+      "status": "ready",
+      "legacy_script": "notes/2026-10-03-polyapipe-integrated-reference/narrative-reconstruction/main-figures-v5/figure5/build.py",
+      "legacy_sha256": "b20f122914106f3a377215c2b00a1eea446a84aac96c4baa318e8a2986f4e8ec",
+      "scope": "candidate render from one result bundle; locked master layout; publication review pending; never writes Fig/",
+      "shared_tools": "notes/2026-10-05-main-figure-records-adapter/tools-local",
+      "selection": "notes/2026-10-05-main-figure-records-adapter/display-selection.json",
+      "shared_tools_sha256": {
+        "audit.py": "c63a7be42646bd1510ba4a705436b737f679d2ac5a723b7041a85bee7c7ba89b",
+        "dedupe.py": "ff45255b86020d18e602e24e5ee8e0fb63002241c884e2f4132a1bbde8edc4cb",
+        "figrec.py": "767faf4395d4fb8f5cd1f76338941d20c6496a8fdee9fe3310d70b8cdd54c95f",
+        "pdfclean.py": "fd06bd33515cd582f3b8b41fe71aea6089c322d74d6e6b2534fcb0de245dc29b",
+        "retile.py": "bb558f338691f2cdac13cb6d085a368a66bb62ad73bbb882d4111451768fcc83",
+        "v5draw.py": "1dc5d3eb3f4257dab7f97da3c7b55c20fb126f916386e96fafd5085438e28ce7"
+      }
+    }
+  ]
+}

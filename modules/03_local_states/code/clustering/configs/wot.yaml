@@ -1,0 +1,44 @@
+version: '2.0'
+study_id: WOT
+membership_path: /root/nfsdata/multica/worktrees/apadetect/DOC-54-wot-readiness/analyses/FGA01-wot-factorized-gex-annotation-v1/frozen_local_state_membership.tsv.gz
+membership_columns:
+  cell_id: cell_id
+  state_id: de_novo_local_state_id
+  scope_id: scope
+  library_id: null
+  barcode: null
+expression_mode: wot_log1p_cache
+expression_already_log1p: true
+expression_path: /root/nfsdata/multica/worktrees/apadetect/DOC-54-wot-readiness/analyses/SRG01-wot-state-robustness-v1/cache/normalized_gex.npz
+expression_cells_path: /root/nfsdata/multica/worktrees/apadetect/DOC-54-wot-readiness/analyses/SRG01-wot-state-robustness-v1/cache/cells.parquet
+expression_features_path: /root/nfsdata/multica/worktrees/apadetect/DOC-54-wot-readiness/analyses/SRG01-wot-state-robustness-v1/cache/features.parquet
+partition_selection_fields: []
+library_use: stratified_resampling_and_postfreeze_audit_only
+scopes:
+  studywide:
+    role: primary
+    n_cells: 226692
+    membership_scope_values: [common_to_2i, common_to_serum, common_trunk]
+    deduplicate_membership_by_cell_id: true
+    source_membership_order_sha256: c7ea6089056829e408a88372fd721ae2ab36b092f66836234c5bc7582e663992
+    cell_set_sha256: 9db65e8d655d36475fc3de17533177dc044aaf224c2f4307d12e84ea1b4d7b14
+    expression_path: /root/nfsdata/multica/worktrees/apadetect/DOC-54-wot-readiness/analyses/SRG01-wot-state-robustness-v1/cache/normalized_gex.npz
+    pipeline:
+      hvg_n_top_genes: 3000
+      pca_n_components_fitted: 50
+      pca_n_components_used: 30
+      pca_seed: 20260816
+      neighbor_n_neighbors: 30
+      leiden_resolution: 0.6
+      leiden_seed: 20260816
+      filter_genes_min_cells: 10
+      normalization_method: precomputed_normalize_total
+      normalization_target_sum: 10000.0
+      transform: existing_log1p
+      hvg_flavor: scanpy_seurat
+      scale_max_value: 10
+      pca_solver: sklearn_randomized_iterated_power_4
+      neighbor_backend: pynndescent.NNDescent
+      neighbor_metric: euclidean
+      leiden_implementation: leidenalg.find_partition
+      leiden_iterations: -1

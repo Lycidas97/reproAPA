@@ -1,0 +1,22 @@
+{
+  "status": "Exploratory follow-up; frozen before inspecting new subset and correspondence results.",
+  "primary_threshold": 0.02,
+  "sensitivity_threshold": 0.05,
+  "metric": "DWUI, stored as WPP; supported50_p08",
+  "recurrence": "Keep the verified original definition and fixed roster: at least two same-direction study votes, agreement across every measurable series within a study; an opposing third study is allowed.",
+  "tandem_question": "Does direction-specific recurrence remain above assay-matched expectation in genes whose entire primary PAS axis fits a common annotated terminal UTR in every measured contributing study?",
+  "tandem_eligibility": "Require full-primary tandem compatibility in all study rows in the frozen context, independently of event labels. Keep one-study genes in the permutation inventory, but report at-least-two-study measurable denominator separately.",
+  "tandem_null": "Restrict the frozen inventory to tandem-eligible genes, then apply the reviewed original study-event simulator with its frozen L3 covariate bin values. Preserve study-specific proximal/zero/distal margins within each remaining original stratum. Recompute neither effects nor recurrence thresholds.",
+  "tandem_length": "For original recurrent members in this subset, report per-route and gene-equal/study-equal delta_nt = delta_DWUI times native primary PAS span. Guan series are averaged within study before study averaging. These are usage-weighted retained UTR length changes, not physical extension of every transcript.",
+  "ortholog_question": "Are recurrent human and mouse responses assigned to the same one-to-one orthologs, in the same or opposing direction?",
+  "ortholog_mapping": "Use the complete 16092 high-confidence one-to-one Ensembl116 identities frozen in current cross_overlap/ortholog_matched_features.tsv.gz; the older S6 integration table is a selected subset and is excluded.",
+  "ortholog_background": "For each contrast require at least two actually measured studies in both species. A gene without recurrence within this measured universe is classified as nonrecurrent; unmeasured orthologs are excluded and counted separately. Native PAS axes are not homologous-PAS coordinates.",
+  "ortholog_labels": ["proximal", "distal", "nonrecurrent"],
+  "ortholog_null": "Permute the three fixed gene-class labels independently in each species, within species-specific assay covariate strata on the common ortholog inventory. This preserves observed recurrence-class margins and tests ortholog correspondence conditional on within-species recurrence, rather than destroying recurrence by shuffling study votes.",
+  "ortholog_covariates": "Exact measured-study/series combination, number of studies with proximal/distal baseline capacity at the threshold, PAS-number tercile; full model additionally matches median expression tercile, median APA-coverage tercile and median reference-DWUI quintile. Quantile bins are formed on the common measured inventory before class permutation. Measurement/PAS/capacity model is a preplanned coarser sensitivity. Both models report singleton/mobility diagnostics.",
+  "permutations": 10000,
+  "seed": "20261003 plus first12 SHA256 hex digits of utr_direction|species|contrast|threshold, or ortholog_direction|contrast|threshold|model.",
+  "tests": "One-sided upper-tail enrichment P=(1+draws>=observed)/(10001). Tandem primary BH across eight species/contrast/direction tests at .02; .05 separate. Ortholog primary BH across eight recurrent-to-recurrent cells (two contrasts times four directional pairings) per threshold and model. Report joint-threshold sensitivities. Nonrecurrent cells are descriptive.",
+  "verification": ["Original directional rosters reproduced", "Annotation gates independent of labels", "No missing observation becomes a nonrecurrent label", "All null strata preserve all three class margins", "Monte Carlo means agree with analytic expectations", "delta_nt identity and direction verified", "Inputs hashed before and after analysis"],
+  "limits": "Gene-level correspondence and native gene-wide directions do not establish homologous PAS use, species causality, naive-state mechanism, or independent biological replication. Conditional null reference intervals are not biological confidence intervals. Singleton strata limit inference. No manuscript edits."
+}

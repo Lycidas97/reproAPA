@@ -1,0 +1,36 @@
+{
+  "status": "PASS",
+  "input_sha256": {
+    "notes/2026-10-10-recurrence-utr-ortholog/protocol.json": "5247a3417a0758b6d5f242e0d7f3a0ad8ec532d7c48091637ed8670bbd6eadea",
+    "notes/2026-10-06-dual-main-plot-data/polyapipe/main/tables/recurrence_controls/recurrence_frozen_covariates.tsv.gz": "0564c0fc44fd284548fba57160ec035f3c64c7bd0d7f30df9a1455e128453aab",
+    "notes/2026-10-06-dual-main-plot-data/polyapipe/main/tables/tandem/tandem_utr_eligibility.tsv.gz": "3a4ae84958f0210dc7ba0ae2f203530dbd794701536f6d3f5d8e11d10fe0cd19",
+    "notes/2026-10-06-dual-main-plot-data/polyapipe/main/tables/tandem/tandem_utr_effects.tsv.gz": "d1053fc6b581d50f9316752c46cc0cb7cab842b1eb7ea5a2d58675d27a00fe1f",
+    "notes/2026-10-06-dual-main-plot-data/polyapipe/main/tables/cross_overlap/ortholog_matched_features.tsv.gz": "7a8f1da1ad20f67dd956b91d954ecd68b60384a3181d7db0b1a5157e04258629",
+    "notes/2026-10-10-directional-recurrence/observed_members.tsv.gz": "6875d84f6b08b31a5b987ec6cd5a4fc8b92d031447a5e610995967433ce669a2",
+    "notes/2026-10-10-directional-recurrence/analyze.py": "bf054c1760d32fec1f606d11a281e31f67b532ca8cb8b370512c8bfe792d1580",
+    "notes/2026-10-02-null-model-controls/recurrence.py": "d859ec5a95b74bb01275d910dcd242af52b66882bcd0b892af885ded3054418b",
+    "notes/2026-10-02-null-model-controls/common.py": "b6d6902d47b6b22a287a78fca11e5f008d3029a0aeb452ebe4ee517dbc1f1e52",
+    "analysis_code/pas_rerun/downstream_runtime.py": "08ad37a4501e9db33da613869376ce825fe4776191f8922ecccfd9bea7f8c0ab"
+  },
+  "output_sha256": {
+    "tandem_directional_recurrence.tsv": "1f9deb3ed552705adf309729ed9c807f793a81a11dc37e26d85fac48a6f25aaf",
+    "tandem_recurrent_length.tsv": "b34322e2f739edfa206d6316a71bba3ac06ac8e3f3ca383434150476ea44e1ff",
+    "tandem_inventory.tsv": "13ac3b6d2fb848492b5b6ef4e31787d59ab61a3499bb2e8db65486a3e15d36b2",
+    "tandem_members.tsv.gz": "df50aab24484131dfb179f48751185abf636d467c745b59a8840a1a5a2061e10",
+    "tandem_stratum_margins.tsv.gz": "f538ac01e37058da7d7703fc022bda46f085dc037dc8817c48560bbc421ee495",
+    "ortholog_3x3.tsv": "06a4d5ece2b1d63714dbb43fd61761bc692e3e1ca8abb524910e7aac604a5097",
+    "measured_ortholog_members.tsv.gz": "a010bb8cb05e9fa126d568b9b3a656e8eb3ccae8784fdec8b4aa1b29a895a7c0",
+    "ortholog_assay_features.tsv.gz": "1a96a60ecdf12ca98698f8f0b7df2242f70f92ae77a16c91daccc327d7dd8907",
+    "ortholog_stratum_diagnostics.tsv.gz": "07720cc163c3aea065a9bde51d55b8ab4057b97b3edbd951113a358bdb97ded3",
+    "null_draws.npz": "d32371a148c485a901b68d52f25d805ab42a1dff082e8f1c7eff87fe761b3ce9"
+  },
+  "script_sha256": "ebf177baaea0bd2a00d0fab54afb7e7c42e2153cd5fb67eef28bf6e6d1a29af3",
+  "python_executable": "/Users/lycidas/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+  "python": "3.12.14 (main, Aug 25 2026, 13:50:33) [Clang 22.1.3 ]",
+  "numpy": "2.3.5",
+  "pandas": "2.2.3",
+  "original_directional_rosters_verified": true,
+  "analytic_null_means_verified": true,
+  "all_draws_preserve_stratum_margins": true,
+  "full_ortholog_identity_count": 16092
+}

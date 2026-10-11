@@ -1,0 +1,43 @@
+workflow_version: 3.2.0-rc.1
+python: /root/miniconda3/envs/single-cell-qc/bin/python
+study_id: GSE103221
+species: Mus musculus
+report_label: GSE103221 real two-library configuration pilot
+library_manifest: manifests/GSE103221_small.tsv
+metadata_registry: metadata_sources/GSE103221_small.csv
+metadata_contract: metadata_contracts/GSE103221_small.tsv
+output_root: runs
+output_dir: gse103221_small
+output_mode: fresh
+expected_library_count: 2
+expected_called_cell_count: 13750
+library_id_pattern: '^gse103221_pluripotency_reprogramming_core_GSM[0-9]+$'
+global_cell_id_template: '{study_id}|{library_id}|{barcode}'
+adapters:
+  raw_input: [cellranger_filtered_h5, cellranger_filtered_mtx]
+  basic_qc_evidence: [validated_prior_run, policy_document_recompute]
+  diagnostic_evidence: [validated_prior_run, scrublet_policy_recompute]
+basic_qc:
+  strict: {hard_min_umi: 1500, hard_min_genes: 750, mad_n: 3, mito_cap_pct: 10, complexity_min: 0.75}
+  candidate: {hard_min_umi: 1500, hard_min_genes: 750, mad_n: 3, mito_cap_pct: 20, complexity_min: 0.75}
+  retention_sensitivity: {hard_min_umi: 500, hard_min_genes: 300, mad_n: 5, mito_cap_pct: 30, complexity_min: 0.75}
+sample_gates:
+  primary_min_candidate_basic_qc: 100
+  sensitivity_min_candidate_basic_qc: 50
+scrublet:
+  expected_doublet_rate: 0.06
+  sim_doublet_ratio: 2
+  synthetic_doublet_umi_subsampling: 1.0
+  min_counts: 2
+  min_cells: 3
+  min_gene_variability_pctl: 85
+  n_prin_comps: 30
+  primary_seed: 0
+  diagnostic_seeds: [1, 2]
+  action: diagnostic_only
+evidence_sha256:
+  report.md: 2d22300a9a2c0ef7aca12a7e338d9950845bbf32f273f64cdec482dd4703fdc2
+  production_policy_recommendation.tsv: 4b762cd82987c5dee3c90b0a157a450fd12780859ba9b4522e499368d5405ac0
+evidence_required_text:
+  - 'GSE103221'
+  - 'Scrublet'

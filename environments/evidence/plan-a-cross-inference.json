@@ -1,0 +1,23 @@
+{
+  "status": "frozen_before_new_inference",
+  "frozen_utc": "2026-10-08T15:55:27.828769+00:00",
+  "root_execution_authorized": true,
+  "input_sha256": {
+    "/Users/lycidas/work/reproAPA/reviews/2026-10-08-plan-a-redesign/cross-species/PROTOCOL.zh.md": "4712d75288085e9b0301267f073935b788ed129d22c4866d9b6cdee76c596ed5",
+    "/Users/lycidas/work/reproAPA/reviews/2026-10-08-plan-a-redesign/PROTOCOL.md": "948de02088f563425c95120b2749f881c28318692678b75da7cfbdc0597bce82",
+    "/Users/lycidas/work/reproAPA/reviews/2026-10-08-plan-a-analysis/cross-species/results/raw-pvalues.tsv": "af60d3e15e5fc7e4e49e5630f3c69540fb2c802415edd8880fd282617f5a9ea9",
+    "/Users/lycidas/work/reproAPA/reviews/2026-10-08-plan-a-analysis/cross-species/results/direction-exact-support.tsv": "370a82fc5708d9af40ebfb00323e883257e57e4b1e2bbc0c186b46151ae8d41a",
+    "/Users/lycidas/work/reproAPA/reviews/2026-10-08-plan-a-analysis/cross-species/results/polyapipe-universe.tsv.gz": "7376b461f7aebacbaaa36e74b590b1588971d9ca50c98aeb6c96f2be738d7038",
+    "/Users/lycidas/work/reproAPA/reviews/2026-10-08-plan-a-analysis/cross-species/results/apadetect-p50-universe.tsv.gz": "9d12b72f89c7eb39ef1e72fb488748995d2b1279d2064f009a8a108e356d4b18"
+  },
+  "code_sha256": "8cf2275eb598d72c46af64df8fdf6f230cd5e25355f2939c4f698d5696f6503e",
+  "verification_code_sha256": "fef7b5edca4777ef7a5d4c67cf7af00f0a3274f8236714d9f29e6cc2564d9a03",
+  "master_seed": 20261008,
+  "null_draws": 20000,
+  "overlap_power_draws": 3000,
+  "direction_power": "exact",
+  "python": "3.12.12",
+  "numpy": "2.5.3",
+  "pandas": "3.0.6",
+  "scipy": "1.18.1"
+}

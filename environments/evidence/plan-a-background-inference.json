@@ -1,0 +1,28 @@
+{
+  "status": "COMPLETE",
+  "started": "2026-10-08T15:53:05.276154+00:00",
+  "finished": "2026-10-08T15:53:13.141293+00:00",
+  "phase": "inference",
+  "code_sha256": "edb4adfc11c322079a1342a108ffb2dd062318da5413a985bee26c1ea4294edb",
+  "input_sha256": {
+    "/Users/lycidas/work/reproAPA/notes/2026-10-06-supplement-polyapipe/contract-r2/bundle/tables/matched_pms/matched_state_vectors.tsv.gz": "6fe36234d8d65a2bb144c9021190733150761b994bb4ddb4fae7db97c7aaab47",
+    "/Users/lycidas/work/reproAPA/notes/2026-10-06-supplement-polyapipe/contract-r2/bundle/tables/recurrence/recurrence_members.tsv.gz": "e7d3d0bf40aec45e02324ee00c023ca20fa17bf028ec0a01198804738053e277",
+    "/Users/lycidas/work/reproAPA/notes/2026-10-06-supplement-polyapipe/contract-r2/bundle/tables/candidate_screen/dual_reference_candidates.tsv": "d46bfb2813ff0b3a2f137e78b66779ac1be12f06c413049b941b9453e68de8c3",
+    "/Users/lycidas/work/reproAPA/notes/2026-10-06-supplement-polyapipe/contract-r2/bundle/tables/candidate_screen/dual_reference_ladder.tsv": "d119fbbeb19746c46bf9005dd54a8910ae9dccf326e6382785c1475df047b6cf",
+    "/Users/lycidas/work/reproAPA/notes/2026-10-06-supplement-polyapipe/contract-r2/bundle/tables/state_vectors/route_effects.primary.tsv.gz": "cdc6058a715bf7d2f551a29d534054deeff6ea7b7ade7f0871090d42c8a57f04",
+    "/Users/lycidas/work/reproAPA/notes/2026-10-06-dual-main-plot-data/apadetect-p50/supplement/tables/matched_pms/matched_state_vectors.tsv.gz": "810447ec3797aa204aa709704de699f83e89dc6086f1c8ecbc72c384e4744720",
+    "/Users/lycidas/work/reproAPA/notes/2026-10-06-dual-main-plot-data/apadetect-p50/supplement/tables/recurrence/recurrence_members.tsv.gz": "a094617ef7912619c3ba029e7ce79505bd02ba92064c9a6a9293f1dfe6edbb0d",
+    "/Users/lycidas/work/reproAPA/notes/2026-10-06-dual-main-plot-data/apadetect-p50/supplement/tables/candidate_screen/dual_reference_candidates.tsv": "cc5ed0c2841b9348a87650d9e9e620f10b5bbbbc7691144883f7ee975ec2335b",
+    "/Users/lycidas/work/reproAPA/notes/2026-10-06-dual-main-plot-data/apadetect-p50/supplement/tables/candidate_screen/dual_reference_ladder.tsv": "abc26c9203696e8168ef3f51fb0cdeb7f484f196a4bb2881451a3bc8b817dd6f",
+    "/Users/lycidas/work/reproAPA/notes/2026-10-06-dual-main-plot-data/apadetect-p50/supplement/tables/state_vectors/route_effects.primary.tsv.gz": "657084fa5f23a55af426e27eac61c656fe9abc6a75d07bd736f82451521af46d"
+  },
+  "protocol_sha256": "ba31a6aaee868a7910af4be6a1d0297ae90e69ec06fb3671a1ceb6de62313904",
+  "frozen_global_protocol": "reviews/2026-10-08-plan-a-redesign/PROTOCOL.md",
+  "frozen_global_sha": "948de02088f563425c95120b2749f881c28318692678b75da7cfbdc0597bce82",
+  "python": "3.12.12 (main, Feb 12 2026, 00:42:34) [Clang 21.1.4 ]",
+  "numpy": "2.5.3",
+  "pandas": "3.0.6",
+  "scipy": "1.18.1",
+  "original_inputs_unchanged": true,
+  "inference_tests": 12
+}

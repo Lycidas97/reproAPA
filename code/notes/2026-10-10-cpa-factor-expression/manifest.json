@@ -1,0 +1,37 @@
+{
+  "input_sha256": {
+    "notes/2026-10-10-cpa-factor-expression/protocol.json": "1e9f01d109e08add7936a48009585367cc47e64752311f4789bb505423034931",
+    "notes/2026-10-10-cpa-factor-expression/expression_inputs.npz": "b23b67968b2327a2e07963b4324228fc9b5040262c215030e9f58e0e709cdbf0",
+    "notes/2026-10-10-cpa-factor-expression/analyze.py": "b730d9d8b48cdef309df9b79e9861032e7d556d3449514632faadd4166084cca",
+    "notes/2026-10-10-cpa-factor-expression/collect.py": "dbbea1159d040541c326c2bc2107d144743080ea359dd5511941fd280139e2f9",
+    "notes/2026-10-10-cpa-factor-expression/extract_remote.py": "f47e9451251cb76e38adb212a43aeb502e61ad436c9246c89aa069ee9d319658",
+    "notes/2026-10-10-cpa-factor-expression/test_analysis.py": "f354faeff648d1be6d2dbb2efe48ad9d45f317cdb9ab6168ffcee3b647e93171",
+    "notes/2026-10-10-cpa-factor-expression/verify.py": "691b140510a0bcf3a6f62256078e846887604d3d372470364ca9698a11cb38b4",
+    "notes/2026-10-10-cpa-factor-expression/REPORT.zh.md": "905b733f87ac30ea62883c0eee52737b26a5fac2f53287fbb7ce663df6798edd",
+    "notes/2026-10-02-rbp-expression/analyze.py": "8b742dee93d917d09d219447303862cf51ba3008f4fe81ac7295f04b5f501e69",
+    "notes/2026-10-06-dual-main-plot-data/provenance/polyapipe-pipeline.config.json": "1546a8fcf7350f594d9455607a029a5edc77e7ee5766bf497fd3fc7a90f52b62",
+    "notes/2026-10-10-naive-gex-recovery/factor_library_expression.tsv.gz": "535a25938f38327988268f0a9174d17ec582d4bf0484fa76e558d01d34707f39",
+    "notes/2026-10-06-dual-main-plot-data/polyapipe/main/tables/rbp_expression/library_expression.tsv.gz": "a13fdd5a4fd43578d479f797bb8f99165a4ad329d4e4afb07bdb8befba81be56",
+    "notes/2026-10-06-dual-main-plot-data/polyapipe/main/tables/global/global_direction_summary.tsv": "f6f4d4e8c0a46b07f03a43276b45a5aaf80b10d347015f95cc03002b20f1b05d",
+    "notes/2026-10-06-dual-main-plot-data/polyapipe/main/tables/naive_state/library_pair_effects.tsv.gz": "31f8e0ab81ca3e98ee0084cbc589224934f6bc79c03b4d7d03e633386181f484",
+    "notes/2026-10-10-naive-mouse-correspondence/primary_shared_orthologs.tsv": "f1a7a06271e88d02a45e645a150de12d8e3999b48abc60b32531ae0db6fe487e"
+  },
+  "outputs": {
+    "gene_mapping.tsv": "8ca582813b4c226e8b9c21805f91c70b52b89f58c03499f238596b4e97d0b122",
+    "library_expression.tsv.gz": "02b2778740137d1ca8a3d15135f604d7f47c6e7218bce21629031e4b15cfe009",
+    "verification.tsv": "c4c484e32ebd17b573a82a64b3b268b0d9fd5c8c3700c73ccf6106ee2c8af2e6",
+    "primary_comparison_matrix.tsv": "7cdbbe5b60f604d862fe6a8f1e04bde03d691c234e7fe55c5984dc49db2dbb28",
+    "expression_contrasts.tsv": "f0721fe494ffcc228e9de13db99b690fb553f29a9b48df47b8c31e759e3780fb",
+    "paired_library_effects.tsv": "9aba34efe64edebd976f7131e66342fb6245334f76876b8a24af4e906094715b",
+    "shared_roster_audit.tsv": "cb0df512e02d80745d09874ba087c612a15227f270652639e2ba2120f17120d5",
+    "state_expression.tsv": "f953b8c6c80c32eef9d73283642f0bc087d4cfea63fe5304ba1303e310a1591f"
+  },
+  "remote_read_only": true,
+  "mapped_status": {
+    "unique_exact_casefold_symbol": 102
+  },
+  "n_library_rows": 3876,
+  "n_state_rows": 714,
+  "n_contrast_rows": 663,
+  "tests_skipped": 0
+}

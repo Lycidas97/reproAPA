@@ -1,0 +1,7 @@
+{
+  "frozen_at": "2026-10-10T16:44:15.648855+00:00",
+  "protocol_sha256": "183b97211a6387af87f72489cb5e8201ab1651d4e0d6ebe2bd723874ae84f960",
+  "n_permutations": 20000,
+  "external_inference": "descriptive fixed probe, no treatment-level p",
+  "structure_family_size": 12
+}

@@ -1,0 +1,28 @@
+{
+  "status": "FROZEN_PARAMETERS_FROM_PARENT_PROTOCOL",
+  "thresholds": [
+    0.01,
+    0.015,
+    0.02,
+    0.025,
+    0.03,
+    0.035,
+    0.04,
+    0.045,
+    0.05
+  ],
+  "models": [
+    "measurement_PAS_capacity",
+    "full_assay"
+  ],
+  "classes": [
+    "both_tandem",
+    "both_ALE"
+  ],
+  "permutations": 100000,
+  "classification_sha256": "5ba39cd3a5439557c7c3edf604ec6c9ca03c88acb0249996f4748572c17842c3",
+  "strict_eligibility_sha256": "5ba39cd3a5439557c7c3edf604ec6c9ca03c88acb0249996f4748572c17842c3",
+  "parent_protocol_path": "notes/2026-10-10-utr-event-stratification/PROTOCOL.zh.md",
+  "parent_protocol_sha256": "a96c1be2d573c4bf78a6c6a18180a5af0d1f6de8f25cebf2a2e140bda69f2cfe",
+  "seed_rule": "SHA-derived seed('event_stratified_direction', 'P_M', event_class, threshold, model)"
+}

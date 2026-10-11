@@ -1,0 +1,22 @@
+# Known pins retained; missing versions use current PyPI releases. Python 3.12.14, Linux x86_64.
+anndata==0.13.4
+faiss-cpu==1.15.1
+h5py==3.16.0
+igraph==1.0.0
+leidenalg==0.12.0
+matplotlib==3.11.2
+networkx==3.7
+numpy==2.5.3
+palantir==1.4.5
+pandas==3.0.6
+pillow==12.3.0
+pyclustree==0.4.1
+pynndescent==0.6.0
+PyYAML==6.0.3
+scanpy==1.12.4
+scikit-learn==1.9.1
+scipy==1.18.1
+seaborn==0.13.2
+SEACells==0.3.3
+threadpoolctl==3.7.0
+umap-learn==0.5.12

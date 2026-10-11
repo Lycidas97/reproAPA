@@ -1,0 +1,38 @@
+{
+  "status": "DISPLAY_CANDIDATE_COMPLETE_VALIDATION_PENDING",
+  "analysis_unit": "frozen within-library metacell",
+  "human_metacells": 4332,
+  "mouse_metacells": 6772,
+  "one_to_one_orthologs": 16295,
+  "scvi": {
+    "batch_key": "species_key",
+    "n_hvg": 4000,
+    "n_latent": 30,
+    "max_epochs": 160,
+    "batch_size": 512,
+    "early_stopping": true,
+    "labels_time_apa_used": false
+  },
+  "time_weights": [
+    0.3,
+    0.4,
+    0.3
+  ],
+  "control_weights": [
+    0.7,
+    0.0,
+    0.3
+  ],
+  "time_graph_components": 1,
+  "time_graph_undirected_edges": 843537,
+  "cross_species_mnn_undirected_edges": 26427,
+  "cross_species_30nn_fraction": 0.05341918828049952,
+  "control_cross_species_30nn_fraction": 0.05220341018251681,
+  "time_edge_relative_distance": 4.241531305330378,
+  "control_time_edge_relative_distance": 16.664989916901092,
+  "time_edge_relative_distance_change_vs_control_pct": -74.54825159522747,
+  "cross_species_mnn_broad_semantic_match_fraction": 0.29428236273508157,
+  "study_specific_trajectory_arrows": 86,
+  "cross_species_ot_or_common_clock_created": false,
+  "cross_species_lineage_or_identity_validated": false
+}

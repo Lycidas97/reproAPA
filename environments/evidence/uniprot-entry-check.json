@@ -1,0 +1,209 @@
+{
+  "scope": "Fresh public entry identity check; not a historical analysis input freeze",
+  "retrieved_utc": "2026-10-10T03:28:29.873461+00:00",
+  "citation_doi": "10.1093/nar/gkae1010",
+  "citation_year": 2025,
+  "entries": [
+    {
+      "accession": "Q9NR12",
+      "url": "https://rest.uniprot.org/uniprotkb/Q9NR12.json",
+      "response_sha256": "e3e748f86495338e443744f66a12fd5d6450d6499107fcf120648abb36c434e0",
+      "release": "2026_03",
+      "release_date": "02-September-2026",
+      "entry_audit": {
+        "firstPublicDate": "2005-12-06",
+        "lastAnnotationUpdateDate": "2026-09-02",
+        "lastSequenceUpdateDate": "2000-10-01",
+        "entryVersion": 204,
+        "sequenceVersion": 1
+      },
+      "domains": [
+        {
+          "type": "Domain",
+          "location": {
+            "start": {
+              "value": 1,
+              "modifier": "EXACT"
+            },
+            "end": {
+              "value": 85,
+              "modifier": "EXACT"
+            }
+          },
+          "description": "PDZ",
+          "evidences": [
+            {
+              "evidenceCode": "ECO:0000255",
+              "source": "PROSITE-ProRule",
+              "id": "PRU00143"
+            }
+          ]
+        },
+        {
+          "type": "Domain",
+          "location": {
+            "start": {
+              "value": 280,
+              "modifier": "EXACT"
+            },
+            "end": {
+              "value": 338,
+              "modifier": "EXACT"
+            }
+          },
+          "description": "LIM zinc-binding 1",
+          "evidences": [
+            {
+              "evidenceCode": "ECO:0000255",
+              "source": "PROSITE-ProRule",
+              "id": "PRU00125"
+            }
+          ]
+        },
+        {
+          "type": "Domain",
+          "location": {
+            "start": {
+              "value": 339,
+              "modifier": "EXACT"
+            },
+            "end": {
+              "value": 398,
+              "modifier": "EXACT"
+            }
+          },
+          "description": "LIM zinc-binding 2",
+          "evidences": [
+            {
+              "evidenceCode": "ECO:0000255",
+              "source": "PROSITE-ProRule",
+              "id": "PRU00125"
+            }
+          ]
+        },
+        {
+          "type": "Domain",
+          "location": {
+            "start": {
+              "value": 399,
+              "modifier": "EXACT"
+            },
+            "end": {
+              "value": 457,
+              "modifier": "EXACT"
+            }
+          },
+          "description": "LIM zinc-binding 3",
+          "evidences": [
+            {
+              "evidenceCode": "ECO:0000255",
+              "source": "PROSITE-ProRule",
+              "id": "PRU00125"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "accession": "Q3TJD7",
+      "url": "https://rest.uniprot.org/uniprotkb/Q3TJD7.json",
+      "response_sha256": "4de616b3d01b7875473330a7d769efd4c2f92ad371231336420c12363f170065",
+      "release": "2026_03",
+      "release_date": "02-September-2026",
+      "entry_audit": {
+        "firstPublicDate": "2005-12-06",
+        "lastAnnotationUpdateDate": "2026-09-02",
+        "lastSequenceUpdateDate": "2005-10-11",
+        "entryVersion": 152,
+        "sequenceVersion": 1
+      },
+      "domains": [
+        {
+          "type": "Domain",
+          "location": {
+            "start": {
+              "value": 1,
+              "modifier": "EXACT"
+            },
+            "end": {
+              "value": 85,
+              "modifier": "EXACT"
+            }
+          },
+          "description": "PDZ",
+          "evidences": [
+            {
+              "evidenceCode": "ECO:0000255",
+              "source": "PROSITE-ProRule",
+              "id": "PRU00143"
+            }
+          ]
+        },
+        {
+          "type": "Domain",
+          "location": {
+            "start": {
+              "value": 280,
+              "modifier": "EXACT"
+            },
+            "end": {
+              "value": 338,
+              "modifier": "EXACT"
+            }
+          },
+          "description": "LIM zinc-binding 1",
+          "evidences": [
+            {
+              "evidenceCode": "ECO:0000255",
+              "source": "PROSITE-ProRule",
+              "id": "PRU00125"
+            }
+          ]
+        },
+        {
+          "type": "Domain",
+          "location": {
+            "start": {
+              "value": 339,
+              "modifier": "EXACT"
+            },
+            "end": {
+              "value": 398,
+              "modifier": "EXACT"
+            }
+          },
+          "description": "LIM zinc-binding 2",
+          "evidences": [
+            {
+              "evidenceCode": "ECO:0000255",
+              "source": "PROSITE-ProRule",
+              "id": "PRU00125"
+            }
+          ]
+        },
+        {
+          "type": "Domain",
+          "location": {
+            "start": {
+              "value": 399,
+              "modifier": "EXACT"
+            },
+            "end": {
+              "value": 457,
+              "modifier": "EXACT"
+            }
+          },
+          "description": "LIM zinc-binding 3",
+          "evidences": [
+            {
+              "evidenceCode": "ECO:0000255",
+              "source": "PROSITE-ProRule",
+              "id": "PRU00125"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "historical_release_freeze_recovered": false
+}

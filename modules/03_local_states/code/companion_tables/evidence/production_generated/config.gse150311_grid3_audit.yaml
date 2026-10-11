@@ -1,0 +1,63 @@
+python: /root/miniconda3/envs/single-cell-qc/bin/python
+project_config_path: /root/nfsdata/apadetect/analysis_projects/reprogramming_qc_v3_2_clustering_release_v1/production_generated/config.gse150311_grid3_audit.yaml
+output_root: results_qc_v3_2_gse150311_grid3_audit
+dataset_configs:
+  gse150311: production_generated/configs/gse150311.yaml
+selection:
+  max_evaluation_cells: 10000
+  subsample_fraction: 0.8
+  n_resamples: 100
+  n_shards: 20
+  seed: 20260825
+  ci_resamples: 25000
+  resolutions:
+  - 0.1
+  - 0.2
+  - 0.3
+  - 0.4
+  - 0.45
+  - 0.5
+  - 0.6
+  - 0.7
+  - 0.8
+  - 0.9
+  - 1.0
+  - 1.1
+  - 1.2
+  - 1.3
+  - 1.4
+  - 1.5
+  - 1.6
+  - 1.7
+  - 1.8
+  - 1.9
+  - 2.0
+  - 2.2
+  - 2.4
+  - 2.6
+  - 2.8
+  - 3.0
+diagnostics:
+  minimum_cluster_cells: 50
+  minimum_evaluation_cluster_cells: 20
+  minimum_transfer_ari: 0.7
+  minimum_cluster_transfer_jaccard: 0.5
+  minimum_cluster_transfer_purity: 0.7
+  minimum_cluster_transfer_recall: 0.7
+  maximum_cluster_count_drift_fraction: 0.25
+  classifier_max_cells: 50000
+  marker_top_n: 30
+  umap_max_points_per_panel: 120000
+  maximum_cell_cycle_polarization_without_review: 0.8
+  maximum_positive_program_mean_without_review: 0.5
+  projection_neighbors: 30
+  projection_support_quantile: 0.99
+resources:
+  preflight_mem_mb: 4000
+  prepare_mem_mb: 64000
+  embedding_mem_mb: 128000
+  sweep_mem_mb: 64000
+  sweep_shard_mem_mb: 8000
+  sweep_merge_mem_mb: 64000
+  summarize_mem_mb: 32000
+  diagnostic_mem_mb: 128000

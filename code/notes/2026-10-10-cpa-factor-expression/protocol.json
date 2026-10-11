@@ -1,0 +1,36 @@
+{
+  "analysis": "CPA-factor RNA expression across fixed state and physical-library inventories",
+  "created": "2026-10-10",
+  "status": "written before new factor counts or expression effects were extracted",
+  "primary_factors": ["NUDT21", "CPSF6", "CSTF2", "CSTF2T", "FIP1L1", "PCF11", "CPSF1", "CPSF2", "CPSF3", "CPSF4", "PABPN1"],
+  "secondary_shared_factors": ["PAPOLA", "HNRNPA2B1", "RBFOX2", "AGO2", "EIF4EBP2", "PDLIM7"],
+  "factor_inventory": "Prespecified by user, not selected by expression result; every absent or ambiguous mapping retained explicitly",
+  "studies": {
+    "GSE103221": {"species": "mouse", "routes": ["CIP"]},
+    "GSE115943": {"species": "mouse", "routes": ["WOT"]},
+    "GSE118258": {"species": "human", "routes": ["GSE118258"]},
+    "GSE150311": {"species": "human", "routes": ["GSE150311"]},
+    "GSE178325": {"species": "human", "routes": ["178325_0618", "178325_0809"]},
+    "GSE221739": {"species": "human", "routes": ["GSE221739"]}
+  },
+  "input_contract": "Current v2_primary selected_metacells and frozen_gex counts; join metacell IDs one-to-one and verify totals; use pinned annotation only to replace empty/ID-like gene symbols",
+  "state_filter": {"nodes": ["S", "R", "E", "P", "M", "N"], "minimum_purity": 0.8},
+  "library_gate": {"minimum_selected_metacells": 3, "minimum_cells": 30},
+  "normalization": "All-gene count CPM per metacell, mean log2(CPM+1) within each state/library; report pooled CPM and detected fraction as auxiliary values",
+  "primary_weights": "Each qualified physical library has equal weight. Time-equal averaging is sensitivity. Metacells and genes do not constitute biological replicates.",
+  "contrasts": {
+    "P_S": "P minus only qualified documented S libraries, selected by sampling-design time D0/source/Stage_I_day_0",
+    "P_M": "P minus M within qualified same physical libraries, then library-equal mean",
+    "M_S": "M minus documented S; descriptive, no same-library source pairing claimed",
+    "P_S_observed": "P minus all observed S; kept separate, especially Liu and Panariello",
+    "M_S_observed": "M minus all observed S; kept separate",
+    "hN_P_primed_condition": "Equal mean of N in GSM4546546 and GSM4546548 minus P in primed GSM4546547; both N conditions also reported separately",
+    "hN_P_same_library": "N minus P in each physical library where both qualified; an auxiliary control, not a replacement for the primed reference"
+  },
+  "naive_scope": "Condition/library comparisons with one sampled physical library per condition; no inference to replicate-level naive state effect",
+  "documented_source_scope": "The two mouse routes, Xing and two Guan series are primary source contrasts. Other observed-S comparisons are supplementary; series within Guan are not independent studies.",
+  "shared_roster_audit": "Verify seven user-named genes against the existing 79 P_M-proximal/hN-proximal ortholog overlaps, without assuming all are strict tandem UTR eligible or dual-reference members",
+  "verification": "Reconstruct available frozen RBP expression for overlapping factors; deterministic tests of gates, CPM denominator, library weights, physical pairing, documented-source separation and naive reference selection; hash all input files",
+  "inference": "Descriptive factor effects, no DEG p values, no per-metacell pseudoreplication. Record sign and magnitude with weighting sensitivity; do not select a best-performing factor.",
+  "mechanistic_boundary": "RNA abundance is not CFIm protein/complex activity. APA of a factor's own RNA is not evidence that its expression fell. Failure of RNA direction correspondence cannot exclude activity-based mechanisms. This analysis can evaluate a simple transcript-abundance candidate only."
+}

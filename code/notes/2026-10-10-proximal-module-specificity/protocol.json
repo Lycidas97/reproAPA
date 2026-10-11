@@ -1,0 +1,71 @@
+{
+  "frozen_before_statistics": "2026-10-10",
+  "question": "Does human pooled hN versus explicitly primed P share mouse proximal responses more strongly than measured non-naive control contrasts, and is correspondence direction-selective? No specificity is assumed.",
+  "setting": "supported50_p08",
+  "metric": "DWUI/WPP; primary catalog, not generally UTR length",
+  "thresholds": [
+    0.02,
+    0.05
+  ],
+  "human_naive": "Exactly both N6-P7 and N8-P7 measured: 2575 fixed genes; equal-weight mean of effects. At .02 proximal662/distal422. N6 and N8 are different culture conditions, not homogeneous biological replicates.",
+  "mouse_targets": [
+    "P_M_recurrent",
+    "P_M_PS_same_contributor_dual"
+  ],
+  "mouse_labels": "Proximal, distal and neither are threshold-specific fixed disjoint labels; PM recurrence on both measurable studies, dual additionally PM and PS same direction above threshold on both matched contributor routes. .02 full targets proximal372/207, distal48/15; all measured orthologs form denominators.",
+  "blocks": {
+    "naive_direction": [
+      "pooled_hN_P7"
+    ],
+    "Liu_primed_source": [
+      "pooled_hN_P7",
+      "primed_P7_S5_pool"
+    ],
+    "Liu_same_library_controls": [
+      "pooled_hN_P7",
+      "primed_P7_S7",
+      "M7_S7",
+      "E7_S7",
+      "primed_P7_M7"
+    ],
+    "human_recurrent_controls": [
+      "pooled_hN_P7",
+      "human_P_S_recurrent",
+      "human_P_M_recurrent"
+    ]
+  },
+  "background": "Within each block and mouse target use exactly the intersection of genes measured in all human block comparisons and in required mouse routes, mapped through current complete high-confidence unique one-to-one orthologs. No unmeasured gene is a nonresponder. The same background, human strata, mouse strata and draws are used for every comparison within a block.",
+  "human_controls": "Liu primed P7-S5 pool comes from current exact naive pair export. P7/S7/M7/E7 paired effects and admission are current intermediate same-library exports; axis translation recovered by exact P7 usage anchor, supporting PAS identity/count and endpoint deltas verified. These use one measured culture/library and are not study-recurrent sets. Human PS/PM recurrent controls are original threshold-specific study-vote rosters; both contrasts require >=2 measured studies in shared block universe.",
+  "null": "Independently shuffle the entire human joint multicontrast proximal/distal label vector and mouse disjoint proximal/distal/neither vector within species-specific assay strata, preserving each joint pattern count within each stratum, species marginals, overlap of human labels and fixed ortholog identity. Do not shuffle human comparisons independently. Do not redefine recurrence during permutations.",
+  "models": {
+    "coarse_joint_assay": "Human each-contrast proximal/distal attainable-capacity signature plus median block PAS/coverage/reference supported-relative baseline terciles; mouse proximal/distal capacity signature plus PAS/coverage/native-reference baseline terciles. Every threshold uses same block continuous bin definitions.",
+    "fine_joint_assay_mouse_expression": "Identical design but reference baseline quintiles and mouse GEX terciles. Human expression absent in initial frozen assay export; no substitution by another state. Fine is a prespecified sensitivity model, not selected by significance."
+  },
+  "joint_covariates": "For human all block endpoints/contrasts are represented with equal-weight median PAS count, APA molecules per qualified metacell averaged endpoints, and reference baseline. Liu uses supported-axis-relative baseline exactly as prior naive null; recurrence controls use median native baseline from their frozen contributor table, a across-study proxy with a different origin retained as a limitation. Capacity flags retain each contrast's exact feasible sign; recurrent flags require >=2 studies sign-capable. Mouse median PM study covariates; dual matched M/S references with original PM coverage/expression proxy. All missing covariates remain independent categories; no rank tie breaking.",
+  "human_expression_sensitivity_prespecified": "If full frozen human metacell GEX can be restored, repeat models on exactly the same common measured backgrounds adding human mean log2(CPM+1) terciles across actual block endpoints; if gene-qualified contributor GEX is unavailable, use all state-qualified metacells explicitly as proxy. Preserve missing category. Baseline original models remain primary. No result-dependent selection or switch of model.",
+  "direct_specificity_statistic": "Observed naive proximal overlap / fixed analytic null expected naive overlap minus control proximal overlap / fixed analytic null expected control overlap. Joint draw distribution tests naive stronger; if either expectation is zero or statistic has no null variation report uninformative rather than call specificity. Counts/folds from different blocks or separately matched models do not establish specificity.",
+  "direction_controls": "On naive_direction block test hN distal with mouse proximal and hN proximal with mouse distal. Also report hN distal with mouse distal and hN proximal with mouse proximal. Nonsignificance of a mismatch is not evidence of absence.",
+  "permutations": 20000,
+  "batch": 250,
+  "seed": "20261010 + first12SHA256(namespace, block, mouse target, threshold, model)",
+  "p": "Upper tail (1+count(draw>=observed))/(B+1); no p=0. Direct fold-difference uses same upper tail. Null intervals are conditional permutation reference intervals, not biological confidence intervals.",
+  "BH_families": "At .02 each model: all14 planned naive-greater-than-control direct tests BH14 (2 primed-source +8 same-library +4 recurrent; unavailable tests retained p=1 for family); four primary mismatch direction-control tests BH4; all overlap tests across blocks corrected together as exploratory. .05 repeats separate sensitivity families; all-model combined exploratory q also reported.",
+  "scope": "Gene-set conditional correspondence, fixed heterogeneous libraries and studies; no biological replicate inference, no species-causal or naive-mechanism proof. Naive-specific requires direct greater enrichment than relevant controls, not one significant overlap versus another nonsignificant overlap.",
+  "validation": [
+    "original2575 labels and frozen mouse rosters",
+    "exact human state effect reconstruction",
+    "joint patterns and sign capacities preserved",
+    "all contributors actually measured",
+    "toy full enumeration expectation",
+    "symmetric control has null difference zero and is uninformative",
+    "finite p and BH independent replay",
+    "input and output hashes stable"
+  ],
+  "implementation_review_amendment": {
+    "date": "2026-10-10",
+    "timing": "Initial exploratory run completed, original outputs retained in before-observation-signature-review; none yet delivered as conclusions.",
+    "source": "Root independent implementation review detected omitted recurrence measurement opportunity signature; repair not selected by observed significance.",
+    "change": "Within human_recurrent_controls human strata additionally preserve each recurrent contrast exact sorted unit:series_pattern signature; keep all other blocks, test statistics, models, seed scheme, families and definitions fixed.",
+    "scope": "Original comparison is an audit pilot, final verified results include observation signatures. This is an exploratory analysis protocol, not prospective preregistration."
+  }
+}

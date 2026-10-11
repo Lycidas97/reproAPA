@@ -1,0 +1,60 @@
+{
+ "pinned": "2026-10-06",
+ "note": "GEX-only state-grouping material (2026-09-13/14). Frozen expression, not PAS; read only by G1–G3. Families and review flags come from the bundle frozen/states.tsv, not from these files.",
+ "files": {
+  "marker_by_state": {
+   "path": "notes/2026-09-13-state-marker-supplement/data/marker_by_state.tsv.gz",
+   "sha256": "c77092eaf4c7af3c82d4e285d849dde4a996eb417d74d9ccededa81ce8c8210d",
+   "bytes": 837562,
+   "bundle_table": "tables/state_grouping/marker_by_state.tsv.gz",
+   "panels": [
+    "G1A",
+    "G2A"
+   ]
+  },
+  "state_library_inventory": {
+   "path": "notes/2026-09-13-state-marker-supplement/data/state_library_inventory.tsv",
+   "sha256": "72dbf75a394616110025e357af89ed560ee9262525be419b97f73576a0a82ced",
+   "bytes": 128069,
+   "bundle_table": "tables/state_grouping/state_library_inventory.tsv",
+   "panels": [
+    "G1A",
+    "G2A"
+   ]
+  },
+  "within_library_program_differences": {
+   "path": "notes/2026-09-13-state-marker-supplement/data/paired_within_library_program_differences.tsv",
+   "sha256": "30fb02895648370cde9f2b92216911e25a841379928abac32fc32d19d7ffaaa9",
+   "bytes": 144772,
+   "bundle_table": "tables/state_grouping/paired_within_library_program_differences.tsv",
+   "panels": [
+    "G3A"
+   ]
+  },
+  "state_partition_summary": {
+   "path": "notes/2026-09-14-state-grouping-robustness/data/state_partition_summary.tsv",
+   "sha256": "5f3e978e684792ddad5ddc7c88d9fd70d9b968ec7c467ca78fd616ac805c0f23",
+   "bytes": 12491,
+   "bundle_table": "tables/state_grouping/state_partition_summary.tsv",
+   "panels": [
+    "G1A",
+    "G2A"
+   ]
+  },
+  "partition_runs": {
+   "path": "notes/2026-09-14-state-grouping-robustness/data/partition_runs.tsv",
+   "sha256": "75a55d729bffc083e7477483a766fc97b4bcdfc6b9dd62a0e548827f3d6ea2e1",
+   "bytes": 12589,
+   "bundle_table": "tables/state_grouping/partition_runs.tsv",
+   "panels": [
+    "G3A"
+   ]
+  },
+  "marker_panel_render": {
+   "path": "notes/2026-09-14-state-grouping-robustness/submission-v3/render.py",
+   "sha256": "655a383035f15ab25d4f88422a35c8b51c9639a52b88623c557fc4d6e522bfb0",
+   "bytes": 23623
+  }
+ },
+ "contract_r2": "Registered in contract r2: read through the bundle (tables/state_grouping/), bound to the listed panels; the origin path and SHA stay as provenance. marker_panel_render is a script and is not read."
+}

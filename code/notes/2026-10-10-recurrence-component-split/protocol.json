@@ -1,0 +1,45 @@
+{
+  "analysis": "Allocation of fixed recurrent DWUI changes across common-contributor P-M and M-S contrasts",
+  "status": "specified_before_component_results",
+  "date": "2026-10-10",
+  "primary_setting": "supported50_p08",
+  "primary_threshold": 0.02,
+  "sensitivity_threshold": 0.05,
+  "fixed_cohorts": "Current series-matched WPP recurrence members, separately P_S and P_M, each direction; no re-selection using matched component outcomes",
+  "primary_units": "Human Xing gene effects; mouse equal-weight mean of CIP and WOT among genes measurable in both routes. Per-route mouse results are descriptive and preserve coverage.",
+  "measurements": {
+    "PS": "P_DWUI minus S_DWUI",
+    "PM": "P_DWUI minus M_DWUI",
+    "MS": "M_DWUI minus S_DWUI",
+    "identity": "PS = PM + MS with the same PAS axis, contributors and hierarchical weights",
+    "A": "MS minus PM, raw signed allocation",
+    "aligned_allocation": "D * A, D = +1 for distal recurrence, -1 for proximal recurrence",
+    "interpretation": "Aligned allocation >0 means M-S contributes more in the selected direction; <0 means P-M contributes more. Distal M-S dominance and proximal P-M dominance both require raw A >0. This is signed dominance, not variance explained or fraction of PS.",
+    "forbidden": "Do not divide by PS or interpret differences as independent causal programs. Opposing components and matched sign reversals remain in the fixed-cohort results."
+  },
+  "validation": [
+    "Check full PAS-usage vector addition and state-index differences for every matched table row, all four settings.",
+    "Recompute primary P/M/S means from weighted triplets, re-evaluate hierarchical weights and library/date counts, and require agreement with exported matched means.",
+    "Derive mouse dual-reference cohort from fixed P_M recurrence and verify against exported candidate roster; do not inherit stale counts."
+  ],
+  "descriptive_outputs": "For every contrast, threshold, species, route/scope and recurrent direction: fixed count, measurable coverage, PS/PM/MS/A/aligned means, medians, quantiles, directional threshold counts, component opposition, PS direction retained. Equal-gene bootstrap intervals describe heterogeneity across measured genes and are not biological-replicate confidence intervals.",
+  "primary_formal_null": {
+    "question": "Does recurrence mark a different component allocation than comparably measurable genes with the same net-effect strength and measurement opportunities?",
+    "universe": "Common-contributor genes with at least two native study measurements for the fixed selection contrast; human Xing only and mouse CIP/WOT intersection. Native study/series availability signature must agree within each stratum.",
+    "labels": "A single three-level fixed label per gene: distal recurrence, proximal recurrence, or non-recurrent. Shuffle all labels jointly within strata, preserving counts of both recurrent directions in every stratum and the full fixed matched cohort size.",
+    "matching": "Native mean-effect sign and exact native study/series availability signature; median bins of absolute matched PS, S baseline, M baseline, mean native log1p expression, mean native log1p APA coverage, mean native PAS number, and minimum number of matched target libraries. Quantile edges use the whole eligible universe, before labels are inspected; tied boundaries stay together.",
+    "primary_class_statistic": "Mean raw A for each recurrent direction, upper-tail against its matched label-null mean. The corresponding aligned test is upper-tail for distal and lower-tail for proximal. This conditional association is distinct from absolute dominance relative to zero.",
+    "primary_interaction": "Mean aligned allocation in distal class minus mean aligned allocation in proximal class. Compare with the same joint-label permutations, upper-tail. Report both class signs; positive interaction alone cannot establish both proposed component dominances.",
+    "permutations": 10000,
+    "empirical_p": "(1 + at_least_as_extreme_draws)/(10000 + 1)",
+    "numerical_comparisons": "Effects within 1e-12 count as tied, to prevent a dense dot product versus filtered mean from changing a permutation tail at floating-point round-off; this numerical amendment preceded final verified execution.",
+    "multiple_testing": "BH across eight class tests per threshold (2 species x 2 selection contrasts x 2 directions); also joint 16 tests. Interactions have their separate four-test family per threshold and joint eight-test sensitivity family.",
+    "power_audit": "Record singleton strata, mixed-label strata, movable selected genes, exact analytic null means, and null standard deviations. A constant null is explicitly non-informative and receives no p/q claim. No adaptive simplification based on results.",
+    "strict_strength_sensitivity": "Replace median bins of absolute matched PS by quintiles, keeping every other matching field and fixed roster. Report mobility and p/q separately; never select the more favorable null.",
+    "post_first_pass_method_sensitivity": "native_selection_strength additionally matches the median-binned mean absolute native study effect for the contrast that selected recurrence. Added after the first pass revealed why P_M selection can favor PM allocation at a fixed net PS. Apply to all contexts, label separately as a method sensitivity, correct its complete planned test families, and report alongside the original two nulls regardless of outcome. It is not preregistered independent confirmation.",
+    "limitations": "Matching a net effect derived from the same states introduces algebraic conditioning; recurrence was itself selected on native PS or PM. Tests describe allocation associated with fixed recurrence, not independent components, causality, species-intrinsic mechanisms, or an independent confirmation of original direction. Human fixed P_S recurrence is measured for decomposition in only one of its two studies."
+  },
+  "absolute_dominance": "Report signed class means/medians and gene-bootstrap intervals. Do not substitute a zero-centered sign-flip null for matched controls; mean A>0 alone can reflect the background M position.",
+  "random_seed": "20261010 + first 12 hex digits of SHA256 of context, null level and purpose",
+  "manuscript_changes": "none"
+}

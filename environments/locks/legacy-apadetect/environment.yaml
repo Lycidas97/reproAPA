@@ -1,0 +1,12 @@
+# Documentary environment for lint/provenance. run_atlas_v7.sh deliberately
+# uses the existing v5 .venv and does not pass --use-conda.
+name: reproapa-study-atlas-v7
+channels:
+  - conda-forge
+dependencies:
+  - python=3.10.12
+  - numpy=1.26.0
+  - pandas=2.3.3
+  - scipy=1.15.3
+  - pyyaml=6.0.1
+  - matplotlib=3.10.8

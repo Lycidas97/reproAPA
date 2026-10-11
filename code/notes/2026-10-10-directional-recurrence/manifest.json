@@ -1,0 +1,33 @@
+{
+  "status": "PASS",
+  "input_sha256": {
+    "notes/2026-10-10-directional-recurrence/protocol.json": "aad27d4ce4aef4d4e40060e1b1f9729090a6efa1b5295b61b1cc1590a8a43915",
+    "notes/2026-10-06-dual-main-plot-data/polyapipe/main/tables/recurrence_controls/recurrence_frozen_covariates.tsv.gz": "0564c0fc44fd284548fba57160ec035f3c64c7bd0d7f30df9a1455e128453aab",
+    "notes/2026-10-06-dual-main-plot-data/polyapipe/main/tables/recurrence_controls/recurrence_ladder.tsv": "8ea23d15099ff4453cbda2aa4787e6fd30531d37ffdab18421482e74dc2af270",
+    "notes/2026-10-06-dual-main-plot-data/polyapipe/main/tables/recurrence_controls/recurrence_draws.npz": "65ec159d0cc64094d0447314656ba0d85420623fcb0d266b183376b3c73336d9",
+    "notes/2026-10-06-dual-main-plot-data/polyapipe/main/tables/recurrence/recurrence_members.tsv.gz": "e7d3d0bf40aec45e02324ee00c023ca20fa17bf028ec0a01198804738053e277",
+    "notes/2026-10-02-null-model-controls/recurrence.py": "d859ec5a95b74bb01275d910dcd242af52b66882bcd0b892af885ded3054418b",
+    "notes/2026-10-02-null-model-controls/common.py": "b6d6902d47b6b22a287a78fca11e5f008d3029a0aeb452ebe4ee517dbc1f1e52",
+    "analysis_code/pas_rerun/downstream_runtime.py": "08ad37a4501e9db33da613869376ce825fe4776191f8922ecccfd9bea7f8c0ab"
+  },
+  "output_sha256": {
+    "verification.tsv": "c95868c459158f1eb1cdb0c42ec81a4b68d16d67b315249523aef7da47625f2d",
+    "direction_composition.tsv": "c7a7f973bd9431a93f6009449164fd59df7bfdb09ee4d74747ab46f6750452f7",
+    "directional_null_draws.npz": "3afdbd5a57d0c7b3f234bbc5d0284a511196f6cfcd8309082aaacd9cf9756556",
+    "directional_recurrence.tsv": "40ca1a5207bec5749b3102fdad8c3cfcff35f22d43c5e07593ff750b645652ab",
+    "study_stratum_event_margins.tsv.gz": "9b9ab4ffaae3d3d3eed82ed8b88100d1567f75476cad64de4b7ae8fa46a4142d",
+    "observed_members.tsv.gz": "6875d84f6b08b31a5b987ec6cd5a4fc8b92d031447a5e610995967433ce669a2"
+  },
+  "script_sha256": "bf054c1760d32fec1f606d11a281e31f67b532ca8cb8b370512c8bfe792d1580",
+  "original_audit_path": "notes/2026-10-03-polyapipe-integrated-reference/statistics_results/v2_primary/recurrence_controls/audit.json",
+  "original_audit_sha256": "29bd2b3c796ff6186a910cafbda3021b69b12bd8b3664d3b728635979d358de9",
+  "archive_path": "table/Supplementary-Source-Data-20261009.zip",
+  "archive_sha256": "423233f3c5237e7e50f56f2436f033e3b931784cae738f1c28f308079b84f203",
+  "python": "3.12.14 (main, Aug 25 2026, 13:50:33) [Clang 22.1.3 ]",
+  "python_executable": "/Users/lycidas/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+  "numpy_version": "2.3.5",
+  "pandas_version": "2.2.3",
+  "total_exactly_replayed_draws": 80000,
+  "statistic_change": "Only result.append in the reviewed simulate function; permutation loop and random seeds preserved.",
+  "units": "Genes; strata are within study. Null intervals are permutation reference ranges, not confidence intervals."
+}

@@ -1,0 +1,774 @@
+{
+  "scope": "59 original human library execution-log version records, locally recovered; not a current environment probe",
+  "records": [
+    {
+      "source": "/Users/lycidas/work/科研/projects/2026-09-09_human-time-aware-integration/data/results_metacell_v1/logs/GSE118258::gse118258_D0.log",
+      "sha256": "1d41be80689961f66854d84511e59d7bdb526504498542fec814b5639eab4169",
+      "versions": {
+        "SEACells": "0.3.3",
+        "scanpy": "1.12.4",
+        "anndata": "0.13.3.post0",
+        "numpy": "2.5.2",
+        "scipy": "1.18.1",
+        "palantir": "1.4.5"
+      },
+      "construction_script_sha256": "6b5a1fa5549e427e09a388cdf3d6ec51311ec98293fc215edc6d79f819367118"
+    },
+    {
+      "source": "/Users/lycidas/work/科研/projects/2026-09-09_human-time-aware-integration/data/results_metacell_v1/logs/GSE118258::gse118258_D12.log",
+      "sha256": "3dafbcf3d66cdc97924ea3db50450645254a72b1ca2aaaab86c02240b19f04ad",
+      "versions": {
+        "SEACells": "0.3.3",
+        "scanpy": "1.12.4",
+        "anndata": "0.13.3.post0",
+        "numpy": "2.5.2",
+        "scipy": "1.18.1",
+        "palantir": "1.4.5"
+      },
+      "construction_script_sha256": "6b5a1fa5549e427e09a388cdf3d6ec51311ec98293fc215edc6d79f819367118"
+    },
+    {
+      "source": "/Users/lycidas/work/科研/projects/2026-09-09_human-time-aware-integration/data/results_metacell_v1/logs/GSE118258::gse118258_D16_negative.log",
+      "sha256": "03ecc5d26886527acfa75e8b34bee0ecc52280451f3a7a9bdfd7cd007660837f",
+      "versions": {
+        "SEACells": "0.3.3",
+        "scanpy": "1.12.4",
+        "anndata": "0.13.3.post0",
+        "numpy": "2.5.2",
+        "scipy": "1.18.1",
+        "palantir": "1.4.5"
+      },
+      "construction_script_sha256": "6b5a1fa5549e427e09a388cdf3d6ec51311ec98293fc215edc6d79f819367118"
+    },
+    {
+      "source": "/Users/lycidas/work/科研/projects/2026-09-09_human-time-aware-integration/data/results_metacell_v1/logs/GSE118258::gse118258_D16_positive.log",
+      "sha256": "d88315b640bf82a77e220b73da997390a3048256be9957b0f0904300875cd4c1",
+      "versions": {
+        "SEACells": "0.3.3",
+        "scanpy": "1.12.4",
+        "anndata": "0.13.3.post0",
+        "numpy": "2.5.2",
+        "scipy": "1.18.1",
+        "palantir": "1.4.5"
+      },
+      "construction_script_sha256": "6b5a1fa5549e427e09a388cdf3d6ec51311ec98293fc215edc6d79f819367118"
+    },
+    {
+      "source": "/Users/lycidas/work/科研/projects/2026-09-09_human-time-aware-integration/data/results_metacell_v1/logs/GSE118258::gse118258_D2.log",
+      "sha256": "d234e3e56f300126b3dfde8d44d50b00439dfa538fd80c1b8b62f20c281a314e",
+      "versions": {
+        "SEACells": "0.3.3",
+        "scanpy": "1.12.4",
+        "anndata": "0.13.3.post0",
+        "numpy": "2.5.2",
+        "scipy": "1.18.1",
+        "palantir": "1.4.5"
+      },
+      "construction_script_sha256": "6b5a1fa5549e427e09a388cdf3d6ec51311ec98293fc215edc6d79f819367118"
+    },
+    {
+      "source": "/Users/lycidas/work/科研/projects/2026-09-09_human-time-aware-integration/data/results_metacell_v1/logs/GSE118258::gse118258_D8.log",
+      "sha256": "0a07d8eff2b48f2fb05e5fa6fee1d4d8106df98bf8c28fadae2fa62b6e42e3c8",
+      "versions": {
+        "SEACells": "0.3.3",
+        "scanpy": "1.12.4",
+        "anndata": "0.13.3.post0",
+        "numpy": "2.5.2",
+        "scipy": "1.18.1",
+        "palantir": "1.4.5"
+      },
+      "construction_script_sha256": "6b5a1fa5549e427e09a388cdf3d6ec51311ec98293fc215edc6d79f819367118"
+    },
+    {
+      "source": "/Users/lycidas/work/科研/projects/2026-09-09_human-time-aware-integration/data/results_metacell_v1/logs/GSE150311::gse150311_human_pluripotency_reprogramming_GSM4546545.log",
+      "sha256": "193c97989c6efeea5736ee61f737e14a1dfa172dd0997477c1fbd431a28117fc",
+      "versions": {
+        "SEACells": "0.3.3",
+        "scanpy": "1.12.4",
+        "anndata": "0.13.3.post0",
+        "numpy": "2.5.2",
+        "scipy": "1.18.1",
+        "palantir": "1.4.5"
+      },
+      "construction_script_sha256": "6b5a1fa5549e427e09a388cdf3d6ec51311ec98293fc215edc6d79f819367118"
+    },
+    {
+      "source": "/Users/lycidas/work/科研/projects/2026-09-09_human-time-aware-integration/data/results_metacell_v1/logs/GSE150311::gse150311_human_pluripotency_reprogramming_GSM4546546.log",
+      "sha256": "4cfdfd78162257a5a7678817960bccb4fd3a337e7d1eca2d2241e1aff56046e1",
+      "versions": {
+        "SEACells": "0.3.3",
+        "scanpy": "1.12.4",
+        "anndata": "0.13.3.post0",
+        "numpy": "2.5.2",
+        "scipy": "1.18.1",
+        "palantir": "1.4.5"
+      },
+      "construction_script_sha256": "6b5a1fa5549e427e09a388cdf3d6ec51311ec98293fc215edc6d79f819367118"
+    },
+    {
+      "source": "/Users/lycidas/work/科研/projects/2026-09-09_human-time-aware-integration/data/results_metacell_v1/logs/GSE150311::gse150311_human_pluripotency_reprogramming_GSM4546547.log",
+      "sha256": "4a34e86af1ec0f708c38189ffe1763894e50b3e5bcc0dccba3f789bca57a7753",
+      "versions": {
+        "SEACells": "0.3.3",
+        "scanpy": "1.12.4",
+        "anndata": "0.13.3.post0",
+        "numpy": "2.5.2",
+        "scipy": "1.18.1",
+        "palantir": "1.4.5"
+      },
+      "construction_script_sha256": "6b5a1fa5549e427e09a388cdf3d6ec51311ec98293fc215edc6d79f819367118"
+    },
+    {
+      "source": "/Users/lycidas/work/科研/projects/2026-09-09_human-time-aware-integration/data/results_metacell_v1/logs/GSE150311::gse150311_human_pluripotency_reprogramming_GSM4546548.convergence-completion.log",
+      "sha256": "6eb8e486824556f7332de8ebcdc0a5bdc4d9f199fb7634b21a8a42707da89485",
+      "versions": {
+        "SEACells": "0.3.3",
+        "scanpy": "1.12.4",
+        "anndata": "0.13.3.post0",
+        "numpy": "2.5.2",
+        "scipy": "1.18.1",
+        "palantir": "1.4.5"
+      },
+      "construction_script_sha256": "6b5a1fa5549e427e09a388cdf3d6ec51311ec98293fc215edc6d79f819367118"
+    },
+    {
+      "source": "/Users/lycidas/work/科研/projects/2026-09-09_human-time-aware-integration/data/results_metacell_v1/logs/GSE178325::gse178325_human_chemical_pluripotency_reprogramming_GSM5387808.log",
+      "sha256": "87ca52d4c7bef11bd90b1281e6740d20986404f9fb8f045833c310a681d31ca2",
+      "versions": {
+        "SEACells": "0.3.3",
+        "scanpy": "1.12.4",
+        "anndata": "0.13.3.post0",
+        "numpy": "2.5.2",
+        "scipy": "1.18.1",
+        "palantir": "1.4.5"
+      },
+      "construction_script_sha256": "6b5a1fa5549e427e09a388cdf3d6ec51311ec98293fc215edc6d79f819367118"
+    },
+    {
+      "source": "/Users/lycidas/work/科研/projects/2026-09-09_human-time-aware-integration/data/results_metacell_v1/logs/GSE178325::gse178325_human_chemical_pluripotency_reprogramming_GSM5387809.log",
+      "sha256": "0d8cfc37b58c6e69da90820a4173f2cb64733e2d7470a2840f8c4485764aa431",
+      "versions": {
+        "SEACells": "0.3.3",
+        "scanpy": "1.12.4",
+        "anndata": "0.13.3.post0",
+        "numpy": "2.5.2",
+        "scipy": "1.18.1",
+        "palantir": "1.4.5"
+      },
+      "construction_script_sha256": "6b5a1fa5549e427e09a388cdf3d6ec51311ec98293fc215edc6d79f819367118"
+    },
+    {
+      "source": "/Users/lycidas/work/科研/projects/2026-09-09_human-time-aware-integration/data/results_metacell_v1/logs/GSE178325::gse178325_human_chemical_pluripotency_reprogramming_GSM5387810.log",
+      "sha256": "1d856c64a61e551dc9f9d15a07a7bf755ada07724e181b69812adc0ec8bfa4b9",
+      "versions": {
+        "SEACells": "0.3.3",
+        "scanpy": "1.12.4",
+        "anndata": "0.13.3.post0",
+        "numpy": "2.5.2",
+        "scipy": "1.18.1",
+        "palantir": "1.4.5"
+      },
+      "construction_script_sha256": "6b5a1fa5549e427e09a388cdf3d6ec51311ec98293fc215edc6d79f819367118"
+    },
+    {
+      "source": "/Users/lycidas/work/科研/projects/2026-09-09_human-time-aware-integration/data/results_metacell_v1/logs/GSE178325::gse178325_human_chemical_pluripotency_reprogramming_GSM5387811.log",
+      "sha256": "6054b03f35ccf813b2fa38b110cf6362bc640a0a6b173be602079aae74f0ce8d",
+      "versions": {
+        "SEACells": "0.3.3",
+        "scanpy": "1.12.4",
+        "anndata": "0.13.3.post0",
+        "numpy": "2.5.2",
+        "scipy": "1.18.1",
+        "palantir": "1.4.5"
+      },
+      "construction_script_sha256": "6b5a1fa5549e427e09a388cdf3d6ec51311ec98293fc215edc6d79f819367118"
+    },
+    {
+      "source": "/Users/lycidas/work/科研/projects/2026-09-09_human-time-aware-integration/data/results_metacell_v1/logs/GSE178325::gse178325_human_chemical_pluripotency_reprogramming_GSM5387812.log",
+      "sha256": "7f0bdd0c670032310931b9afac553585463454556deaf9ad0021a447f18146f3",
+      "versions": {
+        "SEACells": "0.3.3",
+        "scanpy": "1.12.4",
+        "anndata": "0.13.3.post0",
+        "numpy": "2.5.2",
+        "scipy": "1.18.1",
+        "palantir": "1.4.5"
+      },
+      "construction_script_sha256": "6b5a1fa5549e427e09a388cdf3d6ec51311ec98293fc215edc6d79f819367118"
+    },
+    {
+      "source": "/Users/lycidas/work/科研/projects/2026-09-09_human-time-aware-integration/data/results_metacell_v1/logs/GSE178325::gse178325_human_chemical_pluripotency_reprogramming_GSM5387813.log",
+      "sha256": "e7b7d8777723acdbbba5ea5e49d266ec29ab20867105b1916fd6e08ac26e96c9",
+      "versions": {
+        "SEACells": "0.3.3",
+        "scanpy": "1.12.4",
+        "anndata": "0.13.3.post0",
+        "numpy": "2.5.2",
+        "scipy": "1.18.1",
+        "palantir": "1.4.5"
+      },
+      "construction_script_sha256": "6b5a1fa5549e427e09a388cdf3d6ec51311ec98293fc215edc6d79f819367118"
+    },
+    {
+      "source": "/Users/lycidas/work/科研/projects/2026-09-09_human-time-aware-integration/data/results_metacell_v1/logs/GSE178325::gse178325_human_chemical_pluripotency_reprogramming_GSM5387814.log",
+      "sha256": "ce781fd9d9f46e4879c61bb6d63ab0bd02c78fbe572fd8d276e550cc5188a6d7",
+      "versions": {
+        "SEACells": "0.3.3",
+        "scanpy": "1.12.4",
+        "anndata": "0.13.3.post0",
+        "numpy": "2.5.2",
+        "scipy": "1.18.1",
+        "palantir": "1.4.5"
+      },
+      "construction_script_sha256": "6b5a1fa5549e427e09a388cdf3d6ec51311ec98293fc215edc6d79f819367118"
+    },
+    {
+      "source": "/Users/lycidas/work/科研/projects/2026-09-09_human-time-aware-integration/data/results_metacell_v1/logs/GSE178325::gse178325_human_chemical_pluripotency_reprogramming_GSM5387815.log",
+      "sha256": "a59bb4f901da95e9fb57b4ffac430af8ed139ec799e003a1403d8ad29e662ecd",
+      "versions": {
+        "SEACells": "0.3.3",
+        "scanpy": "1.12.4",
+        "anndata": "0.13.3.post0",
+        "numpy": "2.5.2",
+        "scipy": "1.18.1",
+        "palantir": "1.4.5"
+      },
+      "construction_script_sha256": "6b5a1fa5549e427e09a388cdf3d6ec51311ec98293fc215edc6d79f819367118"
+    },
+    {
+      "source": "/Users/lycidas/work/科研/projects/2026-09-09_human-time-aware-integration/data/results_metacell_v1/logs/GSE178325::gse178325_human_chemical_pluripotency_reprogramming_GSM5387816.log",
+      "sha256": "7240e02e5a78c0567c8967b2bce1ea6e14eb5d7aca9e952003a3b4e652c67e21",
+      "versions": {
+        "SEACells": "0.3.3",
+        "scanpy": "1.12.4",
+        "anndata": "0.13.3.post0",
+        "numpy": "2.5.2",
+        "scipy": "1.18.1",
+        "palantir": "1.4.5"
+      },
+      "construction_script_sha256": "6b5a1fa5549e427e09a388cdf3d6ec51311ec98293fc215edc6d79f819367118"
+    },
+    {
+      "source": "/Users/lycidas/work/科研/projects/2026-09-09_human-time-aware-integration/data/results_metacell_v1/logs/GSE178325::gse178325_human_chemical_pluripotency_reprogramming_GSM5534140.log",
+      "sha256": "5bf3aeb678df4a5541f5c0cfc40993754836193c9a9f2f7ce247738e9f236d53",
+      "versions": {
+        "SEACells": "0.3.3",
+        "scanpy": "1.12.4",
+        "anndata": "0.13.3.post0",
+        "numpy": "2.5.2",
+        "scipy": "1.18.1",
+        "palantir": "1.4.5"
+      },
+      "construction_script_sha256": "6b5a1fa5549e427e09a388cdf3d6ec51311ec98293fc215edc6d79f819367118"
+    },
+    {
+      "source": "/Users/lycidas/work/科研/projects/2026-09-09_human-time-aware-integration/data/results_metacell_v1/logs/GSE178325::gse178325_human_chemical_pluripotency_reprogramming_GSM5534141.log",
+      "sha256": "afaaa67b299c183a988b377ab835dbcbfb0f1e531091003b03070ece47a1fd53",
+      "versions": {
+        "SEACells": "0.3.3",
+        "scanpy": "1.12.4",
+        "anndata": "0.13.3.post0",
+        "numpy": "2.5.2",
+        "scipy": "1.18.1",
+        "palantir": "1.4.5"
+      },
+      "construction_script_sha256": "6b5a1fa5549e427e09a388cdf3d6ec51311ec98293fc215edc6d79f819367118"
+    },
+    {
+      "source": "/Users/lycidas/work/科研/projects/2026-09-09_human-time-aware-integration/data/results_metacell_v1/logs/GSE178325::gse178325_human_chemical_pluripotency_reprogramming_GSM5534142.log",
+      "sha256": "ca8f4e26377a935bd4445d673fd9024e996b53d481681c44cfb0a9260b9ea5f9",
+      "versions": {
+        "SEACells": "0.3.3",
+        "scanpy": "1.12.4",
+        "anndata": "0.13.3.post0",
+        "numpy": "2.5.2",
+        "scipy": "1.18.1",
+        "palantir": "1.4.5"
+      },
+      "construction_script_sha256": "6b5a1fa5549e427e09a388cdf3d6ec51311ec98293fc215edc6d79f819367118"
+    },
+    {
+      "source": "/Users/lycidas/work/科研/projects/2026-09-09_human-time-aware-integration/data/results_metacell_v1/logs/GSE178325::gse178325_human_chemical_pluripotency_reprogramming_GSM5534143.log",
+      "sha256": "95eb44ea8b83ec727db6f6c461a11597f8dfa5a32cea320970edfd9577d59e63",
+      "versions": {
+        "SEACells": "0.3.3",
+        "scanpy": "1.12.4",
+        "anndata": "0.13.3.post0",
+        "numpy": "2.5.2",
+        "scipy": "1.18.1",
+        "palantir": "1.4.5"
+      },
+      "construction_script_sha256": "6b5a1fa5549e427e09a388cdf3d6ec51311ec98293fc215edc6d79f819367118"
+    },
+    {
+      "source": "/Users/lycidas/work/科研/projects/2026-09-09_human-time-aware-integration/data/results_metacell_v1/logs/GSE178325::gse178325_human_chemical_pluripotency_reprogramming_GSM5534144.log",
+      "sha256": "52ddf5e99b62221e12f5467b74d79f7b6db2f67a831839c03838901bce4a3d13",
+      "versions": {
+        "SEACells": "0.3.3",
+        "scanpy": "1.12.4",
+        "anndata": "0.13.3.post0",
+        "numpy": "2.5.2",
+        "scipy": "1.18.1",
+        "palantir": "1.4.5"
+      },
+      "construction_script_sha256": "6b5a1fa5549e427e09a388cdf3d6ec51311ec98293fc215edc6d79f819367118"
+    },
+    {
+      "source": "/Users/lycidas/work/科研/projects/2026-09-09_human-time-aware-integration/data/results_metacell_v1/logs/GSE178325::gse178325_human_chemical_pluripotency_reprogramming_GSM5534145.log",
+      "sha256": "82b7cb55fe11b0aeb183e476ae09220ee57a3468d8086f39380c7abbfd39f816",
+      "versions": {
+        "SEACells": "0.3.3",
+        "scanpy": "1.12.4",
+        "anndata": "0.13.3.post0",
+        "numpy": "2.5.2",
+        "scipy": "1.18.1",
+        "palantir": "1.4.5"
+      },
+      "construction_script_sha256": "6b5a1fa5549e427e09a388cdf3d6ec51311ec98293fc215edc6d79f819367118"
+    },
+    {
+      "source": "/Users/lycidas/work/科研/projects/2026-09-09_human-time-aware-integration/data/results_metacell_v1/logs/GSE178325::gse178325_human_chemical_pluripotency_reprogramming_GSM5534146.log",
+      "sha256": "43ea6a35150a7ab3f8e0094ad22455ac9766c9a422dd88edb0f4448d07904533",
+      "versions": {
+        "SEACells": "0.3.3",
+        "scanpy": "1.12.4",
+        "anndata": "0.13.3.post0",
+        "numpy": "2.5.2",
+        "scipy": "1.18.1",
+        "palantir": "1.4.5"
+      },
+      "construction_script_sha256": "6b5a1fa5549e427e09a388cdf3d6ec51311ec98293fc215edc6d79f819367118"
+    },
+    {
+      "source": "/Users/lycidas/work/科研/projects/2026-09-09_human-time-aware-integration/data/results_metacell_v1/logs/GSE178325::gse178325_human_chemical_pluripotency_reprogramming_GSM5534147.log",
+      "sha256": "9e2d480acbec3b753c9b9b771910ca77724dc392c56b6fef0efb85287cfa40ef",
+      "versions": {
+        "SEACells": "0.3.3",
+        "scanpy": "1.12.4",
+        "anndata": "0.13.3.post0",
+        "numpy": "2.5.2",
+        "scipy": "1.18.1",
+        "palantir": "1.4.5"
+      },
+      "construction_script_sha256": "6b5a1fa5549e427e09a388cdf3d6ec51311ec98293fc215edc6d79f819367118"
+    },
+    {
+      "source": "/Users/lycidas/work/科研/projects/2026-09-09_human-time-aware-integration/data/results_metacell_v1/logs/GSE178325::gse178325_human_chemical_pluripotency_reprogramming_GSM5534148.log",
+      "sha256": "f3a4e420096c50317ca77390a15ffb14ddce52a3a18fa8175b23a4b81ec8d194",
+      "versions": {
+        "SEACells": "0.3.3",
+        "scanpy": "1.12.4",
+        "anndata": "0.13.3.post0",
+        "numpy": "2.5.2",
+        "scipy": "1.18.1",
+        "palantir": "1.4.5"
+      },
+      "construction_script_sha256": "6b5a1fa5549e427e09a388cdf3d6ec51311ec98293fc215edc6d79f819367118"
+    },
+    {
+      "source": "/Users/lycidas/work/科研/projects/2026-09-09_human-time-aware-integration/data/results_metacell_v1/logs/GSE178325::gse178325_human_chemical_pluripotency_reprogramming_GSM5534149.log",
+      "sha256": "b3f465a680e8d874b872992d9a765626d5219e60aa109fe68c92026d077d637a",
+      "versions": {
+        "SEACells": "0.3.3",
+        "scanpy": "1.12.4",
+        "anndata": "0.13.3.post0",
+        "numpy": "2.5.2",
+        "scipy": "1.18.1",
+        "palantir": "1.4.5"
+      },
+      "construction_script_sha256": "6b5a1fa5549e427e09a388cdf3d6ec51311ec98293fc215edc6d79f819367118"
+    },
+    {
+      "source": "/Users/lycidas/work/科研/projects/2026-09-09_human-time-aware-integration/data/results_metacell_v1/logs/GSE178325::gse178325_human_chemical_pluripotency_reprogramming_GSM5534150.log",
+      "sha256": "c12eb44a68df87fac21a601e020476589c41ea6890ba65b59962f3df3026f332",
+      "versions": {
+        "SEACells": "0.3.3",
+        "scanpy": "1.12.4",
+        "anndata": "0.13.3.post0",
+        "numpy": "2.5.2",
+        "scipy": "1.18.1",
+        "palantir": "1.4.5"
+      },
+      "construction_script_sha256": "6b5a1fa5549e427e09a388cdf3d6ec51311ec98293fc215edc6d79f819367118"
+    },
+    {
+      "source": "/Users/lycidas/work/科研/projects/2026-09-09_human-time-aware-integration/data/results_metacell_v1/logs/GSE178325::gse178325_human_chemical_pluripotency_reprogramming_GSM5534151.log",
+      "sha256": "5f09182a6873628d55c310327aa1c58151a7112669a6da924090a2fe7a160c7a",
+      "versions": {
+        "SEACells": "0.3.3",
+        "scanpy": "1.12.4",
+        "anndata": "0.13.3.post0",
+        "numpy": "2.5.2",
+        "scipy": "1.18.1",
+        "palantir": "1.4.5"
+      },
+      "construction_script_sha256": "6b5a1fa5549e427e09a388cdf3d6ec51311ec98293fc215edc6d79f819367118"
+    },
+    {
+      "source": "/Users/lycidas/work/科研/projects/2026-09-09_human-time-aware-integration/data/results_metacell_v1/logs/GSE178325::gse178325_human_chemical_pluripotency_reprogramming_GSM5534152.log",
+      "sha256": "526a7b88322e65a794853fec2f9755acac17eb4c8019bde2d00f5eb4bee4ff03",
+      "versions": {
+        "SEACells": "0.3.3",
+        "scanpy": "1.12.4",
+        "anndata": "0.13.3.post0",
+        "numpy": "2.5.2",
+        "scipy": "1.18.1",
+        "palantir": "1.4.5"
+      },
+      "construction_script_sha256": "6b5a1fa5549e427e09a388cdf3d6ec51311ec98293fc215edc6d79f819367118"
+    },
+    {
+      "source": "/Users/lycidas/work/科研/projects/2026-09-09_human-time-aware-integration/data/results_metacell_v1/logs/GSE178325::gse178325_human_chemical_pluripotency_reprogramming_GSM5534153.log",
+      "sha256": "da3be9eb30e0801b086caf720b0c1428cdd9ef0b6d8780533663f67209dcbe0e",
+      "versions": {
+        "SEACells": "0.3.3",
+        "scanpy": "1.12.4",
+        "anndata": "0.13.3.post0",
+        "numpy": "2.5.2",
+        "scipy": "1.18.1",
+        "palantir": "1.4.5"
+      },
+      "construction_script_sha256": "6b5a1fa5549e427e09a388cdf3d6ec51311ec98293fc215edc6d79f819367118"
+    },
+    {
+      "source": "/Users/lycidas/work/科研/projects/2026-09-09_human-time-aware-integration/data/results_metacell_v1/logs/GSE178325::gse178325_human_chemical_pluripotency_reprogramming_GSM5534154.log",
+      "sha256": "b5f2f5e07f572855b02b3aa09861039620e5bb3f2e4e00ea452cb65489c892cc",
+      "versions": {
+        "SEACells": "0.3.3",
+        "scanpy": "1.12.4",
+        "anndata": "0.13.3.post0",
+        "numpy": "2.5.2",
+        "scipy": "1.18.1",
+        "palantir": "1.4.5"
+      },
+      "construction_script_sha256": "6b5a1fa5549e427e09a388cdf3d6ec51311ec98293fc215edc6d79f819367118"
+    },
+    {
+      "source": "/Users/lycidas/work/科研/projects/2026-09-09_human-time-aware-integration/data/results_metacell_v1/logs/GSE178325::gse178325_human_chemical_pluripotency_reprogramming_GSM5534155.log",
+      "sha256": "065d05ec3f4ebbd3013d18e7486f2dfc74675d577b2f57fc95c60b690e1e544d",
+      "versions": {
+        "SEACells": "0.3.3",
+        "scanpy": "1.12.4",
+        "anndata": "0.13.3.post0",
+        "numpy": "2.5.2",
+        "scipy": "1.18.1",
+        "palantir": "1.4.5"
+      },
+      "construction_script_sha256": "6b5a1fa5549e427e09a388cdf3d6ec51311ec98293fc215edc6d79f819367118"
+    },
+    {
+      "source": "/Users/lycidas/work/科研/projects/2026-09-09_human-time-aware-integration/data/results_metacell_v1/logs/GSE178325::gse178325_human_chemical_pluripotency_reprogramming_GSM5534156.log",
+      "sha256": "e50ed1e33075177e8c0f496e9f4d469b57ba4dbfeea3a8892bbc8bb5d85a73fb",
+      "versions": {
+        "SEACells": "0.3.3",
+        "scanpy": "1.12.4",
+        "anndata": "0.13.3.post0",
+        "numpy": "2.5.2",
+        "scipy": "1.18.1",
+        "palantir": "1.4.5"
+      },
+      "construction_script_sha256": "6b5a1fa5549e427e09a388cdf3d6ec51311ec98293fc215edc6d79f819367118"
+    },
+    {
+      "source": "/Users/lycidas/work/科研/projects/2026-09-09_human-time-aware-integration/data/results_metacell_v1/logs/GSE178325::gse178325_human_chemical_pluripotency_reprogramming_GSM5534157.log",
+      "sha256": "fd389f0b56d55d9152eac45dacf150e671c8f806f4a15972e8fac69509f5f151",
+      "versions": {
+        "SEACells": "0.3.3",
+        "scanpy": "1.12.4",
+        "anndata": "0.13.3.post0",
+        "numpy": "2.5.2",
+        "scipy": "1.18.1",
+        "palantir": "1.4.5"
+      },
+      "construction_script_sha256": "6b5a1fa5549e427e09a388cdf3d6ec51311ec98293fc215edc6d79f819367118"
+    },
+    {
+      "source": "/Users/lycidas/work/科研/projects/2026-09-09_human-time-aware-integration/data/results_metacell_v1/logs/GSE178325::gse178325_human_chemical_pluripotency_reprogramming_GSM5534158.log",
+      "sha256": "3a441690814b28d36fd183d3d13028960c8ff02690941e66b973e16346dc0898",
+      "versions": {
+        "SEACells": "0.3.3",
+        "scanpy": "1.12.4",
+        "anndata": "0.13.3.post0",
+        "numpy": "2.5.2",
+        "scipy": "1.18.1",
+        "palantir": "1.4.5"
+      },
+      "construction_script_sha256": "6b5a1fa5549e427e09a388cdf3d6ec51311ec98293fc215edc6d79f819367118"
+    },
+    {
+      "source": "/Users/lycidas/work/科研/projects/2026-09-09_human-time-aware-integration/data/results_metacell_v1/logs/GSE178325::gse178325_human_chemical_pluripotency_reprogramming_GSM5683317.log",
+      "sha256": "2fde37646501a0ab85a0cc2049bb3dc75f007c0af9fe3267100728b0bb67edba",
+      "versions": {
+        "SEACells": "0.3.3",
+        "scanpy": "1.12.4",
+        "anndata": "0.13.3.post0",
+        "numpy": "2.5.2",
+        "scipy": "1.18.1",
+        "palantir": "1.4.5"
+      },
+      "construction_script_sha256": "6b5a1fa5549e427e09a388cdf3d6ec51311ec98293fc215edc6d79f819367118"
+    },
+    {
+      "source": "/Users/lycidas/work/科研/projects/2026-09-09_human-time-aware-integration/data/results_metacell_v1/logs/GSE178325::gse178325_human_chemical_pluripotency_reprogramming_GSM5683318.log",
+      "sha256": "9b791595ef643558d79323504df192adf20de256f0c570de0c2e10a59b5567c6",
+      "versions": {
+        "SEACells": "0.3.3",
+        "scanpy": "1.12.4",
+        "anndata": "0.13.3.post0",
+        "numpy": "2.5.2",
+        "scipy": "1.18.1",
+        "palantir": "1.4.5"
+      },
+      "construction_script_sha256": "6b5a1fa5549e427e09a388cdf3d6ec51311ec98293fc215edc6d79f819367118"
+    },
+    {
+      "source": "/Users/lycidas/work/科研/projects/2026-09-09_human-time-aware-integration/data/results_metacell_v1/logs/GSE178325::gse178325_human_chemical_pluripotency_reprogramming_GSM5683319.log",
+      "sha256": "1e2329bb84ca4ece9147a1b9b78a063e391ef7f3003073469be623dce53dfd62",
+      "versions": {
+        "SEACells": "0.3.3",
+        "scanpy": "1.12.4",
+        "anndata": "0.13.3.post0",
+        "numpy": "2.5.2",
+        "scipy": "1.18.1",
+        "palantir": "1.4.5"
+      },
+      "construction_script_sha256": "6b5a1fa5549e427e09a388cdf3d6ec51311ec98293fc215edc6d79f819367118"
+    },
+    {
+      "source": "/Users/lycidas/work/科研/projects/2026-09-09_human-time-aware-integration/data/results_metacell_v1/logs/GSE178325::gse178325_human_chemical_pluripotency_reprogramming_GSM5683320.log",
+      "sha256": "f5b9fd3e99f402762be83851f10897ab9cc54ebc7ce78ecf67d46c488c202707",
+      "versions": {
+        "SEACells": "0.3.3",
+        "scanpy": "1.12.4",
+        "anndata": "0.13.3.post0",
+        "numpy": "2.5.2",
+        "scipy": "1.18.1",
+        "palantir": "1.4.5"
+      },
+      "construction_script_sha256": "6b5a1fa5549e427e09a388cdf3d6ec51311ec98293fc215edc6d79f819367118"
+    },
+    {
+      "source": "/Users/lycidas/work/科研/projects/2026-09-09_human-time-aware-integration/data/results_metacell_v1/logs/GSE221739::D11A_GSM6894040.log",
+      "sha256": "d75827b63c1d09563c93746dd7aaaed90ef0f2722d17b6d5c62b78db040b6e22",
+      "versions": {
+        "SEACells": "0.3.3",
+        "scanpy": "1.12.4",
+        "anndata": "0.13.3.post0",
+        "numpy": "2.5.2",
+        "scipy": "1.18.1",
+        "palantir": "1.4.5"
+      },
+      "construction_script_sha256": "6b5a1fa5549e427e09a388cdf3d6ec51311ec98293fc215edc6d79f819367118"
+    },
+    {
+      "source": "/Users/lycidas/work/科研/projects/2026-09-09_human-time-aware-integration/data/results_metacell_v1/logs/GSE221739::D11B_rep2_GSM6894042.log",
+      "sha256": "a1a321f298346cf4d1f8519285690684caedde379a32790e3a8ce604a9bd427b",
+      "versions": {
+        "SEACells": "0.3.3",
+        "scanpy": "1.12.4",
+        "anndata": "0.13.3.post0",
+        "numpy": "2.5.2",
+        "scipy": "1.18.1",
+        "palantir": "1.4.5"
+      },
+      "construction_script_sha256": "6b5a1fa5549e427e09a388cdf3d6ec51311ec98293fc215edc6d79f819367118"
+    },
+    {
+      "source": "/Users/lycidas/work/科研/projects/2026-09-09_human-time-aware-integration/data/results_metacell_v1/logs/GSE221739::D13A_GSM6894043.log",
+      "sha256": "4fe313bf0c11e25b5187aeb273cf6bcb923678cf7c677436e10e87dacb25c78e",
+      "versions": {
+        "SEACells": "0.3.3",
+        "scanpy": "1.12.4",
+        "anndata": "0.13.3.post0",
+        "numpy": "2.5.2",
+        "scipy": "1.18.1",
+        "palantir": "1.4.5"
+      },
+      "construction_script_sha256": "6b5a1fa5549e427e09a388cdf3d6ec51311ec98293fc215edc6d79f819367118"
+    },
+    {
+      "source": "/Users/lycidas/work/科研/projects/2026-09-09_human-time-aware-integration/data/results_metacell_v1/logs/GSE221739::D13B_GSM6894044.log",
+      "sha256": "444fbae02073f7d8c7eac282ad245b550c5e5f5513ec3c7bab05259b544617ae",
+      "versions": {
+        "SEACells": "0.3.3",
+        "scanpy": "1.12.4",
+        "anndata": "0.13.3.post0",
+        "numpy": "2.5.2",
+        "scipy": "1.18.1",
+        "palantir": "1.4.5"
+      },
+      "construction_script_sha256": "6b5a1fa5549e427e09a388cdf3d6ec51311ec98293fc215edc6d79f819367118"
+    },
+    {
+      "source": "/Users/lycidas/work/科研/projects/2026-09-09_human-time-aware-integration/data/results_metacell_v1/logs/GSE221739::D15A_GSM6894045.log",
+      "sha256": "b4cd30e0e259b44df5d0520f6eadb9f7cb17623933d5f0c94b2aeb4aef343730",
+      "versions": {
+        "SEACells": "0.3.3",
+        "scanpy": "1.12.4",
+        "anndata": "0.13.3.post0",
+        "numpy": "2.5.2",
+        "scipy": "1.18.1",
+        "palantir": "1.4.5"
+      },
+      "construction_script_sha256": "6b5a1fa5549e427e09a388cdf3d6ec51311ec98293fc215edc6d79f819367118"
+    },
+    {
+      "source": "/Users/lycidas/work/科研/projects/2026-09-09_human-time-aware-integration/data/results_metacell_v1/logs/GSE221739::D15B_GSM6894046.log",
+      "sha256": "758fcc6baff762e1b0fef59c0bed1d5fe676ee60a13390b0dd151417dfcacc8d",
+      "versions": {
+        "SEACells": "0.3.3",
+        "scanpy": "1.12.4",
+        "anndata": "0.13.3.post0",
+        "numpy": "2.5.2",
+        "scipy": "1.18.1",
+        "palantir": "1.4.5"
+      },
+      "construction_script_sha256": "6b5a1fa5549e427e09a388cdf3d6ec51311ec98293fc215edc6d79f819367118"
+    },
+    {
+      "source": "/Users/lycidas/work/科研/projects/2026-09-09_human-time-aware-integration/data/results_metacell_v1/logs/GSE221739::D3A_GSM6894027.convergence-completion.log",
+      "sha256": "208cccbfe17d5d53fb6bbc6f7eaf561000d6d526f9d6e05efebbf58c99266efc",
+      "versions": {
+        "SEACells": "0.3.3",
+        "scanpy": "1.12.4",
+        "anndata": "0.13.3.post0",
+        "numpy": "2.5.2",
+        "scipy": "1.18.1",
+        "palantir": "1.4.5"
+      },
+      "construction_script_sha256": "6b5a1fa5549e427e09a388cdf3d6ec51311ec98293fc215edc6d79f819367118"
+    },
+    {
+      "source": "/Users/lycidas/work/科研/projects/2026-09-09_human-time-aware-integration/data/results_metacell_v1/logs/GSE221739::D3B_GSM6894028.log",
+      "sha256": "2f597b560991f267741c5465b5d7af4afea94f04e416deee4ba3979cae6da15e",
+      "versions": {
+        "SEACells": "0.3.3",
+        "scanpy": "1.12.4",
+        "anndata": "0.13.3.post0",
+        "numpy": "2.5.2",
+        "scipy": "1.18.1",
+        "palantir": "1.4.5"
+      },
+      "construction_script_sha256": "6b5a1fa5549e427e09a388cdf3d6ec51311ec98293fc215edc6d79f819367118"
+    },
+    {
+      "source": "/Users/lycidas/work/科研/projects/2026-09-09_human-time-aware-integration/data/results_metacell_v1/logs/GSE221739::D5A_rep1_GSM6894029.log",
+      "sha256": "01004ee3d859734126a0810525ced48e8003916d35f538923a4537901d17c084",
+      "versions": {
+        "SEACells": "0.3.3",
+        "scanpy": "1.12.4",
+        "anndata": "0.13.3.post0",
+        "numpy": "2.5.2",
+        "scipy": "1.18.1",
+        "palantir": "1.4.5"
+      },
+      "construction_script_sha256": "6b5a1fa5549e427e09a388cdf3d6ec51311ec98293fc215edc6d79f819367118"
+    },
+    {
+      "source": "/Users/lycidas/work/科研/projects/2026-09-09_human-time-aware-integration/data/results_metacell_v1/logs/GSE221739::D5A_rep2_GSM6894030.log",
+      "sha256": "af68368ad14f4ecabc47f34b3f5f208bd5c65baf564ac1ad80d1749149cdf05b",
+      "versions": {
+        "SEACells": "0.3.3",
+        "scanpy": "1.12.4",
+        "anndata": "0.13.3.post0",
+        "numpy": "2.5.2",
+        "scipy": "1.18.1",
+        "palantir": "1.4.5"
+      },
+      "construction_script_sha256": "6b5a1fa5549e427e09a388cdf3d6ec51311ec98293fc215edc6d79f819367118"
+    },
+    {
+      "source": "/Users/lycidas/work/科研/projects/2026-09-09_human-time-aware-integration/data/results_metacell_v1/logs/GSE221739::D5B_rep2_GSM6894032.log",
+      "sha256": "0b2d715797e12574b39a962bdb782f1db978d3fae773887cf802de28945e03ed",
+      "versions": {
+        "SEACells": "0.3.3",
+        "scanpy": "1.12.4",
+        "anndata": "0.13.3.post0",
+        "numpy": "2.5.2",
+        "scipy": "1.18.1",
+        "palantir": "1.4.5"
+      },
+      "construction_script_sha256": "6b5a1fa5549e427e09a388cdf3d6ec51311ec98293fc215edc6d79f819367118"
+    },
+    {
+      "source": "/Users/lycidas/work/科研/projects/2026-09-09_human-time-aware-integration/data/results_metacell_v1/logs/GSE221739::D7A_GSM6894033.log",
+      "sha256": "a3fb03d2c42b8e76c8a1bd988e254d859a7c5c6005af12a4a025d69cafc29ebd",
+      "versions": {
+        "SEACells": "0.3.3",
+        "scanpy": "1.12.4",
+        "anndata": "0.13.3.post0",
+        "numpy": "2.5.2",
+        "scipy": "1.18.1",
+        "palantir": "1.4.5"
+      },
+      "construction_script_sha256": "6b5a1fa5549e427e09a388cdf3d6ec51311ec98293fc215edc6d79f819367118"
+    },
+    {
+      "source": "/Users/lycidas/work/科研/projects/2026-09-09_human-time-aware-integration/data/results_metacell_v1/logs/GSE221739::D7B_rep1_GSM6894034.log",
+      "sha256": "9177fb9f510269dd0aed9286579fc3c6d8114141c15432ac45d6a16e3d271089",
+      "versions": {
+        "SEACells": "0.3.3",
+        "scanpy": "1.12.4",
+        "anndata": "0.13.3.post0",
+        "numpy": "2.5.2",
+        "scipy": "1.18.1",
+        "palantir": "1.4.5"
+      },
+      "construction_script_sha256": "6b5a1fa5549e427e09a388cdf3d6ec51311ec98293fc215edc6d79f819367118"
+    },
+    {
+      "source": "/Users/lycidas/work/科研/projects/2026-09-09_human-time-aware-integration/data/results_metacell_v1/logs/GSE221739::D7B_rep2_GSM6894035.log",
+      "sha256": "07a492208d18c21611d1f5e46502d83329a0c3f868e36afc6dbddb58f62174c0",
+      "versions": {
+        "SEACells": "0.3.3",
+        "scanpy": "1.12.4",
+        "anndata": "0.13.3.post0",
+        "numpy": "2.5.2",
+        "scipy": "1.18.1",
+        "palantir": "1.4.5"
+      },
+      "construction_script_sha256": "6b5a1fa5549e427e09a388cdf3d6ec51311ec98293fc215edc6d79f819367118"
+    },
+    {
+      "source": "/Users/lycidas/work/科研/projects/2026-09-09_human-time-aware-integration/data/results_metacell_v1/logs/GSE221739::D9A_rep1_GSM6894036.log",
+      "sha256": "538353ccae18fcf33bc7a5e6b704d5b8b24149dd3446ec5d0b05dec58355de97",
+      "versions": {
+        "SEACells": "0.3.3",
+        "scanpy": "1.12.4",
+        "anndata": "0.13.3.post0",
+        "numpy": "2.5.2",
+        "scipy": "1.18.1",
+        "palantir": "1.4.5"
+      },
+      "construction_script_sha256": "6b5a1fa5549e427e09a388cdf3d6ec51311ec98293fc215edc6d79f819367118"
+    },
+    {
+      "source": "/Users/lycidas/work/科研/projects/2026-09-09_human-time-aware-integration/data/results_metacell_v1/logs/GSE221739::D9A_rep2_GSM6894037.log",
+      "sha256": "9be89f96320149043b76448ae1edbd2643e46606af85a37c27782a9bb699b5cb",
+      "versions": {
+        "SEACells": "0.3.3",
+        "scanpy": "1.12.4",
+        "anndata": "0.13.3.post0",
+        "numpy": "2.5.2",
+        "scipy": "1.18.1",
+        "palantir": "1.4.5"
+      },
+      "construction_script_sha256": "6b5a1fa5549e427e09a388cdf3d6ec51311ec98293fc215edc6d79f819367118"
+    },
+    {
+      "source": "/Users/lycidas/work/科研/projects/2026-09-09_human-time-aware-integration/data/results_metacell_v1/logs/GSE221739::D9B_rep2_GSM6894039.convergence-completion.log",
+      "sha256": "440f3bacb442b10f8a2049b36fd75be0a0936ed9a2ff47af487630f1881c37fd",
+      "versions": {
+        "SEACells": "0.3.3",
+        "scanpy": "1.12.4",
+        "anndata": "0.13.3.post0",
+        "numpy": "2.5.2",
+        "scipy": "1.18.1",
+        "palantir": "1.4.5"
+      },
+      "construction_script_sha256": "6b5a1fa5549e427e09a388cdf3d6ec51311ec98293fc215edc6d79f819367118"
+    }
+  ],
+  "human_libraries": 59,
+  "mouse_version_verified": false
+}

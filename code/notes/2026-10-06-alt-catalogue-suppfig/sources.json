@@ -1,0 +1,74 @@
+{
+ "pinned": "2026-10-06",
+ "note": "Second-PAS-catalogue comparison tables (dual-main concordance, verified inputs; see notes/2026-10-05-dual-main-concordance/verification.json). polyapipe_common = primary polyApipe v2-primary; reject_original_point_terminal_p50 = second catalogue (point internal-priming filter + 50-nt terminal protection).",
+ "files": {
+  "recurrence": {
+   "path": "notes/2026-10-05-dual-main-concordance/recurrence-tests.tsv",
+   "sha256": "da61d67a28280756c72402412dda87796cd10956c2c1d6a29ed1b79279f9cb93"
+  },
+  "apa_gex": {
+   "path": "notes/2026-10-05-dual-main-concordance/apa-gex-tests.tsv",
+   "sha256": "4c44fdb0a7cab821c97b274e083aabc789c156a1c081e606fe5aa81ae301bf15"
+  },
+  "proximal": {
+   "path": "notes/2026-10-05-dual-main-concordance/proximal-overlap-tests.tsv",
+   "sha256": "07e23a3591307b183f746ace7e39db908a9bc63c9b391582e8d8e8965870e434"
+  },
+  "samepas_corr": {
+   "path": "notes/2026-10-05-dual-main-concordance/same-pas-correlations.tsv",
+   "sha256": "b52b993339773bad9dcbf8998abb10f3c1d26e0dc2492147034033ef62b60f59"
+  },
+  "samepas_q": {
+   "path": "notes/2026-10-05-dual-main-concordance/same-pas-capacity-tests.tsv",
+   "sha256": "67665b0ebe8151d5cf7bbd37ee4e22ce94f88a08a0fd66247d3007536b81e546"
+  },
+  "cis": {
+   "path": "notes/2026-10-05-dual-main-concordance/cis-tests.tsv",
+   "sha256": "305253653eb9c590b789928593f0738e60448e400cb04e31a84bbe52286fcba7"
+  },
+  "effect": {
+   "path": "notes/2026-10-05-dual-main-concordance/effect-concordance.tsv",
+   "sha256": "0ef3d1cf83ba240f47af56f4e2a165cb936590bbbe6925ce92e5d5f5623d5498"
+  },
+  "rec_conc": {
+   "path": "notes/2026-10-05-dual-main-concordance/recurrence-concordance.tsv",
+   "sha256": "c3b9f0ff7903a3da654b47c519110caf9a8e85c0b6a1022d0bf033e4eb185d51"
+  },
+  "traj_conc": {
+   "path": "notes/2026-10-05-dual-main-concordance/trajectory-concordance.tsv",
+   "sha256": "e6f6c57805e956fd12b1b2996347aca1ba0c7031d7e3674c713ef64d1915be55"
+  },
+  "retention": {
+   "path": "notes/2026-10-05-dual-main-concordance/retention-concordance.tsv",
+   "sha256": "97b585c7f06f579fd5fcb75243e8a8aa69d1fff39df6475da0923a01e3cd6fd6"
+  },
+  "sites": {
+   "path": "notes/2026-10-05-dual-main-concordance/strict-predicted-site-overlap.tsv",
+   "sha256": "379381d6dbf419e459a57adec3841c0b61a1236751722ea76fda7ee459c35a48"
+  },
+  "lowshift": {
+   "path": "notes/2026-10-05-dual-main-concordance/low-shift-candidate-concordance.tsv",
+   "sha256": "7674d482391fa379dd23cd8c9aa04b880b4bc43b82711a63c35e1bb7fc06834b"
+  },
+  "global_poly": {
+   "path": "notes/2026-10-05-dual-main-concordance/inputs/polyapipe_common/global/global_direction_summary.tsv",
+   "sha256": "f6f4d4e8c0a46b07f03a43276b45a5aaf80b10d347015f95cc03002b20f1b05d"
+  },
+  "global_alt": {
+   "path": "notes/2026-10-05-dual-main-concordance/inputs/reject_original_point_terminal_p50/global/global_direction_summary.tsv",
+   "sha256": "b65a8e80f7dc7f661c5e2ac8cb330ad5d5e65b14c29dff8bb7a6d8a03142f727"
+  },
+  "member_poly": {
+   "path": "notes/2026-10-05-dual-main-concordance/inputs/polyapipe_common/profiles/gene_membership_k3.tsv.gz",
+   "sha256": "797a4f6b18b359d42751d35ec3fc06582bfc4427bff3d39ecdc7eec67b736704"
+  },
+  "member_alt": {
+   "path": "notes/2026-10-05-dual-main-concordance/inputs/reject_original_point_terminal_p50/profiles/gene_membership_k3.tsv.gz",
+   "sha256": "9f212071d5b5713ade3dbc1d3de987047f546c40f2189d3e57ddeb72ff8b1ce8"
+  },
+  "lowshift_genes": {
+   "path": "notes/2026-10-05-dual-main-concordance/low-shift-candidates.tsv",
+   "sha256": "ae975b25601c55ff8c158488771599b35214702f18195349db482e1c5e70c78b"
+  }
+ }
+}

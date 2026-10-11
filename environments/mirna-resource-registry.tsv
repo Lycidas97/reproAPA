@@ -1,0 +1,14 @@
+resource	version_or_date	species	evidence_type	primary_use	in_main_analysis	caveat	url
+MirGeneDB	3.0	human;mouse	curated miRNA genes/families	define bona fide mature arms and seed-family universe	yes	intentionally excludes weak annotations	https://www.mirgenedb.org/
+miRBase	22.1	human;mouse	sequence and identifier archive	map old study IDs and accessions to current names	secondary	broad archive includes lower-confidence records	https://www.mirbase.org/download/CURRENT/
+TargetScanHuman_Mouse	8.0	human;mouse	predicted canonical sites/cumulative context scores	site classes and sensitivity ranking	yes	reference transcript UTRs must be intersected with project PAS-variable segments	https://www.targetscan.org/
+miRTarBase	2025	multi-species	experimentally reported MTIs	curated target support	yes	evidence technologies and cell contexts are heterogeneous	https://pmc.ncbi.nlm.nih.gov/articles/PMC11701613/
+DIANA_TarBase	9.0	multi-species	experimentally supported MTIs	cell-type and assay-aware target support	yes	non-reprogramming contexts remain external	https://pmc.ncbi.nlm.nih.gov/articles/PMC10767993/
+ENCORI_starBase	v2/current portal	mainly human;some mouse	AGO-CLIP and RNA-interactome support	AGO-supported site flag	yes	AGO binding is not proof of repression in the current state	https://rnasysu.com/encori/
+POSTAR3	2021 release	human;mouse	RBP/AGO CLIP sites	genomic overlap of APA-variable intervals with AGO sites	yes	aggregates many unrelated tissues and cell lines	https://academic.oup.com/nar/article/50/D1/D287/6353804
+miRNATissueAtlas	2025	human;mouse	uniform small-ncRNA tissue expression	expression plausibility and tissue specificity	supplementary	not reprogramming matched	https://web.ccb.uni-saarland.de/mirnatissueatlas_2025
+DIANA_miTED	2022	human	uniformly processed public small-RNA expression	human cell/tissue background	supplementary	no mouse and no guaranteed reprogramming context	https://dianalab.e-ce.uth.gr/mited/
+DASHR	2.0	human	small-ncRNA annotation and expression	annotation and expression cross-check	supplementary	human only and older collection	https://dashr2.lisanwanglab.org/
+miRDB	6.0	human;mouse	computational targets	prediction sensitivity analysis	no_main_standalone	last release 2019; gene-level predictions do not define project-specific lost segments	https://www.mirdb.org/download.html
+nf_core_smrnaseq	2.4.1	human;mouse	reproducible processing	QC and baseline small-RNA quantification candidate	yes_candidate	pin version and adapter settings per study	https://nf-co.re/smrnaseq/2.4.1/
+miRge3	3.0	human;mouse	miRNA/isomiR/tRF quantification	re-quantification and isomiR sensitivity candidate	yes_candidate	freeze one annotation universe across datasets	https://pmc.ncbi.nlm.nih.gov/articles/PMC8294687/

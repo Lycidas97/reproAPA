@@ -1,0 +1,26 @@
+{
+  "status": "FROZEN_BEFORE_NEW_DIRECTIONAL_RESULTS",
+  "marker_version": "core_third_strict",
+  "setting": "supported50",
+  "bridge_background": "common_M_bridge",
+  "qualification_background": "joint_bridge_eligible",
+  "background_n": 728,
+  "definitions": {
+    "original_matched": {"human": "D00", "mouse": "D00"},
+    "human_Mstar": {"human": "D01", "mouse": "D00"},
+    "both_Mstar": {"human": "D01", "mouse": "D01"}
+  },
+  "primary_definition": "human_Mstar",
+  "thresholds": [0.01, 0.015, 0.02, 0.025, 0.03, 0.035, 0.04, 0.045, 0.05],
+  "models": ["measurement_PAS_capacity", "full_assay"],
+  "primary_model": "full_assay",
+  "permutations": 100000,
+  "batch_size": 250,
+  "seed_parameters": ["ortholog_direction", "P_M", "threshold", "model"],
+  "full_assay_covariates": "actual_gene_qualified_metacells",
+  "capacity": "original_full_axis_theoretical_0_1",
+  "unchanged_calibration_contrast": "P_S",
+  "correction_families": {"q8": "definition_threshold_model", "q72": "definition_model", "q144": "definition_both_models", "q288": "all_unique_tests_P_S_once"},
+  "zero_variance_status": "not_estimable_with_p1_correction_slot",
+  "manuscript_changes": false
+}

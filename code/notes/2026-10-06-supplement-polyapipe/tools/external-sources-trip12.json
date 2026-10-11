@@ -1,0 +1,67 @@
+{
+ "pinned": "2026-10-06",
+ "note": "Trip12 external evidence package (parent: polyapipe main bundle, same run and source key). Read only by D26 for the AGO2 queries (S26E), the long-read boundary audit (S26D) and the per-site display tiers (S26H), which the sealed supplement bundle does not contain for Trip12.",
+ "files": {
+  "longread_boundary": {
+   "path": "notes/2026-10-06-trip12-external-evidence/tables/longread/boundary_pair_audit.tsv",
+   "sha256": "497a4ca8320f1ff0013419dc1b8e0d0cd34fc80d5652c9d5dba59d3e56f9ecd5",
+   "bytes": 629,
+   "panel": "S26D",
+   "bundle_table": "tables/trip12_evidence/longread/boundary_pair_audit.tsv",
+   "panels": [
+    "D26D"
+   ]
+  },
+  "ago2_archive": {
+   "path": "notes/2026-10-06-trip12-external-evidence/tables/ago2/archive_inventory.tsv",
+   "sha256": "035b4e613e1d4bf114d1cba49795e15ce6cc1a247056a83d60a56f80dc243228",
+   "bytes": 260,
+   "panel": "S26E",
+   "bundle_table": "tables/trip12_evidence/ago2/archive_inventory.tsv",
+   "panels": [
+    "D26E"
+   ]
+  },
+  "ago2_overlap": {
+   "path": "notes/2026-10-06-trip12-external-evidence/tables/ago2/overlap_summary.tsv",
+   "sha256": "3b662665e28dbf4ceea047ec1cab09f6c13dc3a63f087ad2e8a938f9ce525d40",
+   "bytes": 31278,
+   "panel": "S26E",
+   "bundle_table": "tables/trip12_evidence/ago2/overlap_summary.tsv",
+   "panels": [
+    "D26E"
+   ]
+  },
+  "ago2_units": {
+   "path": "notes/2026-10-06-trip12-external-evidence/tables/ago2/biological_unit_support.tsv",
+   "sha256": "b2ffd40dce5b9d4cdfd419447e77c1bd928b4cbbca80010266a014959b9e5f8b",
+   "bytes": 6173,
+   "panel": "S26E",
+   "bundle_table": "tables/trip12_evidence/ago2/biological_unit_support.tsv",
+   "panels": [
+    "D26E"
+   ]
+  },
+  "site_evidence": {
+   "path": "notes/2026-10-06-trip12-external-evidence/tables/figure5/site-display-evidence.tsv",
+   "sha256": "acf042c26da9d0e7bbe07992cd917073484062ef468834e7eb732a95ce40b097",
+   "bytes": 93360,
+   "panel": "S26H",
+   "bundle_table": "tables/trip12_evidence/figure5/site-display-evidence.tsv",
+   "panels": [
+    "D26H"
+   ]
+  },
+  "site_summary": {
+   "path": "notes/2026-10-06-trip12-external-evidence/tables/figure5/site-display-summary.tsv",
+   "sha256": "fdb5c06c10248dde2e03f7751f43a8087dd7f8ad96a66770dd04e2b32aaec82f",
+   "bytes": 367,
+   "panel": "S26H",
+   "bundle_table": "tables/trip12_evidence/figure5/site-display-summary.tsv",
+   "panels": [
+    "D26H"
+   ]
+  }
+ },
+ "contract_r2": "Registered in contract r2: read through the bundle (tables/trip12_evidence/), bound to the listed panels."
+}

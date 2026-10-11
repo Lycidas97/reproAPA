@@ -1,0 +1,85 @@
+version: '3.0'
+study_id: GSE118258
+species:
+- Homo sapiens
+membership_path: /root/nfsdata/apadetect/analysis_projects/reprogramming_unified_rna_qc_v3.2_release/runs/gse118258_production/primary_membership.tsv.gz
+sensitivity_membership_path: /root/nfsdata/apadetect/analysis_projects/reprogramming_unified_rna_qc_v3.2_release/runs/gse118258_production/sensitivity_membership.tsv.gz
+technical_membership_path: /root/nfsdata/apadetect/analysis_projects/reprogramming_unified_rna_qc_v3.2_release/runs/gse118258_production/technical_membership.tsv.gz
+library_metadata_path: /root/nfsdata/apadetect/analysis_projects/reprogramming_unified_rna_qc_v3.2_release/manifests/GSE118258_production.tsv
+membership_columns:
+  cell_id: global_cell_id
+  state_id: null
+  scope_id: null
+  library_id: library_id
+  barcode: barcode
+expression_mode: multi_source
+expression_already_log1p: false
+partition_selection_fields: []
+library_use: stratified_resampling_and_postfreeze_audit_only
+qc_contract:
+  method_contract_sha256: cdf1987a05dd818c1e4e21fe2751df02f98490570d2d522e7b12cbefb1f73134
+  production_acceptance_path: /root/nfsdata/apadetect/analysis_projects/reprogramming_unified_rna_qc_v3.2_release/runs/_production_acceptance/acceptance.json
+  independent_validation_path: /root/nfsdata/apadetect/analysis_projects/reprogramming_unified_rna_qc_v3.2_release/runs/gse118258_production/independent_validation.tsv
+  tiers:
+    primary_pass:
+      n_cells: 29000
+      cell_set_sha256: 84b5e437d8356b1f3186b4a216c5c67d03791af9575d1e32534130018952d0e5
+    sensitivity_only:
+      n_cells: 2023
+      cell_set_sha256: 3b793641eb5ddf2c1a4706e3e6329fecb2a8eac10ed8792456997f00b4478949
+    technical_exclude:
+      n_cells: 3357
+      cell_set_sha256: 51854a2dc9a04df0e3ceb189c4d45e5bd3b8ecddac2f5d7ec3fd3fcff3815823
+scopes:
+  studywide:
+    role: primary
+    n_cells: 29000
+    source_membership_order_sha256: 84b5e437d8356b1f3186b4a216c5c67d03791af9575d1e32534130018952d0e5
+    cell_set_sha256: 84b5e437d8356b1f3186b4a216c5c67d03791af9575d1e32534130018952d0e5
+    sensitivity_n_cells: 2023
+    sensitivity_source_membership_order_sha256: 3b793641eb5ddf2c1a4706e3e6329fecb2a8eac10ed8792456997f00b4478949
+    sensitivity_cell_set_sha256: 3b793641eb5ddf2c1a4706e3e6329fecb2a8eac10ed8792456997f00b4478949
+    expression_sources:
+    - selector: library_id
+      value: gse118258_D0
+      mode: 10x_h5
+      path: /root/nfsdata/apadetect/data/reprogramming_differentiation_apa/processed/gse118258_human_pluripotency_reprogramming/cellranger_grch38_2024a_v1/gse118258_D0/outs/filtered_feature_bc_matrix.h5
+    - selector: library_id
+      value: gse118258_D12
+      mode: 10x_h5
+      path: /root/nfsdata/apadetect/data/reprogramming_differentiation_apa/processed/gse118258_human_pluripotency_reprogramming/cellranger_grch38_2024a_v1/gse118258_D12/outs/filtered_feature_bc_matrix.h5
+    - selector: library_id
+      value: gse118258_D16_negative
+      mode: 10x_h5
+      path: /root/nfsdata/apadetect/data/reprogramming_differentiation_apa/processed/gse118258_human_pluripotency_reprogramming/cellranger_grch38_2024a_v1/gse118258_D16_negative/outs/filtered_feature_bc_matrix.h5
+    - selector: library_id
+      value: gse118258_D16_positive
+      mode: 10x_h5
+      path: /root/nfsdata/apadetect/data/reprogramming_differentiation_apa/processed/gse118258_human_pluripotency_reprogramming/cellranger_grch38_2024a_v1/gse118258_D16_positive/outs/filtered_feature_bc_matrix.h5
+    - selector: library_id
+      value: gse118258_D2
+      mode: 10x_h5
+      path: /root/nfsdata/apadetect/data/reprogramming_differentiation_apa/processed/gse118258_human_pluripotency_reprogramming/cellranger_grch38_2024a_v1/gse118258_D2/outs/filtered_feature_bc_matrix.h5
+    - selector: library_id
+      value: gse118258_D8
+      mode: 10x_h5
+      path: /root/nfsdata/apadetect/data/reprogramming_differentiation_apa/processed/gse118258_human_pluripotency_reprogramming/cellranger_grch38_2024a_v1/gse118258_D8/outs/filtered_feature_bc_matrix.h5
+    pipeline:
+      hvg_n_top_genes: 3000
+      pca_n_components_fitted: 50
+      pca_n_components_used: 30
+      pca_seed: 20260825
+      neighbor_n_neighbors: 30
+      leiden_resolution: 0.6
+      leiden_seed: 20260825
+      filter_genes_min_cells: 10
+      normalization_method: normalize_total
+      normalization_target_sum: 10000.0
+      transform: log1p
+      hvg_flavor: scanpy_seurat
+      scale_max_value: 10
+      pca_solver: sklearn_randomized_iterated_power_4
+      neighbor_backend: pynndescent.NNDescent
+      neighbor_metric: euclidean
+      leiden_implementation: leidenalg.find_partition
+      leiden_iterations: -1

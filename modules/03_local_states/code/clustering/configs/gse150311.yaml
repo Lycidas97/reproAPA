@@ -1,0 +1,52 @@
+version: '2.0'
+study_id: GSE150311
+membership_path: /root/nfsdata/multica/worktrees/apadetect/DOC-55-gse150311-readiness/analyses/FGA03-gse150311-factorized-gex-annotation-v1/frozen_local_state_membership.tsv.gz
+membership_columns:
+  cell_id: cell_id
+  state_id: de_novo_local_state
+  scope_id: route_id
+  library_id: library_id
+  barcode: barcode
+expression_mode: multi_source
+expression_already_log1p: false
+partition_selection_fields: []
+library_use: stratified_resampling_and_postfreeze_audit_only
+scopes:
+  studywide:
+    role: primary
+    n_cells: 12467
+    membership_scope_values: [FM, RSeT, naive, primed]
+    source_membership_order_sha256: 499b83c5ff6390686d833967532a4fcdda2653fba13862c9ffe03f57623461af
+    cell_set_sha256: fee92092481039a0f8cee119ba9b7739a368092692c99fcd6444fda1ca7dd4a9
+    expression_sources:
+      - value: FM
+        mode: 10x_h5
+        path: /root/nfsdata/apadetect/data/reprogramming_differentiation_apa/analyses/raw_realignment_apa_2026-06-07/cellranger/gse150311_human_pluripotency_reprogramming/gse150311_human_pluripotency_reprogramming_GSM4546545/outs/filtered_feature_bc_matrix.h5
+      - value: naive
+        mode: 10x_h5
+        path: /root/nfsdata/apadetect/data/reprogramming_differentiation_apa/analyses/raw_realignment_apa_2026-06-07/cellranger/gse150311_human_pluripotency_reprogramming/gse150311_human_pluripotency_reprogramming_GSM4546546/outs/filtered_feature_bc_matrix.h5
+      - value: primed
+        mode: 10x_h5
+        path: /root/nfsdata/apadetect/data/reprogramming_differentiation_apa/analyses/raw_realignment_apa_2026-06-07/cellranger/gse150311_human_pluripotency_reprogramming/gse150311_human_pluripotency_reprogramming_GSM4546547/outs/filtered_feature_bc_matrix.h5
+      - value: RSeT
+        mode: 10x_h5
+        path: /root/nfsdata/apadetect/data/reprogramming_differentiation_apa/analyses/raw_realignment_apa_2026-06-07/cellranger/gse150311_human_pluripotency_reprogramming/gse150311_human_pluripotency_reprogramming_GSM4546548/outs/filtered_feature_bc_matrix.h5
+    pipeline:
+      hvg_n_top_genes: 3000
+      pca_n_components_fitted: 50
+      pca_n_components_used: 30
+      pca_seed: 20260816
+      neighbor_n_neighbors: 30
+      leiden_resolution: 0.6
+      leiden_seed: 20260816
+      filter_genes_min_cells: 10
+      normalization_method: normalize_total
+      normalization_target_sum: 10000.0
+      transform: log1p
+      hvg_flavor: scanpy_seurat
+      scale_max_value: 10
+      pca_solver: sklearn_randomized_iterated_power_4
+      neighbor_backend: pynndescent.NNDescent
+      neighbor_metric: euclidean
+      leiden_implementation: leidenalg.find_partition
+      leiden_iterations: -1

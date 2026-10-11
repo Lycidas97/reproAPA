@@ -1,0 +1,46 @@
+version: '2.0'
+study_id: GSE103221
+membership_path: /root/nfsdata/multica/worktrees/apadetect/DOC-53-gse103221-readiness/analyses/FGA02-gse103221-factorized-gex-annotation-v1/frozen_local_state_membership.tsv.gz
+membership_columns:
+  cell_id: cell_id
+  state_id: de_novo_local_state
+  scope_id: route
+  library_id: library_id
+  barcode: null
+expression_mode: multi_source
+expression_already_log1p: false
+partition_selection_fields: []
+library_use: stratified_resampling_and_postfreeze_audit_only
+scopes:
+  studywide:
+    role: primary
+    n_cells: 77393
+    membership_scope_values: [OSK, chemical]
+    source_membership_order_sha256: 0f381321f1aa242c9532231caf2c08ae09649bc04629f720b790e42260437e3f
+    cell_set_sha256: 2b4b448628b7ab7dc9a769576f9c4570e8c46cdc8e488ed4cfd08084bf68f8b6
+    expression_sources:
+      - value: OSK
+        mode: h5ad
+        path: /root/nfsdata/multica/worktrees/apadetect/DOC-53-gse103221-readiness/analyses/SRG02-gse103221-state-robustness-v1/prepared/OSK.h5ad
+      - value: chemical
+        mode: h5ad
+        path: /root/nfsdata/multica/worktrees/apadetect/DOC-53-gse103221-readiness/analyses/SRG02-gse103221-state-robustness-v1/prepared/chemical.h5ad
+    pipeline:
+      hvg_n_top_genes: 3000
+      pca_n_components_fitted: 50
+      pca_n_components_used: 30
+      pca_seed: 20260816
+      neighbor_n_neighbors: 30
+      leiden_resolution: 0.6
+      leiden_seed: 20260816
+      filter_genes_min_cells: 10
+      normalization_method: normalize_total
+      normalization_target_sum: 10000.0
+      transform: log1p
+      hvg_flavor: scanpy_seurat
+      scale_max_value: 10
+      pca_solver: sklearn_randomized_iterated_power_4
+      neighbor_backend: pynndescent.NNDescent
+      neighbor_metric: euclidean
+      leiden_implementation: leidenalg.find_partition
+      leiden_iterations: -1

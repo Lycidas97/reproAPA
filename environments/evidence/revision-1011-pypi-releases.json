@@ -1,0 +1,354 @@
+{
+  "retrieved_utc": "2026-10-11T12:03:36.720796+00:00",
+  "scope": "Additional public dependencies for the 11 October 2026 candidate analyses and renderers; original environment locks unchanged.",
+  "packages": [
+    {
+      "name": "pikepdf",
+      "version": "10.16.0",
+      "requires_python": ">=3.11",
+      "requires_dist": [
+        "Pillow>=10.0.1",
+        "lxml>=4.8",
+        "packaging",
+        "jsonschema>=4.18; extra == \"pdfa\"",
+        "referencing; extra == \"pdfa\"",
+        "fonttools>=4.40; extra == \"pdfa\""
+      ],
+      "source_url": "https://pypi.org/pypi/pikepdf/json",
+      "response_sha256": "64587f01d2d57372034fb6174d81636e201604e8caf3665795767467154cdaec",
+      "files": [
+        {
+          "filename": "pikepdf-10.16.0-cp311-cp311-macosx_15_0_arm64.whl",
+          "sha256": "0a8562673f7ef4c96ec9c734f9749301133d320a94ab6dc80c881d8dc5f5dcac",
+          "url": "https://files.pythonhosted.org/packages/2d/b3/ae43c09f8bd5deef4161fc6a6239fef0778bc6a0a53cdbfebe227fb5ae16/pikepdf-10.16.0-cp311-cp311-macosx_15_0_arm64.whl",
+          "requires_python": ">=3.11",
+          "yanked": false
+        },
+        {
+          "filename": "pikepdf-10.16.0-cp311-cp311-manylinux_2_26_aarch64.manylinux_2_28_aarch64.whl",
+          "sha256": "d7892ce2dcb2a137580c85f93bc0ab82d398f8833c1360c1b17db214021be240",
+          "url": "https://files.pythonhosted.org/packages/35/c4/35df4f75d9ef389bb8d8f3d7b1efb723f2f09ba5f304acf18aaaf73060c4/pikepdf-10.16.0-cp311-cp311-manylinux_2_26_aarch64.manylinux_2_28_aarch64.whl",
+          "requires_python": ">=3.11",
+          "yanked": false
+        },
+        {
+          "filename": "pikepdf-10.16.0-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl",
+          "sha256": "a46e84346b305585fe6dcf3c76fb9d35f7270cf740caa90cb9045e9da5d96651",
+          "url": "https://files.pythonhosted.org/packages/53/e6/ebec52871f8e5a4148018774a7c68263ba881c47affc52105f16fc26534b/pikepdf-10.16.0-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl",
+          "requires_python": ">=3.11",
+          "yanked": false
+        },
+        {
+          "filename": "pikepdf-10.16.0-cp311-cp311-musllinux_1_2_aarch64.whl",
+          "sha256": "c53ad01cd6c99bdae7bdf25c97ec282fc65912cd86977760654c32fc8df59ca8",
+          "url": "https://files.pythonhosted.org/packages/35/56/8884bccee8a358cce3545613a37ad3041ee0941b61ebb09c7f69f39aef9a/pikepdf-10.16.0-cp311-cp311-musllinux_1_2_aarch64.whl",
+          "requires_python": ">=3.11",
+          "yanked": false
+        },
+        {
+          "filename": "pikepdf-10.16.0-cp311-cp311-musllinux_1_2_x86_64.whl",
+          "sha256": "573db3015191c0a2771370379855679c605e314968b97700c545e09999522f8a",
+          "url": "https://files.pythonhosted.org/packages/56/ff/b72c67d4d3d0281d09798c3dc9374cd269d43a8d5d844993905045eec2c1/pikepdf-10.16.0-cp311-cp311-musllinux_1_2_x86_64.whl",
+          "requires_python": ">=3.11",
+          "yanked": false
+        },
+        {
+          "filename": "pikepdf-10.16.0-cp311-cp311-win_amd64.whl",
+          "sha256": "a7c4aedb43e0036b68505f77898c783e8bdff5cf4d3d8ce729bb3120ec1e7a67",
+          "url": "https://files.pythonhosted.org/packages/d4/40/20156c987ac614d86b9d957dca6f2a0dfd92681f1eaf71454a98f4999457/pikepdf-10.16.0-cp311-cp311-win_amd64.whl",
+          "requires_python": ">=3.11",
+          "yanked": false
+        },
+        {
+          "filename": "pikepdf-10.16.0-cp311-cp311-win_arm64.whl",
+          "sha256": "f652cb0fe6fc5a0df3b0a1c7e9c041da4b4e46b5146a5dd43279c8e4da10c9ee",
+          "url": "https://files.pythonhosted.org/packages/12/00/2039652e656062347406369db80674b21bf9d4354bbed77ee997e7919ccb/pikepdf-10.16.0-cp311-cp311-win_arm64.whl",
+          "requires_python": ">=3.11",
+          "yanked": false
+        },
+        {
+          "filename": "pikepdf-10.16.0-cp312-cp312-macosx_15_0_arm64.whl",
+          "sha256": "1e9309099b864820d28df1b1dc5e83afde27d9fb5d5c19f1a93f02070237a50b",
+          "url": "https://files.pythonhosted.org/packages/90/a5/abc29f7641afe3edb00a417ddff1447d8a8565d4cb03c4ad85975101c198/pikepdf-10.16.0-cp312-cp312-macosx_15_0_arm64.whl",
+          "requires_python": ">=3.11",
+          "yanked": false
+        },
+        {
+          "filename": "pikepdf-10.16.0-cp312-cp312-manylinux_2_26_aarch64.manylinux_2_28_aarch64.whl",
+          "sha256": "67314457c105ba4f2e2c27234dbfc5cffed5f7974067c260136765f9ac819def",
+          "url": "https://files.pythonhosted.org/packages/b5/b4/6a58576cfb10c9a8ec93a28cbb976a29836758c18b64be16d26478ed2738/pikepdf-10.16.0-cp312-cp312-manylinux_2_26_aarch64.manylinux_2_28_aarch64.whl",
+          "requires_python": ">=3.11",
+          "yanked": false
+        },
+        {
+          "filename": "pikepdf-10.16.0-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl",
+          "sha256": "cd42de7d4f5d8dfda4da5d807a8407378dbd5a8f0e87b03c3e30e66d2228aadb",
+          "url": "https://files.pythonhosted.org/packages/48/c8/43e0e5553b11b693721f83e6caff10bd2e8f906e823a3b8e02193e3d973f/pikepdf-10.16.0-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl",
+          "requires_python": ">=3.11",
+          "yanked": false
+        },
+        {
+          "filename": "pikepdf-10.16.0-cp312-cp312-musllinux_1_2_aarch64.whl",
+          "sha256": "2e96252663831a7112669ef445fc8caf97ab7e0f1dc8e4b2cc57619f678c9d1d",
+          "url": "https://files.pythonhosted.org/packages/c0/77/f9f30e991ddc43037330eb0515b6e20bd137d7b77f4f0ed1a75288b6cfdd/pikepdf-10.16.0-cp312-cp312-musllinux_1_2_aarch64.whl",
+          "requires_python": ">=3.11",
+          "yanked": false
+        },
+        {
+          "filename": "pikepdf-10.16.0-cp312-cp312-musllinux_1_2_x86_64.whl",
+          "sha256": "9c925c0ef7a438ac347d061bc6fee780b769fb83b4e1f1552f570c5b44ace33f",
+          "url": "https://files.pythonhosted.org/packages/fb/ff/c5337b81080f3df4c36df5c43d64a5b719f096d21eae08d3ce1cab15b5ae/pikepdf-10.16.0-cp312-cp312-musllinux_1_2_x86_64.whl",
+          "requires_python": ">=3.11",
+          "yanked": false
+        },
+        {
+          "filename": "pikepdf-10.16.0-cp312-cp312-win_amd64.whl",
+          "sha256": "58ea87e6d674f93fb909219b695ed2f67f0896d35ff95867675dd0bf43f9b471",
+          "url": "https://files.pythonhosted.org/packages/e3/98/ec12df6997fa969b40f92240f9828e2d9d48b98126fd34931f2fa02bb7b5/pikepdf-10.16.0-cp312-cp312-win_amd64.whl",
+          "requires_python": ">=3.11",
+          "yanked": false
+        },
+        {
+          "filename": "pikepdf-10.16.0-cp312-cp312-win_arm64.whl",
+          "sha256": "2d68e0f53a487f08d67e55cc3f456303d2343941ba5056cd43c597b80b563471",
+          "url": "https://files.pythonhosted.org/packages/6f/56/d8c618ed571c1a65dc526590bfdf436550ac93e3f55a6acfce4b5ce48214/pikepdf-10.16.0-cp312-cp312-win_arm64.whl",
+          "requires_python": ">=3.11",
+          "yanked": false
+        },
+        {
+          "filename": "pikepdf-10.16.0-cp313-cp313-macosx_15_0_arm64.whl",
+          "sha256": "f0a64959cf5325bd5c4572b49526ba2b633f8641fe12ca94310d0feeec6f2186",
+          "url": "https://files.pythonhosted.org/packages/a9/10/0e3d5d47f5b0abdf0586a38e45eae6045b10c712f4aba77f4320b42d494e/pikepdf-10.16.0-cp313-cp313-macosx_15_0_arm64.whl",
+          "requires_python": ">=3.11",
+          "yanked": false
+        },
+        {
+          "filename": "pikepdf-10.16.0-cp313-cp313-manylinux_2_26_aarch64.manylinux_2_28_aarch64.whl",
+          "sha256": "8eb1dedd51efb4465daf5c406e8f4e083a2d9eecc0b602968410bb0aa26fa0a6",
+          "url": "https://files.pythonhosted.org/packages/5f/af/d131d478ec84e9e50850b1bf40f0fe4ff81fcd9f6afe4dca6a42c1d75c13/pikepdf-10.16.0-cp313-cp313-manylinux_2_26_aarch64.manylinux_2_28_aarch64.whl",
+          "requires_python": ">=3.11",
+          "yanked": false
+        },
+        {
+          "filename": "pikepdf-10.16.0-cp313-cp313-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl",
+          "sha256": "e716fa800b4213a385084923ca75001fd107eed8ad29ea60ce4a3ad7c9a960b1",
+          "url": "https://files.pythonhosted.org/packages/68/fa/cb8984373a9887ad331f586a58bc73949e854b13a0eead420554f971bd7d/pikepdf-10.16.0-cp313-cp313-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl",
+          "requires_python": ">=3.11",
+          "yanked": false
+        },
+        {
+          "filename": "pikepdf-10.16.0-cp313-cp313-musllinux_1_2_aarch64.whl",
+          "sha256": "1018567024ef5b6fffaf59bdf0a4babe9cba664e7381bbe104eefa279cff0212",
+          "url": "https://files.pythonhosted.org/packages/8f/b0/d7be9ee4cf30569eae0a5b9b6b70e472955b95f12f7ce2ff4ddee5023c2d/pikepdf-10.16.0-cp313-cp313-musllinux_1_2_aarch64.whl",
+          "requires_python": ">=3.11",
+          "yanked": false
+        },
+        {
+          "filename": "pikepdf-10.16.0-cp313-cp313-musllinux_1_2_x86_64.whl",
+          "sha256": "e9b32d6017481fdee497f4f4e12a80f7382cc8ba0422d9c31c4b7ed7f91a8542",
+          "url": "https://files.pythonhosted.org/packages/8c/0d/06b571cb1e5aa34ac52b2a166ec8b2ee5ef4519a5376f4ab65e46070c29e/pikepdf-10.16.0-cp313-cp313-musllinux_1_2_x86_64.whl",
+          "requires_python": ">=3.11",
+          "yanked": false
+        },
+        {
+          "filename": "pikepdf-10.16.0-cp313-cp313-win_amd64.whl",
+          "sha256": "138568b126f17e98ef50dee88a68f6e2bed538079d54d9592575b432b2b676d0",
+          "url": "https://files.pythonhosted.org/packages/5f/f1/7a22968ffe094d3732f235fa4f7ccbe98ba202b2c6bf0b129729462d3701/pikepdf-10.16.0-cp313-cp313-win_amd64.whl",
+          "requires_python": ">=3.11",
+          "yanked": false
+        },
+        {
+          "filename": "pikepdf-10.16.0-cp313-cp313-win_arm64.whl",
+          "sha256": "2bc550b64c14794e1dee5813445f68c9e85b3b84834ac2c83972b3f84d438aee",
+          "url": "https://files.pythonhosted.org/packages/ca/7c/e7656e9317ced0d327e26b68229ec5c9dc0370a0d4249ff9783df5ce2e46/pikepdf-10.16.0-cp313-cp313-win_arm64.whl",
+          "requires_python": ">=3.11",
+          "yanked": false
+        },
+        {
+          "filename": "pikepdf-10.16.0-cp314-abi3-macosx_15_0_arm64.whl",
+          "sha256": "2363bf21060743a7c483284a0a5424ebb265318c9d7d7dd52c2b3607eeee22b5",
+          "url": "https://files.pythonhosted.org/packages/45/97/97f689727e06202c2e9e9a61c6972c489c59fcc2b935545616dc154d4d76/pikepdf-10.16.0-cp314-abi3-macosx_15_0_arm64.whl",
+          "requires_python": ">=3.11",
+          "yanked": false
+        },
+        {
+          "filename": "pikepdf-10.16.0-cp314-abi3-manylinux_2_26_aarch64.manylinux_2_28_aarch64.whl",
+          "sha256": "4aa7eb436151b1d60b732a4bde9e8277945a5a0871839a916b37545854a924fe",
+          "url": "https://files.pythonhosted.org/packages/00/d3/7a31222bef7b50eca7c0eb8d62c876db71d66a50b8fceb40862c5c1d4742/pikepdf-10.16.0-cp314-abi3-manylinux_2_26_aarch64.manylinux_2_28_aarch64.whl",
+          "requires_python": ">=3.11",
+          "yanked": false
+        },
+        {
+          "filename": "pikepdf-10.16.0-cp314-abi3-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl",
+          "sha256": "07d6af612828a0db8be8b76ffb6605adbac18ce43eb6a208bd102c7794447e30",
+          "url": "https://files.pythonhosted.org/packages/79/28/488dbae5a620685cb6c801a96f1dc4cfb02b640bf8b0a2230d056e41d4cf/pikepdf-10.16.0-cp314-abi3-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl",
+          "requires_python": ">=3.11",
+          "yanked": false
+        },
+        {
+          "filename": "pikepdf-10.16.0-cp314-abi3-musllinux_1_2_aarch64.whl",
+          "sha256": "953f2b1d7092f83d4b55091ed7c3024bd9adcff0907a847f9e4bf29e887491b4",
+          "url": "https://files.pythonhosted.org/packages/d2/d6/dc6014627e6a585421e0c06d815738c405eff44ea8f747a0bb4579b560a8/pikepdf-10.16.0-cp314-abi3-musllinux_1_2_aarch64.whl",
+          "requires_python": ">=3.11",
+          "yanked": false
+        },
+        {
+          "filename": "pikepdf-10.16.0-cp314-abi3-musllinux_1_2_x86_64.whl",
+          "sha256": "c7769ddd511e331c5236482557de14dde2aa97ce90c38529c19ba49831826a83",
+          "url": "https://files.pythonhosted.org/packages/f3/cc/5b6f359124f9a13a14c4d39bbedc5aefa435db6f75b6edd47cfd4ef9f1f6/pikepdf-10.16.0-cp314-abi3-musllinux_1_2_x86_64.whl",
+          "requires_python": ">=3.11",
+          "yanked": false
+        },
+        {
+          "filename": "pikepdf-10.16.0-cp314-abi3-win_amd64.whl",
+          "sha256": "d4bb4016b140823b6f197b4583010d437f3413ac6157f71c4ed5c86d9bba6596",
+          "url": "https://files.pythonhosted.org/packages/fe/9b/7cc77ef2719a7d22fbe0d24791ed1ae1163e2aed6a329386eaa8d5130b12/pikepdf-10.16.0-cp314-abi3-win_amd64.whl",
+          "requires_python": ">=3.11",
+          "yanked": false
+        },
+        {
+          "filename": "pikepdf-10.16.0-cp314-abi3-win_arm64.whl",
+          "sha256": "8d664f335f082aa52c8f5171afbcef8d87675efe801ab22ba8df5d2378f3230a",
+          "url": "https://files.pythonhosted.org/packages/aa/c3/5256165e7ae96545b94889d3785c0f91693fad4d0b9c3f4f21491f8cbbc1/pikepdf-10.16.0-cp314-abi3-win_arm64.whl",
+          "requires_python": ">=3.11",
+          "yanked": false
+        },
+        {
+          "filename": "pikepdf-10.16.0-cp314-cp314t-macosx_15_0_arm64.whl",
+          "sha256": "816fc2315d5af9514bca08d2d1b8bdb407df71cb479fddce70325d6dedec1e11",
+          "url": "https://files.pythonhosted.org/packages/45/68/606179005a160d84279f64d168ca3cf658b5d17fc3797a71fd8be2e8666b/pikepdf-10.16.0-cp314-cp314t-macosx_15_0_arm64.whl",
+          "requires_python": ">=3.11",
+          "yanked": false
+        },
+        {
+          "filename": "pikepdf-10.16.0-cp314-cp314t-manylinux_2_26_aarch64.manylinux_2_28_aarch64.whl",
+          "sha256": "44b61ee57a62987908da6d4c3ddf3f20f873bcbf65123404bb68ffca95397c1c",
+          "url": "https://files.pythonhosted.org/packages/5d/62/1ddba63e668cf922158bafaef94c0982382b01d9b79845a943420d41ecdf/pikepdf-10.16.0-cp314-cp314t-manylinux_2_26_aarch64.manylinux_2_28_aarch64.whl",
+          "requires_python": ">=3.11",
+          "yanked": false
+        },
+        {
+          "filename": "pikepdf-10.16.0-cp314-cp314t-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl",
+          "sha256": "26fa76796762931020e83ee2bd61e0e618b87830a460b37f6bf5cfca9505dc5e",
+          "url": "https://files.pythonhosted.org/packages/2e/fd/4d8785acd72f64a1646c3e193766c4b8daf9eca0b7797993cab97e884c4d/pikepdf-10.16.0-cp314-cp314t-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl",
+          "requires_python": ">=3.11",
+          "yanked": false
+        },
+        {
+          "filename": "pikepdf-10.16.0-cp314-cp314t-musllinux_1_2_aarch64.whl",
+          "sha256": "ffc194feec9a53e1c90e0db3b31fbbb55fbdc700d6b84367bc1d919a2dd4f60f",
+          "url": "https://files.pythonhosted.org/packages/08/b8/dbfc94348a1462be9950d9088562753aa1e90bc3d7dcc56625cb9bdd12e5/pikepdf-10.16.0-cp314-cp314t-musllinux_1_2_aarch64.whl",
+          "requires_python": ">=3.11",
+          "yanked": false
+        },
+        {
+          "filename": "pikepdf-10.16.0-cp314-cp314t-musllinux_1_2_x86_64.whl",
+          "sha256": "d483b301af46d62fc0f40a308bc457cf6ebf8b774e6ac18c3fd705ba465d7c12",
+          "url": "https://files.pythonhosted.org/packages/53/fc/c5fa05b45af932321878c2e883f2624c398d88288c5380665c20f89cc448/pikepdf-10.16.0-cp314-cp314t-musllinux_1_2_x86_64.whl",
+          "requires_python": ">=3.11",
+          "yanked": false
+        },
+        {
+          "filename": "pikepdf-10.16.0-cp314-cp314t-win_amd64.whl",
+          "sha256": "fce92028c044d2573732e135893207435edd291b5ffd3a3e1ccaff0e0c2fc27b",
+          "url": "https://files.pythonhosted.org/packages/07/b3/dc242bb31d5acb56a792e7f6b2004edffcd0af7b9a150f62ef0602618e27/pikepdf-10.16.0-cp314-cp314t-win_amd64.whl",
+          "requires_python": ">=3.11",
+          "yanked": false
+        },
+        {
+          "filename": "pikepdf-10.16.0-cp314-cp314t-win_arm64.whl",
+          "sha256": "39b0e491bc3c86e85a1489b9f2b68754a5f3cb5ffb2d015223588d60524c0dda",
+          "url": "https://files.pythonhosted.org/packages/75/10/a48f631b0e7b27dc6137f52fdaa41ed2af8541f4ec89c4d2495032414857/pikepdf-10.16.0-cp314-cp314t-win_arm64.whl",
+          "requires_python": ">=3.11",
+          "yanked": false
+        },
+        {
+          "filename": "pikepdf-10.16.0-cp315-cp315t-macosx_15_0_arm64.whl",
+          "sha256": "9d184fdb6a6904ddf0857543b38c07623c9619e0bf2a2e1e83066a9dbeda600d",
+          "url": "https://files.pythonhosted.org/packages/55/d9/1b1ffaca74dd263fc4a2785068de82fb69a851796731ca1bb1ce45865032/pikepdf-10.16.0-cp315-cp315t-macosx_15_0_arm64.whl",
+          "requires_python": ">=3.11",
+          "yanked": false
+        },
+        {
+          "filename": "pikepdf-10.16.0-cp315-cp315t-manylinux_2_26_aarch64.manylinux_2_28_aarch64.whl",
+          "sha256": "67e4bd5b85f0f592aaa578014705ed54b7319ed0cc8f4de30f7db5ee1641973c",
+          "url": "https://files.pythonhosted.org/packages/a8/a2/306d9c3f7339e63e78ed7888980c380445b9f9dac9ddc17b7727c7e2e42b/pikepdf-10.16.0-cp315-cp315t-manylinux_2_26_aarch64.manylinux_2_28_aarch64.whl",
+          "requires_python": ">=3.11",
+          "yanked": false
+        },
+        {
+          "filename": "pikepdf-10.16.0-cp315-cp315t-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl",
+          "sha256": "3f6bce6f37dfc62962e695a23c8137da202b2c3c70f65d8234d0acaa028d7dcf",
+          "url": "https://files.pythonhosted.org/packages/06/8d/a3728758c10fe17b043558b2a9d42294ada63db18b626bdf585ff1c185ca/pikepdf-10.16.0-cp315-cp315t-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl",
+          "requires_python": ">=3.11",
+          "yanked": false
+        },
+        {
+          "filename": "pikepdf-10.16.0-cp315-cp315t-musllinux_1_2_aarch64.whl",
+          "sha256": "039d6c2b035e6adc112c30a40e70e8dd7b6db47e075c32fc1bbcebf4572e6a84",
+          "url": "https://files.pythonhosted.org/packages/90/f6/9b3d8a5e5c8ae9c6fb8cc5fd2c13447082854ae12851375d55d8ebff858c/pikepdf-10.16.0-cp315-cp315t-musllinux_1_2_aarch64.whl",
+          "requires_python": ">=3.11",
+          "yanked": false
+        },
+        {
+          "filename": "pikepdf-10.16.0-cp315-cp315t-musllinux_1_2_x86_64.whl",
+          "sha256": "b288e18bb3033ed7fc8d2d2e9f020170e753ed939d06dfaa54f87c9a9a2dc7ea",
+          "url": "https://files.pythonhosted.org/packages/31/24/eff324cde803009be27e85a0c93e09be05daf2d3569b8693eab378a5d8dd/pikepdf-10.16.0-cp315-cp315t-musllinux_1_2_x86_64.whl",
+          "requires_python": ">=3.11",
+          "yanked": false
+        },
+        {
+          "filename": "pikepdf-10.16.0-cp315-cp315t-win_amd64.whl",
+          "sha256": "a97c48a1aa3f1dc753caa0fc042146e61374eb0257dbb3145a1d78fb0db5990d",
+          "url": "https://files.pythonhosted.org/packages/c7/9f/6cf5fe42d344a80671243a40c4c3b189b21b46c72baac3e8c4ec6cbaa1cc/pikepdf-10.16.0-cp315-cp315t-win_amd64.whl",
+          "requires_python": ">=3.11",
+          "yanked": false
+        },
+        {
+          "filename": "pikepdf-10.16.0-cp315-cp315t-win_arm64.whl",
+          "sha256": "5ac56ebb1ecfdf841ab50ff7692c64d6add8ae8b7f98286bf060bb884d406009",
+          "url": "https://files.pythonhosted.org/packages/0c/f1/11e892cf4e8267a3fc58c41d41f0644f6dec448db87bb319483631c85ac8/pikepdf-10.16.0-cp315-cp315t-win_arm64.whl",
+          "requires_python": ">=3.11",
+          "yanked": false
+        },
+        {
+          "filename": "pikepdf-10.16.0.tar.gz",
+          "sha256": "d9541429f079f7838f2856fea5c2ad165885693cdb36894e73d40d1b845d2e11",
+          "url": "https://files.pythonhosted.org/packages/32/80/0fb229f1d4772f102af425975b302c9de1b177b3e191ed7f7ffe24a02e98/pikepdf-10.16.0.tar.gz",
+          "requires_python": ">=3.11",
+          "yanked": false
+        }
+      ]
+    },
+    {
+      "name": "xlrd",
+      "version": "2.0.2",
+      "requires_python": "!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*,!=3.4.*,!=3.5.*,>=2.7",
+      "requires_dist": [
+        "wheel; extra == \"build\"",
+        "twine; extra == \"build\"",
+        "sphinx; extra == \"docs\"",
+        "pytest; extra == \"test\"",
+        "pytest-cov; extra == \"test\""
+      ],
+      "source_url": "https://pypi.org/pypi/xlrd/json",
+      "response_sha256": "65908571f5145477e6c9858e4692abcae819f6955e46b6ec2a70d3c137a4c9d2",
+      "files": [
+        {
+          "filename": "xlrd-2.0.2-py2.py3-none-any.whl",
+          "sha256": "ea762c3d29f4cca48d82df517b6d89fbce4db3107f9d78713e48cd321d5c9aa9",
+          "url": "https://files.pythonhosted.org/packages/1a/62/c8d562e7766786ba6587d09c5a8ba9f718ed3fa8af7f4553e8f91c36f302/xlrd-2.0.2-py2.py3-none-any.whl",
+          "requires_python": "!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*,!=3.4.*,!=3.5.*,>=2.7",
+          "yanked": false
+        },
+        {
+          "filename": "xlrd-2.0.2.tar.gz",
+          "sha256": "08b5e25de58f21ce71dc7db3b3b8106c1fa776f3024c54e45b45b374e89234c9",
+          "url": "https://files.pythonhosted.org/packages/07/5a/377161c2d3538d1990d7af382c79f3b2372e880b65de21b01b1a2b78691e/xlrd-2.0.2.tar.gz",
+          "requires_python": "!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*,!=3.4.*,!=3.5.*,>=2.7",
+          "yanked": false
+        }
+      ]
+    }
+  ]
+}

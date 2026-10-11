@@ -1,0 +1,76 @@
+{
+  "frozen_before_analysis": "2026-10-10T10:22:56.909512+00:00",
+  "hypothesis": "Human naive-vs-primed proximal genes share one-to-one orthologs with mouse P–M recurrent or same-contributor dual-reference proximal genes beyond conditional matching expectation. Support is not assumed.",
+  "setting": "supported50_p08",
+  "metric": "DWUI (WPP equivalent)",
+  "mapping": "Current 16092-row cross_overlap/ortholog_matched_features.tsv.gz; no historical selected integration table",
+  "thresholds": [
+    0.02,
+    0.05
+  ],
+  "mouse_targets": [
+    "P_M_proximal_recurrent",
+    "P_M_PS_same_contributor_dual_proximal"
+  ],
+  "mouse_definitions": "Primary WPP series-matched recurrent P_M; threshold-specific. Dual requires current same-contributor PM and PS >=threshold in recurrent direction in both CIP and WOT; do not require recurrence on PS background.",
+  "human_labels": [
+    "pooled_two_hN_vs_primed",
+    "both_hN_conditions_proximal",
+    "naive_condition_vs_primed",
+    "RSeT_condition_vs_primed",
+    "RSeT_same_library_N_vs_P"
+  ],
+  "human_definitions": "For first four, require both N6-P7 and N8-P7 measurable; pooled mean or specified per-pair effect. Both-hN requires each effect <=-threshold. Same-library uses eligible N8-P8 only; no nonexistent N6-P6 assumed.",
+  "universe": "Pair-specific common measurable one-to-one orthologs. Both mouse P_M routes measurable for recurrent target, both matched PMS routes measurable for dual target. Human complete contributors as above. Unmeasured orthologs excluded and accounted separately.",
+  "null": "Independently shuffle binary proximal membership in human and mouse within species-specific strata, preserving both selected margins in every stratum. Fixed identity map, labels/shuffling conditional on measured assay covariates.",
+  "models": {
+    "coarse_assay": [
+      "supported_proximal_movement_capacity",
+      "PAS_tercile",
+      "APA_coverage_tercile",
+      "human_relative_supported_baseline_or_mouse_native_baseline_tercile"
+    ],
+    "fine_assay_mouse_expression": [
+      "supported_proximal_movement_capacity",
+      "PAS_tercile",
+      "APA_coverage_tercile",
+      "human_relative_supported_baseline_or_mouse_native_baseline_quintile",
+      "mouse_GEX_tercile"
+    ]
+  },
+  "covariates": "Human exact naive pair APA molecules/qualified metacells average endpoints and pairs, supported retained PAS count, exact primed or same-library P DWUI from stored usage@PAS-axis positions, proximal capacity reference-minus-min axis; both-hN uses same primed reference. Mouse frozen recurrence PM-study GEX and coverage/PAS median, baseline median and minimum proximal capacity across both measurable studies. For dual target use exact matched M and S reference for baseline and two-reference proximal capacity, while frozen recurrence expression/coverage remain documented proxy contributor summaries. Human GEX absent locally and not substituted by other states.",
+  "quantile_rules": "Within each fixed test-specific measurable background, qcut with duplicate boundaries collapsed and no tie breaking; missing category -1. Same strata used for all thresholds where reference capacity is updated.",
+  "permutations": 20000,
+  "batch_size": 250,
+  "seed": "20261010 + first12SHA256(join namespace, human_label, mouse_target, threshold, model). Seed fixed by context.",
+  "statistics": [
+    "observed overlap",
+    "unmatched hypergeometric mean and upper tail descriptively",
+    "raw contingency odds ratio",
+    "analytic matched expectation sum of per-gene human_probability * mouse_probability",
+    "Monte Carlo matched count mean, 95% reference interval, excess and fold",
+    "upper-tail (1+tail)/(B+1)",
+    "mobility and exact preserved stratum margins",
+    "balance for numerical covariates"
+  ],
+  "correction": "For each model, primary .02 pooled tests against two mouse targets form BH2. Each model remaining 18 threshold/label/target tests are sensitivity BH18. Also BH20 per model and BH40 combined exploratory displayed. No switch of primary model after seeing results.",
+  "inference_scope": "Conditional ortholog gene correspondence; fixed heterogeneous human hN libraries (one naive and one RSeT), one primed library; no biological replicate or species-causal inference. Fine model lacks human expression and may have low mobility; null-model disagreement must be surfaced.",
+  "validation": [
+    "reconstruct all stored human DWUI deltas from PAS usage and weights",
+    "verify original recurrent rosters at both thresholds",
+    "verify .02 dual 207 proximal of222 overall by independent derivation",
+    "exact analytic null on toy enumeration",
+    "binary margins preserved after permutation",
+    "unmeasured genes cannot enter candidate or permutation",
+    "input hash stability",
+    "all output members measured and mapped uniquely"
+  ],
+  "data_availability_amendment_before_statistics": {
+    "timestamp": "2026-10-10T10:28:26.424842+00:00",
+    "reason": "Primary PAS_axes covers paired P/M genes only, so absolute full-native origin unavailable for naive-only genes. No overlap statistics produced before this amendment. All naive genes have current tandem eligibility native span.",
+    "reconstruction": "Parse strand and cuts from exact PAS IDs, normalize signed cut distance by frozen full-native span; constant translation cancels in DWUI differences and supported-axis proximal movement. Verify every stored DWUI delta, and weight differences against available canonical axes.",
+    "baseline": "All human genes uniformly use reference usage-weighted position relative to retained supported axis, scaled to that supported span. This is not absolute full-native baseline.",
+    "capacity": "Reference-to-most-proximal-retained-PAS movement on frozen supported axis; no gene is removed by this proxy. Boolean capacity included only as stratum covariate. Observed deltas must satisfy mathematical attainable movement; an unexpected violation will stop verification, never silently drop an event.",
+    "null_and_families": "No changes to independent shuffling, covariate count, quantile plan, correction families or draws."
+  }
+}

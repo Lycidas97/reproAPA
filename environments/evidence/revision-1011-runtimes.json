@@ -1,0 +1,53 @@
+{
+  "date": "2026-10-11",
+  "scope": "Version fields reported by the captured analysis manifests; not an independent inspection of historical installations.",
+  "records": [
+    {
+      "path": "code/notes/2026-10-10-directional-recurrence/manifest.json",
+      "sha256": "5ae17723ccd18dc594d12aad8b764a45d009501f1fefc7a4761bb378009792c1",
+      "reported_versions": {
+        "python": "3.12.14 (main, Aug 25 2026, 13:50:33) [Clang 22.1.3 ]"
+      }
+    },
+    {
+      "path": "code/notes/2026-10-10-naive-mouse-correspondence/manifest.json",
+      "sha256": "4e8d3f0bb7071da7929f76419263589594221f3f961d06ce4e9060537197d5a3",
+      "reported_versions": {
+        "python": "3.12.14 (main, Aug 25 2026, 13:50:33) [Clang 22.1.3 ]",
+        "numpy": "2.3.5",
+        "pandas": "2.2.3"
+      }
+    },
+    {
+      "path": "code/notes/2026-10-10-proximal-module-specificity/manifest.json",
+      "sha256": "06a08912d171ffd9a065d94c3603dc6a974680e092be80ab074144a7d886b15b",
+      "reported_versions": {
+        "python": "3.12.14 (main, Aug 25 2026, 13:50:33) [Clang 22.1.3 ]",
+        "numpy": "2.3.5",
+        "pandas": "2.2.3"
+      }
+    },
+    {
+      "path": "code/notes/2026-10-10-recurrence-utr-ortholog/manifest.json",
+      "sha256": "4b3f87dd9c000be8d5c631ae39db84280611d8e2c38342ed46803e6f3c6b1149",
+      "reported_versions": {
+        "python": "3.12.14 (main, Aug 25 2026, 13:50:33) [Clang 22.1.3 ]",
+        "numpy": "2.3.5",
+        "pandas": "2.2.3"
+      }
+    },
+    {
+      "path": "code/notes/2026-10-10-rna-module-enrichment/manifest.json",
+      "sha256": "d1abab5627db92e504540fae11a10458de4ddc288ceca5d4d1565c6c96823c83",
+      "reported_versions": {
+        "python": "3.12.14",
+        "numpy": "2.3.5",
+        "pandas": "2.2.3"
+      }
+    }
+  ],
+  "reconstruction_targets": {
+    "general_assembly": "revision-1011",
+    "recorded_statistical_workflows": "revision-1011-statistics"
+  }
+}

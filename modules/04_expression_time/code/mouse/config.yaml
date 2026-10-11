@@ -1,0 +1,39 @@
+seed: 20260902
+config_path: config.yaml
+project_root: /root/nfsdata/apadetect/analysis_projects/mouse_time_aware_integration_pilot_v1
+python: /root/nfsdata/apadetect/analysis_projects/mouse_time_aware_integration_pilot_v1/.g2g-venv/bin/python
+conda_library_path: /root/miniconda3/envs/saturn-alignment/lib
+cells_per_route_time: 100
+max_libraries_per_route_time: 1
+n_hvg: 3000
+n_latent: 20
+max_epochs: 120
+batch_size: 128
+data_root: /root/nfsdata/apadetect/data/reprogramming_differentiation_apa/analyses/raw_realignment_apa_2026-06-07
+wot_scope: /root/nfsdata/apadetect/analysis_projects/reprogramming_qc_v3_2_clustering_release_v1/results_qc_v3_2_studywide_v1/wot/scopes/studywide
+wot_route_membership: /root/nfsdata/multica/worktrees/apadetect/DOC-54-wot-readiness/analyses/FGA01-wot-factorized-gex-annotation-v1/frozen_local_state_membership.tsv.gz
+route_registry: /root/nfsdata/apadetect/analysis_projects/reprogramming_route_specific_clustering_v1/results_gse103221_osk_pilot/cell_registry/clustering_cell_registry.tsv.gz
+output_root: results_v3_common_to_2i
+route_pseudotime_root: results_route_pseudotime_v1
+scvi_reference_root: results_scvi_reference_expression
+raw_alignment_root: results_genes2genes_rank_raw_marker_holdout_v1
+scvi_alignment_root: results_genes2genes_rank_scvi_wot_marker_holdout_v1
+program_validation_root: results_program_validation_rank_marker_holdout_v1
+alignment_sensitivity_root: results_genes2genes_grid_sensitivity_v1
+alignment_bins:
+  - 10
+  - 14
+  - 20
+stable_integration_root: results_stable_gap_aware_umap_v1
+state_consensus_root: results_state_level_consensus_v1
+state_node_resolutions:
+  - 8
+  - 10
+  - 12
+state_primary_bins: 10
+state_guided_umap_root: results_state_guided_umap_v1
+reference_free_consensus_root: results_reference_free_consensus_v1
+reference_free_bootstrap_root: results_reference_free_checkpoint_bootstrap_v1
+candidate_bootstrap_root: results_reference_free_candidate_bootstrap_pilot_v1
+candidate_checkpoints: candidate_checkpoints_cells500.tsv
+program_marker_evidence: /root/nfsdata/apadetect/analysis_projects/mouse_time_aware_integration_pilot_v1/mouse_program_marker_evidence.tsv

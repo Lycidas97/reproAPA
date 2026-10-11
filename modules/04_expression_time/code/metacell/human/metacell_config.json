@@ -1,0 +1,18 @@
+{
+  "seed": 20260905,
+  "target_cells": 50,
+  "n_hvg": 3000,
+  "n_pcs": 30,
+  "n_neighbors": 15,
+  "n_waypoint_eigs": 10,
+  "convergence_epsilon": 0.001,
+  "min_iter": 10,
+  "max_iter": 100,
+  "jobs": 4,
+  "threads_per_library": 2,
+  "expected_cells": 215114,
+  "expected_libraries": 59,
+  "expected_states": 62,
+  "python": "/root/nfsdata/apadetect/analysis_projects/mouse_time_aware_integration_pilot_v1/.seacells-main-venv/bin/python",
+  "output": "results_metacell_v1"
+}

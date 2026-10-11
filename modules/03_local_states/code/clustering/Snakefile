@@ -1,0 +1,539 @@
+from pathlib import Path
+import math
+import yaml
+
+
+BUNDLE = Path(workflow.basedir).resolve()
+SCRIPTS = BUNDLE / "scripts"
+PROJECT_CONFIG = Path(config.get("project_config_path", BUNDLE / "config.yaml")).resolve()
+BASE = config["output_root"]
+PYTHON = config["python"]
+PYTHONPATH = f"{BUNDLE / 'vendor'}:{SCRIPTS}"
+
+STUDY_CONFIG_PATHS = {
+    dataset: (BUNDLE / path).resolve()
+    for dataset, path in config["dataset_configs"].items()
+}
+STUDY_CONFIGS = {
+    dataset: yaml.safe_load(path.read_text(encoding="utf-8"))
+    for dataset, path in STUDY_CONFIG_PATHS.items()
+}
+DATASETS = sorted(STUDY_CONFIGS)
+UNITS = [
+    (dataset, scope)
+    for dataset in DATASETS
+    for scope in sorted(STUDY_CONFIGS[dataset]["scopes"])
+]
+ALL_SCOPES = sorted({scope for _, scope in UNITS})
+SWEEP_SHARDS = [f"{index:03d}" for index in range(int(config["selection"]["n_shards"]))]
+
+
+def study_config_path(wildcards):
+    return str(STUDY_CONFIG_PATHS[wildcards.dataset])
+
+
+def scope_release_markers(dataset):
+    return [f"{BASE}/{dataset}/scopes/{scope}/release/.ok" for scope in sorted(STUDY_CONFIGS[dataset]["scopes"])]
+
+
+def evaluation_target_cells(wildcards):
+    selection = config["selection"]
+    full_n = int(STUDY_CONFIGS[wildcards.dataset]["scopes"][wildcards.scope]["n_cells"])
+    if "target_evaluation_fraction" not in selection:
+        return min(full_n, int(selection["max_evaluation_cells"]))
+    target = max(
+        int(selection["min_evaluation_cells"]),
+        math.ceil(full_n * float(selection["target_evaluation_fraction"])),
+    )
+    return min(full_n, int(selection["max_evaluation_cells"]), target)
+
+
+wildcard_constraints:
+    dataset="|".join(DATASETS),
+    scope="|".join(ALL_SCOPES),
+    shard="|".join(SWEEP_SHARDS)
+
+
+rule all:
+    input:
+        f"{BASE}/cell_registry/.ok"
+
+
+rule preflight:
+    input:
+        study_config=study_config_path
+    output:
+        report=f"{BASE}/{{dataset}}/scopes/{{scope}}/preflight/report.json",
+        marker=f"{BASE}/{{dataset}}/scopes/{{scope}}/preflight/.ok"
+    threads: 1
+    resources:
+        mem_mb=int(config["resources"]["preflight_mem_mb"])
+    shell:
+        "PYTHONPATH={PYTHONPATH} {PYTHON} {SCRIPTS}/preflight.py "
+        "--config {input.study_config} --scope {wildcards.scope} "
+        "--report {output.report} --marker {output.marker}"
+
+
+rule prepare_scope:
+    input:
+        preflight=f"{BASE}/{{dataset}}/scopes/{{scope}}/preflight/.ok",
+        study_config=study_config_path
+    output:
+        marker=f"{BASE}/{{dataset}}/scopes/{{scope}}/prepared/.ok",
+        matrix=f"{BASE}/{{dataset}}/scopes/{{scope}}/prepared/log1p_gex.npz",
+        cells=f"{BASE}/{{dataset}}/scopes/{{scope}}/prepared/cells.tsv.gz",
+        features=f"{BASE}/{{dataset}}/scopes/{{scope}}/prepared/features.tsv.gz"
+    threads: 4
+    resources:
+        mem_mb=int(config["resources"]["prepare_mem_mb"])
+    shell:
+        "OPENBLAS_NUM_THREADS={threads} OMP_NUM_THREADS={threads} MKL_NUM_THREADS={threads} "
+        "PYTHONPATH={PYTHONPATH} {PYTHON} {SCRIPTS}/prepare_scope.py "
+        "--config {input.study_config} --scope {wildcards.scope} "
+        "--output-root {BASE}/{wildcards.dataset}"
+
+
+rule fit_embedding:
+    input:
+        prepared=f"{BASE}/{{dataset}}/scopes/{{scope}}/prepared/.ok",
+        study_config=study_config_path
+    output:
+        marker=f"{BASE}/{{dataset}}/scopes/{{scope}}/embedding/.ok",
+        pca=f"{BASE}/{{dataset}}/scopes/{{scope}}/embedding/pca.npy",
+        pca_model=f"{BASE}/{{dataset}}/scopes/{{scope}}/embedding/pca_model.npz",
+        graph=f"{BASE}/{{dataset}}/scopes/{{scope}}/embedding/knn_graph.npz"
+    threads: 8
+    resources:
+        mem_mb=int(config["resources"]["embedding_mem_mb"])
+    shell:
+        "OPENBLAS_NUM_THREADS={threads} OMP_NUM_THREADS={threads} MKL_NUM_THREADS={threads} NUMBA_NUM_THREADS={threads} "
+        "PYTHONPATH={PYTHONPATH} {PYTHON} {SCRIPTS}/fit_embedding.py "
+        "--config {input.study_config} --scope {wildcards.scope} "
+        "--output-root {BASE}/{wildcards.dataset} --threads {threads}"
+
+
+rule prepare_sensitivity:
+    input:
+        prepared=f"{BASE}/{{dataset}}/scopes/{{scope}}/prepared/.ok",
+        features=f"{BASE}/{{dataset}}/scopes/{{scope}}/prepared/features.tsv.gz",
+        study_config=study_config_path
+    output:
+        marker=f"{BASE}/{{dataset}}/scopes/{{scope}}/sensitivity/prepared/.ok",
+        matrix=f"{BASE}/{{dataset}}/scopes/{{scope}}/sensitivity/prepared/log1p_gex.npz",
+        cells=f"{BASE}/{{dataset}}/scopes/{{scope}}/sensitivity/prepared/cells.tsv.gz"
+    threads: 4
+    resources:
+        mem_mb=int(config["resources"]["prepare_mem_mb"])
+    shell:
+        "OPENBLAS_NUM_THREADS={threads} OMP_NUM_THREADS={threads} MKL_NUM_THREADS={threads} "
+        "PYTHONPATH={PYTHONPATH} {PYTHON} {SCRIPTS}/prepare_sensitivity.py "
+        "--config {input.study_config} --scope {wildcards.scope} "
+        "--scope-root {BASE}/{wildcards.dataset}/scopes/{wildcards.scope}"
+
+
+rule select_evaluation_cohort:
+    input:
+        embedding=f"{BASE}/{{dataset}}/scopes/{{scope}}/embedding/.ok",
+        cells=f"{BASE}/{{dataset}}/scopes/{{scope}}/prepared/cells.tsv.gz"
+    output:
+        marker=f"{BASE}/{{dataset}}/scopes/{{scope}}/cohort/.ok",
+        cells=f"{BASE}/{{dataset}}/scopes/{{scope}}/cohort/evaluation_cells.tsv.gz"
+    threads: 1
+    resources:
+        mem_mb=4000
+    params:
+        max_cells=evaluation_target_cells,
+        seed=int(config["selection"]["seed"])
+    shell:
+        "PYTHONPATH={PYTHONPATH} {PYTHON} {SCRIPTS}/select_cohort.py "
+        "--cells {input.cells} --max-cells {params.max_cells} --seed {params.seed} "
+        "--output-dir {BASE}/{wildcards.dataset}/scopes/{wildcards.scope}/cohort"
+
+
+rule resolution_full:
+    input:
+        cohort=f"{BASE}/{{dataset}}/scopes/{{scope}}/cohort/.ok",
+        embedding=f"{BASE}/{{dataset}}/scopes/{{scope}}/embedding/.ok",
+        study_config=study_config_path,
+        project_config=str(PROJECT_CONFIG)
+    output:
+        marker=f"{BASE}/{{dataset}}/scopes/{{scope}}/sweep/full/.ok",
+        labels=f"{BASE}/{{dataset}}/scopes/{{scope}}/sweep/full/full_labels.npz",
+        full=f"{BASE}/{{dataset}}/scopes/{{scope}}/sweep/full_partitions.tsv.gz"
+    threads: 4
+    resources:
+        mem_mb=int(config["resources"]["sweep_mem_mb"])
+    shell:
+        "OPENBLAS_NUM_THREADS={threads} OMP_NUM_THREADS={threads} MKL_NUM_THREADS={threads} NUMBA_NUM_THREADS={threads} "
+        "PYTHONPATH={PYTHONPATH} {PYTHON} {SCRIPTS}/resolution_full.py "
+        "--study-config {input.study_config} --project-config {input.project_config} "
+        "--scope {wildcards.scope} --output-root {BASE}/{wildcards.dataset} --threads {threads}"
+
+
+rule resolution_shard:
+    input:
+        cohort=f"{BASE}/{{dataset}}/scopes/{{scope}}/cohort/.ok",
+        embedding=f"{BASE}/{{dataset}}/scopes/{{scope}}/embedding/.ok",
+        study_config=study_config_path,
+        project_config=str(PROJECT_CONFIG)
+    output:
+        marker=f"{BASE}/{{dataset}}/scopes/{{scope}}/sweep/shards/{{shard}}/.ok",
+        partitions=f"{BASE}/{{dataset}}/scopes/{{scope}}/sweep/shards/{{shard}}/partitions.npz",
+        manifest=f"{BASE}/{{dataset}}/scopes/{{scope}}/sweep/shards/{{shard}}/manifest.tsv"
+    threads: 1
+    resources:
+        mem_mb=int(config["resources"]["sweep_shard_mem_mb"])
+    params:
+        shard_index=lambda wildcards: int(wildcards.shard),
+        n_shards=len(SWEEP_SHARDS)
+    shell:
+        "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 MKL_NUM_THREADS=1 NUMBA_NUM_THREADS=1 "
+        "PYTHONPATH={PYTHONPATH} {PYTHON} {SCRIPTS}/resolution_shard.py "
+        "--study-config {input.study_config} --project-config {input.project_config} "
+        "--scope {wildcards.scope} --output-root {BASE}/{wildcards.dataset} "
+        "--shard-index {params.shard_index} --n-shards {params.n_shards} --threads {threads}"
+
+
+rule merge_resolution_sweep:
+    input:
+        full=f"{BASE}/{{dataset}}/scopes/{{scope}}/sweep/full/full_labels.npz",
+        shards=lambda wildcards: expand(
+            f"{BASE}/{wildcards.dataset}/scopes/{wildcards.scope}/sweep/shards/{{shard}}/partitions.npz",
+            shard=SWEEP_SHARDS,
+        ),
+        manifests=lambda wildcards: expand(
+            f"{BASE}/{wildcards.dataset}/scopes/{wildcards.scope}/sweep/shards/{{shard}}/manifest.tsv",
+            shard=SWEEP_SHARDS,
+        ),
+        project_config=str(PROJECT_CONFIG)
+    output:
+        marker=f"{BASE}/{{dataset}}/scopes/{{scope}}/sweep/.ok",
+        partitions=f"{BASE}/{{dataset}}/scopes/{{scope}}/sweep/partitions.npz"
+    threads: 1
+    resources:
+        mem_mb=int(config["resources"]["sweep_merge_mem_mb"])
+    shell:
+        "PYTHONPATH={PYTHONPATH} {PYTHON} {SCRIPTS}/merge_resolution_sweep.py "
+        "--full {input.full} --shards {input.shards} --manifests {input.manifests} "
+        "--project-config {input.project_config} "
+        "--output-dir {BASE}/{wildcards.dataset}/scopes/{wildcards.scope}/sweep"
+
+
+rule summarize_chooseR:
+    input:
+        partitions=f"{BASE}/{{dataset}}/scopes/{{scope}}/sweep/partitions.npz",
+        cells=f"{BASE}/{{dataset}}/scopes/{{scope}}/cohort/evaluation_cells.tsv.gz"
+    output:
+        marker=f"{BASE}/{{dataset}}/scopes/{{scope}}/chooseR/.ok",
+        metrics=f"{BASE}/{{dataset}}/scopes/{{scope}}/chooseR/resolution_metrics.tsv"
+    threads: 8
+    resources:
+        mem_mb=int(config["resources"]["summarize_mem_mb"])
+    params:
+        ci_resamples=int(config["selection"]["ci_resamples"]),
+        seed=int(config["selection"]["seed"])
+    shell:
+        "OPENBLAS_NUM_THREADS={threads} OMP_NUM_THREADS={threads} MKL_NUM_THREADS={threads} "
+        "PYTHONPATH={PYTHONPATH} {PYTHON} {SCRIPTS}/summarize_chooseR.py "
+        "--partitions {input.partitions} --cells {input.cells} --ci-resamples {params.ci_resamples} "
+        "--seed {params.seed} --output-dir {BASE}/{wildcards.dataset}/scopes/{wildcards.scope}/chooseR"
+
+
+rule select_resolution:
+    input:
+        metrics=f"{BASE}/{{dataset}}/scopes/{{scope}}/chooseR/resolution_metrics.tsv"
+    output:
+        marker=f"{BASE}/{{dataset}}/scopes/{{scope}}/selection/.ok",
+        decision=f"{BASE}/{{dataset}}/scopes/{{scope}}/selection/selected_resolution.json",
+        figure=f"{BASE}/{{dataset}}/scopes/{{scope}}/selection/resolution_selection.png"
+    threads: 1
+    resources:
+        mem_mb=4000
+    params:
+        minimum=int(config["diagnostics"]["minimum_cluster_cells"])
+    shell:
+        "PYTHONPATH={PYTHONPATH} {PYTHON} {SCRIPTS}/select_resolution.py "
+        "--metrics {input.metrics} --minimum-cluster-cells {params.minimum} "
+        "--output-dir {BASE}/{wildcards.dataset}/scopes/{wildcards.scope}/selection"
+
+
+rule freeze_partition:
+    input:
+        selection=f"{BASE}/{{dataset}}/scopes/{{scope}}/selection/.ok",
+        graph=f"{BASE}/{{dataset}}/scopes/{{scope}}/embedding/knn_graph.npz",
+        study_config=study_config_path,
+        project_config=str(PROJECT_CONFIG)
+    output:
+        marker=f"{BASE}/{{dataset}}/scopes/{{scope}}/frozen/.ok",
+        clusters=f"{BASE}/{{dataset}}/scopes/{{scope}}/frozen/cell_clusters.tsv.gz"
+    threads: 2
+    resources:
+        mem_mb=16000
+    shell:
+        "PYTHONPATH={PYTHONPATH} {PYTHON} {SCRIPTS}/freeze_partition.py "
+        "--study-config {input.study_config} --project-config {input.project_config} "
+        "--scope {wildcards.scope} --scope-root {BASE}/{wildcards.dataset}/scopes/{wildcards.scope}"
+
+
+rule resolution_tree:
+    input:
+        partitions=f"{BASE}/{{dataset}}/scopes/{{scope}}/sweep/full_partitions.tsv.gz",
+        selection=f"{BASE}/{{dataset}}/scopes/{{scope}}/selection/.ok",
+        decision=f"{BASE}/{{dataset}}/scopes/{{scope}}/selection/selected_resolution.json"
+    output:
+        marker=f"{BASE}/{{dataset}}/scopes/{{scope}}/tree/.ok",
+        figure=f"{BASE}/{{dataset}}/scopes/{{scope}}/tree/resolution_tree.png",
+        focused=f"{BASE}/{{dataset}}/scopes/{{scope}}/tree/resolution_tree_selected_window.png"
+    threads: 1
+    resources:
+        mem_mb=16000
+    shell:
+        "PYTHONPATH={PYTHONPATH} {PYTHON} {SCRIPTS}/resolution_tree.py "
+        "--partitions {input.partitions} --selected-json {input.decision} "
+        "--output-dir {BASE}/{wildcards.dataset}/scopes/{wildcards.scope}/tree"
+
+
+rule marker_audit:
+    input:
+        clusters=f"{BASE}/{{dataset}}/scopes/{{scope}}/frozen/cell_clusters.tsv.gz",
+        matrix=f"{BASE}/{{dataset}}/scopes/{{scope}}/prepared/log1p_gex.npz",
+        features=f"{BASE}/{{dataset}}/scopes/{{scope}}/prepared/features.tsv.gz"
+    output:
+        marker=f"{BASE}/{{dataset}}/scopes/{{scope}}/markers/.ok",
+        table=f"{BASE}/{{dataset}}/scopes/{{scope}}/markers/top_markers.tsv"
+    threads: 8
+    resources:
+        mem_mb=int(config["resources"]["diagnostic_mem_mb"])
+    params:
+        top_n=int(config["diagnostics"]["marker_top_n"])
+    shell:
+        "OPENBLAS_NUM_THREADS={threads} OMP_NUM_THREADS={threads} MKL_NUM_THREADS={threads} "
+        "PYTHONPATH={PYTHONPATH} {PYTHON} {SCRIPTS}/marker_audit.py "
+        "--matrix {input.matrix} --features {input.features} --clusters {input.clusters} "
+        "--top-n {params.top_n} --output-dir {BASE}/{wildcards.dataset}/scopes/{wildcards.scope}/markers"
+
+
+rule technical_audit:
+    input:
+        clusters=f"{BASE}/{{dataset}}/scopes/{{scope}}/frozen/cell_clusters.tsv.gz"
+    output:
+        marker=f"{BASE}/{{dataset}}/scopes/{{scope}}/technical/.ok",
+        summary=f"{BASE}/{{dataset}}/scopes/{{scope}}/technical/summary.json"
+    threads: 1
+    resources:
+        mem_mb=8000
+    shell:
+        "PYTHONPATH={PYTHONPATH} {PYTHON} {SCRIPTS}/technical_audit.py "
+        "--clusters {input.clusters} --output-dir {BASE}/{wildcards.dataset}/scopes/{wildcards.scope}/technical"
+
+
+rule classifier_audit:
+    input:
+        clusters=f"{BASE}/{{dataset}}/scopes/{{scope}}/frozen/cell_clusters.tsv.gz",
+        pca=f"{BASE}/{{dataset}}/scopes/{{scope}}/embedding/pca.npy"
+    output:
+        marker=f"{BASE}/{{dataset}}/scopes/{{scope}}/classifier/.ok",
+        summary=f"{BASE}/{{dataset}}/scopes/{{scope}}/classifier/summary.json",
+        figure=f"{BASE}/{{dataset}}/scopes/{{scope}}/classifier/classifier_confusion.png"
+    threads: 8
+    resources:
+        mem_mb=32000
+    params:
+        max_cells=int(config["diagnostics"]["classifier_max_cells"]),
+        seed=int(config["selection"]["seed"])
+    shell:
+        "OPENBLAS_NUM_THREADS={threads} OMP_NUM_THREADS={threads} MKL_NUM_THREADS={threads} "
+        "PYTHONPATH={PYTHONPATH} {PYTHON} {SCRIPTS}/classifier_audit.py "
+        "--pca {input.pca} --clusters {input.clusters} --max-cells {params.max_cells} --seed {params.seed} "
+        "--output-dir {BASE}/{wildcards.dataset}/scopes/{wildcards.scope}/classifier"
+
+
+rule visualize_partition:
+    input:
+        clusters=f"{BASE}/{{dataset}}/scopes/{{scope}}/frozen/cell_clusters.tsv.gz",
+        pca=f"{BASE}/{{dataset}}/scopes/{{scope}}/embedding/pca.npy"
+    output:
+        marker=f"{BASE}/{{dataset}}/scopes/{{scope}}/visual/.ok",
+        figure=f"{BASE}/{{dataset}}/scopes/{{scope}}/visual/partition_umap.png",
+        coordinates=f"{BASE}/{{dataset}}/scopes/{{scope}}/visual/umap_coordinates.tsv.gz"
+    threads: 8
+    resources:
+        mem_mb=int(config["resources"]["diagnostic_mem_mb"])
+    params:
+        seed=int(config["selection"]["seed"]),
+        max_cells=int(config["diagnostics"]["umap_max_points_per_panel"])
+    shell:
+        "OPENBLAS_NUM_THREADS={threads} OMP_NUM_THREADS={threads} MKL_NUM_THREADS={threads} NUMBA_NUM_THREADS={threads} "
+        "PYTHONPATH={PYTHONPATH} {PYTHON} {SCRIPTS}/visualize_partition.py "
+        "--pca {input.pca} --clusters {input.clusters} --seed {params.seed} --max-plot-cells {params.max_cells} "
+        "--output-dir {BASE}/{wildcards.dataset}/scopes/{wildcards.scope}/visual"
+
+
+rule full_partition_audit:
+    input:
+        evaluation=f"{BASE}/{{dataset}}/scopes/{{scope}}/sweep/full_partitions.tsv.gz",
+        decision=f"{BASE}/{{dataset}}/scopes/{{scope}}/selection/selected_resolution.json",
+        clusters=f"{BASE}/{{dataset}}/scopes/{{scope}}/frozen/cell_clusters.tsv.gz"
+    output:
+        marker=f"{BASE}/{{dataset}}/scopes/{{scope}}/full_partition_audit/.ok",
+        summary=f"{BASE}/{{dataset}}/scopes/{{scope}}/full_partition_audit/summary.json",
+        clusters=f"{BASE}/{{dataset}}/scopes/{{scope}}/full_partition_audit/cluster_transfer_audit.tsv",
+        figure=f"{BASE}/{{dataset}}/scopes/{{scope}}/full_partition_audit/evaluation_to_full_transfer.png"
+    threads: 1
+    resources:
+        mem_mb=16000
+    params:
+        minimum=int(config["diagnostics"]["minimum_cluster_cells"]),
+        eval_minimum=int(config["diagnostics"]["minimum_evaluation_cluster_cells"]),
+        ari=float(config["diagnostics"]["minimum_transfer_ari"]),
+        jaccard=float(config["diagnostics"]["minimum_cluster_transfer_jaccard"]),
+        purity=float(config["diagnostics"]["minimum_cluster_transfer_purity"]),
+        recall=float(config["diagnostics"]["minimum_cluster_transfer_recall"]),
+        drift=float(config["diagnostics"]["maximum_cluster_count_drift_fraction"])
+    shell:
+        "PYTHONPATH={PYTHONPATH} {PYTHON} {SCRIPTS}/full_partition_audit.py "
+        "--evaluation-partitions {input.evaluation} --selected-json {input.decision} "
+        "--frozen-clusters {input.clusters} --minimum-cluster-cells {params.minimum} "
+        "--minimum-evaluation-cluster-cells {params.eval_minimum} --minimum-transfer-ari {params.ari} "
+        "--minimum-cluster-jaccard {params.jaccard} --minimum-cluster-purity {params.purity} "
+        "--minimum-cluster-recall {params.recall} --maximum-cluster-count-drift-fraction {params.drift} "
+        "--output-dir {BASE}/{wildcards.dataset}/scopes/{wildcards.scope}/full_partition_audit"
+
+
+rule program_audit:
+    input:
+        matrix=f"{BASE}/{{dataset}}/scopes/{{scope}}/prepared/log1p_gex.npz",
+        features=f"{BASE}/{{dataset}}/scopes/{{scope}}/prepared/features.tsv.gz",
+        clusters=f"{BASE}/{{dataset}}/scopes/{{scope}}/frozen/cell_clusters.tsv.gz",
+        umap=f"{BASE}/{{dataset}}/scopes/{{scope}}/visual/umap_coordinates.tsv.gz"
+    output:
+        marker=f"{BASE}/{{dataset}}/scopes/{{scope}}/program_audit/.ok",
+        summary=f"{BASE}/{{dataset}}/scopes/{{scope}}/program_audit/summary.json",
+        cell_scores=f"{BASE}/{{dataset}}/scopes/{{scope}}/program_audit/cell_program_scores.tsv.gz",
+        clusters=f"{BASE}/{{dataset}}/scopes/{{scope}}/program_audit/cluster_program_scores.tsv",
+        figure=f"{BASE}/{{dataset}}/scopes/{{scope}}/program_audit/program_overlay.png"
+    threads: 4
+    resources:
+        mem_mb=int(config["resources"]["diagnostic_mem_mb"])
+    params:
+        cell_cycle=float(config["diagnostics"]["maximum_cell_cycle_polarization_without_review"]),
+        positive_program=float(config["diagnostics"]["maximum_positive_program_mean_without_review"])
+    shell:
+        "OPENBLAS_NUM_THREADS={threads} OMP_NUM_THREADS={threads} MKL_NUM_THREADS={threads} "
+        "PYTHONPATH={PYTHONPATH} {PYTHON} {SCRIPTS}/program_audit.py "
+        "--matrix {input.matrix} --features {input.features} --clusters {input.clusters} "
+        "--umap {input.umap} --maximum-cell-cycle-polarization {params.cell_cycle} "
+        "--maximum-positive-program-mean {params.positive_program} "
+        "--output-dir {BASE}/{wildcards.dataset}/scopes/{wildcards.scope}/program_audit"
+
+
+rule project_sensitivity:
+    input:
+        prepared=f"{BASE}/{{dataset}}/scopes/{{scope}}/sensitivity/prepared/.ok",
+        matrix=f"{BASE}/{{dataset}}/scopes/{{scope}}/sensitivity/prepared/log1p_gex.npz",
+        cells=f"{BASE}/{{dataset}}/scopes/{{scope}}/sensitivity/prepared/cells.tsv.gz",
+        pca_model=f"{BASE}/{{dataset}}/scopes/{{scope}}/embedding/pca_model.npz",
+        primary_pca=f"{BASE}/{{dataset}}/scopes/{{scope}}/embedding/pca.npy",
+        clusters=f"{BASE}/{{dataset}}/scopes/{{scope}}/frozen/cell_clusters.tsv.gz",
+        umap=f"{BASE}/{{dataset}}/scopes/{{scope}}/visual/umap_coordinates.tsv.gz",
+        study_config=study_config_path
+    output:
+        marker=f"{BASE}/{{dataset}}/scopes/{{scope}}/sensitivity/projection/.ok",
+        summary=f"{BASE}/{{dataset}}/scopes/{{scope}}/sensitivity/projection/summary.json",
+        table=f"{BASE}/{{dataset}}/scopes/{{scope}}/sensitivity/projection/sensitivity_projection.tsv.gz",
+        figure=f"{BASE}/{{dataset}}/scopes/{{scope}}/sensitivity/projection/sensitivity_projection.png"
+    threads: 8
+    resources:
+        mem_mb=int(config["resources"]["diagnostic_mem_mb"])
+    params:
+        neighbors=int(config["diagnostics"]["projection_neighbors"]),
+        quantile=float(config["diagnostics"]["projection_support_quantile"]),
+        components=lambda wc: int(STUDY_CONFIGS[wc.dataset]["scopes"][wc.scope]["pipeline"]["pca_n_components_used"]),
+        seed=int(config["selection"]["seed"]),
+        max_cells=int(config["diagnostics"]["umap_max_points_per_panel"])
+    shell:
+        "OPENBLAS_NUM_THREADS={threads} OMP_NUM_THREADS={threads} MKL_NUM_THREADS={threads} NUMBA_NUM_THREADS={threads} "
+        "PYTHONPATH={PYTHONPATH} {PYTHON} {SCRIPTS}/project_sensitivity.py "
+        "--sensitivity-matrix {input.matrix} --sensitivity-cells {input.cells} --pca-model {input.pca_model} "
+        "--primary-pca {input.primary_pca} --primary-clusters {input.clusters} --primary-umap {input.umap} "
+        "--neighbors {params.neighbors} --support-quantile {params.quantile} "
+        "--pca-components-used {params.components} --seed {params.seed} --threads {threads} "
+        "--max-plot-cells {params.max_cells} "
+        "--output-dir {BASE}/{wildcards.dataset}/scopes/{wildcards.scope}/sensitivity/projection"
+
+
+rule validate_scope_release:
+    input:
+        selection=f"{BASE}/{{dataset}}/scopes/{{scope}}/selection/.ok",
+        frozen=f"{BASE}/{{dataset}}/scopes/{{scope}}/frozen/.ok",
+        tree=f"{BASE}/{{dataset}}/scopes/{{scope}}/tree/.ok",
+        markers=f"{BASE}/{{dataset}}/scopes/{{scope}}/markers/.ok",
+        technical=f"{BASE}/{{dataset}}/scopes/{{scope}}/technical/.ok",
+        classifier=f"{BASE}/{{dataset}}/scopes/{{scope}}/classifier/.ok",
+        visual=f"{BASE}/{{dataset}}/scopes/{{scope}}/visual/.ok",
+        full_partition=f"{BASE}/{{dataset}}/scopes/{{scope}}/full_partition_audit/.ok",
+        programs=f"{BASE}/{{dataset}}/scopes/{{scope}}/program_audit/.ok",
+        sensitivity=f"{BASE}/{{dataset}}/scopes/{{scope}}/sensitivity/projection/.ok"
+    output:
+        marker=f"{BASE}/{{dataset}}/scopes/{{scope}}/release/.ok",
+        report=f"{BASE}/{{dataset}}/scopes/{{scope}}/release/scope_release.json"
+    threads: 1
+    resources:
+        mem_mb=8000
+    shell:
+        "PYTHONPATH={PYTHONPATH} {PYTHON} {SCRIPTS}/validate_scope_release.py "
+        "--scope-root {BASE}/{wildcards.dataset}/scopes/{wildcards.scope}"
+
+
+rule dataset_release:
+    input:
+        lambda wildcards: scope_release_markers(wildcards.dataset)
+    output:
+        marker=f"{BASE}/{{dataset}}/release/.ok",
+        table=f"{BASE}/{{dataset}}/release/dataset_release.tsv"
+    threads: 1
+    resources:
+        mem_mb=4000
+    shell:
+        "PYTHONPATH={PYTHONPATH} {PYTHON} {SCRIPTS}/aggregate_release.py "
+        "--output-root {BASE} --dataset {wildcards.dataset} --output-dir {BASE}/{wildcards.dataset}/release"
+
+
+rule project_release:
+    input:
+        expand(f"{BASE}/{{dataset}}/release/.ok", dataset=DATASETS)
+    output:
+        marker=f"{BASE}/release/.ok",
+        table=f"{BASE}/release/project_release.tsv"
+    threads: 1
+    resources:
+        mem_mb=4000
+    shell:
+        "PYTHONPATH={PYTHONPATH} {PYTHON} {SCRIPTS}/aggregate_release.py "
+        "--output-root {BASE} --output-dir {BASE}/release"
+
+
+rule clustering_cell_registry:
+    input:
+        project_release=f"{BASE}/release/.ok",
+        scope_releases=expand(f"{BASE}/{{dataset}}/scopes/studywide/release/scope_release.json", dataset=DATASETS),
+        primary_cells=expand(f"{BASE}/{{dataset}}/scopes/studywide/prepared/cells.tsv.gz", dataset=DATASETS),
+        primary=expand(f"{BASE}/{{dataset}}/scopes/studywide/frozen/cell_clusters.tsv.gz", dataset=DATASETS),
+        primary_programs=expand(f"{BASE}/{{dataset}}/scopes/studywide/program_audit/cell_program_scores.tsv.gz", dataset=DATASETS),
+        cluster_programs=expand(f"{BASE}/{{dataset}}/scopes/studywide/program_audit/cluster_program_scores.tsv", dataset=DATASETS),
+        cluster_transfer=expand(f"{BASE}/{{dataset}}/scopes/studywide/full_partition_audit/cluster_transfer_audit.tsv", dataset=DATASETS),
+        sensitivity_cells=expand(f"{BASE}/{{dataset}}/scopes/studywide/sensitivity/prepared/cells.tsv.gz", dataset=DATASETS),
+        sensitivity=expand(f"{BASE}/{{dataset}}/scopes/studywide/sensitivity/projection/sensitivity_projection.tsv.gz", dataset=DATASETS)
+    output:
+        marker=f"{BASE}/cell_registry/.ok",
+        registry=f"{BASE}/cell_registry/clustering_cell_registry.tsv.gz",
+        summary=f"{BASE}/cell_registry/summary.json",
+        datasets=f"{BASE}/cell_registry/dataset_summary.tsv"
+    threads: 2
+    resources:
+        mem_mb=32000
+    params:
+        datasets=" ".join(DATASETS)
+    shell:
+        "PYTHONPATH={PYTHONPATH} {PYTHON} {SCRIPTS}/compile_cell_registry.py "
+        "--output-root {BASE} --datasets {params.datasets} --output-dir {BASE}/cell_registry"

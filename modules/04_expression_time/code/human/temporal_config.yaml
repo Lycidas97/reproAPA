@@ -1,0 +1,23 @@
+input_root: results_v1
+output_root: results_temporal_v1
+seed: 20260906
+expected_cells: 215114
+expected_pairs: 34
+expected_states: 62
+mass_mode: uniform_cells_conditional_on_capture
+epsilon: 0.05
+tau: 0.95
+max_iterations: 2000
+threshold: 0.0001
+local_group: study_id
+local_neighbors: 20
+cross_neighbors: 10
+cross_radius_gate: 2.0
+draws: 64
+time_weights: [0.4, 0.4, 0.2]
+control_weights: [0.8, 0.0, 0.2]
+epochs: 200
+min_dist: 0.35
+spread: 1.1
+python: /root/nfsdata/apadetect/analysis_projects/mouse_time_aware_integration_pilot_v1/.g2g-venv/bin/python
+ot_python: /root/nfsdata/apadetect/analysis_projects/mouse_time_aware_integration_pilot_v1/.moscot-venv/bin/python

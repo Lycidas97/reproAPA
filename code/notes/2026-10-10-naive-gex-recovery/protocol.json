@@ -1,0 +1,95 @@
+{
+  "objective": "Recover genuine N GEX from unchanged all-gene integer metacell counts for Liu2020, preserving frozen native state membership and existing RBP normalization.",
+  "frozen_before_results": true,
+  "remote_host": "213docker",
+  "remote_gex_root": "/root/nfsdata/apadetect/analysis_projects/reproapa_polyapipe_rerun_20261003_v1/frozen_gex/GSE150311",
+  "requested_factors": [
+    "NUDT21",
+    "CPSF6",
+    "CSTF2",
+    "CSTF2T",
+    "FIP1L1",
+    "PCF11",
+    "CPSF1",
+    "CPSF2",
+    "CPSF3",
+    "CPSF4",
+    "PABPN1",
+    "PAPOLA",
+    "HNRNPA2B1",
+    "RBFOX2",
+    "AGO2",
+    "EIF4EBP2",
+    "PDLIM7"
+  ],
+  "state_selection": {
+    "frozen_state_table": "notes/2026-10-06-dual-main-plot-data/polyapipe/main/tables/naive_state/frozen_selected_metadata.tsv.gz",
+    "purity_minimum": 0.8,
+    "qualified_minimum_metacells": 3,
+    "qualified_minimum_cells": 30,
+    "gene_specific_PAS_depth_filter": false,
+    "scope": "all frozen selected state MCs meeting purity; expression qualification follows existing RBP workflow, not gene-specific APA contributor sets"
+  },
+  "normalization": {
+    "CPM": "each gene integer MC count / same MC all-gene GEX integer total * 1e6",
+    "mean_log2CPM1": "unweighted mean over qualified selected MCs of log2(CPM+1)",
+    "pooled_CPM": "sum gene counts / sum all-gene GEX totals * 1e6",
+    "mean_CPM": "unweighted MC mean CPM",
+    "state_summary": "equal library weights; additional equal-time sensitivity where multiple times"
+  },
+  "fixed_naive_comparisons": {
+    "hN_P_primed_condition": [
+      [
+        "GSM4546546",
+        "N",
+        "GSM4546547",
+        "P"
+      ],
+      [
+        "GSM4546548",
+        "N",
+        "GSM4546547",
+        "P"
+      ]
+    ],
+    "hN_P_same_library": [
+      [
+        "GSM4546546",
+        "N",
+        "GSM4546546",
+        "P"
+      ],
+      [
+        "GSM4546548",
+        "N",
+        "GSM4546548",
+        "P"
+      ]
+    ],
+    "hN_S_D0_D7_pool": [
+      [
+        "GSM4546546",
+        "N",
+        "GSM4546545",
+        "S"
+      ],
+      [
+        "GSM4546548",
+        "N",
+        "GSM4546545",
+        "S"
+      ]
+    ],
+    "P_primed_S_D0_D7_pool": [
+      [
+        "GSM4546547",
+        "P",
+        "GSM4546545",
+        "S"
+      ]
+    ]
+  },
+  "outputs": "full all-gene library-state summaries, target-factor mapping and summaries, genuine human N/P contrast GEX covariates including original 2575 common hN-P APA genes",
+  "inferential_scope": "descriptive fixed-library/condition comparison; heterogeneous N6/N8 conditions are not exchangeable biological replicates; no activity or causality inference",
+  "source_integrity": "read-only remote access; hash before and after transfer; matrix row identity and n_cells must match original frozen GEX registry; integer counts and all-gene denominators conserved; symbols repaired only against pinned GRCh38-2024-A GTF"
+}

@@ -1,0 +1,83 @@
+{
+  "status": "PASS_COMPLETE",
+  "created_utc": "2026-10-10T13:35:39.028601+00:00",
+  "scope": "Supplementary marker-reference sensitivity; no manuscript edits",
+  "statistical_scope": "Descriptive within-route reference comparisons; no species-population p values",
+  "inputs_sha256": {
+    "notes/2026-10-10-marker-reference-sensitivity/pair_effects.tsv.gz": "059f96638a6ef9739f463a6f88759978c482bcdf47a99026f3111f409043d17b",
+    "notes/2026-10-10-marker-reference-sensitivity/route_effects.tsv.gz": "f5ed7040407786a59a02c85675bf75c4c9da27d2b2819a7b7abd04aaff7a7c7a",
+    "notes/2026-10-10-marker-reference-sensitivity/bridge_route_effects.tsv.gz": "55c15ca018ede2e848b5c084b03435ce81fc24cc7e27adeaa7379b84a5ee06c9",
+    "notes/2026-10-10-marker-reference-sensitivity/library_classification.tsv": "73cc7283cb3571bf503faba10e853a172c11bee0daa541d6412047a1fcd4d84c",
+    "notes/2026-10-10-marker-reference-sensitivity/route_summary.tsv": "fb8a71bee6e0344092652eee9c02c26d2966f783d2b7741e46dd158668572d39",
+    "notes/2026-10-10-marker-reference-sensitivity/bridge_route_summary.tsv": "42645a9895d12326e97c736575092a96ccd8a3a74818b8491141c16b3931c23d",
+    "notes/2026-10-10-marker-reference-sensitivity/library_summary.tsv": "ca87c4b846fba14074f764c12f94d4ff8012c923b01d7703004cda4705ada6a6",
+    "notes/2026-10-10-marker-reference-sensitivity/bridge_pair_weights.tsv.gz": "b5ac8ab764e63970e71930afa1390902a5061b78adcdd50792222f02520f0af1",
+    "notes/2026-10-10-marker-reference-sensitivity/bridge_library_summary.tsv": "63f3f41d42fb01189b505ff74c04b73db1dce2c629e65a7cb48661a5b2770a14",
+    "notes/2026-10-10-marker-reference-sensitivity/gradient_route_effects.tsv.gz": "704141dbd08b7443362443c4bad9e01920be14a6b215ab7d3f5855826b99b6fc",
+    "notes/2026-10-10-marker-reference-sensitivity/gradient_pair_effects.tsv.gz": "7e324b2d27c84b3c5309fdb2d7e03201f34e7fea8e7c854b1f73c55bc061af49",
+    "notes/2026-10-10-marker-reference-sensitivity/gradient_route_summary.tsv": "eaa64749280865770b3b2439e7454d8dfa2a36f063b54e720a5a4495a37f7a44",
+    "notes/2026-10-10-marker-reference-sensitivity/gradient_library_summary.tsv": "00e575a8e5eef4816c9ce2fe227801d8510720ce6670ef9b7176a9550b570b14",
+    "notes/2026-10-10-marker-reference-review/shared_MC_pairs_lost.tsv": "f9fb32fd29a90af67ff19daf5ef57a29274196e50c8a55567997e3c6ffa0524d",
+    "notes/2026-10-10-marker-reference-sensitivity/unique_support_route_effects.tsv.gz": "5a82ce2ddf38318127e4d6239def34e586514dfc79d3efd55b6a5571863bb94e",
+    "notes/2026-10-10-marker-reference-sensitivity/unique_support_bridge_route_effects.tsv.gz": "b4cc94ebce5cb75a3ec00e79a069d89a5b4501c0dbf88c39d0edd363c8227dab",
+    "notes/2026-10-10-marker-reference-sensitivity/unique_support_route_summary.tsv": "ee00d528848aee5fcb68be757124854c52bd56ff395f7a4f45017f9444dccdea",
+    "notes/2026-10-10-marker-reference-sensitivity/unique_support_bridge_route_summary.tsv": "42645a9895d12326e97c736575092a96ccd8a3a74818b8491141c16b3931c23d",
+    "notes/2026-10-10-marker-reference-sensitivity/unique_support_library_summary.tsv": "201deac45f2b7bc586b01a777a561939ab7184a98e288820ee23449cd5d103c4",
+    "notes/2026-10-10-marker-reference-sensitivity/unique_support_pair_weights.tsv.gz": "1e26f8e1c3e345eee02b53b465bdbf6d3b80a2e5adbba5b1e7b9b4e7451c1872",
+    "notes/2026-10-10-marker-reference-sensitivity/unique_support_bridge_library_summary.tsv": "63f3f41d42fb01189b505ff74c04b73db1dce2c629e65a7cb48661a5b2770a14",
+    "notes/2026-10-10-marker-reference-sensitivity/PROTOCOL.zh.md": "1fc9ff8f14ee74302e032b52d4a6a68b6e89463b73f5bc457fa5ece266c75040",
+    "notes/2026-10-10-marker-reference-sensitivity/ADDENDUM.zh.md": "ddbfe768ef6210ebda71cdf584e70dd36a0f5e9f3691ed48d5716445758b956a",
+    "notes/2026-10-10-marker-reference-sensitivity/QA-ADDENDUM.zh.md": "f0b3be44713f72e8845c57384c978e5ef6a0f87f3679c22054df411fb1b2836b",
+    "notes/2026-10-10-marker-reference-sensitivity/inputs.npz": "6652eb94bc70ad1e361992d2991a4e24df9c7d0fe83e694db155ce156bbaccb6",
+    "notes/2026-10-10-marker-reference-sensitivity/baseline_validation.json": "f6a6a3a2c7c3f91f9c042962c2ed0655e28aaa396743595ce226e5875af6a662",
+    "notes/2026-10-10-marker-reference-sensitivity/recovery_validation.json": "c7f55c9b3d5c5017c3cfcf5b08238a0c5bca2163ce058fb8942ee0d9aa97e761",
+    "notes/2026-10-10-marker-reference-sensitivity/tests.log": "29ba48b17acbac13b9ac435213cd0387686f8555bbbd29546dbd3690b9c3a323",
+    "notes/2026-10-10-marker-reference-review/delivery_validation.json": "2a50e5ba652dd2cb3595ce68feed37a08f573f305c408e775bdcfc26e2776f76",
+    "notes/2026-10-10-marker-reference-review/apa_delivery_validation.json": "1a6afee79e0ab7fcee873b76c0420c7d7cf58e6772ad18c4e05a667599ba455e",
+    "notes/2026-10-10-marker-reference-review/unique_support_validation.json": "3dd97584b5224e7fd5146261b31607fe357563bd5b055e51b17c9705f3230742",
+    "notes/2026-10-10-marker-annotation-audit/RESULT-INTERPRETATION.zh.md": "7e2b699d6f6082f86dc4c5884e12ea84db297d1314a60afa086a58af213441ca",
+    "notes/2026-10-10-marker-annotation-audit/interpretation_validation.json": "1c9ae4ede2966bff4ea484122e54ac73bf91dfe83b9df785df767f2db549e20a",
+    "notes/2026-10-10-marker-annotation-audit/interpretation_manifest.json": "27e18888354cd82cf573edc353a8b3a241f02e5900a76911e5ac7c9fc788dfce",
+    "notes/2026-10-10-marker-reference-sensitivity/REPORT.zh.md": "622833d0b2f9767638dac03cf78121ae33a490b1a5f409f081a35e8ebc23e182",
+    "notes/2026-10-10-marker-reference-sensitivity/manifest.json": "285291dacc8612af7892b8cc75e7d0f13de179690ed735bcb0a719194560cba7",
+    "notes/2026-10-10-marker-reference-review/INDEPENDENT-DELIVERY-REVIEW.zh.md": "4dbc58b25f4e61e1a55f446bb7237679b5aeb443d1dfe338d527c6c1fed54396",
+    "notes/2026-10-10-marker-reference-review/review_manifest.json": "1556bcbbd410173ce58aec69a275463f83894d0b04fed28798d9e9d7a47b09db"
+  },
+  "outputs_sha256": {
+    "notes/2026-10-10-marker-reference-validation/REPORT.zh.md": "93905a2d2f01aa331417ac1b37dac9cee7797fdc0d5b24e59aa0cfd25845b9e1",
+    "notes/2026-10-10-marker-reference-validation/bridge_comparison_validation.json": "88b867d621d4b4babc53692eae839ff992e691e92255032b2dc43f4050cb9839",
+    "notes/2026-10-10-marker-reference-validation/calculate_bridges.py": "119895cdb84fd2f935094a69206ffa1d6237dfa91be7f87fef48292daf7af305",
+    "notes/2026-10-10-marker-reference-validation/independent_bridge_route_effects.tsv.gz": "ad50183274216220ffcef7c07dac8b203158253251fb3bfa542dc60ebdc88c76",
+    "notes/2026-10-10-marker-reference-validation/independent_bridge_route_summary.tsv": "6b757cdfc95ac10c5904da4a34540d6df31bcb73270b546fe7c1682d2247ef69",
+    "notes/2026-10-10-marker-reference-validation/input_validation.json": "29e70849b8d92a938c1cd51ac0ed235d93b2eb56b16b7f4af52f07f922975593",
+    "notes/2026-10-10-marker-reference-validation/result_validation.json": "6191c450290175720ef30946d94ef33b9eb00feecc724b9b3b2ac355b88289c0",
+    "notes/2026-10-10-marker-reference-validation/verify_inputs.py": "079a1df5921892f619798ac0b2f6c18e6c9479611dfaf0d833326d99aba75e54",
+    "notes/2026-10-10-marker-reference-validation/verify_results.py": "152e33b79ac8571a468998280275073bfbf27ce52dcde7c71cd1cbda8e350742"
+  },
+  "checks": {
+    "route_summary_rows": 560,
+    "bridge_route_summary_rows": 280,
+    "library_summary_rows": 11040,
+    "bridge_library_summary_rows": 5520,
+    "matched_aggregates": {
+      "rows": 614170,
+      "max_abs_error": 2.8557885223268187e-16
+    },
+    "gradient_route_summary_rows": 28,
+    "gradient_library_summary_rows": 552,
+    "unique_route_summary_rows": 560,
+    "unique_bridge_route_summary_rows": 280,
+    "unique_library_summary_rows": 11040,
+    "unique_bridge_library_summary_rows": 5520,
+    "unique_matched_aggregates": {
+      "rows": 614164,
+      "max_abs_error": 2.8557885223268187e-16
+    },
+    "unique_removed_pairs": 15
+  },
+  "sealed_utc": "2026-10-10T13:40:02.073990+00:00",
+  "executor_manifest_closure_check": {
+    "status": "PASS",
+    "distinct_files_verified": 86
+  }
+}

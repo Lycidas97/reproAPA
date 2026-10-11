@@ -1,0 +1,565 @@
+version: '3.0'
+study_id: WOT_GSE115943
+species:
+- Mus musculus
+membership_path: /root/nfsdata/apadetect/analysis_projects/reprogramming_unified_rna_qc_v3.2_release/runs/gse115943_wot_production/primary_membership.tsv.gz
+sensitivity_membership_path: /root/nfsdata/apadetect/analysis_projects/reprogramming_unified_rna_qc_v3.2_release/runs/gse115943_wot_production/sensitivity_membership.tsv.gz
+technical_membership_path: /root/nfsdata/apadetect/analysis_projects/reprogramming_unified_rna_qc_v3.2_release/runs/gse115943_wot_production/technical_membership.tsv.gz
+library_metadata_path: /root/nfsdata/apadetect/analysis_projects/reprogramming_unified_rna_qc_v3.2_release/manifests/GSE115943_production.tsv
+membership_columns:
+  cell_id: global_cell_id
+  state_id: null
+  scope_id: null
+  library_id: library_id
+  barcode: barcode
+expression_mode: multi_source
+expression_already_log1p: false
+partition_selection_fields: []
+library_use: stratified_resampling_and_postfreeze_audit_only
+qc_contract:
+  method_contract_sha256: cdf1987a05dd818c1e4e21fe2751df02f98490570d2d522e7b12cbefb1f73134
+  production_acceptance_path: /root/nfsdata/apadetect/analysis_projects/reprogramming_unified_rna_qc_v3.2_release/runs/_production_acceptance/acceptance.json
+  independent_validation_path: /root/nfsdata/apadetect/analysis_projects/reprogramming_unified_rna_qc_v3.2_release/runs/gse115943_wot_production/independent_validation.tsv
+  tiers:
+    primary_pass:
+      n_cells: 240829
+      cell_set_sha256: 17680720d9377e99ca04432c6b5423dc9cf47ef19a71ce8ba05b4d197cba3061
+    sensitivity_only:
+      n_cells: 25019
+      cell_set_sha256: 1a1120b74a6014b71b4f809607de84e2633a53eb3a50ffddce097600201c3974
+    technical_exclude:
+      n_cells: 30622
+      cell_set_sha256: a4159b137b95a9a46aa2b7514d5f2c216de805bacd65d440bd729d11d00b4ee5
+scopes:
+  studywide:
+    role: primary
+    n_cells: 240829
+    source_membership_order_sha256: 17680720d9377e99ca04432c6b5423dc9cf47ef19a71ce8ba05b4d197cba3061
+    cell_set_sha256: 17680720d9377e99ca04432c6b5423dc9cf47ef19a71ce8ba05b4d197cba3061
+    sensitivity_n_cells: 25019
+    sensitivity_source_membership_order_sha256: 1a1120b74a6014b71b4f809607de84e2633a53eb3a50ffddce097600201c3974
+    sensitivity_cell_set_sha256: 1a1120b74a6014b71b4f809607de84e2633a53eb3a50ffddce097600201c3974
+    expression_sources:
+    - selector: library_id
+      value: gse115943_pluripotency_reprogramming_core_GSM3195648
+      mode: 10x_h5
+      path: /root/nfsdata/apadetect/data/reprogramming_differentiation_apa/analyses/raw_realignment_apa_2026-06-07/cellranger/gse115943_pluripotency_reprogramming_core/gse115943_pluripotency_reprogramming_core_GSM3195648/outs/filtered_feature_bc_matrix.h5
+    - selector: library_id
+      value: gse115943_pluripotency_reprogramming_core_GSM3195649
+      mode: 10x_h5
+      path: /root/nfsdata/apadetect/data/reprogramming_differentiation_apa/analyses/raw_realignment_apa_2026-06-07/cellranger/gse115943_pluripotency_reprogramming_core/gse115943_pluripotency_reprogramming_core_GSM3195649/outs/filtered_feature_bc_matrix.h5
+    - selector: library_id
+      value: gse115943_pluripotency_reprogramming_core_GSM3195650
+      mode: 10x_h5
+      path: /root/nfsdata/apadetect/data/reprogramming_differentiation_apa/analyses/raw_realignment_apa_2026-06-07/cellranger/gse115943_pluripotency_reprogramming_core/gse115943_pluripotency_reprogramming_core_GSM3195650/outs/filtered_feature_bc_matrix.h5
+    - selector: library_id
+      value: gse115943_pluripotency_reprogramming_core_GSM3195651
+      mode: 10x_h5
+      path: /root/nfsdata/apadetect/data/reprogramming_differentiation_apa/analyses/raw_realignment_apa_2026-06-07/cellranger/gse115943_pluripotency_reprogramming_core/gse115943_pluripotency_reprogramming_core_GSM3195651/outs/filtered_feature_bc_matrix.h5
+    - selector: library_id
+      value: gse115943_pluripotency_reprogramming_core_GSM3195652
+      mode: 10x_h5
+      path: /root/nfsdata/apadetect/data/reprogramming_differentiation_apa/analyses/raw_realignment_apa_2026-06-07/cellranger/gse115943_pluripotency_reprogramming_core/gse115943_pluripotency_reprogramming_core_GSM3195652/outs/filtered_feature_bc_matrix.h5
+    - selector: library_id
+      value: gse115943_pluripotency_reprogramming_core_GSM3195653
+      mode: 10x_h5
+      path: /root/nfsdata/apadetect/data/reprogramming_differentiation_apa/analyses/raw_realignment_apa_2026-06-07/cellranger/gse115943_pluripotency_reprogramming_core/gse115943_pluripotency_reprogramming_core_GSM3195653/outs/filtered_feature_bc_matrix.h5
+    - selector: library_id
+      value: gse115943_pluripotency_reprogramming_core_GSM3195654
+      mode: 10x_h5
+      path: /root/nfsdata/apadetect/data/reprogramming_differentiation_apa/analyses/raw_realignment_apa_2026-06-07/cellranger/gse115943_pluripotency_reprogramming_core/gse115943_pluripotency_reprogramming_core_GSM3195654/outs/filtered_feature_bc_matrix.h5
+    - selector: library_id
+      value: gse115943_pluripotency_reprogramming_core_GSM3195655
+      mode: 10x_h5
+      path: /root/nfsdata/apadetect/data/reprogramming_differentiation_apa/analyses/raw_realignment_apa_2026-06-07/cellranger/gse115943_pluripotency_reprogramming_core/gse115943_pluripotency_reprogramming_core_GSM3195655/outs/filtered_feature_bc_matrix.h5
+    - selector: library_id
+      value: gse115943_pluripotency_reprogramming_core_GSM3195656
+      mode: 10x_h5
+      path: /root/nfsdata/apadetect/data/reprogramming_differentiation_apa/analyses/raw_realignment_apa_2026-06-07/cellranger/gse115943_pluripotency_reprogramming_core/gse115943_pluripotency_reprogramming_core_GSM3195656/outs/filtered_feature_bc_matrix.h5
+    - selector: library_id
+      value: gse115943_pluripotency_reprogramming_core_GSM3195657
+      mode: 10x_h5
+      path: /root/nfsdata/apadetect/data/reprogramming_differentiation_apa/analyses/raw_realignment_apa_2026-06-07/cellranger/gse115943_pluripotency_reprogramming_core/gse115943_pluripotency_reprogramming_core_GSM3195657/outs/filtered_feature_bc_matrix.h5
+    - selector: library_id
+      value: gse115943_pluripotency_reprogramming_core_GSM3195658
+      mode: 10x_h5
+      path: /root/nfsdata/apadetect/data/reprogramming_differentiation_apa/analyses/raw_realignment_apa_2026-06-07/cellranger/gse115943_pluripotency_reprogramming_core/gse115943_pluripotency_reprogramming_core_GSM3195658/outs/filtered_feature_bc_matrix.h5
+    - selector: library_id
+      value: gse115943_pluripotency_reprogramming_core_GSM3195659
+      mode: 10x_h5
+      path: /root/nfsdata/apadetect/data/reprogramming_differentiation_apa/analyses/raw_realignment_apa_2026-06-07/cellranger/gse115943_pluripotency_reprogramming_core/gse115943_pluripotency_reprogramming_core_GSM3195659/outs/filtered_feature_bc_matrix.h5
+    - selector: library_id
+      value: gse115943_pluripotency_reprogramming_core_GSM3195660
+      mode: 10x_h5
+      path: /root/nfsdata/apadetect/data/reprogramming_differentiation_apa/analyses/raw_realignment_apa_2026-06-07/cellranger/gse115943_pluripotency_reprogramming_core/gse115943_pluripotency_reprogramming_core_GSM3195660/outs/filtered_feature_bc_matrix.h5
+    - selector: library_id
+      value: gse115943_pluripotency_reprogramming_core_GSM3195661
+      mode: 10x_h5
+      path: /root/nfsdata/apadetect/data/reprogramming_differentiation_apa/analyses/raw_realignment_apa_2026-06-07/cellranger/gse115943_pluripotency_reprogramming_core/gse115943_pluripotency_reprogramming_core_GSM3195661/outs/filtered_feature_bc_matrix.h5
+    - selector: library_id
+      value: gse115943_pluripotency_reprogramming_core_GSM3195662
+      mode: 10x_h5
+      path: /root/nfsdata/apadetect/data/reprogramming_differentiation_apa/analyses/raw_realignment_apa_2026-06-07/cellranger/gse115943_pluripotency_reprogramming_core/gse115943_pluripotency_reprogramming_core_GSM3195662/outs/filtered_feature_bc_matrix.h5
+    - selector: library_id
+      value: gse115943_pluripotency_reprogramming_core_GSM3195663
+      mode: 10x_h5
+      path: /root/nfsdata/apadetect/data/reprogramming_differentiation_apa/analyses/raw_realignment_apa_2026-06-07/cellranger/gse115943_pluripotency_reprogramming_core/gse115943_pluripotency_reprogramming_core_GSM3195663/outs/filtered_feature_bc_matrix.h5
+    - selector: library_id
+      value: gse115943_pluripotency_reprogramming_core_GSM3195664
+      mode: 10x_h5
+      path: /root/nfsdata/apadetect/data/reprogramming_differentiation_apa/analyses/raw_realignment_apa_2026-06-07/cellranger/gse115943_pluripotency_reprogramming_core/gse115943_pluripotency_reprogramming_core_GSM3195664/outs/filtered_feature_bc_matrix.h5
+    - selector: library_id
+      value: gse115943_pluripotency_reprogramming_core_GSM3195665
+      mode: 10x_h5
+      path: /root/nfsdata/apadetect/data/reprogramming_differentiation_apa/analyses/raw_realignment_apa_2026-06-07/cellranger/gse115943_pluripotency_reprogramming_core/gse115943_pluripotency_reprogramming_core_GSM3195665/outs/filtered_feature_bc_matrix.h5
+    - selector: library_id
+      value: gse115943_pluripotency_reprogramming_core_GSM3195666
+      mode: 10x_h5
+      path: /root/nfsdata/apadetect/data/reprogramming_differentiation_apa/analyses/raw_realignment_apa_2026-06-07/cellranger/gse115943_pluripotency_reprogramming_core/gse115943_pluripotency_reprogramming_core_GSM3195666/outs/filtered_feature_bc_matrix.h5
+    - selector: library_id
+      value: gse115943_pluripotency_reprogramming_core_GSM3195667
+      mode: 10x_h5
+      path: /root/nfsdata/apadetect/data/reprogramming_differentiation_apa/analyses/raw_realignment_apa_2026-06-07/cellranger/gse115943_pluripotency_reprogramming_core/gse115943_pluripotency_reprogramming_core_GSM3195667/outs/filtered_feature_bc_matrix.h5
+    - selector: library_id
+      value: gse115943_pluripotency_reprogramming_core_GSM3195668
+      mode: 10x_h5
+      path: /root/nfsdata/apadetect/data/reprogramming_differentiation_apa/analyses/raw_realignment_apa_2026-06-07/cellranger/gse115943_pluripotency_reprogramming_core/gse115943_pluripotency_reprogramming_core_GSM3195668/outs/filtered_feature_bc_matrix.h5
+    - selector: library_id
+      value: gse115943_pluripotency_reprogramming_core_GSM3195669
+      mode: 10x_h5
+      path: /root/nfsdata/apadetect/data/reprogramming_differentiation_apa/analyses/raw_realignment_apa_2026-06-07/cellranger/gse115943_pluripotency_reprogramming_core/gse115943_pluripotency_reprogramming_core_GSM3195669/outs/filtered_feature_bc_matrix.h5
+    - selector: library_id
+      value: gse115943_pluripotency_reprogramming_core_GSM3195670
+      mode: 10x_h5
+      path: /root/nfsdata/apadetect/data/reprogramming_differentiation_apa/analyses/raw_realignment_apa_2026-06-07/cellranger/gse115943_pluripotency_reprogramming_core/gse115943_pluripotency_reprogramming_core_GSM3195670/outs/filtered_feature_bc_matrix.h5
+    - selector: library_id
+      value: gse115943_pluripotency_reprogramming_core_GSM3195671
+      mode: 10x_h5
+      path: /root/nfsdata/apadetect/data/reprogramming_differentiation_apa/analyses/raw_realignment_apa_2026-06-07/cellranger/gse115943_pluripotency_reprogramming_core/gse115943_pluripotency_reprogramming_core_GSM3195671/outs/filtered_feature_bc_matrix.h5
+    - selector: library_id
+      value: gse115943_pluripotency_reprogramming_core_GSM3195672
+      mode: 10x_h5
+      path: /root/nfsdata/apadetect/data/reprogramming_differentiation_apa/analyses/raw_realignment_apa_2026-06-07/cellranger/gse115943_pluripotency_reprogramming_core/gse115943_pluripotency_reprogramming_core_GSM3195672/outs/filtered_feature_bc_matrix.h5
+    - selector: library_id
+      value: gse115943_pluripotency_reprogramming_core_GSM3195673
+      mode: 10x_h5
+      path: /root/nfsdata/apadetect/data/reprogramming_differentiation_apa/analyses/raw_realignment_apa_2026-06-07/cellranger/gse115943_pluripotency_reprogramming_core/gse115943_pluripotency_reprogramming_core_GSM3195673/outs/filtered_feature_bc_matrix.h5
+    - selector: library_id
+      value: gse115943_pluripotency_reprogramming_core_GSM3195674
+      mode: 10x_h5
+      path: /root/nfsdata/apadetect/data/reprogramming_differentiation_apa/analyses/raw_realignment_apa_2026-06-07/cellranger/gse115943_pluripotency_reprogramming_core/gse115943_pluripotency_reprogramming_core_GSM3195674/outs/filtered_feature_bc_matrix.h5
+    - selector: library_id
+      value: gse115943_pluripotency_reprogramming_core_GSM3195675
+      mode: 10x_h5
+      path: /root/nfsdata/apadetect/data/reprogramming_differentiation_apa/analyses/raw_realignment_apa_2026-06-07/cellranger/gse115943_pluripotency_reprogramming_core/gse115943_pluripotency_reprogramming_core_GSM3195675/outs/filtered_feature_bc_matrix.h5
+    - selector: library_id
+      value: gse115943_pluripotency_reprogramming_core_GSM3195676
+      mode: 10x_h5
+      path: /root/nfsdata/apadetect/data/reprogramming_differentiation_apa/analyses/raw_realignment_apa_2026-06-07/cellranger/gse115943_pluripotency_reprogramming_core/gse115943_pluripotency_reprogramming_core_GSM3195676/outs/filtered_feature_bc_matrix.h5
+    - selector: library_id
+      value: gse115943_pluripotency_reprogramming_core_GSM3195677
+      mode: 10x_h5
+      path: /root/nfsdata/apadetect/data/reprogramming_differentiation_apa/analyses/raw_realignment_apa_2026-06-07/cellranger/gse115943_pluripotency_reprogramming_core/gse115943_pluripotency_reprogramming_core_GSM3195677/outs/filtered_feature_bc_matrix.h5
+    - selector: library_id
+      value: gse115943_pluripotency_reprogramming_core_GSM3195678
+      mode: 10x_h5
+      path: /root/nfsdata/apadetect/data/reprogramming_differentiation_apa/analyses/raw_realignment_apa_2026-06-07/cellranger/gse115943_pluripotency_reprogramming_core/gse115943_pluripotency_reprogramming_core_GSM3195678/outs/filtered_feature_bc_matrix.h5
+    - selector: library_id
+      value: gse115943_pluripotency_reprogramming_core_GSM3195679
+      mode: 10x_h5
+      path: /root/nfsdata/apadetect/data/reprogramming_differentiation_apa/analyses/raw_realignment_apa_2026-06-07/cellranger/gse115943_pluripotency_reprogramming_core/gse115943_pluripotency_reprogramming_core_GSM3195679/outs/filtered_feature_bc_matrix.h5
+    - selector: library_id
+      value: gse115943_pluripotency_reprogramming_core_GSM3195680
+      mode: 10x_h5
+      path: /root/nfsdata/apadetect/data/reprogramming_differentiation_apa/analyses/raw_realignment_apa_2026-06-07/cellranger/gse115943_pluripotency_reprogramming_core/gse115943_pluripotency_reprogramming_core_GSM3195680/outs/filtered_feature_bc_matrix.h5
+    - selector: library_id
+      value: gse115943_pluripotency_reprogramming_core_GSM3195681
+      mode: 10x_h5
+      path: /root/nfsdata/apadetect/data/reprogramming_differentiation_apa/analyses/raw_realignment_apa_2026-06-07/cellranger/gse115943_pluripotency_reprogramming_core/gse115943_pluripotency_reprogramming_core_GSM3195681/outs/filtered_feature_bc_matrix.h5
+    - selector: library_id
+      value: gse115943_pluripotency_reprogramming_core_GSM3195682
+      mode: 10x_h5
+      path: /root/nfsdata/apadetect/data/reprogramming_differentiation_apa/analyses/raw_realignment_apa_2026-06-07/cellranger/gse115943_pluripotency_reprogramming_core/gse115943_pluripotency_reprogramming_core_GSM3195682/outs/filtered_feature_bc_matrix.h5
+    - selector: library_id
+      value: gse115943_pluripotency_reprogramming_core_GSM3195683
+      mode: 10x_h5
+      path: /root/nfsdata/apadetect/data/reprogramming_differentiation_apa/analyses/raw_realignment_apa_2026-06-07/cellranger/gse115943_pluripotency_reprogramming_core/gse115943_pluripotency_reprogramming_core_GSM3195683/outs/filtered_feature_bc_matrix.h5
+    - selector: library_id
+      value: gse115943_pluripotency_reprogramming_core_GSM3195684
+      mode: 10x_h5
+      path: /root/nfsdata/apadetect/data/reprogramming_differentiation_apa/analyses/raw_realignment_apa_2026-06-07/cellranger/gse115943_pluripotency_reprogramming_core/gse115943_pluripotency_reprogramming_core_GSM3195684/outs/filtered_feature_bc_matrix.h5
+    - selector: library_id
+      value: gse115943_pluripotency_reprogramming_core_GSM3195685
+      mode: 10x_h5
+      path: /root/nfsdata/apadetect/data/reprogramming_differentiation_apa/analyses/raw_realignment_apa_2026-06-07/cellranger/gse115943_pluripotency_reprogramming_core/gse115943_pluripotency_reprogramming_core_GSM3195685/outs/filtered_feature_bc_matrix.h5
+    - selector: library_id
+      value: gse115943_pluripotency_reprogramming_core_GSM3195686
+      mode: 10x_h5
+      path: /root/nfsdata/apadetect/data/reprogramming_differentiation_apa/analyses/raw_realignment_apa_2026-06-07/cellranger/gse115943_pluripotency_reprogramming_core/gse115943_pluripotency_reprogramming_core_GSM3195686/outs/filtered_feature_bc_matrix.h5
+    - selector: library_id
+      value: gse115943_pluripotency_reprogramming_core_GSM3195687
+      mode: 10x_h5
+      path: /root/nfsdata/apadetect/data/reprogramming_differentiation_apa/analyses/raw_realignment_apa_2026-06-07/cellranger/gse115943_pluripotency_reprogramming_core/gse115943_pluripotency_reprogramming_core_GSM3195687/outs/filtered_feature_bc_matrix.h5
+    - selector: library_id
+      value: gse115943_pluripotency_reprogramming_core_GSM3195688
+      mode: 10x_h5
+      path: /root/nfsdata/apadetect/data/reprogramming_differentiation_apa/analyses/raw_realignment_apa_2026-06-07/cellranger/gse115943_pluripotency_reprogramming_core/gse115943_pluripotency_reprogramming_core_GSM3195688/outs/filtered_feature_bc_matrix.h5
+    - selector: library_id
+      value: gse115943_pluripotency_reprogramming_core_GSM3195689
+      mode: 10x_h5
+      path: /root/nfsdata/apadetect/data/reprogramming_differentiation_apa/analyses/raw_realignment_apa_2026-06-07/cellranger/gse115943_pluripotency_reprogramming_core/gse115943_pluripotency_reprogramming_core_GSM3195689/outs/filtered_feature_bc_matrix.h5
+    - selector: library_id
+      value: gse115943_pluripotency_reprogramming_core_GSM3195690
+      mode: 10x_h5
+      path: /root/nfsdata/apadetect/data/reprogramming_differentiation_apa/analyses/raw_realignment_apa_2026-06-07/cellranger/gse115943_pluripotency_reprogramming_core/gse115943_pluripotency_reprogramming_core_GSM3195690/outs/filtered_feature_bc_matrix.h5
+    - selector: library_id
+      value: gse115943_pluripotency_reprogramming_core_GSM3195691
+      mode: 10x_h5
+      path: /root/nfsdata/apadetect/data/reprogramming_differentiation_apa/analyses/raw_realignment_apa_2026-06-07/cellranger/gse115943_pluripotency_reprogramming_core/gse115943_pluripotency_reprogramming_core_GSM3195691/outs/filtered_feature_bc_matrix.h5
+    - selector: library_id
+      value: gse115943_pluripotency_reprogramming_core_GSM3195692
+      mode: 10x_h5
+      path: /root/nfsdata/apadetect/data/reprogramming_differentiation_apa/analyses/raw_realignment_apa_2026-06-07/cellranger/gse115943_pluripotency_reprogramming_core/gse115943_pluripotency_reprogramming_core_GSM3195692/outs/filtered_feature_bc_matrix.h5
+    - selector: library_id
+      value: gse115943_pluripotency_reprogramming_core_GSM3195693
+      mode: 10x_h5
+      path: /root/nfsdata/apadetect/data/reprogramming_differentiation_apa/analyses/raw_realignment_apa_2026-06-07/cellranger/gse115943_pluripotency_reprogramming_core/gse115943_pluripotency_reprogramming_core_GSM3195693/outs/filtered_feature_bc_matrix.h5
+    - selector: library_id
+      value: gse115943_pluripotency_reprogramming_core_GSM3195694
+      mode: 10x_h5
+      path: /root/nfsdata/apadetect/data/reprogramming_differentiation_apa/analyses/raw_realignment_apa_2026-06-07/cellranger/gse115943_pluripotency_reprogramming_core/gse115943_pluripotency_reprogramming_core_GSM3195694/outs/filtered_feature_bc_matrix.h5
+    - selector: library_id
+      value: gse115943_pluripotency_reprogramming_core_GSM3195695
+      mode: 10x_h5
+      path: /root/nfsdata/apadetect/data/reprogramming_differentiation_apa/analyses/raw_realignment_apa_2026-06-07/cellranger/gse115943_pluripotency_reprogramming_core/gse115943_pluripotency_reprogramming_core_GSM3195695/outs/filtered_feature_bc_matrix.h5
+    - selector: library_id
+      value: gse115943_pluripotency_reprogramming_core_GSM3195696
+      mode: 10x_h5
+      path: /root/nfsdata/apadetect/data/reprogramming_differentiation_apa/analyses/raw_realignment_apa_2026-06-07/cellranger/gse115943_pluripotency_reprogramming_core/gse115943_pluripotency_reprogramming_core_GSM3195696/outs/filtered_feature_bc_matrix.h5
+    - selector: library_id
+      value: gse115943_pluripotency_reprogramming_core_GSM3195697
+      mode: 10x_h5
+      path: /root/nfsdata/apadetect/data/reprogramming_differentiation_apa/analyses/raw_realignment_apa_2026-06-07/cellranger/gse115943_pluripotency_reprogramming_core/gse115943_pluripotency_reprogramming_core_GSM3195697/outs/filtered_feature_bc_matrix.h5
+    - selector: library_id
+      value: gse115943_pluripotency_reprogramming_core_GSM3195698
+      mode: 10x_h5
+      path: /root/nfsdata/apadetect/data/reprogramming_differentiation_apa/analyses/raw_realignment_apa_2026-06-07/cellranger/gse115943_pluripotency_reprogramming_core/gse115943_pluripotency_reprogramming_core_GSM3195698/outs/filtered_feature_bc_matrix.h5
+    - selector: library_id
+      value: gse115943_pluripotency_reprogramming_core_GSM3195699
+      mode: 10x_h5
+      path: /root/nfsdata/apadetect/data/reprogramming_differentiation_apa/analyses/raw_realignment_apa_2026-06-07/cellranger/gse115943_pluripotency_reprogramming_core/gse115943_pluripotency_reprogramming_core_GSM3195699/outs/filtered_feature_bc_matrix.h5
+    - selector: library_id
+      value: gse115943_pluripotency_reprogramming_core_GSM3195700
+      mode: 10x_h5
+      path: /root/nfsdata/apadetect/data/reprogramming_differentiation_apa/analyses/raw_realignment_apa_2026-06-07/cellranger/gse115943_pluripotency_reprogramming_core/gse115943_pluripotency_reprogramming_core_GSM3195700/outs/filtered_feature_bc_matrix.h5
+    - selector: library_id
+      value: gse115943_pluripotency_reprogramming_core_GSM3195701
+      mode: 10x_h5
+      path: /root/nfsdata/apadetect/data/reprogramming_differentiation_apa/analyses/raw_realignment_apa_2026-06-07/cellranger/gse115943_pluripotency_reprogramming_core/gse115943_pluripotency_reprogramming_core_GSM3195701/outs/filtered_feature_bc_matrix.h5
+    - selector: library_id
+      value: gse115943_pluripotency_reprogramming_core_GSM3195702
+      mode: 10x_h5
+      path: /root/nfsdata/apadetect/data/reprogramming_differentiation_apa/analyses/raw_realignment_apa_2026-06-07/cellranger/gse115943_pluripotency_reprogramming_core/gse115943_pluripotency_reprogramming_core_GSM3195702/outs/filtered_feature_bc_matrix.h5
+    - selector: library_id
+      value: gse115943_pluripotency_reprogramming_core_GSM3195703
+      mode: 10x_h5
+      path: /root/nfsdata/apadetect/data/reprogramming_differentiation_apa/analyses/raw_realignment_apa_2026-06-07/cellranger/gse115943_pluripotency_reprogramming_core/gse115943_pluripotency_reprogramming_core_GSM3195703/outs/filtered_feature_bc_matrix.h5
+    - selector: library_id
+      value: gse115943_pluripotency_reprogramming_core_GSM3195704
+      mode: 10x_h5
+      path: /root/nfsdata/apadetect/data/reprogramming_differentiation_apa/analyses/raw_realignment_apa_2026-06-07/cellranger/gse115943_pluripotency_reprogramming_core/gse115943_pluripotency_reprogramming_core_GSM3195704/outs/filtered_feature_bc_matrix.h5
+    - selector: library_id
+      value: gse115943_pluripotency_reprogramming_core_GSM3195705
+      mode: 10x_h5
+      path: /root/nfsdata/apadetect/data/reprogramming_differentiation_apa/analyses/raw_realignment_apa_2026-06-07/cellranger/gse115943_pluripotency_reprogramming_core/gse115943_pluripotency_reprogramming_core_GSM3195705/outs/filtered_feature_bc_matrix.h5
+    - selector: library_id
+      value: gse115943_pluripotency_reprogramming_core_GSM3195706
+      mode: 10x_h5
+      path: /root/nfsdata/apadetect/data/reprogramming_differentiation_apa/analyses/raw_realignment_apa_2026-06-07/cellranger/gse115943_pluripotency_reprogramming_core/gse115943_pluripotency_reprogramming_core_GSM3195706/outs/filtered_feature_bc_matrix.h5
+    - selector: library_id
+      value: gse115943_pluripotency_reprogramming_core_GSM3195707
+      mode: 10x_h5
+      path: /root/nfsdata/apadetect/data/reprogramming_differentiation_apa/analyses/raw_realignment_apa_2026-06-07/cellranger/gse115943_pluripotency_reprogramming_core/gse115943_pluripotency_reprogramming_core_GSM3195707/outs/filtered_feature_bc_matrix.h5
+    - selector: library_id
+      value: gse115943_pluripotency_reprogramming_core_GSM3195708
+      mode: 10x_h5
+      path: /root/nfsdata/apadetect/data/reprogramming_differentiation_apa/analyses/raw_realignment_apa_2026-06-07/cellranger/gse115943_pluripotency_reprogramming_core/gse115943_pluripotency_reprogramming_core_GSM3195708/outs/filtered_feature_bc_matrix.h5
+    - selector: library_id
+      value: gse115943_pluripotency_reprogramming_core_GSM3195709
+      mode: 10x_h5
+      path: /root/nfsdata/apadetect/data/reprogramming_differentiation_apa/analyses/raw_realignment_apa_2026-06-07/cellranger/gse115943_pluripotency_reprogramming_core/gse115943_pluripotency_reprogramming_core_GSM3195709/outs/filtered_feature_bc_matrix.h5
+    - selector: library_id
+      value: gse115943_pluripotency_reprogramming_core_GSM3195710
+      mode: 10x_h5
+      path: /root/nfsdata/apadetect/data/reprogramming_differentiation_apa/analyses/raw_realignment_apa_2026-06-07/cellranger/gse115943_pluripotency_reprogramming_core/gse115943_pluripotency_reprogramming_core_GSM3195710/outs/filtered_feature_bc_matrix.h5
+    - selector: library_id
+      value: gse115943_pluripotency_reprogramming_core_GSM3195711
+      mode: 10x_h5
+      path: /root/nfsdata/apadetect/data/reprogramming_differentiation_apa/analyses/raw_realignment_apa_2026-06-07/cellranger/gse115943_pluripotency_reprogramming_core/gse115943_pluripotency_reprogramming_core_GSM3195711/outs/filtered_feature_bc_matrix.h5
+    - selector: library_id
+      value: gse115943_pluripotency_reprogramming_core_GSM3195712
+      mode: 10x_h5
+      path: /root/nfsdata/apadetect/data/reprogramming_differentiation_apa/analyses/raw_realignment_apa_2026-06-07/cellranger/gse115943_pluripotency_reprogramming_core/gse115943_pluripotency_reprogramming_core_GSM3195712/outs/filtered_feature_bc_matrix.h5
+    - selector: library_id
+      value: gse115943_pluripotency_reprogramming_core_GSM3195713
+      mode: 10x_h5
+      path: /root/nfsdata/apadetect/data/reprogramming_differentiation_apa/analyses/raw_realignment_apa_2026-06-07/cellranger/gse115943_pluripotency_reprogramming_core/gse115943_pluripotency_reprogramming_core_GSM3195713/outs/filtered_feature_bc_matrix.h5
+    - selector: library_id
+      value: gse115943_pluripotency_reprogramming_core_GSM3195714
+      mode: 10x_h5
+      path: /root/nfsdata/apadetect/data/reprogramming_differentiation_apa/analyses/raw_realignment_apa_2026-06-07/cellranger/gse115943_pluripotency_reprogramming_core/gse115943_pluripotency_reprogramming_core_GSM3195714/outs/filtered_feature_bc_matrix.h5
+    - selector: library_id
+      value: gse115943_pluripotency_reprogramming_core_GSM3195715
+      mode: 10x_h5
+      path: /root/nfsdata/apadetect/data/reprogramming_differentiation_apa/analyses/raw_realignment_apa_2026-06-07/cellranger/gse115943_pluripotency_reprogramming_core/gse115943_pluripotency_reprogramming_core_GSM3195715/outs/filtered_feature_bc_matrix.h5
+    - selector: library_id
+      value: gse115943_pluripotency_reprogramming_core_GSM3195716
+      mode: 10x_h5
+      path: /root/nfsdata/apadetect/data/reprogramming_differentiation_apa/analyses/raw_realignment_apa_2026-06-07/cellranger/gse115943_pluripotency_reprogramming_core/gse115943_pluripotency_reprogramming_core_GSM3195716/outs/filtered_feature_bc_matrix.h5
+    - selector: library_id
+      value: gse115943_pluripotency_reprogramming_core_GSM3195717
+      mode: 10x_h5
+      path: /root/nfsdata/apadetect/data/reprogramming_differentiation_apa/analyses/raw_realignment_apa_2026-06-07/cellranger/gse115943_pluripotency_reprogramming_core/gse115943_pluripotency_reprogramming_core_GSM3195717/outs/filtered_feature_bc_matrix.h5
+    - selector: library_id
+      value: gse115943_pluripotency_reprogramming_core_GSM3195718
+      mode: 10x_h5
+      path: /root/nfsdata/apadetect/data/reprogramming_differentiation_apa/analyses/raw_realignment_apa_2026-06-07/cellranger/gse115943_pluripotency_reprogramming_core/gse115943_pluripotency_reprogramming_core_GSM3195718/outs/filtered_feature_bc_matrix.h5
+    - selector: library_id
+      value: gse115943_pluripotency_reprogramming_core_GSM3195719
+      mode: 10x_h5
+      path: /root/nfsdata/apadetect/data/reprogramming_differentiation_apa/analyses/raw_realignment_apa_2026-06-07/cellranger/gse115943_pluripotency_reprogramming_core/gse115943_pluripotency_reprogramming_core_GSM3195719/outs/filtered_feature_bc_matrix.h5
+    - selector: library_id
+      value: gse115943_pluripotency_reprogramming_core_GSM3195720
+      mode: 10x_h5
+      path: /root/nfsdata/apadetect/data/reprogramming_differentiation_apa/analyses/raw_realignment_apa_2026-06-07/cellranger/gse115943_pluripotency_reprogramming_core/gse115943_pluripotency_reprogramming_core_GSM3195720/outs/filtered_feature_bc_matrix.h5
+    - selector: library_id
+      value: gse115943_pluripotency_reprogramming_core_GSM3195721
+      mode: 10x_h5
+      path: /root/nfsdata/apadetect/data/reprogramming_differentiation_apa/analyses/raw_realignment_apa_2026-06-07/cellranger/gse115943_pluripotency_reprogramming_core/gse115943_pluripotency_reprogramming_core_GSM3195721/outs/filtered_feature_bc_matrix.h5
+    - selector: library_id
+      value: gse115943_pluripotency_reprogramming_core_GSM3195722
+      mode: 10x_h5
+      path: /root/nfsdata/apadetect/data/reprogramming_differentiation_apa/analyses/raw_realignment_apa_2026-06-07/cellranger/gse115943_pluripotency_reprogramming_core/gse115943_pluripotency_reprogramming_core_GSM3195722/outs/filtered_feature_bc_matrix.h5
+    - selector: library_id
+      value: gse115943_pluripotency_reprogramming_core_GSM3195723
+      mode: 10x_h5
+      path: /root/nfsdata/apadetect/data/reprogramming_differentiation_apa/analyses/raw_realignment_apa_2026-06-07/cellranger/gse115943_pluripotency_reprogramming_core/gse115943_pluripotency_reprogramming_core_GSM3195723/outs/filtered_feature_bc_matrix.h5
+    - selector: library_id
+      value: gse115943_pluripotency_reprogramming_core_GSM3195724
+      mode: 10x_h5
+      path: /root/nfsdata/apadetect/data/reprogramming_differentiation_apa/analyses/raw_realignment_apa_2026-06-07/cellranger/gse115943_pluripotency_reprogramming_core/gse115943_pluripotency_reprogramming_core_GSM3195724/outs/filtered_feature_bc_matrix.h5
+    - selector: library_id
+      value: gse115943_pluripotency_reprogramming_core_GSM3195725
+      mode: 10x_h5
+      path: /root/nfsdata/apadetect/data/reprogramming_differentiation_apa/analyses/raw_realignment_apa_2026-06-07/cellranger/gse115943_pluripotency_reprogramming_core/gse115943_pluripotency_reprogramming_core_GSM3195725/outs/filtered_feature_bc_matrix.h5
+    - selector: library_id
+      value: gse115943_pluripotency_reprogramming_core_GSM3195726
+      mode: 10x_h5
+      path: /root/nfsdata/apadetect/data/reprogramming_differentiation_apa/analyses/raw_realignment_apa_2026-06-07/cellranger/gse115943_pluripotency_reprogramming_core/gse115943_pluripotency_reprogramming_core_GSM3195726/outs/filtered_feature_bc_matrix.h5
+    - selector: library_id
+      value: gse115943_pluripotency_reprogramming_core_GSM3195727
+      mode: 10x_h5
+      path: /root/nfsdata/apadetect/data/reprogramming_differentiation_apa/analyses/raw_realignment_apa_2026-06-07/cellranger/gse115943_pluripotency_reprogramming_core/gse115943_pluripotency_reprogramming_core_GSM3195727/outs/filtered_feature_bc_matrix.h5
+    - selector: library_id
+      value: gse115943_pluripotency_reprogramming_core_GSM3195728
+      mode: 10x_h5
+      path: /root/nfsdata/apadetect/data/reprogramming_differentiation_apa/analyses/raw_realignment_apa_2026-06-07/cellranger/gse115943_pluripotency_reprogramming_core/gse115943_pluripotency_reprogramming_core_GSM3195728/outs/filtered_feature_bc_matrix.h5
+    - selector: library_id
+      value: gse115943_pluripotency_reprogramming_core_GSM3195729
+      mode: 10x_h5
+      path: /root/nfsdata/apadetect/data/reprogramming_differentiation_apa/analyses/raw_realignment_apa_2026-06-07/cellranger/gse115943_pluripotency_reprogramming_core/gse115943_pluripotency_reprogramming_core_GSM3195729/outs/filtered_feature_bc_matrix.h5
+    - selector: library_id
+      value: gse115943_pluripotency_reprogramming_core_GSM3195730
+      mode: 10x_h5
+      path: /root/nfsdata/apadetect/data/reprogramming_differentiation_apa/analyses/raw_realignment_apa_2026-06-07/cellranger/gse115943_pluripotency_reprogramming_core/gse115943_pluripotency_reprogramming_core_GSM3195730/outs/filtered_feature_bc_matrix.h5
+    - selector: library_id
+      value: gse115943_pluripotency_reprogramming_core_GSM3195731
+      mode: 10x_h5
+      path: /root/nfsdata/apadetect/data/reprogramming_differentiation_apa/analyses/raw_realignment_apa_2026-06-07/cellranger/gse115943_pluripotency_reprogramming_core/gse115943_pluripotency_reprogramming_core_GSM3195731/outs/filtered_feature_bc_matrix.h5
+    - selector: library_id
+      value: gse115943_pluripotency_reprogramming_core_GSM3195732
+      mode: 10x_h5
+      path: /root/nfsdata/apadetect/data/reprogramming_differentiation_apa/analyses/raw_realignment_apa_2026-06-07/cellranger/gse115943_pluripotency_reprogramming_core/gse115943_pluripotency_reprogramming_core_GSM3195732/outs/filtered_feature_bc_matrix.h5
+    - selector: library_id
+      value: gse115943_pluripotency_reprogramming_core_GSM3195733
+      mode: 10x_h5
+      path: /root/nfsdata/apadetect/data/reprogramming_differentiation_apa/analyses/raw_realignment_apa_2026-06-07/cellranger/gse115943_pluripotency_reprogramming_core/gse115943_pluripotency_reprogramming_core_GSM3195733/outs/filtered_feature_bc_matrix.h5
+    - selector: library_id
+      value: gse115943_pluripotency_reprogramming_core_GSM3195734
+      mode: 10x_h5
+      path: /root/nfsdata/apadetect/data/reprogramming_differentiation_apa/analyses/raw_realignment_apa_2026-06-07/cellranger/gse115943_pluripotency_reprogramming_core/gse115943_pluripotency_reprogramming_core_GSM3195734/outs/filtered_feature_bc_matrix.h5
+    - selector: library_id
+      value: gse115943_pluripotency_reprogramming_core_GSM3195735
+      mode: 10x_h5
+      path: /root/nfsdata/apadetect/data/reprogramming_differentiation_apa/analyses/raw_realignment_apa_2026-06-07/cellranger/gse115943_pluripotency_reprogramming_core/gse115943_pluripotency_reprogramming_core_GSM3195735/outs/filtered_feature_bc_matrix.h5
+    - selector: library_id
+      value: gse115943_pluripotency_reprogramming_core_GSM3195736
+      mode: 10x_h5
+      path: /root/nfsdata/apadetect/data/reprogramming_differentiation_apa/analyses/raw_realignment_apa_2026-06-07/cellranger/gse115943_pluripotency_reprogramming_core/gse115943_pluripotency_reprogramming_core_GSM3195736/outs/filtered_feature_bc_matrix.h5
+    - selector: library_id
+      value: gse115943_pluripotency_reprogramming_core_GSM3195737
+      mode: 10x_h5
+      path: /root/nfsdata/apadetect/data/reprogramming_differentiation_apa/analyses/raw_realignment_apa_2026-06-07/cellranger/gse115943_pluripotency_reprogramming_core/gse115943_pluripotency_reprogramming_core_GSM3195737/outs/filtered_feature_bc_matrix.h5
+    - selector: library_id
+      value: gse115943_pluripotency_reprogramming_core_GSM3195738
+      mode: 10x_h5
+      path: /root/nfsdata/apadetect/data/reprogramming_differentiation_apa/analyses/raw_realignment_apa_2026-06-07/cellranger/gse115943_pluripotency_reprogramming_core/gse115943_pluripotency_reprogramming_core_GSM3195738/outs/filtered_feature_bc_matrix.h5
+    - selector: library_id
+      value: gse115943_pluripotency_reprogramming_core_GSM3195739
+      mode: 10x_h5
+      path: /root/nfsdata/apadetect/data/reprogramming_differentiation_apa/analyses/raw_realignment_apa_2026-06-07/cellranger/gse115943_pluripotency_reprogramming_core/gse115943_pluripotency_reprogramming_core_GSM3195739/outs/filtered_feature_bc_matrix.h5
+    - selector: library_id
+      value: gse115943_pluripotency_reprogramming_core_GSM3195740
+      mode: 10x_h5
+      path: /root/nfsdata/apadetect/data/reprogramming_differentiation_apa/analyses/raw_realignment_apa_2026-06-07/cellranger/gse115943_pluripotency_reprogramming_core/gse115943_pluripotency_reprogramming_core_GSM3195740/outs/filtered_feature_bc_matrix.h5
+    - selector: library_id
+      value: gse115943_pluripotency_reprogramming_core_GSM3195741
+      mode: 10x_h5
+      path: /root/nfsdata/apadetect/data/reprogramming_differentiation_apa/analyses/raw_realignment_apa_2026-06-07/cellranger/gse115943_pluripotency_reprogramming_core/gse115943_pluripotency_reprogramming_core_GSM3195741/outs/filtered_feature_bc_matrix.h5
+    - selector: library_id
+      value: gse115943_pluripotency_reprogramming_core_GSM3195742
+      mode: 10x_h5
+      path: /root/nfsdata/apadetect/data/reprogramming_differentiation_apa/analyses/raw_realignment_apa_2026-06-07/cellranger/gse115943_pluripotency_reprogramming_core/gse115943_pluripotency_reprogramming_core_GSM3195742/outs/filtered_feature_bc_matrix.h5
+    - selector: library_id
+      value: gse115943_pluripotency_reprogramming_core_GSM3195743
+      mode: 10x_h5
+      path: /root/nfsdata/apadetect/data/reprogramming_differentiation_apa/analyses/raw_realignment_apa_2026-06-07/cellranger/gse115943_pluripotency_reprogramming_core/gse115943_pluripotency_reprogramming_core_GSM3195743/outs/filtered_feature_bc_matrix.h5
+    - selector: library_id
+      value: gse115943_pluripotency_reprogramming_core_GSM3195744
+      mode: 10x_h5
+      path: /root/nfsdata/apadetect/data/reprogramming_differentiation_apa/analyses/raw_realignment_apa_2026-06-07/cellranger/gse115943_pluripotency_reprogramming_core/gse115943_pluripotency_reprogramming_core_GSM3195744/outs/filtered_feature_bc_matrix.h5
+    - selector: library_id
+      value: gse115943_pluripotency_reprogramming_core_GSM3195745
+      mode: 10x_h5
+      path: /root/nfsdata/apadetect/data/reprogramming_differentiation_apa/analyses/raw_realignment_apa_2026-06-07/cellranger/gse115943_pluripotency_reprogramming_core/gse115943_pluripotency_reprogramming_core_GSM3195745/outs/filtered_feature_bc_matrix.h5
+    - selector: library_id
+      value: gse115943_pluripotency_reprogramming_core_GSM3195746
+      mode: 10x_h5
+      path: /root/nfsdata/apadetect/data/reprogramming_differentiation_apa/analyses/raw_realignment_apa_2026-06-07/cellranger/gse115943_pluripotency_reprogramming_core/gse115943_pluripotency_reprogramming_core_GSM3195746/outs/filtered_feature_bc_matrix.h5
+    - selector: library_id
+      value: gse115943_pluripotency_reprogramming_core_GSM3195747
+      mode: 10x_h5
+      path: /root/nfsdata/apadetect/data/reprogramming_differentiation_apa/analyses/raw_realignment_apa_2026-06-07/cellranger/gse115943_pluripotency_reprogramming_core/gse115943_pluripotency_reprogramming_core_GSM3195747/outs/filtered_feature_bc_matrix.h5
+    - selector: library_id
+      value: gse115943_pluripotency_reprogramming_core_GSM3195748
+      mode: 10x_h5
+      path: /root/nfsdata/apadetect/data/reprogramming_differentiation_apa/analyses/raw_realignment_apa_2026-06-07/cellranger/gse115943_pluripotency_reprogramming_core/gse115943_pluripotency_reprogramming_core_GSM3195748/outs/filtered_feature_bc_matrix.h5
+    - selector: library_id
+      value: gse115943_pluripotency_reprogramming_core_GSM3195749
+      mode: 10x_h5
+      path: /root/nfsdata/apadetect/data/reprogramming_differentiation_apa/analyses/raw_realignment_apa_2026-06-07/cellranger/gse115943_pluripotency_reprogramming_core/gse115943_pluripotency_reprogramming_core_GSM3195749/outs/filtered_feature_bc_matrix.h5
+    - selector: library_id
+      value: gse115943_pluripotency_reprogramming_core_GSM3195750
+      mode: 10x_h5
+      path: /root/nfsdata/apadetect/data/reprogramming_differentiation_apa/analyses/raw_realignment_apa_2026-06-07/cellranger/gse115943_pluripotency_reprogramming_core/gse115943_pluripotency_reprogramming_core_GSM3195750/outs/filtered_feature_bc_matrix.h5
+    - selector: library_id
+      value: gse115943_pluripotency_reprogramming_core_GSM3195751
+      mode: 10x_h5
+      path: /root/nfsdata/apadetect/data/reprogramming_differentiation_apa/analyses/raw_realignment_apa_2026-06-07/cellranger/gse115943_pluripotency_reprogramming_core/gse115943_pluripotency_reprogramming_core_GSM3195751/outs/filtered_feature_bc_matrix.h5
+    - selector: library_id
+      value: gse115943_pluripotency_reprogramming_core_GSM3195752
+      mode: 10x_h5
+      path: /root/nfsdata/apadetect/data/reprogramming_differentiation_apa/analyses/raw_realignment_apa_2026-06-07/cellranger/gse115943_pluripotency_reprogramming_core/gse115943_pluripotency_reprogramming_core_GSM3195752/outs/filtered_feature_bc_matrix.h5
+    - selector: library_id
+      value: gse115943_pluripotency_reprogramming_core_GSM3195753
+      mode: 10x_h5
+      path: /root/nfsdata/apadetect/data/reprogramming_differentiation_apa/analyses/raw_realignment_apa_2026-06-07/cellranger/gse115943_pluripotency_reprogramming_core/gse115943_pluripotency_reprogramming_core_GSM3195753/outs/filtered_feature_bc_matrix.h5
+    - selector: library_id
+      value: gse115943_pluripotency_reprogramming_core_GSM3195754
+      mode: 10x_h5
+      path: /root/nfsdata/apadetect/data/reprogramming_differentiation_apa/analyses/raw_realignment_apa_2026-06-07/cellranger/gse115943_pluripotency_reprogramming_core/gse115943_pluripotency_reprogramming_core_GSM3195754/outs/filtered_feature_bc_matrix.h5
+    - selector: library_id
+      value: gse115943_pluripotency_reprogramming_core_GSM3195755
+      mode: 10x_h5
+      path: /root/nfsdata/apadetect/data/reprogramming_differentiation_apa/analyses/raw_realignment_apa_2026-06-07/cellranger/gse115943_pluripotency_reprogramming_core/gse115943_pluripotency_reprogramming_core_GSM3195755/outs/filtered_feature_bc_matrix.h5
+    - selector: library_id
+      value: gse115943_pluripotency_reprogramming_core_GSM3195756
+      mode: 10x_h5
+      path: /root/nfsdata/apadetect/data/reprogramming_differentiation_apa/analyses/raw_realignment_apa_2026-06-07/cellranger/gse115943_pluripotency_reprogramming_core/gse115943_pluripotency_reprogramming_core_GSM3195756/outs/filtered_feature_bc_matrix.h5
+    - selector: library_id
+      value: gse115943_pluripotency_reprogramming_core_GSM3195757
+      mode: 10x_h5
+      path: /root/nfsdata/apadetect/data/reprogramming_differentiation_apa/analyses/raw_realignment_apa_2026-06-07/cellranger/gse115943_pluripotency_reprogramming_core/gse115943_pluripotency_reprogramming_core_GSM3195757/outs/filtered_feature_bc_matrix.h5
+    - selector: library_id
+      value: gse115943_pluripotency_reprogramming_core_GSM3195758
+      mode: 10x_h5
+      path: /root/nfsdata/apadetect/data/reprogramming_differentiation_apa/analyses/raw_realignment_apa_2026-06-07/cellranger/gse115943_pluripotency_reprogramming_core/gse115943_pluripotency_reprogramming_core_GSM3195758/outs/filtered_feature_bc_matrix.h5
+    - selector: library_id
+      value: gse115943_pluripotency_reprogramming_core_GSM3195759
+      mode: 10x_h5
+      path: /root/nfsdata/apadetect/data/reprogramming_differentiation_apa/analyses/raw_realignment_apa_2026-06-07/cellranger/gse115943_pluripotency_reprogramming_core/gse115943_pluripotency_reprogramming_core_GSM3195759/outs/filtered_feature_bc_matrix.h5
+    - selector: library_id
+      value: gse115943_pluripotency_reprogramming_core_GSM3195760
+      mode: 10x_h5
+      path: /root/nfsdata/apadetect/data/reprogramming_differentiation_apa/analyses/raw_realignment_apa_2026-06-07/cellranger/gse115943_pluripotency_reprogramming_core/gse115943_pluripotency_reprogramming_core_GSM3195760/outs/filtered_feature_bc_matrix.h5
+    - selector: library_id
+      value: gse115943_pluripotency_reprogramming_core_GSM3195761
+      mode: 10x_h5
+      path: /root/nfsdata/apadetect/data/reprogramming_differentiation_apa/analyses/raw_realignment_apa_2026-06-07/cellranger/gse115943_pluripotency_reprogramming_core/gse115943_pluripotency_reprogramming_core_GSM3195761/outs/filtered_feature_bc_matrix.h5
+    - selector: library_id
+      value: gse115943_pluripotency_reprogramming_core_GSM3195762
+      mode: 10x_h5
+      path: /root/nfsdata/apadetect/data/reprogramming_differentiation_apa/analyses/raw_realignment_apa_2026-06-07/cellranger/gse115943_pluripotency_reprogramming_core/gse115943_pluripotency_reprogramming_core_GSM3195762/outs/filtered_feature_bc_matrix.h5
+    - selector: library_id
+      value: gse115943_pluripotency_reprogramming_core_GSM3195763
+      mode: 10x_h5
+      path: /root/nfsdata/apadetect/data/reprogramming_differentiation_apa/analyses/raw_realignment_apa_2026-06-07/cellranger/gse115943_pluripotency_reprogramming_core/gse115943_pluripotency_reprogramming_core_GSM3195763/outs/filtered_feature_bc_matrix.h5
+    - selector: library_id
+      value: gse115943_pluripotency_reprogramming_core_GSM3195764
+      mode: 10x_h5
+      path: /root/nfsdata/apadetect/data/reprogramming_differentiation_apa/analyses/raw_realignment_apa_2026-06-07/cellranger/gse115943_pluripotency_reprogramming_core/gse115943_pluripotency_reprogramming_core_GSM3195764/outs/filtered_feature_bc_matrix.h5
+    - selector: library_id
+      value: gse115943_pluripotency_reprogramming_core_GSM3195765
+      mode: 10x_h5
+      path: /root/nfsdata/apadetect/data/reprogramming_differentiation_apa/analyses/raw_realignment_apa_2026-06-07/cellranger/gse115943_pluripotency_reprogramming_core/gse115943_pluripotency_reprogramming_core_GSM3195765/outs/filtered_feature_bc_matrix.h5
+    - selector: library_id
+      value: gse115943_pluripotency_reprogramming_core_GSM3195766
+      mode: 10x_h5
+      path: /root/nfsdata/apadetect/data/reprogramming_differentiation_apa/analyses/raw_realignment_apa_2026-06-07/cellranger/gse115943_pluripotency_reprogramming_core/gse115943_pluripotency_reprogramming_core_GSM3195766/outs/filtered_feature_bc_matrix.h5
+    - selector: library_id
+      value: gse115943_pluripotency_reprogramming_core_GSM3195767
+      mode: 10x_h5
+      path: /root/nfsdata/apadetect/data/reprogramming_differentiation_apa/analyses/raw_realignment_apa_2026-06-07/cellranger/gse115943_pluripotency_reprogramming_core/gse115943_pluripotency_reprogramming_core_GSM3195767/outs/filtered_feature_bc_matrix.h5
+    - selector: library_id
+      value: gse115943_pluripotency_reprogramming_core_GSM3195768
+      mode: 10x_h5
+      path: /root/nfsdata/apadetect/data/reprogramming_differentiation_apa/analyses/raw_realignment_apa_2026-06-07/cellranger/gse115943_pluripotency_reprogramming_core/gse115943_pluripotency_reprogramming_core_GSM3195768/outs/filtered_feature_bc_matrix.h5
+    - selector: library_id
+      value: gse115943_pluripotency_reprogramming_core_GSM3195769
+      mode: 10x_h5
+      path: /root/nfsdata/apadetect/data/reprogramming_differentiation_apa/analyses/raw_realignment_apa_2026-06-07/cellranger/gse115943_pluripotency_reprogramming_core/gse115943_pluripotency_reprogramming_core_GSM3195769/outs/filtered_feature_bc_matrix.h5
+    - selector: library_id
+      value: gse115943_pluripotency_reprogramming_core_GSM3195770
+      mode: 10x_h5
+      path: /root/nfsdata/apadetect/data/reprogramming_differentiation_apa/analyses/raw_realignment_apa_2026-06-07/cellranger/gse115943_pluripotency_reprogramming_core/gse115943_pluripotency_reprogramming_core_GSM3195770/outs/filtered_feature_bc_matrix.h5
+    - selector: library_id
+      value: gse115943_pluripotency_reprogramming_core_GSM3195771
+      mode: 10x_h5
+      path: /root/nfsdata/apadetect/data/reprogramming_differentiation_apa/analyses/raw_realignment_apa_2026-06-07/cellranger/gse115943_pluripotency_reprogramming_core/gse115943_pluripotency_reprogramming_core_GSM3195771/outs/filtered_feature_bc_matrix.h5
+    - selector: library_id
+      value: gse115943_pluripotency_reprogramming_core_GSM3195772
+      mode: 10x_h5
+      path: /root/nfsdata/apadetect/data/reprogramming_differentiation_apa/analyses/raw_realignment_apa_2026-06-07/cellranger/gse115943_pluripotency_reprogramming_core/gse115943_pluripotency_reprogramming_core_GSM3195772/outs/filtered_feature_bc_matrix.h5
+    - selector: library_id
+      value: gse115943_pluripotency_reprogramming_core_GSM3195773
+      mode: 10x_h5
+      path: /root/nfsdata/apadetect/data/reprogramming_differentiation_apa/analyses/raw_realignment_apa_2026-06-07/cellranger/gse115943_pluripotency_reprogramming_core/gse115943_pluripotency_reprogramming_core_GSM3195773/outs/filtered_feature_bc_matrix.h5
+    pipeline:
+      hvg_n_top_genes: 3000
+      pca_n_components_fitted: 50
+      pca_n_components_used: 30
+      pca_seed: 20260825
+      neighbor_n_neighbors: 30
+      leiden_resolution: 0.6
+      leiden_seed: 20260825
+      filter_genes_min_cells: 10
+      normalization_method: normalize_total
+      normalization_target_sum: 10000.0
+      transform: log1p
+      hvg_flavor: scanpy_seurat
+      scale_max_value: 10
+      pca_solver: sklearn_randomized_iterated_power_4
+      neighbor_backend: pynndescent.NNDescent
+      neighbor_metric: euclidean
+      leiden_implementation: leidenalg.find_partition
+      leiden_iterations: -1

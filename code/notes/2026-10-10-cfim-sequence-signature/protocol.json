@@ -1,0 +1,26 @@
+{
+  "status": "frozen_before_motif_response_results",
+  "protocol_sha256": "6e2a6c6a2cb72a0453e1669899408126dae3d186de361168d1b22695f0845d6f",
+  "primary_window": [
+    -100,
+    -40
+  ],
+  "sensitivity_windows": [
+    [
+      -100,
+      0
+    ],
+    [
+      -80,
+      -40
+    ]
+  ],
+  "motifs": [
+    "TGTA",
+    "TGAT",
+    "CGTA"
+  ],
+  "threshold": 0.02,
+  "permutations": 20000,
+  "notes": "Background counts inspected without response label. Source papers verified with primary literature search."
+}

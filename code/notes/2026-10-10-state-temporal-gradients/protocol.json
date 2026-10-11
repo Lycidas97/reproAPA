@@ -1,0 +1,21 @@
+{
+  "analysis": "state-temporal-gradients",
+  "date": "2026-10-10",
+  "status": "design frozen before inspecting temporal effect summaries",
+  "question": "Does observed P move proximally at later actual sampling dates, and which adjacent state contrast carries proximal displacement?",
+  "inputs": "Frozen primary polyApipe tables in notes/2026-10-06-dual-main-plot-data/polyapipe/main/tables; no new state labels, pseudotime, raw-count reprocessing, or manuscript changes",
+  "primary_setting": "supported50_p08",
+  "P_time_routes": ["GSE118258", "178325_0618", "178325_0809", "GSE221739", "CIP", "WOT"],
+  "P_time_inventory_rule": "A P-within-time curve requires two or more distinct documented numeric D dates; a single endpoint is reported as unavailable, not tested. D12 E cannot be substituted for Xing P.",
+  "P_curve_universe": "Genes qualified in every metadata-qualified P physical library in a route. P libraries and sample units are held fixed across dates and genes. Each frozen sample unit is equally weighted within date, then dates are equally weighted.",
+  "P_M_curve_universe": "Genes with a qualified original P_M effect in every physical library where metadata qualifies both P and M; at least two dates required. Existing joint-PAS eligibility is retained. Library/time set is reported separately from P curve.",
+  "curve_subsets": ["all_fixed", "full_primary_tandem_UTR", "P_S_recurrent_proximal_002", "P_S_recurrent_distal_002", "P_M_recurrent_proximal_002", "P_M_recurrent_distal_002"],
+  "recurrence_definition": "Frozen WPP primary, series_matching=True, |effect|>=0.02, support in at least two studies; fixed membership without selection on temporal outcome",
+  "curve_statistics": "Date means, library values, last-minus-first, ordinary linear slope on documented days, Pearson and Spearman correlations, and per-gene endpoint differences. Tandem subsets additionally report usage-weighted retained-nucleotide difference using native full-catalog span.",
+  "formal_tests": "Exactly two exploratory primary tests: all_fixed WOT P_DWUI slope and all_fixed WOT same-library P_M slope. The statistic is the date-mean slope. Under exchangeable date means, 10000 permutations of observed values over actual dates, two-sided absolute-slope exceedance, (1+tail)/(10001), BH across the two tests. Biological independence is frozen for WOT libraries; dates, not genes, are the test units. These tests are temporal associations and require date exchangeability; they cannot infer maturation, lineage, or species mechanism. Other curves and subsets are descriptive without gene-level P values.",
+  "seed": 2026101021,
+  "stage_routes": ["GSE118258", "CIP", "WOT"],
+  "stage_universe": "Genes measurable at every qualified date of each S,R,E,P state within route. Library values average first over frozen sample unit, then within date, then equally over dates within state. Same gene and study-native PAS axis at all states. Sensitivity intersects complete profiles across the two mouse routes. These are cross-sectional state windows, not a chronological single-cell path.",
+  "stage_statistics": "R-S, E-R, P-E, P-S, absolute path shares and dominant step; aggregate signed means and per-gene dominant-step counts in all_fixed, tandem, fixed recurrent subsets. No P values: no same-state-matched independent longitudinal biological replicates.",
+  "validation": ["Reconstruct all primary state_date_values exactly from library table", "Reject missing libraries when forming fixed universe", "Gene composition and unit/date weighting stable", "Do not treat genes as temporal or biological replicates", "Exact permutation enumeration on a small synthetic date curve", "Tandem nucleotide conversion only on full-primary eligible genes", "Input hashes and source-code hashes"]
+}

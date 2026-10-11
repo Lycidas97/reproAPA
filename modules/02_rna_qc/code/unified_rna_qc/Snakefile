@@ -1,0 +1,113 @@
+"""Configuration-only entry point for unified RNA QC v3.2."""
+
+from pathlib import Path
+import csv
+import sys
+
+from snakemake.utils import validate
+
+ROOT = Path(workflow.basedir).resolve()
+sys.path.insert(0, str(ROOT / "scripts"))
+from path_contract import managed_run_dir
+validate(config, str(ROOT / "config.schema.yaml"))
+
+def resolved(value):
+    path = Path(value)
+    return path.resolve() if path.is_absolute() else (ROOT / path).resolve()
+
+MANIFEST = resolved(config["library_manifest"])
+RUN = managed_run_dir(ROOT, config["output_root"], config["output_dir"], config["output_mode"])
+CONFIG_PATH = Path(workflow.overwrite_configfiles[0]).resolve()
+
+with MANIFEST.open(newline="", encoding="utf-8") as handle:
+    records = list(csv.DictReader(handle, delimiter="\t"))
+
+LIBRARIES = [row["library_id"] for row in records]
+BY_LIBRARY = {row["library_id"]: row for row in records}
+if len(LIBRARIES) != int(config["expected_library_count"]):
+    raise ValueError("Configured library count does not match manifest")
+
+PYTHON = config["python"]
+
+
+rule all:
+    input:
+        str(RUN / "independent_validation.tsv"),
+
+
+rule library_qc:
+    input:
+        raw=lambda wc: str(resolved(BY_LIBRARY[wc.library]["input_path"])),
+        basic=lambda wc: str(resolved(BY_LIBRARY[wc.library]["prior_basic_qc_path"])),
+        diagnostic=lambda wc: str(resolved(BY_LIBRARY[wc.library]["prior_diagnostic_path"])),
+        config=str(CONFIG_PATH),
+        manifest=str(MANIFEST),
+        script=str(ROOT / "scripts/process_library.py"),
+        common=str(ROOT / "scripts/common.py"),
+    output:
+        metrics=str(RUN / "per_library/{library}/rna_cell_qc_metrics.parquet"),
+        pre=str(RUN / "per_library/{library}/pre_doublet_qc_decisions.parquet"),
+        diagnostic=str(RUN / "per_library/{library}/doublet_diagnostics.parquet"),
+        final=str(RUN / "per_library/{library}/cell_qc_decisions.parquet"),
+        thresholds=str(RUN / "per_library/{library}/rna_qc_thresholds.tsv"),
+        sample=str(RUN / "per_library/{library}/sample_qc_decision.tsv"),
+        seeds=str(RUN / "per_library/{library}/seed_stability.tsv"),
+        inventory=str(RUN / "per_library/{library}/input_inventory.tsv"),
+        resources=str(RUN / "per_library/{library}/resource_usage.tsv"),
+        figure=str(RUN / "per_library/{library}/qc_diagnostic.png"),
+        status=str(RUN / "per_library/{library}/status.json"),
+    log:
+        stdout=str(RUN / "logs/{library}.stdout.log"),
+        stderr=str(RUN / "logs/{library}.stderr.log"),
+    threads: 1
+    resources:
+        mem_mb=12000
+    shell:
+        "{PYTHON} {input.script:q} --root {ROOT:q} --config {input.config:q} "
+        "--library-id {wildcards.library:q} --output-dir {RUN}/per_library/{wildcards.library} "
+        "> {log.stdout:q} 2> {log.stderr:q}"
+
+
+rule aggregate:
+    input:
+        statuses=expand(str(RUN / "per_library/{library}/status.json"), library=LIBRARIES),
+        metrics=expand(str(RUN / "per_library/{library}/rna_cell_qc_metrics.parquet"), library=LIBRARIES),
+        decisions=expand(str(RUN / "per_library/{library}/cell_qc_decisions.parquet"), library=LIBRARIES),
+        diagnostics=expand(str(RUN / "per_library/{library}/doublet_diagnostics.parquet"), library=LIBRARIES),
+        config=str(CONFIG_PATH),
+        manifest=str(MANIFEST),
+        script=str(ROOT / "scripts/aggregate.py"),
+        common=str(ROOT / "scripts/common.py"),
+    output:
+        complete=str(RUN / "run_complete.ok"),
+        final=str(RUN / "cell_qc_decisions.parquet"),
+        report=str(RUN / "run_report.md"),
+        summary=str(RUN / "run_summary.json"),
+        tier_counts=str(RUN / "tier_counts_and_hashes.tsv"),
+        samples=str(RUN / "sample_qc_decisions.tsv"),
+        diagnostics=str(RUN / "diagnostic_summary.tsv"),
+        validation=str(RUN / "validation_summary.tsv"),
+    log:
+        stdout=str(RUN / "logs/aggregate.stdout.log"),
+        stderr=str(RUN / "logs/aggregate.stderr.log"),
+    shell:
+        "{PYTHON} {input.script:q} --root {ROOT:q} --config {input.config:q} --run-dir {RUN:q} "
+        "> {log.stdout:q} 2> {log.stderr:q}"
+
+
+rule independent_validate:
+    input:
+        complete=str(RUN / "run_complete.ok"),
+        final=str(RUN / "cell_qc_decisions.parquet"),
+        samples=str(RUN / "sample_qc_decisions.tsv"),
+        config=str(CONFIG_PATH),
+        manifest=str(MANIFEST),
+        script=str(ROOT / "scripts/validate_run.py"),
+    output:
+        validation=str(RUN / "independent_validation.tsv"),
+    log:
+        stdout=str(RUN / "logs/independent_validate.stdout.log"),
+        stderr=str(RUN / "logs/independent_validate.stderr.log"),
+    shell:
+        "{PYTHON} {input.script:q} --root {ROOT:q} --config {input.config:q} --run-dir {RUN:q} "
+        "> {log.stdout:q} 2> {log.stderr:q}"

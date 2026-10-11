@@ -1,0 +1,26 @@
+{
+  "question": "Do proximal and distal within-species gene-level recurrence separately exceed the existing measurement-matched expectation?",
+  "status": "Exploratory follow-up requested after inspecting aggregate recurrence and directional counts.",
+  "metric": "DWUI (stored as WPP)",
+  "primary_threshold": 0.02,
+  "sensitivity_threshold": 0.05,
+  "species": ["human", "mouse"],
+  "contrasts": ["P_S", "P_M"],
+  "directional_recurrence": "At least two studies with event -1 (proximal) or +1 (distal); one study vote requires agreement across every measurable series. An opposing third study is allowed, as in the original analysis.",
+  "null_model": "Existing L3_full strata and frozen event labels; permute labels independently within each study and stratum. Preserve gene observability, eligible-study count, exact measurable-series combination, directional capacity, expression and APA-coverage terciles, reference-DWUI quintile and PAS-number tercile.",
+  "permutations": 10000,
+  "seed": "Replay the original seed: 20261003 + first 12 hexadecimal SHA-256 digits of recurrence_control|species|contrast|threshold|L3_full.",
+  "primary_test": "One-sided count enrichment: (1 + number of null counts >= observed)/(10000 + 1).",
+  "multiple_testing": "BH across eight directional count tests at 0.02; separate eight-test BH at 0.05. Also report joint BH across all 16 as a sensitivity.",
+  "secondary_question": "Is the distal fraction among recurrent genes shifted relative to the same matched null?",
+  "secondary_test": "Distal/(proximal+distal), with two-sided equal-tail permutation P = min(1, 2*min(P_lower,P_upper)); BH across four contexts per threshold, with joint eight-test BH also reported. This tests directional composition, separately from directional count enrichment.",
+  "verification": [
+    "Primary ladder and recurrent roster match the current 9 October source-data archive by SHA-256.",
+    "Reviewed numerical source hashes match the original recurrence-controls audit.",
+    "Frozen inputs and observed directional memberships reproduce the published roster at both thresholds.",
+    "Proximal plus distal null counts equal the original saved total recurrence count in every one of the 10000 draws for every context.",
+    "Permutation means agree with analytic expectations computed from within-stratum event probabilities.",
+    "Intent tests cover an opposing third study, missing study votes, preserved event margins and analytic null expectations."
+  ],
+  "scope_boundary": "No new PAS calling, state assignment, recurrence selection, cross-species test or manuscript revision. Direction refers to a change in gene-wide relative PAS position; it does not establish absolute PAS preference, UTR-length change or function."
+}

@@ -1,0 +1,37 @@
+{
+  "analysis": "Exact all-background decomposition of three sampled routes across common-contributor S/M/P state contrasts",
+  "date": "2026-10-10",
+  "status": "fixed_before_new_route_mean_results",
+  "primary_setting": "supported50_p08",
+  "primary_threshold": 0.02,
+  "sensitivity_threshold": 0.05,
+  "scope": "Existing v2_primary matched_pms table only; no new PAS calling, endpoint assignment, selected recurrence cohort or manuscript edit.",
+  "route_labels": {"GSE118258": "Xing2020", "CIP": "CIP", "WOT": "WOT/2i"},
+  "source_definition": "S must be a documented preinduction source. The existing matched_pms construction uses P_S design=true_source, joins P_M using the identical P library and PAS axis, and additionally qualifies M_S joint PAS support. Observed S in endpoint cultures is not substituted for documented S.",
+  "primary_background": "All high-confidence one-to-one human/mouse ortholog pairs with a complete matched P/M/S effect in Xing2020, CIP and WOT under the primary setting. No recurrence, threshold or effect direction is used to select the background. The same ortholog pair and original matched contributor set define every state contrast within each route.",
+  "coverage_sensitivities": ["All matched genes within each of the three routes", "All mouse genes jointly matched in CIP and WOT, equal-weight route summaries", "Pairwise Xing-CIP and Xing-WOT complete ortholog backgrounds"],
+  "measurement_sensitivity": "Repeat the exact descriptive decomposition for the other three already-frozen DWUI settings (supported50_p09, supported50_p08_mc5, expanded_primary_p08) on their own complete ortholog backgrounds; primary-setting claims remain separate.",
+  "means_and_weights": "Equal genes within each specified universe; retain exported hierarchical common-contributor weights within each route/gene. CIP and WOT enter their combined sampled-route summary equally, never weighted by gene, metacell, library or capture count. Direction classes in a combined summary are first computed within each mouse route and then averaged, rather than thresholding the route-average effect.",
+  "identity": "PS=P-S=(M-S)+(P-M)=MS+PM. These are state-reference contrasts. M is an alternative mesenchymal/ECM state; MS/PM do not demonstrate a temporal S-to-M-to-P path.",
+  "direction_classes": "Proximal: delta <= -threshold; distal: delta >= threshold; subthreshold: -threshold < delta < threshold. Retain all three classes; the subthreshold class can contribute nonzero signed mean and must not be discarded.",
+  "route_step_contributions": "For each route, background, setting, threshold and contrast report N, n_direction, fraction p, signed conditional mean mu, absolute conditional mean, signed contribution p*mu=sum(delta_in_class)/N. Sum over three classes reconstructs the complete route mean. A zero-count class has mean NA and signed contribution zero.",
+  "difference_definition": "Delta means comparator minus Xing2020. Primary comparators are CIP, WOT and their equal-route average on the same three-route ortholog universe. Step contributions Delta_MS+Delta_PM reconstruct Delta_PS exactly. Also report I=Delta_PM-Delta_MS as a descriptive step-by-sampled-route contrast; do not call it a species-intrinsic interaction.",
+  "number_amplitude_decomposition": "For each direction and step, Delta(p*mu)=Delta_p*(mu_comparator+mu_Xing)/2 + Delta_mu*(p_comparator+p_Xing)/2. This symmetric allocation divides the algebraic cross-term equally, avoiding an arbitrary reference route. Fraction differences give equal-denominator count differences n_comparator-n_Xing; in an equal-route summary counts are averages and may be noninteger. This is an accounting decomposition, not a counterfactual or causal attribution. If a direction class is absent in either group, the total signed contribution difference remains defined but its symmetric count/amplitude allocation is NA because the missing conditional mean is not identified.",
+  "fractions_of_gap": "For nonzero Delta_PS report signed component/Delta_PS and component/(abs(Delta_MS)+abs(Delta_PM)); the former can exceed 1 or be negative when steps oppose. Mark Delta_PS ratios unstable and suppress them if abs(Delta_PS)<0.005 (one quarter of the primary response threshold). This descriptive reporting cutoff is fixed before results and is not a test threshold.",
+  "null_identifiability_audit": {
+    "question": "Can a recurrence-style matched gene-identity permutation identify a test of the complete-background route-mean step contrast?",
+    "answer_to_verify": "No: within-route permutation of complete response vectors preserves each route's MS and PM marginal sums; Delta_PM-Delta_MS and Delta_PS are invariant even before matching. Matching and cross-species ortholog relabeling cannot create sampling variation for this statistic.",
+    "demonstration": "Apply 100 seeded joint-vector gene-identity permutations within fixed joint strata on the primary three-route ortholog background. Preserve MS, PM and PS together, actual unit:series_pattern availability, and joint median-binned S/M baseline, mean log1p native GEX/APA coverage, native PAS number and contributor library count for each route. Save observed and every null statistic; require max change <1e-12. A constant null receives no empirical p or q and is explicitly non-informative.",
+    "route_unit_limit": "Only three complete routes (one human, two mouse) are available; no gene, metacell or library is an independent species replicate. Even an unsupported exchangeable route-label permutation would have only three one-versus-two assignments, giving a minimum one-sided p of 1/3. Enumerate the assignments as a resolution/identifiability audit only, not a valid biological hypothesis test: species labels are confounded with design and are not randomized.",
+    "forbidden": "No gene sign-flip zero null, selected recurrent-label test, metacell-based species p, bootstrap biological CI, or p from a constant all-background permutation. No rerunning previously selected-recurrence allocation tests."
+  },
+  "validation": [
+    "Recompute all four settings' state and full PAS-vector additivity.",
+    "Replay primary common triplets and original hierarchical weights; verify identical P library/usage/PAS axis and M-S support qualification.",
+    "Reconstruct every route/step mean from direction-class signed contributions; reconstruct every difference from number plus amplitude components and MS plus PM.",
+    "Verify ortholog uniqueness, identical gene denominators across the three primary routes and original complete measured gene sets.",
+    "Intent tests must fail when contributor matching, equal-route weighting, threshold boundaries, subthreshold contributions, null invariance or absent direction handling are violated."
+  ],
+  "random_seed": 20261010,
+  "claim_boundary": "Finite measured genes in these sampled routes only. DWUI is relative PAS position on the gene-wide axis, not general UTR length. Numerical allocation across state contrasts is not evidence for two independent molecular programs, actual transitions or a mechanism."
+}

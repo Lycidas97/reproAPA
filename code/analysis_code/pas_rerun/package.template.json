@@ -1,0 +1,393 @@
+{
+  "run_id": null,
+  "input_fingerprint": null,
+  "files": [
+    {
+      "target": "Fig/Figure.1.pdf",
+      "path": null,
+      "sha256": null,
+      "kind": "figure",
+      "title": "Reprogramming states and relative PAS position"
+    },
+    {
+      "target": "Fig/Figure.2.pdf",
+      "path": null,
+      "sha256": null,
+      "kind": "figure",
+      "title": "State-resolved net-position profiles"
+    },
+    {
+      "target": "Fig/Figure.3.pdf",
+      "path": null,
+      "sha256": null,
+      "kind": "figure",
+      "title": "Within-species APA concordance and state context"
+    },
+    {
+      "target": "Fig/Figure.4.pdf",
+      "path": null,
+      "sha256": null,
+      "kind": "figure",
+      "title": "Cross-species concordance and selected state-reference relationships. Panel legends continue on the next page.\\label{fig:cross-species-apa}"
+    },
+    {
+      "target": "Fig/Figure.5.pdf",
+      "path": null,
+      "sha256": null,
+      "kind": "figure",
+      "title": "Modeled interval inclusion changes and candidate-RBP expression. P--S uses observed S; P--M in A, B, D and F uses common qualified libraries; E retains separate-state means"
+    },
+    {
+      "target": "Fig/SuppFig.S4.pdf",
+      "path": null,
+      "sha256": null,
+      "kind": "figure",
+      "title": "PAS support and sensitivity to counting rules"
+    },
+    {
+      "target": "Fig/SuppFig.tool-comparison.reserved.pdf",
+      "path": null,
+      "sha256": null,
+      "kind": "figure",
+      "title": "PAS-caller concordance and coverage of the original APA results (RESERVED placeholder)"
+    },
+    {
+      "target": "Fig/SuppFig.S5.pdf",
+      "path": null,
+      "sha256": null,
+      "kind": "figure",
+      "title": "Background, reference and metric dependence of global PAS direction"
+    },
+    {
+      "target": "Fig/SuppFig.S6.pdf",
+      "path": null,
+      "sha256": null,
+      "kind": "figure",
+      "title": "Profile-class stability and transient remodeling"
+    },
+    {
+      "target": "Fig/SuppFig.S7.pdf",
+      "path": null,
+      "sha256": null,
+      "kind": "figure",
+      "title": "Expression-neighborhood organization and APA--GEX correspondence"
+    },
+    {
+      "target": "Fig/SuppFig.S8.pdf",
+      "path": null,
+      "sha256": null,
+      "kind": "figure",
+      "title": "Recurrence under measurement and background controls"
+    },
+    {
+      "target": "Fig/SuppFig.S9.pdf",
+      "path": null,
+      "sha256": null,
+      "kind": "figure",
+      "title": "Independent-unit inference and design limits"
+    },
+    {
+      "target": "Fig/SuppFig.S10.pdf",
+      "path": null,
+      "sha256": null,
+      "kind": "figure",
+      "title": "Metric-defined recurrence and reference-dependent membership"
+    },
+    {
+      "target": "Fig/SuppFig.S11.pdf",
+      "path": null,
+      "sha256": null,
+      "kind": "figure",
+      "title": "APA recurrence across opposing expression responses"
+    },
+    {
+      "target": "Fig/SuppFig.S12.pdf",
+      "path": null,
+      "sha256": null,
+      "kind": "figure",
+      "title": "Intermediate-state coverage and direction"
+    },
+    {
+      "target": "Fig/SuppFig.S13.pdf",
+      "path": null,
+      "sha256": null,
+      "kind": "figure",
+      "title": "Functional tests across nested backgrounds"
+    },
+    {
+      "target": "Fig/SuppFig.S14.pdf",
+      "path": null,
+      "sha256": null,
+      "kind": "figure",
+      "title": "Study-pair and state-specific cross-species effect correspondence"
+    },
+    {
+      "target": "Fig/SuppFig.S15.pdf",
+      "path": null,
+      "sha256": null,
+      "kind": "figure",
+      "title": "Cross-metric sharing, correction scope and conditional power"
+    },
+    {
+      "target": "Fig/SuppFig.S16.pdf",
+      "path": null,
+      "sha256": null,
+      "kind": "figure",
+      "title": "State context of all 26 selected orthologs. Left strips mark P--S and P--M set membership. Main cells show observed-S-referenced DWUI effects in each study/state; dots denote $|\\Delta\\mathrm{DWUI}|\\geq0.02$ and outlines endpoint-supporting records. Grey marks unavailable measurements. The right block shows paired P--M effects; diagonal slashes mark disagreement with the separate-state estimator. Gene selection, state availability and source definitions remain study-specific. The complete selected set includes weak and inconsistent contexts. Numerical coverage of the former six embedding projections accompanies Table S29."
+    },
+    {
+      "target": "Fig/SuppFig.S17.pdf",
+      "path": null,
+      "sha256": null,
+      "kind": "figure",
+      "title": "Cis features and cross-species prediction"
+    },
+    {
+      "target": "Fig/SuppFig.S18.pdf",
+      "path": null,
+      "sha256": null,
+      "kind": "figure",
+      "title": "Weighted site retention and interval-effect context"
+    },
+    {
+      "target": "Fig/SuppFig.S19.pdf",
+      "path": null,
+      "sha256": null,
+      "kind": "figure",
+      "title": "Matched-background density and detection limits"
+    },
+    {
+      "target": "Fig/SuppFig.S20.pdf",
+      "path": null,
+      "sha256": null,
+      "kind": "figure",
+      "title": "Candidate-RBP expression context"
+    },
+    {
+      "target": "Fig/SuppFig.S21.pdf",
+      "path": null,
+      "sha256": null,
+      "kind": "figure",
+      "title": "Candidate intervals, influence diagnostics and external transcript structure"
+    },
+    {
+      "target": "Fig/SuppFig.S22.pdf",
+      "path": null,
+      "sha256": null,
+      "kind": "figure",
+      "title": "Rad23b inclusion, transcript structure and archived AGO2 overlap"
+    },
+    {
+      "target": "table/S8.tsv",
+      "path": null,
+      "sha256": null,
+      "kind": "table",
+      "table_ids": [
+        8
+      ]
+    },
+    {
+      "target": "table/S9.tsv",
+      "path": null,
+      "sha256": null,
+      "kind": "table",
+      "table_ids": [
+        9
+      ]
+    },
+    {
+      "target": "table/S10.tsv",
+      "path": null,
+      "sha256": null,
+      "kind": "table",
+      "table_ids": [
+        10
+      ]
+    },
+    {
+      "target": "table/S11.tsv",
+      "path": null,
+      "sha256": null,
+      "kind": "table",
+      "table_ids": [
+        11
+      ]
+    },
+    {
+      "target": "table/S12.tsv",
+      "path": null,
+      "sha256": null,
+      "kind": "table",
+      "table_ids": [
+        12
+      ]
+    },
+    {
+      "target": "table/S13.tsv",
+      "path": null,
+      "sha256": null,
+      "kind": "table",
+      "table_ids": [
+        13
+      ]
+    },
+    {
+      "target": "table/S14.tsv",
+      "path": null,
+      "sha256": null,
+      "kind": "table",
+      "table_ids": [
+        14
+      ]
+    },
+    {
+      "target": "table/S15.tsv",
+      "path": null,
+      "sha256": null,
+      "kind": "table",
+      "table_ids": [
+        15
+      ]
+    },
+    {
+      "target": "table/S16.tsv",
+      "path": null,
+      "sha256": null,
+      "kind": "table",
+      "table_ids": [
+        16
+      ]
+    },
+    {
+      "target": "table/S17.tsv",
+      "path": null,
+      "sha256": null,
+      "kind": "table",
+      "table_ids": [
+        17
+      ]
+    },
+    {
+      "target": "table/S18.tsv",
+      "path": null,
+      "sha256": null,
+      "kind": "table",
+      "table_ids": [
+        18
+      ]
+    },
+    {
+      "target": "table/S19.tsv",
+      "path": null,
+      "sha256": null,
+      "kind": "table",
+      "table_ids": [
+        19
+      ]
+    },
+    {
+      "target": "table/S20.tsv",
+      "path": null,
+      "sha256": null,
+      "kind": "table",
+      "table_ids": [
+        20
+      ]
+    },
+    {
+      "target": "table/S21.tsv",
+      "path": null,
+      "sha256": null,
+      "kind": "table",
+      "table_ids": [
+        21
+      ]
+    },
+    {
+      "target": "table/S22.tsv",
+      "path": null,
+      "sha256": null,
+      "kind": "table",
+      "table_ids": [
+        22
+      ]
+    },
+    {
+      "target": "table/S23.tsv",
+      "path": null,
+      "sha256": null,
+      "kind": "table",
+      "table_ids": [
+        23
+      ]
+    },
+    {
+      "target": "table/S24.tsv",
+      "path": null,
+      "sha256": null,
+      "kind": "table",
+      "table_ids": [
+        24
+      ]
+    },
+    {
+      "target": "table/S25.tsv",
+      "path": null,
+      "sha256": null,
+      "kind": "table",
+      "table_ids": [
+        25
+      ]
+    },
+    {
+      "target": "table/S26.tsv",
+      "path": null,
+      "sha256": null,
+      "kind": "table",
+      "table_ids": [
+        26
+      ]
+    },
+    {
+      "target": "table/S27.tsv",
+      "path": null,
+      "sha256": null,
+      "kind": "table",
+      "table_ids": [
+        27
+      ]
+    },
+    {
+      "target": "table/S28.tsv",
+      "path": null,
+      "sha256": null,
+      "kind": "table",
+      "table_ids": [
+        28
+      ]
+    },
+    {
+      "target": "table/S29.tsv",
+      "path": null,
+      "sha256": null,
+      "kind": "table",
+      "table_ids": [
+        29
+      ]
+    },
+    {
+      "target": "table/S30.tsv",
+      "path": null,
+      "sha256": null,
+      "kind": "table",
+      "table_ids": [
+        30
+      ]
+    }
+  ],
+  "text_review": {
+    "path": null,
+    "sha256": null
+  },
+  "instructions": "Add changed full split_source files; all paths must be registered artifacts of this run. Every text-target needs a disposition."
+}
