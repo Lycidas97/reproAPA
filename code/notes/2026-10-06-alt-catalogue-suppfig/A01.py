@@ -128,7 +128,7 @@ lowg = E.df('lowshift_genes')
 mem = {s: E.df('member_poly' if s == PS else 'member_alt') for s in (PS, AL)}
 
 # ------------------------------------------------------------------------------------------------ layout
-H1, H2, H3 = 132.0, 208.4, 166.5                 # page 538.5 pt = 189.97 mm (<= 190 mm series convention)
+H1, H2, H3 = 125.5, 208.4, 166.5                 # 2026-10-12: a loses its ordering note (caption); page 532.0 pt
 WB = 228.0; WC = RR-X0-WB-GAP
 WD, WE = 172.0, 136.0; WF = RR-X0-WD-WE-2*GAP
 TOP0 = 15.8                                    # first content row below the panel-letter clear zone
@@ -146,12 +146,12 @@ def key_y(y, h):
 
 # a ---------------------------------------------------------------------------------------- slopegraphs
 x, y, w, h = F.panel('a', X0, Y1, RR-X0, H1)
-FACETS = [('P_S', 'true_source', 'P–S, documented source', ['GSE118258', '178325_0618', '178325_0809', 'CIP', 'WOT']),
-          ('P_M', 'same_library', 'P–M, paired', ['GSE118258', 'GSE150311', 'GSE221739', 'CIP', 'WOT'])]
+FACETS = [('P_S', 'true_source', 'P–S', ['GSE118258', '178325_0618', '178325_0809', 'CIP', 'WOT']),   # documented source / paired: caption
+          ('P_M', 'same_library', 'P–M', ['GSE118258', 'GSE150311', 'GSE221739', 'CIP', 'WOT'])]
 FG = 16.0
 fw = (w-FG)/2
 top = y+9.0                                    # column headers share the title row (was y+13 with headers one row lower)
-ybot = y+h-LEG-2.0-8.0*Fig.TEXT_H-7.0*Fig.TEXT_H-4.0     # room for the end labels and the ordering line
+ybot = y+h-LEG-2.0-8.0*Fig.TEXT_H-4.0     # room for the end labels (the ordering line moved to the caption)
 sy = Lin(0.022, -0.035, top+2.0, ybot)        # upper limit just above the largest 16-setting range (.019)
 va = {}
 for k, (con, des, title, routes) in enumerate(FACETS):
@@ -207,7 +207,7 @@ for k, (con, des, title, routes) in enumerate(FACETS):
     hm = [ordv[s]['human_above_mouse'] for s in (PS, AL)]
     msg = ('Human above mouse in all 16 settings, both workflows' if hm == [16, 16] else
            f'Human above mouse in {hm[0]}/16 (polyApipe) and {hm[1]}/16 (alternative) settings')
-    F.text((ax+pcol)/2, yl_+8.4, msg, 7.0, ha='center', color=MUTED)
+    # 2026-10-12: msg (ordering of human above mouse) is stated in the caption, not drawn; values keep pts['ordering']
     va[con] = pts
 F.key_row(None, key_y(y, h), [('marker', ('o', CP), 'polyApipe'), ('marker', (AM, CA), 'Alternative calling'),
                                ('line', (NULLBAR, None, 'range'), '16 settings (range)')], center=x+w/2)
@@ -242,7 +242,6 @@ for c, cl in (('PM', 'P–M'), ('PS', 'P–S')):
 labw = max(textwidth(r[1], 7.0) for r in rows)
 sc = Lin(np.log(0.25), np.log(3.2), x+labw+8.0, x+w-1.6)
 L = lambda v: sc(np.log(max(min(v, 3.2), 0.25)))
-F.text((sc.p0+sc.p1)/2, y+5.0, 'Observed / null mean', 7.5, ha='center')
 ngr = len({r[0] for r in rows})
 pitch = (H2-TOP0-ngr*GHEAD-1.0-AXIS_H-2.0-LEG)/len(rows)
 yy = y+TOP0; cur = None; vb = {}; segs = []; first = None
@@ -262,7 +261,7 @@ for g, lab, d in rows:
 segs.append((first, yy))
 for y0_, y1_ in segs:
     F.line([L(1.0)]*2, [y0_, y1_], lw='ref', color=AXC, ls='ref')
-F.xaxis(sc, yy+1.0, [np.log(v) for v in (0.25, 0.5, 1, 2)], ['0.25', '0.5', '1', '2'], title='Ratio (log scale)')
+F.xaxis(sc, yy+1.0, [np.log(v) for v in (0.25, 0.5, 1, 2)], ['0.25', '0.5', '1', '2'], title='Observed / null mean (log scale)')
 F.key_row(None, key_y(y, h), [('marker', ('o', CP), 'polyApipe'), ('marker', (AM, CA), 'Alternative'),
                                ('marker', ('o', 'white', INK), 'q ≥ .05'), ('line', (NULLBAR, None, 'bold'), 'null 95%')],
           center=x+w/2, gap=6.0)
@@ -276,7 +275,6 @@ GD = {'PMS': 'Same PAS, Xing2020 pairs (P/M/S)', 'PEM': 'Same PAS, Liu2020–Guo
 CISR = [('P-S', 'human', 'P–S, h→m'), ('P-S', 'mouse', 'P–S, m→h'), ('P-M', 'human', 'P–M, h→m'), ('P-M', 'mouse', 'P–M, m→h')]
 labd = max(textwidth(r[2], 7.0) for r in ROWS_D+[(0, 0, c_[2]) for c_ in CISR])
 sd = Lin(-0.3, 0.6, x+labd+8.0, x+w-5.0)
-F.text((sd.p0+sd.p1)/2, y+5.0, 'Rank correlation ρ', 7.5, ha='center')
 nrow = len(ROWS_D)+len(CISR)
 pd_ = (H2-TOP0-3*GHEAD-2*(1.0+AXIS_H)-2.0-2.0-LEG)/nrow
 yy = y+TOP0; cur = None; vc = {}; segs = []; first = None
@@ -299,8 +297,8 @@ for des, met, lab in ROWS_D:
 segs.append((first, yy))
 for y0_, y1_ in segs:
     F.line([sd(0)]*2, [y0_, y1_], lw='ref', color=AXC, ls='ref')
-yy = F.xaxis(sd, yy+1.0, [-0.2, 0, 0.2, 0.4, 0.6], ['−.2', '0', '.2', '.4', '.6'], title='ρ (thin lines, 95% CI)')+2.0
-head(F, x+0.2, yy+0.6, 'cis increment tests (four prespecified)'); yy += GHEAD
+yy = F.xaxis(sd, yy+1.0, [-0.2, 0, 0.2, 0.4, 0.6], ['−.2', '0', '.2', '.4', '.6'], title='Rank correlation ρ')+2.0
+head(F, x+0.2, yy+0.6, 'cis increment tests'); yy += GHEAD
 sq = Lin(0.0, 1.5, sd.p0, sd.p1)                      # -log10 q
 first = yy
 for c, sp, lab in CISR:
@@ -346,7 +344,7 @@ for k, sp in enumerate(('human', 'mouse')):
     tot_l = sum(nP.values())+int(onlyA.sum()); tot_r = sum(nA.values())+int(onlyP.sum())
     by0 = y+10.0+k*(blk+1.0)
     hd = 9.0
-    F.text(x+w-1.5, by0, f'{sp.capitalize()} · {len(com)} in both · {pct(agree)} same class · ARI {float(tc.ARI):.2f}'.replace(' 0.', ' .'), 7.0, ha='right')
+    F.text(x+w-1.5, by0, sp.capitalize(), 7.0, ha='right')   # common count, same-class share and ARI: caption
     gapn = 2.0
     avail = blk-hd-3*gapn-1.0
     u = avail/max(tot_l, tot_r)
@@ -405,10 +403,9 @@ for sp, c in (('human', 'SP'), ('human', 'MP'), ('mouse', 'SP'), ('mouse', 'MP')
 labe = max(textwidth(r[1], 7.0) for r in rows_e)
 jw = textwidth('.00', 7.0)
 se = Lin(-1.0, 1.0, x+labe+5.0, x+w-1.5-jw-5.0)
-F.text((se.p0+se.p1)/2, y+5.0, 'Share of the union', 7.5, ha='center')
 F.text(x+w-1.5, y+5.0, 'J', 7.5, ha='right')
 ng = len({r[0] for r in rows_e})
-pe = (h-TOP0-ng*GHEAD-1.0-AXIS_H+8.0*Fig.TEXT_H+1.6-2.0-LEG)/len(rows_e)    # axis without title
+pe = (h-TOP0-ng*GHEAD-1.0-AXIS_H-2.0-LEG)/len(rows_e)    # axis with title
 yy = y+TOP0; cur = None; vv = {}
 for g, lab, nPo, nAo, nS in rows_e:
     if g != cur:
@@ -424,7 +421,7 @@ for g, lab, nPo, nAo, nS in rows_e:
     vv[f'{g} | {lab}'] = dict(polyapipe=nPo, alternative=nAo, shared=nS, union=U, jaccard=nS/U)
     yy += pe
 F.line([se(0)]*2, [y+TOP0+GHEAD, yy], lw='ref', color=AXC, ls='ref')
-F.xaxis(se, yy+1.0, [-1, -0.5, 0, 0.5, 1], ['1', '.5', '0', '.5', '1'])
+F.xaxis(se, yy+1.0, [-1, -0.5, 0, 0.5, 1], ['1', '.5', '0', '.5', '1'], title='Share of the union')
 F.key_row(None, key_y(y, h), [('block', ONLY_P, 'polyApipe'), ('block', BOTH, 'both'), ('block', ONLY_A, 'alternative')],
           center=x+w/2, gap=5.0)
 F.values['e'] = vv
@@ -460,7 +457,6 @@ BLOCKS = [('polyApipe only', [g for g in gP.index if g not in both_ids], ONLY_P)
 NC, CELL = 4, 8.4                              # 4 columns: larger cells, the 43-gene block is 11 rows
 bw_ = NC*CELL
 bgap = (w-1.0-3*bw_)/2
-F.text(x+w/2, y+5.0, 'Low-net-shift P–M screen', 7.5, ha='center')   # same height as the e title
 HEADS = [('polyApipe', 'only'), ('Both', ''), ('Alternative', 'only')]
 hy = y+TOP0                                    # block headers start below the letter clear zone
 wy0 = hy+2*7.4+2.4
@@ -504,8 +500,7 @@ vf['stages'] = {}                              # stage counts kept in values (re
 for st, lab_ in STAGES:
     r_ = low[low.stage == st].iloc[0]
     vf['stages'][lab_] = dict(polyapipe=int(r_.polyapipe), alternative=int(r_.apadetect_p50), shared=int(r_.shared))
-F.text(x+w/2, key_y(y, h)-19.0, 'markers, strict interval', 7.0, ha='center', color=MUTED)
-F.text(x+w/2, key_y(y, h)-10.6, 'names, also |ΔDWUI| < .01', 7.0, ha='center', color=MUTED)
+# 2026-10-12: marker and name rules moved to the caption
 F.key_row(None, key_y(y, h), [('marker', ('o', CP), 'polyApipe'), ('marker', (AM, CA), 'Alternative')], center=x+w/2, gap=6.0)
 F.values['f'] = vf
 

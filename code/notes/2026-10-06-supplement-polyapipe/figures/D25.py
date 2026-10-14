@@ -87,7 +87,7 @@ assert int(t.keep.sum()) == 29 and t[t.keep][['start0', 'end0']].drop_duplicates
 order = kept+drop
 by = Lin(0, 9, y+72.0, y+20.5)
 x0b = x+22.0; cwb = (x+w-1.0-x0b-6.0)/len(order)
-F.text(x0b+cwb*len(kept)/2, y+3.0, f'Kept: expressed ≥ 2 CPM in P of both studies ({len(kept)} RBPs, {t[t.keep][["start0", "end0"]].drop_duplicates().shape[0]} positions)', 7.5, ha='center')
+F.text(x0b+cwb*len(kept)/2, y+3.0, 'Kept', 7.5, ha='center')   # 2026-10-12: keep rule and counts moved to the caption
 F.text(x0b+cwb*(len(kept)+1)+6.0, y+3.0, 'Removed', 7.5, ha='center', color=MUTED)
 F.yaxis(by, x0b-2.0, [0, 3, 6, 9], None, 'log2(CPM + 1)')
 F.line([x0b+cwb*len(kept)+3.0]*2, [by.p1-4.0, by.p0+4.0], lw='ref', color=AXC, ls='ref')

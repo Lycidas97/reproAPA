@@ -29,6 +29,54 @@ def safe_path(value):
     return ROOT / relative
 
 
+def validate_current_edition():
+    edition = json.loads((ROOT / 'provenance/current-edition.json').read_text())
+    scope = edition['scope']
+    assert scope == dict(main_figures=4, supplementary_figures=21,
+                         supplementary_tables=10, workbook_data_sheets=58,
+                         workbook_total_sheets=60, source_blocks=202)
+    package = json.loads(safe_path(edition['data_package']).read_text())
+    assert package['version'] == '2026-10-13 v11f'
+    assert package['reserved_doi'] == '10.5281/zenodo.23347745'
+    files = {r['filename']: r for r in package['files']}
+    assert len(files) == len(package['files']) == 87
+    assert len([name for name in files if name.endswith('.tar.gz')]) == package['archive_count'] == 81
+    assert package['companion_count'] == 6
+    for name, field in [('FILES.tsv', 'files_manifest'), ('ARCHIVES.tsv', 'archives_manifest')]:
+        path = safe_path(package[field])
+        assert path.stat().st_size == files[name]['bytes']
+        assert sha256(path.read_bytes()).hexdigest() == files[name]['sha256']
+    frozen = {r['path']: r for r in rows(safe_path(package['files_manifest']))}
+    assert len(frozen) == 2964
+    verification = json.loads(safe_path(package['local_verification']).read_text())
+    assert verification['status'] == 'PASS' and verification['all_restored_content_sha256_verified']
+    assert verification['verified_member_count'] == len(frozen)
+    outputs = rows(safe_path(edition['outputs']))
+    assert len(outputs) == len({r['output'] for r in outputs}) == 35
+    expected = {f'Figure {i}' for i in range(1, 5)} | {f'Figure S{i}' for i in range(1, 22)}
+    expected |= {f'Table S{i}' for i in range(1, 11)}
+    assert {r['output'] for r in outputs} == expected
+    for row in outputs:
+        assert safe_path(row['producer']).is_file(), row
+        assert row['sha256'] == frozen['project/' + row['workspace_path']]['sha256'], row
+    workbook = edition['workbook']
+    assert len(workbook['sheets']) == len(set(workbook['sheets'])) == 60 and 'S4j' in workbook['sheets']
+    assert len([n for n in workbook['sheets'] if n not in {'Contents', 'Sources'}]) == 58
+    assert workbook['sha256'] == frozen['project/' + workbook['path']]['sha256']
+    assert workbook['base_sha256'] == frozen['project/' + workbook['base_workbook']]['sha256']
+    assert workbook['blocks'] == 202 and safe_path(workbook['builder']).is_file()
+    assert all(r['sha256'] == workbook['sha256'] for r in outputs if r['role'] == 'supplementary_table')
+    for item in edition['updated_sources'] + [dict(path=p) for p in edition['added_sources']]:
+        path = safe_path(item['path'])
+        record = frozen['project/' + item['path'].removeprefix('code/')]
+        assert path.stat().st_size == int(record['bytes'])
+        assert sha256(path.read_bytes()).hexdigest() == record['sha256'], item
+    current_hashes = rows(safe_path(edition['manuscript_hashes']))
+    assert len({r['path'] for r in current_hashes}) == len(current_hashes)
+    assert all(re.fullmatch(r'[0-9a-f]{64}', r['sha256']) and int(r['bytes']) > 0 for r in current_hashes)
+    return scope
+
+
 def main():
     modules = sorted((ROOT / 'modules').glob('[0-9][0-9]_*'))
     assert len(modules) == 10, 'Expected ten module entry guides'
@@ -184,12 +232,13 @@ def main():
             if re.match(r'^[a-z]+://', target) or target.startswith('#'):
                 continue
             assert (path.parent / target.split('#')[0]).exists(), (path, target)
+    current_scope = validate_current_edition()
     print(f'PASS: {len(manifest)} source records, '
           f'{sum(p.suffix == ".py" for p in files)} Python files; '
-          f'{scope["main_figures"]} main figures, '
-          f'{scope["supplementary_figures"]} supplementary figures, '
-          f'{scope["supplementary_tables"]} tables / '
-          f'{scope["workbook_data_sheets"]} data sheets; source and environment hashes')
+          f'{current_scope["main_figures"]} main figures, '
+          f'{current_scope["supplementary_figures"]} supplementary figures, '
+          f'{current_scope["supplementary_tables"]} tables / '
+          f'{current_scope["workbook_data_sheets"]} data sheets; current v11f and historical source/environment hashes')
 
 
 

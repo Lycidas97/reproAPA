@@ -90,10 +90,10 @@ for i, (L, comp, study, col, title, progs, metric, rng, ticks) in enumerate(CASE
     x, y, w, h = F.panel(L, X0+(WC+GAP)*i, Y2, WC, H2)
     tx = x+0.2+textwidth(L, 11, 'Bol')+F.CLEAR_R+0.6
     F.rect(tx, y+3.2, 5.6, 5.6, fc=col); F.text(tx+7.6, y+2.4, study, 8.0)
-    F.text(x+w/2, y+13.0, title, 7.0, ha='center', color=MUTED)
+    # 2026-10-12: comparison subtitle (title) moved to the caption
     cntw = textwidth('29 / 29', 7.0)
     sx = Lin(rng[0], rng[1], x+PROGW+5.0, x+w-cntw-6.0)
-    top, bot = y+27.0, y+80.0
+    top, bot = y+18.0, y+71.0
     pitch_ = (bot-top)/len(progs)
     F.text(x+w, top-6.6, 'Δ > 0', 7.0, ha='right', color=MUTED)
     F.line([sx(0)]*2, [top, bot], lw='ref', color=AXC, ls='ref')

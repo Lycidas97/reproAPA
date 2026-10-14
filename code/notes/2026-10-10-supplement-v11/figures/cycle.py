@@ -21,7 +21,7 @@ pl = R.df('notes/2026-10-10-proliferation-apa/paired_library_score_differences.t
 ex = R.df('notes/2026-10-10-cpa-factor-expression/expression_contrasts.tsv')
 ra = R.df('notes/2026-10-10-proliferation-apa/route_associations.tsv')
 sq = R.df('notes/2026-10-10-cfim-sequence-signature/sequence_signature_tests.tsv')
-H1, H2, H3 = 107.3, 154.5, 108.1
+H1, H2, H3 = 113.7, 154.5, 105.1   # 2026-10-12: a gains a shared axis title, e loses its title row
 H = 4.5+H1+GAP+H2+GAP+H3+4.5
 F = supdraw.Fig(H, name('cycle'))
 y1 = 4.5; y2 = y1+H1+GAP; y3 = y2+H2+GAP
@@ -40,10 +40,10 @@ x, y, w, h = F.panel('a', X0, y1, WA, H1)
 lab_w = 78.0
 s1 = Lin(-0.1, 0.6, x+lab_w+2.0, x+lab_w+2.0+74.0)
 s2 = Lin(-0.1, 0.6, s1.p1+16.0, x+WA-5.0)
-F.text(x+16.0, y+0.6, 'Cell-cycle score difference', 7.5)
-F.text((s1.p0+s1.p1)/2, y+11.0, 'P–M, same libraries', 7.0, ha='center', color=MUTED)
-F.text((s2.p0+s2.p1)/2, y+11.0, 'P–S, documented source', 7.0, ha='center', color=MUTED)
-top, pitch = y+24.0, 9.6
+# 2026-10-12: panel titles moved to axis titles or the caption; facet labels shortened (same libraries / documented source: caption)
+F.text((s1.p0+s1.p1)/2, y+3.0, 'P–M', 7.5, ha='center')
+F.text((s2.p0+s2.p1)/2, y+3.0, 'P–S', 7.5, ha='center')
+top, pitch = y+20.8, 9.6
 for k, r in enumerate(ROUTES):
     yy = top+k*pitch
     if k % 2 == 0: F.rect(x, yy-pitch/2, w, pitch, fc=BAND)
@@ -64,6 +64,7 @@ yb = top+len(ROUTES)*pitch-pitch/2+1.0
 for s in (s1, s2):
     F.line([s(0)]*2, [top-pitch/2, yb], lw='ref', color=AXC, ls='ref')
     ya = F.xaxis(s, yb, [0, 0.2, 0.4, 0.6], ['0', '.2', '.4', '.6'])
+F.text((s1.p0+s2.p1)/2, ya+1.6, 'Cell-cycle score difference', 8.0, ha='center'); ya += 1.6+0.93*8.0
 F.key_row(0, ya+2.5, [('marker', ('o', SC['P']), 'Library'), ('marker', ('|', INK), 'Route mean'), ('marker', ('o', INK), 'Route')],
           center=x+lab_w+(WA-lab_w)/2)
 a_end = ya+2.5+7.6
@@ -73,7 +74,6 @@ xb0 = X0+WA+GAP
 x, y, w, h = F.panel('b', xb0, y1, XR-xb0, H1)
 sx = Lin(-0.1, 0.5, x+27.5, XR-1.0); sy = Lin(-0.04, 0.03, y+H1-19.0, y+12.0)
 F.lineplot(sx, sy, label='cycle vs direction', standalone=False)
-F.text(x+16.0, y+0.6, 'P–S, documented source', 7.5)
 F.line([sx.p0, sx.p1], [sy(0)]*2, lw='ref', color=AXC, ls='ref')
 pts = {}
 for r in DOC:
@@ -93,13 +93,12 @@ F.xaxis(sx, sy.p0, [0, 0.2, 0.4], ['0', '.2', '.4'], title='Cell-cycle score dif
 # ---------------------------------------------------------------- c
 WC = 262.0
 x, y, w, h = F.panel('c', X0, y2, WC, H2)
-F.text(x+16.0, y+0.6, 'CPA-factor expression, Δ mean log2(CPM + 1)', 7.5)
-cx0, cw, ch = x+40.0, 21.65, 8.6
+cx0, cw, ch = x+40.0, 21.65, 9.4
 cols = [('P_M', r) for r in PAIRED]+[('P_S', r) for r in DOC]
 CX = lambda j: cx0+j*cw+(5.0 if j >= 5 else 0.0)
-F.text(CX(0)+2.5*cw, y+11.4, 'P–M, same libraries', 7.0, ha='center', color=MUTED)
-F.text(CX(5)+2.5*cw, y+11.4, 'P–S, documented source', 7.0, ha='center', color=MUTED)
-ht = y+21.0
+F.text(CX(0)+2.5*cw, y+3.0, 'P–M', 7.5, ha='center')
+F.text(CX(5)+2.5*cw, y+3.0, 'P–S', 7.5, ha='center')
+ht = y+12.6
 for j, (con, r) in enumerate(cols):
     F.rect(CX(j)+0.5, ht, cw-1.5, 4.0, fc=STUDY[r][1])
 top = ht+6.0
@@ -116,7 +115,7 @@ for i, fct in enumerate(FACT):
             F.rect(CX(j)+0.5, yy, cw-1.5, ch-1.0, fc=supdraw.diverge(v, LIM))
         F.values[f'c {con}|{r}|{fct}'] = None if v is None else float(v)
 yk = top+len(FACT)*ch+3.5
-F.cbar_key(cx0+(CX(9)+cw-cx0)/2, yk, 'Δ', '−1.5', '+1.5', lambda u: supdraw.diverge(-LIM+2*LIM*u, LIM), wbar=60.0)
+F.cbar_key(cx0+(CX(9)+cw-cx0)/2, yk, 'Δ mean log2(CPM + 1)', '−1.5', '+1.5', lambda u: supdraw.diverge(-LIM+2*LIM*u, LIM), wbar=60.0)
 keys = [('block', STUDY[r][1], STUDY[r][0]) for r in ['GSE118258', 'GSE150311', '178325_0618', '178325_0809', 'GSE221739', 'CIP', 'WOT']]
 F.key_row(0, yk+10.5, keys[:4], center=x+WC/2)
 F.key_row(0, yk+21.0, keys[4:], center=x+WC/2)
@@ -125,7 +124,6 @@ c_end = yk+21.0+7.6
 # ---------------------------------------------------------------- d  UGUA
 xd0 = X0+WC+GAP
 x, y, w, h = F.panel('d', xd0, y2, XR-xd0, H2)
-F.text(x+16.0, y+0.6, 'Upstream UGUA, distal − proximal', 7.5)
 p = sq[(sq.primary == True) & (sq.motif == 'TGTA') & (sq.window == 'upstream40_100')]
 TESTS = [('paired_strict', 'human', 'proximal_vs_nonrecurrent'), ('paired_strict', 'human', 'proximal_vs_distal'),
          ('paired_strict', 'mouse', 'proximal_vs_nonrecurrent'), ('paired_strict', 'mouse', 'proximal_vs_distal')]
@@ -134,12 +132,12 @@ bgs = sorted(p.background.unique())
 assert len(p) == 8, (len(p), bgs)
 other = [b for b in bgs if b != 'paired_strict'][0]
 sd = Lin(-1.0, 1.0, x+70.0, XR-20.0)
-F.text(XR-0.2, y+11.0, 'q', 7.0, ha='right', color=MUTED)
+F.text(XR-0.2, y+3.0, 'q', 7.0, ha='right', color=MUTED)
 top, pitch = y+28.0, 11.2
 k = 0
 for bi, (bg, bl) in enumerate(((('paired_strict'), 'Common orthologs'), (other, 'Each species'))):
     yh = top+bi*(4*pitch+12.0)-12.0
-    F.text(x+0.2, yh, bl+f', {int(p[p.background == bg].n_genes.iloc[0]) if bg == "paired_strict" else ""}'.rstrip(', '), 7.0, color=MUTED)
+    F.text(x+0.2, yh, bl, 7.0, color=MUTED)   # common-ortholog count: caption
     for sp in ('human', 'mouse'):
         for comp, cl in (('proximal_vs_nonrecurrent', 'vs not recurrent'), ('proximal_vs_distal', 'vs distal')):
             r = p[(p.background == bg) & (p.species == sp) & (p.comparison == comp)].iloc[0]
@@ -163,10 +161,9 @@ d_end = yy+2.5+7.6
 
 # ---------------------------------------------------------------- e  within-state association
 x, y, w, h = F.panel('e', X0, y3, XR-X0, H3)
-F.text(x+16.0, y+0.6, 'Within-state partial correlation of cell-cycle score with mean DWUI', 7.5)
 lab_w = 82.0
 fw = (XR-x-lab_w-2*10.0)/3
-top, pitch = y+24.0, 8.4
+top, pitch = y+20.0, 8.4
 for k, r in enumerate(ROUTES):
     yy = top+k*pitch
     if k % 2 == 0: F.rect(x, yy-pitch/2, w, pitch, fc=BAND)
@@ -174,7 +171,7 @@ for k, r in enumerate(ROUTES):
 ye = 0
 for si, st in enumerate(('S', 'M', 'P')):
     s = Lin(-0.6, 0.6, x+lab_w+si*(fw+10.0), x+lab_w+si*(fw+10.0)+fw)
-    F.text((s.p0+s.p1)/2, y+12.0, st, 7.5, ha='center', color=SC[st])
+    F.text((s.p0+s.p1)/2, y+3.0, st, 7.5, ha='center', color=SC[st])
     for k, r in enumerate(ROUTES):
         yy = top+k*pitch
         a = ra[(ra.route == r) & (ra.score == 'Cycle') & (ra.APA_variant == 'mean_DWUI') & (ra.scope == st)].iloc[0]

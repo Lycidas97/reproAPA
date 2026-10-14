@@ -1,0 +1,536 @@
+{
+  "version": "2026-10-13 v11f",
+  "reserved_doi": "10.5281/zenodo.23347745",
+  "archive_count": 81,
+  "companion_count": 6,
+  "files": [
+    {
+      "filename": "ARCHIVES.tsv",
+      "bytes": 339813,
+      "sha256": "1c43a083cae9f5bc6cd5d43dc71427bdefaf9d7563c09ddf684495b6b41563ae",
+      "md5": "81179644d877561f7a30123bfeb432d4"
+    },
+    {
+      "filename": "CHECKSUMS.sha256",
+      "bytes": 8084,
+      "sha256": "c57aca722f661834a3f12613bee9571056ab8edb08b65111f945f7f2d90022a5",
+      "md5": "8eef009234719cc05d83dd817706e4d2"
+    },
+    {
+      "filename": "FILES.tsv",
+      "bytes": 1001224,
+      "sha256": "b88038f8e7b168ad2760d86986d7808967cd12d39b0171cbe81cf401b9ee88e9",
+      "md5": "7948e4184224302a2b1b7bec52b1e26c"
+    },
+    {
+      "filename": "LICENSE",
+      "bytes": 1692,
+      "sha256": "16515bc435b30c4b619fa6c4107231ce7e8f4ade7322dd4672a11161f46eb2a6",
+      "md5": "63ac1da4766c462c628b832812ed5ac1"
+    },
+    {
+      "filename": "README.md",
+      "bytes": 4885,
+      "sha256": "743684d806a128b97eef60c2a7076efa79abd7d630cfa83c4e4a47e7fe5f386e",
+      "md5": "68bdedf8df5139cba750cd290fcd9da9"
+    },
+    {
+      "filename": "VERIFICATION.json",
+      "bytes": 918,
+      "sha256": "f0a0ad281a7e5e5a3e6fb37c6f4b835ae722b4f6760fdfc5c0ed036dfd0e592a",
+      "md5": "0c1efe9466e8e84b4f7f07cb13a9c52f"
+    },
+    {
+      "filename": "reproAPA-v11f-part001.tar.gz",
+      "bytes": 203425,
+      "sha256": "212f669e86dc9cdf71cc84b992bd7d8bed096fe9fc27f28a3f92176e774ef3c9",
+      "md5": "9a475011cd38ee6e557bb320bd20d743"
+    },
+    {
+      "filename": "reproAPA-v11f-part002.tar.gz",
+      "bytes": 14679967,
+      "sha256": "aee6bec7cc24f9d49185aff91901158b3e0e278f7a18576ae99369f3b58cf892",
+      "md5": "6b0c69219d658110d74e58d8f29b9ed5"
+    },
+    {
+      "filename": "reproAPA-v11f-part003.tar.gz",
+      "bytes": 14680051,
+      "sha256": "e24edf8582f12a3c33fec31c818491a8f380b6787d8bbb51ed10c1872bf54383",
+      "md5": "7e28e78a5275e56b1485097cb1f2c2fd"
+    },
+    {
+      "filename": "reproAPA-v11f-part004.tar.gz",
+      "bytes": 14680060,
+      "sha256": "f4857c56e1fc9bd124b15d5905ed79a3d6861a679fb27f82c01e755a5b45f672",
+      "md5": "ef02b61a35b93421fd0fb2b8eee28601"
+    },
+    {
+      "filename": "reproAPA-v11f-part005.tar.gz",
+      "bytes": 14679998,
+      "sha256": "5e95507d9b369bd0fb2e5f49a06f8949f045ecc0272a861758fe450c9c533588",
+      "md5": "c756ad3b3a894c9ac846cd5e103a963b"
+    },
+    {
+      "filename": "reproAPA-v11f-part006.tar.gz",
+      "bytes": 14679917,
+      "sha256": "243f1ce6ec39b746679a0197f4eac368bf1a055c970ae5aaf01321cea2aac045",
+      "md5": "c9a392912e59e0c304311b67c55c62b0"
+    },
+    {
+      "filename": "reproAPA-v11f-part007.tar.gz",
+      "bytes": 14680034,
+      "sha256": "2ca0cec2e50dae18c757b2c2e5590ceaa5c2afafb1055aec34103a4be22381b5",
+      "md5": "9ddfcfce55589fdf2b3764e55e8ce4df"
+    },
+    {
+      "filename": "reproAPA-v11f-part008.tar.gz",
+      "bytes": 14680064,
+      "sha256": "badaa88b21a4d9a05f2daee533642e7e2dca2d55406f9f21b830255ea0392dbf",
+      "md5": "9774c025992e53ba57a889432804bcdf"
+    },
+    {
+      "filename": "reproAPA-v11f-part009.tar.gz",
+      "bytes": 14679933,
+      "sha256": "b58a8549643cab56450168f5870a51ebd2e44856e9272b4f1c88663b52a6fa91",
+      "md5": "0b373e55bfaeab03fb3ca0905e530083"
+    },
+    {
+      "filename": "reproAPA-v11f-part010.tar.gz",
+      "bytes": 14680059,
+      "sha256": "895a5e98e93975716d2687e90eef40ee46b7da41d52ced6e95deb6073bd77bf7",
+      "md5": "67ff2b181b7ec1d715f2c0a6c59cce56"
+    },
+    {
+      "filename": "reproAPA-v11f-part011.tar.gz",
+      "bytes": 14680064,
+      "sha256": "751df9a4dbd1f509c1e6cdd2e0abc876614ad75db6e59fb5fd5d55e531ad6301",
+      "md5": "251d5fe36592a6a0ccf93485909f2c93"
+    },
+    {
+      "filename": "reproAPA-v11f-part012.tar.gz",
+      "bytes": 14680064,
+      "sha256": "45e4468166a1059b7b6877a5bf3095247a8891566ba47c0ae7c5730afe43b1df",
+      "md5": "ea2392a5590ba5f0d677e7f075bbe8a8"
+    },
+    {
+      "filename": "reproAPA-v11f-part013.tar.gz",
+      "bytes": 14680064,
+      "sha256": "5d1d6113ae5d5ae61799974c9e7a7a4cbe9ec7782f05b59b8c2b5511291e51e7",
+      "md5": "fdca79f76a464a26022273ce18964b9e"
+    },
+    {
+      "filename": "reproAPA-v11f-part014.tar.gz",
+      "bytes": 14680062,
+      "sha256": "fca63cc9d202e825aebcef32092512ffd0ab6f08ef4973ff0d3a053a0bdbb271",
+      "md5": "df15f7efc3f6e5c787155057305d5f31"
+    },
+    {
+      "filename": "reproAPA-v11f-part015.tar.gz",
+      "bytes": 14680058,
+      "sha256": "19b52bfc2d7756883f2f8a26f12f9344300487662e631f3041aa05fc0ae6ec70",
+      "md5": "6b61be7ead7c26abbdb0716c1041e05b"
+    },
+    {
+      "filename": "reproAPA-v11f-part016.tar.gz",
+      "bytes": 14680061,
+      "sha256": "6ca0d0288028ead42e8b571aa4c61ce949fcbfd30ba2a46612e08d3fad887e42",
+      "md5": "831c1d7e8c169aa3def0929e8829b640"
+    },
+    {
+      "filename": "reproAPA-v11f-part017.tar.gz",
+      "bytes": 14680049,
+      "sha256": "f152da43d35741758d94e9c75006741453736b76c6c6afdb05b821d3a47dd66d",
+      "md5": "dca54018e4c61e20e1b08158a80e2769"
+    },
+    {
+      "filename": "reproAPA-v11f-part018.tar.gz",
+      "bytes": 14680053,
+      "sha256": "6691a6c702a4aaba8a53d4dfd8ca9a2da7bcb6ac015ca859b34396a3e79ccce7",
+      "md5": "d262deaf20947826b58aa2b4ba29d099"
+    },
+    {
+      "filename": "reproAPA-v11f-part019.tar.gz",
+      "bytes": 14680034,
+      "sha256": "2bce15e91d5bbf9e42ae93f0669801e096a4e5d7db303aee12564e16339f7c31",
+      "md5": "94a2c0b68409dc58dfa068d01b8b2efe"
+    },
+    {
+      "filename": "reproAPA-v11f-part020.tar.gz",
+      "bytes": 14680061,
+      "sha256": "77a6c2b26e770b06d908e503c1428b401111e082072ff18c5abed77f7e8692fd",
+      "md5": "5ccd5d38c5e6448e34482d9d81424b6f"
+    },
+    {
+      "filename": "reproAPA-v11f-part021.tar.gz",
+      "bytes": 14680059,
+      "sha256": "6b30e9aee19d282e37bcd0f1ee10fe71b7ccb40618045214189e10501a34b86b",
+      "md5": "5885ce84a166843146c2be4e254daab7"
+    },
+    {
+      "filename": "reproAPA-v11f-part022.tar.gz",
+      "bytes": 14680064,
+      "sha256": "eb188ce5f56694d6bcf327233a3b101f0576e9585255b020ca21c616c56b4103",
+      "md5": "7e5dd9cef551025b21ab906f760c46bf"
+    },
+    {
+      "filename": "reproAPA-v11f-part023.tar.gz",
+      "bytes": 14680062,
+      "sha256": "279dc28c96e91f5787d2f640051af40aa1a62c592e184c257e5eb8b42f53384b",
+      "md5": "cc68949270aadadebc999e2b18b04d05"
+    },
+    {
+      "filename": "reproAPA-v11f-part024.tar.gz",
+      "bytes": 14680064,
+      "sha256": "8ad82e8e2ddf70de89bb099626d7dbd3a569df262ae533f956ccbde368d107d8",
+      "md5": "a702944eb9ab43e7652d84df647fb092"
+    },
+    {
+      "filename": "reproAPA-v11f-part025.tar.gz",
+      "bytes": 14680062,
+      "sha256": "a6539fa1090ca2d04675724be8862c2ec43a83820d31ee23e1ee084adb3839b5",
+      "md5": "1994d47a271c7b9d8457346fa09ea49e"
+    },
+    {
+      "filename": "reproAPA-v11f-part026.tar.gz",
+      "bytes": 14680060,
+      "sha256": "4c3b5c3c79929183e3e3c3efc2ffecd5a7e83a7dab2e6a587843d9c218023208",
+      "md5": "0eaa495ae6dff2c0d678b4e47e900523"
+    },
+    {
+      "filename": "reproAPA-v11f-part027.tar.gz",
+      "bytes": 14680064,
+      "sha256": "20937ac07fb6a67dbf78fc017ac07016764bbf8ba0433fde79f377cdef6fe711",
+      "md5": "2541bedc8f8c9ca4194ffcabf0f46ccf"
+    },
+    {
+      "filename": "reproAPA-v11f-part028.tar.gz",
+      "bytes": 14680064,
+      "sha256": "cd9bf19786e017b6bf7dbdb35d935184e393e836ef6f1bce3ff075434e705ebf",
+      "md5": "5a20f3034b9000d2df3fbdc8c92b4b1b"
+    },
+    {
+      "filename": "reproAPA-v11f-part029.tar.gz",
+      "bytes": 14680062,
+      "sha256": "b77740285abecbd11d1948b334828ad402a50da65243ff8eeac0ac4ecdcce467",
+      "md5": "66fd5b606bdf7c0eb88cf94f7b20b3fe"
+    },
+    {
+      "filename": "reproAPA-v11f-part030.tar.gz",
+      "bytes": 14680062,
+      "sha256": "5ce980fc59e781d4e475f4708688a9b0b82e17fd5c1053dd7cdb6071b3791d0b",
+      "md5": "0b752de6dd122d5df5c55688bc642688"
+    },
+    {
+      "filename": "reproAPA-v11f-part031.tar.gz",
+      "bytes": 14680064,
+      "sha256": "6c533c24f6632e91b1c2b2aad4d5b1de612519b16609f55924cbe0cd81c11847",
+      "md5": "e380ec1d4b28d39830ac1dbfe9662dcc"
+    },
+    {
+      "filename": "reproAPA-v11f-part032.tar.gz",
+      "bytes": 14680048,
+      "sha256": "bde0e8c364b0123d09d1157432d8cbc67b74472396852827adfc7ff2f9fe7a7c",
+      "md5": "5154c0ae044b1ee067a1e0de248895b6"
+    },
+    {
+      "filename": "reproAPA-v11f-part033.tar.gz",
+      "bytes": 14680059,
+      "sha256": "b711c9a5fc382fef2359a6b379ac7b9d94e794650ec96edadcf68d45ccc90009",
+      "md5": "73395ad5be9cf045e1147b4084938a03"
+    },
+    {
+      "filename": "reproAPA-v11f-part034.tar.gz",
+      "bytes": 14680052,
+      "sha256": "8fbbb435d3c395ecbc9308d8b81768f9150b0cf71a937b1770772c526db455f6",
+      "md5": "b9247449a81c77a5da669d291594eb8a"
+    },
+    {
+      "filename": "reproAPA-v11f-part035.tar.gz",
+      "bytes": 14680061,
+      "sha256": "432ffb3725bb6f854d15a3d118028c9a354a9ed09751033a98409d779b467c19",
+      "md5": "112bd6ca07fa28828c13e9b18e608c71"
+    },
+    {
+      "filename": "reproAPA-v11f-part036.tar.gz",
+      "bytes": 14680061,
+      "sha256": "a11d6902450579b7ca1f3e6a901ae2d081547c42169357389b2d547391ee6716",
+      "md5": "55598a8cb229f8dbe8f7aa311d6b8c42"
+    },
+    {
+      "filename": "reproAPA-v11f-part037.tar.gz",
+      "bytes": 14680063,
+      "sha256": "4b6e960a94c9dbea22f555d9b09a104a03079dee9712e55ab4b22b3bfb358641",
+      "md5": "c998aae1f019fce01d12a485e2122175"
+    },
+    {
+      "filename": "reproAPA-v11f-part038.tar.gz",
+      "bytes": 14680030,
+      "sha256": "f7bc1d4235b3030ed2a7226b636324efaa19914dfed1cd26a9b57a40b6aaf0cd",
+      "md5": "b6a2faa78d3911ef418078d5bb97f17f"
+    },
+    {
+      "filename": "reproAPA-v11f-part039.tar.gz",
+      "bytes": 14680060,
+      "sha256": "4cb154107edf1f677ed6d2b3c0a277cab6588205e7434b910291ba98de374bed",
+      "md5": "3202c81b98d4d9913e6da83f6e757258"
+    },
+    {
+      "filename": "reproAPA-v11f-part040.tar.gz",
+      "bytes": 14680053,
+      "sha256": "8bcdb2821f167e79bd11121ecd5c147021ee0950c71c1b731bac02b0bca62aa2",
+      "md5": "37e40e77fbcb54c0946ed8b4fd53f4a4"
+    },
+    {
+      "filename": "reproAPA-v11f-part041.tar.gz",
+      "bytes": 14680008,
+      "sha256": "00ab55fac506fdc0fda35b78e590dd2a3b90c28700024c5a2bdaaea23c612510",
+      "md5": "f8b51cd989979f13dca626d1f36d08d2"
+    },
+    {
+      "filename": "reproAPA-v11f-part042.tar.gz",
+      "bytes": 14680064,
+      "sha256": "a6394c4794cd2241306af46e60a5fd8f23327df3724d2e5ea00b93e654fb20e1",
+      "md5": "fde3692809365d8ab0034464b7a659e5"
+    },
+    {
+      "filename": "reproAPA-v11f-part043.tar.gz",
+      "bytes": 14680062,
+      "sha256": "50cb2babb9ad28641a05d346f1a0ef0f9f2e3b3c17bc8aa71e2ad9bfdd5c5ecf",
+      "md5": "c14583d97db99526acdf40fc69eac38c"
+    },
+    {
+      "filename": "reproAPA-v11f-part044.tar.gz",
+      "bytes": 14680052,
+      "sha256": "79a624ae5857b2d0d4331e2d594e9aac6aa91723bf1b7cb0372ae94c10b73024",
+      "md5": "87f31c89700d95171ff36974de7772a9"
+    },
+    {
+      "filename": "reproAPA-v11f-part045.tar.gz",
+      "bytes": 14680061,
+      "sha256": "92b409a9020bffa15ddf8ccdc5ebe7b7c82671de40f2dae177d008d02d3a270c",
+      "md5": "91e2df20a2118745e3854e70b88b4c08"
+    },
+    {
+      "filename": "reproAPA-v11f-part046.tar.gz",
+      "bytes": 14680062,
+      "sha256": "2680d15bc8298864206772e070f4cdd093f2ae110193117d1d990bc619ce7c99",
+      "md5": "ad723b63f1986c33e6dae672934097c2"
+    },
+    {
+      "filename": "reproAPA-v11f-part047.tar.gz",
+      "bytes": 14680063,
+      "sha256": "a1c11eadebbe9e092ad5e7be21dc7a6b1eeae0e7ab673c50933b7b6cf849e934",
+      "md5": "883b2f772fa422c2327e523bf0a3dae7"
+    },
+    {
+      "filename": "reproAPA-v11f-part048.tar.gz",
+      "bytes": 14680060,
+      "sha256": "10121a5e2d673fcca28129cbb45fa70e5aeea1d864a95d39bbaa144f008bda51",
+      "md5": "727dd34c5bc58701c59bd86fa2c48f1d"
+    },
+    {
+      "filename": "reproAPA-v11f-part049.tar.gz",
+      "bytes": 14679850,
+      "sha256": "9d075bdc96f8e767800ddd3cf0dca19d35f94d9470fdbd19f0da2fb17775a282",
+      "md5": "e57cda8b84a7ae7df64939f49662b118"
+    },
+    {
+      "filename": "reproAPA-v11f-part050.tar.gz",
+      "bytes": 14680064,
+      "sha256": "89e8c9ddac2c802d2dc8fcec030ad400d93f5261f4e86cfca88a570527cd735a",
+      "md5": "30c13a9e7ea8b1e32196702efcdb1a9e"
+    },
+    {
+      "filename": "reproAPA-v11f-part051.tar.gz",
+      "bytes": 14680064,
+      "sha256": "cbc99d4004edc623c9c3dcf6213c94f7fcf4f0af1cb84dee0db2ef586997a0a6",
+      "md5": "dbef7d7f2c8cf956847ac728bdd8b6a0"
+    },
+    {
+      "filename": "reproAPA-v11f-part052.tar.gz",
+      "bytes": 14679847,
+      "sha256": "b3fa317f0fe8b2fb20d3e12e18e5602ac7a96cc3cee8f4569bff2dce11d80540",
+      "md5": "8d18af7a9d73f57711274de9495e742e"
+    },
+    {
+      "filename": "reproAPA-v11f-part053.tar.gz",
+      "bytes": 14679893,
+      "sha256": "6d4bafdfb3c444058265608c06b5d55455e8160430a1a1b623c8fae63f218150",
+      "md5": "0c17f1842bf7a3e42aed296223c130cc"
+    },
+    {
+      "filename": "reproAPA-v11f-part054.tar.gz",
+      "bytes": 14679832,
+      "sha256": "3f2bac6d2231bbb16032fdb8b834a86d36a295bb7e0459be2613922cc6c94880",
+      "md5": "fb384e01fd9e40fec94526355c047725"
+    },
+    {
+      "filename": "reproAPA-v11f-part055.tar.gz",
+      "bytes": 14680039,
+      "sha256": "81c42d2648d7efc33e5114345a6ce937e5d532863c92590cf5fce2822b552c8c",
+      "md5": "d53a15d397c299019d6484f1f135694e"
+    },
+    {
+      "filename": "reproAPA-v11f-part056.tar.gz",
+      "bytes": 14680056,
+      "sha256": "ed41698baa4d354657e39abb203f2acc29063b1bf9917814f1b6e2e595ce257f",
+      "md5": "f83ef8489111c7337aaf9aeae1b25152"
+    },
+    {
+      "filename": "reproAPA-v11f-part057.tar.gz",
+      "bytes": 14680062,
+      "sha256": "d0811eab22770e0abf372b66a8fb3f4847e262bafa14655d0cbbc490ae4de5c8",
+      "md5": "a443f6f9cd8755b8d748492c707a7340"
+    },
+    {
+      "filename": "reproAPA-v11f-part058.tar.gz",
+      "bytes": 14680049,
+      "sha256": "3375753173e0b42b5e7a5c5df7dc1219572374826a4743d838f2d528ab0f840f",
+      "md5": "1696f4cd3ab69748e394347ba20ea769"
+    },
+    {
+      "filename": "reproAPA-v11f-part059.tar.gz",
+      "bytes": 14680061,
+      "sha256": "8b48eb6ff569fe60ab0c07886c97a4e2920facce37b75c010b52f95bc2884431",
+      "md5": "e2f8be6a749ab29493f25c6cb316b217"
+    },
+    {
+      "filename": "reproAPA-v11f-part060.tar.gz",
+      "bytes": 14680020,
+      "sha256": "39713ab64ef9ad8e55a47325392562ef8c98b42b8e268f75a03032d2d6fe4c51",
+      "md5": "b093c6e2b18842ab7428498dd4304c72"
+    },
+    {
+      "filename": "reproAPA-v11f-part061.tar.gz",
+      "bytes": 14680044,
+      "sha256": "47b6c3d8d3025609349a8b321f6aad06b4dea32a54238b92076dbb379422864c",
+      "md5": "f701eb58b17b584ba5c491aa0997b875"
+    },
+    {
+      "filename": "reproAPA-v11f-part062.tar.gz",
+      "bytes": 14680063,
+      "sha256": "dd1c686ba400d04ca5a08fd94577d2a89d882977c968870cab67aebc9513cc33",
+      "md5": "ae273fab3775bc49f8e198cabff570df"
+    },
+    {
+      "filename": "reproAPA-v11f-part063.tar.gz",
+      "bytes": 14680064,
+      "sha256": "8c1b4fcc3ec4961d65140efa61eb03cedf9b6a9f787f3217d8308ab284c7c8bc",
+      "md5": "bc11b4474515923d039017a56ad0c4f2"
+    },
+    {
+      "filename": "reproAPA-v11f-part064.tar.gz",
+      "bytes": 14680064,
+      "sha256": "c16d3fba8d230514ed077b76163c42c783f4ea8f33c2966d07f327eaae93218f",
+      "md5": "fc816d2db82b040695a6aa843f28c3ee"
+    },
+    {
+      "filename": "reproAPA-v11f-part065.tar.gz",
+      "bytes": 14680058,
+      "sha256": "415c98fb5b689d73883ea2c71234d00519470d9511542264d75e5b8b457212a2",
+      "md5": "f0b0ad310a7b753ca7dd75c9476bf5fc"
+    },
+    {
+      "filename": "reproAPA-v11f-part066.tar.gz",
+      "bytes": 14680034,
+      "sha256": "829e626aabd46e09c597b87a4c5ad36b572d9e0a5f9d3b4807fafaafe006eaaf",
+      "md5": "36ed593924a50966a0289ab18acbbb4b"
+    },
+    {
+      "filename": "reproAPA-v11f-part067.tar.gz",
+      "bytes": 14679862,
+      "sha256": "8d5024eeab7ead75c44a38a07023cc3ddb393121a3648cd5ba6ef573ee4719fb",
+      "md5": "9ffe7a323b049ebe12187ddce593f9b1"
+    },
+    {
+      "filename": "reproAPA-v11f-part068.tar.gz",
+      "bytes": 14680064,
+      "sha256": "5c65b615f4411b9896ba798ea39b62d5d64812de1e949a2859dae5b741ad246a",
+      "md5": "ca0b37cd2fd61157314e0e0a09aae2e9"
+    },
+    {
+      "filename": "reproAPA-v11f-part069.tar.gz",
+      "bytes": 14680062,
+      "sha256": "529012f501bb803fd26dd4ef8a91012965f6f531d605f0a978d8c289fb10f6f3",
+      "md5": "e7763150aec596ee8a0761bb26116764"
+    },
+    {
+      "filename": "reproAPA-v11f-part070.tar.gz",
+      "bytes": 14680064,
+      "sha256": "fc65565f5e6956e9e23db547272095b6812a36f2117a5c37a82ab147a95ae50a",
+      "md5": "599ffeba88d25ccaca1a40446a610f2b"
+    },
+    {
+      "filename": "reproAPA-v11f-part071.tar.gz",
+      "bytes": 14680064,
+      "sha256": "c48c87a035866e19ca45f56b95008dafa830e1157a21ad338a237ea6bc69fd96",
+      "md5": "c0dcb10410c10fbdd88c1eba8360d287"
+    },
+    {
+      "filename": "reproAPA-v11f-part072.tar.gz",
+      "bytes": 14680064,
+      "sha256": "24bfa3ccb571560f20611b2c28cadf0a966ae0230317340a08057d9277f3184c",
+      "md5": "c5ffad80226848c187f9703b264ae726"
+    },
+    {
+      "filename": "reproAPA-v11f-part073.tar.gz",
+      "bytes": 14680063,
+      "sha256": "5084cd6d9f5a291c3a5c52c0f5c0bcb97ecac042672351fb8f4172658a8bb271",
+      "md5": "88a9289a1f806698a5e6f23bb03e562a"
+    },
+    {
+      "filename": "reproAPA-v11f-part074.tar.gz",
+      "bytes": 14680063,
+      "sha256": "6e16e5fd90572bdb4bd41e455e408b8eb34d648b01411ded9544afef283d5422",
+      "md5": "f424b16300ab407b9444b286b176f3a1"
+    },
+    {
+      "filename": "reproAPA-v11f-part075.tar.gz",
+      "bytes": 14680060,
+      "sha256": "f79e90e5e494c7f5cadcb71d1b877918f7008a147bbb47d5924d59254d0df829",
+      "md5": "1e98efb03a4b9b256a2cab1028ec6359"
+    },
+    {
+      "filename": "reproAPA-v11f-part076.tar.gz",
+      "bytes": 14680064,
+      "sha256": "0ebb8759cabdeeede57b005970ca7ea9dba0c9aa516d0ebf5e8bae4e2b1a81ac",
+      "md5": "375df6b3518a6157602c72b1585568da"
+    },
+    {
+      "filename": "reproAPA-v11f-part077.tar.gz",
+      "bytes": 14680055,
+      "sha256": "0be535a2181ef9b045f7b1e312f2a46a817577dd1484060f47eee4a9d6ae62f2",
+      "md5": "5252d321300190336b2792b3fe63daae"
+    },
+    {
+      "filename": "reproAPA-v11f-part078.tar.gz",
+      "bytes": 14680064,
+      "sha256": "6ce033bee94c919ac37af3041cc9081470b90d95aa3787e76122314a998e94a6",
+      "md5": "9a4b0dfc056ee1d5d9b02659410c62ee"
+    },
+    {
+      "filename": "reproAPA-v11f-part079.tar.gz",
+      "bytes": 14680062,
+      "sha256": "d8bed928f55ff2ae0d265f0104ff2bd7227c179425d47502cb25b201c8ab9948",
+      "md5": "e07c6671a1e63f72d9c5aad49fc7f08b"
+    },
+    {
+      "filename": "reproAPA-v11f-part080.tar.gz",
+      "bytes": 14680060,
+      "sha256": "cb0a365214d10866507af86579aaa86ddf6735f0d855de478710952d8613363c",
+      "md5": "70ba4604a41a7550c4246286e4574c17"
+    },
+    {
+      "filename": "reproAPA-v11f-part081.tar.gz",
+      "bytes": 12354851,
+      "sha256": "dd0a18f51bbe1b29217bb3a800411f6f82ad108b2a16c15c8b94ab21b5cffcfd",
+      "md5": "97360080f83e119004a7ec743e0fcf82"
+    }
+  ],
+  "files_manifest": "provenance/v11f-FILES.tsv",
+  "archives_manifest": "provenance/v11f-ARCHIVES.tsv",
+  "original_code_snapshot_commit": "ffa0cd20288699795702c5eebad77d1741298dab",
+  "local_verification": "provenance/v11f-local-verification.json",
+  "published_at_capture": false,
+  "captured_at": "2026-10-14T00:54:15.974779+00:00"
+}

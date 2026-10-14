@@ -19,7 +19,7 @@ from supdraw import *   # noqa
 FID = 'D05'
 D = Data(); OUT = outdir(FID)
 X0, RR = MARGIN, PAGE_W-MARGIN
-H1, H2, H3, H4 = 110.0, 100.0, 86.0, 150.0
+H1, H2, H3, H4 = 120.0, 105.0, 92.0, 150.0   # 2026-10-12: panel titles -> x-axis titles
 Y1 = MARGIN; Y2 = Y1+H1+GAP; Y3 = Y2+H2+GAP; Y4 = Y3+H3+GAP; H = Y4+H4+MARGIN
 F = Fig(H, figname(FID))
 ROUTES = ['GSE118258', '178325_0618', '178325_0809', 'CIP', 'WOT']
@@ -58,8 +58,6 @@ dec = dec[(dec.contrast == 'P_S') & (dec.design == 'true_source')].set_index(['r
 rows = route_rows(y+21.0, 12.0)
 xa = Lin(-0.04, 0.02, x+16, x+268)
 xd = Lin(-0.009, 0.006, x+300, x+w-0.2)
-F.text((xa.p0+xa.p1)/2, y+3.0, 'P–S route mean ΔDWUI, 16 settings', 7.5, ha='center')
-F.text((xd.p0+xd.p1)/2, y+3.0, 'Supported → expanded change', 7.5, ha='center')
 route_markers(x+5.0, rows)
 for s_, v in ((xa, 0.0), (xd, 0.0)):
     F.line([s_(v)]*2, [rows[ROUTES[0]]-6, rows[ROUTES[-1]]+6], lw='ref', color=AXC, ls='ref')
@@ -83,8 +81,8 @@ for r, yy in rows.items():
                  range=[float(q['mean'].min()), float(q['mean'].max())], change_supported_to_expanded=float(tot),
                  common_reestimation=float(common), added_genes=float(added), n_common=int(ec.n), n_added=int(eo.n))
 ay = rows[ROUTES[-1]]+7.0
-F.xaxis(xa, ay, [-0.04, -0.03, -0.02, -0.01, 0, 0.01, 0.02], ['−.04', '−.03', '−.02', '−.01', '0', '.01', '.02'])
-F.xaxis(xd, ay, [-0.008, -0.004, 0, 0.004], ['−.008', '−.004', '0', '.004'])
+F.xaxis(xa, ay, [-0.04, -0.03, -0.02, -0.01, 0, 0.01, 0.02], ['−.04', '−.03', '−.02', '−.01', '0', '.01', '.02'], title='P–S route mean ΔDWUI')
+F.xaxis(xd, ay, [-0.008, -0.004, 0, 0.004], ['−.008', '−.004', '0', '.004'], title='Expanded − supported')
 F.key_row(None, y+h-17.4, [('marker', (STUDY[r][2], STUDY[r][1]), STUDY[r][0]) for r in ROUTES], gap=7.0, center=x+w/2)
 F.key_row(None, y+h-7.4, [('marker', ('o', 'white', INK), 'Primary setting'), ('marker', ('o', AXC), 'Other 15 settings'),
                           ('line', (NULLBAR, None, 'range'), 'Range')], gap=7.0, center=(xa.p0+xa.p1)/2)
@@ -102,8 +100,6 @@ scr = D.df('D05B', 'panel_statistics/source-choice-ranges.tsv').set_index('route
 rows = route_rows(y+21.0, 12.0)
 xb = Lin(-0.15, 0.10, x+16, x+152)
 xs = Lin(-0.045, 0.025, x+160, x+w-8)
-F.text((xb.p0+xb.p1)/2, y+3.0, 'Gene P–S ΔDWUI', 7.5, ha='center')
-F.text((xs.p0+xs.p1)/2, y+3.0, 'Route mean by source', 7.5, ha='center')
 F.text(x+w, y+3.0, 'n', 7.0, ha='right', color=MUTED)
 route_markers(x+5.0, rows)
 for s_ in (xb, xs):
@@ -119,8 +115,8 @@ for r, yy in rows.items():
     F.text(x+w, yy-3.4, f'{int(c.n_settings)}', 7.0, ha='right', color=MUTED)
     Bv[r]['source_choice'] = dict(median=float(c['median']), min=float(c.minimum), max=float(c.maximum), n_settings=int(c.n_settings))
 ay = rows[ROUTES[-1]]+7.0
-F.xaxis(xb, ay, [-0.15, -0.1, -0.05, 0, 0.05, 0.1], ['−.15', '−.1', '−.05', '0', '.05', '.1'])
-F.xaxis(xs, ay, [-0.04, -0.02, 0, 0.02], ['−.04', '−.02', '0', '.02'])
+F.xaxis(xb, ay, [-0.15, -0.1, -0.05, 0, 0.05, 0.1], ['−.15', '−.1', '−.05', '0', '.05', ''], title='Gene P–S ΔDWUI')
+F.xaxis(xs, ay, [-0.04, -0.02, 0, 0.02], ['−.04', '−.02', '0', '.02'], title='Route mean P–S ΔDWUI')
 F.key_row(None, y+h-7.4, [('line', (NULLBAR, None, 'range'), 'IQR'), ('line', (AXC, None, 'thin'), '10–90%'),
                           ('marker', ('o', AXC), 'Mean')], gap=6.0, center=(xb.p0+xb.p1)/2)
 F.key_row(None, y+h-7.4, [('line', (NULLBAR, None, 'range'), 'Min–max')], gap=6.0, center=(xs.p0+xs.p1)/2)
@@ -131,7 +127,6 @@ x, y, w, h = F.panel('c', X0+WB+GAP, Y2, RR-(X0+WB+GAP), H2)
 tc = D.df('D05C', 'panel_statistics/tandem-comparison.tsv').set_index(['route', 'subset'])
 rows = route_rows(y+21.0, 12.0)
 xc = Lin(-0.06, 0.03, x+16, x+w-46)
-F.text((xc.p0+xc.p1)/2, y+3.0, 'Mean P–S ΔDWUI', 7.5, ha='center')
 F.text(x+w, y+3.0, 'All / tandem', 7.0, ha='right', color=MUTED)
 route_markers(x+5.0, rows)
 F.line([xc(0)]*2, [rows[ROUTES[0]]-6, rows[ROUTES[-1]]+6], lw='ref', color=AXC, ls='ref')
@@ -144,7 +139,7 @@ for r, yy in rows.items():
     F.text(x+w, yy-3.4, f'{int(a_.n):,} / {int(t_.n):,}'.replace(',', ','), 7.0, ha='right')
     Cv[r] = dict(all=dict(mean=float(a_['mean']), n=int(a_.n)), tandem=dict(mean=float(t_['mean']), n=int(t_.n)))
 ay = rows[ROUTES[-1]]+7.0
-F.xaxis(xc, ay, [-0.06, -0.04, -0.02, 0, 0.02], ['−.06', '−.04', '−.02', '0', '.02'])
+F.xaxis(xc, ay, [-0.06, -0.04, -0.02, 0, 0.02], ['−.06', '−.04', '−.02', '0', '.02'], title='Mean P–S ΔDWUI')
 F.key_row(None, y+h-7.4, [('marker', ('o', INK), 'All genes'), ('marker', ('o', 'white', INK), 'Tandem 3′ UTR')],
           gap=7.0, center=x+w/2)
 F.values['c'] = Cv
@@ -158,10 +153,8 @@ for L, x0, w0 in (('d', X0, WD), ('e', X0+WD+GAP, RR-(X0+WD+GAP))):
     sx = Lin(-0.06, 0.04, x+(66 if L == 'd' else 36), x+w-20)
     F.text(x+w, y+3.0, 'n', 7.0, ha='right', color=MUTED)
     if L == 'd':
-        F.text((sx.p0+sx.p1)/2, y+3.0, 'hN − P ΔDWUI, one RSeT library', 7.5, ha='center')
         items = [(SLAB[s], t[t.setting == s].hN_P.dropna().to_numpy()) for s in SETTINGS]
     else:
-        F.text((sx.p0+sx.p1)/2, y+3.0, 'Same library, primary setting', 7.5, ha='center')
         p = t[t.setting == 'supported50_p08']
         items = [('hN − S', p.hN_S.dropna().to_numpy()), ('P − S', p.P_S.dropna().to_numpy()), ('hN − P', p.hN_P.dropna().to_numpy())]
     pitch = 12.0 if L == 'd' else 18.0
@@ -175,7 +168,7 @@ for L, x0, w0 in (('d', X0, WD), ('e', X0+WD+GAP, RR-(X0+WD+GAP))):
         F.text(x+w, yy-3.4, str(len(v)), 7.0, ha='right', color=MUTED)
     ay = y+20.0+pitch*3+7.0 if L == 'd' else r0+pitch*(len(items)-1)+7.0
     ay = y+63.0
-    F.xaxis(sx, ay, [-0.06, -0.04, -0.02, 0, 0.02, 0.04], ['−.06', '−.04', '−.02', '0', '.02', '.04'])
+    F.xaxis(sx, ay, [-0.06, -0.04, -0.02, 0, 0.02, 0.04], ['−.06', '−.04', '−.02', '0', '.02', '.04'], title='hN − P ΔDWUI' if L == 'd' else 'ΔDWUI')
     F.key_row(None, y+h-7.4, [('line', (NULLBAR, None, 'range'), 'IQR'), ('line', (AXC, None, 'thin'), '10–90%'),
                               ('marker', ('o', INK), 'Mean')], gap=6.0, center=(sx.p0+sx.p1)/2)
     F.values[L] = vals

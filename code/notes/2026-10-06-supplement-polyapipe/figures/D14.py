@@ -128,13 +128,13 @@ F.values['d'] = Dv
 x, y, w, h = F.panel('e', X0+WD+GAP, Y2, RR-(X0+WD+GAP), H2)
 pv = rk[rk.measure == 'APA'].pivot_table(index=['route', 'database', 'term_id'], columns='layer', values='rank_effect').dropna().reset_index()
 ex = Lin(-0.6, 0.6, x+30, x+30+ES); ey = Lin(-0.6, 0.6, y+16+ES, y+16)
-F.text((ex.p0+ex.p1)/2, y+3.0, 'APA rank effect', 7.5, ha='center')
+# 2026-10-12: panel title folded into the axis titles
 F.line([ex.p0, ex.p1], [ey.p0, ey.p1], lw='ref', color=AXC, ls='ref')
-F.yaxis(ey, ex.p0, [-0.4, 0, 0.4], ['−.4', '0', '.4'], 'Expanded layer')
+F.yaxis(ey, ex.p0, [-0.4, 0, 0.4], ['−.4', '0', '.4'], 'Rank effect, expanded')
 for r in ROUTES:
     z = pv[pv.route == r]
     F.points([ex.clip(v) for v in z.supported50], [ey.clip(v) for v in z.expanded_primary], color=STUDY[r][1], alpha='dense')
-F.xaxis(ex, ey.p0+1.0, [-0.4, 0, 0.4], ['−.4', '0', '.4'], 'Supported layer')
+F.xaxis(ex, ey.p0+1.0, [-0.4, 0, 0.4], ['−.4', '0', '.4'], 'Rank effect, supported')
 F.key_row(None, y+h-7.4, [('marker', ('o', STUDY[r][1]), STUDY[r][0].replace('Schiebinger2019–', '').replace('Guo2019–', '').replace('2020', ''))
                           for r in ROUTES], gap=5.0, center=x+w/2)
 F.values['e'] = dict(terms=int(len(pv)), r=float(np.corrcoef(pv.supported50, pv.expanded_primary)[0, 1]))

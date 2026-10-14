@@ -41,7 +41,7 @@ x, y, w, h = F.panel('a', X0, Y1, WA, H1)
 nl = D.df('D20A', 'cis/conditional_bootstrap_nulls.tsv.gz')
 lx = Lin(0, 16, x+52.0, x+w-88.0)
 CX = [x+w-64.0, x+w-29.0, x+w-8.5]
-F.text((lx.p0+lx.p1)/2, y+3.0, 'LRT, All cis vs M1', 7.5, ha='center')
+# 2026-10-12: panel title (LRT, All cis vs M1) moved to the caption
 for cx_, lab in zip(CX, ['Y = 1 / n', 'p', 'q']):
     F.text(cx_, y+3.0, lab, 7.0, ha='center', color=MUTED)
 Av = {}
@@ -88,8 +88,8 @@ for i, c in enumerate(CO):
         F.rect(cx0+cw*k+0.4, yy+0.4, cw-0.8, rh-0.8, fc=fc, ec=INK if prim else 'none', lw='thin' if prim else 0)
         F.text(cx0+cw*(k+0.5), yy+rh/2-3.2, qfmt(r.q_boot_planned_32), 6.8, ha='center', color=on(fc))
         Bv[f'{CL[c]}|{layer}|{tau}'] = float(r.q_boot_planned_32)
-F.text(cx0+4*cw, b0+4*rh+2.0, 'τ; outlined = primary test', 7.0, ha='center', color=MUTED)
-F.cbar_key(cx0+4*cw, y+h-7.4, 'q, 32 tests', '1', '≤ .1', lambda f_: seq(f_), wbar=40)
+F.text(cx0-2.0, y+13.4, 'τ', 7.0, ha='right', color=MUTED)   # outlined-cell and 32-test notes: caption
+F.cbar_key(cx0+4*cw, y+h-7.4, 'q', '1', '≤ .1', lambda f_: seq(f_), wbar=40)
 F.values['b'] = Bv
 
 # ================================================================ c  paired CV gains, primary setting

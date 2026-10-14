@@ -19,7 +19,7 @@ from supdraw import *   # noqa
 FID = 'D22'
 D = Data(); OUT = outdir(FID)
 X0, RR = MARGIN, PAGE_W-MARGIN
-H1, H2 = 101.0, 106.0
+H1, H2 = 108.0, 106.0   # 2026-10-12: panel titles moved to axis titles or the caption
 Y1 = MARGIN; Y2 = Y1+H1+GAP; Y3 = Y2+H2+GAP; H = Y3+H2+MARGIN
 F = Fig(H, figname(FID))
 CAT = {'miRNA': INK, 'RBP': SEQ_STOPS[1]}
@@ -53,14 +53,15 @@ for route, co in ORD_A:
 F.text(x+w-GW/2, y+3.0, 'Genes', 7.0, ha='center', color=MUTED)
 for j_, cat in enumerate(('miRNA', 'RBP')):
     px = Lin(0, 0.6, x+LBA+j_*(sw_+12.0), x+LBA+j_*(sw_+12.0)+sw_)
-    F.text((px.p0+px.p1)/2, y+3.0, f'{cat}, partial retention (%)', 7.5, ha='center')
+    F.text((px.p0+px.p1)/2, y+3.0, cat, 7.5, ha='center')
     for v in (0, 0.3, 0.6): F.line([px(v)]*2, [y+16.0, ry_[ORD_A[-1]]+4.0], lw='ref', color=BAND)
     for route, co in ORD_A:
         a_ = Av[f'{route}|{co}|{cat}']; yy = ry_[(route, co)]; col = STUDY[route][1]
         F.whisker(px(a_['ci'][0]), px(a_['ci'][1]), yy, color=col, lw='thin', cap=1.2)
         if co == 'SP': F.marker(px(a_['fraction']), yy, 'o', 'small', fc=col)
         else: F.marker(px(a_['fraction']), yy, 'D', 'small', fc='white', ec=col)
-    F.xaxis(px, ry_[ORD_A[-1]]+5.0, [0, 0.3, 0.6], ['0', '30', '60'])
+    ab_ = F.xaxis(px, ry_[ORD_A[-1]]+5.0, [0, 0.3, 0.6], ['0', '30', '60'])
+F.text(x+LBA+sw_+6.0, ab_+1.6, 'Partial retention (%)', 8.0, ha='center')
 F.key_row(None, y+h-7.4, [('marker', ('o', INK), 'P–S'), ('marker', ('D', 'white', INK), 'P–M'), ('line', (INK, None, 'thin'), '95% interval'),
                           ('marker', ('s', STUDY['CIP'][1]), 'CIP'), ('marker', ('o', STUDY['WOT'][1]), '2i'),
                           ('marker', ('o', STUDY['GSE118258'][1]), 'Xing2020'), ('marker', ('s', STUDY['GSE150311'][1]), 'Liu2020')],
@@ -73,18 +74,17 @@ F.notes.append(f'a: partial fraction range {lo:.3f}–{hi:.3f}; genes = genes wi
 x, y, w, h = F.panel('b', X0+WA+GAP, Y1, RR-(X0+WA+GAP), H1)
 rc = D.df('D22B', 'supplement_statistics/partial-relationship-counts.tsv')
 bx = Lin(0, 1200, x+30.0, x+w-4.0)
-F.text((bx.p0+bx.p1)/2, y+3.0, 'Partial in both studies', 7.5, ha='center')
 Bv = {}; yy = y+22.0
 for sp in ('human', 'mouse'):
     for k, cat in enumerate(('miRNA', 'RBP')):
         r = rc[(rc.species == sp) & (rc.category == cat)].iloc[0]
-        ry = yy+k*13.0
+        ry = yy+k*14.0
         if k == 0: F.text(x+0.4, ry-3.4, sp.capitalize(), 7.0)
         F.rect(bx(0), ry-4.5, bx(r.relationships)-bx(0), 9.0, fc=CAT[cat])
         F.line([bx(r.genes)]*2, [ry-4.5, ry+4.5], lw='bold', color='white' if cat == 'miRNA' else INK)
         F.text(bx(r.relationships)+1.4, ry-3.2, f'{int(r.relationships)}', 6.8, color=MUTED)
         Bv[f'{sp}|{cat}'] = dict(relationships=int(r.relationships), genes=int(r.genes), scope=r.contrast_scope)
-    yy += 28.0
+    yy += 35.0
 F.xaxis(bx, yy-12.0, [0, 500, 1000], ['0', '500', '1,000'], 'Relationships')
 F.key_row(None, y+h-7.4, [('line', (INK, None, 'bold'), 'genes')], gap=5.0, center=x+w/2)
 F.values['b'] = Bv
@@ -112,7 +112,7 @@ for L, sp, sym, routes in EX:
     WG = 196.0
     gx = Lin(-0.2, span+0.3, x+70.0, x+WG)
     F.text(x+16.0, y+0.4, sym, 8.0, font='BolIta')
-    F.text(x+16.0+textwidth(sym, 8.0, 'BolIta')+3.0, y+1.0, f'{fac.upper()} sites, P–M, {chrom} ({strand.replace("-", "−")})', 7.0, color=MUTED)
+    # factor, contrast, chromosome and strand: caption
     rows_y = {}
     Gl = {}
     for i, route in enumerate(routes):

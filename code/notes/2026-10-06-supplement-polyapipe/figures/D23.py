@@ -18,7 +18,7 @@ from supdraw import *   # noqa
 FID = 'D23'
 D = Data(); OUT = outdir(FID)
 X0, RR = MARGIN, PAGE_W-MARGIN
-H1, H2 = 132.0, 150.0
+H1, H2 = 141.0, 150.0   # 2026-10-12: panel titles moved to axis titles or the caption
 Y1 = MARGIN; Y2 = Y1+H1+GAP; H = Y2+H2+MARGIN
 F = Fig(H, figname(FID))
 CX = [('human', 'SP'), ('human', 'MP'), ('mouse', 'SP'), ('mouse', 'MP')]
@@ -33,7 +33,6 @@ x, y, w, h = F.panel('a', X0, Y1, WA, H1)
 gd = D.df('D23A', 'motif_background/gene_density.tsv')
 ds = D.df('D23A', 'motif_background/density_summary.tsv')
 ax_ = Lin(-80, 130, x+73.0, x+w-46.0)
-F.text((ax_.p0+ax_.p1)/2, y+3.0, 'Changed − stable sites per kb', 7.5, ha='center')
 F.text(x+w-32.0, y+3.0, 'Genes', 7.0, ha='center', color=MUTED); F.text(x+w-9.0, y+3.0, 'q', 7.0, ha='center', color=MUTED)
 Av = {}; yy = y+20.0; rp = 11.0
 y_top = yy-6
@@ -58,7 +57,7 @@ for c in CX:
         yy += rp
     yy += 2.0
 F.line([ax_(0)]*2, [y_top, yy-6], lw='ref', color=AXC, ls='ref')
-F.xaxis(ax_, yy-4.0, [-50, 0, 50, 100], ['−50', '0', '50', '100'])
+F.xaxis(ax_, yy-4.0, [-50, 0, 50, 100], ['−50', '0', '50', '100'], title='Changed − stable sites per kb')
 F.key_row(None, y+h-7.4, [('marker', ('o', INK), 'gene'), ('line', (INK, None, 'bold'), 'mean | 95% interval'),
                           ('line', (INK, None, 'ref'), '– fewer than 10 genes')][:2], gap=7.0, center=(ax_.p0+ax_.p1)/2)
 F.values['a'] = Av
@@ -70,7 +69,6 @@ pw = D.df('D23B', 'motif_controls/motif_power.tsv')
 pw = pw[(abs(pw.alpha-0.05) < 1e-9) & (pw.species == 'mouse') & (pw.contrast == 'MP')]
 bx = Lin(0, 20, x+24.0, x+w-4.0); by = Lin(0, 1, y+16.0+(bx.p1-bx.p0)/1.9, y+16.0)
 F.lineplot(bx, by, 'power')
-F.text((bx.p0+bx.p1)/2, y+3.0, 'Mouse P–M, α = .05', 7.5, ha='center')
 Bv = {}
 for cat in ('miRNA', 'RBP'):
     for prev, lsd in (('all', None), ('quarter', 'dash')):

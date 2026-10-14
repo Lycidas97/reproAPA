@@ -14,12 +14,17 @@ from common import supdraw, Reads, name, OUT, ROOT, crop, place, new_page, finis
 
 R = Reads()
 X0, XR = 4.5, PAGE_W-4.5
-S15 = ROOT/'notes/2026-10-06-supplement-polyapipe/consolidated/O/SuppFig.S15.pdf'
-H15 = 534.9
-OLD = {'a': (4.5, 4.5), 'b': (315.8, 4.5), 'c': (4.5, 113.8), 'd': (277.8, 113.8)}
-H1, H2 = 88.6, 160.5
+import os, pdfplumber
+# 2026-10-12: f–i are cropped from a composed page holding only former S15 a–d (consolidated O, bands D19 ab / D20 ab),
+# rebuilt after the in-figure text cleanup (V11_S19_FI); letters are read from that page, the whole page is kept.
+S15 = Path(os.environ['V11_S19_FI']) if os.environ.get('V11_S19_FI') else ROOT/'notes/2026-10-06-supplement-polyapipe/consolidated/O/SuppFig.S15.pdf'
+with pdfplumber.open(S15) as _pdf:
+    _pg = _pdf.pages[0]; H15 = float(_pg.height)
+    _L = {w_['text']: (w_['x0'], w_['top']) for w_ in _pg.extract_words(extra_attrs=['size']) if w_['size'] > 10.5 and len(w_['text']) == 1}
+OLD = {k_: (round(_L[k_][0], 1), round(_L[k_][1]-0.4, 1)) for k_ in 'abcd'}
+H1, H2 = 97.0, 171.0   # 2026-10-12: room for the axis titles that replace the panel titles
 Y_OLD = 4.5+H1+GAP+H2+GAP                  # top of the kept former-S15 rows
-OLD_REG = (0.0, 0.0, PAGE_W, 113.8+96.0+0.6)  # former S15 rows 1-2 incl. keys
+OLD_REG = (0.0, 0.0, PAGE_W, H15-4.5)        # whole composed page above its bottom margin
 H = Y_OLD+(OLD_REG[3]-4.5)+4.5
 F = supdraw.Fig(H, name('mech'))
 y1, y2 = 4.5, 4.5+H1+GAP
@@ -30,12 +35,12 @@ sm = R.df('notes/2026-10-10-cycle-source-attribution/sm-core/SM_route_summary.ts
 sm = sm[(sm.design == 'main') & (sm.background == 'available_contributors') & (sm.gene_set == 'core27')]
 WA = 262.0
 x, y, w, h = F.panel('a', X0, y1, WA, H1)
-F.text(x+16.0, y+0.6, 'S–M on the shared core', 7.5)
+# 2026-10-12: panel titles of a–e moved to axis titles or the caption
 sc1 = Lin(-0.1, 0.4, x+86.0, x+150.0); sc2 = Lin(-0.06, 0.06, x+168.0, x+WA-34.0)
-F.text((sc1.p0+sc1.p1)/2, y+11.0, 'Cycle score', 7.0, ha='center', color=MUTED)
-F.text((sc2.p0+sc2.p1)/2, y+11.0, 'Mean ΔDWUI', 7.0, ha='center', color=MUTED)
-F.text(XR if False else x+WA, y+11.0, 'Prox. | dist.', 7.0, ha='right', color=MUTED)
-top, pitch = y+22.0, 8.4
+F.text((sc1.p0+sc1.p1)/2, y+3.0, 'Cycle score', 7.0, ha='center', color=MUTED)
+F.text((sc2.p0+sc2.p1)/2, y+3.0, 'Mean ΔDWUI', 7.0, ha='center', color=MUTED)
+F.text(XR if False else x+WA, y+3.0, 'Prox. | dist.', 7.0, ha='right', color=MUTED)
+top, pitch = y+21.0, 9.8
 for k, r in enumerate(ROUTES):
     g = sm[sm.route == r].iloc[0]
     yy = top+k*pitch
@@ -57,7 +62,6 @@ F.key_row(0, ya+2.0, [('marker', ('o', PROX), 'S more proximal'), ('marker', ('o
 # ---------------------------------------------------------------- b  WOT within-date dose
 xb = X0+WA+GAP
 x, y, w, h = F.panel('b', xb, y1, XR-xb, H1)
-F.text(x+16.0, y+0.6, 'Schiebinger2019–2i, within dates', 7.5)
 fp = R.df('notes/2026-10-10-cycle-source-attribution/wot-dose/fixed_panel_descriptive_statistics.tsv')
 cf = R.df('notes/2026-10-10-cycle-source-attribution/wot-dose/core_formal_statistics_replay.tsv')
 rows = []
@@ -67,8 +71,7 @@ for pan, lab in (('native85', '85 fixed genes'), ('ortholog45', '45 orthologs'),
 c0 = cf[cf.predictor == 'Cycle'].iloc[0]
 rows.append(('Core subset', float(c0.r), float(c0.leave_one_date_r_min), float(c0.leave_one_date_r_max), float(c0.q2_BH), int(c0.n_dates)))
 sb = Lin(-1, 1, x+66.0, XR-22.0)
-F.text((sb.p0+sb.p1)/2, y+11.0, 'r, cycle vs proximal strength', 7.0, ha='center', color=MUTED)
-F.text(XR-0.2, y+11.0, 'q', 7.0, ha='right', color=MUTED)
+F.text(XR-0.2, y+3.0, 'q', 7.0, ha='right', color=MUTED)
 top, pitch = y+23.0, 12.8
 for k, (lab, rr, lo, hi, q, nd) in enumerate(rows):
     yy = top+k*pitch
@@ -80,7 +83,7 @@ for k, (lab, rr, lo, hi, q, nd) in enumerate(rows):
     F.values[f'b {lab}'] = dict(r=rr, leave_one_date=[lo, hi], q2=q, n_dates=nd)
 yb = top+len(rows)*pitch-pitch/2+1.0
 F.line([sb(0)]*2, [top-pitch/2, yb], lw='ref', color=AXC, ls='ref')
-yb_ = F.xaxis(sb, yb, [-1, 0, 1], ['−1', '0', '1'])
+yb_ = F.xaxis(sb, yb, [-1, 0, 1], ['−1', '0', '1'], title='r, cycle vs proximal strength')
 F.key_row(0, yb_+2.0, [('line', (NULLBAR, None, 'bold'), 'Leave one date out')], center=(sb.p0+sb.p1)/2)
 
 # ---------------------------------------------------------------- c  candidate mechanisms
@@ -105,14 +108,12 @@ for cat in ('RNA binding', 'mRNA processing', 'regulation of translation'):
     rna.append(({'RNA binding': 'RNA binding', 'mRNA processing': 'mRNA processing', 'regulation of translation': 'Regulation of translation'}[cat], dict(observed=float(g.hits), expected=float(g.expected), q=float(g.q_primary6), N=int(g.N), n=int(g.cases))))
 WC = 286.0
 x, y, w, h = F.panel('c', X0, y2, WC, H2)
-F.text(x+16.0, y+0.6, 'Candidate mechanisms and functions', 7.5)
 scc = Lin(0, 6, x+112.0, x+WC-46.0)
-F.text((scc.p0+scc.p1)/2, y+11.0, 'Observed / expected', 7.0, ha='center', color=MUTED)
-F.text(x+WC-18.0, y+11.0, 'n/exp.', 7.0, ha='right', color=MUTED); F.text(x+WC, y+11.0, 'q', 7.0, ha='right', color=MUTED)
+F.text(x+WC-18.0, y+3.0, 'n/exp.', 7.0, ha='right', color=MUTED); F.text(x+WC, y+3.0, 'q', 7.0, ha='right', color=MUTED)
 yy = y+20.0; pitch = 8.85; k = 0; ylist = []
 allg = GROUPS+[('RNA regulation, 48 shared orthologs', [(lab, v) for lab, v in rna])]
 for gl, items in allg:
-    F.text(x+0.2, yy-3.0, gl, 7.0, color=MUTED); yy += pitch
+    F.text(x+0.2, yy-3.0, gl.split(',')[0], 7.0, color=MUTED); yy += pitch   # 2026-10-12: background sizes in the caption; values keys keep the full label
     for lab, r in items:
         o, e, q = (float(r['observed']), float(r['expected']), float(r['q'])) if isinstance(r, dict) else (float(r.observed), float(r.expected), float(r.q))
         if k % 2 == 0: F.rect(x, yy-pitch/2, w, pitch, fc=BAND)
@@ -125,18 +126,16 @@ for gl, items in allg:
         ylist.append(yy); yy += pitch
 yb = yy-pitch/2+1.0
 F.line([scc(1)]*2, [ylist[0]-pitch/2, yb], lw='ref', color=AXC, ls='ref')
-yc = F.xaxis(scc, yb, [0, 1, 2, 4, 6], ['0', '1', '2', '4', '6'])
+yc = F.xaxis(scc, yb, [0, 1, 2, 4, 6], ['0', '1', '2', '4', '6'], title='Observed / expected')
 F.key_row(0, yc+2.0, [('marker', ('o', 'white', INK), 'q ≥ .05')], center=(scc.p0+scc.p1)/2)
 
 # ---------------------------------------------------------------- d  U1 reciprocal response, e  anchor architecture
 xd = X0+WC+GAP
-HD = 74.0
+HD = 81.0
 x, y, w, h = F.panel('d', xd, y2, XR-xd, HD)
-F.text(x+16.0, y+0.6, 'U1 perturbation', 7.5)
 u = ms[ms.branch == 'u1-kinetics']
 sd = Lin(0, 1, x+24.0, XR-46.0)
-F.text((sd.p0+sd.p1)/2, y+11.0, 'Reciprocal response, fraction', 7.0, ha='center', color=MUTED)
-top, pitch = y+22.0, 14.0
+top, pitch = y+19.0, 14.0
 for k, (t, lab) in enumerate((('U1_reciprocal_log2_t0.0', '> 0'), ('U1_reciprocal_log2_t0.2', '≥ .2'), ('U1_reciprocal_log2_t0.5', '≥ .5'))):
     g = u[u.test == t].iloc[0]
     yy = top+k*pitch
@@ -148,18 +147,16 @@ for k, (t, lab) in enumerate((('U1_reciprocal_log2_t0.0', '> 0'), ('U1_reciproca
         if j == 0: F.text(XR-0.2, yy-3.3, f'{int(g.observed)}/{int(g.n)} | {int(g.other_hits)}/{int(g.other_n)}', 6.8, ha='right')
         F.values[f'd {t} {nm}'] = dict(hits=int(num_), n=int(den), fraction=float(num_/den))
 yb = top+2*pitch+5.0
-yd = F.xaxis(sd, yb, [0, 0.5, 1], ['0', '.5', '1'])
+yd = F.xaxis(sd, yb, [0, 0.5, 1], ['0', '.5', '1'], title='Reciprocal response (fraction)')
 F.key_row(0, yd+2.0, [('block', INK, 'Core'), ('block', NULLBAR, 'Other')], center=(sd.p0+sd.p1)/2)
 print('d end', round(yd+2.0+7.6-y, 1))
 
 ye0 = y2+HD+GAP
 x, y, w, h = F.panel('e', xd, ye0, XR-xd, y2+H2-ye0)
-F.text(x+16.0, y+0.6, 'PAS anchor architecture', 7.5)
 arc = ms[(ms.branch == 'u1-kinetics') & (ms.model == 'assay_architecture')]
 se = Lin(-0.6, 0.6, x+70.0, XR-18.0)
-F.text((se.p0+se.p1)/2, y+11.0, 'Core − expected', 7.0, ha='center', color=MUTED)
-F.text(XR-0.2, y+11.0, 'q', 7.0, ha='right', color=MUTED)
-top, pitch = y+21.0, 7.8
+F.text(XR-0.2, y+3.0, 'q', 7.0, ha='right', color=MUTED)
+top, pitch = y+20.0, 7.0
 LAB = {'proximal_core_rank': 'proximal rank', 'core_rank_difference': 'rank difference', 'log_anchor_span': 'log span'}
 k = 0
 for sp, spl in (('human', 'Hs'), ('mouse', 'Mm')):
@@ -175,7 +172,7 @@ for sp, spl in (('human', 'Hs'), ('mouse', 'Mm')):
         k += 1
 yb = top+k*pitch-pitch/2+1.0
 F.line([se(0)]*2, [top-pitch/2, yb], lw='ref', color=AXC, ls='ref')
-yee = F.xaxis(se, yb, [-0.5, 0, 0.5], ['−.5', '0', '.5'])
+yee = F.xaxis(se, yb, [-0.5, 0, 0.5], ['−.5', '0', '.5'], title='Core − expected')
 print('e end', round(yee-y, 1), 'h', round(h, 1))
 
 # ---------------------------------------------------------------- e–h  former S15 a–d, vector crops

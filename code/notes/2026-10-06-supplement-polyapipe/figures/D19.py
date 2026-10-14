@@ -32,9 +32,8 @@ PRIMARY = dict(layer='supported50', tau=0.02)
 WIN = SHADE
 
 # ================================================================ a  feature definitions (schematic)
-WA = 300.0
+WA = 150.0   # 2026-10-12: feature definitions and worked-example values moved to the caption; schematic only
 x, y, w, h = F.panel('a', X0, Y1, WA, H1)
-F.text(x+74.0, y+3.0, 'Schematic gene', 7.5, ha='center')
 ax0, ax1 = x+30.0, x+118.0
 YH, YM = y+30.0, y+56.0
 F.text(x+0.4, YH-3.4, 'Human', 7.0); F.text(x+0.4, YM-3.4, 'Mouse', 7.0)
@@ -54,24 +53,14 @@ for a, b in matched:
     F.line([gx(hs[a]), gx(ms_[b])], [YH+5.0, YM-5.0], lw='ref', color=INK, ls='ref')
 F.marker(gx(hs[0]), YH-10.0, '^', 'small', fc=INK); F.text(gx(hs[0])+3.0, YH-13.6, 'gain', 6.8, color=MUTED)
 F.marker(gx(hs[3]), YH-10.0, 'v', 'small', fc=INK); F.text(gx(hs[3])+3.0, YH-13.6, 'loss', 6.8, color=MUTED)
-F.text(x+0.4, y+68.0, 'Driver = 1', 7.0, color=MUTED)
-F.text(x+0.4, y+77.0, 'PAS fraction = 2 / 5', 7.0, color=MUTED)
-F.text(x+0.4, y+86.0, 'A_g = 4 / 9 = .44', 7.0, color=MUTED)
-F.key_row(x+62.0, y+68.0, [('line', (INK, None, 'bold'), 'matched PAS')])
-F.key_row(x+62.0, y+77.0, [('line', (AXC, None, 'bold'), 'unmatched PAS')])
-F.key_row(x+62.0, y+86.0, [('block', WIN, 'sequence window')])
+F.key_row(None, y+h-27.4, [('line', (INK, None, 'bold'), 'matched PAS'), ('line', (AXC, None, 'bold'), 'unmatched PAS')], center=x+w/2)
+F.key_row(None, y+h-17.4, [('block', WIN, 'sequence window')], center=x+w/2)
 DEFS = [('PAS', [('Driver', 'matched gain/loss drivers, 0–2'),
                  ('PAS fraction', 'matched / all discovery PASs')]),
         ('Architecture', [('A_g', '2 × matched / (human + mouse PASs)')]),
         ('Sequence', [('phastCons', 'mean, −100 to +50 nt of drivers'),
                       ('Motif rank', 'best hexamer, −35 to −9 nt (0–3)')])]
-tx = x+128.0; ty = y+3.0
-for grp, items in DEFS:
-    F.text(tx, ty, f'{grp} group', 7.5, font='Bol'); ty += 9.4
-    for k, v in items:
-        wk = F.text(tx+4.0, ty, k, 7.0, font='Bol' if False else 'Reg', color=INK)
-        F.text(tx+4.0+46.0, ty, v, 7.0, color=MUTED); ty += 8.6
-    ty += 1.6
+# DEFS (feature groups and definitions) are given in the caption, not drawn
 F.values['a'] = dict(schematic=True, note='no measured coordinates')
 F.notes.append('a: schematic only; drivers = PAS with the largest gain and the largest loss of usage (P minus reference); '
                'conserved = reciprocal one-to-one PAS match within 25 nt; model groups: PAS = driver + PAS fraction, Architecture = A_g, Sequence = phastCons + motif rank')
@@ -80,16 +69,15 @@ F.notes.append('a: schematic only; drivers = PAS with the largest gain and the l
 x, y, w, h = F.panel('b', X0+WA+GAP, Y1, RR-(X0+WA+GAP), H1)
 cc = D.df('D19A', 'cis/descriptive_class_counts.tsv').set_index(['discovery', 'contrast'])
 bx = Lin(0, 1000, x+46.0, x+w-14.0)
-F.text((bx.p0+bx.p1)/2, y+3.0, 'Model genes', 7.5, ha='center')
 Bv = {}
 for i, c in enumerate(CO):
-    r = cc.loc[c]; yy = y+22.0+i*16.0
+    r = cc.loc[c]; yy = y+19.4+i*15.0
     F.text(x+0.4, yy-3.4, CL[c], 7.0)
     y1, n = int(r.model_Y1), int(r.model_n)
     F.rect(bx(0), yy-4.0, bx(y1)-bx(0), 8.0, fc=INK); F.rect(bx(y1), yy-4.0, bx(n)-bx(y1), 8.0, fc=NULLBAR)
     F.text(bx(n)+1.2, yy-3.2, f'{n:,}', 6.8, color=MUTED)
     Bv[CL[c]] = dict(n=n, Y1=y1)
-F.xaxis(bx, y+22.0+3*16.0+6.0, [0, 500, 1000], ['0', '500', '1,000'])
+F.xaxis(bx, y+19.4+3*15.0+6.0, [0, 500, 1000], ['0', '500', '1,000'], title='Model genes')
 F.key_row(None, y+h-7.4, [('block', INK, 'Y = 1, same direction'), ('block', NULLBAR, 'Y = 0')], gap=5.0, center=x+w/2)
 F.values['b'] = Bv
 

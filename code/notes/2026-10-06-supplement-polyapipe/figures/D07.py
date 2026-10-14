@@ -113,7 +113,7 @@ dx = Lin(0, 1, x+262, x+w-4.6)
 for (k, lab, col), s_ in zip(STEPS, cx):
     F.text((s_.p0+s_.p1)/2, y+3.0, lab, 7.5, ha='center', color=col)
 F.text(x+44, y+3.0, 'n', 7.0, color=MUTED, ha='right')
-F.text((dx.p0+dx.p1)/2, y+3.0, 'Genes, median and IQR', 7.5, ha='center', color=MUTED)
+# 2026-10-12: 'Genes, median and IQR' header moved to the caption
 pitch, ggap = 10.22, 4.0
 rows = []; yy = y+21.2          # first band starts below the letter clear zone
 for c in CL:
@@ -150,7 +150,7 @@ for c, r, yy in rows:
     if len(g) != int(q.n): F.notes.append(f'C {r}|{c}: {len(g)} geometry rows vs n={int(q.n)} in the route summary')
 ax_y = ylast+5.8
 for s_ in cx:
-    F.xaxis(s_, ax_y, [0, 0.5, 1], ['0', '.5', '1'])
+    F.xaxis(s_, ax_y, [0, 0.5, 1], ['0', '.5', ''])
 F.xaxis(dx, ax_y, [0, 0.25, 0.5, 0.75, 1], ['0', '.25', '.5', '.75', '1'])
 F.text((cx[0].p0+cx[2].p1)/2, ax_y+12.0, 'Within-gene share of path length L (median, IQR)', 8.0, ha='center')
 F.text((dx.p0+dx.p1)/2, ax_y+12.0, 'Endpoint retention D/L = 1 − T', 8.0, ha='center')

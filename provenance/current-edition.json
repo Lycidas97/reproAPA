@@ -1,0 +1,361 @@
+{
+  "date": "2026-10-13",
+  "snapshot_utc": "2026-10-14T00:46:57.213640+00:00",
+  "manuscript_title": "Recurrent Gene-Level Responses beneath Divergent Alternative Polyadenylation in Human and Mouse Reprogramming",
+  "edition": "Current manuscript production sources; data deposit awaiting publication",
+  "scope": {
+    "main_figures": 4,
+    "supplementary_figures": 21,
+    "supplementary_tables": 10,
+    "workbook_data_sheets": 58,
+    "workbook_total_sheets": 60,
+    "source_blocks": 202
+  },
+  "manuscript_hashes": "provenance/current-manuscript-source-hashes.tsv",
+  "outputs": "docs/current-manuscript-map.tsv",
+  "data_package": "provenance/v11f-data-package.json",
+  "workbook": {
+    "path": "table/Supplementary_Tables_S1-S10.xlsx",
+    "sha256": "ffecebca95fe4b93a668521799116dc91834c9fef309a18d9990f46eaced7db9",
+    "sheets": [
+      "Contents",
+      "S1a",
+      "S1b",
+      "S1c",
+      "S1d",
+      "S1e",
+      "S1f",
+      "S1g",
+      "S1h",
+      "S2a",
+      "S2b",
+      "S2c",
+      "S2d",
+      "S2e",
+      "S2f",
+      "S3a",
+      "S3b",
+      "S3c",
+      "S3d",
+      "S3e",
+      "S3f",
+      "S3g",
+      "S3h",
+      "S4a",
+      "S4b",
+      "S4c",
+      "S4d",
+      "S4e",
+      "S4f",
+      "S4g",
+      "S4h",
+      "S4i",
+      "S4j",
+      "S5a",
+      "S5b",
+      "S5c",
+      "S5d",
+      "S5e",
+      "S5f",
+      "S5g",
+      "S6a",
+      "S6b",
+      "S6c",
+      "S6d",
+      "S7a",
+      "S7b",
+      "S7c",
+      "S7d",
+      "S7e",
+      "S7f",
+      "S7g",
+      "S8a",
+      "S8b",
+      "S8c",
+      "S8d",
+      "S9a",
+      "S9b",
+      "S10a",
+      "S10b",
+      "Sources"
+    ],
+    "blocks": 202,
+    "builder": "code/notes/2026-10-13-table-s4j/build_s4j.py",
+    "base_workbook": "notes/2026-10-10-supplement-v11/out/Supplementary_Tables_S1-S10.v11.xlsx",
+    "base_sha256": "68265e99547bfd6710e4151510a177df62ca9a6c05589d2a95ec5146db1ac681"
+  },
+  "previous_public_commit": "ffa0cd20288699795702c5eebad77d1741298dab",
+  "historical_edition": "provenance/release.json",
+  "code_snapshot_relationship": "v11f/code is the previous public commit. v11f/project contains the final updated production scripts copied into this edition under code/. The data archives are unchanged.",
+  "numerical_analysis_rerun": false,
+  "historical_numerical_sources_unchanged": true,
+  "updated_sources": [
+    {
+      "path": "code/notes/2026-10-06-alt-catalogue-suppfig/A01.py",
+      "before": "fd5439786ea43a52deba7e37003b5269ed1b8d03b34865728f9431d108c603d8",
+      "after": "363e2ca27acaa5f1e2d75e03b6197256698ac7d88bd7afe6b09d7a056494eaff"
+    },
+    {
+      "path": "code/notes/2026-10-06-supplement-polyapipe/figures/D03.py",
+      "before": "6331b48ddfb5501a90e2f76bfab3316e3a2ab1221fab6d383067fe93b0382fa0",
+      "after": "865adfaf7e1579cf55a2860208cb2f4695385f570a0daddd7c3df702b55b21a4"
+    },
+    {
+      "path": "code/notes/2026-10-06-supplement-polyapipe/figures/D04.py",
+      "before": "c2f85fd829b40c79533461d66eaa0fb5af11e08b5532edd28ddf9f9ffb97796c",
+      "after": "a7cc879945de6f7ddc8ded755503242477d51d8efe72936bae7011b09f2b7755"
+    },
+    {
+      "path": "code/notes/2026-10-06-supplement-polyapipe/figures/D05.py",
+      "before": "1ccf0690bd1c97066f324aeb759a31dcad11c26372e4a450d70676156bd74069",
+      "after": "2f613ac5588de06f24d2135a6ec9ae475466c663b729a167da0edf2889f13ba1"
+    },
+    {
+      "path": "code/notes/2026-10-06-supplement-polyapipe/figures/D07.py",
+      "before": "bd469bbbc2e977cffdcb3e8f19f28a59b0c1be7229885b3d0d612f6c7efa6a82",
+      "after": "dc6b1f88bf89ddbd152eb9cf4bf7ee674ff1432a85c34c7c8e421aa3e2dcc7c8"
+    },
+    {
+      "path": "code/notes/2026-10-06-supplement-polyapipe/figures/D09.py",
+      "before": "97d1c7004ddebfd162e920b62a14415cf6cd94824e62a0701b175d94075bed56",
+      "after": "8e745d7cc4359bb751d241292eb3028d5cb08bde730427c300c8b84f18cd8c57"
+    },
+    {
+      "path": "code/notes/2026-10-06-supplement-polyapipe/figures/D10.py",
+      "before": "d06217aeca117baff7275da364e6a02ef16462e0531b206dfd778e813fcc2bbd",
+      "after": "64f020ac5aa26c7136208f014ccaf0927c99a027927afd59b858cdc196f80d1e"
+    },
+    {
+      "path": "code/notes/2026-10-06-supplement-polyapipe/figures/D12.py",
+      "before": "4ee4623353a98a1240d5c96c60aa1b67dc59ee8bd1e54bfa3369f8d8094cf725",
+      "after": "dfeea143b16de35a9b30c34f2647cabbdf028d650ba1fd22436b15dfe9a33501"
+    },
+    {
+      "path": "code/notes/2026-10-06-supplement-polyapipe/figures/D14.py",
+      "before": "85fa2803a9aecfcfe48eec3efd0aaf4f8eb227bde3bbf69f01b2942419f88a37",
+      "after": "dad2ff6093141246b0d8b78234676bb87ad570eac4b4b2b6b910f619327f4c18"
+    },
+    {
+      "path": "code/notes/2026-10-06-supplement-polyapipe/figures/D15.py",
+      "before": "9c2be3d4a9dad75adccc0cd0f5ba38ab5b4dde88398d2cc2e7c3ef985ea56bb1",
+      "after": "af0fa2f53bd676e9eac0fa7c4e4ff942ff884fd8b3edfe08a620e042fd635c68"
+    },
+    {
+      "path": "code/notes/2026-10-06-supplement-polyapipe/figures/D16.py",
+      "before": "cdc6068e9db06962d8afad3e4fad90acec49ff4cc94308c4ec072145bae785fe",
+      "after": "fc4fd8bb1aa2f075616aa43e265966adf73219d61bdd2796bed3ccecc265245f"
+    },
+    {
+      "path": "code/notes/2026-10-06-supplement-polyapipe/figures/D18.py",
+      "before": "f84ccbe6eda556166ecc0d8617ee1e3311647ac6f7d345192f90b8c619ae6f98",
+      "after": "761b1dc332a8e8977a4f8b3453bf893fcbc46a7e0928c7eb58af357c5e5ee05a"
+    },
+    {
+      "path": "code/notes/2026-10-06-supplement-polyapipe/figures/D19.py",
+      "before": "102200d4924a260e6851ea91e9ab5afbc349843d5485515e7390ff8996ae17a3",
+      "after": "9301001611aeeb8443281572d1e156f81fb1b497512f15260f58e01671491ecf"
+    },
+    {
+      "path": "code/notes/2026-10-06-supplement-polyapipe/figures/D20.py",
+      "before": "17f7e5628976c711e6d75feb0c8e9d428f19639679e37b5643fb81d61da545d6",
+      "after": "5d77d366800d1685109adb417ad6e41d61cdc7c4cb30c81ef31ae9e5c503304a"
+    },
+    {
+      "path": "code/notes/2026-10-06-supplement-polyapipe/figures/D21.py",
+      "before": "477e6e2a08ad5714c75994abee4da81286587472c0107543fd5e083fbc90dee0",
+      "after": "7c9513da883ca6040aa4201b1a02df599cfd425d1a80e0c49acf16bf428e73cd"
+    },
+    {
+      "path": "code/notes/2026-10-06-supplement-polyapipe/figures/D22.py",
+      "before": "df9eaf7975ede1ab932a7dcb38a94c2f7001bf878fce35f8ba9a63c402282f78",
+      "after": "2eaea9ce32f8edf7d3486323e4bf73b6d8e1dc81f403cc3b15cbd578f15de567"
+    },
+    {
+      "path": "code/notes/2026-10-06-supplement-polyapipe/figures/D23.py",
+      "before": "89a8dc1073d2acc7ff0dc0c2876c01621f012df3716c41ac8bb332f1eb1c65d6",
+      "after": "dca1ffdee7134431fd5296f44bef1e8be4920213f9decc64778439972cb6bf74"
+    },
+    {
+      "path": "code/notes/2026-10-06-supplement-polyapipe/figures/D24.py",
+      "before": "0009f3e7dd620dcf38bf882fb6e9fb85d354e502fb69435816984ccbce33f3cf",
+      "after": "ea513007581968ed0ea9b98860b7b9808117674ae5cbc0d9e32d07ba8dbf0081"
+    },
+    {
+      "path": "code/notes/2026-10-06-supplement-polyapipe/figures/D25.py",
+      "before": "abd24d399a90da9df46686a6aa21b2aea88730bfa541ec707a1c59c145bfc3eb",
+      "after": "fd667e6c1f89d728fe231abc5d4258e26723fcc54a4f4d5bedd99cde92fe8147"
+    },
+    {
+      "path": "code/notes/2026-10-06-supplement-polyapipe/figures/D26.py",
+      "before": "002c478bcccf5fada1594e4dc61c543f7e9c61c37e2a4e2c91af24d1b85c2f75",
+      "after": "722ba017f8073ba79f3f75f3d55d787240076ac8ab1e2d3f733837e2e0c46a4c"
+    },
+    {
+      "path": "code/notes/2026-10-06-supplement-polyapipe/figures/D27.py",
+      "before": "703e7df4e6d5ca009f6d341dc28fe17a445da7e45bbbbb01b8ce298432012da6",
+      "after": "dafa8f51cc0e5212f684d6904b6a5aa93e5446d1edfb054108d742aa24eb92cb"
+    },
+    {
+      "path": "code/notes/2026-10-06-supplement-polyapipe/figures/G3.py",
+      "before": "55d3f40240c20ab9a05bd6049ce1ddddd184ed13537630dcb2364fc8d1cf6456",
+      "after": "5e1a2ff17cfd0ce2ee45e7c3ea55993bdfaf5668f6ce0e478b2393c33734c5fe"
+    },
+    {
+      "path": "code/notes/2026-10-06-supplement-polyapipe/figures/G_markers.py",
+      "before": "548679d8047c9534c96d5a33e70581c2534aac27ac68ece5d67e2e900b4ddb64",
+      "after": "fa1c7a15366ab4b10e1919f2e41044c3daecccb89606f21cd61ca0c5564c6e82"
+    },
+    {
+      "path": "code/notes/2026-10-06-supplement-polyapipe/tools/compose.py",
+      "before": "7a08cceddf7d0edaf0fa7506e22fb087808d8c98bd94f9505c6d3c6ab0716c29",
+      "after": "404865583cd4de62f76a428c28acd38d583025aa9d36457612d04599c32cac3b"
+    },
+    {
+      "path": "code/notes/2026-10-10-supplement-v11/figures/common.py",
+      "before": "e89ed6b045aada8c60ff949e1f4ad8ef1160c9d61f6ffe3bb90e9d023845422c",
+      "after": "f8c02d0b0fd1a76d481f8c52e0ae573beba9b2607804ba744271f59cd190c3d6"
+    },
+    {
+      "path": "code/notes/2026-10-10-supplement-v11/figures/cycle.py",
+      "before": "634e2f822ac74f5cbebd35bf7c3293f392ab106c48379da90254c60b28ccc6fd",
+      "after": "39fc1dcc5cbf6f70f8be268a8cc71c7bbd560f6a8519f101301cf739be38143b"
+    },
+    {
+      "path": "code/notes/2026-10-10-supplement-v11/figures/mech.py",
+      "before": "7dbadb3d03ca335fbab5c9958656b5b4ccbfb249ddd76d94bfee337e85b306da",
+      "after": "efb23d285454532c5756a4622503af38ad2c1d5f52aaaf14a3393ad8fafa8e75"
+    },
+    {
+      "path": "code/notes/2026-10-10-supplement-v11/figures/naive.py",
+      "before": "151a115ae8635069743c07775c01e4f321c1d6dab486f415ada4d6f0d823b83c",
+      "after": "b3b7e91c7379cc683d507df96275064de6070db09c84829a5bddae41a0319550"
+    },
+    {
+      "path": "code/notes/2026-10-10-supplement-v11/figures/profile.py",
+      "before": "f79be9655d23c4300adae61407ef6e18026cda2bcce98d70747a62eae78cfedc",
+      "after": "ed171eb90489adee18631b0a15386ae215ff3103e89850fbb029b67c0d36341a"
+    },
+    {
+      "path": "code/notes/2026-10-10-supplement-v11/figures/strat.py",
+      "before": "8d103c1f1181b59d5764ea7399140c79f8d6a7efec4df255002004d5fc91c743",
+      "after": "528bb1f4f76627ac1497c3bcdc01e2e72b2f5182199af34335759f449bb7e1a1"
+    }
+  ],
+  "added_sources": [
+    "code/notes/2026-10-12-main-figure-revision/diffcheck.py",
+    "code/notes/2026-10-12-main-figure-revision/fixlib.py",
+    "code/notes/2026-10-12-main-figure-revision/rev_fig.py",
+    "code/notes/2026-10-12-main-figure-text-cleanup/captions.py",
+    "code/notes/2026-10-12-main-figure-text-cleanup/diffcheck.py",
+    "code/notes/2026-10-12-main-figure-text-cleanup/fix_fig1.py",
+    "code/notes/2026-10-12-main-figure-text-cleanup/fix_fig2.py",
+    "code/notes/2026-10-12-main-figure-text-cleanup/fix_fig3.py",
+    "code/notes/2026-10-12-main-figure-text-cleanup/fix_fig4.py",
+    "code/notes/2026-10-12-main-figure-text-cleanup/fixlib.py",
+    "code/notes/2026-10-12-main-figure-text-cleanup/promote.py",
+    "code/notes/2026-10-12-main-figure-text-cleanup/work/crowding.py",
+    "code/notes/2026-10-12-main-figure-text-cleanup/work/inventory.py",
+    "code/notes/2026-10-12-main-figure-text-cleanup/work/probe.py",
+    "code/notes/2026-10-12-supp-figure-text-cleanup/apply_edits.py",
+    "code/notes/2026-10-12-supp-figure-text-cleanup/assemble_set.py",
+    "code/notes/2026-10-12-supp-figure-text-cleanup/build_compose.py",
+    "code/notes/2026-10-12-supp-figure-text-cleanup/edits/A01.py",
+    "code/notes/2026-10-12-supp-figure-text-cleanup/edits/A01_b.py",
+    "code/notes/2026-10-12-supp-figure-text-cleanup/edits/D03.py",
+    "code/notes/2026-10-12-supp-figure-text-cleanup/edits/D04.py",
+    "code/notes/2026-10-12-supp-figure-text-cleanup/edits/D05.py",
+    "code/notes/2026-10-12-supp-figure-text-cleanup/edits/D07.py",
+    "code/notes/2026-10-12-supp-figure-text-cleanup/edits/D09.py",
+    "code/notes/2026-10-12-supp-figure-text-cleanup/edits/D10.py",
+    "code/notes/2026-10-12-supp-figure-text-cleanup/edits/D12.py",
+    "code/notes/2026-10-12-supp-figure-text-cleanup/edits/D12_b.py",
+    "code/notes/2026-10-12-supp-figure-text-cleanup/edits/D14.py",
+    "code/notes/2026-10-12-supp-figure-text-cleanup/edits/D15.py",
+    "code/notes/2026-10-12-supp-figure-text-cleanup/edits/D16.py",
+    "code/notes/2026-10-12-supp-figure-text-cleanup/edits/D16_b.py",
+    "code/notes/2026-10-12-supp-figure-text-cleanup/edits/D18.py",
+    "code/notes/2026-10-12-supp-figure-text-cleanup/edits/D19.py",
+    "code/notes/2026-10-12-supp-figure-text-cleanup/edits/D19_b.py",
+    "code/notes/2026-10-12-supp-figure-text-cleanup/edits/D20.py",
+    "code/notes/2026-10-12-supp-figure-text-cleanup/edits/D21.py",
+    "code/notes/2026-10-12-supp-figure-text-cleanup/edits/D22.py",
+    "code/notes/2026-10-12-supp-figure-text-cleanup/edits/D23.py",
+    "code/notes/2026-10-12-supp-figure-text-cleanup/edits/D24.py",
+    "code/notes/2026-10-12-supp-figure-text-cleanup/edits/D24_b.py",
+    "code/notes/2026-10-12-supp-figure-text-cleanup/edits/D24_hsmm.py",
+    "code/notes/2026-10-12-supp-figure-text-cleanup/edits/D24_hsmm_b.py",
+    "code/notes/2026-10-12-supp-figure-text-cleanup/edits/D25.py",
+    "code/notes/2026-10-12-supp-figure-text-cleanup/edits/D26.py",
+    "code/notes/2026-10-12-supp-figure-text-cleanup/edits/D27.py",
+    "code/notes/2026-10-12-supp-figure-text-cleanup/edits/D27_b.py",
+    "code/notes/2026-10-12-supp-figure-text-cleanup/edits/G3.py",
+    "code/notes/2026-10-12-supp-figure-text-cleanup/edits/G_markers.py",
+    "code/notes/2026-10-12-supp-figure-text-cleanup/edits/balance_D09.py",
+    "code/notes/2026-10-12-supp-figure-text-cleanup/edits/balance_D09_b.py",
+    "code/notes/2026-10-12-supp-figure-text-cleanup/edits/balance_D16.py",
+    "code/notes/2026-10-12-supp-figure-text-cleanup/edits/balance_D22.py",
+    "code/notes/2026-10-12-supp-figure-text-cleanup/edits/balance_D26.py",
+    "code/notes/2026-10-12-supp-figure-text-cleanup/edits/balance_cycle.py",
+    "code/notes/2026-10-12-supp-figure-text-cleanup/edits/balance_mech.py",
+    "code/notes/2026-10-12-supp-figure-text-cleanup/edits/balance_mech_b.py",
+    "code/notes/2026-10-12-supp-figure-text-cleanup/edits/balance_strat.py",
+    "code/notes/2026-10-12-supp-figure-text-cleanup/edits/build_compose_bundle.py",
+    "code/notes/2026-10-12-supp-figure-text-cleanup/edits/captions.py",
+    "code/notes/2026-10-12-supp-figure-text-cleanup/edits/captions_S1S2_sentence.py",
+    "code/notes/2026-10-12-supp-figure-text-cleanup/edits/captions_audit.py",
+    "code/notes/2026-10-12-supp-figure-text-cleanup/edits/common.py",
+    "code/notes/2026-10-12-supp-figure-text-cleanup/edits/compose_S1S2.py",
+    "code/notes/2026-10-12-supp-figure-text-cleanup/edits/compose_S1S2_b.py",
+    "code/notes/2026-10-12-supp-figure-text-cleanup/edits/compose_S7.py",
+    "code/notes/2026-10-12-supp-figure-text-cleanup/edits/cycle.py",
+    "code/notes/2026-10-12-supp-figure-text-cleanup/edits/legend_D18.py",
+    "code/notes/2026-10-12-supp-figure-text-cleanup/edits/legend_D18_b.py",
+    "code/notes/2026-10-12-supp-figure-text-cleanup/edits/mech.py",
+    "code/notes/2026-10-12-supp-figure-text-cleanup/edits/mech_b.py",
+    "code/notes/2026-10-12-supp-figure-text-cleanup/edits/mech_c.py",
+    "code/notes/2026-10-12-supp-figure-text-cleanup/edits/mech_d.py",
+    "code/notes/2026-10-12-supp-figure-text-cleanup/edits/naive.py",
+    "code/notes/2026-10-12-supp-figure-text-cleanup/edits/profile.py",
+    "code/notes/2026-10-12-supp-figure-text-cleanup/edits/profile_s20c.py",
+    "code/notes/2026-10-12-supp-figure-text-cleanup/edits/profile_s20c_b.py",
+    "code/notes/2026-10-12-supp-figure-text-cleanup/edits/review_captions.py",
+    "code/notes/2026-10-12-supp-figure-text-cleanup/edits/review_captions_b.py",
+    "code/notes/2026-10-12-supp-figure-text-cleanup/edits/review_profile_receipt.py",
+    "code/notes/2026-10-12-supp-figure-text-cleanup/edits/review_receipt_paths.py",
+    "code/notes/2026-10-12-supp-figure-text-cleanup/edits/strat.py",
+    "code/notes/2026-10-12-supp-figure-text-cleanup/edits/ticklabels_D05.py",
+    "code/notes/2026-10-12-supp-figure-text-cleanup/edits/ticklabels_D07.py",
+    "code/notes/2026-10-12-supp-figure-text-cleanup/edits/ticklabels_D09.py",
+    "code/notes/2026-10-12-supp-figure-text-cleanup/edits/ticklabels_D16.py",
+    "code/notes/2026-10-12-supp-figure-text-cleanup/edits/ticklabels_D21.py",
+    "code/notes/2026-10-12-supp-figure-text-cleanup/package/build_v11c.py",
+    "code/notes/2026-10-12-supp-figure-text-cleanup/package/build_v11d.py",
+    "code/notes/2026-10-12-supp-figure-text-cleanup/package/verify_v11d.py",
+    "code/notes/2026-10-12-supp-figure-text-cleanup/promote.py",
+    "code/notes/2026-10-12-supp-figure-text-cleanup/run_a01.py",
+    "code/notes/2026-10-13-figure-density-fixes/captions.py",
+    "code/notes/2026-10-13-figure-density-fixes/fix_fig1.py",
+    "code/notes/2026-10-13-figure-density-fixes/fix_fig4.py",
+    "code/notes/2026-10-13-figure-density-fixes/fix_s19.py",
+    "code/notes/2026-10-13-figure-density-fixes/fixlib.py",
+    "code/notes/2026-10-13-figure-density-fixes/promote.py",
+    "code/notes/2026-10-13-figure-density-fixes/work/contact.py",
+    "code/notes/2026-10-13-figure-density-fixes/work/verify.py",
+    "code/notes/2026-10-13-s19-layout/fix_s19_tight.py",
+    "code/notes/2026-10-13-s19-layout/fixlib.py",
+    "code/notes/2026-10-13-s19-layout/plan.py",
+    "code/notes/2026-10-13-s19-layout/promote.py",
+    "code/notes/2026-10-13-s19-layout/work/check_plan.py",
+    "code/notes/2026-10-13-s19-layout/work/verify.py",
+    "code/notes/2026-10-13-supp-figure-text-fixes/captions.py",
+    "code/notes/2026-10-13-supp-figure-text-fixes/fix_supp.py",
+    "code/notes/2026-10-13-supp-figure-text-fixes/fixlib.py",
+    "code/notes/2026-10-13-supp-figure-text-fixes/promote.py",
+    "code/notes/2026-10-13-supp-figure-text-fixes/work/contact.py",
+    "code/notes/2026-10-13-supp-figure-text-fixes/work/probe.py",
+    "code/notes/2026-10-13-supp-figure-text-fixes/work/verify.py",
+    "code/notes/2026-10-13-table-s4j/build_s4j.py",
+    "code/notes/2026-10-13-table-s4j/verify_s4j.py",
+    "code/reviews/2026-10-08-supplement-narrative-writing/tables/render_final.mjs"
+  ]
+}

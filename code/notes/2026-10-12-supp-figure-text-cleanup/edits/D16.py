@@ -1,0 +1,20 @@
+TARGET = 'notes/2026-10-06-supplement-polyapipe/figures/D16.py'
+EDITS = [
+ ("H1, H2 = 112.0, 272.0", "H1, H2 = 117.0, 272.0   # 2026-10-12: panel titles moved to axis titles or the caption"),
+ ("    F.text((sx.p0+sx.p1)/2, y+3.0, f'{cl}, shared proximal', 7.5, ha='center')", "    F.text((sx.p0+sx.p1)/2, y+3.0, cl, 7.5, ha='center')"),
+ ("    F.xaxis(sx, y+20.0+7*8.6+3.0+5.4, [0, 35, 70])", "    F.xaxis(sx, y+20.0+7*8.6+3.0+5.4, [0, 35, 70], title='Shared proximal candidates')"),
+ ("F.text((bx.p0+bx.p1)/2, y+3.0, 'Same direction', 7.5, ha='center')\n", ""),
+ ("F.xaxis(bx, y+21.0+3*16.0+9.0, [0, 100, 200])", "F.xaxis(bx, y+21.0+3*16.0+9.0, [0, 100, 200], title='Same-direction genes')"),
+ ("F.text(x+w/2+6, y+3.0, 'q, 80 tests', 7.5, ha='center')\n", ""),
+ ("F.xaxis(qx, y+21.0+4*14.4+7.0, [0, 0.5, 1], ['0', '.5', '1'])\nF.text(x+w/2, y+h-7.4, f'{tot} tests; minimum q = {min(v[\"min_q\"] for v in Cv.values()):.2f}'.replace('0.', '.'), 7.0, ha='center', color=MUTED)",
+  "F.xaxis(qx, y+21.0+4*14.4+7.0, [0, 0.5, 1], ['0', '.5', '1'], title='q')   # test count and minimum q: caption"),
+ ("WD = 150.0; HD = 162.0", "WD = 150.0; HD = 158.0"),
+ ("sx = Lin(-0.6, 0.6, x+30, x+w-3); sy = Lin(-0.6, 0.6, y+16+(sx.p1-sx.p0), y+16)\nF.text((sx.p0+sx.p1)/2, y+3.0, f'{len(gp):,} gene pairs', 7.5, ha='center')",
+  "sx = Lin(-0.6, 0.6, x+30, x+w-3); sy = Lin(-0.6, 0.6, y+12+(sx.p1-sx.p0), y+12)   # pair count: caption"),
+ ("F.text((ex.p0+ex.p1)/2, y+3.0, 'Human × mouse study pairs, supported layer', 7.5, ha='center')\nEv = {}; yy = y+20.0; rh = 9.0",
+  "Ev = {}; yy = y+20.0; rh = 8.9"),
+ ("F.xaxis(ex, yy-2.0, [-0.1, 0, 0.1, 0.2], ['−.1', '0', '.1', '.2'])", "F.xaxis(ex, yy-2.0, [-0.1, 0, 0.1, 0.2], ['−.1', '0', '.1', '.2'], title='Spearman ρ')"),
+ ("fx = Lin(1, 8, x+26, x+w-4); fy = Lin(0, 1, y+16+(fx.p1-fx.p0)/1.98, y+16)", "fx = Lin(1, 8, x+26, x+w-4); fy = Lin(0, 1, y+12+(fx.p1-fx.p0)/1.98, y+12)"),
+ ("F.text((fx.p0+fx.p1)/2, y+3.0, 'Power by injected odds ratio', 7.5, ha='center')\n", ""),
+ ("F.xaxis(fx, fy.p0+1.0, [1, 2, 4, 8])", "F.xaxis(fx, fy.p0+1.0, [1, 2, 4, 8], title='Injected odds ratio')"),
+]

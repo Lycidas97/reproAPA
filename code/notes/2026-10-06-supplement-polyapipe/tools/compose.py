@@ -66,13 +66,13 @@ HDRC = 56.0
 PROG = ['ECM', 'Epithelial', 'Pluripotency']
 top = max(float(PG.mean_log1p_cp10k.max()), 0.5)
 lim = float(np.ceil(top*2)/2)
-sub = (HC-HDRC-2*5.0-13.0)/3
+sub = (HC-HDRC-2*5.0-4.2)/3
 Cv = {}
 idx = {k: i for i, k in enumerate(ST.state_key)}
 assert (PG.family == PG.state_key.map(ST.set_index('state_key').family)).all()
 for j, prog in enumerate(PROG):
     sy = Lin(0, lim, y+HDRC+j*(sub+5.0)+sub, y+HDRC+j*(sub+5.0))
-    F.text(X0+0.4, (sy.p0+sy.p1)/2-3.4, prog, 7.0)
+    F.text(X0+9.4, (sy.p0+sy.p1)/2-3.4, prog, 7.0)
     F.yaxis(sy, CX0, [0, lim], ['0' if j == 2 else '', f'{lim:g}'])
     q = PG[PG.program == prog]
     for sk, g in q.groupby('state_key'):
@@ -80,10 +80,11 @@ for j, prog in enumerate(PROG):
         offs = np.linspace(-CW*0.28, CW*0.28, n) if n > 1 else [0.0]
         F.points([cx(i)+o for o in offs], [sy.clip(v) for v in g.mean_log1p_cp10k], ms='point', color=PAL[g.family.iloc[0]], alpha='full')
     Cv[prog] = dict(observations=int(len(q)), states=int(q.state_key.nunique()))
-unit_rules(yf, y+HC-13.0)
-F.text((CX0+RR)/2, y+HC-7.4, 'Mean log1p(CP10k) of each qualified library × state (≥ 20 cells); color = display family', 7.0, ha='center', color=MUTED)
+unit_rules(yf, y+HC-4.2)
+# 2026-10-12: the explanatory line under the panel moved to the caption; the quantity is a y-axis title
+F.vtext(X0+3.8, y+HDRC+(HC-HDRC-4.2)/2, 'log1p(CP10k)', 8.0)
 F.values['c'] = Cv''')
-MARKERS_H = ('HB, HC = 62.0, 96.0', 'HB, HC = 62.0, 131.0')
+MARKERS_H = ('HB, HC = 62.0, 96.0', 'HB, HC = 62.0, 122.0')
 
 POWER_E = ('section', '# ================================================================ e  power', "F.values['e'] = Ev", r'''# ================================================================ e  power
 # consolidated figure: widened to share a row with the APA rank-effect panel, so one line chart per database
@@ -96,7 +97,7 @@ Ev = {}
 for k, (db, col) in enumerate((('GO', INK), ('KEGG', INK))):          # database named in each subplot title; colour not needed
     px = Lin(1, 8, xl_+k*(sw_+sg_), xl_+k*(sw_+sg_)+sw_)
     F.lineplot(px, py, 'power '+db)
-    F.text((px.p0+px.p1)/2, y+3.0, f'{db}, G2 tests (L3 full null)', 7.5, ha='center')
+    F.text((px.p0+px.p1)/2, y+3.0, db, 7.5, ha='center')   # 2026-10-12: facet label only; G2 tests / L3 full null in the caption
     F.yaxis(py, px.p0, [0, 0.5, 1], ['0', '.5', '1'], 'Detection probability' if k == 0 else None, title_y=(py.p0+py.p1)/2+6,
             title_x=x+5.4, labels_off=(k == 1))
     for th, ls in (('nominal', None), ('bonferroni_terms', 'dash')):
@@ -115,7 +116,7 @@ SPEC = {
     'A': dict(title='human states', bands=[[('G1', 'abcd')], [('D01', 'c')]], patches={'D01': [MARKERS_C, MARKERS_H]}),
     'B': dict(title='mouse states', bands=[[('G2', 'abcd')], [('D02', 'c')], [('G3', 'bcd')]],
               patches={'D02': [MARKERS_C, MARKERS_H],
-                       'G3': [('H1, H2 = 136.0, 111.5', 'H1, H2 = 136.0, 97.5'), ('top, bot = y+27.0, y+80.0', 'top, bot = y+27.0, y+66.0'),
+                       'G3': [('H1, H2 = 136.0, 111.5', 'H1, H2 = 136.0, 88.5'), ('top, bot = y+18.0, y+71.0', 'top, bot = y+18.0, y+57.0'),
                               # new letters f-h: the study block must clear the widest of them, not the old b-d
                               ("tx = x+0.2+textwidth(L, 11, 'Bol')+F.CLEAR_R+0.6", "tx = x+0.2+max(textwidth(c_, 11, 'Bol') for c_ in 'fgh')+F.CLEAR_R+0.6")]}),
     'C': dict(bands=[[('D03', 'abcdef')]]),

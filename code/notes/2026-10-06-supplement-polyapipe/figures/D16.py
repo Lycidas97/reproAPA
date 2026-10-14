@@ -19,7 +19,7 @@ from supdraw import *   # noqa
 FID = 'D16'
 D = Data(); OUT = outdir(FID)
 X0, RR = MARGIN, PAGE_W-MARGIN
-H1, H2 = 112.0, 272.0
+H1, H2 = 117.0, 272.0   # 2026-10-12: panel titles moved to axis titles or the caption
 Y1 = MARGIN; Y2 = Y1+H1+GAP; H = Y2+H2+MARGIN
 F = Fig(H, figname(FID))
 HUM = {'H1': 'GSE118258', 'H2': 'GSE150311', 'H3': '178325_0618', 'H4': 'GSE221739'}
@@ -36,7 +36,7 @@ pw = (w-48-10-4)/2
 Av = {}
 for j, (ct, cl) in enumerate((('PS', 'P–S'), ('PM', 'P–M'))):
     sx = Lin(0, 70, x+48+(pw+10)*j, x+48+(pw+10)*j+pw)
-    F.text((sx.p0+sx.p1)/2, y+3.0, f'{cl}, shared proximal', 7.5, ha='center')
+    F.text((sx.p0+sx.p1)/2, y+3.0, cl, 7.5, ha='center')
     r = 0
     for li, (layer, ll) in enumerate((('supported50', 'Supported'), ('expanded_primary', 'Expanded'))):
         for th in (0.01, 0.02, 0.03, 0.05):
@@ -51,7 +51,8 @@ for j, (ct, cl) in enumerate((('PS', 'P–S'), ('PM', 'P–M'))):
             F.marker(sx(q.observed), yy, 'o', 'mark', fc=INK if sig else 'white', ec=INK)
             Av[f'{ct}|{layer}|{th}'] = dict(observed=int(q.observed), null=[float(q.null_q025), float(q.null_q975)], q16=float(q.q_16))
             r += 1
-    F.xaxis(sx, y+20.0+7*8.6+3.0+5.4, [0, 35, 70])
+    ab_ = F.xaxis(sx, y+20.0+7*8.6+3.0+5.4, [0, 35, 70], ['0', '35', '' if j == 0 else '70'])
+F.text(x+48+pw+5, ab_+1.6, 'Shared proximal candidates', 8.0, ha='center')   # one axis title for both subplots
 F.key_row(None, y+h-7.4, [('marker', ('o', INK), 'q16 < .05'), ('marker', ('o', 'white', INK), 'q16 ≥ .05'),
                           ('line', (NULLBAR, None, 'bold'), 'Null 95%')], gap=6.0, center=x+w/2)
 F.values['a'] = Av
@@ -62,7 +63,6 @@ x, y, w, h = F.panel('b', X0+WA+GAP, Y1, WB, H1)
 dd = D.df('D16B', 'direction_difference/v2_original_direction_decomposition.tsv')
 dd = dd[(dd.metric == 'WPP') & (abs(dd.threshold-0.02) < 1e-9) & (dd.model == 'Q5')]
 bx = Lin(0, 220, x+26, x+w-1.5)
-F.text((bx.p0+bx.p1)/2, y+3.0, 'Same direction', 7.5, ha='center')
 Bv = {}
 for i, (hs, ms, hr, mr) in enumerate(PAIRS):
     yy = y+21.0+i*16.0
@@ -74,7 +74,7 @@ for i, (hs, ms, hr, mr) in enumerate(PAIRS):
     F.line([bx(s_.null_p025), bx(s_.null_p975)], [yy+6.4]*2, lw='bold', color=NULLBAR)
     Bv[f'{hr}|{mr}'] = dict(proximal=neg, distal=pos, same=int(s_.observed), null=[float(s_.null_p025), float(s_.null_p975)],
                             q_joint_all_56=float(s_.q_joint_all_56))
-F.xaxis(bx, y+21.0+3*16.0+9.0, [0, 100, 200])
+F.xaxis(bx, y+21.0+3*16.0+9.0, [0, 100, 200], title='Same-direction genes')
 F.key_row(None, y+h-17.4, [('block', PROX, 'Proximal'), ('block', DIST, 'Distal')], gap=5.0, center=x+w/2)
 F.key_row(None, y+h-7.4, [('line', (NULLBAR, None, 'bold'), 'Null 95%')], gap=5.0, center=x+w/2)
 F.values['b'] = Bv
@@ -86,28 +86,25 @@ op = D.df('D16C', 'direction_difference/original_pair_direction_sensitivity.tsv'
 FAMS = [('pair', 'distal_minus_proximal_excess_rate', dt, 'Excess rate'), ('pair', 'log_distal_vs_proximal_relative_enrichment', dt, 'Log enrichment'),
         ('unique_gene_pooled', None, dt, 'Pooled genes'), ('pair_heterogeneity', None, dt, 'Between pairs'), ('pair', None, op, 'Pair-specific null')]
 qx = Lin(0, 1, x+50, x+w-3)
-F.text(x+w/2+6, y+3.0, 'q, 80 tests', 7.5, ha='center')
 Cv = {}; rng = np.random.default_rng(16); tot = 0
 for i, (sc_, tst, src, lab) in enumerate(FAMS):
-    yy = y+21.0+i*14.4
+    yy = y+21.0+i*16.9
     q = src[src.scope == sc_]
     if tst: q = q[q.test == tst]
     F.text(x+0.4, yy-3.4, lab, 7.0)
     F.points([qx(v) for v in q.q_complete_80], yy+rng.uniform(-3.2, 3.2, len(q)), ms='small', color=INK, alpha='secondary')
     Cv[lab] = dict(n=int(len(q)), min_q=float(q.q_complete_80.min())); tot += len(q)
-F.line([qx(0.05)]*2, [y+15, y+21.0+4*14.4+5], lw='ref', color=AXC, ls='ref')
-F.xaxis(qx, y+21.0+4*14.4+7.0, [0, 0.5, 1], ['0', '.5', '1'])
-F.text(x+w/2, y+h-7.4, f'{tot} tests; minimum q = {min(v["min_q"] for v in Cv.values()):.2f}'.replace('0.', '.'), 7.0, ha='center', color=MUTED)
+F.line([qx(0.05)]*2, [y+15, y+21.0+4*16.9+5], lw='ref', color=AXC, ls='ref')
+F.xaxis(qx, y+21.0+4*16.9+7.0, [0, 0.5, 1], ['0', '.5', '1'], title='q')   # test count and minimum q: caption
 assert tot == 80, tot
 F.values['c'] = Cv
 
 # ================================================================ d  gene-pair scatter
-WD = 150.0; HD = 162.0
+WD = 150.0; HD = 158.0
 x, y, w, h = F.panel('d', X0, Y2, WD, HD)
 gp = D.df('D16D', 'supplement_statistics/continuous-gene-pairs.tsv.gz')
 gp = gp[gp.layer == 'supported50']
-sx = Lin(-0.6, 0.6, x+30, x+w-3); sy = Lin(-0.6, 0.6, y+16+(sx.p1-sx.p0), y+16)
-F.text((sx.p0+sx.p1)/2, y+3.0, f'{len(gp):,} gene pairs', 7.5, ha='center')
+sx = Lin(-0.6, 0.6, x+30, x+w-3); sy = Lin(-0.6, 0.6, y+12+(sx.p1-sx.p0), y+12)   # pair count: caption
 F.line([sx(0)]*2, [sy.p0, sy.p1], lw='ref', color=AXC, ls='ref'); F.line([sx.p0, sx.p1], [sy(0)]*2, lw='ref', color=AXC, ls='ref')
 F.yaxis(sy, sx.p0, [-0.6, -0.3, 0, 0.3, 0.6], ['−.6', '−.3', '0', '.3', '.6'], 'Mouse ΔDWUI vs S')
 for st in ['R', 'E', 'P', 'M']:
@@ -124,8 +121,7 @@ cp = D.df('D16E', 'cross_continuous/continuous_pair_summary.tsv')
 cp = cp[cp.layer == 'supported50']
 ex = Lin(-0.15, 0.25, x+46, x+w-23)
 F.text(x+w, y+3.0, 'Genes', 7.0, ha='right', color=MUTED)
-F.text((ex.p0+ex.p1)/2, y+3.0, 'Human × mouse study pairs, supported layer', 7.5, ha='center')
-Ev = {}; yy = y+20.0; rh = 9.0
+Ev = {}; yy = y+20.0; rh = 8.9
 for st in ['R', 'E', 'P', 'M']:
     q = cp[cp.state == st].sort_values(['human', 'mouse'])
     F.text(x+0.4, yy+rh*(len(q)-1)/2-3.4, f'{st}–S', 7.5, color=SC[st], font='Bol')
@@ -138,7 +134,7 @@ for st in ['R', 'E', 'P', 'M']:
         yy += rh
     yy += 3.0
 F.line([ex(0)]*2, [y+15, yy-3], lw='ref', color=AXC, ls='ref')
-F.xaxis(ex, yy-2.0, [-0.1, 0, 0.1, 0.2], ['−.1', '0', '.1', '.2'])
+F.xaxis(ex, yy-2.0, [-0.1, 0, 0.1, 0.2], ['−.1', '0', '.1', '.2'], title='Spearman ρ')
 F.key_row(None, y+h-7.4, [('block', STUDY[r][1], STUDY[r][0].replace('Schiebinger2019–', '').replace('Guo2019–', ''))
                           for r in ['GSE118258', 'GSE150311', '178325_0618', 'GSE221739', 'CIP', 'WOT']], gap=5.0, center=x+w/2)
 F.values['e'] = Ev
@@ -147,9 +143,8 @@ F.values['e'] = Ev
 x, y, w, h = F.panel('f', X0, Y2+HD+GAP, WD, H2-HD-GAP)
 pwr = D.df('D16F', 'cross_controls/cross_species_power.tsv')
 pwr = pwr[(pwr.experiment == 'conditional_injection') & (pwr.generator == 'L3_full') & (abs(pwr.alpha-0.05) < 1e-9)]
-fx = Lin(1, 8, x+26, x+w-4); fy = Lin(0, 1, y+16+(fx.p1-fx.p0)/1.98, y+16)
+fx = Lin(1, 8, x+26, x+w-4); fy = Lin(0, 1, y+12+(fx.p1-fx.p0)/1.98, y+12)
 F.lineplot(fx, fy, 'power')
-F.text((fx.p0+fx.p1)/2, y+3.0, 'Power by injected odds ratio', 7.5, ha='center')
 F.yaxis(fy, fx.p0, [0, 0.5, 1], ['0', '.5', '1'], 'Power', title_y=(fy.p0+fy.p1)/2+3)
 Fv = {}
 for ct, col in (('PS', INK), ('PM', MUTED)):
@@ -158,7 +153,7 @@ for ct, col in (('PS', INK), ('PM', MUTED)):
         F.line([fx(v) for v in q.odds_ratio], [fy(v) for v in q.rejection_rate], lw='data', color=col, ls=ls)
         for o_, v in zip(q.odds_ratio, q.rejection_rate): F.marker(fx(o_), fy(v), 'o', 'small', fc=col)
         Fv[f'{ct}|{tm}'] = {int(o_): float(v) for o_, v in zip(q.odds_ratio, q.rejection_rate)}
-F.xaxis(fx, fy.p0+1.0, [1, 2, 4, 8])
+F.xaxis(fx, fy.p0+1.0, [1, 2, 4, 8], title='Injected odds ratio')
 F.key_row(None, y+h-7.4, [('line', (INK, None, 'data'), 'P–S'), ('line', (MUTED, None, 'data'), 'P–M'), ('line', (INK, 'dash', 'data'), 'L1')],
           gap=5.0, center=x+w/2)
 F.values['f'] = Fv

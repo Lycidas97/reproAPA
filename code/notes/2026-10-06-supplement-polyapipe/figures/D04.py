@@ -14,7 +14,7 @@ from supdraw import *   # noqa
 
 D = Data(); OUT = outdir('D04')
 X0, R = MARGIN, PAGE_W-MARGIN
-H1, H2, H3 = 108.0, 99.0, 112.0
+H1, H2, H3 = 115.0, 99.0, 101.5   # 2026-10-12: titles -> axis titles (a), title rows removed (c, d)
 Y1 = MARGIN; Y2 = Y1+H1+GAP; Y3 = Y2+H2+GAP; H = Y3+H3+MARGIN
 F = Fig(H, figname('D04'))
 SUPC, UNSC = ORD3[0], ORD3[2]
@@ -24,9 +24,6 @@ DS = DATASET_ORDER
 x, y, w, h = F.panel('A', X0, Y1, R-X0, H1)
 sup = D.df('D04A', 'panel_statistics/primary-PAS-and-UMI-support.tsv').set_index('study_id')
 c1 = Lin(0, 120, x+64, x+176); c2 = Lin(0.6, 1.0, x+192, x+308); c3 = Lin(0.88, 1.0, x+324, x+w-3)
-F.text((c1.p0+c1.p1)/2, y+3.0, 'Primary PAS (thousands)', 7.5, ha='center', color=MUTED)
-F.text((c2.p0+c2.p1)/2, y+3.0, 'PAS within window', 7.5, ha='center', color=MUTED)
-F.text((c3.p0+c3.p1)/2, y+3.0, 'UMI within window', 7.5, ha='center', color=MUTED)
 rows = []; yy = y+20.8          # first band starts below the letter clear zone
 for i, g in enumerate(DS):
     if i == 4: yy += 4.0
@@ -48,9 +45,9 @@ for g, yy in rows:
     Av[g] = dict(primary_sites=int(r_.sites), supported50_sites=int(r_.supported50_sites), UMI=int(r_.UMI),
                  PAS_fraction={k: float(v[0]) for k, v in fr.items()}, UMI_fraction={k: float(v[1]) for k, v in fr.items()})
 ay = rows[-1][1]+5.7
-F.xaxis(c1, ay, [0, 40, 80, 120])
-F.xaxis(c2, ay, [0.6, 0.7, 0.8, 0.9, 1.0], ['.6', '.7', '.8', '.9', '1'])
-F.xaxis(c3, ay, [0.88, 0.92, 0.96, 1.0], ['.88', '.92', '.96', '1'])
+F.xaxis(c1, ay, [0, 40, 80, 120], title='Primary PAS (thousands)')
+F.xaxis(c2, ay, [0.6, 0.7, 0.8, 0.9, 1.0], ['.6', '.7', '.8', '.9', '1'], title='Fraction of PAS within window')
+F.xaxis(c3, ay, [0.88, 0.92, 0.96, 1.0], ['.88', '.92', '.96', '1'], title='Fraction of UMIs within window')
 F.key_row(None, y+H1-7.4, [('block', SUPC, 'Within 50 nt'), ('block', UNSC, 'Other primary PAS')], gap=7.0, center=(c1.p0+c1.p1)/2)
 F.key_row(None, y+H1-7.4, [('marker', ('o', INK), '±50 nt'), ('line', (NULLBAR, None, 'range'), '±25 to ±100 nt'),
                             ('line', (AXC, 'ref', 'ref'), 'all')], gap=8.0, center=(c2.p0+c3.p1)/2)
@@ -88,17 +85,16 @@ F.values['B'] = Bv
 # Row 3: two header rows (panel title, subplot titles), two line charts side by side per panel (aspect <= 2).
 WC = 222.0
 x, y, w, h = F.panel('C', X0, Y3, WC, H3)
-PY0, PY1, AXY = y+22.0, y+80.0, y+82.0          # data area top/bottom and x-axis line, shared by C and D
+PY0, PY1, AXY = y+13.0, y+71.0, y+73.0          # data area top/bottom and x-axis line, shared by C and D
 LEG3 = y+H3-7.4
 gp = 9.0; pw_ = (x+w-0.3-(x+26)-gp)/2
 CX = [Lin(-400, 400, x+26+(pw_+gp)*j, x+26+(pw_+gp)*j+pw_) for j in range(2)]
 cy = Lin(0, 0.045, PY1, PY0)
-F.text((CX[0].p0+CX[1].p1)/2, y+3.0, 'Read ends around primary PAS', 7.5, ha='center', color=MUTED)
 Cv = {}
 for j, (cat, lab) in enumerate([('supported50', 'Supported'), ('unsupported50', 'Unsupported')]):
     cx = CX[j]
     F.lineplot(cx, cy, cat)
-    F.text((cx.p0+cx.p1)/2, y+12.0, lab, 7.5, ha='center')
+    F.text((cx.p0+cx.p1)/2, y+3.0, lab, 7.5, ha='center')
     F.line([cx.p0, cx.p0], [cy.p0, cy.p1], lw='axis', color=AXC)
     F.yaxis(cy, cx.p0, [0, 0.02, 0.04], ['0', '.02', '.04'], line=False, labels_off=(j == 1))
     F.line([cx(0)]*2, [cy.p0, cy.p1], lw='ref', color=AXC, ls='ref')
@@ -109,9 +105,9 @@ for j, (cat, lab) in enumerate([('supported50', 'Supported'), ('unsupported50', 
         Cv.setdefault(g, {})[cat] = dict(max_fraction=float(m.mean_site_fraction.max()),
                                           at_nt=int(m.loc[m.mean_site_fraction.idxmax()].position_nt), sites=int(m.selected_sites.max()))
     F.xaxis(cx, AXY, [-200, 0, 200], ['−200', '0', '200'])
-F.vtext(x+4.4, (PY0+PY1)/2+4.2, 'Mean fraction per site', 8.0)
+F.vtext(x+4.4, (PY0+PY1)/2+12.6, 'Mean fraction per site', 8.0)
 F.text((CX[0].p0+CX[1].p1)/2, AXY+12.0, 'Read end relative to PAS (nt)', 8.0, ha='center')
-F.text((CX[0].p0+CX[1].p1)/2, LEG3, 'Line colors: studies as in a', 7.5, ha='center', color=MUTED)
+# 2026-10-12: 'Line colors: studies as in a' moved to the caption
 F.values['C'] = Cv
 
 # ================================================================ D  depth and layer sensitivity of complete profiles
@@ -122,12 +118,11 @@ dxs = {20: 0, 40: 1, 80: 2}
 pw_ = (x+w-0.3-(x+24)-gp)/2
 DX = [Lin(-0.25, 2.25, x+24+(pw_+gp)*j, x+24+(pw_+gp)*j+pw_) for j in range(2)]
 dyy = Lin(0, 5, PY1, PY0)
-F.text((DX[0].p0+DX[1].p1)/2, y+3.0, 'Genes with complete S–R–E–P profiles', 7.5, ha='center', color=MUTED)
 Dv = {}
 for j, (setting, lab) in enumerate((('supported50_p08', 'Supported layer'), ('expanded_primary_p08', 'Expanded layer'))):
     dx = DX[j]
     F.lineplot(dx, dyy, setting)
-    F.text((dx.p0+dx.p1)/2, y+12.0, lab, 7.5, ha='center')
+    F.text((dx.p0+dx.p1)/2, y+3.0, lab, 7.5, ha='center')
     F.line([dx.p0, dx.p0], [dyy.p0, dyy.p1], lw='axis', color=AXC)
     F.yaxis(dyy, dx.p0, [0, 1, 2, 3, 4, 5], line=False, labels_off=(j == 1),
             title='Genes (×1,000)' if j == 0 else None, title_y=(PY0+PY1)/2+3.0)
@@ -141,7 +136,7 @@ for j, (setting, lab) in enumerate((('supported50_p08', 'Supported layer'), ('ex
             F.marker(dx(dxs[d_]), dyy(v/1000), mk, 'small', fc=col)
         Dv[f'{r}|{setting}'] = comp
     F.xaxis(dx, AXY, [0, 1, 2], ['20', '40', '80'])
-F.text((DX[0].p0+DX[1].p1)/2, AXY+12.0, 'PAS UMI per state (depth)', 8.0, ha='center')
+F.text((DX[0].p0+DX[1].p1)/2, AXY+12.0, 'Minimum PAS UMIs per metacell', 8.0, ha='center')
 F.key_row(None, LEG3, [('marker', (STUDY[r][2], STUDY[r][1]), STUDY[r][0]) for r in FIT_ROUTES], gap=6.0, center=(DX[0].p0+DX[1].p1)/2)
 F.notes.append('D: complete-profile counts are the number of genes with all four S/R/E/P nodes per route, setting and depth (display count)')
 F.notes.append('C, D: line charts split into side-by-side subplots so every data area has width/height <= 2 (house rule)')

@@ -27,12 +27,12 @@ SPC = {'human': STUDY['GSE118258'][1], 'mouse': STUDY['WOT'][1]}
 WA = 262.0
 x, y, w, h = F.panel('a', X0, Y1, WA, H1)
 sx = Lin(0.6, 2.1, x+92, x+w-50)
-F.text((sx.p0+sx.p1)/2, y+3.0, 'Tested class, observed / null mean', 7.5, ha='center')
+# 2026-10-12: panel titles moved to axis titles or the caption throughout this figure
 F.text(x+w-27, y+3.0, 'q, 5 bins', 7.0, ha='center', color=MUTED)
 F.text(x+w-27, y+11.0, '(3 bins)', 7.0, ha='center', color=MUTED)
 rows = [(sp, th, nm) for sp in ('human', 'mouse') for th in (0.02, 0.05) for nm in ('response_identity', 'direction_specific')]
 NM = {'response_identity': 'Identity', 'direction_specific': 'Direction'}
-rh = 10.4; r0 = y+24.0
+rh = 10.4; r0 = y+21.0
 F.line([sx(1)]*2, [r0-6, r0+rh*7+4+6], lw='ref', color=AXC, ls='ref')
 Av = {}
 for i, (sp, th, nm) in enumerate(rows):
@@ -53,7 +53,7 @@ for i, (sp, th, nm) in enumerate(rows):
     F.text(x+w-27, yy-3.4, qfmt(f5.q_family)+f' ({qfmt(f3.q_family)})', 6.8, ha='center')
     Av[f'{sp}|{th}|{nm}'] = dict(observed=int(f5.observed), enrichment_min_B5=float(f5.enrichment_min), q_B5=float(f5.q_family),
                                   enrichment_min_B3=float(f3.enrichment_min), q_B3=float(f3.q_family))
-ab = F.xaxis(sx, r0+rh*7+4+rh/2+1.0, [1, 1.5, 2], ['1', '1.5', '2'])
+ab = F.xaxis(sx, r0+rh*7+4+rh/2+1.0, [1, 1.5, 2], ['1', '1.5', '2'], title='Observed / null mean')
 F.key_row(None, y+h-7.4, [('marker', ('o', INK), '5 bins'), ('marker', ('o', 'white', INK), '3 bins'),
                           ('line', (NULLBAR, None, 'thin'), 'Null 95%, each shuffled study')], gap=6.0, center=(sx.p0+x+w)/2-10)
 F.values['a'] = Av
@@ -63,17 +63,16 @@ F.notes.append('a: marker = enrichment_min (the smaller of the two shuffled-stud
 # ================================================================ b  four relation classes (2 x 2 tiles of main Figure 3e)
 x, y, w, h = F.panel('b', X0+WA+GAP, Y1, RR-(X0+WA+GAP), H1)
 gx0 = x+52.0; cw, ch, sg = 27.0, 17.0, 8.0
-F.text(gx0+cw*2+sg/2, y+3.0, 'Comparable genes', 7.5, ha='center')
 Bv = {}
 LIM_E = 0.8                                            # colour = log2(observed / null mean), clipped as in Figure 3e
 for k, sp in enumerate(('human', 'mouse')):
     sx0 = gx0+k*(2*cw+sg)
     comp = int(nul[(nul.species == sp) & (nul.baseline_bins == 5)].comparable_genes.iloc[0])
-    F.text(sx0+cw, y+12.6, f'{sp.capitalize()} {comp:,}', 7.0, ha='center')
-    F.text(sx0+cw/2, y+21.0, 'Same', 6.8, ha='center', color=MUTED); F.text(sx0+1.5*cw, y+21.0, 'Opp.', 6.8, ha='center', color=MUTED)
-F.text(gx0-3.0, y+21.0, 'ΔGEX', 6.8, ha='right', color=MUTED)
+    F.text(sx0+cw, y+3.0, f'{sp.capitalize()} {comp:,}', 7.0, ha='center')
+    F.text(sx0+cw/2, y+11.4, 'Same', 6.8, ha='center', color=MUTED); F.text(sx0+1.5*cw, y+11.4, 'Opp.', 6.8, ha='center', color=MUTED)
+F.text(gx0-3.0, y+11.4, 'ΔGEX', 6.8, ha='right', color=MUTED)
 for b_, th in enumerate((0.02, 0.05)):
-    by0 = y+29.0+b_*(2*ch+6.0)
+    by0 = y+19.4+b_*(2*ch+6.0)
     F.text(x+0.4, by0+ch-3.4, f'{th:g}'.replace('0.', '.'), 7.0, font='Bol')
     for rr, lab in ((0, 'ΔAPA same'), (1, 'ΔAPA opp.')):
         F.text(gx0-3.0, by0+rr*ch+ch/2-3.4, lab, 6.8, ha='right', color=MUTED)
@@ -150,10 +149,8 @@ pi = D.df('D12D', 'apa_gex/permutation_input.tsv.gz')
 DR = [('AP1S2', 'GSE118258__GSE178325', [('1', 'GSE118258'), ('2', '178325')]), ('Rtf2', 'GSE103221__GSE115943', [('1', 'CIP'), ('2', 'WOT')])]
 ax_ = Lin(-0.35, 0.05, x+38, x+90)
 gx = Lin(-1.5, 3.5, x+102, x+w-1)
-F.text((ax_.p0+ax_.p1)/2, y+3.0, 'ΔDWUI', 7.5, ha='center')
 _gex_label = 'ΔGEX, log2(CPM + 1)'   # production label (2026-10-07 label sync); script synced 2026-10-07 terminology pass
-F.text(min((gx.p0+gx.p1)/2, x+w-0.3-textwidth(_gex_label, 7.5)/2), y+3.0, _gex_label, 7.5, ha='center')
-Dv = {}; yy = y+22.0
+Dv = {}; yy = y+18.0
 for g, axis, studies in DR:
     q = pi[(pi.gene_symbol == g) & (pi.axis_id == axis) & (pi.setting == 'shared_p08')].iloc[0]
     F.text(x+0.4, yy+4.6-3.4, g, 7.5, font='RegIta')
@@ -170,8 +167,9 @@ for g, axis, studies in DR:
     yy += 36.0
 for s_ in (ax_, gx):
     F.line([s_(0)]*2, [y+14, yy-8], lw='ref', color=AXC, ls='ref')
-F.xaxis(ax_, yy-7.0, [-0.3, -0.15, 0], ['−.3', '−.15', '0'])
-F.xaxis(gx, yy-7.0, [-1, 0, 1, 2, 3])
+F.xaxis(ax_, yy-7.0, [-0.3, -0.15, 0], ['−.3', '−.15', '0'], title='ΔDWUI')
+gb = F.xaxis(gx, yy-7.0, [-1, 0, 1, 2, 3])
+F.text(min((gx.p0+gx.p1)/2, x+w-0.3-textwidth(_gex_label, 8.0)/2), gb+1.6, _gex_label, 8.0, ha='center')   # axis title kept inside the panel
 F.key_row(None, y+h-7.4, [('line', (NULLBAR, None, 'bold'), 'Guan2022 series range')], gap=6.0, center=x+w/2)
 F.values['d'] = Dv
 F.notes.append('d: shared_p08 setting of the APA–GEX analysis; Guan2022 = 0618 and 0809 series (point = study value, bar = series range)')

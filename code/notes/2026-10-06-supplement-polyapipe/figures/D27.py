@@ -17,7 +17,7 @@ from supdraw import *   # noqa
 FID = 'D27'
 D = Data(); OUT = outdir(FID)
 X0, RR = MARGIN, PAGE_W-MARGIN
-H1, H2 = 153.0, 150.0
+H1, H2 = 153.0, 160.0   # 2026-10-12: panel titles moved to axis titles or the caption
 Y1 = MARGIN; Y2 = Y1+H1+GAP; H = Y2+H2+MARGIN
 F = Fig(H, figname(FID))
 RT = ('CIP', 'WOT')
@@ -39,7 +39,6 @@ sp = ad.pivot(index='gene_id', columns='route', values='axis_span_nt')/1000
 lx = lambda v: np.log10(v)
 side = w-34.0-66.0
 sx = Lin(0, 2.6, x+30.0, x+30.0+side); sy = Lin(0, 2.6, y+16.0+side, y+16.0)
-F.text((sx.p0+sx.p1)/2, y+3.0, 'PAS-axis span (kb), 51 genes', 7.5, ha='center')
 F.line([sx.p0, sx.p1], [sy.p0, sy.p1], lw='ref', color=AXC, ls='ref')
 Av = {}
 for k in (0, 1, 2):
@@ -51,8 +50,8 @@ for g_, r in sp[strict.reindex(sp.index)].iterrows():
     F.marker(sx.clip(lx(r.CIP)), sy.clip(lx(r.WOT)), 'o', 'mark', fc='none', ec=INK)
 Av['strict'] = int(strict.sum())
 T = [0, 1, 2]; TL = ['1', '10', '100']
-F.yaxis(sy, sx.p0, T, TL, 'Schiebinger2019–2i')
-F.xaxis(sx, sy.p0+1.0, T, TL, 'Guo2019–CIP')
+F.yaxis(sy, sx.p0, T, TL, 'Span, Schiebinger2019–2i (kb)')
+F.xaxis(sx, sy.p0+1.0, T, TL, 'Span, Guo2019–CIP (kb)')
 kx = sx.p1+6.0
 F.key_row(kx, y+20.0, [('marker', ('o', INK), f'family in both ({Av["family_estimates_2_routes"]})')], size=7.0)
 F.key_row(kx, y+30.0, [('marker', ('o', NULLBAR), f'in neither ({Av["family_estimates_0_routes"]})')], size=7.0)
@@ -64,7 +63,6 @@ assert Av['family_estimates_1_routes'] == 0
 x, y, w, h = F.panel('b', X0+WA+GAP, Y1, WA, H1)
 ts = ad.pivot(index='gene_id', columns='route', values='terminal_shift_nt').dropna()
 bx = Lin(-600, 150, x+34.0, x+w-3.0); by = Lin(-600, 150, y+16.0+side, y+16.0)
-F.text((bx.p0+bx.p1)/2, y+3.0, f'Terminal-family shift, P − M (nt), {len(ts)} genes', 7.5, ha='center')
 F.line([bx(0)]*2, [by.p0, by.p1], lw='ref', color=AXC, ls='ref'); F.line([bx.p0, bx.p1], [by(0)]*2, lw='ref', color=AXC, ls='ref')
 F.line([bx.p0, bx.p1], [by.p0, by.p1], lw='ref', color=AXC, ls='dot')
 Bv = {}
@@ -78,8 +76,8 @@ for name, v in Bv.items():
     dx_, dy_, ha = OFF.get(name, (6, -3, 'left'))
     F.text(bx(v['CIP'])+dx_, by(v['WOT'])+dy_, name, 7.0, font='BolIta' if name in FINAL else 'RegIta', ha=ha)
 T = [-600, -300, 0]; TL = ['−600', '−300', '0']
-F.yaxis(by, bx.p0, T, TL, 'Schiebinger2019–2i')
-F.xaxis(bx, by.p0+1.0, T, TL, 'Guo2019–CIP')
+F.yaxis(by, bx.p0, T, TL, 'Shift, Schiebinger2019–2i (nt)')
+F.xaxis(bx, by.p0+1.0, T, TL, 'Shift, Guo2019–CIP (nt)')
 F.values['b'] = dict(n=int(len(ts)), strict=Bv)
 
 # ================================================================ c  strict genes
@@ -90,8 +88,6 @@ assert len(order) == 8
 LBW = 30.0
 cx1 = Lin(-600, 150, x+LBW+10.0, x+LBW+150.0)
 cx2 = Lin(-30, 45, x+LBW+176.0, x+w-4.0)
-F.text((cx1.p0+cx1.p1)/2, y+3.0, 'Terminal-family shift (nt)', 7.5, ha='center')
-F.text((cx2.p0+cx2.p1)/2, y+3.0, 'Contribution to native ΔDWUI × 1,000', 7.5, ha='center')
 COMP = [('within_family_DWUI', SEQ_STOPS[2], 'Family position'), ('family_mass_DWUI', SEQ_STOPS[1], 'Family mass'), ('nonterminal_DWUI', OUTSIDE, 'Outside family')]
 Cv = {}; rp = 13.0; c0 = y+20.0
 for i, g in enumerate(order):
@@ -121,8 +117,8 @@ for i, g in enumerate(order):
                             **({c: float(r[c]) for c, _, _ in COMP} if r.family_status == 'measurable_native_family' else {}))
 yend = c0+7*rp+rp/2
 F.line([cx1(0)]*2, [c0-6.0, yend], lw='ref', color=AXC, ls='ref'); F.line([cx2(0)]*2, [c0-6.0, yend], lw='ref', color=AXC, ls='ref')
-F.xaxis(cx1, yend+1.0, [-600, -300, 0], ['−600', '−300', '0'])
-F.xaxis(cx2, yend+1.0, [-30, 0, 30], ['−30', '0', '30'])
+F.xaxis(cx1, yend+1.0, [-600, -300, 0], ['−600', '−300', '0'], title='Terminal-family shift (nt)')
+F.xaxis(cx2, yend+1.0, [-30, 0, 30], ['−30', '0', '30'], title='Contribution to native ΔDWUI × 1,000')
 F.key_row(None, y+h-17.4, [('marker', ('s', STUDY['CIP'][1]), 'Guo2019–CIP (upper)'), ('marker', ('o', STUDY['WOT'][1]), 'Schiebinger2019–2i (lower)'),
                            ('marker', ('D', 'white', INK), 'native net ΔDWUI')], gap=7.0, center=x+w/2)
 F.key_row(None, y+h-7.4, [('block', cc, lab) for _, cc, lab in COMP]+[('block', 'white', 'NA = no measurable terminal family')], gap=7.0, center=x+w/2)

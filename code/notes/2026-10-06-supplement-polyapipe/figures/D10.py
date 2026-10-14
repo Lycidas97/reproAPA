@@ -43,7 +43,7 @@ both = (p['DWUI'] < 0.05) & (p['MPRO'] < 0.05)
 isrec = p.index.isin(RT)
 for mask, col, al in [(~both & ~isrec, NULLW, 'secondary'), (both & ~isrec, INK, 'secondary'), (isrec, WOTC, 'full')]:
     F.points([lx.clip(v) for v in vx[mask]], [ly.clip(v) for v in vy[mask]], ms='small' if col == WOTC else 'point', color=col, alpha=al)
-F.text((lx.p0+lx.p1)/2+6, y+3.0, f'{len(p)} genes, both q < .05: {int(both.sum())}', 7.5, ha='center')
+# 2026-10-12: gene counts (len(p), both.sum()) moved to the caption; they remain in values['a']
 F.key_row(None, y+h-7.4, [('marker', ('o', WOTC), 'Recurrent P–M'), ('marker', ('o', INK), 'Both q < .05')], gap=6.0, center=(lx.p0+lx.p1)/2)
 F.values['a'] = dict(genes=int(len(p)), both_q05=int(both.sum()), recurrent_tested=len(RT))
 
@@ -51,7 +51,6 @@ F.values['a'] = dict(genes=int(len(p)), both_q05=int(both.sum()), recurrent_test
 WB = 142.0
 x, y, w, h = F.panel('b', X0+WA+GAP, Y1, WB, H1)
 bx = Lin(0, 1, x+30, x+w-36)
-F.text((bx.p0+bx.p1)/2, y+3.0, 'Joint q < .05, fraction', 7.5, ha='center')
 F.text(x+w, y+3.0, 'n', 7.0, ha='right', color=MUTED)
 Bv = {}; yy = y+20.0
 for mtr in METRICS:
@@ -64,8 +63,8 @@ for mtr in METRICS:
         F.rect(bx(0), yk-bh/2, bx(num_/den)-bx(0), bh, fc=col)
         F.text(x+w, yk-3.2, f'{num_}/{den}', 6.8, ha='right', color=INK if k == 0 else WOTC)
     Bv[mtr] = dict(all=[a_, len(tested)], recurrent=[r_, len(RT)])
-    yy += 19.8
-F.xaxis(bx, yy-8.0, [0, 0.5, 1], ['0', '.5', '1'])
+    yy += 18.4
+F.xaxis(bx, yy-8.0, [0, 0.5, 1], ['0', '.5', '1'], title='Fraction with joint q < .05')
 F.key_row(None, y+h-7.4, [('block', INK, 'All tested'), ('block', WOTC, 'Recurrent')], gap=6.0, center=x+w/2)
 F.values['b'] = Bv
 F.notes.append(f'b: recurrent = mouse P–M recurrent members (WPP, |Δ| ≥ .02) that were tested at well level ({len(RT)} of {len(REC)})')
@@ -76,7 +75,6 @@ vs = D.df('D10C', 'external_pas/vector_summary.tsv')
 CONF = [('primary', 'Primary'), ('count50', 'Count ≥ 50'), ('count100', 'Count ≥ 100'), ('controls2', '2 controls')]
 tx = Lin(0, 0.02, x+46, x+w-30)
 mx_ = None
-F.text((tx.p0+tx.p1)/2, y+3.0, 'TVD, whole library', 7.5, ha='center')
 F.text(x+w, y+3.0, 'Gate', 7.0, ha='right', color=MUTED)
 Cv = {}; yy = y+27.0
 for i, (cf, cl) in enumerate(CONF):
@@ -91,9 +89,9 @@ for i, (cf, cl) in enumerate(CONF):
                   matched=int(q.matched_n), measurable=int(q.measurable_n), max_abs_smd=float(q.max_abs_smd),
                   label_assignments=int(q.label_assignments))
     yy += 22.0
-F.xaxis(tx, yy-10.0, [0, 0.01, 0.02], ['0', '.01', '.02'])
-F.key_row(None, y+h-17.4, [('line', (NULLBAR, None, 'bold'), 'Source range')], gap=6.0, center=(tx.p0+tx.p1)/2)
-F.text(x+w/2, y+h-7.4, 'Matched / measurable genes', 7.0, ha='center', color=MUTED)
+F.xaxis(tx, yy-10.0, [0, 0.01, 0.02], ['0', '.01', '.02'], title='TVD')
+F.key_row(None, y+h-7.4, [('line', (NULLBAR, None, 'bold'), 'Source range')], gap=6.0, center=(tx.p0+tx.p1)/2)
+# 2026-10-12: the 'Matched / measurable genes' note moved to the caption
 F.values['c'] = Cv
 F.notes.append('c: six whole-library label assignments; descriptive diagnostic, not an external significance test')
 

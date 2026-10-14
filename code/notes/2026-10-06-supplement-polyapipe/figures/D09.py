@@ -33,8 +33,8 @@ MODELS = [('L0_feasible_series', 'L0 feasible series'), ('L1_measurement', 'L1 m
           ('L2_PAS_first', 'L2 PAS-first'), ('L3_full', 'L3 full')]
 labw = max(textwidth(l, 7.0) for _, l in MODELS)
 sx = Lin(0.5, 4.2, x+labw+56, x+w-4)
-F.text((sx.p0+sx.p1)/2, y+3.0, 'Recurrent genes, observed / null mean', 7.5, ha='center')
-rh = 7.6; Av = {}; yy = y+20.0
+# 2026-10-12: panel titles moved to axis titles or the caption throughout this figure
+rh = 7.1; Av = {}; yy = y+20.0
 F.line([sx(1.0)]*2, [yy-5, yy+rh*20+3*4.0-2], lw='ref', color=AXC, ls='ref')
 for gi, (sp, ct, gl) in enumerate(GROUPS):
     F.text(x+0.4, yy+rh*2-3.4, gl, 7.5, font='Bol')
@@ -50,7 +50,7 @@ for gi, (sp, ct, gl) in enumerate(GROUPS):
                                            ratio=float(q.observed/q.expected), q_all_40=float(q.q_all_40), n_genes=int(q.n_genes))
         yy += rh
     yy += 4.0
-ab = F.xaxis(sx, yy-rh/2+1.0, [0.5, 1, 1.5, 2, 2.5, 3, 3.5, 4], ['.5', '1', '1.5', '2', '2.5', '3', '3.5', '4'])
+ab = F.xaxis(sx, yy-rh/2+1.0, [0.5, 1, 1.5, 2, 2.5, 3, 3.5, 4], ['.5', '1', '1.5', '2', '2.5', '3', '3.5', '4'], title='Observed / null mean')
 F.key_row(None, y+h-7.4, [('marker', ('o', INK), TH[0][2]), ('marker', ('D', 'white', INK), TH[1][2]),
                           ('line', (NULLBAR, None, 'thin'), 'Null mean ± 2 SD')], gap=7.0, center=x+w/2)
 F.values['a'] = Av
@@ -59,12 +59,11 @@ F.notes.append('a: null band = (null mean ± 2 SD) / null mean from the recorded
 
 # ================================================================ b  direction composition (form of main Figure 3a, right)
 xb = X0+WA+GAP; wb = RR-xb
-H_B = 96.0
+H_B = 92.0
 x, y, w, h = F.panel('b', xb, Y1, wb, H_B)
 dc = D.df('D09B', 'panel_statistics/recurrence-direction-counts.tsv')
 dc = dc[dc.metric == 'WPP']
 b0 = x+48.0; bw_ = w-48.0-38.0
-F.text(b0+bw_/2, y+3.0, 'Distal | proximal recurrent genes', 7.5, ha='center')
 F.text(b0+bw_+19.0, y+3.0, '≥ .02', 7.0, ha='center', color=MUTED)
 Bv = {}; yy = y+20.0
 for sp, ct, gl in GROUPS:
@@ -88,7 +87,6 @@ x, y, w, h = F.panel('c', xb, Y1+H_B+GAP, wb, H1-H_B-GAP)
 ss = D.df('D09C', 'measurement/same-state/recurrence_summary.tsv')
 ss = ss[(ss.metric == 'WPP') & (abs(ss.threshold-0.02) < 1e-9)]
 lx = Lin(0, 3, x+44, x+w-10.5)
-F.text((lx.p0+lx.p1)/2, y+3.0, 'Recurrent genes, |ΔDWUI| ≥ .02 (log)', 7.5, ha='center')
 Cv = {}; yy = y+19.0
 for sp, ct, gl in GROUPS:
     F.text(x+0.4, yy+2.4-3.4, gl, 7.0)
@@ -100,8 +98,8 @@ for sp, ct, gl in GROUPS:
         F.marker(lx(math.log10(q.observed_same_background_median)), yk, 'o', 'small', fc=INK)
         Cv[f'{gl}|{kind}'] = dict(pseudo_median=float(q.pseudo_median), pseudo_p95=float(q.pseudo_p95),
                                   observed=int(q.observed_same_background_median), eligible=int(q.eligible_median))
-    yy += 15.0
-F.xaxis(lx, yy-4.0, [0, 1, 2, 3], ['1', '10', '100', '1,000'])
+    yy += 13.5
+F.xaxis(lx, yy-4.0, [0, 1, 2, 3], ['1', '10', '100', '1,000'], title='Recurrent genes')
 F.key_row(None, y+h-7.4, [('marker', ('o', 'white', MUTED), 'Same-state halves'), ('marker', ('o', INK), 'Observed')], gap=6.0,
           center=(lx.p0+lx.p1)/2)
 F.values['c'] = Cv
@@ -115,12 +113,11 @@ mr = mr[(mr.metric == 'WPP') & (abs(mr.threshold-0.02) < 1e-9)]
 VAR = [('native', 'Native'), ('interval_supported', 'Bootstrap interval'), ('depth20', '20 PAS UMIs'), ('depth40', '40 PAS UMIs'),
        ('cycle_matched', 'Cycle matched'), ('common', 'Common PAS axis')]
 labw = max(textwidth(vl, 7.0) for _, vl in VAR)
-cx0 = x+labw+5.0; cw = (x+w-cx0)/len(GROUPS); rh = 10.6; r0 = y+30.0; bwd = 12.0
-F.text(cx0+cw*2, y+3.0, 'Members kept, same direction', 7.5, ha='center')
+cx0 = x+labw+5.0; cw = (x+w-cx0)/len(GROUPS); rh = 12.8; r0 = y+23.0; bwd = 12.0
 Dv = {}
 for j_, (sp, ct, gl) in enumerate(GROUPS):
     sp_, ct_ = gl.split(' ')                                          # two-line header: species over contrast
-    F.text(cx0+cw*j_+1.0, y+11.0, sp_, 7.0); F.text(cx0+cw*j_+1.0, y+18.6, ct_, 7.0, color=MUTED)
+    F.text(cx0+cw*j_+1.0, y+3.0, sp_, 7.0); F.text(cx0+cw*j_+1.0, y+10.6, ct_, 7.0, color=MUTED)
 for i, (v, vl) in enumerate(VAR):
     yy = r0+rh*i
     if i % 2 == 0: F.rect(x+labw+2.0, yy-rh/2, w-labw-2.0, rh, fc=BAND)
@@ -145,10 +142,9 @@ x, y, w, h = F.panel('e', X0+WD+GAP, Y2, WE, H2)
 lo = D.df('D09E', 'recurrence/leave_one_study_out_nulls.tsv')
 lo = lo[(lo.metric == 'WPP') & (~lo.series_matching) & (lo.species == 'human') & (lo.contrast == 'P_M') & (lo.status == 'tested')]
 ex = Lin(0, 180, x+44, x+w-7)
-F.text((ex.p0+ex.p1)/2, y+3.0, 'Human P–M', 7.5, ha='center')
 Ev = {}; yy = y+22.0
 for st in ['GSE118258', 'GSE150311', 'GSE221739']:
-    F.rect(x, yy-6.0, w, 17.6, fc=BAND) if st != 'GSE150311' else None
+    F.rect(x, yy-5.6, w, 16.0, fc=BAND) if st != 'GSE150311' else None
     F.text(x+0.4, yy+2.6-3.4, 'w/o '+DATASET[st][0].replace('2020', '').replace('2023', ''), 7.0)
     for k, (th, mshape, _) in enumerate(TH):
         q = lo[(lo.omitted_study == st) & (abs(lo.threshold-th) < 1e-9)].iloc[0]
@@ -156,8 +152,8 @@ for st in ['GSE118258', 'GSE150311', 'GSE221739']:
         F.line([ex(q.null_p025), ex(q.null_p975)], [yk, yk], lw='bold', color=NULLBAR)
         F.marker(ex(q.observed), yk, mshape, 'small', fc=INK if th == 0.02 else 'white', ec=INK)
         Ev[f'{st}|{th}'] = dict(observed=int(q.observed), null=[float(q.null_p025), float(q.null_p975)], q_all_12=float(q.q_all_12))
-    yy += 19.0
-F.xaxis(ex, yy-8.0, [0, 60, 120, 180])
+    yy += 17.0
+F.xaxis(ex, yy-8.0, [0, 60, 120, 180], title='Recurrent genes')
 F.key_row(None, y+h-7.4, [('line', (NULLBAR, None, 'bold'), 'Null 95% range')], gap=6.0, center=(ex.p0+ex.p1)/2)
 F.values['e'] = Ev
 F.notes.append('e: P–S and both mouse contrasts keep a single study when one is omitted (not estimable); Guan2022 not evaluable for P–M')
@@ -167,7 +163,6 @@ x, y, w, h = F.panel('f', X0+WD+GAP+WE+GAP, Y2, RR-(X0+WD+GAP+WE+GAP), H2)
 gu = D.df('D09F', 'recurrence_controls/guan_series_unit_sensitivity.tsv')
 gu = gu[(gu.species == 'human') & (gu.contrast == 'P_S')]
 fx = Lin(0, 1400, x+20, x+w-10.5)
-F.text((fx.p0+fx.p1)/2+4, y+3.0, 'Guan series', 7.5, ha='center')
 Fv = {}; yy = y+28.0
 for k, (th, mshape, lab) in enumerate(TH):
     q = gu[abs(gu.threshold-th) < 1e-9].iloc[0]
@@ -177,8 +172,7 @@ for k, (th, mshape, lab) in enumerate(TH):
     F.line([fx(q.null_p025), fx(q.null_p975)], [yk, yk], lw='bold', color=NULLBAR)
     F.marker(fx(q.observed), yk, mshape, 'small', fc=INK if th == 0.02 else 'white', ec=INK)
     Fv[str(th)] = dict(observed=int(q.observed), null=[float(q.null_p025), float(q.null_p975)], enrichment=float(q.enrichment))
-F.xaxis(fx, yy+30.0, [0, 700, 1400], ['0', '700', '1,400'])
-F.text((fx.p0+fx.p1)/2, y+h-17.4, 'Human P–S', 7.0, ha='center', color=MUTED)
+F.xaxis(fx, yy+30.0, [0, 1000], ['0', '1,000'], title='Recurrent genes')
 F.key_row(None, y+h-7.4, [('line', (NULLBAR, None, 'bold'), 'Null 95%')], gap=6.0, center=(fx.p0+fx.p1)/2)
 F.values['f'] = Fv
 F.save(OUT, D)

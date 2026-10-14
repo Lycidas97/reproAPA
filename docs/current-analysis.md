@@ -2,11 +2,11 @@
 
 ## Edition
 
-This edition accompanies the manuscript version prepared for submission on 11 October 2026.
+This edition accompanies the manuscript production files of 13 October 2026.
 
-The manuscript contains four main figures, 21 supplementary figures and Tables S1–S10. The workbook has 57 data sheets, one Contents sheet and one Sources sheet (200 source blocks). These counts come from the workbook XML and its build record.
+The manuscript contains four main figures, 21 supplementary figures and Tables S1–S10. The workbook has 58 data sheets, one Contents sheet and one Sources sheet (202 source blocks), including S4j. The counts and sheet names are bound to the production workbook hash.
 
-The [manuscript record](../provenance/release.json) identifies the version used for this edition. The [output map](manuscript-map.tsv) lists its figures, tables and source scripts. The [source-data index](../provenance/source-data-release.json) identifies the input archive.
+The [current manuscript record](../provenance/current-edition.json) identifies the version used for this edition. The [current output map](current-manuscript-map.tsv) lists its figures, tables and final production scripts. The [v11f data package record](../provenance/v11f-data-package.json) and its manifests identify the frozen inputs. The older release and output records describe the 11 October edition.
 
 ## Analysis chain
 
@@ -20,7 +20,9 @@ The [manuscript record](../provenance/release.json) identifies the version used 
 
 ## Source dependencies
 
-The supporting source PDFs and tables are recorded in the [input archive inventory](../provenance/source-data-dependencies.json).
+The supporting source PDFs and tables for v11f are recorded in the [restored-file inventory](../provenance/v11f-FILES.tsv). The [earlier input archive inventory](../provenance/source-data-dependencies.json) is retained for provenance.
+
+After the original builders, the 12–13 October scripts apply the final PDF edits. The final producer for each output is in the current output map. S4j is inserted by `code/notes/2026-10-13-table-s4j/build_s4j.py`, which copies values from the frozen result tables and preserves the other workbook sheets; `verify_s4j.py` checks the insertion. See the execution guide for the ordered stages and the pre-insertion workbook.
 
 The Plan A redesign protocols define the conditional-reference, cycle and cross-species analyses. The original extraction and bridge scripts provide their inputs. Source files preserve the project paths that their dependencies use.
 

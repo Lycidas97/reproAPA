@@ -16,7 +16,7 @@ from supdraw import *   # noqa
 FID = 'D15'
 D = Data(); OUT = outdir(FID)
 X0, RR = MARGIN, PAGE_W-MARGIN
-H1, H2, H3 = 79.0, 170.0, 140.0
+H1, H2, H3 = 86.0, 181.0, 140.0   # 2026-10-12: panel titles -> x-axis titles
 Y1 = MARGIN; Y2 = Y1+H1+GAP; Y3 = Y2+H2+GAP; H = Y3+H3+MARGIN
 F = Fig(H, figname(FID))
 fam = D.df('D15A', 'functional/functional_families.tsv')
@@ -27,7 +27,6 @@ GCOL = {'G0': ORD3[2], 'G1': ORD3[1], 'G2': ORD3[0]}
 WA = 224.0
 x, y, w, h = F.panel('a', X0, Y1, WA, H1)
 ax_ = Lin(0, 15000, x+50, x+w-7)
-F.text((ax_.p0+ax_.p1)/2, y+3.0, 'Annotated genes (GO)', 7.5, ha='center')
 Av = {}
 for i, (sp, ct, gl) in enumerate(GR):
     yy = y+21.0+i*9.4
@@ -39,7 +38,7 @@ for i, (sp, ct, gl) in enumerate(GR):
     F.rect(ax_(0), yy-3.4, ax_(g1)-ax_(0), 6.8, fc=GCOL['G1'])
     F.rect(ax_(0), yy-3.4, ax_(g2)-ax_(0), 6.8, fc=GCOL['G2'])
     Av[gl] = dict(G0=g0, G1=g1, G2=g2)
-F.xaxis(ax_, y+21.0+3*9.4+4.6, [0, 5000, 10000, 15000], ['0', '5k', '10k', '15k'])
+F.xaxis(ax_, y+21.0+3*9.4+4.6, [0, 5000, 10000, 15000], ['0', '5k', '10k', '15k'], title='Annotated genes (GO)')
 F.key_row(None, y+h-7.4, [('block', GCOL['G0'], 'G0 expressed'), ('block', GCOL['G1'], 'G1 APA-testable'), ('block', GCOL['G2'], 'G2 recurrent')],
           gap=6.0, center=x+w/2)
 F.values['a'] = Av
@@ -48,7 +47,6 @@ F.values['a'] = Av
 x, y, w, h = F.panel('b', X0+WA+GAP, Y1, RR-(X0+WA+GAP), H1)
 ex_ = {db: D.df('D15B', f'functional/{db.lower()}_exact.tsv.gz') for db in ('GO', 'KEGG')}
 bx = Lin(0, 16, x+36, x+w-30)
-F.text((bx.p0+bx.p1)/2, y+3.0, 'q < .05 positions', 7.5, ha='center')
 F.text(x+w, y+3.0, 'Tests', 7.0, ha='right', color=MUTED)
 DBC = {'GO': '#2D6A96', 'KEGG': '#9CC3DD'}
 Bv = {}
@@ -63,7 +61,7 @@ for i, (cmp_, cl) in enumerate([('G1_vs_G0', 'G1 vs G0'), ('G2_vs_G0', 'G2 vs G0
         acc += n; Bv[cl][db] = dict(q05=n, tests=int(len(q)))
     F.text(bx(acc)+2.5, yy-3.4, str(acc), 7.0)
     F.text(x+w, yy-3.4, f'{tests:,}', 6.8, ha='right', color=MUTED)
-F.xaxis(bx, y+21.0+2*13.6+6.4, [0, 8, 16])
+F.xaxis(bx, y+21.0+2*13.6+6.4, [0, 8, 16], title='Positions with q < .05')
 F.key_row(None, y+h-7.4, [('block', DBC['GO'], 'GO'), ('block', DBC['KEGG'], 'KEGG')], gap=6.0, center=(bx.p0+bx.p1)/2)
 F.values['b'] = Bv
 
@@ -76,8 +74,6 @@ TL = {r.term_name: r.term_name+(' (KEGG)' if r.database == 'KEGG' else '') for r
 labw = max(textwidth(t, 7.0) for t in TL.values())+2.0
 c1 = Lin(0, 240, x+labw+12, x+labw+12+100)
 c2 = Lin(1.0, 2.0, c1.p1+22, x+w-34)
-F.text((c1.p0+c1.p1)/2, y+3.0, 'Expected → observed genes', 7.5, ha='center')
-F.text((c2.p0+c2.p1)/2, y+3.0, 'Matched O/E', 7.5, ha='center')
 F.text(x+w, y+3.0, 'q', 7.0, ha='right', color=MUTED)
 rh = 9.6; r0 = y+21.0
 Cv = []
@@ -97,7 +93,7 @@ for i, r in enumerate(td.itertuples()):
                    expected=float(r.expected), matched_OE=float(r.matched_fold), q=float(r.q_database_model)))
 ab = r0+rh*len(td)-rh/2+1.0
 F.line([c2(1.0)]*2, [r0-rh/2, ab-1.0], lw='ref', color=AXC, ls='ref')
-F.xaxis(c1, ab, [0, 80, 160, 240]); F.xaxis(c2, ab, [1, 1.5, 2])
+F.xaxis(c1, ab, [0, 80, 160, 240], title='Genes'); F.xaxis(c2, ab, [1, 1.5, 2], title='Matched O/E')
 F.key_row(None, y+h-7.4, [('marker', ('o', 'white', INK), 'Expected'), ('marker', ('o', INK), 'Observed'),
                           ('block', SC['S'], 'P–S'), ('block', SC['M'], 'P–M'), ('marker', ('o', INK), 'Human'), ('marker', ('s', INK), 'Mouse')],
           gap=7.0, center=x+w/2)

@@ -1,6 +1,6 @@
 {
-  "date": "2026-10-11",
-  "scope": "Final submission analysis and rendering sources accompanying the 11 October 2026 v11b data archive.",
+  "date": "2026-10-13",
+  "scope": "Current source inventory, including final v11f figure and workbook production scripts. Earlier analysis and environment sources remain frozen.",
   "files": [
     {
       "module": "current_statistics",
@@ -3408,8 +3408,8 @@
       "module": "supplement_renderer",
       "repository_path": "code/notes/2026-10-06-alt-catalogue-suppfig/A01.py",
       "audited_source_path": "PAPER/notes/2026-10-06-alt-catalogue-suppfig/A01.py",
-      "bytes": "34314",
-      "sha256": "fd5439786ea43a52deba7e37003b5269ed1b8d03b34865728f9431d108c603d8",
+      "bytes": "33892",
+      "sha256": "363e2ca27acaa5f1e2d75e03b6197256698ac7d88bd7afe6b09d7a056494eaff",
       "source_alias": "PAPER",
       "source_path": "notes/2026-10-06-alt-catalogue-suppfig/A01.py"
     },
@@ -3651,8 +3651,8 @@
       "module": "current_figure_dependency",
       "repository_path": "code/notes/2026-10-06-supplement-polyapipe/figures/D03.py",
       "audited_source_path": "PAPER/notes/2026-10-06-supplement-polyapipe/figures/D03.py",
-      "bytes": "10102",
-      "sha256": "6331b48ddfb5501a90e2f76bfab3316e3a2ab1221fab6d383067fe93b0382fa0",
+      "bytes": "10083",
+      "sha256": "865adfaf7e1579cf55a2860208cb2f4695385f570a0daddd7c3df702b55b21a4",
       "source_alias": "PAPER",
       "source_path": "notes/2026-10-06-supplement-polyapipe/figures/D03.py"
     },
@@ -3660,8 +3660,8 @@
       "module": "current_figure_dependency",
       "repository_path": "code/notes/2026-10-06-supplement-polyapipe/figures/D04.py",
       "audited_source_path": "PAPER/notes/2026-10-06-supplement-polyapipe/figures/D04.py",
-      "bytes": "9285",
-      "sha256": "c2f85fd829b40c79533461d66eaa0fb5af11e08b5532edd28ddf9f9ffb97796c",
+      "bytes": "8967",
+      "sha256": "a7cc879945de6f7ddc8ded755503242477d51d8efe72936bae7011b09f2b7755",
       "source_alias": "PAPER",
       "source_path": "notes/2026-10-06-supplement-polyapipe/figures/D04.py"
     },
@@ -3669,8 +3669,8 @@
       "module": "current_figure_dependency",
       "repository_path": "code/notes/2026-10-06-supplement-polyapipe/figures/D05.py",
       "audited_source_path": "PAPER/notes/2026-10-06-supplement-polyapipe/figures/D05.py",
-      "bytes": "14914",
-      "sha256": "1ccf0690bd1c97066f324aeb759a31dcad11c26372e4a450d70676156bd74069",
+      "bytes": "14593",
+      "sha256": "2f613ac5588de06f24d2135a6ec9ae475466c663b729a167da0edf2889f13ba1",
       "source_alias": "PAPER",
       "source_path": "notes/2026-10-06-supplement-polyapipe/figures/D05.py"
     },
@@ -3687,8 +3687,8 @@
       "module": "current_figure_dependency",
       "repository_path": "code/notes/2026-10-06-supplement-polyapipe/figures/D07.py",
       "audited_source_path": "PAPER/notes/2026-10-06-supplement-polyapipe/figures/D07.py",
-      "bytes": "12319",
-      "sha256": "bd469bbbc2e977cffdcb3e8f19f28a59b0c1be7229885b3d0d612f6c7efa6a82",
+      "bytes": "12297",
+      "sha256": "dc6b1f88bf89ddbd152eb9cf4bf7ee674ff1432a85c34c7c8e421aa3e2dcc7c8",
       "source_alias": "PAPER",
       "source_path": "notes/2026-10-06-supplement-polyapipe/figures/D07.py"
     },
@@ -3705,8 +3705,8 @@
       "module": "current_figure_dependency",
       "repository_path": "code/notes/2026-10-06-supplement-polyapipe/figures/D09.py",
       "audited_source_path": "PAPER/notes/2026-10-06-supplement-polyapipe/figures/D09.py",
-      "bytes": "11159",
-      "sha256": "97d1c7004ddebfd162e920b62a14415cf6cd94824e62a0701b175d94075bed56",
+      "bytes": "10792",
+      "sha256": "8e745d7cc4359bb751d241292eb3028d5cb08bde730427c300c8b84f18cd8c57",
       "source_alias": "PAPER",
       "source_path": "notes/2026-10-06-supplement-polyapipe/figures/D09.py"
     },
@@ -3714,8 +3714,8 @@
       "module": "current_figure_dependency",
       "repository_path": "code/notes/2026-10-06-supplement-polyapipe/figures/D10.py",
       "audited_source_path": "PAPER/notes/2026-10-06-supplement-polyapipe/figures/D10.py",
-      "bytes": "9367",
-      "sha256": "d06217aeca117baff7275da364e6a02ef16462e0531b206dfd778e813fcc2bbd",
+      "bytes": "9251",
+      "sha256": "64f020ac5aa26c7136208f014ccaf0927c99a027927afd59b858cdc196f80d1e",
       "source_alias": "PAPER",
       "source_path": "notes/2026-10-06-supplement-polyapipe/figures/D10.py"
     },
@@ -3732,8 +3732,8 @@
       "module": "current_figure_dependency",
       "repository_path": "code/notes/2026-10-06-supplement-polyapipe/figures/D12.py",
       "audited_source_path": "PAPER/notes/2026-10-06-supplement-polyapipe/figures/D12.py",
-      "bytes": "12019",
-      "sha256": "4ee4623353a98a1240d5c96c60aa1b67dc59ee8bd1e54bfa3369f8d8094cf725",
+      "bytes": "11978",
+      "sha256": "dfeea143b16de35a9b30c34f2647cabbdf028d650ba1fd22436b15dfe9a33501",
       "source_alias": "PAPER",
       "source_path": "notes/2026-10-06-supplement-polyapipe/figures/D12.py"
     },
@@ -3751,7 +3751,7 @@
       "repository_path": "code/notes/2026-10-06-supplement-polyapipe/figures/D14.py",
       "audited_source_path": "PAPER/notes/2026-10-06-supplement-polyapipe/figures/D14.py",
       "bytes": "7538",
-      "sha256": "85fa2803a9aecfcfe48eec3efd0aaf4f8eb227bde3bbf69f01b2942419f88a37",
+      "sha256": "dad2ff6093141246b0d8b78234676bb87ad570eac4b4b2b6b910f619327f4c18",
       "source_alias": "PAPER",
       "source_path": "notes/2026-10-06-supplement-polyapipe/figures/D14.py"
     },
@@ -3759,8 +3759,8 @@
       "module": "current_figure_dependency",
       "repository_path": "code/notes/2026-10-06-supplement-polyapipe/figures/D15.py",
       "audited_source_path": "PAPER/notes/2026-10-06-supplement-polyapipe/figures/D15.py",
-      "bytes": "8920",
-      "sha256": "9c2be3d4a9dad75adccc0cd0f5ba38ab5b4dde88398d2cc2e7c3ef985ea56bb1",
+      "bytes": "8775",
+      "sha256": "af0fa2f53bd676e9eac0fa7c4e4ff942ff884fd8b3edfe08a620e042fd635c68",
       "source_alias": "PAPER",
       "source_path": "notes/2026-10-06-supplement-polyapipe/figures/D15.py"
     },
@@ -3768,8 +3768,8 @@
       "module": "current_figure_dependency",
       "repository_path": "code/notes/2026-10-06-supplement-polyapipe/figures/D16.py",
       "audited_source_path": "PAPER/notes/2026-10-06-supplement-polyapipe/figures/D16.py",
-      "bytes": "10271",
-      "sha256": "cdc6068e9db06962d8afad3e4fad90acec49ff4cc94308c4ec072145bae785fe",
+      "bytes": "10101",
+      "sha256": "fc4fd8bb1aa2f075616aa43e265966adf73219d61bdd2796bed3ccecc265245f",
       "source_alias": "PAPER",
       "source_path": "notes/2026-10-06-supplement-polyapipe/figures/D16.py"
     },
@@ -3786,8 +3786,8 @@
       "module": "current_figure_dependency",
       "repository_path": "code/notes/2026-10-06-supplement-polyapipe/figures/D18.py",
       "audited_source_path": "PAPER/notes/2026-10-06-supplement-polyapipe/figures/D18.py",
-      "bytes": "16380",
-      "sha256": "f84ccbe6eda556166ecc0d8617ee1e3311647ac6f7d345192f90b8c619ae6f98",
+      "bytes": "16062",
+      "sha256": "761b1dc332a8e8977a4f8b3453bf893fcbc46a7e0928c7eb58af357c5e5ee05a",
       "source_alias": "PAPER",
       "source_path": "notes/2026-10-06-supplement-polyapipe/figures/D18.py"
     },
@@ -3795,8 +3795,8 @@
       "module": "current_figure_dependency",
       "repository_path": "code/notes/2026-10-06-supplement-polyapipe/figures/D19.py",
       "audited_source_path": "PAPER/notes/2026-10-06-supplement-polyapipe/figures/D19.py",
-      "bytes": "10839",
-      "sha256": "102200d4924a260e6851ea91e9ab5afbc349843d5485515e7390ff8996ae17a3",
+      "bytes": "10438",
+      "sha256": "9301001611aeeb8443281572d1e156f81fb1b497512f15260f58e01671491ecf",
       "source_alias": "PAPER",
       "source_path": "notes/2026-10-06-supplement-polyapipe/figures/D19.py"
     },
@@ -3805,7 +3805,7 @@
       "repository_path": "code/notes/2026-10-06-supplement-polyapipe/figures/D20.py",
       "audited_source_path": "PAPER/notes/2026-10-06-supplement-polyapipe/figures/D20.py",
       "bytes": "12903",
-      "sha256": "17f7e5628976c711e6d75feb0c8e9d428f19639679e37b5643fb81d61da545d6",
+      "sha256": "5d77d366800d1685109adb417ad6e41d61cdc7c4cb30c81ef31ae9e5c503304a",
       "source_alias": "PAPER",
       "source_path": "notes/2026-10-06-supplement-polyapipe/figures/D20.py"
     },
@@ -3813,8 +3813,8 @@
       "module": "current_figure_dependency",
       "repository_path": "code/notes/2026-10-06-supplement-polyapipe/figures/D21.py",
       "audited_source_path": "PAPER/notes/2026-10-06-supplement-polyapipe/figures/D21.py",
-      "bytes": "14631",
-      "sha256": "477e6e2a08ad5714c75994abee4da81286587472c0107543fd5e083fbc90dee0",
+      "bytes": "14286",
+      "sha256": "7c9513da883ca6040aa4201b1a02df599cfd425d1a80e0c49acf16bf428e73cd",
       "source_alias": "PAPER",
       "source_path": "notes/2026-10-06-supplement-polyapipe/figures/D21.py"
     },
@@ -3822,8 +3822,8 @@
       "module": "current_figure_dependency",
       "repository_path": "code/notes/2026-10-06-supplement-polyapipe/figures/D22.py",
       "audited_source_path": "PAPER/notes/2026-10-06-supplement-polyapipe/figures/D22.py",
-      "bytes": "11847",
-      "sha256": "df9eaf7975ede1ab932a7dcb38a94c2f7001bf878fce35f8ba9a63c402282f78",
+      "bytes": "11794",
+      "sha256": "2eaea9ce32f8edf7d3486323e4bf73b6d8e1dc81f403cc3b15cbd578f15de567",
       "source_alias": "PAPER",
       "source_path": "notes/2026-10-06-supplement-polyapipe/figures/D22.py"
     },
@@ -3831,8 +3831,8 @@
       "module": "current_figure_dependency",
       "repository_path": "code/notes/2026-10-06-supplement-polyapipe/figures/D23.py",
       "audited_source_path": "PAPER/notes/2026-10-06-supplement-polyapipe/figures/D23.py",
-      "bytes": "10668",
-      "sha256": "89a8dc1073d2acc7ff0dc0c2876c01621f012df3716c41ac8bb332f1eb1c65d6",
+      "bytes": "10614",
+      "sha256": "dca1ffdee7134431fd5296f44bef1e8be4920213f9decc64778439972cb6bf74",
       "source_alias": "PAPER",
       "source_path": "notes/2026-10-06-supplement-polyapipe/figures/D23.py"
     },
@@ -3840,8 +3840,8 @@
       "module": "current_figure_dependency",
       "repository_path": "code/notes/2026-10-06-supplement-polyapipe/figures/D24.py",
       "audited_source_path": "PAPER/notes/2026-10-06-supplement-polyapipe/figures/D24.py",
-      "bytes": "10712",
-      "sha256": "0009f3e7dd620dcf38bf882fb6e9fb85d354e502fb69435816984ccbce33f3cf",
+      "bytes": "10461",
+      "sha256": "ea513007581968ed0ea9b98860b7b9808117674ae5cbc0d9e32d07ba8dbf0081",
       "source_alias": "PAPER",
       "source_path": "notes/2026-10-06-supplement-polyapipe/figures/D24.py"
     },
@@ -3849,8 +3849,8 @@
       "module": "current_figure_dependency",
       "repository_path": "code/notes/2026-10-06-supplement-polyapipe/figures/D25.py",
       "audited_source_path": "PAPER/notes/2026-10-06-supplement-polyapipe/figures/D25.py",
-      "bytes": "9747",
-      "sha256": "abd24d399a90da9df46686a6aa21b2aea88730bfa541ec707a1c59c145bfc3eb",
+      "bytes": "9673",
+      "sha256": "fd667e6c1f89d728fe231abc5d4258e26723fcc54a4f4d5bedd99cde92fe8147",
       "source_alias": "PAPER",
       "source_path": "notes/2026-10-06-supplement-polyapipe/figures/D25.py"
     },
@@ -3858,8 +3858,8 @@
       "module": "current_figure_dependency",
       "repository_path": "code/notes/2026-10-06-supplement-polyapipe/figures/D26.py",
       "audited_source_path": "PAPER/notes/2026-10-06-supplement-polyapipe/figures/D26.py",
-      "bytes": "17136",
-      "sha256": "002c478bcccf5fada1594e4dc61c543f7e9c61c37e2a4e2c91af24d1b85c2f75",
+      "bytes": "16495",
+      "sha256": "722ba017f8073ba79f3f75f3d55d787240076ac8ab1e2d3f733837e2e0c46a4c",
       "source_alias": "PAPER",
       "source_path": "notes/2026-10-06-supplement-polyapipe/figures/D26.py"
     },
@@ -3867,8 +3867,8 @@
       "module": "current_figure_dependency",
       "repository_path": "code/notes/2026-10-06-supplement-polyapipe/figures/D27.py",
       "audited_source_path": "PAPER/notes/2026-10-06-supplement-polyapipe/figures/D27.py",
-      "bytes": "7766",
-      "sha256": "703e7df4e6d5ca009f6d341dc28fe17a445da7e45bbbbb01b8ce298432012da6",
+      "bytes": "7600",
+      "sha256": "dafa8f51cc0e5212f684d6904b6a5aa93e5446d1edfb054108d742aa24eb92cb",
       "source_alias": "PAPER",
       "source_path": "notes/2026-10-06-supplement-polyapipe/figures/D27.py"
     },
@@ -3885,8 +3885,8 @@
       "module": "current_figure_dependency",
       "repository_path": "code/notes/2026-10-06-supplement-polyapipe/figures/G3.py",
       "audited_source_path": "PAPER/notes/2026-10-06-supplement-polyapipe/figures/G3.py",
-      "bytes": "7796",
-      "sha256": "55d3f40240c20ab9a05bd6049ce1ddddd184ed13537630dcb2364fc8d1cf6456",
+      "bytes": "7799",
+      "sha256": "5e1a2ff17cfd0ce2ee45e7c3ea55993bdfaf5668f6ce0e478b2393c33734c5fe",
       "source_alias": "PAPER",
       "source_path": "notes/2026-10-06-supplement-polyapipe/figures/G3.py"
     },
@@ -3894,8 +3894,8 @@
       "module": "current_figure_dependency",
       "repository_path": "code/notes/2026-10-06-supplement-polyapipe/figures/G_markers.py",
       "audited_source_path": "PAPER/notes/2026-10-06-supplement-polyapipe/figures/G_markers.py",
-      "bytes": "10256",
-      "sha256": "548679d8047c9534c96d5a33e70581c2534aac27ac68ece5d67e2e900b4ddb64",
+      "bytes": "10069",
+      "sha256": "fa1c7a15366ab4b10e1919f2e41044c3daecccb89606f21cd61ca0c5564c6e82",
       "source_alias": "PAPER",
       "source_path": "notes/2026-10-06-supplement-polyapipe/figures/G_markers.py"
     },
@@ -3930,8 +3930,8 @@
       "module": "supplement_renderer",
       "repository_path": "code/notes/2026-10-06-supplement-polyapipe/tools/compose.py",
       "audited_source_path": "PAPER/notes/2026-10-06-supplement-polyapipe/tools/compose.py",
-      "bytes": "22080",
-      "sha256": "7a08cceddf7d0edaf0fa7506e22fb087808d8c98bd94f9505c6d3c6ab0716c29",
+      "bytes": "22131",
+      "sha256": "404865583cd4de62f76a428c28acd38d583025aa9d36457612d04599c32cac3b",
       "source_alias": "PAPER",
       "source_path": "notes/2026-10-06-supplement-polyapipe/tools/compose.py"
     },
@@ -6513,8 +6513,8 @@
       "module": "manuscript_analysis_code",
       "repository_path": "code/notes/2026-10-10-supplement-v11/figures/common.py",
       "audited_source_path": "PAPER/notes/2026-10-10-supplement-v11/figures/common.py",
-      "bytes": "4643",
-      "sha256": "e89ed6b045aada8c60ff949e1f4ad8ef1160c9d61f6ffe3bb90e9d023845422c",
+      "bytes": "4768",
+      "sha256": "f8c02d0b0fd1a76d481f8c52e0ae573beba9b2607804ba744271f59cd190c3d6",
       "source_alias": "PAPER",
       "source_path": "notes/2026-10-10-supplement-v11/figures/common.py"
     },
@@ -6522,8 +6522,8 @@
       "module": "manuscript_analysis_code",
       "repository_path": "code/notes/2026-10-10-supplement-v11/figures/cycle.py",
       "audited_source_path": "PAPER/notes/2026-10-10-supplement-v11/figures/cycle.py",
-      "bytes": "11479",
-      "sha256": "634e2f822ac74f5cbebd35bf7c3293f392ab106c48379da90254c60b28ccc6fd",
+      "bytes": "11259",
+      "sha256": "39fc1dcc5cbf6f70f8be268a8cc71c7bbd560f6a8519f101301cf739be38143b",
       "source_alias": "PAPER",
       "source_path": "notes/2026-10-10-supplement-v11/figures/cycle.py"
     },
@@ -6531,8 +6531,8 @@
       "module": "manuscript_analysis_code",
       "repository_path": "code/notes/2026-10-10-supplement-v11/figures/mech.py",
       "audited_source_path": "PAPER/notes/2026-10-10-supplement-v11/figures/mech.py",
-      "bytes": "12627",
-      "sha256": "7dbadb3d03ca335fbab5c9958656b5b4ccbfb249ddd76d94bfee337e85b306da",
+      "bytes": "12890",
+      "sha256": "efb23d285454532c5756a4622503af38ad2c1d5f52aaaf14a3393ad8fafa8e75",
       "source_alias": "PAPER",
       "source_path": "notes/2026-10-10-supplement-v11/figures/mech.py"
     },
@@ -6540,8 +6540,8 @@
       "module": "manuscript_analysis_code",
       "repository_path": "code/notes/2026-10-10-supplement-v11/figures/naive.py",
       "audited_source_path": "PAPER/notes/2026-10-10-supplement-v11/figures/naive.py",
-      "bytes": "5563",
-      "sha256": "151a115ae8635069743c07775c01e4f321c1d6dab486f415ada4d6f0d823b83c",
+      "bytes": "5383",
+      "sha256": "b3b7e91c7379cc683d507df96275064de6070db09c84829a5bddae41a0319550",
       "source_alias": "PAPER",
       "source_path": "notes/2026-10-10-supplement-v11/figures/naive.py"
     },
@@ -6549,8 +6549,8 @@
       "module": "manuscript_analysis_code",
       "repository_path": "code/notes/2026-10-10-supplement-v11/figures/profile.py",
       "audited_source_path": "PAPER/notes/2026-10-10-supplement-v11/figures/profile.py",
-      "bytes": "2465",
-      "sha256": "f79be9655d23c4300adae61407ef6e18026cda2bcce98d70747a62eae78cfedc",
+      "bytes": "4014",
+      "sha256": "ed171eb90489adee18631b0a15386ae215ff3103e89850fbb029b67c0d36341a",
       "source_alias": "PAPER",
       "source_path": "notes/2026-10-10-supplement-v11/figures/profile.py"
     },
@@ -6558,8 +6558,8 @@
       "module": "manuscript_analysis_code",
       "repository_path": "code/notes/2026-10-10-supplement-v11/figures/strat.py",
       "audited_source_path": "PAPER/notes/2026-10-10-supplement-v11/figures/strat.py",
-      "bytes": "14980",
-      "sha256": "8d103c1f1181b59d5764ea7399140c79f8d6a7efec4df255002004d5fc91c743",
+      "bytes": "14627",
+      "sha256": "528bb1f4f76627ac1497c3bcdc01e2e72b2f5182199af34335759f449bb7e1a1",
       "source_alias": "PAPER",
       "source_path": "notes/2026-10-10-supplement-v11/figures/strat.py"
     },
@@ -9730,6 +9730,1041 @@
       "sha256": "2ccc7a3feb7b9bb5a874c1d3565fd6a5164a74149bf14b3732f798206c4d47a8",
       "source_alias": "CAPTURED",
       "source_path": "modules/04_expression_time/code/validation/train_one.py"
+    },
+    {
+      "module": "final_production_update",
+      "repository_path": "code/notes/2026-10-12-main-figure-revision/diffcheck.py",
+      "audited_source_path": "PAPER/notes/2026-10-12-main-figure-revision/diffcheck.py",
+      "bytes": "1922",
+      "sha256": "f16f2051de07803ccdebce6e8e04349e58b591a0f2220d5593b4e4893775ec6b",
+      "source_alias": "PAPER",
+      "source_path": "notes/2026-10-12-main-figure-revision/diffcheck.py"
+    },
+    {
+      "module": "final_production_update",
+      "repository_path": "code/notes/2026-10-12-main-figure-revision/fixlib.py",
+      "audited_source_path": "PAPER/notes/2026-10-12-main-figure-revision/fixlib.py",
+      "bytes": "13282",
+      "sha256": "0693a87227078990850b401a2f47e76c5368596ec6ab4dbdbcd836bc16cfa0c1",
+      "source_alias": "PAPER",
+      "source_path": "notes/2026-10-12-main-figure-revision/fixlib.py"
+    },
+    {
+      "module": "final_production_update",
+      "repository_path": "code/notes/2026-10-12-main-figure-revision/rev_fig.py",
+      "audited_source_path": "PAPER/notes/2026-10-12-main-figure-revision/rev_fig.py",
+      "bytes": "2169",
+      "sha256": "adc1aa38e8cca7d94853b03fbcefa422cb256b0b525cf0e99976a049834057e0",
+      "source_alias": "PAPER",
+      "source_path": "notes/2026-10-12-main-figure-revision/rev_fig.py"
+    },
+    {
+      "module": "final_production_update",
+      "repository_path": "code/notes/2026-10-12-main-figure-text-cleanup/captions.py",
+      "audited_source_path": "PAPER/notes/2026-10-12-main-figure-text-cleanup/captions.py",
+      "bytes": "3233",
+      "sha256": "9ec7cc54a18176cb4c93a7e0b9dff5606181c57a768224435746f79fe9ae2dbe",
+      "source_alias": "PAPER",
+      "source_path": "notes/2026-10-12-main-figure-text-cleanup/captions.py"
+    },
+    {
+      "module": "final_production_update",
+      "repository_path": "code/notes/2026-10-12-main-figure-text-cleanup/diffcheck.py",
+      "audited_source_path": "PAPER/notes/2026-10-12-main-figure-text-cleanup/diffcheck.py",
+      "bytes": "2069",
+      "sha256": "33dac23ee2a8847cb3bf939281f5e4047b0ea4ee265ae70854cbc57b0a5c926b",
+      "source_alias": "PAPER",
+      "source_path": "notes/2026-10-12-main-figure-text-cleanup/diffcheck.py"
+    },
+    {
+      "module": "final_production_update",
+      "repository_path": "code/notes/2026-10-12-main-figure-text-cleanup/fix_fig1.py",
+      "audited_source_path": "PAPER/notes/2026-10-12-main-figure-text-cleanup/fix_fig1.py",
+      "bytes": "640",
+      "sha256": "c5aa72db132bfea4db8dc38ca588f46e7c7087c33812932014f9d85a5149dbd9",
+      "source_alias": "PAPER",
+      "source_path": "notes/2026-10-12-main-figure-text-cleanup/fix_fig1.py"
+    },
+    {
+      "module": "final_production_update",
+      "repository_path": "code/notes/2026-10-12-main-figure-text-cleanup/fix_fig2.py",
+      "audited_source_path": "PAPER/notes/2026-10-12-main-figure-text-cleanup/fix_fig2.py",
+      "bytes": "4322",
+      "sha256": "170de5e873a9315172ca9cc6e289305f99af1c83d1e4df1979cb63e57d51fb40",
+      "source_alias": "PAPER",
+      "source_path": "notes/2026-10-12-main-figure-text-cleanup/fix_fig2.py"
+    },
+    {
+      "module": "final_production_update",
+      "repository_path": "code/notes/2026-10-12-main-figure-text-cleanup/fix_fig3.py",
+      "audited_source_path": "PAPER/notes/2026-10-12-main-figure-text-cleanup/fix_fig3.py",
+      "bytes": "1436",
+      "sha256": "62c7ee43bb5ab85a3aacaf99828004f28b4da09afe66f6f5394e401a637d43f2",
+      "source_alias": "PAPER",
+      "source_path": "notes/2026-10-12-main-figure-text-cleanup/fix_fig3.py"
+    },
+    {
+      "module": "final_production_update",
+      "repository_path": "code/notes/2026-10-12-main-figure-text-cleanup/fix_fig4.py",
+      "audited_source_path": "PAPER/notes/2026-10-12-main-figure-text-cleanup/fix_fig4.py",
+      "bytes": "1485",
+      "sha256": "b43516564fe51573450fcb7af05a98b632ac3a053e497ad7b58a451d24a8e588",
+      "source_alias": "PAPER",
+      "source_path": "notes/2026-10-12-main-figure-text-cleanup/fix_fig4.py"
+    },
+    {
+      "module": "final_production_update",
+      "repository_path": "code/notes/2026-10-12-main-figure-text-cleanup/fixlib.py",
+      "audited_source_path": "PAPER/notes/2026-10-12-main-figure-text-cleanup/fixlib.py",
+      "bytes": "15303",
+      "sha256": "29903d708070a5d988fec02c6a6b03bb3f42a3980c9fb2a8c38a489d8b091c24",
+      "source_alias": "PAPER",
+      "source_path": "notes/2026-10-12-main-figure-text-cleanup/fixlib.py"
+    },
+    {
+      "module": "final_production_update",
+      "repository_path": "code/notes/2026-10-12-main-figure-text-cleanup/promote.py",
+      "audited_source_path": "PAPER/notes/2026-10-12-main-figure-text-cleanup/promote.py",
+      "bytes": "1209",
+      "sha256": "d62041e052d0feec33222039b67109123005f1401cccd9298f382de9421adb70",
+      "source_alias": "PAPER",
+      "source_path": "notes/2026-10-12-main-figure-text-cleanup/promote.py"
+    },
+    {
+      "module": "final_production_update",
+      "repository_path": "code/notes/2026-10-12-main-figure-text-cleanup/work/crowding.py",
+      "audited_source_path": "PAPER/notes/2026-10-12-main-figure-text-cleanup/work/crowding.py",
+      "bytes": "1444",
+      "sha256": "0bd20bd0902c9a9e7990b2aadeb654f66cd6047bd80e709f7a1fbdb0d76ec6ae",
+      "source_alias": "PAPER",
+      "source_path": "notes/2026-10-12-main-figure-text-cleanup/work/crowding.py"
+    },
+    {
+      "module": "final_production_update",
+      "repository_path": "code/notes/2026-10-12-main-figure-text-cleanup/work/inventory.py",
+      "audited_source_path": "PAPER/notes/2026-10-12-main-figure-text-cleanup/work/inventory.py",
+      "bytes": "952",
+      "sha256": "1769ae5e7b2e38d672c6a9a9b77b258117d1c9fc1ecde0f037f677d6cdff79aa",
+      "source_alias": "PAPER",
+      "source_path": "notes/2026-10-12-main-figure-text-cleanup/work/inventory.py"
+    },
+    {
+      "module": "final_production_update",
+      "repository_path": "code/notes/2026-10-12-main-figure-text-cleanup/work/probe.py",
+      "audited_source_path": "PAPER/notes/2026-10-12-main-figure-text-cleanup/work/probe.py",
+      "bytes": "728",
+      "sha256": "6342b89be66c108eed232b41e0355986e1d9ab87bfe615ddab9c2868bca2c51b",
+      "source_alias": "PAPER",
+      "source_path": "notes/2026-10-12-main-figure-text-cleanup/work/probe.py"
+    },
+    {
+      "module": "final_production_update",
+      "repository_path": "code/notes/2026-10-12-supp-figure-text-cleanup/apply_edits.py",
+      "audited_source_path": "PAPER/notes/2026-10-12-supp-figure-text-cleanup/apply_edits.py",
+      "bytes": "1221",
+      "sha256": "bbe686a4ccc5428faa054d79290ab9681c26700f7ba8d536b1535d4a2fa010d0",
+      "source_alias": "PAPER",
+      "source_path": "notes/2026-10-12-supp-figure-text-cleanup/apply_edits.py"
+    },
+    {
+      "module": "final_production_update",
+      "repository_path": "code/notes/2026-10-12-supp-figure-text-cleanup/assemble_set.py",
+      "audited_source_path": "PAPER/notes/2026-10-12-supp-figure-text-cleanup/assemble_set.py",
+      "bytes": "1948",
+      "sha256": "ada0e03c866fe1fa836f8b11306cc095d8ec8601db08fdec56b999099e64bcb6",
+      "source_alias": "PAPER",
+      "source_path": "notes/2026-10-12-supp-figure-text-cleanup/assemble_set.py"
+    },
+    {
+      "module": "final_production_update",
+      "repository_path": "code/notes/2026-10-12-supp-figure-text-cleanup/build_compose.py",
+      "audited_source_path": "PAPER/notes/2026-10-12-supp-figure-text-cleanup/build_compose.py",
+      "bytes": "2216",
+      "sha256": "a1e152719fecd92ea4016b2a94f671e77ffdb2f520de6bf3ab3449fa58709a01",
+      "source_alias": "PAPER",
+      "source_path": "notes/2026-10-12-supp-figure-text-cleanup/build_compose.py"
+    },
+    {
+      "module": "final_production_update",
+      "repository_path": "code/notes/2026-10-12-supp-figure-text-cleanup/edits/A01.py",
+      "audited_source_path": "PAPER/notes/2026-10-12-supp-figure-text-cleanup/edits/A01.py",
+      "bytes": "2765",
+      "sha256": "24a909b5c7cc793d322ad2f641d3ac35a515ced1a67433f27eeaefdab52ec6b0",
+      "source_alias": "PAPER",
+      "source_path": "notes/2026-10-12-supp-figure-text-cleanup/edits/A01.py"
+    },
+    {
+      "module": "final_production_update",
+      "repository_path": "code/notes/2026-10-12-supp-figure-text-cleanup/edits/A01_b.py",
+      "audited_source_path": "PAPER/notes/2026-10-12-supp-figure-text-cleanup/edits/A01_b.py",
+      "bytes": "281",
+      "sha256": "e93171e0bfe9f3f0231a1f5af5dac03eda39c1c6c89db05a66090c96dad6f100",
+      "source_alias": "PAPER",
+      "source_path": "notes/2026-10-12-supp-figure-text-cleanup/edits/A01_b.py"
+    },
+    {
+      "module": "final_production_update",
+      "repository_path": "code/notes/2026-10-12-supp-figure-text-cleanup/edits/D03.py",
+      "audited_source_path": "PAPER/notes/2026-10-12-supp-figure-text-cleanup/edits/D03.py",
+      "bytes": "942",
+      "sha256": "c59d1e1d7209168e4de756c6d061a391b554a55993100b38b4dbe5e7e69fded8",
+      "source_alias": "PAPER",
+      "source_path": "notes/2026-10-12-supp-figure-text-cleanup/edits/D03.py"
+    },
+    {
+      "module": "final_production_update",
+      "repository_path": "code/notes/2026-10-12-supp-figure-text-cleanup/edits/D04.py",
+      "audited_source_path": "PAPER/notes/2026-10-12-supp-figure-text-cleanup/edits/D04.py",
+      "bytes": "2050",
+      "sha256": "fcdaf8fddf2b30eb63c44f7e476ea498d504fa5e8569d245acb489f50dc17c9e",
+      "source_alias": "PAPER",
+      "source_path": "notes/2026-10-12-supp-figure-text-cleanup/edits/D04.py"
+    },
+    {
+      "module": "final_production_update",
+      "repository_path": "code/notes/2026-10-12-supp-figure-text-cleanup/edits/D05.py",
+      "audited_source_path": "PAPER/notes/2026-10-12-supp-figure-text-cleanup/edits/D05.py",
+      "bytes": "1922",
+      "sha256": "145d47c7d50f258e637e09869fd259a7a09c911bd833c0083612a0032e5d33d5",
+      "source_alias": "PAPER",
+      "source_path": "notes/2026-10-12-supp-figure-text-cleanup/edits/D05.py"
+    },
+    {
+      "module": "final_production_update",
+      "repository_path": "code/notes/2026-10-12-supp-figure-text-cleanup/edits/D07.py",
+      "audited_source_path": "PAPER/notes/2026-10-12-supp-figure-text-cleanup/edits/D07.py",
+      "bytes": "242",
+      "sha256": "2ad6c2dc31a2ce6557b90c9dc82813dbf3210b9a8f6b9ec567927b2204fdf662",
+      "source_alias": "PAPER",
+      "source_path": "notes/2026-10-12-supp-figure-text-cleanup/edits/D07.py"
+    },
+    {
+      "module": "final_production_update",
+      "repository_path": "code/notes/2026-10-12-supp-figure-text-cleanup/edits/D09.py",
+      "audited_source_path": "PAPER/notes/2026-10-12-supp-figure-text-cleanup/edits/D09.py",
+      "bytes": "1880",
+      "sha256": "8f71379df952c74054da79943d9bcf0c45286d59c6f2be3c75066a039cc902dc",
+      "source_alias": "PAPER",
+      "source_path": "notes/2026-10-12-supp-figure-text-cleanup/edits/D09.py"
+    },
+    {
+      "module": "final_production_update",
+      "repository_path": "code/notes/2026-10-12-supp-figure-text-cleanup/edits/D10.py",
+      "audited_source_path": "PAPER/notes/2026-10-12-supp-figure-text-cleanup/edits/D10.py",
+      "bytes": "1167",
+      "sha256": "23f84454156051b5d2d8949f6b2769a713e4d59e3bf8a2a968056f4799e75d87",
+      "source_alias": "PAPER",
+      "source_path": "notes/2026-10-12-supp-figure-text-cleanup/edits/D10.py"
+    },
+    {
+      "module": "final_production_update",
+      "repository_path": "code/notes/2026-10-12-supp-figure-text-cleanup/edits/D12.py",
+      "audited_source_path": "PAPER/notes/2026-10-12-supp-figure-text-cleanup/edits/D12.py",
+      "bytes": "1690",
+      "sha256": "57b84dec8f68a5f210038360eb80c26c24c0457f02e5ef40e3ebee51c2daa8b0",
+      "source_alias": "PAPER",
+      "source_path": "notes/2026-10-12-supp-figure-text-cleanup/edits/D12.py"
+    },
+    {
+      "module": "final_production_update",
+      "repository_path": "code/notes/2026-10-12-supp-figure-text-cleanup/edits/D12_b.py",
+      "audited_source_path": "PAPER/notes/2026-10-12-supp-figure-text-cleanup/edits/D12_b.py",
+      "bytes": "329",
+      "sha256": "c7ad6b0fb66794bc17abc4615137a3227e80df4b392636ac847386cd3c402b1c",
+      "source_alias": "PAPER",
+      "source_path": "notes/2026-10-12-supp-figure-text-cleanup/edits/D12_b.py"
+    },
+    {
+      "module": "final_production_update",
+      "repository_path": "code/notes/2026-10-12-supp-figure-text-cleanup/edits/D14.py",
+      "audited_source_path": "PAPER/notes/2026-10-12-supp-figure-text-cleanup/edits/D14.py",
+      "bytes": "553",
+      "sha256": "d16db3cd17d53fe2bb0616fa9e202610450a70ff2c10df999f1f0e710c3bad12",
+      "source_alias": "PAPER",
+      "source_path": "notes/2026-10-12-supp-figure-text-cleanup/edits/D14.py"
+    },
+    {
+      "module": "final_production_update",
+      "repository_path": "code/notes/2026-10-12-supp-figure-text-cleanup/edits/D15.py",
+      "audited_source_path": "PAPER/notes/2026-10-12-supp-figure-text-cleanup/edits/D15.py",
+      "bytes": "1086",
+      "sha256": "cb575d066ecda47a2dfdb12ebb54d185d56637a065d15d660ae0fe92607f850a",
+      "source_alias": "PAPER",
+      "source_path": "notes/2026-10-12-supp-figure-text-cleanup/edits/D15.py"
+    },
+    {
+      "module": "final_production_update",
+      "repository_path": "code/notes/2026-10-12-supp-figure-text-cleanup/edits/D16.py",
+      "audited_source_path": "PAPER/notes/2026-10-12-supp-figure-text-cleanup/edits/D16.py",
+      "bytes": "2125",
+      "sha256": "fcfc0d98da27797664279bfb9915e73ded1af1913e782d40ad31ce8525b1f7c4",
+      "source_alias": "PAPER",
+      "source_path": "notes/2026-10-12-supp-figure-text-cleanup/edits/D16.py"
+    },
+    {
+      "module": "final_production_update",
+      "repository_path": "code/notes/2026-10-12-supp-figure-text-cleanup/edits/D16_b.py",
+      "audited_source_path": "PAPER/notes/2026-10-12-supp-figure-text-cleanup/edits/D16_b.py",
+      "bytes": "344",
+      "sha256": "f26f80458150905e4cd92844d9bf56c44e4e6a2a912d8a53e7510f520bff8667",
+      "source_alias": "PAPER",
+      "source_path": "notes/2026-10-12-supp-figure-text-cleanup/edits/D16_b.py"
+    },
+    {
+      "module": "final_production_update",
+      "repository_path": "code/notes/2026-10-12-supp-figure-text-cleanup/edits/D18.py",
+      "audited_source_path": "PAPER/notes/2026-10-12-supp-figure-text-cleanup/edits/D18.py",
+      "bytes": "1229",
+      "sha256": "65c6e32ebe55f475d80b5eb9a60dc6e29e5686e5a28aa65b77705d57db5f9bdf",
+      "source_alias": "PAPER",
+      "source_path": "notes/2026-10-12-supp-figure-text-cleanup/edits/D18.py"
+    },
+    {
+      "module": "final_production_update",
+      "repository_path": "code/notes/2026-10-12-supp-figure-text-cleanup/edits/D19.py",
+      "audited_source_path": "PAPER/notes/2026-10-12-supp-figure-text-cleanup/edits/D19.py",
+      "bytes": "1611",
+      "sha256": "ac28cf0290cb7995ce85d8a0b7ac9de43c2c771aada0ffd8ac16f5185f73875a",
+      "source_alias": "PAPER",
+      "source_path": "notes/2026-10-12-supp-figure-text-cleanup/edits/D19.py"
+    },
+    {
+      "module": "final_production_update",
+      "repository_path": "code/notes/2026-10-12-supp-figure-text-cleanup/edits/D19_b.py",
+      "audited_source_path": "PAPER/notes/2026-10-12-supp-figure-text-cleanup/edits/D19_b.py",
+      "bytes": "352",
+      "sha256": "498f80d91f38550a22e46968e0f7eb4a239b073fda3510c4869f6f9c174f5039",
+      "source_alias": "PAPER",
+      "source_path": "notes/2026-10-12-supp-figure-text-cleanup/edits/D19_b.py"
+    },
+    {
+      "module": "final_production_update",
+      "repository_path": "code/notes/2026-10-12-supp-figure-text-cleanup/edits/D20.py",
+      "audited_source_path": "PAPER/notes/2026-10-12-supp-figure-text-cleanup/edits/D20.py",
+      "bytes": "606",
+      "sha256": "0ee89d962c190c03afdf0e73da8425b0b21ade0507b77508be8d20b0ff461d2b",
+      "source_alias": "PAPER",
+      "source_path": "notes/2026-10-12-supp-figure-text-cleanup/edits/D20.py"
+    },
+    {
+      "module": "final_production_update",
+      "repository_path": "code/notes/2026-10-12-supp-figure-text-cleanup/edits/D21.py",
+      "audited_source_path": "PAPER/notes/2026-10-12-supp-figure-text-cleanup/edits/D21.py",
+      "bytes": "1183",
+      "sha256": "cefce896a008423198c10c8d603b2d95ae6091c783fe5b808fdc3851459468b1",
+      "source_alias": "PAPER",
+      "source_path": "notes/2026-10-12-supp-figure-text-cleanup/edits/D21.py"
+    },
+    {
+      "module": "final_production_update",
+      "repository_path": "code/notes/2026-10-12-supp-figure-text-cleanup/edits/D22.py",
+      "audited_source_path": "PAPER/notes/2026-10-12-supp-figure-text-cleanup/edits/D22.py",
+      "bytes": "886",
+      "sha256": "2422943bd49b6b05c4888a3f6b2e111ca0499022659d0608e63103fe313ac4ad",
+      "source_alias": "PAPER",
+      "source_path": "notes/2026-10-12-supp-figure-text-cleanup/edits/D22.py"
+    },
+    {
+      "module": "final_production_update",
+      "repository_path": "code/notes/2026-10-12-supp-figure-text-cleanup/edits/D23.py",
+      "audited_source_path": "PAPER/notes/2026-10-12-supp-figure-text-cleanup/edits/D23.py",
+      "bytes": "566",
+      "sha256": "f95fe2c983b962530b8a7f040326298c49045aca03e1bd60f0a40ebede36fdda",
+      "source_alias": "PAPER",
+      "source_path": "notes/2026-10-12-supp-figure-text-cleanup/edits/D23.py"
+    },
+    {
+      "module": "final_production_update",
+      "repository_path": "code/notes/2026-10-12-supp-figure-text-cleanup/edits/D24.py",
+      "audited_source_path": "PAPER/notes/2026-10-12-supp-figure-text-cleanup/edits/D24.py",
+      "bytes": "1055",
+      "sha256": "28002818b856206239273c7d024ab81248eb97edef8f134f296be13419f9b409",
+      "source_alias": "PAPER",
+      "source_path": "notes/2026-10-12-supp-figure-text-cleanup/edits/D24.py"
+    },
+    {
+      "module": "final_production_update",
+      "repository_path": "code/notes/2026-10-12-supp-figure-text-cleanup/edits/D24_b.py",
+      "audited_source_path": "PAPER/notes/2026-10-12-supp-figure-text-cleanup/edits/D24_b.py",
+      "bytes": "401",
+      "sha256": "d2015e90f12e0774269ec7f3f88f1dcea87a5b8bc4364bf8209a2a39701e8138",
+      "source_alias": "PAPER",
+      "source_path": "notes/2026-10-12-supp-figure-text-cleanup/edits/D24_b.py"
+    },
+    {
+      "module": "final_production_update",
+      "repository_path": "code/notes/2026-10-12-supp-figure-text-cleanup/edits/D24_hsmm.py",
+      "audited_source_path": "PAPER/notes/2026-10-12-supp-figure-text-cleanup/edits/D24_hsmm.py",
+      "bytes": "593",
+      "sha256": "fd4e703d1c96c6a9eb4aacb457db3adb19455cf75bb5df40401fcee63c8f671a",
+      "source_alias": "PAPER",
+      "source_path": "notes/2026-10-12-supp-figure-text-cleanup/edits/D24_hsmm.py"
+    },
+    {
+      "module": "final_production_update",
+      "repository_path": "code/notes/2026-10-12-supp-figure-text-cleanup/edits/D24_hsmm_b.py",
+      "audited_source_path": "PAPER/notes/2026-10-12-supp-figure-text-cleanup/edits/D24_hsmm_b.py",
+      "bytes": "431",
+      "sha256": "a99c9f20bb00afdf6bb00da287a67fcdfde40ee7a9960acd07b8fe6bb125c5e3",
+      "source_alias": "PAPER",
+      "source_path": "notes/2026-10-12-supp-figure-text-cleanup/edits/D24_hsmm_b.py"
+    },
+    {
+      "module": "final_production_update",
+      "repository_path": "code/notes/2026-10-12-supp-figure-text-cleanup/edits/D25.py",
+      "audited_source_path": "PAPER/notes/2026-10-12-supp-figure-text-cleanup/edits/D25.py",
+      "bytes": "403",
+      "sha256": "b93743b59a462d872aff82557f5451fd9c2d442cc33a8386b87a34c2acb3d336",
+      "source_alias": "PAPER",
+      "source_path": "notes/2026-10-12-supp-figure-text-cleanup/edits/D25.py"
+    },
+    {
+      "module": "final_production_update",
+      "repository_path": "code/notes/2026-10-12-supp-figure-text-cleanup/edits/D26.py",
+      "audited_source_path": "PAPER/notes/2026-10-12-supp-figure-text-cleanup/edits/D26.py",
+      "bytes": "2468",
+      "sha256": "d86b36e7c163a8e4d314d67d61936a001bd9da4dfb1a97c1e4c668931d9a2008",
+      "source_alias": "PAPER",
+      "source_path": "notes/2026-10-12-supp-figure-text-cleanup/edits/D26.py"
+    },
+    {
+      "module": "final_production_update",
+      "repository_path": "code/notes/2026-10-12-supp-figure-text-cleanup/edits/D27.py",
+      "audited_source_path": "PAPER/notes/2026-10-12-supp-figure-text-cleanup/edits/D27.py",
+      "bytes": "1435",
+      "sha256": "0de236d2d713f205bd8827b4e4022eb2f359f81a3713f30dfacbf4878936d3fe",
+      "source_alias": "PAPER",
+      "source_path": "notes/2026-10-12-supp-figure-text-cleanup/edits/D27.py"
+    },
+    {
+      "module": "final_production_update",
+      "repository_path": "code/notes/2026-10-12-supp-figure-text-cleanup/edits/D27_b.py",
+      "audited_source_path": "PAPER/notes/2026-10-12-supp-figure-text-cleanup/edits/D27_b.py",
+      "bytes": "315",
+      "sha256": "45cf0fa45757d46ca8691e5be4ebd6118a60898cc324afa575d588a06e397708",
+      "source_alias": "PAPER",
+      "source_path": "notes/2026-10-12-supp-figure-text-cleanup/edits/D27_b.py"
+    },
+    {
+      "module": "final_production_update",
+      "repository_path": "code/notes/2026-10-12-supp-figure-text-cleanup/edits/G3.py",
+      "audited_source_path": "PAPER/notes/2026-10-12-supp-figure-text-cleanup/edits/G3.py",
+      "bytes": "280",
+      "sha256": "79cf04e01274985e9ab62d0e3296ce7dd80f02bb6886dc66c946061484de81c8",
+      "source_alias": "PAPER",
+      "source_path": "notes/2026-10-12-supp-figure-text-cleanup/edits/G3.py"
+    },
+    {
+      "module": "final_production_update",
+      "repository_path": "code/notes/2026-10-12-supp-figure-text-cleanup/edits/G_markers.py",
+      "audited_source_path": "PAPER/notes/2026-10-12-supp-figure-text-cleanup/edits/G_markers.py",
+      "bytes": "1070",
+      "sha256": "7a83172d092627fba85a4de2e7b4119a2fa83582a9782c76d317f3038b3c85ee",
+      "source_alias": "PAPER",
+      "source_path": "notes/2026-10-12-supp-figure-text-cleanup/edits/G_markers.py"
+    },
+    {
+      "module": "final_production_update",
+      "repository_path": "code/notes/2026-10-12-supp-figure-text-cleanup/edits/balance_D09.py",
+      "audited_source_path": "PAPER/notes/2026-10-12-supp-figure-text-cleanup/edits/balance_D09.py",
+      "bytes": "375",
+      "sha256": "8fa79234f02b0b4cb010812fe6b398d79efc17cb0a216d3720194d769fbc8372",
+      "source_alias": "PAPER",
+      "source_path": "notes/2026-10-12-supp-figure-text-cleanup/edits/balance_D09.py"
+    },
+    {
+      "module": "final_production_update",
+      "repository_path": "code/notes/2026-10-12-supp-figure-text-cleanup/edits/balance_D09_b.py",
+      "audited_source_path": "PAPER/notes/2026-10-12-supp-figure-text-cleanup/edits/balance_D09_b.py",
+      "bytes": "220",
+      "sha256": "0fc4f67482f09535799e41a876afe98d9905ddce670d625b6b5edbb4eea65e6a",
+      "source_alias": "PAPER",
+      "source_path": "notes/2026-10-12-supp-figure-text-cleanup/edits/balance_D09_b.py"
+    },
+    {
+      "module": "final_production_update",
+      "repository_path": "code/notes/2026-10-12-supp-figure-text-cleanup/edits/balance_D16.py",
+      "audited_source_path": "PAPER/notes/2026-10-12-supp-figure-text-cleanup/edits/balance_D16.py",
+      "bytes": "526",
+      "sha256": "88676b1d8e85da3fc06bd0d8af03a38b7932d5e2a0758ac58c081f8ae2a60261",
+      "source_alias": "PAPER",
+      "source_path": "notes/2026-10-12-supp-figure-text-cleanup/edits/balance_D16.py"
+    },
+    {
+      "module": "final_production_update",
+      "repository_path": "code/notes/2026-10-12-supp-figure-text-cleanup/edits/balance_D22.py",
+      "audited_source_path": "PAPER/notes/2026-10-12-supp-figure-text-cleanup/edits/balance_D22.py",
+      "bytes": "378",
+      "sha256": "793d6e1a0ea7f95862755851bb42f22d80ed050c8ddddcec14610042b6ef679f",
+      "source_alias": "PAPER",
+      "source_path": "notes/2026-10-12-supp-figure-text-cleanup/edits/balance_D22.py"
+    },
+    {
+      "module": "final_production_update",
+      "repository_path": "code/notes/2026-10-12-supp-figure-text-cleanup/edits/balance_D26.py",
+      "audited_source_path": "PAPER/notes/2026-10-12-supp-figure-text-cleanup/edits/balance_D26.py",
+      "bytes": "495",
+      "sha256": "cd878642fa4ae32d94ca45fe441e08a584b06ad7b661d01219883d5ee796003c",
+      "source_alias": "PAPER",
+      "source_path": "notes/2026-10-12-supp-figure-text-cleanup/edits/balance_D26.py"
+    },
+    {
+      "module": "final_production_update",
+      "repository_path": "code/notes/2026-10-12-supp-figure-text-cleanup/edits/balance_cycle.py",
+      "audited_source_path": "PAPER/notes/2026-10-12-supp-figure-text-cleanup/edits/balance_cycle.py",
+      "bytes": "291",
+      "sha256": "7c4f6b47eef265c0675fe7e013281969a4f51e26ee401a4423eaeeaa29b92bac",
+      "source_alias": "PAPER",
+      "source_path": "notes/2026-10-12-supp-figure-text-cleanup/edits/balance_cycle.py"
+    },
+    {
+      "module": "final_production_update",
+      "repository_path": "code/notes/2026-10-12-supp-figure-text-cleanup/edits/balance_mech.py",
+      "audited_source_path": "PAPER/notes/2026-10-12-supp-figure-text-cleanup/edits/balance_mech.py",
+      "bytes": "269",
+      "sha256": "0ad41783916b9613e1c15566f14080e78f9e3d3952e207dee315100a6ce75282",
+      "source_alias": "PAPER",
+      "source_path": "notes/2026-10-12-supp-figure-text-cleanup/edits/balance_mech.py"
+    },
+    {
+      "module": "final_production_update",
+      "repository_path": "code/notes/2026-10-12-supp-figure-text-cleanup/edits/balance_mech_b.py",
+      "audited_source_path": "PAPER/notes/2026-10-12-supp-figure-text-cleanup/edits/balance_mech_b.py",
+      "bytes": "255",
+      "sha256": "b9cf22772cb4b29c58781404d5c51d9d4e13f2616a02d8e3020dbe0f8034e7ee",
+      "source_alias": "PAPER",
+      "source_path": "notes/2026-10-12-supp-figure-text-cleanup/edits/balance_mech_b.py"
+    },
+    {
+      "module": "final_production_update",
+      "repository_path": "code/notes/2026-10-12-supp-figure-text-cleanup/edits/balance_strat.py",
+      "audited_source_path": "PAPER/notes/2026-10-12-supp-figure-text-cleanup/edits/balance_strat.py",
+      "bytes": "301",
+      "sha256": "db2783e77ba173ca334773fdf15d88810515c513fd915c1b680947443783eca1",
+      "source_alias": "PAPER",
+      "source_path": "notes/2026-10-12-supp-figure-text-cleanup/edits/balance_strat.py"
+    },
+    {
+      "module": "final_production_update",
+      "repository_path": "code/notes/2026-10-12-supp-figure-text-cleanup/edits/build_compose_bundle.py",
+      "audited_source_path": "PAPER/notes/2026-10-12-supp-figure-text-cleanup/edits/build_compose_bundle.py",
+      "bytes": "1041",
+      "sha256": "60d8c75e4868fe2504328c79597c95f7742074ce0201f2c7bcaac76075b92678",
+      "source_alias": "PAPER",
+      "source_path": "notes/2026-10-12-supp-figure-text-cleanup/edits/build_compose_bundle.py"
+    },
+    {
+      "module": "final_production_update",
+      "repository_path": "code/notes/2026-10-12-supp-figure-text-cleanup/edits/captions.py",
+      "audited_source_path": "PAPER/notes/2026-10-12-supp-figure-text-cleanup/edits/captions.py",
+      "bytes": "1896",
+      "sha256": "2b9e1f54cac84580ba92628fbb3f7bf2d653566feb349bcf8ff54232a3c0f767",
+      "source_alias": "PAPER",
+      "source_path": "notes/2026-10-12-supp-figure-text-cleanup/edits/captions.py"
+    },
+    {
+      "module": "final_production_update",
+      "repository_path": "code/notes/2026-10-12-supp-figure-text-cleanup/edits/captions_S1S2_sentence.py",
+      "audited_source_path": "PAPER/notes/2026-10-12-supp-figure-text-cleanup/edits/captions_S1S2_sentence.py",
+      "bytes": "598",
+      "sha256": "01006bf1e983d8a6c1301307d4bef59e932f10185274d0b9f93bc3e8c6058db8",
+      "source_alias": "PAPER",
+      "source_path": "notes/2026-10-12-supp-figure-text-cleanup/edits/captions_S1S2_sentence.py"
+    },
+    {
+      "module": "final_production_update",
+      "repository_path": "code/notes/2026-10-12-supp-figure-text-cleanup/edits/captions_audit.py",
+      "audited_source_path": "PAPER/notes/2026-10-12-supp-figure-text-cleanup/edits/captions_audit.py",
+      "bytes": "5792",
+      "sha256": "072dcb062ce34dec637e0f219ebc79e6148842c54139938fbd58afca3ed5c63e",
+      "source_alias": "PAPER",
+      "source_path": "notes/2026-10-12-supp-figure-text-cleanup/edits/captions_audit.py"
+    },
+    {
+      "module": "final_production_update",
+      "repository_path": "code/notes/2026-10-12-supp-figure-text-cleanup/edits/common.py",
+      "audited_source_path": "PAPER/notes/2026-10-12-supp-figure-text-cleanup/edits/common.py",
+      "bytes": "411",
+      "sha256": "b4cd656df7c214d9b9d80bfa51939f61dd36784a3be7d18cc2d514bf69b87c73",
+      "source_alias": "PAPER",
+      "source_path": "notes/2026-10-12-supp-figure-text-cleanup/edits/common.py"
+    },
+    {
+      "module": "final_production_update",
+      "repository_path": "code/notes/2026-10-12-supp-figure-text-cleanup/edits/compose_S1S2.py",
+      "audited_source_path": "PAPER/notes/2026-10-12-supp-figure-text-cleanup/edits/compose_S1S2.py",
+      "bytes": "1013",
+      "sha256": "c8fbbf31b2903e0de5a44eae4bf149661d67140092a4a2317fecf445b9375857",
+      "source_alias": "PAPER",
+      "source_path": "notes/2026-10-12-supp-figure-text-cleanup/edits/compose_S1S2.py"
+    },
+    {
+      "module": "final_production_update",
+      "repository_path": "code/notes/2026-10-12-supp-figure-text-cleanup/edits/compose_S1S2_b.py",
+      "audited_source_path": "PAPER/notes/2026-10-12-supp-figure-text-cleanup/edits/compose_S1S2_b.py",
+      "bytes": "388",
+      "sha256": "953140cbf618f05f17ad84e7f5f5abe25ff6cf46f9cba4b75020ff3758b9c054",
+      "source_alias": "PAPER",
+      "source_path": "notes/2026-10-12-supp-figure-text-cleanup/edits/compose_S1S2_b.py"
+    },
+    {
+      "module": "final_production_update",
+      "repository_path": "code/notes/2026-10-12-supp-figure-text-cleanup/edits/compose_S7.py",
+      "audited_source_path": "PAPER/notes/2026-10-12-supp-figure-text-cleanup/edits/compose_S7.py",
+      "bytes": "310",
+      "sha256": "d760b0d7971ba356545f5795cb42f88502802987b81970c761f977b49cd7d8e8",
+      "source_alias": "PAPER",
+      "source_path": "notes/2026-10-12-supp-figure-text-cleanup/edits/compose_S7.py"
+    },
+    {
+      "module": "final_production_update",
+      "repository_path": "code/notes/2026-10-12-supp-figure-text-cleanup/edits/cycle.py",
+      "audited_source_path": "PAPER/notes/2026-10-12-supp-figure-text-cleanup/edits/cycle.py",
+      "bytes": "2469",
+      "sha256": "f135e5d7a9384905f76cdde570a66e4c53734a3e519f5afad051fe73f7e6a8a9",
+      "source_alias": "PAPER",
+      "source_path": "notes/2026-10-12-supp-figure-text-cleanup/edits/cycle.py"
+    },
+    {
+      "module": "final_production_update",
+      "repository_path": "code/notes/2026-10-12-supp-figure-text-cleanup/edits/legend_D18.py",
+      "audited_source_path": "PAPER/notes/2026-10-12-supp-figure-text-cleanup/edits/legend_D18.py",
+      "bytes": "306",
+      "sha256": "6e4d25bfd052af427df1fecfb7eeb2a996cbd48b3a184cadad96008a52f31735",
+      "source_alias": "PAPER",
+      "source_path": "notes/2026-10-12-supp-figure-text-cleanup/edits/legend_D18.py"
+    },
+    {
+      "module": "final_production_update",
+      "repository_path": "code/notes/2026-10-12-supp-figure-text-cleanup/edits/legend_D18_b.py",
+      "audited_source_path": "PAPER/notes/2026-10-12-supp-figure-text-cleanup/edits/legend_D18_b.py",
+      "bytes": "256",
+      "sha256": "b9335a2d630ac3b2b30743cb2ac1bab6daa01688d273d8127b6b10c589ca8042",
+      "source_alias": "PAPER",
+      "source_path": "notes/2026-10-12-supp-figure-text-cleanup/edits/legend_D18_b.py"
+    },
+    {
+      "module": "final_production_update",
+      "repository_path": "code/notes/2026-10-12-supp-figure-text-cleanup/edits/mech.py",
+      "audited_source_path": "PAPER/notes/2026-10-12-supp-figure-text-cleanup/edits/mech.py",
+      "bytes": "3727",
+      "sha256": "9239692381c2fcb4a4b977b358f143098079c26cb1c1c2f566e62e8f90253d07",
+      "source_alias": "PAPER",
+      "source_path": "notes/2026-10-12-supp-figure-text-cleanup/edits/mech.py"
+    },
+    {
+      "module": "final_production_update",
+      "repository_path": "code/notes/2026-10-12-supp-figure-text-cleanup/edits/mech_b.py",
+      "audited_source_path": "PAPER/notes/2026-10-12-supp-figure-text-cleanup/edits/mech_b.py",
+      "bytes": "342",
+      "sha256": "1b1aa0dda621eafbaa62e008cd5c557c3623eed2967a83cf5048b7cb22b45ce2",
+      "source_alias": "PAPER",
+      "source_path": "notes/2026-10-12-supp-figure-text-cleanup/edits/mech_b.py"
+    },
+    {
+      "module": "final_production_update",
+      "repository_path": "code/notes/2026-10-12-supp-figure-text-cleanup/edits/mech_c.py",
+      "audited_source_path": "PAPER/notes/2026-10-12-supp-figure-text-cleanup/edits/mech_c.py",
+      "bytes": "625",
+      "sha256": "009355fb6a1aaaae11665f245e033f842a2cc843ceb2169fbdac32fe7fc50e47",
+      "source_alias": "PAPER",
+      "source_path": "notes/2026-10-12-supp-figure-text-cleanup/edits/mech_c.py"
+    },
+    {
+      "module": "final_production_update",
+      "repository_path": "code/notes/2026-10-12-supp-figure-text-cleanup/edits/mech_d.py",
+      "audited_source_path": "PAPER/notes/2026-10-12-supp-figure-text-cleanup/edits/mech_d.py",
+      "bytes": "712",
+      "sha256": "caa45b43039049cadfb97fc034ebf4ba0404f56ed5aad182c71c58745b00cfaa",
+      "source_alias": "PAPER",
+      "source_path": "notes/2026-10-12-supp-figure-text-cleanup/edits/mech_d.py"
+    },
+    {
+      "module": "final_production_update",
+      "repository_path": "code/notes/2026-10-12-supp-figure-text-cleanup/edits/naive.py",
+      "audited_source_path": "PAPER/notes/2026-10-12-supp-figure-text-cleanup/edits/naive.py",
+      "bytes": "1088",
+      "sha256": "b5a3c848bd7b13791390f407a691a7a7c30d46d5e4abaa9fec4271438a9224e5",
+      "source_alias": "PAPER",
+      "source_path": "notes/2026-10-12-supp-figure-text-cleanup/edits/naive.py"
+    },
+    {
+      "module": "final_production_update",
+      "repository_path": "code/notes/2026-10-12-supp-figure-text-cleanup/edits/profile.py",
+      "audited_source_path": "PAPER/notes/2026-10-12-supp-figure-text-cleanup/edits/profile.py",
+      "bytes": "2194",
+      "sha256": "48cf75dafab3dfac65a3845c39384d67051fc413332ab4f0fb4234fd6fcbeb44",
+      "source_alias": "PAPER",
+      "source_path": "notes/2026-10-12-supp-figure-text-cleanup/edits/profile.py"
+    },
+    {
+      "module": "final_production_update",
+      "repository_path": "code/notes/2026-10-12-supp-figure-text-cleanup/edits/profile_s20c.py",
+      "audited_source_path": "PAPER/notes/2026-10-12-supp-figure-text-cleanup/edits/profile_s20c.py",
+      "bytes": "1079",
+      "sha256": "aebfa3f21a58018e0194e84518c46b4e554222bdbee32da182812c1e3d43ccfb",
+      "source_alias": "PAPER",
+      "source_path": "notes/2026-10-12-supp-figure-text-cleanup/edits/profile_s20c.py"
+    },
+    {
+      "module": "final_production_update",
+      "repository_path": "code/notes/2026-10-12-supp-figure-text-cleanup/edits/profile_s20c_b.py",
+      "audited_source_path": "PAPER/notes/2026-10-12-supp-figure-text-cleanup/edits/profile_s20c_b.py",
+      "bytes": "806",
+      "sha256": "7b97a78bf3946ae189ea3bdafb55611b663a309912d0daea56ef86f6f191958e",
+      "source_alias": "PAPER",
+      "source_path": "notes/2026-10-12-supp-figure-text-cleanup/edits/profile_s20c_b.py"
+    },
+    {
+      "module": "final_production_update",
+      "repository_path": "code/notes/2026-10-12-supp-figure-text-cleanup/edits/review_captions.py",
+      "audited_source_path": "PAPER/notes/2026-10-12-supp-figure-text-cleanup/edits/review_captions.py",
+      "bytes": "748",
+      "sha256": "d11def6b324f4ce56e2e0a43a8a273e2f9e3fa517dac6c774b606196586dbf67",
+      "source_alias": "PAPER",
+      "source_path": "notes/2026-10-12-supp-figure-text-cleanup/edits/review_captions.py"
+    },
+    {
+      "module": "final_production_update",
+      "repository_path": "code/notes/2026-10-12-supp-figure-text-cleanup/edits/review_captions_b.py",
+      "audited_source_path": "PAPER/notes/2026-10-12-supp-figure-text-cleanup/edits/review_captions_b.py",
+      "bytes": "687",
+      "sha256": "f25b2f6a89d8767f137c6001fe9b7266a85600cc38152da30288d50f7267e55c",
+      "source_alias": "PAPER",
+      "source_path": "notes/2026-10-12-supp-figure-text-cleanup/edits/review_captions_b.py"
+    },
+    {
+      "module": "final_production_update",
+      "repository_path": "code/notes/2026-10-12-supp-figure-text-cleanup/edits/review_profile_receipt.py",
+      "audited_source_path": "PAPER/notes/2026-10-12-supp-figure-text-cleanup/edits/review_profile_receipt.py",
+      "bytes": "882",
+      "sha256": "03a807c9f2f9c1f3bd0a13a94fbb91cbcae3059b418b3bd83ac1647e51547415",
+      "source_alias": "PAPER",
+      "source_path": "notes/2026-10-12-supp-figure-text-cleanup/edits/review_profile_receipt.py"
+    },
+    {
+      "module": "final_production_update",
+      "repository_path": "code/notes/2026-10-12-supp-figure-text-cleanup/edits/review_receipt_paths.py",
+      "audited_source_path": "PAPER/notes/2026-10-12-supp-figure-text-cleanup/edits/review_receipt_paths.py",
+      "bytes": "2001",
+      "sha256": "0ff761c940b54807354a0f994063bfffdf739647dbb521c87ec855bef72e4c79",
+      "source_alias": "PAPER",
+      "source_path": "notes/2026-10-12-supp-figure-text-cleanup/edits/review_receipt_paths.py"
+    },
+    {
+      "module": "final_production_update",
+      "repository_path": "code/notes/2026-10-12-supp-figure-text-cleanup/edits/strat.py",
+      "audited_source_path": "PAPER/notes/2026-10-12-supp-figure-text-cleanup/edits/strat.py",
+      "bytes": "1005",
+      "sha256": "8a0488c1e17dfbec48b2ec4785f8544e380e52078d34859ba3c2221b516b74e3",
+      "source_alias": "PAPER",
+      "source_path": "notes/2026-10-12-supp-figure-text-cleanup/edits/strat.py"
+    },
+    {
+      "module": "final_production_update",
+      "repository_path": "code/notes/2026-10-12-supp-figure-text-cleanup/edits/ticklabels_D05.py",
+      "audited_source_path": "PAPER/notes/2026-10-12-supp-figure-text-cleanup/edits/ticklabels_D05.py",
+      "bytes": "463",
+      "sha256": "68037868de31493f883e421f1f2e790e65f3d20fcbb1a4f3a22f5196f3b63460",
+      "source_alias": "PAPER",
+      "source_path": "notes/2026-10-12-supp-figure-text-cleanup/edits/ticklabels_D05.py"
+    },
+    {
+      "module": "final_production_update",
+      "repository_path": "code/notes/2026-10-12-supp-figure-text-cleanup/edits/ticklabels_D07.py",
+      "audited_source_path": "PAPER/notes/2026-10-12-supp-figure-text-cleanup/edits/ticklabels_D07.py",
+      "bytes": "357",
+      "sha256": "0982ce5bd2b5207d3145283b510bca0d19ed8532053326e342a13bac7366a7f0",
+      "source_alias": "PAPER",
+      "source_path": "notes/2026-10-12-supp-figure-text-cleanup/edits/ticklabels_D07.py"
+    },
+    {
+      "module": "final_production_update",
+      "repository_path": "code/notes/2026-10-12-supp-figure-text-cleanup/edits/ticklabels_D09.py",
+      "audited_source_path": "PAPER/notes/2026-10-12-supp-figure-text-cleanup/edits/ticklabels_D09.py",
+      "bytes": "350",
+      "sha256": "168d3beaf341db7d3b7052b9b1d4c7acd60db7d98107ecf9191ead587506aeb8",
+      "source_alias": "PAPER",
+      "source_path": "notes/2026-10-12-supp-figure-text-cleanup/edits/ticklabels_D09.py"
+    },
+    {
+      "module": "final_production_update",
+      "repository_path": "code/notes/2026-10-12-supp-figure-text-cleanup/edits/ticklabels_D16.py",
+      "audited_source_path": "PAPER/notes/2026-10-12-supp-figure-text-cleanup/edits/ticklabels_D16.py",
+      "bytes": "365",
+      "sha256": "a87bb751e0e1eac8731313abb9de4f56dd39095ec8caef0d4991ea5c9f38f2c6",
+      "source_alias": "PAPER",
+      "source_path": "notes/2026-10-12-supp-figure-text-cleanup/edits/ticklabels_D16.py"
+    },
+    {
+      "module": "final_production_update",
+      "repository_path": "code/notes/2026-10-12-supp-figure-text-cleanup/edits/ticklabels_D21.py",
+      "audited_source_path": "PAPER/notes/2026-10-12-supp-figure-text-cleanup/edits/ticklabels_D21.py",
+      "bytes": "522",
+      "sha256": "e3703573b6bd3b7558504cd0606057f593ecf110ce5ee25b9aa8fd87caf530a7",
+      "source_alias": "PAPER",
+      "source_path": "notes/2026-10-12-supp-figure-text-cleanup/edits/ticklabels_D21.py"
+    },
+    {
+      "module": "final_production_update",
+      "repository_path": "code/notes/2026-10-12-supp-figure-text-cleanup/package/build_v11c.py",
+      "audited_source_path": "PAPER/notes/2026-10-12-supp-figure-text-cleanup/package/build_v11c.py",
+      "bytes": "7272",
+      "sha256": "58852c6c2cf3aca65b243d0ad4ba75c6150a4abb9db58d4dd314065cf77cdc04",
+      "source_alias": "PAPER",
+      "source_path": "notes/2026-10-12-supp-figure-text-cleanup/package/build_v11c.py"
+    },
+    {
+      "module": "final_production_update",
+      "repository_path": "code/notes/2026-10-12-supp-figure-text-cleanup/package/build_v11d.py",
+      "audited_source_path": "PAPER/notes/2026-10-12-supp-figure-text-cleanup/package/build_v11d.py",
+      "bytes": "7910",
+      "sha256": "969b30fe6b28b6455056627fba3968f7d80db0bf8456a3837a602f44f2b7bc8f",
+      "source_alias": "PAPER",
+      "source_path": "notes/2026-10-12-supp-figure-text-cleanup/package/build_v11d.py"
+    },
+    {
+      "module": "final_production_update",
+      "repository_path": "code/notes/2026-10-12-supp-figure-text-cleanup/package/verify_v11d.py",
+      "audited_source_path": "PAPER/notes/2026-10-12-supp-figure-text-cleanup/package/verify_v11d.py",
+      "bytes": "4227",
+      "sha256": "df15490c3591b3d36749b4466dd362f9afe1f129b9656c17b15baa68d4dc1b70",
+      "source_alias": "PAPER",
+      "source_path": "notes/2026-10-12-supp-figure-text-cleanup/package/verify_v11d.py"
+    },
+    {
+      "module": "final_production_update",
+      "repository_path": "code/notes/2026-10-12-supp-figure-text-cleanup/promote.py",
+      "audited_source_path": "PAPER/notes/2026-10-12-supp-figure-text-cleanup/promote.py",
+      "bytes": "1217",
+      "sha256": "7779e9c5d55f373da185243a49ef4c2d869384a9f5d61b2e413f57888d7e3943",
+      "source_alias": "PAPER",
+      "source_path": "notes/2026-10-12-supp-figure-text-cleanup/promote.py"
+    },
+    {
+      "module": "final_production_update",
+      "repository_path": "code/notes/2026-10-12-supp-figure-text-cleanup/run_a01.py",
+      "audited_source_path": "PAPER/notes/2026-10-12-supp-figure-text-cleanup/run_a01.py",
+      "bytes": "969",
+      "sha256": "14435d3873418abc3761e782b577165e71548efedc1d6616ea565e052fdc2613",
+      "source_alias": "PAPER",
+      "source_path": "notes/2026-10-12-supp-figure-text-cleanup/run_a01.py"
+    },
+    {
+      "module": "final_production_update",
+      "repository_path": "code/notes/2026-10-13-figure-density-fixes/captions.py",
+      "audited_source_path": "PAPER/notes/2026-10-13-figure-density-fixes/captions.py",
+      "bytes": "685",
+      "sha256": "6132daece9a8b98d2f3ed56644160930ce54183f7fbfd50dd6234f9ebf85427d",
+      "source_alias": "PAPER",
+      "source_path": "notes/2026-10-13-figure-density-fixes/captions.py"
+    },
+    {
+      "module": "final_production_update",
+      "repository_path": "code/notes/2026-10-13-figure-density-fixes/fix_fig1.py",
+      "audited_source_path": "PAPER/notes/2026-10-13-figure-density-fixes/fix_fig1.py",
+      "bytes": "1781",
+      "sha256": "6c7fd8ed7524c28cea1f2dd3ed8c39b0a8872dc89d997752c1de070fed652950",
+      "source_alias": "PAPER",
+      "source_path": "notes/2026-10-13-figure-density-fixes/fix_fig1.py"
+    },
+    {
+      "module": "final_production_update",
+      "repository_path": "code/notes/2026-10-13-figure-density-fixes/fix_fig4.py",
+      "audited_source_path": "PAPER/notes/2026-10-13-figure-density-fixes/fix_fig4.py",
+      "bytes": "4849",
+      "sha256": "7220a6ceb11dd1afc0cf92132093ef32e529fa091e77f183911f4e976de7c0d5",
+      "source_alias": "PAPER",
+      "source_path": "notes/2026-10-13-figure-density-fixes/fix_fig4.py"
+    },
+    {
+      "module": "final_production_update",
+      "repository_path": "code/notes/2026-10-13-figure-density-fixes/fix_s19.py",
+      "audited_source_path": "PAPER/notes/2026-10-13-figure-density-fixes/fix_s19.py",
+      "bytes": "2075",
+      "sha256": "7bdd8faa1a10a170afdbdb6f11195f51cc9399bf15968781d5c4ccbef0daa099",
+      "source_alias": "PAPER",
+      "source_path": "notes/2026-10-13-figure-density-fixes/fix_s19.py"
+    },
+    {
+      "module": "final_production_update",
+      "repository_path": "code/notes/2026-10-13-figure-density-fixes/fixlib.py",
+      "audited_source_path": "PAPER/notes/2026-10-13-figure-density-fixes/fixlib.py",
+      "bytes": "16919",
+      "sha256": "87d4f596e1c585be423823e67d929ee6ece4f9cbf66dbf6f011fb98ae1be446e",
+      "source_alias": "PAPER",
+      "source_path": "notes/2026-10-13-figure-density-fixes/fixlib.py"
+    },
+    {
+      "module": "final_production_update",
+      "repository_path": "code/notes/2026-10-13-figure-density-fixes/promote.py",
+      "audited_source_path": "PAPER/notes/2026-10-13-figure-density-fixes/promote.py",
+      "bytes": "1219",
+      "sha256": "c17ad2c46b7a65cea0515b2b798af719de05cd2a78b1403e2ac21e5b67849df7",
+      "source_alias": "PAPER",
+      "source_path": "notes/2026-10-13-figure-density-fixes/promote.py"
+    },
+    {
+      "module": "final_production_update",
+      "repository_path": "code/notes/2026-10-13-figure-density-fixes/work/contact.py",
+      "audited_source_path": "PAPER/notes/2026-10-13-figure-density-fixes/work/contact.py",
+      "bytes": "1592",
+      "sha256": "5365b7af9bab4d03b2f7d62e83e87deda984032898c77fc050d3a67689d70a93",
+      "source_alias": "PAPER",
+      "source_path": "notes/2026-10-13-figure-density-fixes/work/contact.py"
+    },
+    {
+      "module": "final_production_update",
+      "repository_path": "code/notes/2026-10-13-figure-density-fixes/work/verify.py",
+      "audited_source_path": "PAPER/notes/2026-10-13-figure-density-fixes/work/verify.py",
+      "bytes": "1809",
+      "sha256": "3e1b899901503902ebf324329a2628a4408774eafbe0fc0a8929dac1baf14ebd",
+      "source_alias": "PAPER",
+      "source_path": "notes/2026-10-13-figure-density-fixes/work/verify.py"
+    },
+    {
+      "module": "final_production_update",
+      "repository_path": "code/notes/2026-10-13-s19-layout/fix_s19_tight.py",
+      "audited_source_path": "PAPER/notes/2026-10-13-s19-layout/fix_s19_tight.py",
+      "bytes": "2055",
+      "sha256": "83e2fb2fcac1c1928a3206ddeb248b816f316c8e05d03340bc0a26deab6122f3",
+      "source_alias": "PAPER",
+      "source_path": "notes/2026-10-13-s19-layout/fix_s19_tight.py"
+    },
+    {
+      "module": "final_production_update",
+      "repository_path": "code/notes/2026-10-13-s19-layout/fixlib.py",
+      "audited_source_path": "PAPER/notes/2026-10-13-s19-layout/fixlib.py",
+      "bytes": "17927",
+      "sha256": "6bd763c6e94c46c43bae31a866ad48b22107a8fcf5a2fbea63547ebde945d803",
+      "source_alias": "PAPER",
+      "source_path": "notes/2026-10-13-s19-layout/fixlib.py"
+    },
+    {
+      "module": "final_production_update",
+      "repository_path": "code/notes/2026-10-13-s19-layout/plan.py",
+      "audited_source_path": "PAPER/notes/2026-10-13-s19-layout/plan.py",
+      "bytes": "1758",
+      "sha256": "bf49101806d91b876d26c744ab17aabbf2c5c74467d5575ec8faf4392a014192",
+      "source_alias": "PAPER",
+      "source_path": "notes/2026-10-13-s19-layout/plan.py"
+    },
+    {
+      "module": "final_production_update",
+      "repository_path": "code/notes/2026-10-13-s19-layout/promote.py",
+      "audited_source_path": "PAPER/notes/2026-10-13-s19-layout/promote.py",
+      "bytes": "1110",
+      "sha256": "5a8ee716805deccf324034effe7cf3320d6a6baf9dd1d53c4c6fe494a200df06",
+      "source_alias": "PAPER",
+      "source_path": "notes/2026-10-13-s19-layout/promote.py"
+    },
+    {
+      "module": "final_production_update",
+      "repository_path": "code/notes/2026-10-13-s19-layout/work/check_plan.py",
+      "audited_source_path": "PAPER/notes/2026-10-13-s19-layout/work/check_plan.py",
+      "bytes": "938",
+      "sha256": "28ea7ad854a3159ca59f0e641ada686c2becb4918c174a2c08eab28b55af95d5",
+      "source_alias": "PAPER",
+      "source_path": "notes/2026-10-13-s19-layout/work/check_plan.py"
+    },
+    {
+      "module": "final_production_update",
+      "repository_path": "code/notes/2026-10-13-s19-layout/work/verify.py",
+      "audited_source_path": "PAPER/notes/2026-10-13-s19-layout/work/verify.py",
+      "bytes": "1749",
+      "sha256": "5853e723f9e99c186a9b9d7457f2d46dd7c5036d73233d3baaf07a918f278542",
+      "source_alias": "PAPER",
+      "source_path": "notes/2026-10-13-s19-layout/work/verify.py"
+    },
+    {
+      "module": "final_production_update",
+      "repository_path": "code/notes/2026-10-13-supp-figure-text-fixes/captions.py",
+      "audited_source_path": "PAPER/notes/2026-10-13-supp-figure-text-fixes/captions.py",
+      "bytes": "1265",
+      "sha256": "4158357b0e74474b2e952b84c9a033caad96687082a3aac2779a1ed5919b8835",
+      "source_alias": "PAPER",
+      "source_path": "notes/2026-10-13-supp-figure-text-fixes/captions.py"
+    },
+    {
+      "module": "final_production_update",
+      "repository_path": "code/notes/2026-10-13-supp-figure-text-fixes/fix_supp.py",
+      "audited_source_path": "PAPER/notes/2026-10-13-supp-figure-text-fixes/fix_supp.py",
+      "bytes": "7887",
+      "sha256": "e359582b4791c4e9eaa51955f5eb0d015ab69f8dfce331c13d614da8486965a2",
+      "source_alias": "PAPER",
+      "source_path": "notes/2026-10-13-supp-figure-text-fixes/fix_supp.py"
+    },
+    {
+      "module": "final_production_update",
+      "repository_path": "code/notes/2026-10-13-supp-figure-text-fixes/fixlib.py",
+      "audited_source_path": "PAPER/notes/2026-10-13-supp-figure-text-fixes/fixlib.py",
+      "bytes": "15479",
+      "sha256": "e9309cecbd47b7292e787a756499b4315502fb7b794613e6e3f568ac204ed821",
+      "source_alias": "PAPER",
+      "source_path": "notes/2026-10-13-supp-figure-text-fixes/fixlib.py"
+    },
+    {
+      "module": "final_production_update",
+      "repository_path": "code/notes/2026-10-13-supp-figure-text-fixes/promote.py",
+      "audited_source_path": "PAPER/notes/2026-10-13-supp-figure-text-fixes/promote.py",
+      "bytes": "1243",
+      "sha256": "c185d496bef4f7284ac5d98633812ebb383e8ccd1dd2d50e4182e4c73c1571c0",
+      "source_alias": "PAPER",
+      "source_path": "notes/2026-10-13-supp-figure-text-fixes/promote.py"
+    },
+    {
+      "module": "final_production_update",
+      "repository_path": "code/notes/2026-10-13-supp-figure-text-fixes/work/contact.py",
+      "audited_source_path": "PAPER/notes/2026-10-13-supp-figure-text-fixes/work/contact.py",
+      "bytes": "1831",
+      "sha256": "88d78af7706eec93625b361e90392bb2fddc7d7cdf94fc639ca85738ef348d98",
+      "source_alias": "PAPER",
+      "source_path": "notes/2026-10-13-supp-figure-text-fixes/work/contact.py"
+    },
+    {
+      "module": "final_production_update",
+      "repository_path": "code/notes/2026-10-13-supp-figure-text-fixes/work/probe.py",
+      "audited_source_path": "PAPER/notes/2026-10-13-supp-figure-text-fixes/work/probe.py",
+      "bytes": "728",
+      "sha256": "6342b89be66c108eed232b41e0355986e1d9ab87bfe615ddab9c2868bca2c51b",
+      "source_alias": "PAPER",
+      "source_path": "notes/2026-10-13-supp-figure-text-fixes/work/probe.py"
+    },
+    {
+      "module": "final_production_update",
+      "repository_path": "code/notes/2026-10-13-supp-figure-text-fixes/work/verify.py",
+      "audited_source_path": "PAPER/notes/2026-10-13-supp-figure-text-fixes/work/verify.py",
+      "bytes": "2509",
+      "sha256": "cbac7e3957dc734afb4811003d1c77336980742662933531315c3611138334f6",
+      "source_alias": "PAPER",
+      "source_path": "notes/2026-10-13-supp-figure-text-fixes/work/verify.py"
+    },
+    {
+      "module": "final_production_update",
+      "repository_path": "code/notes/2026-10-13-table-s4j/build_s4j.py",
+      "audited_source_path": "PAPER/notes/2026-10-13-table-s4j/build_s4j.py",
+      "bytes": "15371",
+      "sha256": "d1a1f6c206dff35411df3bd91bbf3ee863908f0b9ff3cce96d5fde3e1a4ece7e",
+      "source_alias": "PAPER",
+      "source_path": "notes/2026-10-13-table-s4j/build_s4j.py"
+    },
+    {
+      "module": "final_production_update",
+      "repository_path": "code/notes/2026-10-13-table-s4j/verify_s4j.py",
+      "audited_source_path": "PAPER/notes/2026-10-13-table-s4j/verify_s4j.py",
+      "bytes": "7431",
+      "sha256": "0f2c6e30ce1a74397e6d43712998e0988a33f036b2ffac41848328cd93d4a8f6",
+      "source_alias": "PAPER",
+      "source_path": "notes/2026-10-13-table-s4j/verify_s4j.py"
+    },
+    {
+      "module": "final_production_update",
+      "repository_path": "code/reviews/2026-10-08-supplement-narrative-writing/tables/render_final.mjs",
+      "audited_source_path": "PAPER/reviews/2026-10-08-supplement-narrative-writing/tables/render_final.mjs",
+      "bytes": "1331",
+      "sha256": "ab6fd6b63ebe993be713a44f37a581be870acfdab1e0c5dd1af5f6e43d622d1a",
+      "source_alias": "PAPER",
+      "source_path": "reviews/2026-10-08-supplement-narrative-writing/tables/render_final.mjs"
     }
   ]
 }

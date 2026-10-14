@@ -7,6 +7,7 @@ This folder contains the captured sources for this edition. The files keep their
 | `notes/2026-10-10-*/` | Analyses of direction, composition, cross-species responses, marker references, naive states and potential mechanisms. |
 | `notes/2026-10-10-divergence-main-figures/` | Scripts for Figures 1–4. |
 | `notes/2026-10-10-supplement-v11/` | Supplementary Figures S1–S21, legends and the S1–S10 workbook. |
+| `notes/2026-10-12-*/` and `notes/2026-10-13-*/` | Final figure edits, their supporting production scripts, and the S4j workbook insertion and verification. Data and PDF inputs are restored from v11f at their recorded project paths. |
 | `analysis_code/pas_rerun/` | The maintained PAS pipeline for input preparation and statistics, with its regression tests. |
 | `reviews/2026-10-08-plan-a-redesign/` | The final protocols and code for the conditional-reference, cycle and cross-species analyses. |
 | `reviews/2026-10-08-plan-a-analysis/` | The initial Plan A code. The redesign uses its extraction and bridge scripts to make its inputs. This folder also contains the profile-entry comparison that the manuscript uses. |

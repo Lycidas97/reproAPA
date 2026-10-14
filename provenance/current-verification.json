@@ -1,0 +1,36 @@
+{
+  "checked_at": "2026-10-14T00:54:15.974457+00:00",
+  "status": "PASS",
+  "repository_validator": "PASS",
+  "source_sync": "PASS",
+  "source_records": 1196,
+  "python_syntax_files": 951,
+  "old_source_preservation": {
+    "status": "PASS",
+    "previous_commit": "ffa0cd20288699795702c5eebad77d1741298dab",
+    "unchanged_previous_source_records": 1051,
+    "updated_sources": 30,
+    "added_sources": 115,
+    "rejection_cases": [
+      "stale_workbook_scope",
+      "wrong_workbook_identity",
+      "missing_S4j",
+      "current_source_drift",
+      "missing_final_producer"
+    ],
+    "credential_marker_scan": "PASS",
+    "numerical_analysis_rerun": false
+  },
+  "s4j_functional_rebuild": {
+    "checks": 28,
+    "failures": [],
+    "existing_sheets_preserved": true
+  },
+  "current_workbook_data_sheets": 58,
+  "current_workbook_source_blocks": 202,
+  "figures": 25,
+  "full_scientific_analysis_rerun": false,
+  "figures_regenerated": false,
+  "data_archives_rewritten": false,
+  "historical_tests": "provenance/verification.json; numerical source files are unchanged"
+}

@@ -22,7 +22,7 @@ SRC = {'primed_P7_S5_pool': 'Liu2020', 'primed_P7_S7': 'Liu2020', 'M7_S7': 'Liu2
 NAIVE = FAMILY_LOCAL['hN']
 X0, XR = 4.5, PAGE_W-4.5
 PITCH, GH = 9.0, 13.0
-TOP = 4.5+24.0
+TOP = 4.5+19.0   # 2026-10-12: panel titles moved to axis titles or the caption
 rows = []
 y = TOP
 for tk, tl in TARGETS:
@@ -31,7 +31,7 @@ for tk, tl in TARGETS:
         rows.append((tk, ck, y)); y += PITCH
     y += 2.0
 YB = y-2.0-PITCH/2+1.0
-H = YB+24.6
+H = YB+34.2
 F = supdraw.Fig(H, name('naive'))
 WA, WB = 214.0, 120.0
 xa, xb = X0, X0+WA+GAP
@@ -53,9 +53,7 @@ for i, (tk, ck, yy) in enumerate(rows):
 # ---------------------------------------------------------------- a
 F.use('a')
 sa = Lin(0.9, 1.9, xa+112.0, xa+WA-30.0)
-F.text((sa.p0+sa.p1)/2, 4.5+0.6, 'Overlap with mouse set', 7.5, ha='center')
-F.text((sa.p0+sa.p1)/2, 4.5+10.6, 'Obs./expected, |ΔDWUI| ≥ .02', 7.0, ha='center', color=MUTED)
-F.text(xa+WA, 4.5+10.6, 'Pairs', 7.0, ha='right', color=MUTED)
+F.text(xa+WA, 4.5+3.0, 'Pairs', 7.0, ha='right', color=MUTED)
 F.line([sa(1)]*2, [TOP-4.5, YB], lw='ref', color=AXC, ls='ref')
 for tk, ck, yy in rows:
     if tk == 'head':
@@ -69,14 +67,12 @@ for tk, ck, yy in rows:
     F.text(xa+WA, yy-3.3, f'{int(r.n_orthologs)}', 7.0, ha='right', color=MUTED)
     F.values[f'a {tk}|{ck}'] = dict(n=int(r.n_orthologs), naive=[int(r.naive_observed), float(r.naive_expected)],
                                     control=[int(r.control_observed), float(r.control_expected)], naive_fold=float(nf), control_fold=float(cf))
-ya = F.xaxis(sa, YB, [1, 1.5], ['1', '1.5'])
+ya = F.xaxis(sa, YB, [1, 1.5], ['1', '1.5'], title='Obs./expected overlap')
 # ---------------------------------------------------------------- b, c
 def forest(L, x0, w, thr, lim, ticks, labs):
     F.use(L)
     s = Lin(lim[0], lim[1], x0+5.0, x0+w-20.0)
-    F.text(x0+16.0, 4.5+0.6, f'Naive − control', 7.5)
-    F.text(x0+16.0, 4.5+10.6, f'Fold difference, {thr:.2f}'.replace('0.', '.'), 7.0, color=MUTED)
-    F.text(x0+w, 4.5+10.6, 'q', 7.0, ha='right', color=MUTED)
+    F.text(x0+w, 4.5+3.0, 'q', 7.0, ha='right', color=MUTED)
     F.line([s(0)]*2, [TOP-4.5, YB], lw='ref', color=AXC, ls='ref')
     for tk, ck, yy in rows:
         if tk == 'head': continue
@@ -86,7 +82,7 @@ def forest(L, x0, w, thr, lim, ticks, labs):
         F.marker(s(r.fold_difference), yy, 'o' if thr == 0.02 else 'D', 'small', fc=INK if q < 0.05 else 'white', ec=INK)
         F.text(x0+w, yy-3.3, f'{q:.2f}'.lstrip('0'), 7.0, ha='right')
         F.values[f'{L} {tk}|{ck}'] = dict(diff=float(r.fold_difference), null=[float(r.null_p025), float(r.null_p975)], p=float(r.p), q14=q)
-    return F.xaxis(s, YB, ticks, labs)
+    return F.xaxis(s, YB, ticks, labs, title=f'Fold difference ({thr:.2f})'.replace('0.', '.'))
 yb = forest('b', xb, WB, 0.02, (-1.5, 1.5), [-1, 0, 1], ['−1', '0', '1'])
 yc = forest('c', xc, XR-xc, 0.05, (-4.0, 2.0), [-4, -2, 0, 2], ['−4', '−2', '0', '2'])
 yk = max(ya, yb, yc)+3.0

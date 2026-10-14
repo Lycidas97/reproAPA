@@ -19,7 +19,7 @@ from supdraw import *   # noqa
 FID = 'D21'
 D = Data(); OUT = outdir(FID)
 X0, RR = MARGIN, PAGE_W-MARGIN
-H1, H2, H3 = 96.0, 176.0, 132.0
+H1, H2, H3 = 99.0, 176.0, 142.0   # 2026-10-12: panel titles moved to axis titles or the caption
 Y1 = MARGIN; Y2 = Y1+H1+GAP; Y3 = Y2+H2+GAP; H = Y3+H3+MARGIN
 F = Fig(H, figname(FID))
 CX = [('human', 'SP'), ('human', 'MP'), ('mouse', 'SP'), ('mouse', 'MP')]
@@ -35,7 +35,6 @@ claims = D.df('D21A', 'union_pool/figure5_union_claims.tsv')
 me = D.df('D21A', 'intervals/model_effects.tsv')
 D.df('D21A', 'union_pool/figure5_MPRO_admission.tsv')      # admission audit (receipt only)
 ax_ = Lin(0, 2200, x+64.0, x+w-50.0)
-F.text((ax_.p0+ax_.p1)/2, y+3.0, 'Genes per cohort', 7.5, ha='center')
 F.text(x+w-22.0, y+3.0, 'Interval pairs', 7.0, ha='center', color=MUTED)
 Av = {}
 for i, c in enumerate(CX):
@@ -53,7 +52,7 @@ for i, c in enumerate(CX):
     F.marker(ax_(ig), yy, 'D', 'mark', fc=DIST)
     F.text(x+w-22.0, yy-3.4, f'{ip}', 7.0, ha='center')
     Av[CL[c]] = dict(union=len(genes), measurable_both_routes=meas, interval_genes=ig, interval_pairs=ip)
-F.xaxis(ax_, y+21.0+3*14.0+7.0, [0, 1000, 2000], ['0', '1,000', '2,000'])
+F.xaxis(ax_, y+21.0+3*14.0+7.0, [0, 1000, 2000], ['0', '1,000', '2,000'], title='Genes')
 F.key_row(None, y+h-7.4, [('marker', ('o', 'white', INK), 'Union pool'), ('marker', ('o', INK), 'Measurable in both studies'),
                           ('marker', ('D', DIST), 'With interval pair')], gap=6.0, center=x+w/2)
 F.values['a'] = Av
@@ -66,7 +65,6 @@ at = D.df('D21B', 'candidate_screen/low_shift_attrition.tsv').set_index('stage')
 ls = D.df('D21B', 'geometry/low-shift-cohort.tsv').set_index('gene_id')
 STG = [('low_abs_DWUI_lt002_MPRO_ge01', 'Low net shift', '|ΔDWUI| < .02, MPRO ≥ .1'), ('strict_recurrent_interval', 'Strict recurrent interval', 'in both mouse studies'),
        ('both_abs_DWUI_lt001', 'Both |ΔDWUI| < .01', 'CIP and 2i')]
-F.text(x+w-1.0, y+3.0, 'Low-net-shift screen, mouse P–M', 7.5, ha='right')
 Bv = {}
 bxw = 30.0; BX = x+0.4
 for i, (k, lab, sub) in enumerate(STG):
@@ -124,7 +122,6 @@ x, y, w, h = F.panel('d', X0+WC+GAP, Y2, RR-(X0+WC+GAP), H2)
 sa = D.df('D21D', 'site_statistics/region_consistency_statistics.tsv')
 sa = sa[sa.unit == 'region_pair'].set_index(['species', 'contrast', 'category'])
 dx = Lin(0.5, 1.0, x+50.0, x+w-22.0)
-F.text(x+62.0, y+3.0, 'Same sign in both studies', 7.5, ha='center')
 F.text(x+w-9.0, y+3.0, 'n', 7.0, ha='center', color=MUTED)
 Dv = {}; pitch = 28.5; y0d = y+32.5
 for i, c in enumerate(CX):
@@ -160,8 +157,6 @@ LBL = 66.0
 fl = lambda v: math.copysign(math.log10(1+abs(v)), v)                 # symmetric log axis of main Figure 5b
 ex = Lin(fl(-250), fl(250), x+LBL, x+LBL+132.0)
 cxw = Lin(-250, 250, x+LBL+132.0+14.0, x+w-32.0)
-F.text((ex.p0+ex.p1)/2, y+3.0, 'Weighted predicted-site change', 7.5, ha='center')
-F.text((cxw.p0+cxw.p1)/2, y+3.0, 'Genes: loss | gain', 7.5, ha='center')
 F.text(x+w-14.0, y+3.0, 'No sites', 7.0, ha='center', color=MUTED)
 Ev = {}; yy = y+20.0; rh = 10.4
 y_top = yy-6
@@ -185,8 +180,8 @@ for c in CX:
         yy += rh
     yy += 3.0
 F.line([ex(0)]*2, [y_top, yy-4], lw='ref', color=AXC, ls='ref'); F.line([cxw(0)]*2, [y_top, yy-4], lw='axis', color=AXC)
-F.xaxis(ex, yy-2.0, [fl(-200), fl(-50), fl(-5), 0, fl(5), fl(50), fl(200)], ['−200', '−50', '−5', '0', '5', '50', '200'])
-F.xaxis(cxw, yy-2.0, [-200, 0, 200], ['200', '0', '200'])
+F.xaxis(ex, yy-2.0, [fl(-200), fl(-5), 0, fl(5), fl(200)], ['−200', '−5', '0', '5', '200'], title='Weighted predicted-site change')
+F.xaxis(cxw, yy-2.0, [-200, 0, 200], ['200', '0', '200'], title='Genes')
 # legend: one entry per direction, gene point and gene-count bar side by side (point = one gene, bar = number of genes)
 kent = [(INK, 'Net loss'), (PROX, 'Net gain')]; kgap = 10.0
 kw_ = sum(7.6+7.6+textwidth(t, 7.0) for _, t in kent)+kgap*(len(kent)-1)
@@ -204,7 +199,6 @@ x, y, w, h = F.panel('f', X0+WE+GAP, Y3, RR-(X0+WE+GAP), H3)
 d50 = (gr.weighted_sites50-gr.weighted_sites20)
 fx = Lin(-4, 4, x+21.0, x+w-3.0); fy = Lin(0, 1, y+16.0+(fx.p1-fx.p0)/1.25, y+16.0)
 F.lineplot(fx, fy, '50-20')
-F.text((fx.p0+fx.p1)/2, y+3.0, '50 − 20 UMI estimate', 7.5, ha='center')
 F.line([fx(0)]*2, [fy.p0, fy.p1], lw='ref', color=AXC, ls='ref')
 Fv = {}
 for cat, col, lsd in (('miRNA', INK, None), ('RBP', INK, 'dash')):

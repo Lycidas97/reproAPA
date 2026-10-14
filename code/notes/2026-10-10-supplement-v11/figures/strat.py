@@ -29,7 +29,7 @@ def panel_a(y0, h):
     for r in m.itertuples(): M[(cls4(r.human_event_class), cls4(r.mouse_event_class))] = M.get((cls4(r.human_event_class), cls4(r.mouse_event_class)), 0)+int(r.n_pairs)
     for r in core.itertuples(): C[(cls4(r.human_event_class), cls4(r.mouse_event_class))] = C.get((cls4(r.human_event_class), cls4(r.mouse_event_class)), 0)+1
     assert sum(M.values()) == 751 and sum(C.values()) == 27
-    cx0, cw, ch, top = x+42.0, 32.0, 21.0, y+22.0
+    cx0, cw, ch, top = x+42.0, 32.0, 23.6, y+22.0
     F.text(cx0+2*cw, y+0.6, 'Mouse class', 7.5, ha='center')
     for j, (k, lab) in enumerate(CLS):
         F.text(cx0+j*cw+cw/2, y+11.0, lab, 7.0, ha='center')
@@ -46,8 +46,8 @@ def panel_a(y0, h):
             F.values[f'a {hk}|{mk}'] = dict(pairs=n, shared_proximal_002=c)
     yk = top+4*ch+4.0
     F.cbar_key(cx0+2*cw-0.5, yk, 'Pairs', '1', '315', lambda u: supdraw.seq(u), wbar=44.0)
-    F.text(cx0+2*cw-0.5, yk+10.5, '(n) shared proximal, |ΔDWUI| ≥ .02', 7.0, ha='center', color=MUTED)
-    return yk+10.5+0.93*7.0
+    # 2026-10-12: the '(n) shared proximal' note moved to the caption
+    return yk+0.93*7.5
 
 # ------------------------------------------------------------------ b  composition across thresholds
 def panel_b(y0, h):
@@ -56,7 +56,6 @@ def panel_b(y0, h):
     core = R.df('notes/2026-10-10-utr-event-stratification/classification/shared_proximal_core_all_thresholds.tsv')
     T = sorted(core.threshold.unique())
     bx, sc = x+30.0, Lin(0, 60, x+30.0, x+30.0+168.0)
-    F.text(x+20.0, y+0.6, 'Shared proximal P–M pairs by event class', 7.5)
     F.text(XR-0.2, y+11.0, 'Strict', 7.0, ha='right', color=MUTED)
     ytop, pitch = y+22.0, 9.0
     for i, t in enumerate(T):
@@ -106,7 +105,7 @@ def panel_c(y0, h):
         g = d[(d.pair_class == cls) & (d.model == model)]
         if bi % 2 == 0:
             n = int(g.measured_orthologs.iloc[0])
-            F.text(px+bw+gin/2, y+0.6, f'{"Both tandem-3′ UTR" if cls == "both_tandem" else "Both ALE-compatible"}, {n} pairs', 7.5, ha='center')
+            F.text(px+bw+gin/2, y+0.6, 'Both tandem-3′ UTR' if cls == 'both_tandem' else 'Both ALE-compatible', 7.5, ha='center')   # pair count n: caption
         F.text((sc.p0+sc.p1)/2, y+12.0, 'Full assay' if model == 'full_assay' else 'Capacity', 7.0, ha='center', color=MUTED)
         F.text(px+bw, y+12.0, 'n/exp.', 7.0, ha='right', color=MUTED)
         for k, (hd, md) in enumerate(COMBOS):
@@ -133,7 +132,6 @@ STUDIES_D = [('GSE118258', 'GSE118258'), ('GSE178325', '178325_0618'), ('GSE1783
 def panel_d(y0, h, wd):
     x, y, w, _ = F.panel('d', X0, y0, wd, h)
     F.text(x+16.0, y+0.4, 'DYNLL2/Dynll2', 8.0, font='BolIta')
-    F.text(x+16.0+supdraw.textwidth('DYNLL2/Dynll2', 8.0, 'BolIta')+4.0, y+0.9, 'source to P', 7.5, color=MUTED)
     iv = R.df('notes/2026-10-10-conserved-response/sites/strict_case_intervals.tsv')
     iv = iv[(iv.human_gene_id == HG) & (iv.tolerance == 25)]
     sp = R.df('notes/2026-10-10-conserved-response/sites/reciprocal_predicted_seed_pairs.tsv')
@@ -171,7 +169,6 @@ def panel_d(y0, h, wd):
     # inclusion S -> P per study
     ix0 = x+wd-92.0
     si = Lin(0, 100, ix0+10.0, x+wd-7.0)
-    F.text((si.p0+si.p1)/2, y+11.0, 'Segment inclusion', 7.5, ha='center')
     rt, rp = y+23.0, 10.2
     for k, (study, series) in enumerate(STUDIES_D):
         r = inc[(inc.study_id == study) & (inc.series == series)].iloc[0]
@@ -201,7 +198,6 @@ def panel_e(y0, h, x0):
     x, y, w, _ = F.panel('e', x0, y0, XR-x0, h)
     a = R.df('notes/2026-10-10-conserved-response/sites/event_attrition.tsv')
     a = a[(a.source_population == 'main48') & np.isclose(a.gene_threshold, 0.02) & (a.context_role == 'shared_recurrent')]
-    F.text(x+16.0, y+4.0, 'Corresponding switches', 7.5)
     sc = Lin(0, 48, x+0.4, XR-24.0)
     F.text(XR-0.2, y+4.6, '25 | 50 nt', 7.0, ha='right', color=MUTED)
     yt, pitch = y+15.8, 15.4

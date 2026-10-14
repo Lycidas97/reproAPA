@@ -1,0 +1,24 @@
+{
+  "status": "PASS",
+  "checked_at": "2026-10-13T17:31:53.664550+00:00",
+  "scientific_version": "2026-10-13 v11f",
+  "archive_count": 81,
+  "archive_max_bytes": 14680064,
+  "archive_total_bytes": 1172281370,
+  "original_member_count": 2962,
+  "verified_member_count": 2964,
+  "changed_original_members": [
+    "README.md"
+  ],
+  "scientific_files_figures_workbook_code_identical_to_v11f": true,
+  "independent_tar_extraction": true,
+  "gzip_crc_all_members": true,
+  "no_cross_archive_hard_links": true,
+  "all_restored_content_sha256_verified": true,
+  "stored_as_hard_links_verified": true,
+  "restoration_idempotence": true,
+  "restored_fragmented_payload_count": 18,
+  "base_verifier_output": "{\"status\": \"PASS\", \"files\": 2964, \"data_sheets\": 58, \"source_blocks\": 202, \"main_figures\": 4, \"supplementary_figures\": 21}",
+  "manuscript_update_deferred_until_publication": true,
+  "published": false
+}

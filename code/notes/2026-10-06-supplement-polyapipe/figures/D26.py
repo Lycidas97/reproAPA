@@ -22,7 +22,7 @@ FID = 'D26'
 D = Data(); OUT = outdir(FID)
 X = ExtData(Path(__file__).resolve().parent.parent/'tools'/'external-sources-trip12.json')
 X0, RR = MARGIN, PAGE_W-MARGIN
-H1, H2, H3, H4 = 118.0, 100.0, 112.0, 100.0
+H1, H2, H3, H4 = 122.0, 90.0, 120.0, 91.0   # 2026-10-12: panel titles and notes moved to axis titles or the caption
 Y1 = MARGIN; Y2 = Y1+H1+GAP; Y3 = Y2+H2+GAP; Y4 = Y3+H3+GAP; H = Y4+H4+MARGIN
 F = Fig(H, figname(FID))
 GID, SYM = 'ENSMUSG00000026219', 'Trip12'
@@ -47,7 +47,7 @@ WA = 176.0
 x, y, w, h = F.panel('a', X0, Y1, WA, H1)
 pl = D.df('D26A', 'examples/inclusion_paired_libraries.tsv.gz')
 pl = pl[(pl.gene_id == GID) & (pl.kind == 'interval') & (pl.cutoff == 20)]
-ay = Lin(0, 0.7, y+90.0, y+20.0)
+ay = Lin(0, 0.7, y+103.0, y+20.0)
 gw = (w-24.0)/4
 Av = {}
 F.yaxis(ay, x+22.0, [0, 0.2, 0.4, 0.6], ['0', '20', '40', '60'], 'Interval inclusion (%)')
@@ -60,7 +60,6 @@ for j, (route, k) in enumerate([(r_, k_) for r_ in RT for k_ in (1, 2)]):
     mm, mp = float(z.reference_inclusion.mean()), float(z.target_inclusion.mean())
     F.line([xm, xp], [ay(mm), ay(mp)], lw='bold', color=INK)
     F.marker(xm, ay(mm), 'o', 'small', fc=SC['M']); F.marker(xp, ay(mp), 'o', 'small', fc=SC['P'])
-    F.text(x0+gw/2, y+12.0, f'n = {len(z)}', 6.8, ha='center', color=MUTED)
     F.text(xm, ay.p0+2.0, 'M', 7.0, ha='center', color=SC['M']); F.text(xp, ay.p0+2.0, 'P', 7.0, ha='center', color=SC['P'])
     F.text(x0+gw/2, ay.p0+11.0, f'{k}', 7.5, ha='center', font='Bol')
     Av[f'{route}|I{k}'] = dict(n=int(len(z)), mean_M=mm, mean_P=mp)
@@ -68,7 +67,6 @@ F.line([x+24.0+2*gw]*2, [y+12.0, ay.p0+18.0], lw='ref', color=AXC, ls='ref')
 for j, route in enumerate(RT):
     cx = x+24.0+gw*(2*j+1)
     F.text(cx, y+3.0, STUDY[route][0], 7.5, ha='center')
-F.text(x+24.0+2*gw, y+h-7.4, '1 = 842 nt, 2 = 706 nt; bold = mean', 7.0, ha='center', color=MUTED)
 F.values['a'] = Av
 
 # ================================================================ b  native metrics
@@ -79,9 +77,8 @@ ee = ee[(ee.gene_id == GID) & (ee.setting == 'supported50_p08') & (ee.contrast =
 Bv = {}
 for row, (col, lab, lim, ticks, tl) in enumerate((('delta_DWUI', 'Native ΔDWUI', (-0.02, 0.02), [-0.02, 0, 0.02], ['−.02', '0', '.02']),
                                                    ('MPRO', 'MPRO', (0, 0.4), [0, 0.2, 0.4], ['0', '.2', '.4']))):
-    top = y+3.0+row*54.0
+    top = y+3.0+row*63.0
     sx = Lin(lim[0], lim[1], x+14.0, x+w-6.0)
-    F.text((sx.p0+sx.p1)/2, top, lab, 7.5, ha='center')
     for i, route in enumerate(RT):
         yy = top+15.0+i*13.0
         rmark(x+4.0, yy, route)
@@ -91,8 +88,7 @@ for row, (col, lab, lim, ticks, tl) in enumerate((('delta_DWUI', 'Native ΔDWUI'
         Bv[f'{route}|{col}'] = float(r[col]); Bv[f'{route}|pairs'] = int(r.n_pairs)
     if col == 'delta_DWUI':
         F.line([sx(0)]*2, [top+10.0, top+29.0], lw='ref', color=AXC, ls='ref')
-    F.xaxis(sx, top+36.0, ticks, tl)
-F.text(x+w/2, y+h-7.4, f"pairs: {Bv['CIP|pairs']} | {Bv['WOT|pairs']}", 6.8, ha='center', color=MUTED)
+    F.xaxis(sx, top+36.0, ticks, tl, title=lab)
 F.values['b'] = Bv
 
 # ================================================================ c  interval ΔI sensitivity
@@ -100,7 +96,6 @@ x, y, w, h = F.panel('c', X0+WA+GAP+WB+GAP, Y1, RR-(X0+WA+GAP+WB+GAP), H1)
 es = D.df('D26C', 'examples/inclusion_effect_sensitivity.tsv')
 es = es[(es.gene_id == GID) & (es.kind == 'interval') & (es.contrast == 'MP')]
 cx_ = Lin(-30, 0, x+44.0, x+w-4.0)
-F.text((cx_.p0+cx_.p1)/2, y+3.0, 'Interval ΔI, P − M (pp)', 7.5, ha='center')
 Cv = {}; yy = y+20.0; rp = 8.6
 for k in (1, 2):
     for route in RT:
@@ -115,7 +110,7 @@ for k in (1, 2):
             yy += rp
         yy += 1.0
     yy += 3.0
-F.xaxis(cx_, yy-4.0, [-30, -20, -10, 0], ['−30', '−20', '−10', '0'])
+F.xaxis(cx_, yy-4.0, [-30, -20, -10, 0], ['−30', '−20', '−10', '0'], title='Interval ΔI, P − M (pp)')
 F.key_row(None, y+h-7.4, [('line', (NULLBAR, None, 'bold'), 'leave-one-library range')], gap=5.0, center=(cx_.p0+cx_.p1)/2)
 F.values['c'] = Cv
 
@@ -159,8 +154,7 @@ for k in (1, 2):
                        both_TPM_positive_samples=int(r.both_TPM_positive_samples))
 assert int(ba.both_TPM_positive_samples.max()) == 0
 yb = F.xaxis(gx, y+70.0, [0, 0.5, 1, 1.5, 2], ['0', '.5', '1', '1.5', '2'])
-F.text((gx.p0+gx.p1)/2, yb+1.6, 'Distance from the terminal-exon start, chr1 (−) (kb)', 8.0, ha='center')
-F.text(x+0.4, y+h-7.4, 'Same complete intron chain; 0 samples detect both models', 6.8, color=MUTED)
+F.text((gx.p0+gx.p1)/2, yb+1.6, 'Distance from the terminal-exon start (kb)', 8.0, ha='center')
 F.values['d'] = Dv
 
 # ================================================================ e  AGO2
@@ -168,10 +162,9 @@ x, y, w, h = F.panel('e', X0+WD+GAP, Y2, RR-(X0+WD+GAP), H2)
 ov = X.df('ago2_overlap'); X.df('ago2_archive'); X.df('ago2_units')
 ov['kind'] = ['interval' if '|shared_region|' in f else ('mirna' if '|site|miRNA|' in f else 'other') for f in ov.feature_id]
 TR = [('WT1A', 'WT1 A'), ('WT1B', 'WT1 B'), ('WT2', 'WT2'), ('WT_merged', 'WT merged'), ('KO_merged', 'Dicer-KO merged')]
-cx0 = x+58.0; cw = (x+w-1.0-cx0)/3; rh = 11.8; e0 = y+24.0
+cx0 = x+58.0; cw = (x+w-1.0-cx0)/3; rh = 14.0; e0 = y+14.0
 for j, lab in enumerate(('Int. 1', 'Int. 2', 'Seeds')):
-    F.text(cx0+cw*(j+0.5), y+13.0, lab, 7.0, ha='center')
-F.text(cx0+cw*1.5, y+3.0, 'AGO2 CLIP overlap', 7.5, ha='center')
+    F.text(cx0+cw*(j+0.5), y+3.0, lab, 7.0, ha='center')
 nmi = int((ov[ov.label == 'WT2'].kind == 'mirna').sum())
 Ev = {}
 for i, (lab, name) in enumerate(TR):
@@ -189,7 +182,6 @@ for i, (lab, name) in enumerate(TR):
         F.rect(cx0+cw*j+0.4, yy+0.4, cw-0.8, rh-0.8, fc=fc, ec=AXC, lw='axis')
         F.text(cx0+cw*(j+0.5), yy+rh/2-3.2, t_, 6.8, ha='center', color=INK if v > 0 else MUTED)
     Ev[lab] = dict(I1_bp=vals[0][0], I2_bp=vals[1][0], mirna_annotations_hit=hits, mirna_annotations=int(len(mi)))
-F.text(x+w/2+20.0, y+h-7.4, 'WT1 A/B = one biological unit', 6.8, ha='center', color=MUTED)
 F.values['e'] = Ev
 assert nmi == 68
 
@@ -237,7 +229,6 @@ F.notes.append('f: every current native PAS, zero-usage sites included; shade = 
 x, y, w, h = F.panel('g', X0+WF+GAP, Y3, RR-(X0+WF+GAP), H3)
 COMP = [('within_family_DWUI', SEQ_STOPS[2], 'Family position'), ('family_mass_DWUI', SEQ_STOPS[1], 'Family mass'), ('nonterminal_DWUI', OUTSIDE, 'Outside family')]
 gx_ = Lin(-10, 6, x+20.0, x+w-4.0)
-F.text((gx_.p0+gx_.p1)/2, y+3.0, 'ΔDWUI × 1,000', 7.5, ha='center')
 Gv = {}
 for i, route in enumerate(RT):
     r = ad.loc[route]; yy = y+26.0+i*22.0
@@ -254,10 +245,10 @@ for i, route in enumerate(RT):
     assert abs(resid) < 1e-9, resid
     Gv[route] = {c: float(r[c]) for c, _, _ in COMP} | dict(native=float(r.native_delta_DWUI), terminal_shift_nt=float(r.terminal_shift_nt))
 F.line([gx_(0)]*2, [y+18.0, y+56.0], lw='ref', color=AXC, ls='ref')
-F.xaxis(gx_, y+62.0, [-8, -4, 0, 4], ['−8', '−4', '0', '4'])
+F.xaxis(gx_, y+62.0, [-8, -4, 0, 4], ['−8', '−4', '0', '4'], title='ΔDWUI × 1,000')
 for k, (col, cc, lab) in enumerate(COMP):
-    F.key_row(x+6.0, y+78.0+k*11.4, [('block', cc, lab)], size=7.0)
-F.key_row(x+82.0, y+78.0, [('marker', ('D', 'white', INK), 'native net')], size=7.0)
+    F.key_row(x+6.0, y+86.0+k*11.4, [('block', cc, lab)], size=7.0)
+F.key_row(x+82.0, y+86.0, [('marker', ('D', 'white', INK), 'native net')], size=7.0)
 F.values['g'] = Gv
 
 # ================================================================ h  site tiers
@@ -288,7 +279,7 @@ for i, (tier, lab, cc, shown) in enumerate(TIERS):
     Hv[tier] = dict(annotations=int(len(z)), positions=len(pos_), in_figure5f=shown)
 yb = F.xaxis(hx, y+21.0+4*10.4+7.0, [0.5, 1, 1.5, 2], ['.5', '1', '1.5', '2'])
 F.text((hx.p0+hx.p1)/2, yb+1.6, 'Distance from the terminal-exon start (kb)', 8.0, ha='center')
-F.text(x+0.4, y+h-7.4, 'Upper three tiers = Figure 5f rug; all are predicted sites, not binding', 6.8, color=MUTED)
+# 2026-10-12: tier note (Figure 4d rug; predicted, not binding) moved to the caption
 F.values['h'] = Hv
 F.notes.append('h: Guo2019–CIP rows; Schiebinger2019–2i has identical site coordinates and tiers (checked)')
 F.save(OUT, [D, X])

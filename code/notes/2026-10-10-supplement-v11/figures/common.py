@@ -11,7 +11,9 @@ ROOT = FIGDIR.parents[2]
 sys.path.insert(0, str(ROOT/'notes/2026-10-06-supplement-polyapipe/tools'))
 import supdraw                                           # noqa: E402
 from supdraw import *                                    # noqa: E402,F401
-OUT = FIGDIR.parent/'out'            # defined after the star import (supdraw has its own HERE/OUT)
+import os as _os
+# defined after the star import (supdraw has its own HERE/OUT); V11_OUT redirects a rebuild (2026-10-12 text cleanup)
+OUT = Path(_os.environ['V11_OUT']) if _os.environ.get('V11_OUT') else FIGDIR.parent/'out'
 # v11 numbering of the new figures (content code -> printed number)
 NUM = {'strat': 10, 'naive': 12, 'cycle': 18, 'mech': 19, 'profile': 20}
 

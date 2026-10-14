@@ -37,7 +37,7 @@ for j, (L, sp) in enumerate((('a', 'human'), ('b', 'mouse'))):
     side = min(w-2.0, h-12.0-24.0)
     ex = Lin(-4.8, 14.6, x+(w-side)/2, x+(w-side)/2+side); ey = Lin(-3.8, 15.6, y+12.0+side, y+12.0)
     F.text(x+16.0, y+0.4, sp.capitalize(), 8.0, font='Bol')
-    F.text(x+w-1.0, y+1.0, f'{len(q):,} cells shown', 7.0, ha='right', color=MUTED)
+    # 2026-10-12: the displayed-cell count moved to the caption
     for fam in FORD:
         z = q[q.reviewed_group == fam]
         if len(z): F.points([ex.clip(v) for v in z.UMAP1], [ey.clip(v) for v in z.UMAP2], ms='point', color=PAL[fam], alpha='secondary', rasterized=True)
@@ -110,12 +110,11 @@ F.notes.append('d: rows/columns ordered by frozen family then figure row; light 
 
 # ================================================================ e  programme scales
 x0e = X0+WD+GAP; we = RR-x0e
-HE = 88.0
+HE = 97.0
 x, y, w, h = F.panel('e', x0e, Y2, we, HE)
 pg = D.df('D03E', 'frozen/program_by_state_library.tsv.gz')
 pg = pg[pg.n_cells >= 20]
 sx = Lin(0, 3.5, x+62.0, x+w-4.0)
-F.text((sx.p0+sx.p1)/2, y+3.0, 'Native program score', 7.5, ha='center')
 Ev = {}; yy = y+20.0
 for sp in ('human', 'mouse'):
     for k, prog in enumerate(('ECM', 'Epithelial', 'Pluripotency')):
@@ -129,7 +128,7 @@ for sp in ('human', 'mouse'):
         Ev[f'{sp}|{prog}'] = dict(n=int(len(v)), q10=float(q10), q25=float(q25), median=float(q50), q75=float(q75), q90=float(q90))
         yy += 9.0
     yy += 3.0
-F.xaxis(sx, yy-4.0, [0, 1, 2, 3])
+F.xaxis(sx, yy-4.0, [0, 1, 2, 3], title='Native program score')   # 2026-10-12: former panel title
 F.values['e'] = Ev
 
 # ================================================================ f  held-out expression excess
@@ -143,8 +142,7 @@ HLAB = {'GSE118258': 'Xing2020', 'GSE178325::donor_0605': 'Guan 0605', 'GSE17832
 MLAB = {'gse103221_cip': 'CIP', 'gse103221_osk': 'OSK', 'wot_common_to_2i': '2i'}
 LX = x+0.4+max(textwidth(v, 6.8) for v in HLAB.values())+3.0
 fx = Lin(-0.005, 0.055, LX+max(textwidth(v, 6.8) for v in MLAB.values())+5.0, x+w-4.0)
-F.text((fx.p0+fx.p1)/2, y+3.0, 'Held-out correlation excess', 7.5, ha='center')
-Fv = {}; rp = 9.0; y0 = y+21.0
+Fv = {}; rp = 8.0; y0 = y+19.6   # 2026-10-12: panel title became the x-axis title
 for i, r in enumerate(orig.itertuples()):
     yy = y0+i*rp
     if i == 0 or r.human != orig.human.iloc[i-1]:
@@ -158,7 +156,7 @@ for i, r in enumerate(orig.itertuples()):
     Fv[f'{r.human}|{r.mouse}'] = dict(original=float(r.excess), null=[float(r.null_q025-r.null_mean), float(r.null_q975-r.null_mean)],
                                       refits_ok=int(len(z)), refits=[float(v) for v in z.excess])
 F.line([fx(0)]*2, [y0-5.0, y0+11*rp+5.0], lw='ref', color=AXC, ls='ref')
-F.xaxis(fx, y0+11*rp+6.0, [0, 0.02, 0.04], ['0', '.02', '.04'])
+F.xaxis(fx, y0+11*rp+6.0, [0, 0.02, 0.04], ['0', '.02', '.04'], title='Held-out correlation excess')
 F.key_row(None, y+h-17.4, [('marker', ('D', INK), 'original'), ('marker', ('o', PROX), 'refit variants')], gap=6.0, center=x+w/2)
 F.key_row(None, y+h-7.4, [('line', (NULLBAR, None, 'range'), 'original null 95%, centered')], gap=6.0, center=x+w/2)
 F.values['f'] = Fv

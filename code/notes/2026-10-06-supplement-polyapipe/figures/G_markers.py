@@ -77,8 +77,9 @@ WL = (RR-X0-GAP)/2; XR = X0+WL+GAP
 nL = len(R['a'])+len(R['c']); nR = len(R['b'])+len(R['d'])
 PITCH_LONG = 8.0
 nmax = max(nL, nR)
-TOT = 2*HDR+GAP+LEGH+nmax*PITCH_LONG+0.8
-pitch = {'left': (TOT-2*HDR-GAP-LEGH-0.8)/nL, 'right': (TOT-2*HDR-GAP-LEGH-0.8)/nR}
+# 2026-10-12: J/F and bold/flag notes moved to the caption, so only the left column (size/colour key) reserves LEGH
+TOT = 2*HDR+GAP+0.8+max(nL*PITCH_LONG+LEGH, nR*PITCH_LONG)
+pitch = {'left': (TOT-2*HDR-GAP-LEGH-0.8)/nL, 'right': (TOT-2*HDR-GAP-0.8)/nR}
 H = MARGIN*2+TOT
 F = Fig(H, figname(FID))
 VALS = {}
@@ -154,18 +155,13 @@ def leg_size_colour(x, w, gx0, xj, yl):
     F.cbar_key(xc, yl+10.0, 'Mean log1p(CP10k)', '0', '5', lambda f: seq(f*SEQ_MAX, 0, SEQ_MAX), wbar=cbw)
 
 
-def leg_flags(x, w, gx0, xj, yl):
-    xc = x+w/2
-    F.text(xc, yl, 'J, Jaccard; F, display-family compatibility (9-partition medians)', 7.5, ha='center')
-    F.text(xc, yl+10.0, f'Bold: < {LOWJ:.2f}'.replace('0.', '.')+' · * candidate or mixed'
-           + (' · † < 20 cells in every library' if SP == 'mouse' else ''), 7.5, ha='center')
 
 
 
 yb = panel('a', PANELS[0][1], PANELS[0][2], PANELS[0][3], X0, MARGIN, WL, pitch['left'], None)
 panel('c', PANELS[2][1], PANELS[2][2], PANELS[2][3], X0, yb+GAP, WL, pitch['left'], leg_size_colour)
 yb = panel('b', PANELS[1][1], PANELS[1][2], PANELS[1][3], XR, MARGIN, WL, pitch['right'], None)
-panel('d', PANELS[3][1], PANELS[3][2], PANELS[3][3], XR, yb+GAP, WL, pitch['right'], leg_flags)
+panel('d', PANELS[3][1], PANELS[3][2], PANELS[3][3], XR, yb+GAP, WL, pitch['right'], None)   # J/F/bold/flag notes: caption
 F.values = VALS
 F.notes.append(f'marker display rule reproduced and checked against bundle frozen/marker_by_state.tsv: max |Δ| mean {dmax_mean:.1e}, detected {dmax_det:.1e}')
 F.notes.append('row pitch differs between the two columns so that both columns end at the same height: '

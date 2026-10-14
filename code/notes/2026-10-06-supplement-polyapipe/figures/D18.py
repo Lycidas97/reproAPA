@@ -21,7 +21,7 @@ from supdraw import *   # noqa
 FID = 'D18'
 D = Data(); OUT = outdir(FID)
 X0, RR = MARGIN, PAGE_W-MARGIN
-H1, H2, H3 = 132.0, 106.0, 116.0
+H1, H2, H3 = 132.0, 108.0, 116.0   # 2026-10-12: panel titles moved to axis titles or the caption
 Y1 = MARGIN; Y2 = Y1+H1+GAP; Y3 = Y2+H2+GAP; H = Y3+H3+MARGIN
 F = Fig(H, figname(FID))
 TOL = 25
@@ -45,7 +45,6 @@ WA = 100.0
 x, y, w, h = F.panel('a', X0, Y1, WA, H1)
 bx = Lin(0, 260, x+28, x+w-12)
 T25, T50 = SEQ_STOPS[2], SEQ_STOPS[1]
-F.text((bx.p0+bx.p1)/2, y+3.0, 'Same-PAS designs', 7.5, ha='center')
 ROWS_A = [('PMS', 'H1_C', y+34.0), ('PMS', 'H1_W', y+50.0), ('PMS', 'pair_mean', y+66.0), ('PEM', 'H2_C', y+92.0)]
 F.text(x+0.4, y+16.0, 'P, M and S measured', 7.0, color=MUTED)
 F.text(x+0.4, y+76.0, 'P, E and M measured', 7.0, color=MUTED)
@@ -86,8 +85,7 @@ for j, pair in enumerate(('H1_C', 'H1_W')):
     sx = Lin(-LIM, LIM, xs0+j*(side+gx), xs0+j*(side+gx)+side); sy = Lin(-LIM, LIM, y+18.0+side, y+18.0)
     hr, mr = PAIRS[pair]
     cx = (sx.p0+sx.p1)/2
-    F.rect(cx-17.6, y+3.6, 5.6, 5.6, fc=STUDY[hr][1]); F.text(cx-10.4, y+3.0, '×', 7.0, color=MUTED)
-    F.rect(cx-5.0, y+3.6, 5.6, 5.6, fc=STUDY[mr][1]); F.text(cx+2.4, y+3.0, f'{len(z)} genes', 7.0, color=MUTED)
+    F.study_pair(cx-9.1, y+6.4, hr, mr)   # gene count (len(z)) moved to the caption
     F.line([sx(0)]*2, [sy.p0, sy.p1], lw='ref', color=AXC, ls='ref'); F.line([sx.p0, sx.p1], [sy(0)]*2, lw='ref', color=AXC, ls='ref')
     ticks = [-0.3, 0, 0.3]; tl = ['−.3', '0', '.3']
     F.yaxis(sy, sx.p0, ticks, tl, 'Mouse rank effect' if j == 0 else None, labels_off=(j == 1))
@@ -106,7 +104,6 @@ F.notes.append(f'b: points beyond ±{LIM} drawn at the limit (counts in values);
 # ================================================================ c  per-pair rho
 x, y, w, h = F.panel('c', X0+WA+GAP+WB+GAP, Y1, RR-(X0+WA+GAP+WB+GAP), H1)
 cx_ = Lin(-0.3, 0.45, x+44.0, x+w-3.0)
-F.text((cx_.p0+cx_.p1)/2, y+3.0, 'Rank axis, 25 nt', 7.5, ha='center')
 q = cs[(cs.tolerance == TOL) & (cs.design == 'PMS') & (cs.axis == 'rank')]
 Cv = {}; yy = y+21.0; rh = 8.4
 y_top = yy-5
@@ -125,7 +122,7 @@ for metric, lab, col in (('PM_rho', 'P–M', CS['PM']), ('PS_rho', 'P–S', CS['
     yy += 4.0
 F.line([cx_(0)]*2, [y_top, yy-6], lw='ref', color=AXC, ls='ref')
 F.xaxis(cx_, yy-4.0, [-0.2, 0, 0.2, 0.4], ['−.2', '0', '.2', '.4'], 'Spearman ρ')
-F.key_row(None, y+h-7.4, [('line', (INK, None, 'thin'), 'Resampling 95%')], gap=5.0, center=(cx_.p0+cx_.p1)/2)
+F.key_row(None, y+h-7.4, [('line', (INK, None, 'thin'), 'Bootstrap 95%')], gap=5.0, center=(cx_.p0+cx_.p1)/2)
 F.values['c'] = Cv
 
 # ================================================================ d  paired differences and their tests
@@ -135,11 +132,10 @@ cn = D.df('D18C', 'same_pas/v2_primary_conditional_null_tests.tsv')
 cap = D.df('D18C', 'same_pas/capacity_sensitivity_tests.tsv')
 dx = Lin(-0.4, 0.45, x+76.0, x+w-66.0)
 QX1, QX2 = x+w-50.0, x+w-17.5
-F.text((dx.p0+dx.p1)/2, y+3.0, 'Paired correlation difference, 25 nt', 7.5, ha='center')
 F.text(QX1, y+3.0, 'Coarse', 7.0, ha='center'); F.text(QX2, y+3.0, 'Capacity', 7.0, ha='center')   # q8 tiles of main Figure 4d
 ROWS_D = [('PMS', 'pair_mean', 'PM_minus_PS_rho', 'ρ(P–M) − ρ(P–S)'), ('PMS', 'pair_mean', 'PM_minus_MS_rho', 'ρ(P–M) − ρ(M–S)'),
           ('PEM', 'H2_C', 'PM_minus_EM_rho', 'ρ(P–M) − ρ(E–M)')]
-Dv = {}; yy = y+23.0
+Dv = {}; yy = y+20.0
 y_top = yy-6
 for design, pair, metric, lab in ROWS_D:
     F.text(x+0.4, yy+1.0, lab, 7.0)
@@ -166,7 +162,7 @@ for design, pair, metric, lab in ROWS_D:
                                  q_capacity=float(cp.q_BH_family8), family_size=int(nl.family_size))
     yy += 22.0
 F.line([dx(0)]*2, [y_top, yy-8], lw='ref', color=AXC, ls='ref')
-F.xaxis(dx, yy-6.0, [-0.4, -0.2, 0, 0.2, 0.4], ['−.4', '−.2', '0', '.2', '.4'])
+F.xaxis(dx, yy-6.0, [-0.4, -0.2, 0, 0.2, 0.4], ['−.4', '−.2', '0', '.2', '.4'], title='Correlation difference')
 F.key_row(None, y+h-7.4, [('marker', ('o', INK), 'Rank'), ('marker', ('s', 'white', INK), 'Distance'),
                           ('line', (INK, None, 'thin'), '95% interval'), ('line', (NULLBAR, None, 'range'), 'Null 95%'),
                           ('block', INK, 'q8 < .05')], gap=5.0, size=7.0, center=x+w/2)
@@ -215,7 +211,7 @@ for j, (L, sp) in enumerate((('f', 'human'), ('g', 'mouse'))):
     gx = Lin(0, span+1.4, x+46.0, x+w-3.0)
     sym, chrom = GENE[sp]
     F.text(x+16.0, y+0.4, sym, 8.0, font='BolIta' if sp == 'human' else 'BolIta')
-    F.text(x+16.0+textwidth(sym, 8.0, 'BolIta')+3.0, y+1.0, f'{chrom} (−), Ensembl 116', 7.0, color=MUTED)
+    # chromosome, strand and Ensembl release: caption
     rows = {}
     for i, a in enumerate(z.itertuples()):
         ry = y+26.0+i*18.0; rows[a.transcript_id] = ry

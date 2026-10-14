@@ -51,7 +51,7 @@ def synchronize(workspace, repository):
         if destination.is_symlink():
             raise ValueError(f'Symlink destination: {destination}')
         pending.append((source, destination))
-    release = json.loads((repository / 'provenance/release.json').read_text())
+    release = json.loads((repository / 'provenance/current-edition.json').read_text())
     with safe_path(repository, release['manuscript_hashes']).open(newline='') as stream:
         for row in csv.DictReader(stream, delimiter='\t'):
             source = safe_path(workspace, row['path'])
